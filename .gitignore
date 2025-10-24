@@ -1,0 +1,29 @@
+# Obsidian workspace files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Editor backup files
+*.bak
+*.swp
+*.swo
+
+# Git-specific
+.git/
+
+# Optional: Ignore specific Obsidian plugins if needed
+# .obsidian/plugins/
+
+# Keep Obsidian config but ignore workspace
+!.obsidian/
+!.obsidian/**
+.obsidian/workspace*.json
