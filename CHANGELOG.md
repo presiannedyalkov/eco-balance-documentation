@@ -7,6 +7,47 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2025-10-27
+
+### Added
+
+**Vault Maintenance System**
+- Complete AI-driven vault maintenance system with 6 specialized personas
+- Personas: Janitor (organization), Curator (content quality), Archivist (versioning), Auditor (completeness), Librarian (navigation), Quality Inspector (polish)
+- State tracking system for monitoring vault health (0-100 scores per persona)
+- Task management infrastructure with queue/priority/in-progress/completed workflow
+- 32 new files providing complete maintenance framework
+
+**Workflow Documentation**
+- Analysis workflow for systematic persona-driven vault reviews
+- Task execution workflow with clear lifecycle management
+- Coordination workflow showing how personas collaborate
+- Version release workflow for Git commits and versioning
+- Persona coordination matrix defining responsibilities
+- Analysis scheduling guide for regular maintenance
+
+**AI Integration**
+- Simple prompt triggers: "Run the Janitor", "Check vault health", etc.
+- Complete AI assistant guide with execution templates
+- Automatic task generation from analyses
+- Version control integration with approval workflow
+
+**Documentation**
+- QUICKSTART.md for 5-minute onboarding
+- PROMPT_REFERENCE.md and PROMPT_REFERENCE_VERSION.md for command reference
+- 6 example tasks demonstrating each persona
+- Complete example analysis run walkthrough
+- BUILD_COMPLETE.md system summary
+
+**Features**
+- Health scoring system (0-100) for each maintenance domain
+- Coordinated multi-persona analysis capability
+- User-controlled version releases with AI preparation
+- Task prioritization (CRITICAL/HIGH/MEDIUM/LOW)
+- State persistence between analysis runs
+
+---
+
 ## [1.0.0] - 2025-10-25
 
 ### Added
@@ -97,6 +138,7 @@ Each with comprehensive, field-ready implementation guides
 
 ## Version History
 
+- **[1.1.0]** - 2025-10-27 - Added vault maintenance system
 - **[1.0.0]** - 2025-10-25 - Initial complete release
 
 ---
@@ -144,6 +186,6 @@ Future versions will be documented here as the project evolves. See `_versions/R
 
 ---
 
-**Current Version:** 1.0.0  
-**Last Updated:** October 25, 2025  
+**Current Version:** 1.1.0  
+**Last Updated:** October 27, 2025  
 **Maintained By:** Eco Balance Project Team
