@@ -335,6 +335,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Easy to understand organizational design
   - Result: _______________
 
+- [x] **JANITOR** - File: `10_Organizational_Structure.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 10-13 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (10_Organizational_Structure.md), sequential numbering maintained, no duplicates found, excellent organization
+
 #### 11 - Governance
 
 - [ ] **CURATOR** - File: `11_Governance.md`
@@ -356,6 +361,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Professional presentation, clear policies, formatting
   - Focus: Governance should be clear and authoritative
   - Result: _______________
+
+- [x] **JANITOR** - File: `11_Governance.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 10-13 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (11_Governance.md), sequential numbering maintained, no duplicates found, excellent organization
 
 #### 12 - Team Roles
 
@@ -379,6 +389,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Easy to understand who does what
   - Result: _______________
 
+- [x] **JANITOR** - File: `12_Team_Roles.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 10-13 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (12_Team_Roles.md), sequential numbering maintained, no duplicates found, excellent organization
+
 #### 13 - Legal Framework
 
 - [ ] **CURATOR** - File: `13_Legal_Framework.md`
@@ -400,6 +415,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Professional legal documentation, clear formatting
   - Focus: Legal content must be precise and clear
   - Result: _______________
+
+- [x] **JANITOR** - File: `13_Legal_Framework.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 10-13 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (13_Legal_Framework.md), sequential numbering maintained, no duplicates found, excellent organization
 
 ---
 
