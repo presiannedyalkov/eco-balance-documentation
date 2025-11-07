@@ -321,6 +321,50 @@ Current status should reflect v2.0 Bootstrap Model adoption and realistic curren
 
 ---
 
+### ❌ FIX-023: Create Missing _versions/v2.0.0/RELEASE_NOTES.md
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🚨 CRITICAL
+**Task ID**: LIB-2025-11-07-001
+**Found By**: Librarian during audit of 00_Eco_Balance_Hub.md
+
+**File**: `_versions/v2.0.0/RELEASE_NOTES.md` (CREATE)
+
+**Issue**:
+The Hub file (00_Eco_Balance_Hub.md) references `_versions/v2.0.0/RELEASE_NOTES.md` multiple times (lines 7, 28, 448, 559), but this file does NOT exist. Only v1.0.0 release notes exist. This breaks core navigation from the Hub.
+
+**Locations of Broken Links**:
+1. Line 7: `[[_versions/v2.0.0/RELEASE_NOTES|Release Notes]]`
+2. Line 28: `[[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]]`
+3. Line 448: `[[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]]`
+4. Line 559: `[[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]]`
+
+**Fix Required**:
+
+Create `_versions/v2.0.0/RELEASE_NOTES.md` documenting the v2.0.0 Bootstrap Model release:
+
+1. **Use template**: _templates/release_notes_template.md
+2. **Document major changes**:
+   - Large-Scale Model (v1.0) → Bootstrap Model (v2.0)
+   - Budget change: €500k-2M → €50-75k
+   - Scale change: 10-30 ha → 1 ha pilot
+   - Technology: Remove AWG, add rainwater harvesting
+   - Team: Multi-department → 1-2 founders
+3. **List converted documents**: 8 core documents (20, 21, 30, 32, 42, 43, 44, 45)
+4. **Reference v1.0.0 release notes** for comparison
+5. **Date**: November 6, 2025 (as stated in Hub)
+
+**Verification**:
+- [ ] File created at _versions/v2.0.0/RELEASE_NOTES.md
+- [ ] All 4 links in Hub now functional
+- [ ] Release notes accurately describe v2.0.0 Bootstrap Model
+- [ ] Cross-references to converted documents accurate
+
+**Related Tasks**: FIX-001 through FIX-004 (v2.0 conversions), FIX-024 (if _versions/v2.0.0/ directory needs creation)
+
+---
+
 ## 🔴 HIGH PRIORITY FIXES
 
 These fixes are important for vault integrity and user trust. Complete after CRITICAL fixes.
@@ -329,39 +373,46 @@ These fixes are important for vault integrity and user trust. Complete after CRI
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
-**Priority**: 🔴 HIGH  
-**Task ID**: CUR-2025-11-07-002 (partial)
+**Priority**: 🔴 HIGH
+**Task ID**: CUR-2025-11-07-002 (partial), LIB-2025-11-07-002 (Librarian update)
 
-**File**: `01_Executive_Summary.md` (and any other files linking to doc 22)
+**File**: Multiple files link to doc 22 incorrectly
 
-**Issue**: 
-Link to [[22_Research_Framework|Research Framework]] points to non-existent file.
+**Files Affected** (from Librarian audit):
+- `01_Executive_Summary.md` (line 39)
+- `02_Project_Vision.md` (line 184)
+- `03_Success_Factors.md` (lines 28, 138)
+- `04_Current_Status_Assessment.md` (line 210)
+
+**Issue**:
+Links reference [[22_Research_Framework|...]] but the actual file is `22_Restoration_Challenges_Solutions.md`, NOT `22_Research_Framework.md`.
 
 **Fix Options** (Choose one):
 
-**Option A: Create Document 22**
-- Create `22_Research_Framework.md`
-- Document scientific approach, monitoring protocols, data collection
-- Align with v2.0 Bootstrap scale (1 ha pilot research, not multi-site)
-- Use strategic_document_template.md
+**Option A: Update All Links to Point to Existing File**
+- Change all links from `[[22_Research_Framework|...]]` to `[[22_Restoration_Challenges_Solutions|Research Framework]]`
+- File exists and contains research/monitoring content
+- Simplest fix - just correct the filename in links
 
-**Option B: Redirect to Existing Content**
-- Update link to point to `20_Restoration_Methodology.md` (scientific approach section)
+**Option B: Rename File 22**
+- Rename `22_Restoration_Challenges_Solutions.md` to `22_Research_Framework.md`
+- Ensure content aligns with new name
+- May require content updates to focus on research framework
+
+**Option C: Redirect to Methodology**
+- Update links to point to `20_Restoration_Methodology.md`
 - Add research framework section to doc 20 if needed
 - Update link text: [[20_Restoration_Methodology#research-approach|Research Framework]]
 
-**Option C: Remove Reference**
-- If research framework detail not critical, remove the link
-- Ensure surrounding text still flows well
-
-**Recommendation**: Option B (redirect) - Research framework naturally belongs in Methodology document.
+**Recommendation**: Option A (simplest) - Update links to point to existing file `22_Restoration_Challenges_Solutions.md`.
 
 **Verification**:
-- [ ] Link functional (goes to existing content)
-- [ ] Link text accurate (describes where it goes)
-- [ ] No other references to doc 22 remaining
+- [ ] All links functional (pointing to 22_Restoration_Challenges_Solutions.md)
+- [ ] Link text makes sense
+- [ ] Check all 5+ affected files updated
+- [ ] No other references to 22_Research_Framework remaining
 
-**Related Tasks**: FIX-001 (may resolve link during Executive Summary rewrite)
+**Related Tasks**: FIX-001 through FIX-004 (may update some links during rewrites)
 
 ---
 
@@ -478,6 +529,49 @@ Link text says [[40_Implementation_Roadmap|Roadmap]] but file 40 is actually `40
 - [ ] Link functional
 - [ ] Link text accurately describes destination
 - [ ] All other references to doc 40 checked and updated if needed
+
+---
+
+### ⚠️ FIX-024: Fix Broken Cross-Reference to 60_Marketing_Strategy
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🔴 HIGH
+**Task ID**: LIB-2025-11-07-003
+**Found By**: Librarian during audit of strategic docs 01-04
+
+**File**: Multiple files link to doc 60 with wrong filename
+
+**Files Affected**:
+- `01_Executive_Summary.md` (line 35)
+- `02_Project_Vision.md` (lines 78, 188)
+- `03_Success_Factors.md` (lines 71, 239)
+- `04_Current_Status_Assessment.md` (line 230)
+
+**Issue**:
+Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
+
+**Fix Required**:
+
+Update all links to use correct filename:
+- FROM: `[[60_Marketing_Strategy|...]]`
+- TO: `[[60_Marketing_Communications_Strategy|...]]`
+
+**Files to Update** (6+ instances):
+1. 01_Executive_Summary.md (line 35)
+2. 02_Project_Vision.md (line 78)
+3. 02_Project_Vision.md (line 188)
+4. 03_Success_Factors.md (line 71)
+5. 03_Success_Factors.md (line 239)
+6. 04_Current_Status_Assessment.md (line 230)
+
+**Verification**:
+- [ ] All 6+ links now functional
+- [ ] All links point to 60_Marketing_Communications_Strategy.md
+- [ ] Link text still makes sense
+- [ ] No other references to 60_Marketing_Strategy remaining
+
+**Related Tasks**: FIX-001 through FIX-004 (may update some links during rewrites)
 
 ---
 
@@ -1285,24 +1379,92 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ---
 
+## 🟢 LOW PRIORITY FIXES
+
+These are optional enhancements that improve polish and completeness. Complete after higher priorities.
+
+### ⚠️ FIX-025: Create Missing _templates/README.md
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: LIB-2025-11-07-004
+**Found By**: Librarian during audit of 00_Eco_Balance_Hub.md
+
+**File**: `_templates/README.md` (CREATE)
+
+**Issue**:
+The Hub file (00_Eco_Balance_Hub.md) links to `[[_templates/README|_templates/]]` (line 46), but `_templates/README.md` does NOT exist. The _templates directory exists with 4 template files but no README.
+
+**Existing Templates**:
+- changelog_entry_template.md
+- implementation_task_template.md
+- release_notes_template.md
+- strategic_document_template.md
+
+**Fix Required**:
+
+Create `_templates/README.md` that documents the template system:
+
+1. **Purpose**: Explain why templates exist (consistency, quality, efficiency)
+2. **Available Templates**: List and describe each template
+3. **Usage Instructions**: How to use each template
+4. **When to Use**: Guidance on which template for which task
+5. **Customization**: How to adapt templates
+
+**Content Structure**:
+```markdown
+# Documentation Templates
+
+Purpose: Maintain consistency across vault documents
+
+## Available Templates
+1. Strategic Document Template - For files 00-70
+2. Implementation Task Template - For implementation_tasks/
+3. Release Notes Template - For _versions/vX.Y.Z/
+4. Changelog Entry Template - For CHANGELOG.md updates
+
+## Usage Instructions
+[For each template...]
+
+## Contributing
+[How to improve templates]
+```
+
+**Verification**:
+- [ ] File created at _templates/README.md
+- [ ] Link from Hub (line 46) now functional
+- [ ] All 4 templates documented
+- [ ] Usage instructions clear and helpful
+
+**Related Tasks**: None (standalone documentation enhancement)
+
+---
+
 ## 📊 FIX COMPLETION TRACKING
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 22 tasks
+**Total Fix Tasks**: 25 tasks
 
 **By Priority**:
-- 🚨 **CRITICAL**: 4 tasks (FIX-001 to FIX-004)
-- 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
+- 🚨 **CRITICAL**: 5 tasks (FIX-001 to FIX-004, FIX-023)
+- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-024)
 - 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
-- 🟢 **LOW**: 4 tasks (FIX-019 to FIX-022)
+- 🟢 **LOW**: 5 tasks (FIX-019 to FIX-022, FIX-025)
+
+**New Tasks Added by Librarian Audit (Step 1)**:
+- FIX-023: Missing _versions/v2.0.0/RELEASE_NOTES.md (CRITICAL)
+- FIX-024: Wrong filename for doc 60 (60_Marketing_Strategy) (HIGH)
+- FIX-025: Missing _templates/README.md (LOW)
+- Updated FIX-005: Clarified doc 22 exists with different name
 
 **Completion Status**:
-- [ ] CRITICAL Priority: ___ / 4 complete
-- [ ] HIGH Priority: ___ / 4 complete
+- [ ] CRITICAL Priority: ___ / 5 complete
+- [ ] HIGH Priority: ___ / 5 complete
 - [ ] MEDIUM Priority: ___ / 10 complete
-- [ ] LOW Priority: ___ / 4 complete
-- [ ] **TOTAL**: ___ / 22 complete
+- [ ] LOW Priority: ___ / 5 complete
+- [ ] **TOTAL**: ___ / 25 complete
 
 ### Estimated Time to Complete
 
