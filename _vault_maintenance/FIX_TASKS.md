@@ -1421,6 +1421,112 @@ Add clarification:
 
 ---
 
+### ⚠️ FIX-029: Reforestation Monitoring and Management Files Use 2 Hectare Budget Examples
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: CUR-2025-11-07-029
+**Found By**: Curator during Step 5 Group 4 audit of Implementation Tasks
+
+**Files**:
+- `implementation_tasks/reforestation/05_Monitor_Growth.md`
+- `implementation_tasks/reforestation/06_Long_Term_Management.md`
+
+**Issue**:
+Files contain budget examples using 2 hectares instead of 1 hectare Bootstrap Model scale. Multi-year budget projections should reflect v2.0 approach.
+
+**Specific Problems**:
+
+**File 05 (Monitor Growth)**:
+- Lines 339-342: "Annual Monitoring Budget (2 hectares):"
+  - Basic program: €2,000-4,000
+  - Enhanced with technology: €5,000-10,000
+  - Should reflect 1 hectare scale
+
+**File 06 (Long Term Management)**:
+- Lines 361-382: All annual management budget examples use "2 hectares"
+  - Year 1-3: €5,000-11,000/year for 2 hectares
+  - Year 4-7: €2,600-5,400/year for 2 hectares
+  - Year 8+: €2,000-4,000/year for 2 hectares
+  - 10-Year Total: €35,000-70,000 for 2 hectares
+  - Should use 1 hectare for Bootstrap examples
+
+**Impact**:
+- Minor misalignment with v2.0 Bootstrap Model
+- Budget examples higher than necessary for 1 ha pilot
+- Could create confusion about actual Bootstrap costs
+- Examples should reflect realistic 1 ha implementation
+
+**Fix Required**:
+
+**File 05 - Lines 339-342 - Update Monitoring Budget**:
+
+Change:
+```markdown
+**Annual Monitoring Budget (2 hectares):**
+- Basic program: €2,000-4,000
+- Enhanced with technology: €5,000-10,000
+```
+
+To:
+```markdown
+**Annual Monitoring Budget (1 hectare Bootstrap):**
+- Basic program: €1,000-2,000
+- Enhanced with technology: €2,500-5,000
+```
+
+**File 06 - Lines 361-382 - Update Management Budgets**:
+
+Change all references from "2 hectares" to "1 hectare Bootstrap":
+
+**Year 1-3 (Intensive):**
+- Labor: €1,500-3,000/year (was €3,000-6,000)
+- Water: €250-750/year (was €500-1,500)
+- Mulch/supplies: €250-500/year (was €500-1,000)
+- Replacements: €500-1,500/year (was €1,000-3,000)
+- **Total: €2,500-5,750/year** (was €5,000-11,000)
+
+**Year 4-7 (Moderate):**
+- Labor: €1,000-2,000/year (was €2,000-4,000)
+- Water: €150-400/year (was €300-800)
+- Tools/supplies: €150-300/year (was €300-600)
+- **Total: €1,300-2,700/year** (was €2,600-5,400)
+
+**Year 8+ (Light):**
+- Labor: €500-1,000/year (was €1,000-2,000)
+- Monitoring: €250-500/year (was €500-1,000)
+- Occasional interventions: €250-500/year (was €500-1,000)
+- **Total: €1,000-2,000/year** (was €2,000-4,000)
+
+**10-Year Total: €17,500-35,000 for 1 hectare** (was €35,000-70,000 for 2 hectares)
+
+**Add Bootstrap Context Note** (after budget tables):
+
+Add clarification:
+```markdown
+**Bootstrap Model Note:**
+- These budgets reflect 1 hectare pilot site management
+- Costs are within the total €20-30k Year 1 + ongoing funding model
+- Year 1 is most intensive, costs decrease as trees establish
+- For larger sites post-pilot, scale proportionally (but not always linearly - some economies of scale)
+- Many tasks can be done by founders, reducing labor costs
+```
+
+**Verification**:
+- [ ] All budget examples use 1 hectare as baseline
+- [ ] Budget ranges compatible with Bootstrap financial model
+- [ ] 10-year total reflects realistic 1 ha management costs
+- [ ] Bootstrap context clearly noted
+- [ ] Consistent with other reforestation files and business model (30)
+
+**Related Tasks**:
+- FIX-028 (File 02 uses 2 ha examples)
+- Part of systematic v2.0 Bootstrap scale alignment
+- All reforestation files have consistent 2 ha pattern that needs updating
+
+---
+
 ### ⚠️ FIX-016: Verify 60_Marketing_Communications_Strategy.md for Bootstrap Approach
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)

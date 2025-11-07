@@ -894,7 +894,7 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - Group 1: [x] Complete (2025-11-07) - 2 issues found (FIX-025, FIX-026)
 - Group 2: [x] Complete (2025-11-07) - 1 issue found (FIX-027)
 - Group 3: [x] Complete (2025-11-07) - 1 issue found (FIX-028)
-- Group 4: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 4: [x] Complete (2025-11-07) - 1 issue found (FIX-029)
 - Group 5: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 6: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 7: [ ] Not started / [ ] In Progress / [ ] Complete
@@ -1016,16 +1016,16 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 ---
 
-#### Group 4: Reforestation (Files 6-7) + Biodiversity (Files 1-3) - 5 files
+#### Group 4: Reforestation (Files 5-6) + Biodiversity (Files 0-2) - 5 files
 
-**Status**: [ ] Not Started
+**Status**: [x] Complete (Date: 2025-11-07)
 
-**Files to Audit**:
-1. `implementation_tasks/reforestation/05_Monitor_Growth.md`
-2. `implementation_tasks/reforestation/06_Long_Term_Management.md`
-3. `implementation_tasks/biodiversity/00_Biodiversity_Overview.md`
-4. `implementation_tasks/biodiversity/01_Baseline_Assessment.md`
-5. `implementation_tasks/biodiversity/02_Create_Habitat_Zones.md`
+**Files Audited**:
+1. ✅ `implementation_tasks/reforestation/05_Monitor_Growth.md`
+2. ✅ `implementation_tasks/reforestation/06_Long_Term_Management.md`
+3. ✅ `implementation_tasks/biodiversity/00_Biodiversity_Overview.md`
+4. ✅ `implementation_tasks/biodiversity/01_Assess_Biodiversity.md`
+5. ✅ `implementation_tasks/biodiversity/02_Restore_Habitats.md`
 
 **Audit Focus (Curator)**:
 - Monitoring protocols feasible for 1-2 founders
@@ -1033,7 +1033,23 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - Habitat zones scaled for 1 ha pilot
 - Cross-references between reforestation and biodiversity
 
-**Results**: _______________
+**Results**: ⚠️ MINOR ISSUE FOUND - Added FIX-029 to FIX_TASKS.md
+
+**Summary**:
+- **File 05 (Monitor Growth)**: ⚠️ MEDIUM - Annual monitoring budget uses 2 ha examples (€2-10k), should use 1 ha (€1-5k)
+- **File 06 (Long Term Management)**: ⚠️ MEDIUM - All multi-year budget examples use 2 ha (10-yr total €35-70k), should use 1 ha (€17.5-35k)
+- **File 00 (Biodiversity Overview)**: ✅ PASS - Year 1 targets (50+ species, 20% increase) scale-neutral and appropriate
+- **File 01 (Assess Biodiversity)**: ✅ PASS - Budget €2-5k for expert consultations appropriate for Bootstrap
+- **File 02 (Restore Habitats)**: ✅ PASS - Scale-neutral, excellent practical guidance
+
+**Issues Created**:
+- **FIX-029** (MEDIUM): Files 05 and 06 use 2 hectare budget examples instead of 1 hectare
+  - File 05: Monitoring budgets show 2 ha scale (€2-10k should be €1-5k)
+  - File 06: Management budgets all reference "2 hectares" (10-year total should be €17.5-35k not €35-70k)
+  - Minor issue - examples need updating to match Bootstrap scale
+  - Part of consistent pattern across all reforestation files
+
+**Assessment**: Group 4 files have excellent monitoring/management protocols feasible for founders. Reforestation files (05, 06) continue the 2 ha example pattern from earlier files - all budgets need to be halved for 1 ha Bootstrap. Biodiversity files (00-02) are scale-appropriate with strong ecological guidance.
 
 ---
 
