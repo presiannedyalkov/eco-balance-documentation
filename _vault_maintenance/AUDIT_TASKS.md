@@ -181,10 +181,14 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Recently updated to v2.0 - verify all references accurate
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `00_Eco_Balance_Hub.md`
+- [x] **AUDITOR** - File: `00_Eco_Balance_Hub.md`
   - Check: All data consistent (budgets, scales, timelines), standards compliance
   - Focus: Version numbers, budget figures, scale assumptions all v2.0
-  - Result: _______________
+  - Result: ⚠️ **CRITICAL ISSUES FOUND** - Added FIX-000 to FIX_TASKS.md
+           - Line 162: €250-500k (v1.0) ❌ Should be €20-30k Y1
+           - Line 164: 5-10 ha, 1000+ trees (v1.0) ❌ Should be 1 ha, 500-1000 trees
+           - Line 41: VERSION says 1.0.0 ❌ Conflicts with header 2.0.0
+           - Lines 217-221: Year 1 goals all v1.0 (€250k, 5-10 ha, 3 staff) ❌
 
 - [ ] **LIBRARIAN** - File: `00_Eco_Balance_Hub.md`
   - Check: All internal links functional, navigation clear, no broken links
@@ -203,10 +207,15 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: **CRITICAL** - Known to have v1.0 Large-Scale content (€250-500k, 5-10 ha, AWG)
   - Result: ❌ KNOWN ISSUE - Task CUR-2025-11-07-001 already created
 
-- [ ] **AUDITOR** - File: `01_Executive_Summary.md`
+- [x] **AUDITOR** - File: `01_Executive_Summary.md`
   - Check: Budget figures, scale assumptions, technology specs
   - Focus: Verify if €250-500k (v1.0) or €20-30k (v2.0), land scale, team size
-  - Result: _______________
+  - Result: ⚠️ **CRITICAL ISSUES** - FIX-001 already exists (Curator identified)
+           - Line 73: €250-500k initial capital ❌ v1.0
+           - Line 26: "atmospheric water generation" ❌ v1.0 tech (should be rainwater)
+           - Line 52: "5-10 hectares" Year 1 ❌ v1.0 scale (should be 1 ha)
+           - Multiple broken references: [[22]], [[31]], [[40-mismatch]], [[41]]
+           - **ENTIRE DOC IS v1.0** - Needs complete rewrite
 
 - [ ] **LIBRARIAN** - File: `01_Executive_Summary.md`
   - Check: Cross-references functional
@@ -225,10 +234,14 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Does it reference v1.0 Large-Scale or v2.0 Bootstrap assumptions?
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `02_Project_Vision.md`
+- [x] **AUDITOR** - File: `02_Project_Vision.md`
   - Check: Data consistency with v2.0 documents, scale assumptions
   - Focus: Land scale, budget references, timeline assumptions
-  - Result: _______________
+  - Result: ⚠️ **MODERATE ISSUES** - FIX-002 already exists
+           - Line 170: "5-10 hectares in Year 1" ❌ v1.0 scale (should be 1 ha)
+           - Line 86: "Atmospheric water generation" ❌ v1.0 tech
+           - Broken references: [[41_Phase_1_Foundation]], [[40_Implementation_Roadmap]]
+           - Vision narrative needs Bootstrap adjustment but less severe than 01
 
 - [ ] **LIBRARIAN** - File: `02_Project_Vision.md`
   - Check: All internal links functional, proper cross-referencing
@@ -247,10 +260,14 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Success factors for 1 ha pilot vs 10-30 ha large-scale differ
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `03_Success_Factors.md`
+- [x] **AUDITOR** - File: `03_Success_Factors.md`
   - Check: Consistency with v2.0 model, data accuracy
   - Focus: Team size assumptions, budget ranges, scale references
-  - Result: _______________
+  - Result: ⚠️ **MINOR-MODERATE ISSUES** - FIX-003 already exists
+           - Line 256: Best case mentions "€200k+ grant" - v1.0 thinking
+           - No specific v2.0 Bootstrap budget figures mentioned (implicit v1.0)
+           - Broken references: [[22]], [[31]]
+           - Success factors conceptually sound but need v2.0 context
 
 - [ ] **LIBRARIAN** - File: `03_Success_Factors.md`
   - Check: Cross-references accurate and helpful
@@ -269,10 +286,17 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Status should reflect v2.0 Bootstrap Model adoption
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `04_Current_Status_Assessment.md`
+- [x] **AUDITOR** - File: `04_Current_Status_Assessment.md`
   - Check: Data accuracy, timeline consistency, version compliance
   - Focus: Does assessment reflect current v2.0 state (Nov 2025)?
-  - Result: _______________
+  - Result: ⚠️ **CRITICAL ISSUES** - FIX-004 already exists
+           - Line 11: Date "October 2025" ❌ OUTDATED (should be Nov 2025+)
+           - Line 123: Legal costs "€15-20k" ❌ v2.0 should be €3-4k
+           - Lines 143-146: Funding targets €50k/€150k/€250k ❌ ALL v1.0
+           - Line 167: Land budget "€100-200k" ❌ v2.0 should be €10-30k
+           - Line 189: "€90-120k/year (3 staff)" ❌ v2.0 = 1-2 founders
+           - Line 273: "€250k+ funding" for Seed ❌ v1.0
+           - **ENTIRE ASSESSMENT IS v1.0** - Complete rewrite needed
 
 - [ ] **LIBRARIAN** - File: `04_Current_Status_Assessment.md`
   - Check: Links functional, references current documents

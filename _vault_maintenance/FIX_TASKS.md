@@ -99,6 +99,104 @@ Each fix task includes:
 
 These fixes are blocking correct understanding of the project. Must complete immediately.
 
+### ❌ FIX-000: Convert 00_Eco_Balance_Hub.md to v2.0 Bootstrap Model (Priority Hub Document)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🚨 CRITICAL
+**Task ID**: AUD-2025-11-07-001
+**Found By**: Auditor during Step 1 audit
+**Assigned Persona**: Auditor/Curator (but any persona can execute)
+
+**File**: `00_Eco_Balance_Hub.md`
+
+**Issue**:
+Hub document (main entry point) contains major v1.0 Large-Scale contradictions that directly conflict with the v2.0 Bootstrap Model stated in the header. This creates immediate confusion for all readers.
+
+**Specific Problems Found (Auditor Verification)**:
+1. **Line 162**: "Initial Investment Ask: €250,000-€500,000" ❌ **v1.0** (should be €20-30k Y1, €50-75k total)
+2. **Line 164**: "Year 1 Goal: secure 5-10 hectares, plant 1,000+ trees, engage 100+ community members" ❌ **v1.0 scale** (should be 1 ha, 500-1000 trees, 1-2 founders focus)
+3. **Line 166**: "Long-term Vision (10 years): 10,000+ hectares" - Acceptable but needs context that Year 1 is 1 ha pilot
+4. **Line 41**: "VERSION - Current version number (1.0.0)" ❌ **VERSION CONFLICT** (header says 2.0.0)
+5. **Lines 217-221**: Year 1 Goals still list:
+   - "€250k+ funding secured" ❌ (should be €20-30k)
+   - "Land site acquired (5-10 ha)" ❌ (should be 1 ha)
+   - "Core team hired (3 staff)" ❌ (should be 1-2 founders)
+
+**Fix Required**:
+
+**1. Fix Version Number Inconsistency**:
+   - Line 41: Change "VERSION - Current version number (1.0.0)" → "VERSION - Current version number (2.0.0)"
+   - OR remove this outdated line entirely
+
+**2. Update "Project at a Glance" Section (Lines 158-167)**:
+   ```markdown
+   ## 🎯 Project at a Glance
+
+   **Mission:** Restore degraded ecosystems in Southern Europe through evidence-based, community-engaged, financially sustainable environmental restoration.
+
+   **v2.0 Bootstrap Model:** 1 hectare pilot to prove restoration approach
+
+   **Year 1 Budget:** €20,000-€30,000 (crowdfunding + bootstrap capital)
+
+   **Total 3-Year Budget:** €50,000-€75,000
+
+   **Year 1 Goal:** Establish 1 ha pilot site, validate restoration methods, document thoroughly for replication
+
+   **Team:** 1-2 founders (multi-hat roles, DIY-first approach)
+
+   **Long-term Vision (10 years):** Successful pilot enables replication → Multiple sites → Movement toward ecosystem restoration at scale
+   ```
+
+**3. Update "Next Major Milestones" Section (Lines 206-223)**:
+   ```markdown
+   ## 🚀 Next Major Milestones
+
+   **90-Day Goals (Bootstrap Launch Prep):**
+   - [ ] Crowdfunding campaign materials prepared
+   - [ ] €20-30k funding target defined and campaign strategy ready
+   - [ ] 5+ potential 1 ha land sites identified
+   - [ ] Website and social media launched
+   - [ ] Community interest validated
+   - [ ] Site selection criteria finalized
+
+   **Year 1 Goals (Bootstrap Pilot Establishment):**
+   - [ ] Crowdfunding successful (€20-30k raised)
+   - [ ] 1 hectare pilot site acquired (lease or purchase)
+   - [ ] Off-grid systems installed (3-5 kW solar, rainwater)
+   - [ ] DIY tiny house built (€8-12k)
+   - [ ] First plantings completed (500-1,000 trees)
+   - [ ] Documentation system established
+   ```
+
+**4. Verify ALL Financial References**:
+   - Search document for "€250", "€500", "€200" → Replace with v2.0 figures
+   - Search for "5-10 hectare" or "10 hectare" → Replace with "1 hectare pilot"
+   - Search for "3 staff" or "core team" → Replace with "1-2 founders"
+
+**Reference Documents** (Use these as v2.0 examples):
+- `20_Restoration_Methodology.md` - Correct 1 ha approach
+- `21_Technology_Integration.md` - v2.0 tech specs
+- `30_Business_Model.md` - v2.0 financial figures
+- `42_Next_Steps_90_Days.md` - Realistic immediate actions
+- `43_Operations_Action_Plan.md` - Founder-level operations
+
+**Verification**:
+- [ ] Version number consistent (2.0.0 throughout)
+- [ ] All budget figures are €20-30k Y1, €50-75k total
+- [ ] Land scale is 1 hectare
+- [ ] Team described as 1-2 founders
+- [ ] Year 1 goals realistic for Bootstrap
+- [ ] No v1.0 figures remaining (€250k, 5-10 ha, large team)
+- [ ] Hub accurately represents v2.0 Bootstrap Model
+
+**Related Tasks**:
+- This is the FIRST document most users read - highest priority
+- Affects user understanding of entire project
+- Should be completed before or alongside FIX-001 (Executive Summary)
+
+---
+
 ### ❌ FIX-001: Convert 01_Executive_Summary.md to v2.0 Bootstrap Model
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
@@ -1289,29 +1387,30 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 22 tasks
+**Total Fix Tasks**: 23 tasks
 
 **By Priority**:
-- 🚨 **CRITICAL**: 4 tasks (FIX-001 to FIX-004)
+- 🚨 **CRITICAL**: 5 tasks (FIX-000 to FIX-004)
 - 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
 - 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
 - 🟢 **LOW**: 4 tasks (FIX-019 to FIX-022)
 
 **Completion Status**:
-- [ ] CRITICAL Priority: ___ / 4 complete
+- [ ] CRITICAL Priority: ___ / 5 complete
 - [ ] HIGH Priority: ___ / 4 complete
 - [ ] MEDIUM Priority: ___ / 10 complete
 - [ ] LOW Priority: ___ / 4 complete
-- [ ] **TOTAL**: ___ / 22 complete
+- [ ] **TOTAL**: ___ / 23 complete
 
 ### Estimated Time to Complete
 
 **CRITICAL Fixes** (Must do immediately):
+- FIX-000: 2-3 hours (Hub document conversion - HIGHEST PRIORITY)
 - FIX-001: 2-3 hours (Executive Summary rewrite)
 - FIX-002: 1-2 hours (Project Vision conversion)
 - FIX-003: 1-2 hours (Success Factors conversion)
 - FIX-004: 1-2 hours (Status Assessment conversion)
-- **Total CRITICAL**: 5-9 hours
+- **Total CRITICAL**: 7-12 hours
 
 **HIGH Fixes** (Do next):
 - FIX-005 to FIX-008: 2-4 hours (cross-reference fixes)
@@ -1325,10 +1424,10 @@ After completing fixes, document all changes made during this maintenance cycle.
 - FIX-019 to FIX-022: 2-4 hours (enhancements)
 - **Total LOW**: 2-4 hours
 
-**GRAND TOTAL**: 19-32 hours of focused work
+**GRAND TOTAL**: 21-35 hours of focused work
 
 **Recommended Pace**:
-- **Week 1**: Complete CRITICAL fixes (5-9 hours, ~1 hour/day)
+- **Week 1**: Complete CRITICAL fixes (7-12 hours, ~1.5 hours/day)
 - **Week 2**: Complete HIGH fixes (2-4 hours, ~30 min/day)
 - **Week 3**: Complete MEDIUM fixes (10-15 hours, ~2 hours/day)
 - **Week 4**: Complete LOW fixes (2-4 hours, ~30 min/day)
