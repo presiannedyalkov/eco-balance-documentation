@@ -1342,24 +1342,65 @@ Choose ONE navigation pattern and apply consistently. Recommended pattern:
 
 ---
 
+### ⚠️ FIX-024: Fix Back Link Formatting in 13_Legal_Framework.md
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: QI-2025-11-07-002
+**Found By**: Quality Inspector during audit of 13_Legal_Framework.md
+
+**File**: `13_Legal_Framework.md`
+
+**Issue**:
+Back link on line 3 is missing bold markdown formatting, inconsistent with all other strategic documents.
+
+**Current State**:
+```markdown
+← Back to [[00_Eco_Balance_Hub|Project Hub]]
+```
+
+**Expected State**:
+```markdown
+**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+```
+
+**Fix Required**:
+Change line 3 from:
+`← Back to [[00_Eco_Balance_Hub|Project Hub]]`
+
+To:
+`**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+
+**Verification**:
+- [ ] Back link has bold markdown formatting
+- [ ] Consistent with other strategic documents
+- [ ] Link still functional
+
+**Related Tasks**: None - standalone formatting fix
+
+**Estimated Effort**: TRIVIAL (1 minute)
+
+---
+
 ## 📊 FIX COMPLETION TRACKING
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 23 tasks
+**Total Fix Tasks**: 24 tasks
 
 **By Priority**:
 - 🚨 **CRITICAL**: 4 tasks (FIX-001 to FIX-004)
 - 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
 - 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
-- 🟢 **LOW**: 5 tasks (FIX-019 to FIX-023)
+- 🟢 **LOW**: 6 tasks (FIX-019 to FIX-024)
 
 **Completion Status**:
 - [ ] CRITICAL Priority: ___ / 4 complete
 - [ ] HIGH Priority: ___ / 4 complete
 - [ ] MEDIUM Priority: ___ / 10 complete
-- [ ] LOW Priority: ___ / 5 complete
-- [ ] **TOTAL**: ___ / 23 complete
+- [ ] LOW Priority: ___ / 6 complete
+- [ ] **TOTAL**: ___ / 24 complete
 
 ### Estimated Time to Complete
 
