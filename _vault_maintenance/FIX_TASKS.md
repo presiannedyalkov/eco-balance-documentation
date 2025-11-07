@@ -688,6 +688,92 @@ grep -r "22_Research_Framework" /home/user/eco-balance-documentation/ --include=
 
 ---
 
+### ⚠️ FIX-025: Site Selection Implementation Files Contain v1.0 Large-Scale Budget Assumptions
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🔴 HIGH
+**Task ID**: CUR-2025-11-07-025
+**Found By**: Curator during Step 5 Group 1 audit of Implementation Tasks
+
+**Files**:
+- `implementation_tasks/site_selection/00_Site_Selection_Overview.md`
+- `implementation_tasks/site_selection/02_Evaluate_Land_Condition.md`
+- `implementation_tasks/site_selection/03_Estimate_Restoration_Potential.md`
+- `implementation_tasks/site_selection/04_Consider_Accessibility.md`
+
+**Issue**:
+Site selection implementation files contain budget assumptions and cost estimates from v1.0 Large-Scale Model that are incompatible with v2.0 Bootstrap Model budget constraints.
+
+**Specific Problems**:
+
+**File 00 (Overview)**:
+- Line 158: "€17,000-50,000 before purchase" for site selection process
+- Line 159: "€2,000-20,000/hectare" land acquisition cost
+- These are v1.0 assumptions for evaluating multiple 5-10 ha sites
+
+**File 02 (Evaluate Land Condition)**:
+- Line 82: "€2,000-5,000 per site visit"
+- Excessive for Bootstrap evaluating 3-5 sites with €20-30k total Y1 budget
+
+**File 03 (Estimate Restoration Potential)**:
+- Line 18: "€5,000-10,000/hectare" (Low difficulty)
+- Line 26: "€10,000-20,000/hectare" (Medium difficulty)
+- Line 34: "€20,000-40,000+/hectare" (High difficulty)
+- These per-hectare costs are incompatible with €20-30k TOTAL Year 1 budget
+
+**File 04 (Consider Accessibility)**:
+- Line 198: "€30,000-100,000+ per building" for on-site accommodation
+- Lines 195-206: All infrastructure costs scaled for v1.0 Large-Scale
+
+**Fix Required**:
+
+**Update all budget figures to v2.0 Bootstrap scale:**
+
+**File 00 - Site Selection Overview**:
+- Line 158: Change to "€1,000-3,000 before purchase" (desktop research, 1-2 site visits)
+- Line 159: Update to "€2,000-15,000/hectare (or lease options)" with note about Bootstrap targeting 1 ha
+- Add context: "For Bootstrap Model: Simplified site selection focusing on 1 hectare pilot within €20-30k Year 1 budget"
+
+**File 02 - Evaluate Land Condition**:
+- Line 82: Change to "€500-1,500 per site visit" (founders conducting assessment, minimal lab tests)
+- Add note: "Bootstrap approach: Founders conduct assessments with expert consultation as needed"
+
+**File 03 - Estimate Restoration Potential**:
+- Update cost framework to reflect Bootstrap 1 ha pilot:
+  - Low difficulty: "€3,000-5,000 total for 1 ha Bootstrap pilot"
+  - Medium difficulty: "€5,000-8,000 total for 1 ha Bootstrap pilot"
+  - High difficulty: "€8,000-12,000 total for 1 ha Bootstrap pilot"
+- Add prominent note: "These figures are for v2.0 Bootstrap Model (1 ha pilot, €20-30k Year 1 total budget including land, infrastructure, and operations)"
+
+**File 04 - Consider Accessibility**:
+- Line 198: Change to "€8,000-12,000 for DIY tiny house (Bootstrap Model)"
+- Lines 195-206: Update ALL infrastructure costs to Bootstrap scale:
+  - Road improvements: "€500-2,000 minor improvements if needed"
+  - Grid electricity: "Off-grid solar (€3-5k) recommended for Bootstrap"
+  - Well drilling: "€1,000-5,000 or rainwater harvesting"
+  - Internet: "€0-500 (mobile hotspot or satellite)"
+- Add section: "Bootstrap Model Accessibility: Focus on sites with basic access already present to minimize infrastructure investment"
+
+**General Updates to All Files**:
+- Add Bootstrap context boxes where budget figures appear
+- Reference [[30_Business_Model|Business Model]] for v2.0 budget framework
+- Note that larger-scale costs apply to post-pilot expansion phases
+
+**Verification**:
+- [ ] All budget figures compatible with €20-30k Year 1 Bootstrap budget
+- [ ] 1 hectare pilot scale reflected in all estimates
+- [ ] Founder-level operations assumed (not large team)
+- [ ] Bootstrap context clearly noted where relevant
+- [ ] Cross-references to v2.0 compliant docs (30, 32, 42, 43) included
+
+**Related Tasks**:
+- FIX-001 through FIX-004 (Strategic docs conversion)
+- FIX-009 through FIX-012 (Organizational docs conversion)
+- Part of systematic v2.0 Bootstrap alignment
+
+---
+
 ## 🟡 MEDIUM PRIORITY FIXES
 
 These improve vault quality and consistency. Complete after HIGH priority fixes.
@@ -1090,6 +1176,73 @@ KPIs must be appropriate for 1 ha pilot, not large-scale operation.
 - [ ] Mix of quantitative and qualitative appropriate for pilot
 - [ ] KPIs support "prove first" objective
 - [ ] Consistent with methodology (20) and operations (43)
+
+---
+
+### ⚠️ FIX-026: Remove Deprecated AWG Technology Reference from Site Selection File
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: CUR-2025-11-07-026
+**Found By**: Curator during Step 5 Group 1 audit of Implementation Tasks
+
+**File**: `implementation_tasks/site_selection/04_Consider_Accessibility.md`
+
+**Issue**:
+File contains reference to "Atmospheric Water Generation" (AWG), which is deprecated v1.0 Large-Scale technology. v2.0 Bootstrap Model uses rainwater harvesting instead.
+
+**Specific Problem**:
+- Line 59: "Atmospheric water generation feasibility → [[21_Technology_Integration|Technology]]"
+- AWG was removed from v2.0 due to high cost (€15-30k), high energy requirements (3-5 kW continuous), and complexity
+- v2.0 uses rainwater harvesting with IBC tanks (€500-2,000 total)
+
+**Fix Required**:
+
+**Line 59 - Replace AWG reference**:
+
+Change:
+```markdown
+**Water:**
+- Municipal water supply available?
+- Well drilling required?
+- Distance to nearest water source?
+- Water quality testing needed?
+- Atmospheric water generation feasibility → [[21_Technology_Integration|Technology]]
+```
+
+To:
+```markdown
+**Water:**
+- Municipal water supply available?
+- Well drilling required?
+- Distance to nearest water source?
+- Water quality testing needed?
+- Rainwater harvesting potential (roof area, annual rainfall) → [[21_Technology_Integration|Technology]]
+```
+
+**Additional Context to Add** (after line 59):
+
+Add a note in the Water section:
+```markdown
+**Bootstrap Model Water Strategy:**
+- Primary: Rainwater harvesting (IBC tanks, €500-2k)
+- Secondary: Well drilling if groundwater accessible (€1-5k)
+- Tertiary: Municipal connection if available nearby
+- Avoid: Atmospheric water generation (expensive, energy-intensive)
+```
+
+**Verification**:
+- [ ] No AWG references remain in file
+- [ ] Rainwater harvesting mentioned as v2.0 approach
+- [ ] Cross-reference to Technology Integration doc (21) accurate
+- [ ] Bootstrap water strategy clearly stated
+- [ ] Consistent with 21_Technology_Integration.md (confirmed v2.0 compliant)
+
+**Related Tasks**:
+- Part of systematic removal of v1.0 AWG technology
+- Related to FIX-025 (same file, budget issues)
+- Complements v2.0 technology alignment
 
 ---
 

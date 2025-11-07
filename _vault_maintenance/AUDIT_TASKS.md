@@ -884,109 +884,233 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 ---
 
-### 📁 IMPLEMENTATION TASKS (44 Files)
+### 📁 IMPLEMENTATION TASKS (44 Files in 9 Groups)
 
-**Organization**: 6 categories × 7 files each (plus overview files)
+**Organization**: 44 files broken into 9 manageable groups of ~5 files each
 
-For each implementation task file, all 6 personas should audit. Use this template for each:
+**Audit Approach**: Complete one group at a time, mark complete, proceed to next
 
-#### Site Selection (9 files)
+**Status**:
+- Group 1: [x] Complete (2025-11-07) - 2 issues found (FIX-025, FIX-026)
+- Group 2: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 3: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 4: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 5: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 6: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 7: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 8: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 9: [ ] Not started / [ ] In Progress / [ ] Complete
 
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/00_Site_Selection_Overview.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/01_Research_Target_Regions.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/02_Define_Site_Criteria.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/03_Conduct_Field_Surveys.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/04_Assess_Accessibility.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/05_Analyze_Legal_Status.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/06_Evaluate_Community_Dynamics.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/07_Prepare_Shortlist.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/08_Make_Final_Selection.md`
+---
 
-**Audit Focus for Site Selection Tasks:**
-- Curator: Content quality, practical guidance, completeness
-- Auditor: Consistency with 1 ha site requirements, v2.0 scale
-- Librarian: Cross-references to other tasks, strategic docs
-- Quality Inspector: Clarity, step-by-step guidance, formatting
+#### Group 1: Site Selection (Files 1-5) - 5 files
 
-#### Reforestation (7 files)
+**Status**: [x] Complete (Date: 2025-11-07)
 
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/reforestation/00_Reforestation_Overview.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/reforestation/01_Identify_Native_Species.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/reforestation/02_Source_Seedlings.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/reforestation/03_Prepare_Land.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/reforestation/04_Plant_Seedlings.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/reforestation/05_Monitor_Growth.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/reforestation/06_Long_Term_Management.md`
+**Files Audited**:
+1. ✅ `implementation_tasks/site_selection/00_Site_Selection_Overview.md`
+2. ✅ `implementation_tasks/site_selection/01_Identify_Potential_Locations.md`
+3. ✅ `implementation_tasks/site_selection/02_Evaluate_Land_Condition.md`
+4. ✅ `implementation_tasks/site_selection/03_Estimate_Restoration_Potential.md`
+5. ✅ `implementation_tasks/site_selection/04_Consider_Accessibility.md`
 
-**Audit Focus for Reforestation Tasks:**
-- Curator: Scientific accuracy, practical applicability, completeness
-- Auditor: Numbers appropriate for 1 ha (500-1000 trees not 10,000)
-- Librarian: Links to methodology (20), soil restoration, biodiversity
-- Quality Inspector: Clear instructions, safety guidance, formatting
+**Audit Focus (Curator)**:
+- Content quality and completeness
+- Practical guidance for 1-2 founders
+- Consistency with 1 ha site requirements (v2.0 scale)
+- Cross-references functional
+- No v1.0 Large-Scale assumptions (5-10 ha, large team)
 
-#### Biodiversity Conservation (7 files)
+**Results**: ⚠️ ISSUES FOUND - Added FIX-025 and FIX-026 to FIX_TASKS.md
 
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/00_Biodiversity_Overview.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/01_Baseline_Assessment.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/02_Create_Habitat_Zones.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/03_Install_Wildlife_Features.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/04_Monitor_Species.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/05_Manage_Invasive_Species.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/06_Document_Recovery.md`
+**Summary**:
+- **File 00 (Overview)**: Budget ranges too high for Bootstrap (€17-50k site selection, €2-20k/ha land)
+- **File 01 (Identify Locations)**: ✅ PASS - Scale-neutral, practical guidance
+- **File 02 (Evaluate Condition)**: Minor issue - €2-5k per site visit may be excessive for Bootstrap
+- **File 03 (Estimate Potential)**: 🚨 CRITICAL - Per-hectare restoration costs €5-40k incompatible with €20-30k total Y1 budget
+- **File 04 (Accessibility)**: 🚨 CRITICAL - AWG reference (line 59, deprecated tech) + infrastructure costs too high
 
-**Audit Focus for Biodiversity Tasks:**
-- Curator: Ecological accuracy, practical methodology, completeness
-- Auditor: Monitoring scope appropriate for 1 ha pilot
-- Librarian: Links to reforestation, water management, methodology
-- Quality Inspector: Scientific credibility, clear protocols, formatting
+**Issues Created**:
+- **FIX-025** (HIGH): Site Selection files contain v1.0 Large-Scale budget assumptions
+  - Affects files 00, 02, 03, 04
+  - Budget ranges need to be updated to v2.0 Bootstrap scale
+  - Per-hectare costs must reflect €20-30k total Year 1 budget
 
-#### Soil Restoration (7 files)
+- **FIX-026** (MEDIUM): File 04 contains deprecated AWG technology reference
+  - Line 59 references "Atmospheric water generation"
+  - Should reference rainwater harvesting instead (v2.0 approach)
 
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/00_Soil_Restoration_Overview.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/01_Assess_Soil_Health.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/02_Test_Soil_Properties.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/03_Add_Organic_Matter.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/04_Implement_Cover_Crops.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/05_Manage_Erosion.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/06_Monitor_Improvement.md`
+**Assessment**: Group 1 files have good structural quality and practical guidance, but budget assumptions are from v1.0 Large-Scale Model and need systematic update to v2.0 Bootstrap constraints.
 
-**Audit Focus for Soil Restoration Tasks:**
-- Curator: Scientific accuracy, practical applicability, completeness
-- Auditor: Soil amendment amounts appropriate for 1 ha scale
-- Librarian: Links to reforestation, water management, methodology
-- Quality Inspector: Clear instructions, safety guidance, formatting
+---
 
-#### Water Management (7 files)
+#### Group 2: Site Selection (Files 6-9) - 4 files
 
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/00_Water_Management_Overview.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/01_Assess_Water_Resources.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/02_Design_Catchment_Systems.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/03_Install_Storage.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/04_Create_Swales.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/05_Manage_Irrigation.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/06_Monitor_Conservation.md`
+**Status**: [ ] Not Started
 
-**Audit Focus for Water Management Tasks:**
-- Curator: Hydrological accuracy, practical applicability, completeness
-- Auditor: Water systems scaled for 1 ha, v2.0 tech specs (IBC tanks)
-- Librarian: Links to technology integration (21), methodology (20)
-- Quality Inspector: Clear instructions, calculations accurate, formatting
+**Files to Audit**:
+1. `implementation_tasks/site_selection/05_Analyze_Legal_Status.md`
+2. `implementation_tasks/site_selection/06_Evaluate_Community_Dynamics.md`
+3. `implementation_tasks/site_selection/07_Prepare_Shortlist.md`
+4. `implementation_tasks/site_selection/08_Make_Final_Selection.md`
 
-#### Community Engagement (7 files)
+**Audit Focus (Curator)**:
+- Same as Group 1
+- Legal requirements appropriate for Bootstrap scale
+- Community assessment realistic for 1-2 founders
 
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/00_Community_Engagement_Overview.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/01_Identify_Stakeholders.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/02_Build_Relationships.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/03_Organize_Workshops.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/04_Create_Partnerships.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/05_Facilitate_Participation.md`
-- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/06_Sustain_Involvement.md`
+**Results**: _______________
 
-**Audit Focus for Community Engagement Tasks:**
-- Curator: Social methodology soundness, practical applicability
-- Auditor: Engagement scope appropriate for Bootstrap (grassroots, not large PR)
-- Librarian: Links to marketing (60), operations (43), funding (32)
-- Quality Inspector: Clear community protocols, respectful language, formatting
+---
+
+#### Group 3: Reforestation (Files 1-5) - 5 files
+
+**Status**: [ ] Not Started
+
+**Files to Audit**:
+1. `implementation_tasks/reforestation/00_Reforestation_Overview.md`
+2. `implementation_tasks/reforestation/01_Identify_Native_Species.md`
+3. `implementation_tasks/reforestation/02_Source_Seedlings.md`
+4. `implementation_tasks/reforestation/03_Prepare_Land.md`
+5. `implementation_tasks/reforestation/04_Plant_Seedlings.md`
+
+**Audit Focus (Curator)**:
+- Scientific accuracy for Mediterranean ecosystems
+- Tree numbers appropriate for 1 ha (500-1000 trees not 10,000)
+- Practical guidance for small team execution
+- Budget expectations realistic (€3-5k range)
+- Links to methodology (20), soil, biodiversity docs
+
+**Results**: _______________
+
+---
+
+#### Group 4: Reforestation (Files 6-7) + Biodiversity (Files 1-3) - 5 files
+
+**Status**: [ ] Not Started
+
+**Files to Audit**:
+1. `implementation_tasks/reforestation/05_Monitor_Growth.md`
+2. `implementation_tasks/reforestation/06_Long_Term_Management.md`
+3. `implementation_tasks/biodiversity/00_Biodiversity_Overview.md`
+4. `implementation_tasks/biodiversity/01_Baseline_Assessment.md`
+5. `implementation_tasks/biodiversity/02_Create_Habitat_Zones.md`
+
+**Audit Focus (Curator)**:
+- Monitoring protocols feasible for 1-2 founders
+- Ecological accuracy and completeness
+- Habitat zones scaled for 1 ha pilot
+- Cross-references between reforestation and biodiversity
+
+**Results**: _______________
+
+---
+
+#### Group 5: Biodiversity (Files 4-7) + Soil (File 1) - 5 files
+
+**Status**: [ ] Not Started
+
+**Files to Audit**:
+1. `implementation_tasks/biodiversity/03_Install_Wildlife_Features.md`
+2. `implementation_tasks/biodiversity/04_Monitor_Species.md`
+3. `implementation_tasks/biodiversity/05_Manage_Invasive_Species.md`
+4. `implementation_tasks/biodiversity/06_Document_Recovery.md`
+5. `implementation_tasks/soil_restoration/00_Soil_Restoration_Overview.md`
+
+**Audit Focus (Curator)**:
+- Wildlife features appropriate for 1 ha scale
+- Monitoring scope realistic for Bootstrap
+- Invasive species management practical
+- Soil restoration overview comprehensive
+
+**Results**: _______________
+
+---
+
+#### Group 6: Soil Restoration (Files 2-6) - 5 files
+
+**Status**: [ ] Not Started
+
+**Files to Audit**:
+1. `implementation_tasks/soil_restoration/01_Assess_Soil_Health.md`
+2. `implementation_tasks/soil_restoration/02_Test_Soil_Properties.md`
+3. `implementation_tasks/soil_restoration/03_Add_Organic_Matter.md`
+4. `implementation_tasks/soil_restoration/04_Implement_Cover_Crops.md`
+5. `implementation_tasks/soil_restoration/05_Manage_Erosion.md`
+
+**Audit Focus (Curator)**:
+- Soil assessment methods practical for founders
+- Testing costs appropriate for Bootstrap budget
+- Amendment amounts scaled for 1 ha
+- Cover crop guidance complete and realistic
+- Erosion control feasible for small team
+
+**Results**: _______________
+
+---
+
+#### Group 7: Soil (File 7) + Water Management (Files 1-4) - 5 files
+
+**Status**: [ ] Not Started
+
+**Files to Audit**:
+1. `implementation_tasks/soil_restoration/06_Monitor_Improvement.md`
+2. `implementation_tasks/water_management/00_Water_Management_Overview.md`
+3. `implementation_tasks/water_management/01_Assess_Water_Resources.md`
+4. `implementation_tasks/water_management/02_Design_Catchment_Systems.md`
+5. `implementation_tasks/water_management/03_Install_Storage.md`
+
+**Audit Focus (Curator)**:
+- Water systems match v2.0 tech specs (rainwater, IBC tanks)
+- NO AWG references (deprecated technology)
+- Budget expectations realistic (part of €15-20k tech total)
+- DIY installation guidance clear
+- Cross-references to technology doc (21)
+
+**Results**: _______________
+
+---
+
+#### Group 8: Water Management (Files 5-7) + Community (Files 1-2) - 5 files
+
+**Status**: [ ] Not Started
+
+**Files to Audit**:
+1. `implementation_tasks/water_management/04_Create_Swales.md`
+2. `implementation_tasks/water_management/05_Manage_Irrigation.md`
+3. `implementation_tasks/water_management/06_Monitor_Conservation.md`
+4. `implementation_tasks/community_engagement/00_Community_Engagement_Overview.md`
+5. `implementation_tasks/community_engagement/01_Identify_Stakeholders.md`
+
+**Audit Focus (Curator)**:
+- Water management practical for 1 ha scale
+- Community engagement appropriate for Bootstrap (grassroots, not large PR)
+- Stakeholder identification realistic for founders
+- Cross-references to marketing (60), operations (43)
+
+**Results**: _______________
+
+---
+
+#### Group 9: Community Engagement (Files 3-7) - 5 files
+
+**Status**: [ ] Not Started
+
+**Files to Audit**:
+1. `implementation_tasks/community_engagement/02_Build_Relationships.md`
+2. `implementation_tasks/community_engagement/03_Organize_Workshops.md`
+3. `implementation_tasks/community_engagement/04_Create_Partnerships.md`
+4. `implementation_tasks/community_engagement/05_Facilitate_Participation.md`
+5. `implementation_tasks/community_engagement/06_Sustain_Involvement.md`
+
+**Audit Focus (Curator)**:
+- Relationship building practical for 1-2 founders
+- Workshop scale appropriate for Bootstrap
+- Partnership approach realistic (not corporate-scale)
+- Participation methods feasible for small project
+- Sustainability strategies appropriate for pilot scale
+
+**Results**: _______________
 
 ---
 
