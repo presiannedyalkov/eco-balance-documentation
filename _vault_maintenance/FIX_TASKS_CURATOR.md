@@ -1,7 +1,7 @@
 # 🎭 CURATOR FIX TASKS
 
 **Persona**: Curator
-**Focus**: Issues found during Curator's content quality, coherence, and v2.0 compliance audits
+**Focus**: Content quality, completeness, coherence, narrative flow, cross-references
 **Total Issues Found**: 12
 **Status**: All documented, awaiting Phase 2 (Fix phase) to begin
 **Version**: 2.0.0 (Bootstrap Model)
@@ -10,7 +10,7 @@
 
 ## 📋 PURPOSE
 
-This file contains **only** the fix tasks discovered by the **CURATOR** persona during audit, extracted from the master FIX_TASKS.md to prevent merge conflicts when multiple personas work simultaneously.
+This file contains **only** the fix tasks discovered by the **CURATOR** persona during audit.
 
 **Important**: This is PHASE 2 work. Do NOT start fixes until the full vault audit is 100% complete.
 
@@ -29,7 +29,7 @@ This file contains **only** the fix tasks discovered by the **CURATOR** persona 
 ### Merge Strategy
 
 When ready to merge:
-- Your branch will only modify THIS file (FIX_TASKS_CURATOR.md) and the files being fixed
+- Your branch will only modify THIS file and the files being fixed
 - Other personas modify their own fix files
 - Reduced merge conflicts!
 
@@ -37,15 +37,10 @@ When ready to merge:
 
 ## 📊 FIX TASKS BY PRIORITY
 
-### 🚨 CRITICAL PRIORITY
-
-None - All Curator-found issues are HIGH, MEDIUM, or LOW priority
-
----
 
 ### 🔴 HIGH PRIORITY
 
-### ⚠️ FIX-024: Fix Broken Cross-Reference to 22_Research_Framework
+### ⚠️ FIX-024: Fix Broken Cross-Reference to 60_Marketing_Strategy
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
@@ -107,6 +102,9 @@ grep -r "22_Research_Framework" /home/user/eco-balance-documentation/ --include=
 **Related Tasks**:
 - Similar to FIX-005, FIX-006, FIX-007, FIX-008 (cross-reference fixes)
 - Part of systematic link cleanup
+
+---
+
 
 ---
 
@@ -193,6 +191,54 @@ Site selection implementation files contain budget assumptions and cost estimate
 - FIX-001 through FIX-004 (Strategic docs conversion)
 - FIX-009 through FIX-012 (Organizational docs conversion)
 - Part of systematic v2.0 Bootstrap alignment
+**Task ID**: LIB-2025-11-07-003
+**Found By**: Librarian during audit of strategic docs 01-04
+
+**File**: Multiple files link to doc 60 with wrong filename
+
+**Files Affected**:
+- `01_Executive_Summary.md` (line 35)
+- `02_Project_Vision.md` (lines 78, 188)
+- `03_Success_Factors.md` (lines 71, 239)
+- `04_Current_Status_Assessment.md` (line 230)
+- `50_Risk_Assessment.md` (line 322) - Added from Step 4 audit
+- `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
+
+**Issue**:
+Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
+
+**Fix Required**:
+
+Update all links to use correct filename:
+- FROM: `[[60_Marketing_Strategy|...]]`
+- TO: `[[60_Marketing_Communications_Strategy|...]]`
+
+**Files to Update** (10 instances):
+1. 01_Executive_Summary.md (line 35)
+2. 02_Project_Vision.md (line 78)
+3. 02_Project_Vision.md (line 188)
+4. 03_Success_Factors.md (line 71)
+5. 03_Success_Factors.md (line 239)
+6. 04_Current_Status_Assessment.md (line 230)
+7. 50_Risk_Assessment.md (line 322)
+8. 51_Key_Performance_Indicators.md (line 129)
+9. 51_Key_Performance_Indicators.md (line 275)
+10. 51_Key_Performance_Indicators.md (line 462)
+
+**Verification**:
+- [ ] All 10 links now functional
+- [ ] All links point to 60_Marketing_Communications_Strategy.md
+- [ ] Link text still makes sense
+- [ ] No other references to 60_Marketing_Strategy remaining
+
+**Related Tasks**: FIX-001 through FIX-004 (may update some links during rewrites)
+
+---
+
+## 🟡 MEDIUM PRIORITY FIXES
+
+These improve vault quality and consistency. Complete after HIGH priority fixes.
+
 
 ---
 
@@ -265,6 +311,9 @@ Add clarification about Bootstrap scale:
 
 ---
 
+
+---
+
 ### ⚠️ FIX-030: Protected Areas File Uses 50 Hectare Example (Should Be 1 Hectare Bootstrap)
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
@@ -295,7 +344,83 @@ File contains detailed example using 50-hectare site instead of 1 hectare Bootst
 
 **Lines 478-533 - Replace 50 Hectare Example**:
 
-See FIX-030 in master FIX_TASKS.md for complete 1-hectare Bootstrap replacement example.
+Change entire section to reflect 1 hectare Bootstrap:
+
+```markdown
+## 📊 Sample Protection Plan
+
+**Example for 1-Hectare Bootstrap Site:**
+
+### Zone Allocation
+
+**Core Protection (0.15 ha = 15%):**
+- Location: Small wetland area or remnant vegetation patch (1,500 m²)
+- Access: Research/monitoring only, by founders
+- Features: Critical nesting site, seed bank for native plants, sensitive microhabitats
+- Purpose: Undisturbed reference area
+
+**Buffer Zone (0.25 ha = 25%):**
+- Location: 10-20m buffer around core zone
+- Access: Founders only for essential restoration work
+- Purpose: Protect core from disturbance, reduce edge effects
+
+**Active Restoration (0.5 ha = 50%):**
+- Location: Former degraded areas, main planting zone
+- Access: Founders, volunteers (supervised), researchers
+- Activities: Reforestation, soil work, habitat creation, main project focus
+
+**Public Access/Demo (0.1 ha = 10%):**
+- Location: Entry area near tiny house, small demonstration zone
+- Access: Visitors during tours (by appointment)
+- Features: Interpretive elements, "before/after" examples, community workshops
+
+### Seasonal Restrictions
+
+**March 15 - July 31 (Breeding Season):**
+- Core zone: Completely closed (bird nesting, amphibian breeding)
+- Buffer zone: Essential monitoring only
+- Restoration zone: Avoid noisy work near core
+- Demo area: Tours restricted to quiet observation
+
+**August 1 - March 14 (Non-Breeding):**
+- Core zone: Quarterly monitoring only
+- Buffer zone: Restoration work allowed
+- Restoration zone: Full access for work
+- Demo area: Tours and workshops allowed
+
+### Infrastructure
+
+**Signage: 6-8 signs total**
+- 3-4 zone boundary markers (wooden posts with simple signs)
+- 2-3 interpretive panels (wildlife, restoration progress)
+- 1-2 directional markers for visitors
+- Materials: DIY wooden signs, weatherproof printing
+
+**Barriers:**
+- Natural barriers primarily (dense plantings, existing features)
+- Simple rope or split-rail markers at core zone entry (50m)
+- Log barriers for path delineation (10-15 logs from site clearing)
+
+**Monitoring:**
+- 2-3 camera traps (rotate positions)
+- Founder-led observations (daily/weekly)
+- Quarterly documentation
+
+**Budget (Bootstrap Scale):**
+- Signage materials: €150-300 (DIY approach)
+- Rope/barriers: €50-100
+- Camera traps (2-3): €300-600
+- Trail markers (rocks/logs): €0-50 (use on-site materials)
+- **Total: €500-1,050** (vs €10,700 for 50 ha example)
+- Annual maintenance: €100-200
+
+**Notes:**
+- 1 ha Bootstrap scale focuses on essential protection
+- Founders conduct most monitoring (minimal external labor)
+- DIY approach keeps costs within €20-30k Year 1 budget
+- Simple but effective protection strategy
+- Can expand protection zones as project scales post-pilot
+```
 
 **Verification**:
 - [ ] Example uses 1 hectare Bootstrap scale
@@ -312,7 +437,145 @@ See FIX-030 in master FIX_TASKS.md for complete 1-hectare Bootstrap replacement 
 
 ---
 
-## 🟡 MEDIUM PRIORITY
+
+---
+
+
+### 🟡 MEDIUM PRIORITY
+
+### ⚠️ FIX-025: Site Selection Implementation Files Contain v1.0 Large-Scale Budget Assumptions
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🔴 HIGH
+**Task ID**: CUR-2025-11-07-025
+**Found By**: Curator during Step 5 Group 1 audit of Implementation Tasks
+
+**Files**:
+- `implementation_tasks/site_selection/00_Site_Selection_Overview.md`
+- `implementation_tasks/site_selection/02_Evaluate_Land_Condition.md`
+- `implementation_tasks/site_selection/03_Estimate_Restoration_Potential.md`
+- `implementation_tasks/site_selection/04_Consider_Accessibility.md`
+
+**Issue**:
+Site selection implementation files contain budget assumptions and cost estimates from v1.0 Large-Scale Model that are incompatible with v2.0 Bootstrap Model budget constraints.
+
+**Specific Problems**:
+
+**File 00 (Overview)**:
+- Line 158: "€17,000-50,000 before purchase" for site selection process
+- Line 159: "€2,000-20,000/hectare" land acquisition cost
+- These are v1.0 assumptions for evaluating multiple 5-10 ha sites
+
+**File 02 (Evaluate Land Condition)**:
+- Line 82: "€2,000-5,000 per site visit"
+- Excessive for Bootstrap evaluating 3-5 sites with €20-30k total Y1 budget
+
+**File 03 (Estimate Restoration Potential)**:
+- Line 18: "€5,000-10,000/hectare" (Low difficulty)
+- Line 26: "€10,000-20,000/hectare" (Medium difficulty)
+- Line 34: "€20,000-40,000+/hectare" (High difficulty)
+- These per-hectare costs are incompatible with €20-30k TOTAL Year 1 budget
+
+**File 04 (Consider Accessibility)**:
+- Line 198: "€30,000-100,000+ per building" for on-site accommodation
+- Lines 195-206: All infrastructure costs scaled for v1.0 Large-Scale
+
+**Fix Required**:
+
+**Update all budget figures to v2.0 Bootstrap scale:**
+
+**File 00 - Site Selection Overview**:
+- Line 158: Change to "€1,000-3,000 before purchase" (desktop research, 1-2 site visits)
+- Line 159: Update to "€2,000-15,000/hectare (or lease options)" with note about Bootstrap targeting 1 ha
+- Add context: "For Bootstrap Model: Simplified site selection focusing on 1 hectare pilot within €20-30k Year 1 budget"
+
+**File 02 - Evaluate Land Condition**:
+- Line 82: Change to "€500-1,500 per site visit" (founders conducting assessment, minimal lab tests)
+- Add note: "Bootstrap approach: Founders conduct assessments with expert consultation as needed"
+
+**File 03 - Estimate Restoration Potential**:
+- Update cost framework to reflect Bootstrap 1 ha pilot:
+  - Low difficulty: "€3,000-5,000 total for 1 ha Bootstrap pilot"
+  - Medium difficulty: "€5,000-8,000 total for 1 ha Bootstrap pilot"
+  - High difficulty: "€8,000-12,000 total for 1 ha Bootstrap pilot"
+- Add prominent note: "These figures are for v2.0 Bootstrap Model (1 ha pilot, €20-30k Year 1 total budget including land, infrastructure, and operations)"
+
+**File 04 - Consider Accessibility**:
+- Line 198: Change to "€8,000-12,000 for DIY tiny house (Bootstrap Model)"
+- Lines 195-206: Update ALL infrastructure costs to Bootstrap scale:
+  - Road improvements: "€500-2,000 minor improvements if needed"
+  - Grid electricity: "Off-grid solar (€3-5k) recommended for Bootstrap"
+  - Well drilling: "€1,000-5,000 or rainwater harvesting"
+  - Internet: "€0-500 (mobile hotspot or satellite)"
+- Add section: "Bootstrap Model Accessibility: Focus on sites with basic access already present to minimize infrastructure investment"
+
+**General Updates to All Files**:
+- Add Bootstrap context boxes where budget figures appear
+- Reference [[30_Business_Model|Business Model]] for v2.0 budget framework
+- Note that larger-scale costs apply to post-pilot expansion phases
+
+**Verification**:
+- [ ] All budget figures compatible with €20-30k Year 1 Bootstrap budget
+- [ ] 1 hectare pilot scale reflected in all estimates
+- [ ] Founder-level operations assumed (not large team)
+- [ ] Bootstrap context clearly noted where relevant
+- [ ] Cross-references to v2.0 compliant docs (30, 32, 42, 43) included
+
+**Related Tasks**:
+- FIX-001 through FIX-004 (Strategic docs conversion)
+- FIX-009 through FIX-012 (Organizational docs conversion)
+- Part of systematic v2.0 Bootstrap alignment
+**Task ID**: LIB-2025-11-07-003
+**Found By**: Librarian during audit of strategic docs 01-04
+
+**File**: Multiple files link to doc 60 with wrong filename
+
+**Files Affected**:
+- `01_Executive_Summary.md` (line 35)
+- `02_Project_Vision.md` (lines 78, 188)
+- `03_Success_Factors.md` (lines 71, 239)
+- `04_Current_Status_Assessment.md` (line 230)
+- `50_Risk_Assessment.md` (line 322) - Added from Step 4 audit
+- `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
+
+**Issue**:
+Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
+
+**Fix Required**:
+
+Update all links to use correct filename:
+- FROM: `[[60_Marketing_Strategy|...]]`
+- TO: `[[60_Marketing_Communications_Strategy|...]]`
+
+**Files to Update** (10 instances):
+1. 01_Executive_Summary.md (line 35)
+2. 02_Project_Vision.md (line 78)
+3. 02_Project_Vision.md (line 188)
+4. 03_Success_Factors.md (line 71)
+5. 03_Success_Factors.md (line 239)
+6. 04_Current_Status_Assessment.md (line 230)
+7. 50_Risk_Assessment.md (line 322)
+8. 51_Key_Performance_Indicators.md (line 129)
+9. 51_Key_Performance_Indicators.md (line 275)
+10. 51_Key_Performance_Indicators.md (line 462)
+
+**Verification**:
+- [ ] All 10 links now functional
+- [ ] All links point to 60_Marketing_Communications_Strategy.md
+- [ ] Link text still makes sense
+- [ ] No other references to 60_Marketing_Strategy remaining
+
+**Related Tasks**: FIX-001 through FIX-004 (may update some links during rewrites)
+
+---
+
+## 🟡 MEDIUM PRIORITY FIXES
+
+These improve vault quality and consistency. Complete after HIGH priority fixes.
+
+
+---
 
 ### ⚠️ FIX-026: Remove Deprecated AWG Technology Reference from Site Selection File
 
@@ -381,6 +644,9 @@ Add a note in the Water section:
 
 ---
 
+
+---
+
 ### ⚠️ FIX-028: Reforestation Seedling Sourcing File Uses 2 Hectare Examples (Should Be 1 Hectare)
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
@@ -404,9 +670,74 @@ File contains calculation examples using 2 hectares instead of 1 hectare Bootstr
 - Lines 102-107: Species breakdown based on 2,500 seedlings (2 ha + buffer)
 - Lines 214-217: Budget example "For 2,000 seedlings" (2 ha scale)
 
+**Impact**:
+- Minor misalignment with v2.0 Bootstrap Model
+- Could confuse users about appropriate scale
+- Budget examples higher than necessary for 1 ha pilot
+- Examples should reflect actual Bootstrap implementation
+
 **Fix Required**:
 
-See FIX-028 in master FIX_TASKS.md for detailed fix instructions with updated calculations.
+**Lines 94-100 - Update Example Calculation**:
+
+Change:
+```markdown
+**Example Calculation:**
+```
+Area: 2 hectares
+Density: 1,000 trees/hectare
+Base need: 2,000 seedlings
+Buffer (25%): 500 seedlings
+Total order: 2,500 seedlings
+```
+```
+
+To:
+```markdown
+**Example Calculation (Bootstrap Model - 1 hectare):**
+```
+Area: 1 hectare
+Density: 1,000 trees/hectare (dense restoration planting)
+Base need: 1,000 seedlings
+Buffer (25%): 250 seedlings
+Total order: 1,250 seedlings
+```
+```
+
+**Lines 102-107 - Update Species Breakdown**:
+
+Change calculations to reflect 1,250 total seedlings instead of 2,500:
+- 30% Oak = 375 seedlings (not 750)
+- 20% Pine = 250 seedlings (not 500)
+- 15% Carob = 188 seedlings (not 375)
+- etc.
+
+**Lines 214-217 - Update Budget Example**:
+
+Change:
+```markdown
+**For 2,000 seedlings:**
+- Budget estimate: €5,000-15,000
+- Add 20% contingency: €6,000-18,000
+```
+
+To:
+```markdown
+**For 1,000-1,250 seedlings (1 hectare Bootstrap):**
+- Budget estimate: €2,500-8,000
+- Add 20% contingency: €3,000-10,000
+```
+
+**Add Bootstrap Context Note** (after the example):
+
+Add clarification:
+```markdown
+**Bootstrap Model Note:**
+- 1 hectare pilot site requires 1,000-1,250 seedlings (with buffer)
+- Dense planting (1,000 trees/ha) for faster canopy closure
+- Seedling budget fits within €20-30k Year 1 total budget
+- For larger sites post-pilot, scale calculations proportionally
+```
 
 **Verification**:
 - [ ] All examples use 1 hectare as baseline
@@ -419,6 +750,9 @@ See FIX-028 in master FIX_TASKS.md for detailed fix instructions with updated ca
 - Part of systematic v2.0 Bootstrap scale alignment
 - Related to FIX-025, FIX-027 (other scale corrections)
 - Ensures consistency with reforestation methodology
+
+---
+
 
 ---
 
@@ -453,9 +787,66 @@ Files contain budget examples using 2 hectares instead of 1 hectare Bootstrap Mo
   - 10-Year Total: €35,000-70,000 for 2 hectares
   - Should use 1 hectare for Bootstrap examples
 
+**Impact**:
+- Minor misalignment with v2.0 Bootstrap Model
+- Budget examples higher than necessary for 1 ha pilot
+- Could create confusion about actual Bootstrap costs
+- Examples should reflect realistic 1 ha implementation
+
 **Fix Required**:
 
-See FIX-029 in master FIX_TASKS.md for detailed budget updates and Bootstrap context notes.
+**File 05 - Lines 339-342 - Update Monitoring Budget**:
+
+Change:
+```markdown
+**Annual Monitoring Budget (2 hectares):**
+- Basic program: €2,000-4,000
+- Enhanced with technology: €5,000-10,000
+```
+
+To:
+```markdown
+**Annual Monitoring Budget (1 hectare Bootstrap):**
+- Basic program: €1,000-2,000
+- Enhanced with technology: €2,500-5,000
+```
+
+**File 06 - Lines 361-382 - Update Management Budgets**:
+
+Change all references from "2 hectares" to "1 hectare Bootstrap":
+
+**Year 1-3 (Intensive):**
+- Labor: €1,500-3,000/year (was €3,000-6,000)
+- Water: €250-750/year (was €500-1,500)
+- Mulch/supplies: €250-500/year (was €500-1,000)
+- Replacements: €500-1,500/year (was €1,000-3,000)
+- **Total: €2,500-5,750/year** (was €5,000-11,000)
+
+**Year 4-7 (Moderate):**
+- Labor: €1,000-2,000/year (was €2,000-4,000)
+- Water: €150-400/year (was €300-800)
+- Tools/supplies: €150-300/year (was €300-600)
+- **Total: €1,300-2,700/year** (was €2,600-5,400)
+
+**Year 8+ (Light):**
+- Labor: €500-1,000/year (was €1,000-2,000)
+- Monitoring: €250-500/year (was €500-1,000)
+- Occasional interventions: €250-500/year (was €500-1,000)
+- **Total: €1,000-2,000/year** (was €2,000-4,000)
+
+**10-Year Total: €17,500-35,000 for 1 hectare** (was €35,000-70,000 for 2 hectares)
+
+**Add Bootstrap Context Note** (after budget tables):
+
+Add clarification:
+```markdown
+**Bootstrap Model Note:**
+- These budgets reflect 1 hectare pilot site management
+- Costs are within the total €20-30k Year 1 + ongoing funding model
+- Year 1 is most intensive, costs decrease as trees establish
+- For larger sites post-pilot, scale proportionally (but not always linearly - some economies of scale)
+- Many tasks can be done by founders, reducing labor costs
+```
 
 **Verification**:
 - [ ] All budget examples use 1 hectare as baseline
@@ -468,6 +859,9 @@ See FIX-029 in master FIX_TASKS.md for detailed budget updates and Bootstrap con
 - FIX-028 (File 02 uses 2 ha examples)
 - Part of systematic v2.0 Bootstrap scale alignment
 - All reforestation files have consistent 2 ha pattern that needs updating
+
+---
+
 
 ---
 
@@ -492,9 +886,120 @@ File contains sample monitoring program using 50-hectare site instead of 1 hecta
   - 10-Year Total: ~€110,000 (~€11,000/year average)
   - 30 vegetation plots, 15 bird points, 20 cameras for 50 ha
 
+**Impact**:
+- Minor misalignment with v2.0 Bootstrap Model
+- Budget examples much higher than necessary for 1 ha pilot
+- Could create impression Bootstrap requires extensive monitoring budget
+- Examples should reflect realistic Bootstrap monitoring scope
+
 **Fix Required**:
 
-See FIX-031 in master FIX_TASKS.md for complete 1-hectare Bootstrap replacement example with founder-led monitoring approach.
+**Lines 552-589 - Replace with 1 Hectare Bootstrap Example**:
+
+Change:
+```markdown
+**For 50-hectare restoration site:**
+
+### Year 1 (Baseline)
+**Comprehensive Surveys:**
+- Vegetation plots (30 permanent plots)
+- Bird point counts (15 points, 6 visits each)
+- Camera trap array (20 cameras, continuous)
+- Amphibian call surveys (8 points, 6 visits)
+- Butterfly transects (2 routes, 15 weeks)
+- One-time surveys of mammals, reptiles, invertebrates
+
+**Effort:** ~80 field days, €15,000
+```
+
+To:
+```markdown
+**For 1-Hectare Bootstrap Site:**
+
+### Year 1 (Baseline - Founder-Led)
+**Comprehensive Surveys:**
+- Vegetation plots (6 permanent 10m² plots)
+- Bird point counts (3 points, 6 visits each by founders)
+- Camera traps (2-3 cameras, continuous)
+- Amphibian call surveys (2 points, 4-6 visits)
+- Butterfly transects (1 route, 10-15 weeks)
+- Opportunistic observations (mammals, reptiles, invertebrates)
+- iNaturalist documentation (community science)
+
+**Effort:** ~20-30 founder field days, ~€2,000-3,000
+- Camera traps: €300-600
+- Identification resources: €100-200
+- Soil samples for biodiversity: €300-500
+- Expert consultation (2-3 days): €800-1,200
+- Materials (flagging, data sheets, etc.): €200-500
+```
+
+**Update Years 2-5**:
+```markdown
+### Years 2-5 (Frequent Monitoring - Bootstrap)
+
+**Annual Surveys (Founder-Led):**
+- Vegetation plots (annual, spring)
+- Bird surveys (breeding season, 4-6 visits)
+- Camera traps (continuous, founders check weekly)
+- Amphibian surveys (breeding season, 3-4 visits)
+- Butterfly/pollinator observations (10 weeks, casual)
+- iNaturalist ongoing documentation
+
+**Effort:** ~15-20 founder field days/year, ~€1,500-2,500/year
+- Camera maintenance/batteries: €100-200
+- Annual expert consultation: €500-800
+- Lab tests (soil biodiversity, etc.): €300-500
+- Materials and apps: €100-300
+- Photo documentation: €0-200
+```
+
+**Update Years 6+**:
+```markdown
+### Years 6+ (Long-Term Monitoring - Bootstrap)
+
+**Reduced Frequency (Maintenance):**
+- Vegetation: Every 2 years
+- Birds: Annually (breeding season)
+- Camera traps: Continuous (founders)
+- Other groups: Every 2-3 years
+- Ongoing iNaturalist observations
+
+**Effort:** ~10-15 founder field days/year, ~€1,000-1,500/year
+- Camera costs: €100-200
+- Periodic expert review: €300-500
+- Materials: €100-200
+- Community science engagement: €0-200
+```
+
+**Update 10-Year Total**:
+```markdown
+### Total 10-Year Cost (Bootstrap)
+
+**~€17,000-25,000** (~€1,700-2,500/year average)
+
+**Bootstrap Approach:**
+- Founders conduct most monitoring (labor = time, not cash)
+- Strategic use of camera traps multiplies capacity
+- Community science (iNaturalist) supplements formal monitoring
+- Annual expert consultation for quality control
+- Focus on key indicators rather than comprehensive surveys
+- Budget fits within Bootstrap ongoing operations
+```
+
+**Add Bootstrap Context Note**:
+
+Add after example:
+```markdown
+**Bootstrap Model Notes:**
+- 1 ha pilot requires scaled-down monitoring
+- Founders are primary observers (reduces costs dramatically)
+- Camera traps provide 24/7 data with minimal effort
+- Community science platforms extend reach
+- Annual expert consultation ensures quality
+- Monitoring budget ~€1,500-2,500/year fits within operational costs
+- As project scales post-pilot, monitoring expands proportionally
+```
 
 **Verification**:
 - [ ] Example uses 1 hectare Bootstrap scale
@@ -508,6 +1013,9 @@ See FIX-031 in master FIX_TASKS.md for complete 1-hectare Bootstrap replacement 
 **Related Tasks**:
 - FIX-030 (File 03 uses 50 ha protected areas example)
 - Part of systematic v2.0 Bootstrap scale alignment
+
+---
+
 
 ---
 
@@ -533,7 +1041,50 @@ Document's "Phase 1" (Year 1) describes €250-500k budget and 3-4 person team, 
 
 **Fix Required**:
 
-See FIX-033 in master FIX_TASKS.md for recommended approach to add Bootstrap Phase section and update terminology.
+**Option A (Recommended)**: Add Bootstrap Phase clarification at beginning:
+1. Add new section after Overview (before Phase 1):
+   ```markdown
+   ## Bootstrap Phase (Months 1-12): Proof of Concept
+
+   **Goal:** Validate restoration approach at 1 hectare pilot scale
+
+   **This is Year 0** - proving the model before Phase 1 expansion. See:
+   - [[42_Next_Steps_90_Days|First 90 Days]]: Campaign & land acquisition
+   - [[43_Operations_Action_Plan|Operations Guide]]: Bootstrap operations
+   - [[44_Site_Selection_Land_Acquisition|Site Selection]]: Finding 1 ha site
+
+   **Bootstrap Success Metrics**:
+   - 1 hectare secured and operational
+   - 100-200 trees planted with 70%+ survival
+   - €20-30k Year 1 budget managed effectively
+   - Restoration methods documented
+   - Model proven viable for scaling
+
+   **After Bootstrap Success** → Phase 1 expansion begins (below)
+
+   ---
+   ```
+
+2. Update Phase 1 header (line 11):
+   ```markdown
+   ## Phase 1: Foundation & Scale (Years 2-3)
+
+   **Prerequisite:** Successful 1 hectare Bootstrap pilot complete
+
+   **Goal:** Scale proven approach to 5-10 hectares
+   ```
+
+3. Add note in "Immediate Next Steps (90 Days)" section (line 562):
+   ```markdown
+   ## Immediate Next Steps (90 Days)
+
+   **NOTE**: These are Bootstrap Phase actions. The "Phase 1" expansion described above
+   begins AFTER successful completion of 1 hectare pilot (typically Year 2+).
+
+   **These expansion plans begin after:**
+   ```
+
+**Option B (Alternative)**: Rename phases to make Bootstrap explicit throughout
 
 **Verification**:
 - [ ] Clear distinction between Bootstrap (1 ha) and Phase 1 (5-10 ha)
@@ -545,6 +1096,9 @@ See FIX-033 in master FIX_TASKS.md for recommended approach to add Bootstrap Pha
 **Related Tasks**:
 - Related to FIX-000 through FIX-004 (other v2.0 clarifications)
 - Content otherwise excellent, just needs terminology clarity
+
+---
+
 
 ---
 
@@ -598,9 +1152,13 @@ To:
 
 ---
 
-## 🟢 LOW PRIORITY
 
-### ⚠️ FIX-023: Standardize Currency Symbols ($ to €) in Soil Restoration and Water Management Files
+---
+
+
+### 🟢 LOW PRIORITY
+
+### ⚠️ FIX-023: Standardize Navigation Patterns in 00_Eco_Balance_Hub.md
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
@@ -624,37 +1182,165 @@ To:
 - `implementation_tasks/water_management/01_Assess_Water_Needs.md`
 - `implementation_tasks/water_management/02_Rainwater_Harvesting.md`
 - `implementation_tasks/water_management/03_Build_Water_Storage_Structures.md`
-- (Files 04-06 likely also use $)
+- (Files 04-06 not yet audited but likely also use $)
 
 **Issue**:
 All soil restoration and water management files use USD ($) for budget estimates instead of EUR (€) like the rest of the documentation. This creates minor currency inconsistency across two complete categories.
 
 **Context**:
-- Files provide scale-neutral guidance (appropriate for any site size)
+- Files provide per-acre or scale-neutral guidance (appropriate for any site size)
 - NO scale alignment issues - content is excellent throughout
 - ONLY issue is currency symbol ($ vs €)
-- Likely sourced from US-based materials
+- Likely sourced from US-based materials or created separately from other docs
+- Both categories have consistent pattern suggesting same source
 - Lowest priority cosmetic fix
 
 **Fix Required**:
 
-**Search and Replace $ with €** in all soil restoration and water management files - symbol replacement only, do NOT adjust numerical values.
+**Search and Replace $ with €** in all soil restoration and water management files:
 
-See FIX-023 in master FIX_TASKS.md for specific line references.
+**File 00**:
+- Line 62-65: Budget estimates
+
+**File 01**:
+- Lines 177-178: Equipment costs
+- Lines 222-228: Budget estimates
+- All instances of "$" → "€"
+
+**File 02**:
+- Lines 222-228: Budget estimates
+- All instances of "$" → "€"
+
+**File 03**:
+- Lines 233-238: Budget considerations
+- All instances of "$" → "€"
+
+**File 04**:
+- Lines 243-249: Budget estimates
+- Line 249: "$500-1,500+" → "€500-1,500+"
+- All instances of "$" → "€"
+
+**File 05**:
+- Lines 100, 102: Budget estimates
+- All instances of "$" → "€"
 
 **Note on Currency Conversion**:
 - Do NOT adjust numerical values (e.g., $500 → €500, not €460)
 - This is a symbol replacement only
 - Budget ranges are approximate and scale-neutral
+- Exact currency conversion not necessary for implementation guidance
 
 **Verification**:
-- [ ] All "$" instances replaced with "€" in 13+ files
+- [ ] All "$" instances replaced with "€" in 6 soil restoration files
 - [ ] Currency now consistent with rest of documentation
 - [ ] No numerical values changed (symbol only)
-- [ ] Content guidance unchanged (still scale-neutral)
+- [ ] Content guidance unchanged (still scale-neutral and appropriate)
 
 **Related Tasks**:
 - None - isolated cosmetic issue
+- Does not affect any other fixes or content
+**Task ID**: LIB-2025-11-07-004
+**Found By**: Librarian during audit of 00_Eco_Balance_Hub.md
+
+**File**: `_templates/README.md` (CREATE)
+
+**Issue**:
+The Hub file (00_Eco_Balance_Hub.md) links to `[[_templates/README|_templates/]]` (line 46), but `_templates/README.md` does NOT exist. The _templates directory exists with 4 template files but no README.
+
+**Existing Templates**:
+- changelog_entry_template.md
+- implementation_task_template.md
+- release_notes_template.md
+- strategic_document_template.md
+
+**Fix Required**:
+
+Create `_templates/README.md` that documents the template system:
+
+1. **Purpose**: Explain why templates exist (consistency, quality, efficiency)
+2. **Available Templates**: List and describe each template
+3. **Usage Instructions**: How to use each template
+4. **When to Use**: Guidance on which template for which task
+5. **Customization**: How to adapt templates
+
+**Content Structure**:
+```markdown
+# Documentation Templates
+
+Purpose: Maintain consistency across vault documents
+
+## Available Templates
+1. Strategic Document Template - For files 00-70
+2. Implementation Task Template - For implementation_tasks/
+3. Release Notes Template - For _versions/vX.Y.Z/
+4. Changelog Entry Template - For CHANGELOG.md updates
+
+## Usage Instructions
+[For each template...]
+
+## Contributing
+[How to improve templates]
+```
+
+**Verification**:
+- [ ] File created at _templates/README.md
+- [ ] Link from Hub (line 46) now functional
+- [ ] All 4 templates documented
+- [ ] Usage instructions clear and helpful
+
+**Related Tasks**: None (standalone documentation enhancement)
+**Task ID**: QI-2025-11-07-001
+**Found By**: Quality Inspector during audit of 00_Eco_Balance_Hub.md
+
+**File**: `00_Eco_Balance_Hub.md`
+
+**Issue**:
+Navigation link patterns are inconsistent throughout the Hub document, reducing professional polish and creating slight user experience friction.
+
+**Specific Inconsistencies Found**:
+- Some sections use "→ See [[link]]"
+- Other sections use "→ Details in [[link]]"
+- Other sections use "Navigate: [[link]]"
+- Some sections use direct [[links]] with no prefix
+- Some use "→ Full assessment: [[link]]"
+
+**Examples**:
+- Line 23: "→ See [[20_Restoration_Methodology]]"
+- Line 68: "→ See [[21_Technology_Integration]]"
+- Line 99: "Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview]]"
+- Line 202: "→ Full assessment: [[04_Current_Status_Assessment]]"
+
+**Fix Required**:
+
+Choose ONE navigation pattern and apply consistently. Recommended pattern:
+
+**Option A** (Recommended): Use "→ See [[link]]" for all navigation
+- Consistent with most of the document
+- Clear and concise
+- Easy to scan
+
+**Option B**: Use direct [[links]] with no prefix
+- Clean, minimal
+- Relies on link text for context
+
+**Implementation**:
+1. Search for all navigation patterns in the file
+2. Standardize to chosen pattern (recommend Option A)
+3. Ensure consistency throughout
+4. Verify all link text remains clear and descriptive
+
+**Verification**:
+- [ ] All navigation links follow same pattern
+- [ ] No mixing of "→ See" / "→ Details in" / "Navigate:" patterns
+- [ ] Link text remains clear and descriptive
+- [ ] Professional polish improved
+
+**Related Tasks**: None - standalone polish improvement
+
+**Estimated Effort**: TRIVIAL (10-15 minutes)
+
+---
+
 
 ---
 
@@ -678,6 +1364,7 @@ Line 53 contains a v1.0 scale reference in the "Essential Criteria" section that
 **Context**:
 - This is the ONLY v2.0 scale issue found across all 44 implementation task files
 - Implementation tasks are otherwise exceptionally high quality and scale-flexible
+- Issue is in the decision criteria checklist for site shortlisting
 - Minor fix with low impact (implementation task, not strategic document)
 
 **Fix Required**:
@@ -707,15 +1394,60 @@ To:
 - [ ] Larger scale (5-10 ha) contextualized as post-bootstrap expansion
 - [ ] Essential criteria checklist still functional
 - [ ] No other v1.0 scale references in file
+- [ ] Cross-reference to strategic doc maintained if using Alternative 3
 
 **Related Tasks**:
 - None - isolated issue in single implementation task file
 - Does not affect other implementation tasks or strategic documents
+- Implementation tasks otherwise excellent (see CURATOR audit result)
 
 **Notes**:
 - This is the only v2.0 scale issue found in all 44 implementation task files
 - All other implementation files are scale-flexible and version-agnostic
 - Overall implementation task quality: EXCELLENT
+
+---
+
+### UPDATED SUMMARY STATISTICS
+
+**Total Fix Tasks**: 29 tasks (was 28, +1 from Curator Step 5 audit)
+
+**By Priority**:
+- 🚨 **CRITICAL**: 5 tasks (FIX-000 to FIX-004) - No change
+- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-015 moved here) - No change
+- 🟡 **MEDIUM**: 14 tasks (FIX-009 to FIX-014, FIX-016 to FIX-018, FIX-023, FIX-033, FIX-034) - No change
+- 🟢 **LOW**: 7 tasks (FIX-019 to FIX-022, FIX-024, FIX-025, FIX-035) - Was 6, now 7
+
+**Completion Status**:
+- [ ] CRITICAL Priority: ___ / 5 complete
+- [ ] HIGH Priority: ___ / 5 complete
+- [ ] MEDIUM Priority: ___ / 14 complete
+- [ ] LOW Priority: ___ / 7 complete (was 6, +1 from Curator Step 5 audit)
+- [ ] **TOTAL**: ___ / 29 complete (was 28, +1 from Curator Step 5 audit)
+
+### UPDATED TIME ESTIMATES
+
+**CRITICAL Fixes**: 7-12 hours (no change)
+
+**HIGH Fixes**: 4-6 hours (was 2-4, added FIX-015 upgrade = +2 hours)
+
+**MEDIUM Fixes**: 14-20 hours (no change)
+
+**LOW Fixes**: 3-5.5 hours (was 2.5-5, added FIX-035 = +0.5 hour)
+
+**GRAND TOTAL**: 28-43.5 hours (was 27.5-43 hours, +0.5 hour from Curator Step 5)
+
+**Impact of Re-Audit**: Added 5.5-6 hours of additional work, discovered 3 new tasks + upgraded 1 existing task severity.
+
+---
+
+**End of Fix Task List**
+**Status**: Ready for systematic execution (RE-AUDIT COMPLETE)
+**Next Action**: Start with FIX-000 (Hub document - HIGHEST PRIORITY)
+**Expected Completion**: 3-5 weeks at steady pace (adjusted for new tasks)
+**Re-Audit Date**: November 7, 2025 - Systematic verification complete
+---
+
 
 ---
 
@@ -725,17 +1457,16 @@ To:
 
 **By Priority**:
 - 🚨 **CRITICAL**: 0 tasks
-- 🔴 **HIGH**: 4 tasks (FIX-024, FIX-025, FIX-027, FIX-030)
-- 🟡 **MEDIUM**: 6 tasks (FIX-026, FIX-028, FIX-029, FIX-031, FIX-033, FIX-034)
-- 🟢 **LOW**: 2 tasks (FIX-023, FIX-035)
+- 🔴 **HIGH**: 4 tasks
+- 🟡 **MEDIUM**: 7 tasks
+- 🟢 **LOW**: 2 tasks
 
 **Completion Status**:
+- [ ] CRITICAL Priority: ___ / 0 complete
 - [ ] HIGH Priority: ___ / 4 complete
-- [ ] MEDIUM Priority: ___ / 6 complete
+- [ ] MEDIUM Priority: ___ / 7 complete
 - [ ] LOW Priority: ___ / 2 complete
 - [ ] **TOTAL**: ___ / 12 complete
-
-**Estimated Time**: 8-12 hours total for all Curator fixes
 
 ---
 
@@ -744,7 +1475,6 @@ To:
 - **Audit Tasks**: `_vault_maintenance/AUDIT_TASKS_CURATOR.md`
 - **Persona Definition**: `_vault_maintenance/personas/curator.md`
 - **Workflow**: `_vault_maintenance/WORKFLOW.md`
-- **Master Fix Tasks**: `_vault_maintenance/FIX_TASKS.md` (shared file, use with caution)
 
 ---
 

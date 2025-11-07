@@ -68,11 +68,9 @@
 All maintenance files are in: `_vault_maintenance/`
 
 ### Main Workflow Files:
-- **AUDIT_TASKS.md** ← Phase 1: Systematic audit checklist
-- **FIX_TASKS.md** ← Phase 2: Prioritized fix list
 - **WORKFLOW.md** ← This file: Quick reference
 
-### Persona-Specific Files (NEW - To Avoid Merge Conflicts):
+### Persona-Specific Files (To Avoid Merge Conflicts):
 - **AUDIT_TASKS_CURATOR.md** ← Curator audit tasks only
 - **AUDIT_TASKS_JANITOR.md** ← Janitor audit tasks only (when created)
 - **AUDIT_TASKS_LIBRARIAN.md** ← Librarian audit tasks only (when created)
@@ -89,11 +87,12 @@ All maintenance files are in: `_vault_maintenance/`
 - **Parallel work**: Multiple personas can work simultaneously without conflicts
 - **Clear ownership**: Easy to see which persona is responsible for which tasks
 - **Better git workflow**: Cleaner merge requests with fewer conflicts
+- **Manageable file sizes**: Master files were 100K+ each; persona files are 1-50K each
 
 **How to Use**:
 - If you're working as **Curator**: Use `AUDIT_TASKS_CURATOR.md` and `FIX_TASKS_CURATOR.md`
-- If you're working as **another persona**: Use your persona-specific files
-- The master files (`AUDIT_TASKS.md` and `FIX_TASKS.md`) still exist but should be used carefully to avoid conflicts
+- If you're working as **another persona**: Use your persona-specific files (e.g., `AUDIT_TASKS_JANITOR.md`)
+- **Note**: The master files (`AUDIT_TASKS.md` and `FIX_TASKS.md`) have been REMOVED - use only persona-specific files
 
 ### Supporting Files:
 - **personas/** ← Persona definitions (Janitor, Curator, Auditor, etc.)
@@ -200,7 +199,7 @@ Each round follows the same two-phase pattern.
 ## 📞 QUESTIONS?
 
 **"Should I fix obvious errors during audit?"**
-→ NO! Document them in FIX_TASKS.md and keep auditing. You'll fix them in Phase 2.
+→ NO! Document them in your persona's FIX_TASKS file and keep auditing. You'll fix them in Phase 2.
 
 **"What if I find issues not covered by the persona checklist?"**
 → Great! Still add them to FIX_TASKS_[PERSONA].md. The checklists are guides, not limits.

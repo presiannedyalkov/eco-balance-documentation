@@ -10,9 +10,9 @@
 
 ## 📋 PURPOSE
 
-This file contains **only** the audit tasks assigned to the **CURATOR** persona, extracted from the master AUDIT_TASKS.md to prevent merge conflicts when multiple personas work simultaneously.
+This file contains **only** the audit tasks assigned to the **CURATOR** persona.
 
-**Curator Role**: Check content quality, version consistency (v2.0 Bootstrap), cross-references, narrative flow, and completeness.
+**Curator Role**: Content quality, completeness, coherence, narrative flow, cross-references
 
 ---
 
@@ -23,22 +23,20 @@ This file contains **only** the audit tasks assigned to the **CURATOR** persona,
 1. **Read persona file**: `_vault_maintenance/personas/curator.md`
 2. **Work through tasks** below sequentially
 3. **Document findings** in Result field
-4. **Add issues** to `FIX_TASKS_CURATOR.md` (not the master FIX_TASKS.md)
+4. **Add issues** to `FIX_TASKS_CURATOR.md`
 5. **Mark complete**: Change `[ ]` to `[x]` and fill in Result
 6. **Create merge request** after each session
 
 ### Merge Strategy
 
 When ready to merge:
-- Your branch will only modify THIS file (AUDIT_TASKS_CURATOR.md)
-- Other personas modify their own files (AUDIT_TASKS_JANITOR.md, etc.)
+- Your branch will only modify THIS file
+- Other personas modify their own files
 - No merge conflicts!
 
 ---
 
 ## ✅ CURATOR AUDIT TASKS
-
-### 📁 STRATEGIC ENTRY DOCS (00-04)
 
 - [x] **CURATOR** - File: `00_Eco_Balance_Hub.md`
   - Check: Content completeness, version consistency (v2.0 Bootstrap), cross-references valid
@@ -51,6 +49,7 @@ When ready to merge:
            - Broken links: doc 22, 31, 40 name mismatch, 41
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `01_Executive_Summary.md`
   - Check: Content quality, version consistency (v1.0 vs v2.0?), narrative flow
   - Focus: **CRITICAL** - Known to have v1.0 Large-Scale content (€250-500k, 5-10 ha, AWG)
@@ -62,6 +61,7 @@ When ready to merge:
            - Broken links: docs 22, 31, 40, 41, 60 name mismatch
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `02_Project_Vision.md`
   - Check: Version consistency, narrative coherence, content completeness
   - Focus: Does it reference v1.0 Large-Scale or v2.0 Bootstrap assumptions?
@@ -72,6 +72,7 @@ When ready to merge:
            - Content is more generic/visionary, fewer specific contradictions
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `03_Success_Factors.md`
   - Check: Content relevance to v2.0 Bootstrap, completeness, coherence
   - Focus: Success factors for 1 ha pilot vs 10-30 ha large-scale differ
@@ -81,6 +82,7 @@ When ready to merge:
            - Broken links: docs 22, 31, 60 name mismatch
            - Financial assumptions reference non-existent docs
            Date: 2025-11-07
+
 
 - [x] **CURATOR** - File: `04_Current_Status_Assessment.md`
   - Check: Content current and accurate, v2.0 alignment
@@ -95,7 +97,6 @@ When ready to merge:
            - Broken links: docs 22, 31, 60 name mismatch
            Date: 2025-11-07
 
-### 📁 ORGANIZATIONAL FOUNDATION (10-13)
 
 - [x] **CURATOR** - File: `10_Organizational_Structure.md`
   - Check: Structure aligns with v2.0 Bootstrap (1-2 founders vs large team)
@@ -110,6 +111,7 @@ When ready to merge:
            - Broken links: docs 31, 41, 42
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `11_Governance.md`
   - Check: Governance appropriate for v2.0 scale, completeness
   - Focus: Bootstrap governance (simple) vs large-scale (complex)
@@ -122,6 +124,7 @@ When ready to merge:
            - Content well-written but scaled for professional organization
            - Broken links: docs 31, 41
            Date: 2025-11-07
+
 
 - [x] **CURATOR** - File: `12_Team_Roles.md`
   - Check: Roles align with v2.0 Bootstrap (1-2 founders vs many roles)
@@ -137,6 +140,7 @@ When ready to merge:
            - Broken links: docs 31, 41
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `13_Legal_Framework.md`
   - Check: Content completeness, relevance to v2.0 scale
   - Focus: Legal requirements for small vs large organization
@@ -151,7 +155,6 @@ When ready to merge:
            - Broken links: docs 31, 41
            Date: 2025-11-07
 
-### 📁 METHODOLOGY & BUSINESS (20-32)
 
 - [x] **CURATOR** - File: `20_Restoration_Methodology.md`
   - Check: Content quality, v2.0 compliance (1 ha scale)
@@ -167,6 +170,7 @@ When ready to merge:
            - Cross-references appear functional
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `21_Technology_Integration.md`
   - Check: Content quality, v2.0 Bootstrap tech specs (3-5 kW solar, rainwater)
   - Focus: ✅ KNOWN v2.0 compliant - verify no AWG references, all specs accurate
@@ -181,6 +185,7 @@ When ready to merge:
            - No v1.0 Large-Scale content found
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `22_Restoration_Challenges_Solutions.md` (actual file)
   - Check: Content completeness, v2.0 compliance
   - Focus: Does this file serve as Research Framework or is it different content?
@@ -193,6 +198,7 @@ When ready to merge:
            - File content needs verification for v2.0 compliance
            - Added as FIX-024 to FIX_TASKS.md
            Date: 2025-11-07
+
 
 - [x] **CURATOR** - File: `30_Business_Model.md`
   - Check: Content quality, v2.0 Bootstrap financial model (€20-30k Y1, €50-75k total)
@@ -208,6 +214,7 @@ When ready to merge:
            - Professional business case presentation
            Date: 2025-11-07
 
+
 - [x] **CURATOR** - File: `31_Financial_Projections.md` (does not exist)
   - Check: N/A - File does not exist
   - Focus: Already covered by FIX-006
@@ -216,6 +223,7 @@ When ready to merge:
            - Financial projections currently embedded in Business Model (30)
            - May not need separate file for Bootstrap scale
            Date: 2025-11-07
+
 
 - [x] **CURATOR** - File: `32_Funding_Strategy.md`
   - Check: Content quality, v2.0 Bootstrap funding approach (crowdfunding focus)
@@ -232,7 +240,6 @@ When ready to merge:
            - Highly actionable and practical
            Date: 2025-11-07
 
-### 📁 GROWTH & OPERATIONS (40-70)
 
 - [x] **CURATOR** - File: `40_Expansion_Growth_Strategy.md`
   - Check: Expansion timeline aligns with v2.0 Bootstrap (prove first, then scale)
@@ -247,10 +254,12 @@ When ready to merge:
            - Revenue targets and team sizes need alignment check with v2.0 throughout
            - **ACTION**: Add to FIX_TASKS.md - clarify bootstrap vs. Phase 1 terminology
 
+
 - [x] **CURATOR** - File: `41_Phase_1_Foundation.md` (if exists)
   - Check: Phase 1 details align with v2.0 Bootstrap
   - Focus: Foundation phase = Bootstrap launch
   - Result: ❌ SKIPPED - File does not exist
+
 
 - [x] **CURATOR** - File: `42_Next_Steps_90_Days.md`
   - Check: Content quality, v2.0 Bootstrap immediate actions
@@ -264,6 +273,7 @@ When ready to merge:
            - Self-care reminders included (great touch!)
            - No issues found
 
+
 - [x] **CURATOR** - File: `43_Operations_Action_Plan.md`
   - Check: Content quality, v2.0 Bootstrap operations (founder-level, simplified)
   - Focus: ✅ KNOWN v2.0 compliant - verify operational clarity
@@ -274,6 +284,7 @@ When ready to merge:
            - Narrative flow: EXCELLENT - from daily operations to monthly cycles to year-long timeline
            - Practical details: Tool management, volunteer coordination, living on-site, bootstrap mantras
            - No issues found
+
 
 - [x] **CURATOR** - File: `44_Site_Selection_Land_Acquisition.md`
   - Check: Content quality, v2.0 Bootstrap site criteria (1 ha, €10-30k or lease)
@@ -286,6 +297,7 @@ When ready to merge:
            - Germany-specific guidance: Excellent practical details (Immobilienscout24, Bauamt, etc.)
            - Creative acquisition strategies included (lease-to-own, partnerships)
            - No issues found
+
 
 - [x] **CURATOR** - File: `45_Tiny_House_and_Living_Infrastructure.md`
   - Check: Content quality, v2.0 Bootstrap specs (€8-12k tiny house, DIY)
@@ -300,6 +312,7 @@ When ready to merge:
            - Quality of life considerations included
            - No issues found
 
+
 - [x] **CURATOR** - File: `50_Risk_Assessment.md`
   - Check: Risks relevant to v2.0 Bootstrap scale, completeness
   - Focus: Risks for 1 ha pilot differ from large-scale (lower financial risk)
@@ -312,6 +325,7 @@ When ready to merge:
            - No major content gaps
            - Note: Risk levels appear appropriate for bootstrap scale
 
+
 - [x] **CURATOR** - File: `51_Key_Performance_Indicators.md`
   - Check: KPIs appropriate for v2.0 Bootstrap (1 ha metrics, not 10-30 ha)
   - Focus: Metrics scaled correctly for pilot project
@@ -322,6 +336,7 @@ When ready to merge:
            - KPI categories comprehensive: ecological (reforestation, soil, water, biodiversity, climate), social (community, education, economic), financial (revenue, donors, costs, partners)
            - Note: AUDITOR identified scale issue - "10,000+ trees" target too large for 1 ha (FIX-015 exists)
            - Framework structure excellent despite scale adjustment needed
+
 
 - [x] **CURATOR** - File: `60_Marketing_Communications_Strategy.md`
   - Check: Marketing strategy appropriate for Bootstrap (grassroots, crowdfunding)
@@ -335,6 +350,7 @@ When ready to merge:
            - **v2.0 ISSUE**: Line 70 references "Year 1 Goal: €250-500k" - conflicts with v2.0 bootstrap budget of €20-30k
            - Should align messaging with bootstrap crowdfunding goal of €10-15k
            - **ACTION**: Note in FIX_TASKS.md - align marketing budget references with v2.0
+
 
 - [x] **CURATOR** - File: `70_Case_Studies_Restoration_Examples.md`
   - Check: Case studies relevant to v2.0 Bootstrap (small-scale examples helpful)
@@ -350,7 +366,6 @@ When ready to merge:
            - Note: Large-scale examples, but lessons applicable to smaller projects
            - No content gaps or issues
 
-### 📁 IMPLEMENTATION TASKS (44 files across 6 categories)
 
 - [x] **CURATOR** - All Implementation Task Files (44 total across 6 categories)
   - Check: Content quality, completeness, coherence, v2.0 scale appropriateness
@@ -376,19 +391,15 @@ When ready to merge:
       - Soil Restoration: Not sampled but verified by grep (no issues)
     - **Overall Assessment**: Implementation tasks are exceptionally high quality. They provide practical, actionable guidance without embedding strategic scale assumptions. The single scale reference found is easily correctable and does not impact overall excellence.
 
+
+
 ---
 
 ## 📊 AUDIT SUMMARY
 
 **Total Tasks**: 26
 **Completed**: 26 (100%)
-**Issues Found**: 3 new issues (FIX-033, FIX-034, FIX-035) + references to existing issues (FIX-001 through FIX-024)
-
-**Quality Assessment**:
-- ✅ **Excellent (v2.0 compliant)**: 12 files
-- ⚠️ **Issues Found (v1.0 content or missing files)**: 14 files
-
-**Curator Audit Status**: ✅ **COMPLETE** (2025-11-07)
+**Status**: ✅ ALL COMPLETE
 
 ---
 
@@ -397,4 +408,3 @@ When ready to merge:
 - **Fix Tasks**: `_vault_maintenance/FIX_TASKS_CURATOR.md`
 - **Persona Definition**: `_vault_maintenance/personas/curator.md`
 - **Workflow**: `_vault_maintenance/WORKFLOW.md`
-- **Master Audit Tasks**: `_vault_maintenance/AUDIT_TASKS.md` (shared file, use with caution)
