@@ -9,7 +9,11 @@ This directory contains documentation about **how** the Eco Balance documentatio
 ```
 _process/
 ├── README.md (this file)
-├── integration/          # Integration strategy and tracking
+├── audit/               # Audit reports and tracking
+├── conversion/          # Version conversion planning
+├── documentation/       # Documentation standards and guides
+├── git/                 # Git workflow documentation
+├── integration/         # Integration strategy and tracking
 │   ├── INTEGRATION_CONTINUATION_GUIDE.md
 │   ├── INTEGRATION_PHASE_2_COMPLETE.md
 │   ├── INTEGRATION_PLAN_Phase3.md
@@ -17,10 +21,11 @@ _process/
 ├── migration/           # Migration documentation
 │   ├── MIGRATION_ANALYSIS_COMPLETE.md
 │   └── MIGRATION_CHECK_SUMMARY.md
-├── sessions/            # AI session summaries
-│   └── SESSION_SUMMARY_Phase1-2.md
-└── refactoring/         # Refactoring documentation
-    └── README_Refactor_Summary.md
+├── planning/            # Process planning documents
+├── refactoring/         # Refactoring documentation
+│   └── README_Refactor_Summary.md
+└── sessions/            # AI session summaries
+    └── SESSION_SUMMARY_Phase1-2.md
 ```
 
 ---
@@ -45,6 +50,64 @@ The `_process/` directory separates **HOW** documentation was created from **WHA
 ---
 
 ## 📋 Subdirectories Explained
+
+### audit/
+**Purpose:** Documentation about vault audits, quality checks, and improvements
+
+**Contents:**
+- Comprehensive audit reports
+- Audit fix tracking
+- Budget clarifications
+- Specific fix documentation
+
+**When to Reference:**
+- Understanding vault quality improvements
+- Tracking audit recommendations
+- Reviewing completed fixes
+- Planning future quality checks
+
+### conversion/
+**Purpose:** Documentation about major content conversions and restructuring efforts
+
+**Contents:**
+- V2 Bootstrap Model conversion planning
+- Large-scale content migration documentation
+- Conversion checklists and tracking
+
+**When to Reference:**
+- Understanding version transitions
+- Planning content conversions
+- Tracking conversion progress
+- Learning from past conversions
+
+### documentation/
+**Purpose:** Meta-documentation about vault structure, standards, and best practices
+
+**Contents:**
+- Structure guides
+- Style guides
+- Documentation standards
+- Best practices
+
+**When to Reference:**
+- Understanding vault organization
+- Following documentation standards
+- Creating new documents
+- Maintaining consistency
+
+### git/
+**Purpose:** Git workflow instructions, push procedures, and version control documentation
+
+**Contents:**
+- Git push instructions
+- Git status snapshots
+- Workflow guides
+
+**When to Reference:**
+- Managing version control
+- Following git workflows
+- Troubleshooting git issues
+- Understanding commit history
 
 ### integration/
 **Purpose:** Documentation about integrating scattered content into comprehensive guides
@@ -76,20 +139,19 @@ The `_process/` directory separates **HOW** documentation was created from **WHA
 - Tracing where content came from
 - Planning future migrations
 
-### sessions/
-**Purpose:** Summaries of what was accomplished in work sessions
+### planning/
+**Purpose:** Process planning documents for vault development and improvement
 
 **Contents:**
-- Session-by-session progress reports
-- Deliverables from each session
-- Decisions made during sessions
-- Context for future sessions
+- Polishing plans
+- Platform development plans
+- Process improvement strategies
 
 **When to Reference:**
-- Reviewing project timeline
-- Understanding chronological development
-- Onboarding new AI assistants
-- Documenting project history
+- Understanding planned improvements
+- Tracking development roadmap
+- Planning future enhancements
+- Coordinating process changes
 
 ### refactoring/
 **Purpose:** Documentation about improving organization and structure
@@ -105,6 +167,21 @@ The `_process/` directory separates **HOW** documentation was created from **WHA
 - Planning future refactoring
 - Learning from past improvements
 - Explaining structure to stakeholders
+
+### sessions/
+**Purpose:** Summaries of what was accomplished in work sessions
+
+**Contents:**
+- Session-by-session progress reports
+- Deliverables from each session
+- Decisions made during sessions
+- Context for future sessions
+
+**When to Reference:**
+- Reviewing project timeline
+- Understanding chronological development
+- Onboarding new AI assistants
+- Documenting project history
 
 ---
 
@@ -393,8 +470,9 @@ This enables future AI assistants and team members to understand not just WHAT w
 
 ---
 
-**Last Updated:** October 25, 2025  
+**Last Updated:** November 6, 2025  
 **Maintained By:** Eco Balance Project Team  
-**Version:** Aligned with documentation v1.0.0
+**Version:** Aligned with documentation v2.0.0 (Bootstrap Model)  
+**Recent Changes:** Added 5 new subdirectories (audit, conversion, documentation, git, planning) for better process file organization
 
 *Understanding the process makes the product better.* 🔧✨

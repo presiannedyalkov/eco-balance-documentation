@@ -1,7 +1,7 @@
 # 📦 Archive - Historical Documentation
 
 **Purpose:** Preserve historical documents and process history  
-**Last Updated:** October 25, 2025 (v1.0.0 release)
+**Last Updated:** November 6, 2025 (v2.0.0 release)
 
 ---
 
@@ -11,7 +11,7 @@
 
 **[[pre-v1.0.0/README|pre-v1.0.0/]]** - Original comprehensive documents (before restructure)
 
-Contains the original monolithic planning documents that were refactored into the current v1.0.0 structured documentation system:
+Contains the original monolithic planning documents that were refactored into the v1.0.0 structured documentation system (October 2025):
 
 - Eco_Balance_Comprehensive_Project_Business_Plan.md (40+ pages)
 - Eco_Balance_Executive_Summary.md

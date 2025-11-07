@@ -1,8 +1,8 @@
-# 📖 Quick Reference Guide - Eco Balance Documentation v1.0.0
+# 📖 Quick Reference Guide - Eco Balance Documentation v2.0.0
 
 **Purpose:** Fast navigation and understanding of the documentation structure  
-**Version:** 1.0.0  
-**Last Updated:** October 25, 2025  
+**Version:** 2.0.0 (Bootstrap Model)  
+**Last Updated:** November 6, 2025  
 **For:** All users - new and experienced
 
 ---
@@ -14,12 +14,12 @@
 **How much content?** 66 files, ~700 pages, 200+ cross-references
 
 **What's included?**
-- 22 strategic planning documents
+- 22 strategic planning documents (8 converted to Bootstrap Model)
 - 44 implementation task guides
 - Professional version control system
 - Templates and process documentation
 
-**Current Version:** 1.0.0 (Production Release)
+**Current Version:** 2.0.0 (Bootstrap Model - Production Release)
 
 ---
 

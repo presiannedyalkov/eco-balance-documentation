@@ -1,6 +1,40 @@
 # Vault Maintenance System
 
-## 🚀 Quick Start
+## 🤖 FOR CLAUDE CODE WEB (AUTONOMOUS EXECUTION)
+
+**Using code.claude.com with autonomous merge requests?**
+
+→ **🚀 USE THIS PROMPT**: [CLAUDE_CODE_WEB_PROMPT.md](CLAUDE_CODE_WEB_PROMPT.md) ← **START HERE!**
+
+Copy-paste the prompt, Claude will:
+1. Find next unchecked task
+2. Complete it
+3. Mark as done  
+4. Create merge request
+
+**Parallel Execution**: Run 3-5 agents simultaneously for faster completion!
+
+---
+
+## 🎯 FOR INTERACTIVE MAINTENANCE (MANUAL/CONVERSATIONAL)
+
+**Preparing v2.0.0 Bootstrap Model for Release**
+
+→ **Start Here**: Read [WORKFLOW.md](WORKFLOW.md) - The complete two-phase process  
+→ **Phase 1 (Audit)**: Use [AUDIT_TASKS.md](AUDIT_TASKS.md) - Check every file systematically  
+→ **Phase 2 (Fix)**: Use [FIX_TASKS.md](FIX_TASKS.md) - Fix all issues by priority
+
+**The Process**: 
+1. **AUDIT** every file with every persona (~270 tasks) → Document issues in FIX_TASKS.md
+2. **FIX** all documented issues by priority (CRITICAL → LOW)
+3. Complete audit BEFORE starting fixes (avoid rework!)
+
+**Goal**: Make v2.0.0 clean, consistent, and ready for release  
+**Time Required**: ~30-50 hours over 3-4 weeks
+
+---
+
+## 🚀 Quick Start (For Interactive Use)
 
 **Want to use this system right now?**
 
