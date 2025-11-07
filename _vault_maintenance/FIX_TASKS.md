@@ -623,6 +623,71 @@ Link text says [[40_Implementation_Roadmap|Roadmap]] but file 40 is actually `40
 
 ---
 
+### ⚠️ FIX-024: Fix Mismatched Cross-Reference to 22 (Research Framework vs Restoration Challenges Solutions)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🔴 HIGH
+**Task ID**: CUR-2025-11-07-024
+**Found By**: Curator during Step 3 audit of Methodology & Business Docs
+
+**Files**: Multiple files linking to "22_Research_Framework"
+
+**Issue**:
+Links throughout vault reference `[[22_Research_Framework]]` but the actual file is named `22_Restoration_Challenges_Solutions.md`. This creates broken navigation.
+
+**Files Affected** (known):
+- 01_Executive_Summary.md
+- 02_Project_Vision.md
+- 03_Success_Factors.md
+- 04_Current_Status_Assessment.md
+- Potentially others
+
+**Current State**:
+- File exists: ✅ `22_Restoration_Challenges_Solutions.md`
+- Links point to: ❌ `22_Research_Framework.md` (doesn't exist)
+- Result: All links broken
+
+**Fix Options** (Choose one):
+
+**Option A: Rename File to Match Links**
+- Rename `22_Restoration_Challenges_Solutions.md` → `22_Research_Framework.md`
+- Advantage: Fixes all links immediately, no link updates needed
+- Disadvantage: File name may not accurately describe content
+
+**Option B: Update All Links to Match File**
+- Find all instances of `[[22_Research_Framework]]`
+- Replace with `[[22_Restoration_Challenges_Solutions]]`
+- Update link text if needed
+- Advantage: File name remains accurate
+- Disadvantage: Must update multiple files
+
+**Option C: Both Files Needed (Create Missing Doc)**
+- Current file is about challenges/solutions (keep as is)
+- Create NEW `22_Research_Framework.md` for research methodology
+- Update links based on which doc they should reference
+- Advantage: Both topics covered properly
+- Disadvantage: More work, must determine link destinations
+
+**Recommendation**: Option B (update links) - File name "Restoration_Challenges_Solutions" likely describes content better than "Research_Framework". Update all links to match actual file.
+
+**Search Command**:
+```bash
+grep -r "22_Research_Framework" /home/user/eco-balance-documentation/ --include="*.md"
+```
+
+**Verification**:
+- [ ] All links to doc 22 functional
+- [ ] Link text accurately describes destination
+- [ ] File name matches content
+- [ ] No broken references remaining
+
+**Related Tasks**:
+- Similar to FIX-005, FIX-006, FIX-007, FIX-008 (cross-reference fixes)
+- Part of systematic link cleanup
+
+---
+
 ## 🟡 MEDIUM PRIORITY FIXES
 
 These improve vault quality and consistency. Complete after HIGH priority fixes.
@@ -1431,20 +1496,20 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 23 tasks (updated 2025-11-07)
+**Total Fix Tasks**: 24 tasks (updated 2025-11-07)
 
 **By Priority**:
 - 🚨 **CRITICAL**: 5 tasks (FIX-001 to FIX-004, FIX-023)
-- 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
+- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-024)
 - 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
 - 🟢 **LOW**: 4 tasks (FIX-019 to FIX-022)
 
 **Completion Status**:
 - [ ] CRITICAL Priority: ___ / 5 complete
-- [ ] HIGH Priority: ___ / 4 complete
+- [ ] HIGH Priority: ___ / 5 complete
 - [ ] MEDIUM Priority: ___ / 10 complete
 - [ ] LOW Priority: ___ / 4 complete
-- [ ] **TOTAL**: ___ / 23 complete
+- [ ] **TOTAL**: ___ / 24 complete
 
 ### Estimated Time to Complete
 
@@ -1457,8 +1522,8 @@ After completing fixes, document all changes made during this maintenance cycle.
 - **Total CRITICAL**: 8-12 hours
 
 **HIGH Fixes** (Do next):
-- FIX-005 to FIX-008: 2-4 hours (cross-reference fixes)
-- **Total HIGH**: 2-4 hours
+- FIX-005 to FIX-008, FIX-024: 3-5 hours (cross-reference fixes)
+- **Total HIGH**: 3-5 hours
 
 **MEDIUM Fixes** (Then these):
 - FIX-009 to FIX-018: 10-15 hours (remaining conversions + standardization)
@@ -1468,7 +1533,7 @@ After completing fixes, document all changes made during this maintenance cycle.
 - FIX-019 to FIX-022: 2-4 hours (enhancements)
 - **Total LOW**: 2-4 hours
 
-**GRAND TOTAL**: 22-35 hours of focused work
+**GRAND TOTAL**: 23-37 hours of focused work
 
 **Recommended Pace**:
 - **Week 1**: Complete CRITICAL fixes (5-9 hours, ~1 hour/day)
