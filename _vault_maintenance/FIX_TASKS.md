@@ -1527,6 +1527,280 @@ Add clarification:
 
 ---
 
+### ⚠️ FIX-030: Protected Areas File Uses 50 Hectare Example (Should Be 1 Hectare Bootstrap)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🔴 HIGH
+**Task ID**: CUR-2025-11-07-030
+**Found By**: Curator during Step 5 Group 5 audit of Implementation Tasks
+
+**File**: `implementation_tasks/biodiversity/03_Create_Protected_Areas.md`
+
+**Issue**:
+File contains detailed example using 50-hectare site instead of 1 hectare Bootstrap Model. Example is 50 times larger than v2.0 scale.
+
+**Specific Problem**:
+- Lines 478-533: "Example for 50-hectare Site:"
+  - Zone allocation across 50 ha (8 ha core, 15 ha buffer, 20 ha restoration, 7 ha public)
+  - Budget €10,700 for infrastructure (signage €3,500, fencing/barriers €2,000, trail work €4,000, camera traps €1,200)
+  - This is completely incompatible with 1 ha Bootstrap Model
+  - 50 ha is appropriate for post-pilot expansion, NOT Year 1 Bootstrap
+
+**Impact**:
+- Fundamental misalignment with v2.0 Bootstrap approach
+- Budget examples 50x too large for Bootstrap site
+- Could create unrealistic expectations about Bootstrap scope
+- Examples should reflect 1 ha pilot scale
+
+**Fix Required**:
+
+**Lines 478-533 - Replace 50 Hectare Example**:
+
+Change entire section to reflect 1 hectare Bootstrap:
+
+```markdown
+## 📊 Sample Protection Plan
+
+**Example for 1-Hectare Bootstrap Site:**
+
+### Zone Allocation
+
+**Core Protection (0.15 ha = 15%):**
+- Location: Small wetland area or remnant vegetation patch (1,500 m²)
+- Access: Research/monitoring only, by founders
+- Features: Critical nesting site, seed bank for native plants, sensitive microhabitats
+- Purpose: Undisturbed reference area
+
+**Buffer Zone (0.25 ha = 25%):**
+- Location: 10-20m buffer around core zone
+- Access: Founders only for essential restoration work
+- Purpose: Protect core from disturbance, reduce edge effects
+
+**Active Restoration (0.5 ha = 50%):**
+- Location: Former degraded areas, main planting zone
+- Access: Founders, volunteers (supervised), researchers
+- Activities: Reforestation, soil work, habitat creation, main project focus
+
+**Public Access/Demo (0.1 ha = 10%):**
+- Location: Entry area near tiny house, small demonstration zone
+- Access: Visitors during tours (by appointment)
+- Features: Interpretive elements, "before/after" examples, community workshops
+
+### Seasonal Restrictions
+
+**March 15 - July 31 (Breeding Season):**
+- Core zone: Completely closed (bird nesting, amphibian breeding)
+- Buffer zone: Essential monitoring only
+- Restoration zone: Avoid noisy work near core
+- Demo area: Tours restricted to quiet observation
+
+**August 1 - March 14 (Non-Breeding):**
+- Core zone: Quarterly monitoring only
+- Buffer zone: Restoration work allowed
+- Restoration zone: Full access for work
+- Demo area: Tours and workshops allowed
+
+### Infrastructure
+
+**Signage: 6-8 signs total**
+- 3-4 zone boundary markers (wooden posts with simple signs)
+- 2-3 interpretive panels (wildlife, restoration progress)
+- 1-2 directional markers for visitors
+- Materials: DIY wooden signs, weatherproof printing
+
+**Barriers:**
+- Natural barriers primarily (dense plantings, existing features)
+- Simple rope or split-rail markers at core zone entry (50m)
+- Log barriers for path delineation (10-15 logs from site clearing)
+
+**Monitoring:**
+- 2-3 camera traps (rotate positions)
+- Founder-led observations (daily/weekly)
+- Quarterly documentation
+
+**Budget (Bootstrap Scale):**
+- Signage materials: €150-300 (DIY approach)
+- Rope/barriers: €50-100
+- Camera traps (2-3): €300-600
+- Trail markers (rocks/logs): €0-50 (use on-site materials)
+- **Total: €500-1,050** (vs €10,700 for 50 ha example)
+- Annual maintenance: €100-200
+
+**Notes:**
+- 1 ha Bootstrap scale focuses on essential protection
+- Founders conduct most monitoring (minimal external labor)
+- DIY approach keeps costs within €20-30k Year 1 budget
+- Simple but effective protection strategy
+- Can expand protection zones as project scales post-pilot
+```
+
+**Verification**:
+- [ ] Example uses 1 hectare Bootstrap scale
+- [ ] Zone allocations appropriate for small pilot site
+- [ ] Budget compatible with €20-30k Year 1 Bootstrap budget
+- [ ] Infrastructure realistic for 1-2 founders to implement
+- [ ] Bootstrap context clearly noted
+- [ ] Consistent with v2.0 compliant docs (30, 32, 42, 43)
+
+**Related Tasks**:
+- FIX-027 (File 08 site selection uses 5-10 ha assumption)
+- FIX-031 (File 06 biodiversity monitoring uses 50 ha example)
+- Part of systematic v2.0 Bootstrap scale alignment
+
+---
+
+### ⚠️ FIX-031: Biodiversity Monitoring File Uses 50 Hectare Example (Should Be 1 Hectare Bootstrap)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: CUR-2025-11-07-031
+**Found By**: Curator during Step 5 Group 5 audit of Implementation Tasks
+
+**File**: `implementation_tasks/biodiversity/06_Monitor_Biodiversity.md`
+
+**Issue**:
+File contains sample monitoring program using 50-hectare site instead of 1 hectare Bootstrap Model. Budget examples 50 times larger than appropriate for v2.0 scale.
+
+**Specific Problem**:
+- Lines 552-589: "For 50-hectare restoration site:"
+  - Year 1: ~80 field days, €15,000
+  - Years 2-5: ~50 field days/year, €10,000/year
+  - Years 6+: ~30 field days/year, €7,000/year
+  - 10-Year Total: ~€110,000 (~€11,000/year average)
+  - 30 vegetation plots, 15 bird points, 20 cameras for 50 ha
+
+**Impact**:
+- Minor misalignment with v2.0 Bootstrap Model
+- Budget examples much higher than necessary for 1 ha pilot
+- Could create impression Bootstrap requires extensive monitoring budget
+- Examples should reflect realistic Bootstrap monitoring scope
+
+**Fix Required**:
+
+**Lines 552-589 - Replace with 1 Hectare Bootstrap Example**:
+
+Change:
+```markdown
+**For 50-hectare restoration site:**
+
+### Year 1 (Baseline)
+**Comprehensive Surveys:**
+- Vegetation plots (30 permanent plots)
+- Bird point counts (15 points, 6 visits each)
+- Camera trap array (20 cameras, continuous)
+- Amphibian call surveys (8 points, 6 visits)
+- Butterfly transects (2 routes, 15 weeks)
+- One-time surveys of mammals, reptiles, invertebrates
+
+**Effort:** ~80 field days, €15,000
+```
+
+To:
+```markdown
+**For 1-Hectare Bootstrap Site:**
+
+### Year 1 (Baseline - Founder-Led)
+**Comprehensive Surveys:**
+- Vegetation plots (6 permanent 10m² plots)
+- Bird point counts (3 points, 6 visits each by founders)
+- Camera traps (2-3 cameras, continuous)
+- Amphibian call surveys (2 points, 4-6 visits)
+- Butterfly transects (1 route, 10-15 weeks)
+- Opportunistic observations (mammals, reptiles, invertebrates)
+- iNaturalist documentation (community science)
+
+**Effort:** ~20-30 founder field days, ~€2,000-3,000
+- Camera traps: €300-600
+- Identification resources: €100-200
+- Soil samples for biodiversity: €300-500
+- Expert consultation (2-3 days): €800-1,200
+- Materials (flagging, data sheets, etc.): €200-500
+```
+
+**Update Years 2-5**:
+```markdown
+### Years 2-5 (Frequent Monitoring - Bootstrap)
+
+**Annual Surveys (Founder-Led):**
+- Vegetation plots (annual, spring)
+- Bird surveys (breeding season, 4-6 visits)
+- Camera traps (continuous, founders check weekly)
+- Amphibian surveys (breeding season, 3-4 visits)
+- Butterfly/pollinator observations (10 weeks, casual)
+- iNaturalist ongoing documentation
+
+**Effort:** ~15-20 founder field days/year, ~€1,500-2,500/year
+- Camera maintenance/batteries: €100-200
+- Annual expert consultation: €500-800
+- Lab tests (soil biodiversity, etc.): €300-500
+- Materials and apps: €100-300
+- Photo documentation: €0-200
+```
+
+**Update Years 6+**:
+```markdown
+### Years 6+ (Long-Term Monitoring - Bootstrap)
+
+**Reduced Frequency (Maintenance):**
+- Vegetation: Every 2 years
+- Birds: Annually (breeding season)
+- Camera traps: Continuous (founders)
+- Other groups: Every 2-3 years
+- Ongoing iNaturalist observations
+
+**Effort:** ~10-15 founder field days/year, ~€1,000-1,500/year
+- Camera costs: €100-200
+- Periodic expert review: €300-500
+- Materials: €100-200
+- Community science engagement: €0-200
+```
+
+**Update 10-Year Total**:
+```markdown
+### Total 10-Year Cost (Bootstrap)
+
+**~€17,000-25,000** (~€1,700-2,500/year average)
+
+**Bootstrap Approach:**
+- Founders conduct most monitoring (labor = time, not cash)
+- Strategic use of camera traps multiplies capacity
+- Community science (iNaturalist) supplements formal monitoring
+- Annual expert consultation for quality control
+- Focus on key indicators rather than comprehensive surveys
+- Budget fits within Bootstrap ongoing operations
+```
+
+**Add Bootstrap Context Note**:
+
+Add after example:
+```markdown
+**Bootstrap Model Notes:**
+- 1 ha pilot requires scaled-down monitoring
+- Founders are primary observers (reduces costs dramatically)
+- Camera traps provide 24/7 data with minimal effort
+- Community science platforms extend reach
+- Annual expert consultation ensures quality
+- Monitoring budget ~€1,500-2,500/year fits within operational costs
+- As project scales post-pilot, monitoring expands proportionally
+```
+
+**Verification**:
+- [ ] Example uses 1 hectare Bootstrap scale
+- [ ] Monitoring effort realistic for 1-2 founders
+- [ ] Budget compatible with Bootstrap operational costs
+- [ ] Founder-led approach emphasized
+- [ ] Technology used to multiply capacity
+- [ ] Bootstrap context clearly noted
+- [ ] Consistent with biodiversity targets (50+ species Year 1)
+
+**Related Tasks**:
+- FIX-030 (File 03 uses 50 ha protected areas example)
+- Part of systematic v2.0 Bootstrap scale alignment
+
+---
+
 ### ⚠️ FIX-016: Verify 60_Marketing_Communications_Strategy.md for Bootstrap Approach
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)

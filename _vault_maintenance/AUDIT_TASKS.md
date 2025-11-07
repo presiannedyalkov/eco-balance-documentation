@@ -895,7 +895,7 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - Group 2: [x] Complete (2025-11-07) - 1 issue found (FIX-027)
 - Group 3: [x] Complete (2025-11-07) - 1 issue found (FIX-028)
 - Group 4: [x] Complete (2025-11-07) - 1 issue found (FIX-029)
-- Group 5: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 5: [x] Complete (2025-11-07) - 2 issues found (FIX-030, FIX-031)
 - Group 6: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 7: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 8: [ ] Not started / [ ] In Progress / [ ] Complete
@@ -1053,24 +1053,46 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 ---
 
-#### Group 5: Biodiversity (Files 4-7) + Soil (File 1) - 5 files
+#### Group 5: Biodiversity (Files 3-6) + Soil (File 0) - 5 files
 
-**Status**: [ ] Not Started
+**Status**: [x] Complete (Date: 2025-11-07)
 
-**Files to Audit**:
-1. `implementation_tasks/biodiversity/03_Install_Wildlife_Features.md`
-2. `implementation_tasks/biodiversity/04_Monitor_Species.md`
-3. `implementation_tasks/biodiversity/05_Manage_Invasive_Species.md`
-4. `implementation_tasks/biodiversity/06_Document_Recovery.md`
-5. `implementation_tasks/soil_restoration/00_Soil_Restoration_Overview.md`
+**Files Audited**:
+1. ✅ `implementation_tasks/biodiversity/03_Create_Protected_Areas.md`
+2. ✅ `implementation_tasks/biodiversity/04_Manage_Invasive_Species.md`
+3. ✅ `implementation_tasks/biodiversity/05_Reintroduce_Lost_Species.md`
+4. ✅ `implementation_tasks/biodiversity/06_Monitor_Biodiversity.md`
+5. ✅ `implementation_tasks/soil_restoration/00_Soil_Restoration_Overview.md`
 
 **Audit Focus (Curator)**:
-- Wildlife features appropriate for 1 ha scale
+- Protected areas appropriate for 1 ha scale
 - Monitoring scope realistic for Bootstrap
 - Invasive species management practical
 - Soil restoration overview comprehensive
 
-**Results**: _______________
+**Results**: ⚠️ ISSUES FOUND - Added FIX-030 and FIX-031 to FIX_TASKS.md
+
+**Summary**:
+- **File 03 (Create Protected Areas)**: 🚨 CRITICAL - Uses 50 hectare example (lines 478-533), budget €10,700 infrastructure
+- **File 04 (Manage Invasive Species)**: ✅ PASS - Per-hectare costs €500-5,000, scale-neutral practical guidance
+- **File 05 (Reintroduce Lost Species)**: ✅ PASS - Species-complexity budget (€1k-100k+), not site-size dependent
+- **File 06 (Monitor Biodiversity)**: 🚨 CRITICAL - Uses 50 hectare example (lines 552-589), 10-year total €110,000
+- **File 00 (Soil Restoration Overview)**: ✅ PASS - Scale-neutral guidance, minor note uses $ instead of €
+
+**Issues Created**:
+- **FIX-030** (HIGH): File 03 uses 50 hectare protected areas example instead of 1 hectare
+  - Lines 478-533: Example shows 50 ha site (8 ha core, 15 ha buffer, 20 ha restoration, 7 ha public)
+  - Budget €10,700 for infrastructure (50x too large for Bootstrap)
+  - Should show 1 ha Bootstrap example with €500-1,050 budget
+  - 50 ha is appropriate for post-pilot expansion, NOT Year 1 Bootstrap pilot
+
+- **FIX-031** (MEDIUM): File 06 uses 50 hectare biodiversity monitoring example
+  - Lines 552-589: Monitoring program for 50 ha (30 plots, 15 bird points, 20 cameras)
+  - 10-year total €110,000 (~€11,000/year)
+  - Should show 1 ha Bootstrap monitoring (~€2-3k Year 1, ~€1.5-2.5k/year ongoing)
+  - Founder-led approach with community science should be emphasized
+
+**Assessment**: Group 5 files have excellent ecological and management guidance. Files 03 and 06 both use 50 hectare examples which is 50 times larger than 1 ha Bootstrap Model. This represents a fundamental scale mismatch that needs correction. Files 04 and 05 are scale-appropriate with practical, evidence-based guidance. File 00 provides solid overview for soil restoration.
 
 ---
 
