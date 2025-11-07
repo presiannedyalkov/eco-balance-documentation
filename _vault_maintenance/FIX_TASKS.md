@@ -2200,35 +2200,46 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ---
 
-### ⚠️ FIX-032: Soil Restoration Files Use USD ($) Instead of EUR (€)
+### ⚠️ FIX-032: Soil & Water Management Files Use USD ($) Instead of EUR (€)
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
 **Priority**: 🟢 LOW
 **Task ID**: CUR-2025-11-07-032
-**Found By**: Curator during Step 5 Group 6 audit of Implementation Tasks
+**Found By**: Curator during Step 5 Groups 6-7 audit of Implementation Tasks
 
-**Files**:
+**Files** (13+ files total):
+
+**Soil Restoration (7 files)**:
 - `implementation_tasks/soil_restoration/00_Soil_Restoration_Overview.md`
 - `implementation_tasks/soil_restoration/01_Assess_Soil_Health.md`
 - `implementation_tasks/soil_restoration/02_Add_Organic_Matter.md`
 - `implementation_tasks/soil_restoration/03_Reduce_Tillage.md`
 - `implementation_tasks/soil_restoration/04_Rotate_Crops.md`
 - `implementation_tasks/soil_restoration/05_Manage_Pests_Diseases.md`
+- `implementation_tasks/soil_restoration/06_Monitor_Soil_Health.md`
+
+**Water Management (6+ files, likely all 7)**:
+- `implementation_tasks/water_management/00_Water_Management_Overview.md`
+- `implementation_tasks/water_management/01_Assess_Water_Needs.md`
+- `implementation_tasks/water_management/02_Rainwater_Harvesting.md`
+- `implementation_tasks/water_management/03_Build_Water_Storage_Structures.md`
+- (Files 04-06 not yet audited but likely also use $)
 
 **Issue**:
-All soil restoration files use USD ($) for budget estimates instead of EUR (€) like the rest of the documentation. This creates minor currency inconsistency.
+All soil restoration and water management files use USD ($) for budget estimates instead of EUR (€) like the rest of the documentation. This creates minor currency inconsistency across two complete categories.
 
 **Context**:
 - Files provide per-acre or scale-neutral guidance (appropriate for any site size)
-- NO scale alignment issues - content is excellent
+- NO scale alignment issues - content is excellent throughout
 - ONLY issue is currency symbol ($ vs €)
 - Likely sourced from US-based materials or created separately from other docs
+- Both categories have consistent pattern suggesting same source
 - Lowest priority cosmetic fix
 
 **Fix Required**:
 
-**Search and Replace $ with €** in all 6 soil restoration files:
+**Search and Replace $ with €** in all soil restoration and water management files:
 
 **File 00**:
 - Line 62-65: Budget estimates

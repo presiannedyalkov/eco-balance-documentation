@@ -897,7 +897,7 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - Group 4: [x] Complete (2025-11-07) - 1 issue found (FIX-029)
 - Group 5: [x] Complete (2025-11-07) - 2 issues found (FIX-030, FIX-031)
 - Group 6: [x] Complete (2025-11-07) - 1 issue found (FIX-032)
-- Group 7: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 7: [x] Complete (2025-11-07) - FIX-032 updated (water files also use $)
 - Group 8: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 9: [ ] Not started / [ ] In Progress / [ ] Complete
 
@@ -1140,16 +1140,16 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 ---
 
-#### Group 7: Soil (File 7) + Water Management (Files 1-4) - 5 files
+#### Group 7: Soil (File 6) + Water Management (Files 0-3) - 5 files
 
-**Status**: [ ] Not Started
+**Status**: [x] Complete (Date: 2025-11-07)
 
-**Files to Audit**:
-1. `implementation_tasks/soil_restoration/06_Monitor_Improvement.md`
-2. `implementation_tasks/water_management/00_Water_Management_Overview.md`
-3. `implementation_tasks/water_management/01_Assess_Water_Resources.md`
-4. `implementation_tasks/water_management/02_Design_Catchment_Systems.md`
-5. `implementation_tasks/water_management/03_Install_Storage.md`
+**Files Audited**:
+1. ✅ `implementation_tasks/soil_restoration/06_Monitor_Soil_Health.md`
+2. ✅ `implementation_tasks/water_management/00_Water_Management_Overview.md`
+3. ✅ `implementation_tasks/water_management/01_Assess_Water_Needs.md`
+4. ✅ `implementation_tasks/water_management/02_Rainwater_Harvesting.md`
+5. ✅ `implementation_tasks/water_management/03_Build_Water_Storage_Structures.md`
 
 **Audit Focus (Curator)**:
 - Water systems match v2.0 tech specs (rainwater, IBC tanks)
@@ -1158,7 +1158,23 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - DIY installation guidance clear
 - Cross-references to technology doc (21)
 
-**Results**: _______________
+**Results**: ✅ NO SCALE ISSUES FOUND - Currency symbol issue only (FIX-032 updated)
+
+**Summary**:
+- **File 06 (Monitor Soil Health)**: ✅ EXCELLENT - Comprehensive monitoring framework, uses $ (FIX-032)
+- **File 00 (Water Overview)**: ✅ EXCELLENT - Comprehensive framework, scale-neutral, uses $ (FIX-032)
+- **File 01 (Assess Water Needs)**: ✅ EXCELLENT - Detailed assessment methodology, scale-neutral, uses $ (FIX-032)
+- **File 02 (Rainwater Harvesting)**: ✅ EXCELLENT - Active + passive systems, scale-neutral, uses $ (FIX-032)
+- **File 03 (Water Storage)**: ✅ EXCELLENT - Multiple storage types covered comprehensively, uses $ (FIX-032)
+
+**Issues Created**:
+- **FIX-032 (UPDATED)**: Extended to include water management files (lines 57-66, budget estimates throughout)
+  - Both soil restoration (7 files) and water management (6+ files) use $ instead of €
+  - Same cosmetic currency inconsistency pattern
+  - Total 13+ files affected (likely all water files use $)
+  - NO scale alignment issues in any files - all scale-neutral and excellent quality
+
+**Assessment**: Group 7 files represent OUTSTANDING quality across both monitoring and water management. All guidance is scientifically sound, practical for 1-2 founders, and completely scale-neutral (appropriate for any site size from 0.5-100 ha). Water management files properly reference rainwater harvesting and IBC tanks (v2.0 tech), with NO deprecated AWG references. Only issue is minor currency symbol inconsistency shared with soil restoration files.
 
 ---
 
