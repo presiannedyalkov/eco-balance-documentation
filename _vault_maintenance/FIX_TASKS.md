@@ -475,7 +475,14 @@ These fixes are important for vault integrity and user trust. Complete after CRI
 **Task ID**: JAN-2025-11-07-002
 **Found By**: Janitor (detailed file-by-file verification)
 
-**File**: `_vault_maintenance/AUDIT_TASKS.md` (lines 807-1014)
+**File**: Multiple files link to doc 22 incorrectly
+
+**Files Affected** (from Librarian audit):
+- `01_Executive_Summary.md` (line 39)
+- `02_Project_Vision.md` (line 184)
+- `03_Success_Factors.md` (lines 28, 138)
+- `04_Current_Status_Assessment.md` (line 210)
+- `51_Key_Performance_Indicators.md` (lines 107, 255) - Added from Step 4 audit
 
 **Issue**:
 AUDIT_TASKS.md contains INCORRECT filenames for 35 out of 44 implementation task files. The actual files exist with different names than what's listed in AUDIT_TASKS.md. This will prevent other personas (Curator, Auditor, Librarian, Quality Inspector) from finding the correct files to audit.
@@ -547,64 +554,10 @@ Replace lines 807-1014 in AUDIT_TASKS.md with the ACTUAL filenames found in the 
 ```
 
 **Verification**:
-- [ ] All 44 implementation task filenames in AUDIT_TASKS.md match actual filesystem
-- [ ] Verified by running: `find implementation_tasks -name "*.md" -type f ! -name "README.md" | sort`
-- [ ] No broken file references remain
-- [ ] Other personas can now successfully audit implementation tasks
-
-**Related Tasks**: None
-
----
-
-### ⚠️ FIX-005: Fix File 22 Naming Mismatch (Research Framework vs Restoration Challenges)
-
-**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
-
-**Priority**: 🔴 HIGH
-**Task ID**: CUR-2025-11-07-002 (partial) + JAN-2025-11-07-001
-**Found By**: Curator (broken link) + Janitor (file exists with different name)
-
-**Files**:
-- `01_Executive_Summary.md` (and any other files linking to doc 22)
-- `22_Restoration_Challenges_Solutions.md` (actual file that exists)
-
-**Issue**:
-**JANITOR UPDATE**: File 22 EXISTS but with WRONG NAME!
-- Expected: `22_Research_Framework.md`
-- Actual: `22_Restoration_Challenges_Solutions.md`
-- This causes all cross-references to [[22]] or [[22_Research_Framework]] to be broken.
-
-**Fix Options** (Choose one):
-
-**Option A: Rename File to Match References**
-- Rename `22_Restoration_Challenges_Solutions.md` → `22_Research_Framework.md`
-- Update file content to match "Research Framework" theme if needed
-- All existing cross-references will now work
-- PRO: Maintains file 22 slot, minimal link changes
-- CON: File content may not match new name
-
-**Option B: Update All References to Match Actual File**
-- Keep `22_Restoration_Challenges_Solutions.md` (current name)
-- Update all cross-references from [[22_Research_Framework]] → [[22_Restoration_Challenges_Solutions]]
-- Update link text to match actual content
-- PRO: File content and name stay aligned
-- CON: Need to find and update all references
-
-**Option C: Replace with New Research Framework Document**
-- Rename current file 22 to different number (e.g., 23)
-- Create new `22_Research_Framework.md` as originally intended
-- Update references to both files appropriately
-- PRO: Both documents exist with correct names
-- CON: Creates new file, more work
-
-**Recommendation**: Option A or B depending on file 22 content review. If current content is actually about research methodology, rename to match references (Option A). If it's truly about challenges/solutions, update references (Option B).
-
-**Verification**:
-- [ ] File 22 exists with clear, appropriate name
-- [ ] All links to file 22 functional
-- [ ] Link text accurately describes destination
-- [ ] No broken cross-references to [[22]]
-- [ ] AUDIT_TASKS.md file 22 section updated if needed
+- [ ] All links functional (pointing to 22_Restoration_Challenges_Solutions.md)
+- [ ] Link text makes sense
+- [ ] Check all 6 affected files updated (01, 02, 03, 04, 51)
+- [ ] No other references to 22_Research_Framework remaining
 
 **Related Tasks**: FIX-001 through FIX-004 (may update some links during rewrites)
 
@@ -741,6 +694,8 @@ Link text says [[40_Implementation_Roadmap|Roadmap]] but file 40 is actually `40
 - `02_Project_Vision.md` (lines 78, 188)
 - `03_Success_Factors.md` (lines 71, 239)
 - `04_Current_Status_Assessment.md` (line 230)
+- `50_Risk_Assessment.md` (line 322) - Added from Step 4 audit
+- `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
 
 **Issue**:
 Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
@@ -751,16 +706,20 @@ Update all links to use correct filename:
 - FROM: `[[60_Marketing_Strategy|...]]`
 - TO: `[[60_Marketing_Communications_Strategy|...]]`
 
-**Files to Update** (6+ instances):
+**Files to Update** (10 instances):
 1. 01_Executive_Summary.md (line 35)
 2. 02_Project_Vision.md (line 78)
 3. 02_Project_Vision.md (line 188)
 4. 03_Success_Factors.md (line 71)
 5. 03_Success_Factors.md (line 239)
 6. 04_Current_Status_Assessment.md (line 230)
+7. 50_Risk_Assessment.md (line 322)
+8. 51_Key_Performance_Indicators.md (line 129)
+9. 51_Key_Performance_Indicators.md (line 275)
+10. 51_Key_Performance_Indicators.md (line 462)
 
 **Verification**:
-- [ ] All 6+ links now functional
+- [ ] All 10 links now functional
 - [ ] All links point to 60_Marketing_Communications_Strategy.md
 - [ ] Link text still makes sense
 - [ ] No other references to 60_Marketing_Strategy remaining
