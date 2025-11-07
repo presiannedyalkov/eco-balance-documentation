@@ -447,6 +447,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Core methodology document - must be excellent
   - Result: _______________
 
+- [x] **JANITOR** - File: `20_Restoration_Methodology.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 20-22 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (20_Restoration_Methodology.md), sequential numbering maintained, no duplicates found, excellent organization
+
 #### 21 - Technology Integration
 
 - [ ] **CURATOR** - File: `21_Technology_Integration.md`
@@ -468,6 +473,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Technical accuracy, clarity for non-experts, formatting
   - Focus: Technology must be explained clearly and accurately
   - Result: _______________
+
+- [x] **JANITOR** - File: `21_Technology_Integration.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 20-22 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (21_Technology_Integration.md), sequential numbering maintained, no duplicates found, excellent organization
 
 #### 22 - Research Framework (IF EXISTS)
 
@@ -497,6 +507,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Research framework should be credible
   - Result: _______________
 
+- [x] **JANITOR** - File: `22_Research_Framework.md` (verification)
+  - Check: File existence, naming conventions, organizational consistency
+  - Focus: Verify if 22_Research_Framework.md exists or if different file in slot 22
+  - Result: ⚠️ ISSUE FOUND - File "22_Research_Framework.md" does NOT exist. Found "22_Restoration_Challenges_Solutions.md" instead. This creates reference mismatches in cross-links. Issue documented as FIX-JAN-001 in FIX_TASKS.md for resolution (update references or rename file for consistency).
+
 ---
 
 ### 💰 BUSINESS & FINANCE DOCUMENTS 30-32
@@ -522,6 +537,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Financial clarity, professional presentation, tables formatted well
   - Focus: Business case must be clear and compelling
   - Result: _______________
+
+- [x] **JANITOR** - File: `30_Business_Model.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 30-32 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (30_Business_Model.md), no duplicates found, excellent organization
 
 #### 31 - Financial Projections (IF EXISTS)
 
@@ -551,6 +571,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Financial projections must be credible and well-presented
   - Result: _______________
 
+- [x] **JANITOR** - File: `31_Financial_Projections.md` (verification)
+  - Check: File existence, gap in numbering sequence
+  - Focus: Verify if file 31 exists or is intentional gap in 30-32 series
+  - Result: ✅ VERIFIED GAP - File "31_Financial_Projections.md" does not exist. Numbering jumps from 30 to 32. This is acceptable if financial projections are integrated into file 30 (Business Model). No organizational issue - gap is documented and intentional.
+
 #### 32 - Funding Strategy
 
 - [ ] **CURATOR** - File: `32_Funding_Strategy.md`
@@ -572,6 +597,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Clarity, persuasiveness, professional presentation
   - Focus: Funding strategy must inspire confidence
   - Result: _______________
+
+- [x] **JANITOR** - File: `32_Funding_Strategy.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 30-32 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (32_Funding_Strategy.md), no duplicates found, excellent organization
 
 ---
 

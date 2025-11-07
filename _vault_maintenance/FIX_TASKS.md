@@ -325,41 +325,55 @@ Current status should reflect v2.0 Bootstrap Model adoption and realistic curren
 
 These fixes are important for vault integrity and user trust. Complete after CRITICAL fixes.
 
-### ⚠️ FIX-005: Fix Broken Cross-Reference to 22_Research_Framework
+### ⚠️ FIX-005: Fix File 22 Naming Mismatch (Research Framework vs Restoration Challenges)
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
-**Priority**: 🔴 HIGH  
-**Task ID**: CUR-2025-11-07-002 (partial)
+**Priority**: 🔴 HIGH
+**Task ID**: CUR-2025-11-07-002 (partial) + JAN-2025-11-07-001
+**Found By**: Curator (broken link) + Janitor (file exists with different name)
 
-**File**: `01_Executive_Summary.md` (and any other files linking to doc 22)
+**Files**:
+- `01_Executive_Summary.md` (and any other files linking to doc 22)
+- `22_Restoration_Challenges_Solutions.md` (actual file that exists)
 
-**Issue**: 
-Link to [[22_Research_Framework|Research Framework]] points to non-existent file.
+**Issue**:
+**JANITOR UPDATE**: File 22 EXISTS but with WRONG NAME!
+- Expected: `22_Research_Framework.md`
+- Actual: `22_Restoration_Challenges_Solutions.md`
+- This causes all cross-references to [[22]] or [[22_Research_Framework]] to be broken.
 
 **Fix Options** (Choose one):
 
-**Option A: Create Document 22**
-- Create `22_Research_Framework.md`
-- Document scientific approach, monitoring protocols, data collection
-- Align with v2.0 Bootstrap scale (1 ha pilot research, not multi-site)
-- Use strategic_document_template.md
+**Option A: Rename File to Match References**
+- Rename `22_Restoration_Challenges_Solutions.md` → `22_Research_Framework.md`
+- Update file content to match "Research Framework" theme if needed
+- All existing cross-references will now work
+- PRO: Maintains file 22 slot, minimal link changes
+- CON: File content may not match new name
 
-**Option B: Redirect to Existing Content**
-- Update link to point to `20_Restoration_Methodology.md` (scientific approach section)
-- Add research framework section to doc 20 if needed
-- Update link text: [[20_Restoration_Methodology#research-approach|Research Framework]]
+**Option B: Update All References to Match Actual File**
+- Keep `22_Restoration_Challenges_Solutions.md` (current name)
+- Update all cross-references from [[22_Research_Framework]] → [[22_Restoration_Challenges_Solutions]]
+- Update link text to match actual content
+- PRO: File content and name stay aligned
+- CON: Need to find and update all references
 
-**Option C: Remove Reference**
-- If research framework detail not critical, remove the link
-- Ensure surrounding text still flows well
+**Option C: Replace with New Research Framework Document**
+- Rename current file 22 to different number (e.g., 23)
+- Create new `22_Research_Framework.md` as originally intended
+- Update references to both files appropriately
+- PRO: Both documents exist with correct names
+- CON: Creates new file, more work
 
-**Recommendation**: Option B (redirect) - Research framework naturally belongs in Methodology document.
+**Recommendation**: Option A or B depending on file 22 content review. If current content is actually about research methodology, rename to match references (Option A). If it's truly about challenges/solutions, update references (Option B).
 
 **Verification**:
-- [ ] Link functional (goes to existing content)
-- [ ] Link text accurate (describes where it goes)
-- [ ] No other references to doc 22 remaining
+- [ ] File 22 exists with clear, appropriate name
+- [ ] All links to file 22 functional
+- [ ] Link text accurately describes destination
+- [ ] No broken cross-references to [[22]]
+- [ ] AUDIT_TASKS.md file 22 section updated if needed
 
 **Related Tasks**: FIX-001 (may resolve link during Executive Summary rewrite)
 
