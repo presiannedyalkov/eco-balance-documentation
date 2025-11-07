@@ -383,6 +383,7 @@ These fixes are important for vault integrity and user trust. Complete after CRI
 - `02_Project_Vision.md` (line 184)
 - `03_Success_Factors.md` (lines 28, 138)
 - `04_Current_Status_Assessment.md` (line 210)
+- `51_Key_Performance_Indicators.md` (lines 107, 255) - Added from Step 4 audit
 
 **Issue**:
 Links reference [[22_Research_Framework|...]] but the actual file is `22_Restoration_Challenges_Solutions.md`, NOT `22_Research_Framework.md`.
@@ -409,7 +410,7 @@ Links reference [[22_Research_Framework|...]] but the actual file is `22_Restora
 **Verification**:
 - [ ] All links functional (pointing to 22_Restoration_Challenges_Solutions.md)
 - [ ] Link text makes sense
-- [ ] Check all 5+ affected files updated
+- [ ] Check all 6 affected files updated (01, 02, 03, 04, 51)
 - [ ] No other references to 22_Research_Framework remaining
 
 **Related Tasks**: FIX-001 through FIX-004 (may update some links during rewrites)
@@ -547,6 +548,8 @@ Link text says [[40_Implementation_Roadmap|Roadmap]] but file 40 is actually `40
 - `02_Project_Vision.md` (lines 78, 188)
 - `03_Success_Factors.md` (lines 71, 239)
 - `04_Current_Status_Assessment.md` (line 230)
+- `50_Risk_Assessment.md` (line 322) - Added from Step 4 audit
+- `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
 
 **Issue**:
 Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
@@ -557,16 +560,20 @@ Update all links to use correct filename:
 - FROM: `[[60_Marketing_Strategy|...]]`
 - TO: `[[60_Marketing_Communications_Strategy|...]]`
 
-**Files to Update** (6+ instances):
+**Files to Update** (10 instances):
 1. 01_Executive_Summary.md (line 35)
 2. 02_Project_Vision.md (line 78)
 3. 02_Project_Vision.md (line 188)
 4. 03_Success_Factors.md (line 71)
 5. 03_Success_Factors.md (line 239)
 6. 04_Current_Status_Assessment.md (line 230)
+7. 50_Risk_Assessment.md (line 322)
+8. 51_Key_Performance_Indicators.md (line 129)
+9. 51_Key_Performance_Indicators.md (line 275)
+10. 51_Key_Performance_Indicators.md (line 462)
 
 **Verification**:
-- [ ] All 6+ links now functional
+- [ ] All 10 links now functional
 - [ ] All links point to 60_Marketing_Communications_Strategy.md
 - [ ] Link text still makes sense
 - [ ] No other references to 60_Marketing_Strategy remaining
