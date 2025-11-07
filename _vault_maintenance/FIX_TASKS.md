@@ -99,6 +99,104 @@ Each fix task includes:
 
 These fixes are blocking correct understanding of the project. Must complete immediately.
 
+### ❌ FIX-000: Convert 00_Eco_Balance_Hub.md to v2.0 Bootstrap Model (Priority Hub Document)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🚨 CRITICAL
+**Task ID**: AUD-2025-11-07-001
+**Found By**: Auditor during Step 1 audit
+**Assigned Persona**: Auditor/Curator (but any persona can execute)
+
+**File**: `00_Eco_Balance_Hub.md`
+
+**Issue**:
+Hub document (main entry point) contains major v1.0 Large-Scale contradictions that directly conflict with the v2.0 Bootstrap Model stated in the header. This creates immediate confusion for all readers.
+
+**Specific Problems Found (Auditor Verification)**:
+1. **Line 162**: "Initial Investment Ask: €250,000-€500,000" ❌ **v1.0** (should be €20-30k Y1, €50-75k total)
+2. **Line 164**: "Year 1 Goal: secure 5-10 hectares, plant 1,000+ trees, engage 100+ community members" ❌ **v1.0 scale** (should be 1 ha, 500-1000 trees, 1-2 founders focus)
+3. **Line 166**: "Long-term Vision (10 years): 10,000+ hectares" - Acceptable but needs context that Year 1 is 1 ha pilot
+4. **Line 41**: "VERSION - Current version number (1.0.0)" ❌ **VERSION CONFLICT** (header says 2.0.0)
+5. **Lines 217-221**: Year 1 Goals still list:
+   - "€250k+ funding secured" ❌ (should be €20-30k)
+   - "Land site acquired (5-10 ha)" ❌ (should be 1 ha)
+   - "Core team hired (3 staff)" ❌ (should be 1-2 founders)
+
+**Fix Required**:
+
+**1. Fix Version Number Inconsistency**:
+   - Line 41: Change "VERSION - Current version number (1.0.0)" → "VERSION - Current version number (2.0.0)"
+   - OR remove this outdated line entirely
+
+**2. Update "Project at a Glance" Section (Lines 158-167)**:
+   ```markdown
+   ## 🎯 Project at a Glance
+
+   **Mission:** Restore degraded ecosystems in Southern Europe through evidence-based, community-engaged, financially sustainable environmental restoration.
+
+   **v2.0 Bootstrap Model:** 1 hectare pilot to prove restoration approach
+
+   **Year 1 Budget:** €20,000-€30,000 (crowdfunding + bootstrap capital)
+
+   **Total 3-Year Budget:** €50,000-€75,000
+
+   **Year 1 Goal:** Establish 1 ha pilot site, validate restoration methods, document thoroughly for replication
+
+   **Team:** 1-2 founders (multi-hat roles, DIY-first approach)
+
+   **Long-term Vision (10 years):** Successful pilot enables replication → Multiple sites → Movement toward ecosystem restoration at scale
+   ```
+
+**3. Update "Next Major Milestones" Section (Lines 206-223)**:
+   ```markdown
+   ## 🚀 Next Major Milestones
+
+   **90-Day Goals (Bootstrap Launch Prep):**
+   - [ ] Crowdfunding campaign materials prepared
+   - [ ] €20-30k funding target defined and campaign strategy ready
+   - [ ] 5+ potential 1 ha land sites identified
+   - [ ] Website and social media launched
+   - [ ] Community interest validated
+   - [ ] Site selection criteria finalized
+
+   **Year 1 Goals (Bootstrap Pilot Establishment):**
+   - [ ] Crowdfunding successful (€20-30k raised)
+   - [ ] 1 hectare pilot site acquired (lease or purchase)
+   - [ ] Off-grid systems installed (3-5 kW solar, rainwater)
+   - [ ] DIY tiny house built (€8-12k)
+   - [ ] First plantings completed (500-1,000 trees)
+   - [ ] Documentation system established
+   ```
+
+**4. Verify ALL Financial References**:
+   - Search document for "€250", "€500", "€200" → Replace with v2.0 figures
+   - Search for "5-10 hectare" or "10 hectare" → Replace with "1 hectare pilot"
+   - Search for "3 staff" or "core team" → Replace with "1-2 founders"
+
+**Reference Documents** (Use these as v2.0 examples):
+- `20_Restoration_Methodology.md` - Correct 1 ha approach
+- `21_Technology_Integration.md` - v2.0 tech specs
+- `30_Business_Model.md` - v2.0 financial figures
+- `42_Next_Steps_90_Days.md` - Realistic immediate actions
+- `43_Operations_Action_Plan.md` - Founder-level operations
+
+**Verification**:
+- [ ] Version number consistent (2.0.0 throughout)
+- [ ] All budget figures are €20-30k Y1, €50-75k total
+- [ ] Land scale is 1 hectare
+- [ ] Team described as 1-2 founders
+- [ ] Year 1 goals realistic for Bootstrap
+- [ ] No v1.0 figures remaining (€250k, 5-10 ha, large team)
+- [ ] Hub accurately represents v2.0 Bootstrap Model
+
+**Related Tasks**:
+- This is the FIRST document most users read - highest priority
+- Affects user understanding of entire project
+- Should be completed before or alongside FIX-001 (Executive Summary)
+
+---
+
 ### ❌ FIX-001: Convert 01_Executive_Summary.md to v2.0 Bootstrap Model
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
@@ -369,12 +467,13 @@ Create `_versions/v2.0.0/RELEASE_NOTES.md` documenting the v2.0.0 Bootstrap Mode
 
 These fixes are important for vault integrity and user trust. Complete after CRITICAL fixes.
 
-### ⚠️ FIX-005: Fix Broken Cross-Reference to 22_Research_Framework
+### ⚠️ FIX-JAN-002: Correct Implementation Task Filenames in AUDIT_TASKS.md
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
 **Priority**: 🔴 HIGH
-**Task ID**: CUR-2025-11-07-002 (partial), LIB-2025-11-07-002 (Librarian update)
+**Task ID**: JAN-2025-11-07-002
+**Found By**: Janitor (detailed file-by-file verification)
 
 **File**: Multiple files link to doc 22 incorrectly
 
@@ -386,26 +485,73 @@ These fixes are important for vault integrity and user trust. Complete after CRI
 - `51_Key_Performance_Indicators.md` (lines 107, 255) - Added from Step 4 audit
 
 **Issue**:
-Links reference [[22_Research_Framework|...]] but the actual file is `22_Restoration_Challenges_Solutions.md`, NOT `22_Research_Framework.md`.
+AUDIT_TASKS.md contains INCORRECT filenames for 35 out of 44 implementation task files. The actual files exist with different names than what's listed in AUDIT_TASKS.md. This will prevent other personas (Curator, Auditor, Librarian, Quality Inspector) from finding the correct files to audit.
 
-**Fix Options** (Choose one):
+**Detailed Breakdown**:
+- **site_selection**: 8 of 9 filenames WRONG (only 00_Overview correct)
+- **reforestation**: All 7 filenames CORRECT ✅
+- **biodiversity**: 6 of 7 filenames WRONG (only 00_Overview correct)
+- **soil_restoration**: 5 of 7 filenames WRONG (00_Overview and 01 correct)
+- **water_management**: 6 of 7 filenames WRONG (only 00_Overview correct)
+- **community_engagement**: 5 of 7 filenames WRONG (00_Overview and 01 correct)
 
-**Option A: Update All Links to Point to Existing File**
-- Change all links from `[[22_Research_Framework|...]]` to `[[22_Restoration_Challenges_Solutions|Research Framework]]`
-- File exists and contains research/monitoring content
-- Simplest fix - just correct the filename in links
+**Fix Required**:
 
-**Option B: Rename File 22**
-- Rename `22_Restoration_Challenges_Solutions.md` to `22_Research_Framework.md`
-- Ensure content aligns with new name
-- May require content updates to focus on research framework
+Replace lines 807-1014 in AUDIT_TASKS.md with the ACTUAL filenames found in the filesystem.
 
-**Option C: Redirect to Methodology**
-- Update links to point to `20_Restoration_Methodology.md`
-- Add research framework section to doc 20 if needed
-- Update link text: [[20_Restoration_Methodology#research-approach|Research Framework]]
+**Actual filenames to use**:
 
-**Recommendation**: Option A (simplest) - Update links to point to existing file `22_Restoration_Challenges_Solutions.md`.
+```markdown
+#### Site Selection (9 files)
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/00_Site_Selection_Overview.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/01_Identify_Potential_Locations.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/02_Evaluate_Land_Condition.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/03_Estimate_Restoration_Potential.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/04_Consider_Accessibility.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/05_Research_Local_Regulations.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/06_Contact_Landowners.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/07_Visit_Sites.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/site_selection/08_Make_Shortlist.md`
+
+#### Reforestation (7 files) - NO CHANGES NEEDED ✅
+(Keep existing - all correct)
+
+#### Biodiversity (7 files)
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/00_Biodiversity_Overview.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/01_Assess_Biodiversity.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/02_Restore_Habitats.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/03_Create_Protected_Areas.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/04_Manage_Invasive_Species.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/05_Reintroduce_Lost_Species.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/biodiversity/06_Monitor_Biodiversity.md`
+
+#### Soil Restoration (7 files)
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/00_Soil_Restoration_Overview.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/01_Assess_Soil_Health.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/02_Add_Organic_Matter.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/03_Reduce_Tillage.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/04_Rotate_Crops.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/05_Manage_Pests_Diseases.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/soil_restoration/06_Monitor_Soil_Health.md`
+
+#### Water Management (7 files)
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/00_Water_Management_Overview.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/01_Assess_Water_Needs.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/02_Rainwater_Harvesting.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/03_Build_Water_Storage_Structures.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/04_Efficient_Irrigation.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/05_Drought_Management.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/water_management/06_Monitor_Water_Use.md`
+
+#### Community Engagement (7 files)
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/00_Community_Engagement_Overview.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/01_Identify_Stakeholders.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/02_Communicate_Plans.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/03_Educate_Community.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/04_Involve_Community.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/05_Share_Benefits.md`
+- [ ] **ALL PERSONAS** - File: `implementation_tasks/community_engagement/06_Maintain_Communication.md`
+```
 
 **Verification**:
 - [ ] All links functional (pointing to 22_Restoration_Challenges_Solutions.md)
@@ -1546,29 +1692,30 @@ To:
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 24 tasks
+**Total Fix Tasks**: 23 tasks
 
 **By Priority**:
-- 🚨 **CRITICAL**: 5 tasks (FIX-001 to FIX-004, FIX-023)
-- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-024)
+- 🚨 **CRITICAL**: 5 tasks (FIX-000 to FIX-004)
+- 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
 - 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
 - 🟢 **LOW**: 6 tasks (FIX-019 to FIX-024)
 
 **Completion Status**:
 - [ ] CRITICAL Priority: ___ / 5 complete
-- [ ] HIGH Priority: ___ / 5 complete
+- [ ] HIGH Priority: ___ / 4 complete
 - [ ] MEDIUM Priority: ___ / 10 complete
-- [ ] LOW Priority: ___ / 6 complete
-- [ ] **TOTAL**: ___ / 24 complete
+- [ ] LOW Priority: ___ / 4 complete
+- [ ] **TOTAL**: ___ / 23 complete
 
 ### Estimated Time to Complete
 
 **CRITICAL Fixes** (Must do immediately):
+- FIX-000: 2-3 hours (Hub document conversion - HIGHEST PRIORITY)
 - FIX-001: 2-3 hours (Executive Summary rewrite)
 - FIX-002: 1-2 hours (Project Vision conversion)
 - FIX-003: 1-2 hours (Success Factors conversion)
 - FIX-004: 1-2 hours (Status Assessment conversion)
-- **Total CRITICAL**: 5-9 hours
+- **Total CRITICAL**: 7-12 hours
 
 **HIGH Fixes** (Do next):
 - FIX-005 to FIX-008: 2-4 hours (cross-reference fixes)
@@ -1582,10 +1729,10 @@ To:
 - FIX-019 to FIX-022: 2-4 hours (enhancements)
 - **Total LOW**: 2-4 hours
 
-**GRAND TOTAL**: 19-32 hours of focused work
+**GRAND TOTAL**: 21-35 hours of focused work
 
 **Recommended Pace**:
-- **Week 1**: Complete CRITICAL fixes (5-9 hours, ~1 hour/day)
+- **Week 1**: Complete CRITICAL fixes (7-12 hours, ~1.5 hours/day)
 - **Week 2**: Complete HIGH fixes (2-4 hours, ~30 min/day)
 - **Week 3**: Complete MEDIUM fixes (10-15 hours, ~2 hours/day)
 - **Week 4**: Complete LOW fixes (2-4 hours, ~30 min/day)
@@ -1681,7 +1828,179 @@ To:
 
 ---
 
-**End of Fix Task List**  
-**Status**: Ready for systematic execution  
-**Next Action**: Start with FIX-001 (Executive Summary conversion)  
-**Expected Completion**: 3-4 weeks at steady pace
+## 📊 RE-AUDIT ADJUSTMENTS (November 7, 2025)
+
+### Systematic Re-Audit Findings
+
+After completing the comprehensive systematic re-audit with complete file reads (58 files total), the following adjustments are needed to existing fix tasks:
+
+### SEVERITY UPGRADES
+
+**FIX-015: 51_Key_Performance_Indicators.md**
+- **Original Priority**: 🟡 MEDIUM
+- **NEW Priority**: 🔴 HIGH (UPGRADED)
+- **Reason**: Re-audit revealed ALL Year 3 targets are v1.0 Large-Scale, not just isolated issues
+- **Specific Issues Found**:
+  - Line 30: 10,000+ trees (should be 800-1,500) - **10x too high**
+  - Line 123: 10+ employees (should be 1-2 founders, no employees)
+  - Line 178: €80,000 revenue (should be €5-12k) - **15x too high**
+  - Line 213: €200,000 expenses (should be €12-20k) - **15x too high**
+  - Line 288: 50+ hectares (should be 1 ha) - **50x too high**
+- **Action**: Move FIX-015 to HIGH PRIORITY section and update with specific line numbers
+
+### EXISTING TASKS REQUIRING DETAILED UPDATES
+
+**FIX-014: 50_Risk_Assessment.md**
+- **Priority**: Remains 🟡 MEDIUM
+- **Additional Details from Re-Audit**:
+  - Line 72: "Start smaller if needed: 2-5 hectares vs. 5-10" - assumes v1.0 baseline of 5-10 ha
+  - Line 183: "Atmospheric water generator: Supplemental source" - recommends AWG technology
+- **Action**: Update task with specific line numbers for targeted fixes
+
+**FIX-016: 60_Marketing_Communications_Strategy.md**
+- **Priority**: Remains 🟡 MEDIUM
+- **Additional Details from Re-Audit**:
+  - Line 23: "atmospheric water generators to make project self-sustaining"
+  - Line 42: "atmospheric water generation"
+  - Line 70: "Year 1 Goal: €250-500k"
+- **Action**: Update core messaging (elevator pitch and extended pitch) to remove AWG and correct budget
+
+### NEW FIX TASKS REQUIRED
+
+**FIX-023: Fix 45_Tiny_House_and_Living_Infrastructure.md Budget Summary Inconsistency**
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: AUD-RE-2025-11-07-001
+
+**File**: `45_Tiny_House_and_Living_Infrastructure.md`
+
+**Issue**:
+Lines 588-596 contain budget summary showing €41-48k total Year 1, which exceeds the stated v2.0 budget of €20-30k in other documents.
+
+**Fix Required**:
+
+1. **Reconcile Budget Summary** (Lines 588-596):
+   - Current: "Grand Total Year 1: €41,000-48,000"
+   - Issue: Individual components are v2.0 compliant, but total exceeds Year 1 budget
+   - Options:
+     - **Option A**: Clarify this is 3-year total, not Year 1
+     - **Option B**: Remove some items from Year 1 (defer to Year 2-3)
+     - **Option C**: Adjust component budgets to fit €20-30k Year 1
+
+2. **Verify Alignment** with:
+   - 30_Business_Model.md (€23-36k range, target €25-30k)
+   - 32_Funding_Strategy.md (€20-30k Year 1 target)
+   - 21_Technology_Integration.md (€10-18k technology budget)
+
+**Recommendation**: Option A - Clarify timeline. The €36-39k living infrastructure is likely spread over Months 1-6, and the "Year 1" grand total includes planting costs that may happen later.
+
+**Verification**:
+- [ ] Budget summary clearly states timeline (Year 1 vs setup period vs 3-year)
+- [ ] No contradiction with Business Model Year 1 budget
+- [ ] Component budgets still v2.0 compliant
+- [ ] Notes explain any costs deferred to Year 2-3
+
+---
+
+**FIX-024: Fix Implementation Task - 08_Make_Shortlist.md Scale Reference**
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: AUD-RE-2025-11-07-002
+
+**File**: `implementation_tasks/site_selection/08_Make_Shortlist.md`
+
+**Issue**:
+Line 53 states "Meets minimum size requirements (5-10 ha for Year 1)" which is v1.0 scale.
+
+**Fix Required**:
+Change line 53 from:
+```markdown
+- [ ] **Size Appropriate:** Meets minimum size requirements (5-10 ha for Year 1)
+```
+
+To:
+```markdown
+- [ ] **Size Appropriate:** Meets minimum size requirements (1 ha for Year 1 pilot)
+```
+
+**Verification**:
+- [ ] Scale reference updated to 1 ha
+- [ ] Consistent with v2.0 Bootstrap Model
+- [ ] No other scale references in file need updating
+
+---
+
+**FIX-025: Fix Implementation Task - 04_Consider_Accessibility.md AWG Reference**
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: AUD-RE-2025-11-07-003
+
+**File**: `implementation_tasks/site_selection/04_Consider_Accessibility.md`
+
+**Issue**:
+Line 59 mentions "Atmospheric water generation feasibility" which contradicts v2.0's rejection of AWG technology.
+
+**Fix Required**:
+Remove or replace line 59 reference to AWG:
+
+**Option A**: Remove entirely if not critical
+
+**Option B**: Replace with:
+```markdown
+- Rainwater harvesting potential → [[21_Technology_Integration|Technology]]
+```
+
+**Recommendation**: Option B - Maintain the water infrastructure consideration but reference correct technology.
+
+**Verification**:
+- [ ] AWG reference removed
+- [ ] Replacement (if used) references v2.0 water technology
+- [ ] Consistent with 21_Technology_Integration.md
+- [ ] No other AWG references in file
+
+---
+
+### UPDATED SUMMARY STATISTICS
+
+**Total Fix Tasks**: 26 tasks (was 23)
+
+**By Priority**:
+- 🚨 **CRITICAL**: 5 tasks (FIX-000 to FIX-004) - No change
+- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-015 moved here) - Was 4, now 5
+- 🟡 **MEDIUM**: 12 tasks (FIX-009 to FIX-014, FIX-016 to FIX-018, FIX-023) - Was 10, now 12
+- 🟢 **LOW**: 6 tasks (FIX-019 to FIX-022, FIX-024, FIX-025) - Was 4, now 6
+
+**Completion Status**:
+- [ ] CRITICAL Priority: ___ / 5 complete
+- [ ] HIGH Priority: ___ / 5 complete (was 4)
+- [ ] MEDIUM Priority: ___ / 12 complete (was 10)
+- [ ] LOW Priority: ___ / 6 complete (was 4)
+- [ ] **TOTAL**: ___ / 26 complete (was 23)
+
+### UPDATED TIME ESTIMATES
+
+**CRITICAL Fixes**: 7-12 hours (no change)
+
+**HIGH Fixes**: 4-6 hours (was 2-4, added FIX-015 upgrade = +2 hours)
+
+**MEDIUM Fixes**: 13-18 hours (was 10-15, added FIX-023 = +3 hours)
+
+**LOW Fixes**: 2.5-5 hours (was 2-4, added FIX-024 + FIX-025 = +0.5-1 hour)
+
+**GRAND TOTAL**: 26.5-41 hours (was 21-35 hours)
+
+**Impact of Re-Audit**: Added 5.5-6 hours of additional work, discovered 3 new tasks + upgraded 1 existing task severity.
+
+---
+
+**End of Fix Task List**
+**Status**: Ready for systematic execution (RE-AUDIT COMPLETE)
+**Next Action**: Start with FIX-000 (Hub document - HIGHEST PRIORITY)
+**Expected Completion**: 3-5 weeks at steady pace (adjusted for new tasks)
+**Re-Audit Date**: November 7, 2025 - Systematic verification complete
