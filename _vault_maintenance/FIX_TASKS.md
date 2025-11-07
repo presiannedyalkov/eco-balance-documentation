@@ -1342,18 +1342,21 @@ Choose ONE navigation pattern and apply consistently. Recommended pattern:
 
 ---
 
-### ⚠️ FIX-024: Fix Back Link Formatting in 13_Legal_Framework.md
+### ⚠️ FIX-024: Fix Back Link Formatting in Multiple Files
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
 **Priority**: 🟢 LOW
 **Task ID**: QI-2025-11-07-002
-**Found By**: Quality Inspector during audit of 13_Legal_Framework.md
+**Found By**: Quality Inspector during audit of strategic docs
 
-**File**: `13_Legal_Framework.md`
+**Files Affected**:
+- `13_Legal_Framework.md` (line 3)
+- `40_Expansion_Growth_Strategy.md` (line 3)
+- `70_Case_Studies_Restoration_Examples.md` (line 3)
 
 **Issue**:
-Back link on line 3 is missing bold markdown formatting, inconsistent with all other strategic documents.
+Back links on line 3 are missing bold markdown formatting, inconsistent with most other strategic documents.
 
 **Current State**:
 ```markdown
@@ -1366,20 +1369,20 @@ Back link on line 3 is missing bold markdown formatting, inconsistent with all o
 ```
 
 **Fix Required**:
-Change line 3 from:
+For each of the 3 files, change line 3 from:
 `← Back to [[00_Eco_Balance_Hub|Project Hub]]`
 
 To:
 `**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
 
 **Verification**:
-- [ ] Back link has bold markdown formatting
+- [ ] All 3 files have bold markdown formatting on back links
 - [ ] Consistent with other strategic documents
-- [ ] Link still functional
+- [ ] All links still functional
 
 **Related Tasks**: None - standalone formatting fix
 
-**Estimated Effort**: TRIVIAL (1 minute)
+**Estimated Effort**: TRIVIAL (3 minutes - 1 minute per file)
 
 ---
 
