@@ -321,6 +321,148 @@ Current status should reflect v2.0 Bootstrap Model adoption and realistic curren
 
 ---
 
+### ❌ FIX-023: Convert 00_Eco_Balance_Hub.md to v2.0 Bootstrap Model
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🚨 CRITICAL
+**Task ID**: CUR-2025-11-07-023
+**Found By**: Curator during Step 1 audit of Strategic Entry Docs
+
+**File**: `00_Eco_Balance_Hub.md`
+
+**Issue**:
+The main project hub (front door) has severe version confusion and contains extensive v1.0 Large-Scale content despite claiming to be v2.0.0. This is the most critical issue as it's the first document users see.
+
+**Specific Problems Found**:
+
+1. **Version Confusion**:
+   - Line 3: Claims "Version: 2.0.0 (Bootstrap Model)"
+   - Line 41: Shows "Current version number (1.0.0)"
+   - Line 298: States "Current Version:** 1.0.0 (Production Release)"
+   - Clear internal contradiction throughout
+
+2. **v1.0 Large-Scale Project Goals** (Lines 162-166):
+   - "Initial Investment Ask:** €250,000-€500,000" (should be €20-30k Y1)
+   - "Year 1 Goal: [...] secure 5-10 hectares" (should be 1 hectare)
+   - "plant 1,000+ trees" (should be 500-1,000 for 1 ha)
+   - "engage 100+ community members" (unrealistic for Bootstrap)
+   - "Long-term Vision (10 years): 10,000+ hectares" (aspirational but needs context)
+
+3. **v1.0 90-Day and Year 1 Goals** (Lines 208-221):
+   - "€50k+ in funding pipeline" (should be crowdfunding prep)
+   - "€250k+ funding secured" (should be €20-30k)
+   - "Land site acquired (5-10 ha)" (should be 1 ha)
+   - "Core team hired (3 staff)" (should be 1-2 founders)
+   - "First plantings completed (1,000+ trees)" (should be initial plantings appropriate for 1 ha)
+
+4. **Broken Cross-References**:
+   - Line 69: [[22_Restoration_Challenges_Solutions]] (doesn't exist)
+   - Line 86: [[31_Financial_Projections]] (doesn't exist)
+   - Line 132: [[41_Phase_1_Foundation]] (doesn't exist)
+   - Line 67: Links to [[40_Expansion_Growth_Strategy]] but text says "Implementation Roadmap" (name mismatch)
+
+5. **Release Announcement Confusion** (Lines 11-30):
+   - Announces "VERSION 2.0.0 RELEASED!" with Bootstrap details
+   - But data throughout file contradicts this announcement
+   - Creates misleading impression that conversion is complete
+
+**Fix Required**:
+
+**Phase 1: Fix Version Confusion**:
+1. Determine actual current version (recommend: 2.0.0)
+2. Make version number consistent throughout (lines 3, 41, 298, 445, etc.)
+3. Remove any v1.0 version references unless clearly marked as "archived"
+
+**Phase 2: Update Project Data to v2.0 Bootstrap**:
+
+Lines 162-166 "Project at a Glance":
+```markdown
+**Initial Investment Ask:** €20,000-€30,000 (Year 1 crowdfunding goal)
+
+**Year 1 Goal:**
+- Prepare crowdfunding campaign
+- Secure site (1 hectare, lease or low-cost purchase)
+- Establish DIY tiny house and off-grid systems
+- Begin initial restoration work (soil prep, first plantings)
+- Build local community relationships
+
+**3-Year Pilot Goal:**
+- Complete 1 hectare proof-of-concept restoration
+- Validate methods, document thoroughly
+- Demonstrate financial sustainability model
+- Create replicable blueprint for others
+
+**Long-term Vision (10+ years):**
+- Pilot proves model works → Others replicate globally
+- Movement of small-scale restoration projects
+- Thousands of hectares restored through replication
+```
+
+Lines 208-221 "Next Major Milestones":
+```markdown
+**90-Day Goals:**
+- [ ] Finalize crowdfunding campaign materials
+- [ ] Identify 5-10 potential 1 ha sites for evaluation
+- [ ] Build pre-launch audience (200-500 people)
+- [ ] Prepare detailed Year 1 budget (€20-30k)
+- [ ] Create pitch video and documentation
+- [ ] Begin community outreach in target regions
+
+**Year 1 Goals:**
+- [ ] Crowdfunding campaign successful (€20-30k raised)
+- [ ] Site selected and secured (1 hectare)
+- [ ] Founders committed full-time or part-time
+- [ ] Off-grid systems installed (tiny house, solar, water)
+- [ ] Initial restoration work begun
+- [ ] Documentation system established
+
+**Year 2-3 Goals:**
+- [ ] Restoration work continues (planting, monitoring)
+- [ ] Data collection and methodology refinement
+- [ ] Community engagement and volunteer programs
+- [ ] Financial sustainability demonstrated
+- [ ] Complete documentation for replication
+```
+
+**Phase 3: Fix Cross-References**:
+- Fix broken links (see FIX-005, FIX-006, FIX-007, FIX-008)
+- Ensure all hub navigation links functional
+
+**Phase 4: Align Release Announcement**:
+- Update v2.0 release announcement (lines 11-30) to be accurate
+- Either: Complete v2.0 conversion, then announcement is accurate
+- Or: Modify announcement to say "v2.0 Bootstrap Model DEFINED" (not "released")
+
+**Reference Documents** (Use these as v2.0 examples):
+- `20_Restoration_Methodology.md` - v2.0 compliant
+- `21_Technology_Integration.md` - v2.0 compliant
+- `30_Business_Model.md` - v2.0 compliant
+- `32_Funding_Strategy.md` - v2.0 compliant
+- `42_Next_Steps_90_Days.md` - v2.0 compliant
+- `43_Operations_Action_Plan.md` - v2.0 compliant
+- `44_Site_Selection_Land_Acquisition.md` - v2.0 compliant
+- `45_Tiny_House_and_Living_Infrastructure.md` - v2.0 compliant
+
+**Verification**:
+- [ ] Version number consistent throughout file (one version only)
+- [ ] All "Project at a Glance" data is v2.0 Bootstrap (€20-30k, 1 ha, etc.)
+- [ ] All milestone goals are v2.0 Bootstrap appropriate
+- [ ] No contradictions between announcement and content
+- [ ] All cross-references functional
+- [ ] No v1.0 Large-Scale data (except in historical/archive context)
+- [ ] Document reads as coherent, professional "front door"
+
+**Priority Justification**:
+This is the PROJECT HUB - the main entry point and navigation center. It must be accurate and consistent. Version confusion here undermines trust in entire documentation system. **CRITICAL** priority justified.
+
+**Related Tasks**:
+- FIX-001 through FIX-004 (other strategic entry docs)
+- FIX-005 through FIX-008 (cross-reference fixes)
+- Should be fixed early to establish correct foundation
+
+---
+
 ## 🔴 HIGH PRIORITY FIXES
 
 These fixes are important for vault integrity and user trust. Complete after CRITICAL fixes.
@@ -1289,20 +1431,20 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 22 tasks
+**Total Fix Tasks**: 23 tasks (updated 2025-11-07)
 
 **By Priority**:
-- 🚨 **CRITICAL**: 4 tasks (FIX-001 to FIX-004)
+- 🚨 **CRITICAL**: 5 tasks (FIX-001 to FIX-004, FIX-023)
 - 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
 - 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
 - 🟢 **LOW**: 4 tasks (FIX-019 to FIX-022)
 
 **Completion Status**:
-- [ ] CRITICAL Priority: ___ / 4 complete
+- [ ] CRITICAL Priority: ___ / 5 complete
 - [ ] HIGH Priority: ___ / 4 complete
 - [ ] MEDIUM Priority: ___ / 10 complete
 - [ ] LOW Priority: ___ / 4 complete
-- [ ] **TOTAL**: ___ / 22 complete
+- [ ] **TOTAL**: ___ / 23 complete
 
 ### Estimated Time to Complete
 
@@ -1311,7 +1453,8 @@ After completing fixes, document all changes made during this maintenance cycle.
 - FIX-002: 1-2 hours (Project Vision conversion)
 - FIX-003: 1-2 hours (Success Factors conversion)
 - FIX-004: 1-2 hours (Status Assessment conversion)
-- **Total CRITICAL**: 5-9 hours
+- FIX-023: 2-3 hours (Hub/Front Door conversion - ADDED 2025-11-07)
+- **Total CRITICAL**: 8-12 hours
 
 **HIGH Fixes** (Do next):
 - FIX-005 to FIX-008: 2-4 hours (cross-reference fixes)
@@ -1325,7 +1468,7 @@ After completing fixes, document all changes made during this maintenance cycle.
 - FIX-019 to FIX-022: 2-4 hours (enhancements)
 - **Total LOW**: 2-4 hours
 
-**GRAND TOTAL**: 19-32 hours of focused work
+**GRAND TOTAL**: 22-35 hours of focused work
 
 **Recommended Pace**:
 - **Week 1**: Complete CRITICAL fixes (5-9 hours, ~1 hour/day)

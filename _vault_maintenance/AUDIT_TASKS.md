@@ -176,10 +176,16 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 00 - Eco Balance Hub
 
-- [ ] **CURATOR** - File: `00_Eco_Balance_Hub.md`
+- [x] **CURATOR** - File: `00_Eco_Balance_Hub.md`
   - Check: Content completeness, version consistency (v2.0 Bootstrap), cross-references valid
   - Focus: Recently updated to v2.0 - verify all references accurate
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - Added FIX-023 to FIX_TASKS.md
+           CRITICAL: Version confusion (claims v2.0 but shows v1.0 data throughout)
+           - Line 3 says "Version: 2.0.0" but line 41 says "1.0.0", line 298 says "1.0.0"
+           - Lines 162-166: v1.0 specs (€250k-500k, 5-10 ha, 1000+ trees)
+           - Lines 208-221: v1.0 goals (€250k+, 5-10 ha, 3 staff)
+           - Broken links: doc 22, 31, 40 name mismatch, 41
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `00_Eco_Balance_Hub.md`
   - Check: All data consistent (budgets, scales, timelines), standards compliance
@@ -198,10 +204,16 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 01 - Executive Summary
 
-- [ ] **CURATOR** - File: `01_Executive_Summary.md`
+- [x] **CURATOR** - File: `01_Executive_Summary.md`
   - Check: Content quality, version consistency (v1.0 vs v2.0?), narrative flow
   - Focus: **CRITICAL** - Known to have v1.0 Large-Scale content (€250-500k, 5-10 ha, AWG)
-  - Result: ❌ KNOWN ISSUE - Task CUR-2025-11-07-001 already created
+  - Result: ⚠️ ISSUES FOUND - FIX-001 already exists in FIX_TASKS.md
+           CONFIRMED: Extensive v1.0 Large-Scale content found
+           - €250k-500k budget (should be €20-30k Y1)
+           - 5-10 hectares (should be 1 ha)
+           - Atmospheric water generation mentioned (deprecated tech)
+           - Broken links: docs 22, 31, 40, 41, 60 name mismatch
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `01_Executive_Summary.md`
   - Check: Budget figures, scale assumptions, technology specs
@@ -220,10 +232,15 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 02 - Project Vision
 
-- [ ] **CURATOR** - File: `02_Project_Vision.md`
+- [x] **CURATOR** - File: `02_Project_Vision.md`
   - Check: Version consistency, narrative coherence, content completeness
   - Focus: Does it reference v1.0 Large-Scale or v2.0 Bootstrap assumptions?
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - FIX-002 already exists in FIX_TASKS.md
+           CONFIRMED: v1.0 scale references found
+           - Lines 169-173: "5-10 hectares in Year 1" (should be 1 ha)
+           - Broken links: docs 22, 41, 60 name mismatch, 40 name mismatch
+           - Content is more generic/visionary, fewer specific contradictions
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `02_Project_Vision.md`
   - Check: Data consistency with v2.0 documents, scale assumptions
@@ -242,10 +259,15 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 03 - Success Factors
 
-- [ ] **CURATOR** - File: `03_Success_Factors.md`
+- [x] **CURATOR** - File: `03_Success_Factors.md`
   - Check: Content relevance to v2.0 Bootstrap, completeness, coherence
   - Focus: Success factors for 1 ha pilot vs 10-30 ha large-scale differ
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - FIX-003 already exists in FIX_TASKS.md
+           CONFIRMED: Success factors need v2.0 Bootstrap alignment
+           - Content structure good but scale assumptions need verification
+           - Broken links: docs 22, 31, 60 name mismatch
+           - Financial assumptions reference non-existent docs
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `03_Success_Factors.md`
   - Check: Consistency with v2.0 model, data accuracy
@@ -264,10 +286,18 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 04 - Current Status Assessment
 
-- [ ] **CURATOR** - File: `04_Current_Status_Assessment.md`
+- [x] **CURATOR** - File: `04_Current_Status_Assessment.md`
   - Check: Content current and accurate, v2.0 alignment
   - Focus: Status should reflect v2.0 Bootstrap Model adoption
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - FIX-004 already exists in FIX_TASKS.md
+           CRITICAL: Completely based on v1.0 Large-Scale assumptions
+           - Lines 123-124: €15-20k legal costs (high for Bootstrap)
+           - Lines 144-146: €100k-150k in 6mo, €250k+ in 12mo (v1.0)
+           - Line 168: €100-200k land purchase (v1.0 for multi-ha)
+           - Line 189: €90-120k/year for 3 staff (should be 1-2 founders)
+           - Lines 275-280: All v1.0 goals (€250k+, 3+ people, 5-10 ha)
+           - Broken links: docs 22, 31, 60 name mismatch
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `04_Current_Status_Assessment.md`
   - Check: Data accuracy, timeline consistency, version compliance
