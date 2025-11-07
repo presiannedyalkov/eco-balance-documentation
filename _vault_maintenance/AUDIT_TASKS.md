@@ -196,6 +196,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: This is the front door - must be polished
   - Result: _______________
 
+- [x] **JANITOR** - File: `00_Eco_Balance_Hub.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, no redundancy
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (00_Eco_Balance_Hub.md), no duplicates found, excellent organization
+
 #### 01 - Executive Summary
 
 - [ ] **CURATOR** - File: `01_Executive_Summary.md`
@@ -217,6 +222,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Writing quality, formatting, professional tone
   - Focus: After v2.0 conversion, check polish and clarity
   - Result: _______________
+
+- [x] **JANITOR** - File: `01_Executive_Summary.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, no redundancy
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (01_Executive_Summary.md), 1 archived version appropriately in archive/pre-v1.0.0/, no organizational issues
 
 #### 02 - Project Vision
 
@@ -240,6 +250,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Vision should be inspiring and clear
   - Result: _______________
 
+- [x] **JANITOR** - File: `02_Project_Vision.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, no redundancy
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (02_Project_Vision.md), no duplicates found, excellent organization
+
 #### 03 - Success Factors
 
 - [ ] **CURATOR** - File: `03_Success_Factors.md`
@@ -262,6 +277,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Clear articulation of success criteria
   - Result: _______________
 
+- [x] **JANITOR** - File: `03_Success_Factors.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, no redundancy
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (03_Success_Factors.md), no duplicates found, excellent organization
+
 #### 04 - Current Status Assessment
 
 - [ ] **CURATOR** - File: `04_Current_Status_Assessment.md`
@@ -283,6 +303,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Clarity, formatting, up-to-date presentation
   - Focus: Assessment should read as current, not historical
   - Result: _______________
+
+- [x] **JANITOR** - File: `04_Current_Status_Assessment.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, no redundancy
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (04_Current_Status_Assessment.md), no duplicates found, excellent organization
 
 ---
 
