@@ -1315,6 +1315,112 @@ Add clarification about Bootstrap scale:
 
 ---
 
+### ⚠️ FIX-028: Reforestation Seedling Sourcing File Uses 2 Hectare Examples (Should Be 1 Hectare)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: CUR-2025-11-07-028
+**Found By**: Curator during Step 5 Group 3 audit of Implementation Tasks
+
+**File**: `implementation_tasks/reforestation/02_Source_Seedlings.md`
+
+**Issue**:
+File contains calculation examples using 2 hectares instead of 1 hectare Bootstrap Model scale. Examples should reflect v2.0 Bootstrap approach.
+
+**Specific Problems**:
+- Lines 94-100: Example calculation uses "Area: 2 hectares"
+  - "Total hectares: 2 hectares"
+  - "Density: 1,000 trees/hectare"
+  - "Base need: 2,000 seedlings"
+  - Should use 1 hectare for Bootstrap examples
+
+- Lines 102-107: Species breakdown based on 2,500 seedlings (2 ha + buffer)
+- Lines 214-217: Budget example "For 2,000 seedlings" (2 ha scale)
+
+**Impact**:
+- Minor misalignment with v2.0 Bootstrap Model
+- Could confuse users about appropriate scale
+- Budget examples higher than necessary for 1 ha pilot
+- Examples should reflect actual Bootstrap implementation
+
+**Fix Required**:
+
+**Lines 94-100 - Update Example Calculation**:
+
+Change:
+```markdown
+**Example Calculation:**
+```
+Area: 2 hectares
+Density: 1,000 trees/hectare
+Base need: 2,000 seedlings
+Buffer (25%): 500 seedlings
+Total order: 2,500 seedlings
+```
+```
+
+To:
+```markdown
+**Example Calculation (Bootstrap Model - 1 hectare):**
+```
+Area: 1 hectare
+Density: 1,000 trees/hectare (dense restoration planting)
+Base need: 1,000 seedlings
+Buffer (25%): 250 seedlings
+Total order: 1,250 seedlings
+```
+```
+
+**Lines 102-107 - Update Species Breakdown**:
+
+Change calculations to reflect 1,250 total seedlings instead of 2,500:
+- 30% Oak = 375 seedlings (not 750)
+- 20% Pine = 250 seedlings (not 500)
+- 15% Carob = 188 seedlings (not 375)
+- etc.
+
+**Lines 214-217 - Update Budget Example**:
+
+Change:
+```markdown
+**For 2,000 seedlings:**
+- Budget estimate: €5,000-15,000
+- Add 20% contingency: €6,000-18,000
+```
+
+To:
+```markdown
+**For 1,000-1,250 seedlings (1 hectare Bootstrap):**
+- Budget estimate: €2,500-8,000
+- Add 20% contingency: €3,000-10,000
+```
+
+**Add Bootstrap Context Note** (after the example):
+
+Add clarification:
+```markdown
+**Bootstrap Model Note:**
+- 1 hectare pilot site requires 1,000-1,250 seedlings (with buffer)
+- Dense planting (1,000 trees/ha) for faster canopy closure
+- Seedling budget fits within €20-30k Year 1 total budget
+- For larger sites post-pilot, scale calculations proportionally
+```
+
+**Verification**:
+- [ ] All examples use 1 hectare as baseline
+- [ ] Seedling quantities reflect 1,000-1,250 range (with buffer)
+- [ ] Budget estimates compatible with €20-30k Year 1 Bootstrap budget
+- [ ] Bootstrap context clearly noted
+- [ ] Consistent with 00_Reforestation_Overview.md (1,000-2,000 trees Year 1)
+
+**Related Tasks**:
+- Part of systematic v2.0 Bootstrap scale alignment
+- Related to FIX-025, FIX-027 (other scale corrections)
+- Ensures consistency with reforestation methodology
+
+---
+
 ### ⚠️ FIX-016: Verify 60_Marketing_Communications_Strategy.md for Bootstrap Approach
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
