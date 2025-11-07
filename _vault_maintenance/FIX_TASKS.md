@@ -1246,6 +1246,75 @@ Add a note in the Water section:
 
 ---
 
+### ⚠️ FIX-027: Site Selection Shortlist File Contains v1.0 Scale Assumption (5-10 ha vs 1 ha)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🔴 HIGH
+**Task ID**: CUR-2025-11-07-027
+**Found By**: Curator during Step 5 Group 2 audit of Implementation Tasks
+
+**File**: `implementation_tasks/site_selection/08_Make_Shortlist.md`
+
+**Issue**:
+File contains critical v1.0 Large-Scale assumption about site size in the essential criteria section. States "5-10 ha for Year 1" when v2.0 Bootstrap Model is 1 hectare pilot.
+
+**Specific Problem**:
+- Line 53: "**Size Appropriate:** Meets minimum size requirements (5-10 ha for Year 1)"
+- This is in the "Essential Criteria (Must-Haves)" section for site selection
+- States wrong scale entirely - v2.0 Bootstrap is 1 ha pilot, NOT 5-10 ha
+
+**Impact**:
+- Fundamental misalignment with v2.0 Bootstrap Model
+- Could lead to selecting wrong-sized sites
+- 5-10 ha is v1.0 Large-Scale approach
+- Would require significantly higher budget (€50-500k vs €20-30k Year 1)
+
+**Fix Required**:
+
+**Line 53 - Change Essential Criterion**:
+
+Change:
+```markdown
+- [ ] **Size Appropriate:** Meets minimum size requirements (5-10 ha for Year 1)
+```
+
+To:
+```markdown
+- [ ] **Size Appropriate:** 1 hectare for Bootstrap pilot (v2.0 Model)
+```
+
+**Add Context Note** (after line 53 or in new section):
+
+Add clarification about Bootstrap scale:
+```markdown
+**Bootstrap Model Site Size:**
+- Year 1-3: 1 hectare pilot site (prove the model)
+- Post-pilot: If successful, consider 5-10 ha replication sites
+- Focus: Validation at small scale, not immediate large-scale operation
+- Budget: 1 ha site fits within €20-30k Year 1 budget
+```
+
+**Review Throughout Document**:
+- Check other size references in the file
+- Line 241: "Size: [Hectares, with breakdown of terrain types]" - add note about 1 ha target
+- Ensure scoring examples reflect 1 ha scale
+- Update any cost estimates that assume 5-10 ha
+
+**Verification**:
+- [ ] Line 53 states "1 hectare" for Bootstrap pilot
+- [ ] No references to "5-10 ha for Year 1" remain
+- [ ] Bootstrap scale context clearly explained
+- [ ] Consistent with v2.0 compliant docs (30, 32, 42, 43, 44)
+- [ ] Site size aligns with €20-30k Year 1 budget
+
+**Related Tasks**:
+- FIX-001 through FIX-004 (Strategic docs v2.0 conversion)
+- FIX-025 (Site selection budget issues)
+- Part of systematic v2.0 Bootstrap scale alignment
+
+---
+
 ### ⚠️ FIX-016: Verify 60_Marketing_Communications_Strategy.md for Bootstrap Approach
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)

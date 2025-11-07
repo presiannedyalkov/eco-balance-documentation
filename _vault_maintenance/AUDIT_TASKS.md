@@ -892,7 +892,7 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 **Status**:
 - Group 1: [x] Complete (2025-11-07) - 2 issues found (FIX-025, FIX-026)
-- Group 2: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 2: [x] Complete (2025-11-07) - 1 issue found (FIX-027)
 - Group 3: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 4: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 5: [ ] Not started / [ ] In Progress / [ ] Complete
@@ -944,22 +944,37 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 ---
 
-#### Group 2: Site Selection (Files 6-9) - 4 files
+#### Group 2: Site Selection (Files 5-8) - 4 files
 
-**Status**: [ ] Not Started
+**Status**: [x] Complete (Date: 2025-11-07)
 
-**Files to Audit**:
-1. `implementation_tasks/site_selection/05_Analyze_Legal_Status.md`
-2. `implementation_tasks/site_selection/06_Evaluate_Community_Dynamics.md`
-3. `implementation_tasks/site_selection/07_Prepare_Shortlist.md`
-4. `implementation_tasks/site_selection/08_Make_Final_Selection.md`
+**Files Audited**:
+1. ✅ `implementation_tasks/site_selection/05_Research_Local_Regulations.md`
+2. ✅ `implementation_tasks/site_selection/06_Contact_Landowners.md`
+3. ✅ `implementation_tasks/site_selection/07_Visit_Sites.md`
+4. ✅ `implementation_tasks/site_selection/08_Make_Shortlist.md`
 
 **Audit Focus (Curator)**:
 - Same as Group 1
 - Legal requirements appropriate for Bootstrap scale
 - Community assessment realistic for 1-2 founders
 
-**Results**: _______________
+**Results**: ⚠️ ISSUES FOUND - Added FIX-027 to FIX_TASKS.md
+
+**Summary**:
+- **File 05 (Research Regulations)**: Minor issue - Some regulatory cost ranges high (upper bounds for large projects), but realistic variance for Germany
+- **File 06 (Contact Landowners)**: ✅ PASS - Scale-neutral, excellent practical guidance, financial considerations realistic
+- **File 07 (Visit Sites)**: ✅ PASS - Budget appropriate (€100-300 transport, €50-150 accommodation, €200-500 experts)
+- **File 08 (Make Shortlist)**: 🚨 CRITICAL - Line 53 states "5-10 ha for Year 1" (should be 1 ha for v2.0 Bootstrap)
+
+**Issues Created**:
+- **FIX-027** (HIGH): File 08 contains v1.0 scale assumption in essential criteria
+  - Line 53: "Meets minimum size requirements (5-10 ha for Year 1)"
+  - Should state: "1 hectare for Bootstrap pilot (v2.0 Model)"
+  - Fundamental misalignment with v2.0 Bootstrap approach
+  - 5-10 ha requires €50-500k vs €20-30k for 1 ha
+
+**Assessment**: Group 2 files have excellent structural quality and practical guidance. Files 05-07 are scale-appropriate or scale-neutral. File 08 has critical scale error in essential site selection criteria that must be fixed to align with v2.0 Bootstrap Model.
 
 ---
 
