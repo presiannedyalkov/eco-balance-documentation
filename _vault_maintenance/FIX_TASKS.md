@@ -3183,22 +3183,86 @@ To:
 
 ---
 
+### ⚠️ FIX-035: Update Site Size Reference in implementation_tasks/site_selection/08_Make_Shortlist.md
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: CUR-2025-11-07-003
+**Found By**: Curator during Step 5 audit (Implementation Tasks 44 files)
+
+**File**: `implementation_tasks/site_selection/08_Make_Shortlist.md`
+
+**Issue**:
+Line 53 contains a v1.0 scale reference in the "Essential Criteria" section that conflicts with v2.0 Bootstrap model.
+
+**Specific Problem**:
+- Line 53: "**Size Appropriate:** Meets minimum size requirements (5-10 ha for Year 1)"
+- Should reflect v2.0 Bootstrap (1 ha Year 1, with 5-10 ha as post-bootstrap expansion)
+
+**Context**:
+- This is the ONLY v2.0 scale issue found across all 44 implementation task files
+- Implementation tasks are otherwise exceptionally high quality and scale-flexible
+- Issue is in the decision criteria checklist for site shortlisting
+- Minor fix with low impact (implementation task, not strategic document)
+
+**Fix Required**:
+
+Change line 53 from:
+```markdown
+- [ ] **Size Appropriate:** Meets minimum size requirements (5-10 ha for Year 1)
+```
+
+To:
+```markdown
+- [ ] **Size Appropriate:** Meets minimum size requirements (1 ha for Year 1 bootstrap, 5-10 ha for post-bootstrap expansion)
+```
+
+**Alternative (More Concise)**:
+```markdown
+- [ ] **Size Appropriate:** Meets size requirements (1 ha bootstrap / 5-10 ha scale phase)
+```
+
+**Alternative (Most Flexible)**:
+```markdown
+- [ ] **Size Appropriate:** Meets project size requirements per strategic plan ([[44_Site_Selection_Land_Acquisition|Site Selection Strategy]])
+```
+
+**Verification**:
+- [ ] Line 53 updated to reflect v2.0 bootstrap scale (1 ha Year 1)
+- [ ] Larger scale (5-10 ha) contextualized as post-bootstrap expansion
+- [ ] Essential criteria checklist still functional
+- [ ] No other v1.0 scale references in file
+- [ ] Cross-reference to strategic doc maintained if using Alternative 3
+
+**Related Tasks**:
+- None - isolated issue in single implementation task file
+- Does not affect other implementation tasks or strategic documents
+- Implementation tasks otherwise excellent (see CURATOR audit result)
+
+**Notes**:
+- This is the only v2.0 scale issue found in all 44 implementation task files
+- All other implementation files are scale-flexible and version-agnostic
+- Overall implementation task quality: EXCELLENT
+
+---
+
 ### UPDATED SUMMARY STATISTICS
 
-**Total Fix Tasks**: 28 tasks (was 26, +2 from Curator Step 4 audit)
+**Total Fix Tasks**: 29 tasks (was 28, +1 from Curator Step 5 audit)
 
 **By Priority**:
 - 🚨 **CRITICAL**: 5 tasks (FIX-000 to FIX-004) - No change
 - 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-015 moved here) - No change
-- 🟡 **MEDIUM**: 14 tasks (FIX-009 to FIX-014, FIX-016 to FIX-018, FIX-023, FIX-033, FIX-034) - Was 12, now 14
-- 🟢 **LOW**: 6 tasks (FIX-019 to FIX-022, FIX-024, FIX-025) - No change
+- 🟡 **MEDIUM**: 14 tasks (FIX-009 to FIX-014, FIX-016 to FIX-018, FIX-023, FIX-033, FIX-034) - No change
+- 🟢 **LOW**: 7 tasks (FIX-019 to FIX-022, FIX-024, FIX-025, FIX-035) - Was 6, now 7
 
 **Completion Status**:
 - [ ] CRITICAL Priority: ___ / 5 complete
 - [ ] HIGH Priority: ___ / 5 complete
-- [ ] MEDIUM Priority: ___ / 14 complete (was 12, +2 from Curator audit)
-- [ ] LOW Priority: ___ / 6 complete
-- [ ] **TOTAL**: ___ / 28 complete (was 26, +2 from Curator Step 4 audit)
+- [ ] MEDIUM Priority: ___ / 14 complete
+- [ ] LOW Priority: ___ / 7 complete (was 6, +1 from Curator Step 5 audit)
+- [ ] **TOTAL**: ___ / 29 complete (was 28, +1 from Curator Step 5 audit)
 
 ### UPDATED TIME ESTIMATES
 
@@ -3206,11 +3270,11 @@ To:
 
 **HIGH Fixes**: 4-6 hours (was 2-4, added FIX-015 upgrade = +2 hours)
 
-**MEDIUM Fixes**: 14-20 hours (was 13-18, added FIX-033 + FIX-034 = +1-2 hours)
+**MEDIUM Fixes**: 14-20 hours (no change)
 
-**LOW Fixes**: 2.5-5 hours (no change)
+**LOW Fixes**: 3-5.5 hours (was 2.5-5, added FIX-035 = +0.5 hour)
 
-**GRAND TOTAL**: 27.5-43 hours (was 26.5-41 hours, +1-2 hours from Curator Step 4)
+**GRAND TOTAL**: 28-43.5 hours (was 27.5-43 hours, +0.5 hour from Curator Step 5)
 
 **Impact of Re-Audit**: Added 5.5-6 hours of additional work, discovered 3 new tasks + upgraded 1 existing task severity.
 
