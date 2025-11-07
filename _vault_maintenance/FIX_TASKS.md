@@ -1285,24 +1285,125 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ---
 
+### ⚠️ FIX-023: Standardize Navigation Patterns in 00_Eco_Balance_Hub.md
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: QI-2025-11-07-001
+**Found By**: Quality Inspector during audit of 00_Eco_Balance_Hub.md
+
+**File**: `00_Eco_Balance_Hub.md`
+
+**Issue**:
+Navigation link patterns are inconsistent throughout the Hub document, reducing professional polish and creating slight user experience friction.
+
+**Specific Inconsistencies Found**:
+- Some sections use "→ See [[link]]"
+- Other sections use "→ Details in [[link]]"
+- Other sections use "Navigate: [[link]]"
+- Some sections use direct [[links]] with no prefix
+- Some use "→ Full assessment: [[link]]"
+
+**Examples**:
+- Line 23: "→ See [[20_Restoration_Methodology]]"
+- Line 68: "→ See [[21_Technology_Integration]]"
+- Line 99: "Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview]]"
+- Line 202: "→ Full assessment: [[04_Current_Status_Assessment]]"
+
+**Fix Required**:
+
+Choose ONE navigation pattern and apply consistently. Recommended pattern:
+
+**Option A** (Recommended): Use "→ See [[link]]" for all navigation
+- Consistent with most of the document
+- Clear and concise
+- Easy to scan
+
+**Option B**: Use direct [[links]] with no prefix
+- Clean, minimal
+- Relies on link text for context
+
+**Implementation**:
+1. Search for all navigation patterns in the file
+2. Standardize to chosen pattern (recommend Option A)
+3. Ensure consistency throughout
+4. Verify all link text remains clear and descriptive
+
+**Verification**:
+- [ ] All navigation links follow same pattern
+- [ ] No mixing of "→ See" / "→ Details in" / "Navigate:" patterns
+- [ ] Link text remains clear and descriptive
+- [ ] Professional polish improved
+
+**Related Tasks**: None - standalone polish improvement
+
+**Estimated Effort**: TRIVIAL (10-15 minutes)
+
+---
+
+### ⚠️ FIX-024: Fix Back Link Formatting in Multiple Files
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: QI-2025-11-07-002
+**Found By**: Quality Inspector during audit of strategic docs
+
+**Files Affected**:
+- `13_Legal_Framework.md` (line 3)
+- `40_Expansion_Growth_Strategy.md` (line 3)
+- `70_Case_Studies_Restoration_Examples.md` (line 3)
+
+**Issue**:
+Back links on line 3 are missing bold markdown formatting, inconsistent with most other strategic documents.
+
+**Current State**:
+```markdown
+← Back to [[00_Eco_Balance_Hub|Project Hub]]
+```
+
+**Expected State**:
+```markdown
+**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+```
+
+**Fix Required**:
+For each of the 3 files, change line 3 from:
+`← Back to [[00_Eco_Balance_Hub|Project Hub]]`
+
+To:
+`**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+
+**Verification**:
+- [ ] All 3 files have bold markdown formatting on back links
+- [ ] Consistent with other strategic documents
+- [ ] All links still functional
+
+**Related Tasks**: None - standalone formatting fix
+
+**Estimated Effort**: TRIVIAL (3 minutes - 1 minute per file)
+
+---
+
 ## 📊 FIX COMPLETION TRACKING
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 22 tasks
+**Total Fix Tasks**: 24 tasks
 
 **By Priority**:
 - 🚨 **CRITICAL**: 4 tasks (FIX-001 to FIX-004)
 - 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
 - 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
-- 🟢 **LOW**: 4 tasks (FIX-019 to FIX-022)
+- 🟢 **LOW**: 6 tasks (FIX-019 to FIX-024)
 
 **Completion Status**:
 - [ ] CRITICAL Priority: ___ / 4 complete
 - [ ] HIGH Priority: ___ / 4 complete
 - [ ] MEDIUM Priority: ___ / 10 complete
-- [ ] LOW Priority: ___ / 4 complete
-- [ ] **TOTAL**: ___ / 22 complete
+- [ ] LOW Priority: ___ / 6 complete
+- [ ] **TOTAL**: ___ / 24 complete
 
 ### Estimated Time to Complete
 
