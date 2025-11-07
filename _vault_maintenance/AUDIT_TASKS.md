@@ -896,7 +896,7 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - Group 3: [x] Complete (2025-11-07) - 1 issue found (FIX-028)
 - Group 4: [x] Complete (2025-11-07) - 1 issue found (FIX-029)
 - Group 5: [x] Complete (2025-11-07) - 2 issues found (FIX-030, FIX-031)
-- Group 6: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 6: [x] Complete (2025-11-07) - 1 issue found (FIX-032)
 - Group 7: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 8: [ ] Not started / [ ] In Progress / [ ] Complete
 - Group 9: [ ] Not started / [ ] In Progress / [ ] Complete
@@ -1096,16 +1096,16 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 ---
 
-#### Group 6: Soil Restoration (Files 2-6) - 5 files
+#### Group 6: Soil Restoration (Files 1-5) - 5 files
 
-**Status**: [ ] Not Started
+**Status**: [x] Complete (Date: 2025-11-07)
 
-**Files to Audit**:
-1. `implementation_tasks/soil_restoration/01_Assess_Soil_Health.md`
-2. `implementation_tasks/soil_restoration/02_Test_Soil_Properties.md`
-3. `implementation_tasks/soil_restoration/03_Add_Organic_Matter.md`
-4. `implementation_tasks/soil_restoration/04_Implement_Cover_Crops.md`
-5. `implementation_tasks/soil_restoration/05_Manage_Erosion.md`
+**Files Audited**:
+1. ✅ `implementation_tasks/soil_restoration/01_Assess_Soil_Health.md`
+2. ✅ `implementation_tasks/soil_restoration/02_Add_Organic_Matter.md`
+3. ✅ `implementation_tasks/soil_restoration/03_Reduce_Tillage.md`
+4. ✅ `implementation_tasks/soil_restoration/04_Rotate_Crops.md`
+5. ✅ `implementation_tasks/soil_restoration/05_Manage_Pests_Diseases.md`
 
 **Audit Focus (Curator)**:
 - Soil assessment methods practical for founders
@@ -1114,7 +1114,29 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - Cover crop guidance complete and realistic
 - Erosion control feasible for small team
 
-**Results**: _______________
+**Results**: ✅ NO SCALE ISSUES FOUND - Added FIX-032 (LOW) for currency symbol
+
+**Summary**:
+- **File 01 (Assess Soil Health)**: ✅ PASS - Per-acre sampling guidance scale-neutral, budget uses $ instead of €
+- **File 02 (Add Organic Matter)**: ✅ PASS - Per-acre application guidance appropriate, budget uses $ instead of €
+- **File 03 (Reduce Tillage)**: ✅ PASS - Scale-neutral practices and guidance, budget uses $ instead of €
+- **File 04 (Rotate Crops)**: ✅ PASS - Per-acre seeding and rotation guidance appropriate, budget uses $ instead of €
+- **File 05 (Manage Pests Diseases)**: ✅ PASS - Scale-neutral IPM guidance, brief file, budget uses $ instead of €
+
+**Issues Created**:
+- **FIX-032** (LOW): All 6 soil restoration files (00-05) use USD ($) instead of EUR (€)
+  - Cosmetic currency symbol inconsistency only
+  - NO scale alignment issues whatsoever
+  - All guidance is per-acre or scale-neutral and appropriate for any site size
+  - Content quality excellent throughout
+  - Lowest priority fix - simple search-replace operation
+
+**Pattern Identified**:
+- ALL soil restoration files consistently use $ (not €)
+- Suggests sourced from US-based materials or created separately
+- Files numbered differently than expected (04 is "Rotate Crops" not "Implement Cover Crops")
+
+**Assessment**: Group 6 files have EXCELLENT quality with comprehensive, scientifically-sound, and practical guidance for soil restoration. All guidance is appropriately scaled (per-acre or scale-neutral) and fully compatible with 1 ha Bootstrap Model. Only issue is minor currency symbol inconsistency throughout category.
 
 ---
 

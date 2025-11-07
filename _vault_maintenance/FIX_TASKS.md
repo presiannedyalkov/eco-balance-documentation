@@ -2200,24 +2200,103 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ---
 
+### ⚠️ FIX-032: Soil Restoration Files Use USD ($) Instead of EUR (€)
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟢 LOW
+**Task ID**: CUR-2025-11-07-032
+**Found By**: Curator during Step 5 Group 6 audit of Implementation Tasks
+
+**Files**:
+- `implementation_tasks/soil_restoration/00_Soil_Restoration_Overview.md`
+- `implementation_tasks/soil_restoration/01_Assess_Soil_Health.md`
+- `implementation_tasks/soil_restoration/02_Add_Organic_Matter.md`
+- `implementation_tasks/soil_restoration/03_Reduce_Tillage.md`
+- `implementation_tasks/soil_restoration/04_Rotate_Crops.md`
+- `implementation_tasks/soil_restoration/05_Manage_Pests_Diseases.md`
+
+**Issue**:
+All soil restoration files use USD ($) for budget estimates instead of EUR (€) like the rest of the documentation. This creates minor currency inconsistency.
+
+**Context**:
+- Files provide per-acre or scale-neutral guidance (appropriate for any site size)
+- NO scale alignment issues - content is excellent
+- ONLY issue is currency symbol ($ vs €)
+- Likely sourced from US-based materials or created separately from other docs
+- Lowest priority cosmetic fix
+
+**Fix Required**:
+
+**Search and Replace $ with €** in all 6 soil restoration files:
+
+**File 00**:
+- Line 62-65: Budget estimates
+
+**File 01**:
+- Lines 177-178: Equipment costs
+- Lines 222-228: Budget estimates
+- All instances of "$" → "€"
+
+**File 02**:
+- Lines 222-228: Budget estimates
+- All instances of "$" → "€"
+
+**File 03**:
+- Lines 233-238: Budget considerations
+- All instances of "$" → "€"
+
+**File 04**:
+- Lines 243-249: Budget estimates
+- Line 249: "$500-1,500+" → "€500-1,500+"
+- All instances of "$" → "€"
+
+**File 05**:
+- Lines 100, 102: Budget estimates
+- All instances of "$" → "€"
+
+**Note on Currency Conversion**:
+- Do NOT adjust numerical values (e.g., $500 → €500, not €460)
+- This is a symbol replacement only
+- Budget ranges are approximate and scale-neutral
+- Exact currency conversion not necessary for implementation guidance
+
+**Verification**:
+- [ ] All "$" instances replaced with "€" in 6 soil restoration files
+- [ ] Currency now consistent with rest of documentation
+- [ ] No numerical values changed (symbol only)
+- [ ] Content guidance unchanged (still scale-neutral and appropriate)
+
+**Related Tasks**:
+- None - isolated cosmetic issue
+- Does not affect any other fixes or content
+
+---
+
 ## 📊 FIX COMPLETION TRACKING
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 24 tasks (updated 2025-11-07)
+**Total Fix Tasks**: 32 tasks (updated 2025-11-07 after Step 5 Groups 1-6 audit)
 
 **By Priority**:
 - 🚨 **CRITICAL**: 5 tasks (FIX-001 to FIX-004, FIX-023)
-- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-024)
-- 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
-- 🟢 **LOW**: 4 tasks (FIX-019 to FIX-022)
+- 🔴 **HIGH**: 8 tasks (FIX-005 to FIX-008, FIX-024, FIX-025, FIX-027, FIX-030)
+- 🟡 **MEDIUM**: 14 tasks (FIX-009 to FIX-018, FIX-026, FIX-028, FIX-029, FIX-031)
+- 🟢 **LOW**: 5 tasks (FIX-019 to FIX-022, FIX-032)
+
+**New Tasks from Implementation Files Audit** (FIX-025 to FIX-032):
+- Site Selection: FIX-025 (budgets), FIX-026 (AWG), FIX-027 (5-10 ha scale)
+- Reforestation: FIX-028 (2 ha examples), FIX-029 (2 ha monitoring)
+- Biodiversity: FIX-030 (50 ha protected areas), FIX-031 (50 ha monitoring)
+- Soil Restoration: FIX-032 ($ vs € currency)
 
 **Completion Status**:
 - [ ] CRITICAL Priority: ___ / 5 complete
-- [ ] HIGH Priority: ___ / 5 complete
-- [ ] MEDIUM Priority: ___ / 10 complete
-- [ ] LOW Priority: ___ / 4 complete
-- [ ] **TOTAL**: ___ / 24 complete
+- [ ] HIGH Priority: ___ / 8 complete
+- [ ] MEDIUM Priority: ___ / 14 complete
+- [ ] LOW Priority: ___ / 5 complete
+- [ ] **TOTAL**: ___ / 32 complete
 
 ### Estimated Time to Complete
 
@@ -2226,22 +2305,30 @@ After completing fixes, document all changes made during this maintenance cycle.
 - FIX-002: 1-2 hours (Project Vision conversion)
 - FIX-003: 1-2 hours (Success Factors conversion)
 - FIX-004: 1-2 hours (Status Assessment conversion)
-- FIX-023: 2-3 hours (Hub/Front Door conversion - ADDED 2025-11-07)
+- FIX-023: 2-3 hours (Hub/Front Door conversion)
 - **Total CRITICAL**: 8-12 hours
 
 **HIGH Fixes** (Do next):
 - FIX-005 to FIX-008, FIX-024: 3-5 hours (cross-reference fixes)
-- **Total HIGH**: 3-5 hours
+- FIX-025: 1-2 hours (site selection budget updates, 4 files)
+- FIX-027: 30 min (5-10 ha → 1 ha scale fix, 1 file)
+- FIX-030: 1-2 hours (50 ha → 1 ha protected areas example, 1 file)
+- **Total HIGH**: 6-10 hours
 
 **MEDIUM Fixes** (Then these):
 - FIX-009 to FIX-018: 10-15 hours (remaining conversions + standardization)
-- **Total MEDIUM**: 10-15 hours
+- FIX-026: 15 min (AWG reference removal, 1 file)
+- FIX-028: 30 min (2 ha → 1 ha seedling examples, 1 file)
+- FIX-029: 1 hour (2 ha → 1 ha monitoring budgets, 2 files)
+- FIX-031: 1 hour (50 ha → 1 ha biodiversity monitoring, 1 file)
+- **Total MEDIUM**: 13-18 hours
 
 **LOW Fixes** (Nice to have):
 - FIX-019 to FIX-022: 2-4 hours (enhancements)
-- **Total LOW**: 2-4 hours
+- FIX-032: 30 min ($ → € currency symbols, 6 files)
+- **Total LOW**: 2.5-4.5 hours
 
-**GRAND TOTAL**: 23-37 hours of focused work
+**GRAND TOTAL**: 29.5-44.5 hours of focused work
 
 **Recommended Pace**:
 - **Week 1**: Complete CRITICAL fixes (5-9 hours, ~1 hour/day)
