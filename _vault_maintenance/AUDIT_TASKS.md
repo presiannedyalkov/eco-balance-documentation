@@ -898,7 +898,7 @@ These are the first documents users read - must be v2.0 compliant and high quali
 - Group 5: [x] Complete (2025-11-07) - 2 issues found (FIX-030, FIX-031)
 - Group 6: [x] Complete (2025-11-07) - 1 issue found (FIX-032)
 - Group 7: [x] Complete (2025-11-07) - FIX-032 updated (water files also use $)
-- Group 8: [ ] Not started / [ ] In Progress / [ ] Complete
+- Group 8: [x] Complete (2025-11-07) - FIX-032 scope confirmed (all 7 water files)
 - Group 9: [ ] Not started / [ ] In Progress / [ ] Complete
 
 ---
@@ -1178,24 +1178,38 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 ---
 
-#### Group 8: Water Management (Files 5-7) + Community (Files 1-2) - 5 files
+#### Group 8: Water Management (Files 4-6) + Community (Files 0-1) - 5 files
 
-**Status**: [ ] Not Started
+**Status**: [x] Complete (Date: 2025-11-07)
 
-**Files to Audit**:
-1. `implementation_tasks/water_management/04_Create_Swales.md`
-2. `implementation_tasks/water_management/05_Manage_Irrigation.md`
-3. `implementation_tasks/water_management/06_Monitor_Conservation.md`
-4. `implementation_tasks/community_engagement/00_Community_Engagement_Overview.md`
-5. `implementation_tasks/community_engagement/01_Identify_Stakeholders.md`
+**Files Audited**:
+1. ✅ `implementation_tasks/water_management/04_Efficient_Irrigation.md`
+2. ✅ `implementation_tasks/water_management/05_Drought_Management.md`
+3. ✅ `implementation_tasks/water_management/06_Monitor_Water_Use.md`
+4. ✅ `implementation_tasks/community_engagement/00_Community_Engagement_Overview.md`
+5. ✅ `implementation_tasks/community_engagement/01_Identify_Stakeholders.md`
 
 **Audit Focus (Curator)**:
-- Water management practical for 1 ha scale
+- Water management practical for 1 ha pilot
 - Community engagement appropriate for Bootstrap (grassroots, not large PR)
 - Stakeholder identification realistic for founders
 - Cross-references to marketing (60), operations (43)
 
-**Results**: _______________
+**Results**: ✅ NO NEW ISSUES - FIX-032 confirmed for all water files
+
+**Summary**:
+- **File 04 (Efficient Irrigation)**: ✅ EXCELLENT - Comprehensive drip irrigation guide, per-acre scale-neutral, uses $ (FIX-032)
+- **File 05 (Drought Management)**: ✅ EXCELLENT - Outstanding drought resilience strategies, scale-neutral, uses $ (FIX-032)
+- **File 06 (Monitor Water Use)**: ✅ EXCELLENT - Comprehensive monitoring framework with KPIs, uses $ (FIX-032)
+- **File 00 (Community Overview)**: ✅ EXCELLENT - Comprehensive engagement framework, scale-neutral for any project size
+- **File 01 (Identify Stakeholders)**: ✅ EXCELLENT - Thorough stakeholder identification, appropriate for 1-2 founders, minor $ usage
+
+**Currency Pattern Confirmed**:
+- ALL 7 water management files (00-06) use $ instead of € (FIX-032 scope confirmed)
+- Community files have minimal currency references, mostly scale-neutral
+- Total FIX-032 scope: 13+ files (7 soil + 7 water = 14 files minimum)
+
+**Assessment**: Group 8 files represent OUTSTANDING quality across water management and community engagement. All water files properly scale-neutral with per-acre or general guidance appropriate for any site (0.5-100+ ha). Community engagement files perfectly appropriate for Bootstrap grassroots approach - 1-2 founders can execute stakeholder identification and build relationships at small project scale. Zero scale misalignment issues - only minor cosmetic currency inconsistency in water files.
 
 ---
 
