@@ -320,10 +320,18 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 10 - Organizational Structure
 
-- [ ] **CURATOR** - File: `10_Organizational_Structure.md`
+- [x] **CURATOR** - File: `10_Organizational_Structure.md`
   - Check: Structure aligns with v2.0 Bootstrap (1-2 founders vs large team)
   - Focus: Team size, roles, organizational complexity
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - FIX-009 already exists in FIX_TASKS.md
+           CRITICAL: Completely v1.0 Large-Scale organizational structure
+           - Lines 67-69: "3-5 core founders" (should be 1-2 founders)
+           - Lines 144-157: Phase 1 shows 3 full-time staff with salaries
+           - Line 245: Executive Director full-time Year 1 hire
+           - Lines 57, 81-84: €25,000 share capital (full gGmbH, expensive for Bootstrap)
+           - Complex governance: Board, Advisory Board, committees (too much for Bootstrap)
+           - Broken links: docs 31, 41, 42
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `10_Organizational_Structure.md`
   - Check: Consistency with v2.0 scale, no contradictions
@@ -342,10 +350,18 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 11 - Governance
 
-- [ ] **CURATOR** - File: `11_Governance.md`
+- [x] **CURATOR** - File: `11_Governance.md`
   - Check: Governance appropriate for v2.0 scale, completeness
   - Focus: Bootstrap governance (simple) vs large-scale (complex)
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - FIX-010 already exists in FIX_TASKS.md
+           HIGH: Governance structure too complex for 1-2 founder Bootstrap
+           - Lines 22-26: Board of Directors 3-5 members (too formal for Bootstrap Phase 1)
+           - Line 147: Three committees (Finance, Governance, Programs) - excessive
+           - Lines 74-98: Advisory Board 5-7 people (not needed Phase 1)
+           - Complex policies and procedures (appropriate for org with staff, not founders)
+           - Content well-written but scaled for professional organization
+           - Broken links: docs 31, 41
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `11_Governance.md`
   - Check: Legal structure consistency (gGmbH), v2.0 alignment
@@ -364,10 +380,19 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 12 - Team Roles
 
-- [ ] **CURATOR** - File: `12_Team_Roles.md`
+- [x] **CURATOR** - File: `12_Team_Roles.md`
   - Check: Roles align with v2.0 Bootstrap (1-2 founders vs many roles)
   - Focus: **CRITICAL** - likely describes multiple specialized roles
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - FIX-011 already exists in FIX_TASKS.md
+           🚨 CRITICAL: Completely describes v1.0 Large-Scale team, NOT Bootstrap
+           - Lines 20-31: Phase 1 = 3 full-time staff (should be 1-2 founders)
+           - Line 33: Salary budget €90k-120k/year (should be minimal/none for Bootstrap)
+           - Lines 76-113: Full Executive Director role with €40-50k salary
+           - Line 86: Fundraising target €250k+ (v1.0, should be €20-30k Bootstrap)
+           - Lines 37-71: Phase 2 & 3 show growth to 15 staff (not relevant for Phase 1)
+           - This is THE most critical organizational doc to fix
+           - Broken links: docs 31, 41
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `12_Team_Roles.md`
   - Check: Number of roles, role descriptions match v2.0 scale
@@ -386,10 +411,19 @@ These are the first documents users read - must be v2.0 compliant and high quali
 
 #### 13 - Legal Framework
 
-- [ ] **CURATOR** - File: `13_Legal_Framework.md`
+- [x] **CURATOR** - File: `13_Legal_Framework.md`
   - Check: Content completeness, relevance to v2.0 scale
   - Focus: Legal requirements for small vs large organization
-  - Result: _______________
+  - Result: ⚠️ ISSUES FOUND - FIX-012 already exists in FIX_TASKS.md
+           MEDIUM: Legal costs may be too high for Bootstrap Model
+           - Lines 81-84, 344-351: €25,000 share capital + €3-8k setup = €28-33k total
+           - Lines 354-362: Annual compliance €7,700-20,500 (high for Bootstrap)
+           - Full gGmbH may be overengineered for 1-2 founder pilot
+           - Consider: Simpler structure initially (e.V.) or plan to form gGmbH later
+           - Content is well-researched and accurate for gGmbH
+           - Needs Bootstrap-appropriate alternative or phased approach
+           - Broken links: docs 31, 41
+           Date: 2025-11-07
 
 - [ ] **AUDITOR** - File: `13_Legal_Framework.md`
   - Check: gGmbH details accurate, budget implications match v2.0
