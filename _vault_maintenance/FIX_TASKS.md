@@ -321,6 +321,45 @@ Current status should reflect v2.0 Bootstrap Model adoption and realistic curren
 
 ---
 
+### ❌ FIX-023: Fix Incorrect Version Number in Hub Document
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🚨 CRITICAL
+**Task ID**: ARC-2025-11-07-001
+**Found By**: Archivist during audit of 00_Eco_Balance_Hub.md
+
+**File**: `00_Eco_Balance_Hub.md`
+
+**Issue**:
+Line 41 incorrectly states current version as "1.0.0" when it should be "2.0.0". This creates version confusion in the main project hub.
+
+**Specific Location**:
+- Line 41: `**[[VERSION|VERSION]]** - Current version number (1.0.0)`
+
+**Fix Required**:
+Change line 41 from:
+```
+**[[VERSION|VERSION]]** - Current version number (1.0.0)
+```
+
+To:
+```
+**[[VERSION|VERSION]]** - Current version number (2.0.0)
+```
+
+**Verification**:
+- [ ] Line 41 shows version 2.0.0
+- [ ] Matches actual VERSION file content
+- [ ] No other version number errors in Hub document
+- [ ] All v2.0.0 announcements consistent
+
+**Related Tasks**:
+- Related to overall version compliance verification
+- Should be fixed before FIX-024 (archive README version)
+
+---
+
 ## 🔴 HIGH PRIORITY FIXES
 
 These fixes are important for vault integrity and user trust. Complete after CRITICAL fixes.
@@ -484,6 +523,60 @@ Link text says [[40_Implementation_Roadmap|Roadmap]] but file 40 is actually `40
 ## 🟡 MEDIUM PRIORITY FIXES
 
 These improve vault quality and consistency. Complete after HIGH priority fixes.
+
+### ⚠️ FIX-024: Update Archive README Version References
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: ARC-2025-11-07-002
+**Found By**: Archivist during archive structure verification
+
+**File**: `archive/README.md`
+
+**Issue**:
+Archive README contains outdated version references that state "v1.0.0" as current version when it should be "2.0.0".
+
+**Specific Locations**:
+- Line 135: Reference to "Current Version: v1.0.0"
+- Line 208: "Current Version: [[../VERSION|1.0.0]]"
+
+**Fix Required**:
+
+1. Update line 135 from:
+   ```
+   - [[../VERSION|Current Version]] - v1.0.0
+   ```
+   To:
+   ```
+   - [[../VERSION|Current Version]] - v2.0.0
+   ```
+
+2. Update line 208 from:
+   ```
+   **Current Version:** [[../VERSION|1.0.0]]
+   ```
+   To:
+   ```
+   **Current Version:** [[../VERSION|2.0.0]]
+   ```
+
+3. Update line 4 "Last Updated" date from "November 6, 2025" to current date
+
+**Historical Context**:
+Archive README was created during v1.0.0 release but needs updating for v2.0.0 to maintain accuracy of historical documentation system.
+
+**Verification**:
+- [ ] All version references show 2.0.0
+- [ ] Last Updated date is current
+- [ ] Archive structure description still accurate
+- [ ] Links to current docs functional
+
+**Related Tasks**:
+- Should be fixed after FIX-023 (Hub version)
+- Part of overall version consistency verification
+
+---
 
 ### ⚠️ FIX-009: Convert 10_Organizational_Structure.md to v2.0 Bootstrap Model
 
@@ -1289,20 +1382,20 @@ After completing fixes, document all changes made during this maintenance cycle.
 
 ### Summary Statistics
 
-**Total Fix Tasks**: 22 tasks
+**Total Fix Tasks**: 24 tasks (updated 2025-11-07 by Archivist)
 
 **By Priority**:
-- 🚨 **CRITICAL**: 4 tasks (FIX-001 to FIX-004)
+- 🚨 **CRITICAL**: 5 tasks (FIX-001 to FIX-004, FIX-023)
 - 🔴 **HIGH**: 4 tasks (FIX-005 to FIX-008)
-- 🟡 **MEDIUM**: 10 tasks (FIX-009 to FIX-018)
+- 🟡 **MEDIUM**: 11 tasks (FIX-009 to FIX-018, FIX-024)
 - 🟢 **LOW**: 4 tasks (FIX-019 to FIX-022)
 
 **Completion Status**:
-- [ ] CRITICAL Priority: ___ / 4 complete
+- [ ] CRITICAL Priority: ___ / 5 complete
 - [ ] HIGH Priority: ___ / 4 complete
-- [ ] MEDIUM Priority: ___ / 10 complete
+- [ ] MEDIUM Priority: ___ / 11 complete
 - [ ] LOW Priority: ___ / 4 complete
-- [ ] **TOTAL**: ___ / 22 complete
+- [ ] **TOTAL**: ___ / 24 complete
 
 ### Estimated Time to Complete
 
