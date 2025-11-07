@@ -629,6 +629,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Expansion strategy should be inspiring yet realistic
   - Result: _______________
 
+- [x] **JANITOR** - File: `40_Expansion_Growth_Strategy.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 40-45 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (40_Expansion_Growth_Strategy.md), no duplicates found, excellent organization
+
 #### 41 - Phase 1 Foundation (IF EXISTS)
 
 **NOTE**: This file may not exist - referenced in multiple docs but not found.
@@ -657,6 +662,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Phase 1 must be clear and executable
   - Result: _______________
 
+- [x] **JANITOR** - File: `41_Phase_1_Foundation.md` (verification)
+  - Check: File existence, gap in numbering sequence
+  - Focus: Verify if file 41 exists or is intentional gap in 40-45 series
+  - Result: ✅ VERIFIED GAP - File "41_Phase_1_Foundation.md" does not exist. Numbering jumps from 40 to 42. This may be intentional if Phase 1 content is covered in 42_Next_Steps_90_Days.md. No organizational issue - gap is documented and acceptable.
+
 #### 42 - Next Steps 90 Days
 
 - [ ] **CURATOR** - File: `42_Next_Steps_90_Days.md`
@@ -678,6 +688,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Clarity, actionability, prioritization clear
   - Focus: 90-day plan must be immediately executable
   - Result: _______________
+
+- [x] **JANITOR** - File: `42_Next_Steps_90_Days.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 40-45 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (42_Next_Steps_90_Days.md), sequential numbering maintained (gap at 41 documented), no duplicates found, excellent organization
 
 #### 43 - Operations Action Plan
 
@@ -701,6 +716,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Operations must be understandable and executable
   - Result: _______________
 
+- [x] **JANITOR** - File: `43_Operations_Action_Plan.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 40-45 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (43_Operations_Action_Plan.md), sequential numbering maintained, no duplicates found, excellent organization
+
 #### 44 - Site Selection Land Acquisition
 
 - [ ] **CURATOR** - File: `44_Site_Selection_Land_Acquisition.md`
@@ -723,6 +743,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Site selection must be systematic and clear
   - Result: _______________
 
+- [x] **JANITOR** - File: `44_Site_Selection_Land_Acquisition.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 40-45 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (44_Site_Selection_Land_Acquisition.md), sequential numbering maintained, no duplicates found, excellent organization
+
 #### 45 - Tiny House and Living Infrastructure
 
 - [ ] **CURATOR** - File: `45_Tiny_House_and_Living_Infrastructure.md`
@@ -744,6 +769,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Specifications clear, practical guidance, formatting
   - Focus: Living setup must be realistic and buildable
   - Result: _______________
+
+- [x] **JANITOR** - File: `45_Tiny_House_and_Living_Infrastructure.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 40-45 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (45_Tiny_House_and_Living_Infrastructure.md), sequential numbering maintained, no duplicates found, excellent organization
 
 ---
 
@@ -771,6 +801,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Risk assessment must be thorough and credible
   - Result: _______________
 
+- [x] **JANITOR** - File: `50_Risk_Assessment.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 50-51 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (50_Risk_Assessment.md), sequential numbering maintained, no duplicates found, excellent organization
+
 #### 51 - Key Performance Indicators
 
 - [ ] **CURATOR** - File: `51_Key_Performance_Indicators.md`
@@ -792,6 +827,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: KPIs clearly defined, measurable, well-formatted
   - Focus: KPI framework must be professional and usable
   - Result: _______________
+
+- [x] **JANITOR** - File: `51_Key_Performance_Indicators.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, numbering in 50-51 series
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (51_Key_Performance_Indicators.md), sequential numbering maintained, no duplicates found, excellent organization
 
 ---
 
@@ -819,6 +859,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Communications strategy must be actionable
   - Result: _______________
 
+- [x] **JANITOR** - File: `60_Marketing_Communications_Strategy.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, standalone file in 60 slot
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (60_Marketing_Communications_Strategy.md), no duplicates found, excellent organization
+
 #### 70 - Case Studies Restoration Examples
 
 - [ ] **CURATOR** - File: `70_Case_Studies_Restoration_Examples.md`
@@ -840,6 +885,11 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Check: Case studies well-written, sources cited, formatting consistent
   - Focus: Case studies must be credible and useful
   - Result: _______________
+
+- [x] **JANITOR** - File: `70_Case_Studies_Restoration_Examples.md`
+  - Check: File placement, naming conventions, no duplicates, organizational structure
+  - Focus: Verify root directory location, NN_Name.md format, standalone file in 70 slot
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (70_Case_Studies_Restoration_Examples.md), no duplicates found, excellent organization
 
 ---
 
