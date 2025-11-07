@@ -319,10 +319,16 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Team size, roles, organizational complexity
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `10_Organizational_Structure.md`
+- [x] **AUDITOR** - File: `10_Organizational_Structure.md`
   - Check: Consistency with v2.0 scale, no contradictions
   - Focus: Founder-level organization vs multi-department structure
-  - Result: _______________
+  - Result: ⚠️ **MAJOR v1.0 ISSUES** - FIX-009 already exists
+           - Line 57: €25k share capital ❌ Full gGmbH (Bootstrap can't afford)
+           - Lines 67-69: "3-5 founders €5-8k each" ❌ v1.0
+           - Line 136: Legal costs "€15-20k" ❌ Should be €3-4k for v2.0
+           - Lines 144-191: Phases 1-3 show 3→8→15-20 staff ❌ ALL v1.0
+           - Lines 197-237: Complex boards/governance ❌ Too formal for Bootstrap
+           - **ENTIRE DOC describes large organization**, not 1-2 founders
 
 - [ ] **LIBRARIAN** - File: `10_Organizational_Structure.md`
   - Check: Links to team roles and governance valid
@@ -341,10 +347,16 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Bootstrap governance (simple) vs large-scale (complex)
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `11_Governance.md`
+- [x] **AUDITOR** - File: `11_Governance.md`
   - Check: Legal structure consistency (gGmbH), v2.0 alignment
   - Focus: Decision-making processes match 1-2 founder scale
-  - Result: _______________
+  - Result: ⚠️ **MAJOR v1.0 ISSUES** - FIX-010 already exists
+           - Lines 22-27: Board 3-5 members, quarterly meetings ❌ Too complex
+           - Lines 66-69: Committees (Finance, Governance, Programs) ❌ v1.0
+           - Lines 74-99: Advisory Board 5-7 experts ❌ Too formal early on
+           - Lines 102-113: Shareholders Meeting structure ❌ Complex for Bootstrap
+           - Lines 284-290: Board decisions for €50k+ ❌ Bootstrap total is €50-75k!
+           - **Describes multi-stakeholder governance**, not founder consensus
 
 - [ ] **LIBRARIAN** - File: `11_Governance.md`
   - Check: Cross-references to legal framework, team structure
@@ -363,10 +375,17 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: **CRITICAL** - likely describes multiple specialized roles
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `12_Team_Roles.md`
+- [x] **AUDITOR** - File: `12_Team_Roles.md`
   - Check: Number of roles, role descriptions match v2.0 scale
   - Focus: Bootstrap model = founders wear multiple hats
-  - Result: _______________
+  - Result: ⚠️ **CRITICAL v1.0 ISSUES** - FIX-011 already exists - **WORST FILE**
+           - Lines 20-34: Phase 1 = 3 staff ❌ Should be 1-2 founders
+           - Line 33: Budget "€90-120k/year" ❌ EXCEEDS entire v2.0 3-year budget!
+           - Lines 37-71: Phases 2-3 show 5-8→10-15 staff ❌ All v1.0
+           - Line 80: Executive Director "€40-50k/year" ❌ More than v2.0 Y1 total
+           - Line 86: Fundraising target "€250k+" ❌ v1.0
+           - Lines 115-194: 3 specialized FT roles (PM, Ecologist) ❌ All v1.0
+           - **Doc describes 8+ specialized roles** - Bootstrap needs 1-2 generalists
 
 - [ ] **LIBRARIAN** - File: `12_Team_Roles.md`
   - Check: Links to organizational structure, implementation tasks
@@ -385,10 +404,17 @@ These are the first documents users read - must be v2.0 compliant and high quali
   - Focus: Legal requirements for small vs large organization
   - Result: _______________
 
-- [ ] **AUDITOR** - File: `13_Legal_Framework.md`
+- [x] **AUDITOR** - File: `13_Legal_Framework.md`
   - Check: gGmbH details accurate, budget implications match v2.0
   - Focus: Formation costs, compliance costs appropriate for Bootstrap
-  - Result: _______________
+  - Result: ⚠️ **MODERATE-HIGH v1.0 ISSUES** - FIX-012 already exists
+           - Line 82: Share capital "€25,000" ❌ Correct for gGmbH BUT unrealistic for Bootstrap
+           - Lines 343-351: Setup costs "€28,450-32,750" ❌ Should be €3-4k for v2.0
+           - Line 347: Legal costs "€2-5k" ❌ v1.0
+           - Line 350: Share capital €25k included ❌ Can't afford
+           - Lines 355-362: Annual costs "€7,700-20,500" ❌ Unsustainable for Bootstrap
+           - **Technically accurate for full gGmbH**, NOT realistic for v2.0 budget
+           - NOTE: May need alternative structure (e.V.) or phased approach
 
 - [ ] **LIBRARIAN** - File: `13_Legal_Framework.md`
   - Check: Links to governance, organizational docs functional
