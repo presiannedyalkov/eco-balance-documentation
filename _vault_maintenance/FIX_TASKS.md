@@ -3053,22 +3053,152 @@ Remove or replace line 59 reference to AWG:
 
 ---
 
+### ⚠️ FIX-033: Clarify Bootstrap vs Phase 1 Terminology in 40_Expansion_Growth_Strategy.md
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: CUR-2025-11-07-001
+**Found By**: Curator during Step 4 audit (Growth & Operations 40-70)
+
+**File**: `40_Expansion_Growth_Strategy.md`
+
+**Issue**:
+Document's "Phase 1" (Year 1) describes €250-500k budget and 3-4 person team, which are post-bootstrap scaling targets. This conflicts with v2.0 Bootstrap Model (€20-30k, 1-2 founders). The document is otherwise excellent but needs clearer distinction between "Bootstrap Phase" and "Phase 1" scaling.
+
+**Specific Problems**:
+- Line 11: "Phase 1: Foundation & Pilot (Year 1)" describes v1.0 scale, not v2.0 Bootstrap
+- Line 24: "Purchase first 5-10 hectares" (should note Bootstrap = 1 ha, Phase 1 expansion = 5-10 ha)
+- Line 66: "Core 3-4 person team in place" (Bootstrap = 1-2 founders)
+- Line 68: "€250-500k secured" (Bootstrap Year 1 = €20-30k)
+- Throughout: Need to clarify that "Phase 1" assumes successful bootstrap completion
+
+**Fix Required**:
+
+**Option A (Recommended)**: Add Bootstrap Phase clarification at beginning:
+1. Add new section after Overview (before Phase 1):
+   ```markdown
+   ## Bootstrap Phase (Months 1-12): Proof of Concept
+
+   **Goal:** Validate restoration approach at 1 hectare pilot scale
+
+   **This is Year 0** - proving the model before Phase 1 expansion. See:
+   - [[42_Next_Steps_90_Days|First 90 Days]]: Campaign & land acquisition
+   - [[43_Operations_Action_Plan|Operations Guide]]: Bootstrap operations
+   - [[44_Site_Selection_Land_Acquisition|Site Selection]]: Finding 1 ha site
+
+   **Bootstrap Success Metrics**:
+   - 1 hectare secured and operational
+   - 100-200 trees planted with 70%+ survival
+   - €20-30k Year 1 budget managed effectively
+   - Restoration methods documented
+   - Model proven viable for scaling
+
+   **After Bootstrap Success** → Phase 1 expansion begins (below)
+
+   ---
+   ```
+
+2. Update Phase 1 header (line 11):
+   ```markdown
+   ## Phase 1: Foundation & Scale (Years 2-3)
+
+   **Prerequisite:** Successful 1 hectare Bootstrap pilot complete
+
+   **Goal:** Scale proven approach to 5-10 hectares
+   ```
+
+3. Add note in "Immediate Next Steps (90 Days)" section (line 562):
+   ```markdown
+   ## Immediate Next Steps (90 Days)
+
+   **NOTE**: These are Bootstrap Phase actions. The "Phase 1" expansion described above
+   begins AFTER successful completion of 1 hectare pilot (typically Year 2+).
+
+   **These expansion plans begin after:**
+   ```
+
+**Option B (Alternative)**: Rename phases to make Bootstrap explicit throughout
+
+**Verification**:
+- [ ] Clear distinction between Bootstrap (1 ha) and Phase 1 (5-10 ha)
+- [ ] Bootstrap Phase section added or clearly referenced
+- [ ] No confusion about which phase reader should focus on for Year 1
+- [ ] Cross-references to Bootstrap docs (42, 43, 44) intact
+- [ ] "Immediate Next Steps" section clarifies it's Bootstrap, not Phase 1
+
+**Related Tasks**:
+- Related to FIX-000 through FIX-004 (other v2.0 clarifications)
+- Content otherwise excellent, just needs terminology clarity
+
+---
+
+### ⚠️ FIX-034: Align Year 1 Funding Goal in 60_Marketing_Communications_Strategy.md
+
+**Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
+
+**Priority**: 🟡 MEDIUM
+**Task ID**: CUR-2025-11-07-002
+**Found By**: Curator during Step 4 audit (Growth & Operations 40-70)
+
+**File**: `60_Marketing_Communications_Strategy.md`
+
+**Issue**:
+Marketing strategy references "Year 1 Goal: €250-500k" which conflicts with v2.0 Bootstrap budget of €20-30k total for Year 1. This creates confusion about fundraising targets for the bootstrap phase.
+
+**Specific Problem**:
+- Line 70: "**Year 1 Goal**: €250-500k → See [[32_Funding_Strategy|Funding Strategy]]"
+
+**Fix Required**:
+
+Change line 70 from:
+```markdown
+- **Year 1 Goal**: €250-500k → See [[32_Funding_Strategy|Funding Strategy]]
+```
+
+To:
+```markdown
+- **Bootstrap Year 1 Goal**: €10-15k crowdfunding + €10-15k personal/F&F = €20-30k total
+- **After Bootstrap Success**: Scale to €250-500k for multi-site expansion
+- → See [[32_Funding_Strategy|Funding Strategy]] for complete bootstrap fundraising plan
+```
+
+**Alternative (More Concise)**:
+```markdown
+- **Year 1 Goal (Bootstrap)**: €20-30k → See [[32_Funding_Strategy|Funding Strategy]]
+- **Post-Bootstrap Scale Goal**: €250-500k for 5-10 ha expansion
+```
+
+**Verification**:
+- [ ] Year 1 funding target reflects v2.0 Bootstrap (€20-30k)
+- [ ] Larger funding goals contextualized as post-bootstrap scaling
+- [ ] Cross-reference to 32_Funding_Strategy.md maintained
+- [ ] No other v1.0 budget references in file
+- [ ] Aligns with bootstrap crowdfunding goal in doc 42 (€10-15k campaign)
+
+**Related Tasks**:
+- Similar to FIX-033 (terminology alignment in doc 40)
+- Part of overall v2.0 budget consistency
+- Content quality otherwise good
+
+---
+
 ### UPDATED SUMMARY STATISTICS
 
-**Total Fix Tasks**: 26 tasks (was 23)
+**Total Fix Tasks**: 28 tasks (was 26, +2 from Curator Step 4 audit)
 
 **By Priority**:
 - 🚨 **CRITICAL**: 5 tasks (FIX-000 to FIX-004) - No change
-- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-015 moved here) - Was 4, now 5
-- 🟡 **MEDIUM**: 12 tasks (FIX-009 to FIX-014, FIX-016 to FIX-018, FIX-023) - Was 10, now 12
-- 🟢 **LOW**: 6 tasks (FIX-019 to FIX-022, FIX-024, FIX-025) - Was 4, now 6
+- 🔴 **HIGH**: 5 tasks (FIX-005 to FIX-008, FIX-015 moved here) - No change
+- 🟡 **MEDIUM**: 14 tasks (FIX-009 to FIX-014, FIX-016 to FIX-018, FIX-023, FIX-033, FIX-034) - Was 12, now 14
+- 🟢 **LOW**: 6 tasks (FIX-019 to FIX-022, FIX-024, FIX-025) - No change
 
 **Completion Status**:
 - [ ] CRITICAL Priority: ___ / 5 complete
-- [ ] HIGH Priority: ___ / 5 complete (was 4)
-- [ ] MEDIUM Priority: ___ / 12 complete (was 10)
-- [ ] LOW Priority: ___ / 6 complete (was 4)
-- [ ] **TOTAL**: ___ / 26 complete (was 23)
+- [ ] HIGH Priority: ___ / 5 complete
+- [ ] MEDIUM Priority: ___ / 14 complete (was 12, +2 from Curator audit)
+- [ ] LOW Priority: ___ / 6 complete
+- [ ] **TOTAL**: ___ / 28 complete (was 26, +2 from Curator Step 4 audit)
 
 ### UPDATED TIME ESTIMATES
 
@@ -3076,11 +3206,11 @@ Remove or replace line 59 reference to AWG:
 
 **HIGH Fixes**: 4-6 hours (was 2-4, added FIX-015 upgrade = +2 hours)
 
-**MEDIUM Fixes**: 13-18 hours (was 10-15, added FIX-023 = +3 hours)
+**MEDIUM Fixes**: 14-20 hours (was 13-18, added FIX-033 + FIX-034 = +1-2 hours)
 
-**LOW Fixes**: 2.5-5 hours (was 2-4, added FIX-024 + FIX-025 = +0.5-1 hour)
+**LOW Fixes**: 2.5-5 hours (no change)
 
-**GRAND TOTAL**: 26.5-41 hours (was 21-35 hours)
+**GRAND TOTAL**: 27.5-43 hours (was 26.5-41 hours, +1-2 hours from Curator Step 4)
 
 **Impact of Re-Audit**: Added 5.5-6 hours of additional work, discovered 3 new tasks + upgraded 1 existing task severity.
 
