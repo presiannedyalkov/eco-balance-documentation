@@ -1,7 +1,7 @@
 # 📦 Archive - Historical Documentation
 
 **Purpose:** Preserve historical documents and process history  
-**Last Updated:** November 6, 2025 (v2.0.0 release)
+**Last Updated:** November 8, 2025 (v2.0.0 release)
 
 ---
 
@@ -132,7 +132,7 @@ Contains process documents from the early development phase:
 
 **Current Documentation:**
 - [[../00_Eco_Balance_Hub|Eco Balance Hub]] - Main entry point
-- [[../VERSION|Current Version]] - v1.0.0
+- [[../VERSION|Current Version]] - v2.0.0
 - [[../CHANGELOG|Changelog]] - Complete version history
 
 **Process Documentation:**
@@ -204,7 +204,7 @@ Contains process documents from the early development phase:
 ---
 
 **Archive Status:** ✅ Organized and Maintained  
-**Current Version:** [[../VERSION|1.0.0]]  
+**Current Version:** [[../VERSION|2.0.0]]  
 **Next Archive Addition:** When v2.0.0 is released
 
 [[../00_Eco_Balance_Hub|← Back to Current Documentation]]
