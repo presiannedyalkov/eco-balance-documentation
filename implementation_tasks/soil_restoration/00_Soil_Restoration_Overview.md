@@ -102,8 +102,8 @@ Soil restoration follows a systematic approach across seven key tasks:
 ## 📊 Related Documents
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../00_Eco_Balance_Hub|Eco Balance Hub]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../00_Eco_Balance_Hub|Eco Balance Hub]]
 - [[../15_Climate_Action|Climate Action Framework]]
 
 **Parallel Tasks:**

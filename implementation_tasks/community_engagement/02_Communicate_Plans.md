@@ -772,7 +772,7 @@ SUPPORTING DETAILS:
 
 **Strategic Context:**
 - [[00_Community_Engagement_Overview|Community Engagement Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Previous Steps:**
 - [[01_Identify_Stakeholders|Identify Stakeholders]]

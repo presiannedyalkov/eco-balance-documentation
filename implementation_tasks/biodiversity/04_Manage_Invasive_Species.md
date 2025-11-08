@@ -523,8 +523,8 @@ Use multiple methods in combination:
 - [[06_Monitor_Biodiversity|Monitor Biodiversity]]
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../22_Restoration_Challenges_Solutions|Restoration Challenges]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../22_Restoration_Challenges_Solutions|Restoration Challenges]]
 
 ---
 

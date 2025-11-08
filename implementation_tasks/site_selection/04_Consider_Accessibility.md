@@ -49,14 +49,14 @@ Accessibility is a critical factor in site selection that impacts operational co
 - Connection costs (if not already available)?
 - Power reliability in the area?
 - Need for backup generator?
-- Solar power as alternative → [[21_Technology_Integration|Technology Integration]]
+- Solar power as alternative → [[../../21_Technology_Integration|Technology Integration]]
 
 **Water:**
 - Municipal water supply available?
 - Well drilling required?
 - Distance to nearest water source?
 - Water quality testing needed?
-- Rainwater harvesting potential (roof area, annual rainfall) → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential (roof area, annual rainfall) → [[../../21_Technology_Integration|Technology]]
 
 **Bootstrap Model Water Strategy:**
 - Primary: Rainwater harvesting (IBC tanks, €500-2k)
@@ -183,7 +183,7 @@ Accessibility is a critical factor in site selection that impacts operational co
 
 **Challenge 3: No Grid Electricity**
 - Problem: No power connection, extension costs prohibitive
-- Solution: Full solar installation with battery storage. Calculate long-term cost vs. grid extension → [[21_Technology_Integration|Technology]]
+- Solution: Full solar installation with battery storage. Calculate long-term cost vs. grid extension → [[../../21_Technology_Integration|Technology]]
 - **Bootstrap Approach:** Off-grid solar (€3-5k) is often more cost-effective than grid extension for remote sites
 
 **Bootstrap Model Water Strategy:**
@@ -232,8 +232,8 @@ Focus on sites with basic access already present to minimize infrastructure inve
 **Cost-Benefit Analysis:**
 - Calculate total 5-year accessibility costs
 - Compare to alternative sites
-- Factor into [[32_Funding_Strategy|Funding Strategy]]
-- Include in [[30_Business_Model|Business Model]] projections
+- Factor into [[../../32_Funding_Strategy|Funding Strategy]]
+- Include in [[../../30_Business_Model|Business Model]] projections
 
 ---
 
@@ -264,13 +264,13 @@ Multiply each score by its weight for weighted comparison.
 - [[05_Research_Local_Regulations|Next: Research Regulations]]
 
 **Strategic Context:**
-- [[../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
-- [[../21_Technology_Integration|Technology Solutions]]
-- [[../30_Business_Model|Business Model & Costs]]
+- [[../../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
+- [[../../21_Technology_Integration|Technology Solutions]]
+- [[../../30_Business_Model|Business Model & Costs]]
 
 **Implementation:**
-- [[../42_Next_Steps_90_Days|90-Day Plan]]
-- [[../43_Operations_Action_Plan|Operations Plan]]
+- [[../../42_Next_Steps_90_Days|90-Day Plan]]
+- [[../../43_Operations_Action_Plan|Operations Plan]]
 
 ---
 

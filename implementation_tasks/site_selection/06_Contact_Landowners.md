@@ -340,8 +340,8 @@ Eco Balance*"
 - Gradual purchase agreements
 
 **Budget Allocation:**
-- Include in [[../32_Funding_Strategy|Funding Strategy]]
-- Factor into [[../30_Business_Model|Business Model]]
+- Include in [[../../32_Funding_Strategy|Funding Strategy]]
+- Factor into [[../../30_Business_Model|Business Model]]
 - Determine maximum feasible price
 - Calculate total acquisition costs
 
@@ -355,13 +355,13 @@ Eco Balance*"
 - [[07_Visit_Sites|Next: Visit Sites]]
 
 **Strategic Context:**
-- [[../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
-- [[../32_Funding_Strategy|Funding Strategy]]
-- [[../13_Legal_Framework|Legal Framework]]
+- [[../../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
+- [[../../32_Funding_Strategy|Funding Strategy]]
+- [[../../13_Legal_Framework|Legal Framework]]
 
 **Operations:**
-- [[../42_Next_Steps_90_Days|90-Day Plan]]
-- [[../43_Operations_Action_Plan|Operations Plan]]
+- [[../../42_Next_Steps_90_Days|90-Day Plan]]
+- [[../../43_Operations_Action_Plan|Operations Plan]]
 
 ---
 

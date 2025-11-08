@@ -135,7 +135,7 @@ Understanding and complying with local regulations is essential for legal operat
 ### Step 5: NGO and Business Registration
 
 **German gGmbH Requirements (if home base):**
-- Full registration process → [[../13_Legal_Framework|Legal Framework]]
+- Full registration process → [[../../13_Legal_Framework|Legal Framework]]
 - Tax-exempt status (Gemeinnützigkeit)
 - Charitable purpose documentation
 - Reporting obligations
@@ -225,7 +225,7 @@ Understanding and complying with local regulations is essential for legal operat
 - [ ] Budget allocated for regulatory costs
 
 **Risk Mitigation:**
-- [ ] Regulatory risks identified → [[../50_Risk_Assessment|Risk Assessment]]
+- [ ] Regulatory risks identified → [[../../50_Risk_Assessment|Risk Assessment]]
 - [ ] Mitigation strategies developed
 - [ ] Contingency plans if permits denied
 - [ ] Timeline buffer for delays
@@ -252,7 +252,7 @@ Understanding and complying with local regulations is essential for legal operat
 
 **Challenge 5: Costs Higher Than Expected**
 - Problem: Permit fees, assessments, legal costs exceed budget
-- Solution: Get detailed cost estimates upfront, include 20% buffer, consider if site is still viable, adjust [[../32_Funding_Strategy|funding plan]].
+- Solution: Get detailed cost estimates upfront, include 20% buffer, consider if site is still viable, adjust [[../../32_Funding_Strategy|funding plan]].
 
 **Challenge 6: Protected Area Complications**
 - Problem: Site in or near protected area with complex restrictions
@@ -359,8 +359,8 @@ Create a detailed spreadsheet/document with:
 - Submit required reports
 
 **Factor Into:**
-- [[../42_Next_Steps_90_Days|90-Day Action Plan]]
-- [[../44_Site_Selection_Land_Acquisition|Overall Site Selection Timeline]]
+- [[../../42_Next_Steps_90_Days|90-Day Action Plan]]
+- [[../../44_Site_Selection_Land_Acquisition|Overall Site Selection Timeline]]
 
 ---
 
@@ -372,13 +372,13 @@ Create a detailed spreadsheet/document with:
 - [[06_Contact_Landowners|Next: Contact Landowners]]
 
 **Strategic Context:**
-- [[../13_Legal_Framework|Legal Framework (gGmbH)]]
-- [[../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
-- [[../50_Risk_Assessment|Risk Assessment]]
+- [[../../13_Legal_Framework|Legal Framework (gGmbH)]]
+- [[../../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
+- [[../../50_Risk_Assessment|Risk Assessment]]
 
 **Operations:**
-- [[../42_Next_Steps_90_Days|90-Day Plan]]
-- [[../43_Operations_Action_Plan|Operations Plan]]
+- [[../../42_Next_Steps_90_Days|90-Day Plan]]
+- [[../../43_Operations_Action_Plan|Operations Plan]]
 
 ---
 

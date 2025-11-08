@@ -1,6 +1,6 @@
 # Site Selection & Land Acquisition - Implementation Guide
 
-← Back to [[../README|Implementation Tasks]] | [[00_Eco_Balance_Hub|Project Hub]]
+← Back to [[../README|Implementation Tasks]] | [[../../00_Eco_Balance_Hub|Project Hub]]
 
 ---
 
@@ -8,7 +8,7 @@
 
 Finding the **right land** is foundational to restoration success. This guide provides step-by-step processes for identifying, evaluating, and acquiring suitable sites for holistic environmental restoration.
 
-**Related Strategic Document:** [[44_Site_Selection_Land_Acquisition|Site Selection & Land Acquisition Strategy]]
+**Related Strategic Document:** [[../../44_Site_Selection_Land_Acquisition|Site Selection & Land Acquisition Strategy]]
 
 ---
 
@@ -209,13 +209,13 @@ For the v2.0 Bootstrap Model: Simplified site selection focusing on 1 hectare pi
 ## Related Documents
 
 **Strategic Context:**
-- [[44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
-- [[02_Project_Vision|Project Vision]] - Geographic priorities
-- [[40_Expansion_Growth_Strategy|Expansion Strategy]]
+- [[../../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
+- [[../../02_Project_Vision|Project Vision]] - Geographic priorities
+- [[../../40_Expansion_Growth_Strategy|Expansion Strategy]]
 
 **Implementation:**
-- [[42_Next_Steps_90_Days|Next Steps]] - Site selection timeline
-- [[32_Funding_Strategy|Funding]] - Land acquisition financing
+- [[../../42_Next_Steps_90_Days|Next Steps]] - Site selection timeline
+- [[../../32_Funding_Strategy|Funding]] - Land acquisition financing
 
 **Technical:**
 - [[../reforestation/00_Reforestation_Overview|Reforestation]] - Restoration activities

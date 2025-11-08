@@ -292,7 +292,7 @@ Implement adaptive management strategies to guide the developing forest through 
 - Present at conferences
 - Share with restoration community
 - Contribute to scientific literature
-- Update [[70_Case_Studies_Restoration_Examples|Case Studies]]
+- Update [[../../70_Case_Studies_Restoration_Examples|Case Studies]]
 
 ---
 
@@ -318,7 +318,7 @@ Implement adaptive management strategies to guide the developing forest through 
 - Carbon sequestration significant
 - Ecosystem services restored
 
-→ Full metrics: [[51_Key_Performance_Indicators|KPIs]]
+→ Full metrics: [[../../51_Key_Performance_Indicators|KPIs]]
 
 ---
 
@@ -381,7 +381,7 @@ Implement adaptive management strategies to guide the developing forest through 
 
 **10-Year Total:** €17,500-35,000 for 1 hectare Bootstrap
 
-→ See: [[30_Business_Model|Business Model]] for revenue to support management
+→ See: [[../../30_Business_Model|Business Model]] for revenue to support management
 
 **Bootstrap Model Note:**
 - These budgets reflect 1 hectare pilot site management
@@ -483,17 +483,17 @@ Implement adaptive management strategies to guide the developing forest through 
 - [[05_Monitor_Growth|Monitor Growth]]
 
 **Strategic Context:**
-- [[20_Restoration_Methodology|Restoration Methodology]]
-- [[51_Key_Performance_Indicators|Key Performance Indicators]]
-- [[40_Expansion_Growth_Strategy|Long-term Scaling]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../51_Key_Performance_Indicators|Key Performance Indicators]]
+- [[../../40_Expansion_Growth_Strategy|Long-term Scaling]]
 
 **Supporting Information:**
-- [[50_Risk_Assessment|Risk Assessment]] (ecological risks)
+- [[../../50_Risk_Assessment|Risk Assessment]] (ecological risks)
 - [[community_engagement/00_Community_Engagement_Overview|Community Engagement]]
-- [[21_Technology_Integration|Technology for Long-term Monitoring]]
+- [[../../21_Technology_Integration|Technology for Long-term Monitoring]]
 
 **Learning and Sharing:**
-- [[70_Case_Studies_Restoration_Examples|Case Studies]]
+- [[../../70_Case_Studies_Restoration_Examples|Case Studies]]
 
 ---
 

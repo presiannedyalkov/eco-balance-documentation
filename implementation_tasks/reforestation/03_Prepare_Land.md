@@ -196,7 +196,7 @@ Proper **land preparation** creates optimal conditions for seedling establishmen
 - Record GPS coordinates
 - Digital map for future reference
 
-→ Technology for mapping: [[21_Technology_Integration|Technology Integration]]
+→ Technology for mapping: [[../../21_Technology_Integration|Technology Integration]]
 
 ### 6. Install Infrastructure (if needed)
 
@@ -406,8 +406,8 @@ Proper **land preparation** creates optimal conditions for seedling establishmen
 - [[../biodiversity/04_Manage_Invasive_Species|Invasive Species Management]]
 
 **Implementation:**
-- [[42_Next_Steps_90_Days|Next 90 Days]] - Timing within project schedule
-- [[51_Key_Performance_Indicators|KPIs]] - Site condition metrics
+- [[../../42_Next_Steps_90_Days|Next 90 Days]] - Timing within project schedule
+- [[../../51_Key_Performance_Indicators|KPIs]] - Site condition metrics
 
 ---
 

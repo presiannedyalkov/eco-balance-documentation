@@ -365,7 +365,7 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 - [[../15_Climate_Action|Climate Action Framework]]
 
 **Previous Steps:**

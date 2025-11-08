@@ -51,7 +51,7 @@ Monitoring biodiversity is essential for understanding the effectiveness of your
 **Establish Baselines:**
 - Conduct initial comprehensive assessment → [[01_Assess_Biodiversity|Assess Biodiversity]]
 - Document starting conditions
-- Set measurable targets → [[../51_Key_Performance_Indicators|KPIs]]
+- Set measurable targets → [[../../51_Key_Performance_Indicators|KPIs]]
 - Define success criteria
 
 **Sampling Design:**
@@ -239,7 +239,7 @@ Monitoring biodiversity is essential for understanding the effectiveness of your
 
 ### Step 3: Implement Technology
 
-**Camera Traps:** → [[../21_Technology_Integration|Technology]]
+**Camera Traps:** → [[../../21_Technology_Integration|Technology]]
 - 24/7 wildlife monitoring
 - Motion-activated
 - Date/time stamping
@@ -377,7 +377,7 @@ Monitoring biodiversity is essential for understanding the effectiveness of your
 - Annual monitoring reports
 - Present to team and board
 - Update management plans
-- Track against KPIs → [[../51_Key_Performance_Indicators|KPIs]]
+- Track against KPIs → [[../../51_Key_Performance_Indicators|KPIs]]
 
 **External Reporting:**
 - Funder reports with data
@@ -637,9 +637,9 @@ Monitoring biodiversity is essential for understanding the effectiveness of your
 - [[04_Manage_Invasive_Species|Manage Invasive Species]]
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../21_Technology_Integration|Monitoring Technology]]
-- [[../51_Key_Performance_Indicators|KPIs]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../21_Technology_Integration|Monitoring Technology]]
+- [[../../51_Key_Performance_Indicators|KPIs]]
 
 ---
 

@@ -402,7 +402,7 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Previous Steps:**
 - [[01_Assess_Water_Needs|Assess Water Needs]]

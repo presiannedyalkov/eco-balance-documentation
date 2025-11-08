@@ -689,8 +689,8 @@ Build accountability
 
 **Strategic Context:**
 - [[00_Community_Engagement_Overview|Community Engagement Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../43_Operations_Action_Plan|Operations Action Plan]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../43_Operations_Action_Plan|Operations Action Plan]]
 
 **Previous Steps:**
 - [[01_Identify_Stakeholders|Identify Stakeholders]]
