@@ -4,6 +4,17 @@
 **Historical Note**: This tracker is preserved for reference only.
 ---
 
+> **📁 ARCHIVED DOCUMENT - COMPLETED**
+>
+> This integration plan was completed in November 2024 as part of the documentation consolidation effort.
+> **Status**: Work finished, document retained for historical reference only.
+>
+> For current documentation structure, see:
+> - [[00_Eco_Balance_Hub|Project Hub]] - Current documentation overview
+> - [[_process/README|Process Documentation]] - Active process guides
+
+---
+
 # Integration Plan - Phase 3: Task-Level Implementation Details
 
 **Created:** October 22, 2025

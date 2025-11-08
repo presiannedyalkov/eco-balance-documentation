@@ -210,7 +210,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** Fundraising often takes longer than hoped. We've built conservative projections but may need to adjust scope.
 
-→ Projections: [[31_Financial_Projections|Financial Scenarios]]
+→ Projections: [[30_Business_Model|Financial Scenarios]]
 
 **Revenue:**
 - Eco-tourism reaches €75k/year by Year 5
@@ -580,7 +580,8 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 - [[04_Current_Status_Assessment|Current State]]
 
 **Implementation:**
-- [[40_Implementation_Roadmap|Roadmap]]
+- [[40_Expansion_Growth_Strategy|Growth Roadmap]]
+- [[43_Operations_Action_Plan|Operations Plan]]
 - [[42_Next_Steps_90_Days|Immediate Actions]]
 
 **Risk & Performance:**

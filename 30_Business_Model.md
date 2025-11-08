@@ -36,17 +36,19 @@
 
 **Investment Breakdown:**
 
-| Category | Budget | Priority | Notes |
-|----------|--------|----------|-------|
-| **Living Infrastructure** | €12-15k | 🔴 Critical | Solar, water, internet (see [[21_Technology_Integration\|Doc 21]]) |
-| **Housing** | €6-10k | 🔴 Critical | Used tiny house or caravan (see [[45_Tiny_House_and_Living_Infrastructure\|Doc 45]]) |
-| **Site Preparation** | €2-4k | 🟡 High | Access, basic infrastructure |
-| **Initial Plantings** | €1-3k | 🟡 High | Seeds, starter trees, materials |
-| **Tools & Equipment** | €1-2k | 🟡 High | Essential restoration tools |
-| **Operating Reserve** | €1-2k | 🟢 Medium | 3-month buffer |
-| **TOTAL YEAR 1** | **€20-30k** | | **Bootstrap Model v2.0** |
+| Category | Amount | % Guide | Priority | Notes |
+|----------|--------|---------|----------|-------|
+| **Housing** | €8-12k | ~40% | 🔴 Critical | Tiny house/caravan (see [[45_Tiny_House_and_Living_Infrastructure\|Doc 45]]) |
+| **Site Costs** | €5-9k | ~25-30% | 🔴 Critical | Land lease/deposit, access, legal fees |
+| **Restoration** | €3-5k | ~15% | 🟡 High | Seedlings, soil amendments, fencing |
+| **Tools & Equipment** | €2-3k | ~10% | 🟡 High | Basic hand tools, used equipment |
+| **Living Infrastructure** | €2-3k | ~10% | 🔴 Critical | Solar, water (see [[21_Technology_Integration\|Doc 21]]) |
+| **Operations** | €1-2k | ~5% | 🟢 Medium | Insurance, permits, utilities, contingency |
+| **TOTAL YEAR 1** | **€21-34k*** | **100%** | | **Bootstrap Model v2.0 target: €20-30k** |
 
-**Note:** Additional Year 2 investment: €250-500k for expansion
+***Note**: Line items show full range of potential costs. Actual Year 1 budget stays within €20-30k through prioritization and trade-offs based on available funding and site conditions.
+
+**Additional Year 2 Investment**: €250-500k for expansion
 
 **Revenue Year 1:** €0 (investment/proof of concept phase)
 - No revenue expected or relied upon
