@@ -54,28 +54,28 @@ Water storage structures bridge the gap between when rain falls and when water i
 - **Best for:** Active rainwater harvesting, near buildings
 - **Advantages:** Easy installation, movable, various sizes
 - **Disadvantages:** Visual impact, freeze risk, space requirements
-- **Cost:** $0.50-3 per gallon
+- **Cost:** €0.50-3 per gallon
 
 **Below-ground cisterns:**
 - **Capacity:** 500-50,000+ gallons
 - **Best for:** Large storage, freeze-prone areas, aesthetics
 - **Advantages:** Temperature stable, hidden, no freeze risk
 - **Disadvantages:** High installation cost, difficult to inspect/maintain
-- **Cost:** $2-5 per gallon installed
+- **Cost:** €2-5 per gallon installed
 
 **Ponds:**
 - **Capacity:** 50,000-1,000,000+ gallons
 - **Best for:** Large sites, wildlife habitat, multiple uses
 - **Advantages:** Lowest cost per gallon, habitat creation, aesthetics
 - **Disadvantages:** Evaporation, requires space, permitting
-- **Cost:** $0.10-0.50 per gallon
+- **Cost:** €0.10-0.50 per gallon
 
 **Bladder tanks:**
 - **Capacity:** 100-10,000 gallons
 - **Best for:** Temporary or mobile storage
 - **Advantages:** Collapsible, portable, quick deployment
 - **Disadvantages:** Limited lifespan, potential punctures
-- **Cost:** $1-2 per gallon
+- **Cost:** €1-2 per gallon
 
 **Natural features (enhanced):**
 - **Examples:** Springs, seeps, natural depressions
@@ -314,31 +314,31 @@ Water storage structures bridge the gap between when rain falls and when water i
 ## 🛠️ Resources Needed
 
 **Materials (varies by type):**
-- **Rain barrels:** $50-200 each
-- **Small tanks (500-1,000 gal):** $300-1,500
-- **Large tanks (5,000-10,000 gal):** $2,500-10,000
-- **Pond liner (per 1,000 sq ft):** $400-800
-- **Pumps:** $150-1,000+
-- **Plumbing:** $500-3,000
-- **Excavation:** $1,000-20,000+ depending on size
+- **Rain barrels:** €50-200 each
+- **Small tanks (500-1,000 gal):** €300-1,500
+- **Large tanks (5,000-10,000 gal):** €2,500-10,000
+- **Pond liner (per 1,000 sq ft):** €400-800
+- **Pumps:** €150-1,000+
+- **Plumbing:** €500-3,000
+- **Excavation:** €1,000-20,000+ depending on size
 
 **Equipment:**
-- Excavator (rental $200-400/day)
+- Excavator (rental €200-400/day)
 - Compaction equipment
 - Plumbing tools
 - Concrete mixer (if building foundation)
 
 **Professional Services:**
-- Engineering design: $2,000-10,000+
-- Excavation contractor: $3,000-50,000+
-- Pond construction specialist: $5,000-100,000+
-- Geotechnical testing: $500-2,000
-- Surveying: $500-2,000
+- Engineering design: €2,000-10,000+
+- Excavation contractor: €3,000-50,000+
+- Pond construction specialist: €5,000-100,000+
+- Geotechnical testing: €500-2,000
+- Surveying: €500-2,000
 
 **Permits and Fees:**
-- Building permits: $100-1,000
-- Environmental review: $1,000-10,000+
-- Engineering stamps: $500-2,000
+- Building permits: €100-1,000
+- Environmental review: €1,000-10,000+
+- Engineering stamps: €500-2,000
 
 ## ✅ Success Criteria
 
@@ -454,11 +454,11 @@ Water storage structures bridge the gap between when rain falls and when water i
 
 | Type | Cost/Gal | Lifespan | Maintenance | Best Use |
 |------|----------|----------|-------------|----------|
-| Rain barrel | $2-4 | 5-10 yrs | Low | Small scale, demonstration |
-| Above-ground tank | $0.50-2 | 15-25 yrs | Low-Med | Active rainwater harvesting |
-| Underground cistern | $2-5 | 30-50 yrs | Medium | Large capacity, freeze-prone areas |
-| Pond | $0.10-0.50 | Permanent | Medium | Large sites, habitat, aesthetics |
-| Bladder tank | $1-2 | 5-10 yrs | Medium | Temporary, emergency |
+| Rain barrel | €2-4 | 5-10 yrs | Low | Small scale, demonstration |
+| Above-ground tank | €0.50-2 | 15-25 yrs | Low-Med | Active rainwater harvesting |
+| Underground cistern | €2-5 | 30-50 yrs | Medium | Large capacity, freeze-prone areas |
+| Pond | €0.10-0.50 | Permanent | Medium | Large sites, habitat, aesthetics |
+| Bladder tank | €1-2 | 5-10 yrs | Medium | Temporary, emergency |
 
 ---
 

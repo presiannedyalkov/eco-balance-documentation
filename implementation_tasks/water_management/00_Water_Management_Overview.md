@@ -54,16 +54,16 @@ Water management follows a systematic approach across seven key tasks:
 - Water testing kits (if using existing water sources)
 
 **Infrastructure (varies by approach):**
-- Rainwater harvesting: Gutters, downspouts, storage tanks ($500-5,000+)
-- Earthworks: Excavation equipment for swales/ponds ($1,000-20,000+)
-- Irrigation systems: Drip lines, timers, filters ($500-10,000+)
-- Storage: Tanks, cisterns, or ponds ($1,000-50,000+)
+- Rainwater harvesting: Gutters, downspouts, storage tanks (€500-5,000+)
+- Earthworks: Excavation equipment for swales/ponds (€1,000-20,000+)
+- Irrigation systems: Drip lines, timers, filters (€500-10,000+)
+- Storage: Tanks, cisterns, or ponds (€1,000-50,000+)
 
 **Financial Considerations:**
-- Water assessment: $500-2,000
-- Basic rainwater harvesting: $1,000-5,000
-- Comprehensive water management system: $10,000-100,000+
-- Ongoing maintenance: $500-2,000 annually
+- Water assessment: €500-2,000
+- Basic rainwater harvesting: €1,000-5,000
+- Comprehensive water management system: €10,000-100,000+
+- Ongoing maintenance: €500-2,000 annually
 - Potential grants available for water conservation projects
 
 ## ✅ Success Criteria

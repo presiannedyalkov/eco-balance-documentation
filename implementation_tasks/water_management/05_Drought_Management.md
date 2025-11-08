@@ -299,21 +299,21 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 ## 🛠️ Resources Needed
 
 **Monitoring:**
-- Rain gauge: $10-50
-- Soil moisture meters: $20-200
-- Weather station (optional): $100-500
+- Rain gauge: €10-50
+- Soil moisture meters: €20-200
+- Weather station (optional): €100-500
 - Drought monitoring services: Free online
 
 **Materials:**
-- Mulch: $30-60 per cubic yard
-- Drought-tolerant plants: $3-20 each
+- Mulch: €30-60 per cubic yard
+- Drought-tolerant plants: €3-20 each
 - Emergency irrigation supplies: Variable
-- Shade cloth (temporary): $50-200
+- Shade cloth (temporary): €50-200
 
 **Professional Services:**
-- Drought-tolerant landscape design: $500-2,000
-- Soil water capacity testing: $100-500
-- Irrigation system optimization: $200-1,000
+- Drought-tolerant landscape design: €500-2,000
+- Soil water capacity testing: €100-500
+- Irrigation system optimization: €200-1,000
 
 **Time Investment:**
 - Planning: 10-20 hours initially

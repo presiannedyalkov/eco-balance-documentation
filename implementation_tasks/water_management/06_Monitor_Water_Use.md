@@ -53,7 +53,7 @@ Annual Water Use (Baseline - Year 1):
 - Hauled water: 20,000 gal (8%)
 - Average monthly: 20,833 gallons
 - Peak month (July): 45,000 gallons
-- Cost: $900 annually
+- Cost: €900 annually
 - Per-acre use: 25,000 gal/acre
 ```
 
@@ -88,9 +88,9 @@ Annual Water Use (Baseline - Year 1):
 - Helps detect zone-specific leaks or inefficiency
 
 **Meter types:**
-- **Mechanical:** Reliable, no power needed, less expensive ($50-200)
-- **Digital:** More accurate, data logging, expensive ($200-1,000+)
-- **Smart meters:** Remote monitoring, real-time data, highest cost ($500-2,000+)
+- **Mechanical:** Reliable, no power needed, less expensive (€50-200)
+- **Digital:** More accurate, data logging, expensive (€200-1,000+)
+- **Smart meters:** Remote monitoring, real-time data, highest cost (€500-2,000+)
 
 **Installation tips:**
 - Install where easily accessible for reading
@@ -110,28 +110,28 @@ Annual Water Use (Baseline - Year 1):
 
 **Soil moisture sensor types:**
 
-**Tensiometers ($30-100 each):**
+**Tensiometers (€30-100 each):**
 - Measure soil water tension (how hard plants work for water)
 - Most accurate for irrigation timing
 - Require maintenance (refilling)
 - Best for frequent monitoring
 - 12-36 inch depths available
 
-**Electrical resistance sensors ($50-200):**
+**Electrical resistance sensors (€50-200):**
 - Gypsum blocks or granular matrix sensors
 - Long-term installation
 - Lower maintenance
 - Less accurate but adequate
 - Good for budget monitoring
 
-**Capacitance sensors ($100-500):**
+**Capacitance sensors (€100-500):**
 - Measure soil dielectric constant
 - Very accurate
 - Multiple depths available
 - Durable and reliable
 - Can integrate with automated systems
 
-**Time domain reflectometry (TDR) ($500-3,000):**
+**Time domain reflectometry (TDR) (€500-3,000):**
 - Research-grade accuracy
 - Expensive but precise
 - Good for critical applications
@@ -267,7 +267,7 @@ Annual Water Use (Baseline - Year 1):
 - Tracks rainfall, temperature, humidity, wind
 - Calculates evapotranspiration (ET)
 - Some models connect to irrigation controllers
-- Cost: $100-1,000+ depending on features
+- Cost: €100-1,000+ depending on features
 
 **Track key weather data:**
 - Daily rainfall totals
@@ -349,7 +349,7 @@ Sustainable Sources:
 - Target: 40% | Actual: 48% ✓ (89,000 gal harvested)
 
 Cost:
-- Target: $700 | Actual: $550 ✓ ($350 savings)
+- Target: €700 | Actual: €550 ✓ (€350 savings)
 
 Irrigation Efficiency:
 - Target: 75% | Actual: 82% ✓ (upgraded to drip)
@@ -402,7 +402,7 @@ Example: Small drip leak
 - Rate: 1 drip per second
 - Volume: ~5 gallons per day
 - Annual waste: 1,825 gallons
-- Cost (at $0.005/gal): $9.13/year
+- Cost (at €0.005/gal): €9.13/year
 
 Even small leaks add up! Fix promptly.
 ```
@@ -556,7 +556,7 @@ Highlights:
 ✓ Reduced total water use by 26% (65,000 gallons saved)
 ✓ Increased rainwater harvesting to 48% of total use
 ✓ Achieved 82% irrigation efficiency (up from 65%)
-✓ Saved $350 in water costs
+✓ Saved €350 in water costs
 
 Key Actions:
 - Upgraded 60% of irrigation to drip system
@@ -574,33 +574,33 @@ Next Steps:
 ## 🛠️ Resources Needed
 
 **Metering Equipment:**
-- Basic water meters: $50-200 each
-- Digital flow meters: $200-1,000
-- Smart meters with data logging: $500-2,000+
-- Professional installation: $100-500 per meter
+- Basic water meters: €50-200 each
+- Digital flow meters: €200-1,000
+- Smart meters with data logging: €500-2,000+
+- Professional installation: €100-500 per meter
 
 **Soil Moisture Monitoring:**
-- Tensiometers: $30-100 each
-- Electrical resistance sensors: $50-200 each
-- Capacitance sensors: $100-500 each
-- Data loggers (if not integrated): $200-1,000
+- Tensiometers: €30-100 each
+- Electrical resistance sensors: €50-200 each
+- Capacitance sensors: €100-500 each
+- Data loggers (if not integrated): €200-1,000
 
 **Weather Monitoring:**
-- Rain gauge: $10-50
-- Basic weather station: $100-300
-- Advanced weather station with ET: $300-1,000
-- Professional station: $1,000-5,000+
+- Rain gauge: €10-50
+- Basic weather station: €100-300
+- Advanced weather station with ET: €300-1,000
+- Professional station: €1,000-5,000+
 
 **Data Management:**
-- Spreadsheet software: Free (Google Sheets) to $100/year (Excel)
-- Water management software: $500-5,000/year
+- Spreadsheet software: Free (Google Sheets) to €100/year (Excel)
+- Water management software: €500-5,000/year
 - Custom database: Development costs variable
 
 **Professional Services:**
-- Water audit: $500-2,000
-- Meter installation: $100-500 per meter
-- Sensor installation and training: $500-1,500
-- Data analysis consultation: $100-200/hour
+- Water audit: €500-2,000
+- Meter installation: €100-500 per meter
+- Sensor installation and training: €500-1,500
+- Data analysis consultation: €100-200/hour
 
 **Time Investment:**
 - Initial setup: 10-20 hours

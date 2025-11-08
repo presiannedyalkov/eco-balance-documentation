@@ -293,16 +293,16 @@ Create table showing monthly supply vs. demand
 - NOAA weather data (free)
 - State climate office resources (free)
 - Extension service tools (free)
-- Weather station access ($100-500 if installing your own)
+- Weather station access (€100-500 if installing your own)
 
 **Professional Consultation:**
-- Hydrologist ($1,000-3,000 for assessment)
-- Irrigation specialist ($500-1,500 for consultation)
+- Hydrologist (€1,000-3,000 for assessment)
+- Irrigation specialist (€500-1,500 for consultation)
 - Extension agent (often free)
 
 **Assessment Tools:**
-- Rain gauge ($10-50)
-- Soil moisture meter ($20-200)
+- Rain gauge (€10-50)
+- Soil moisture meter (€20-200)
 - Measuring tape and calculator
 - Spreadsheet software
 - GIS or mapping tools (optional)
