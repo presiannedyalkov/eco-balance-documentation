@@ -776,8 +776,9 @@ This visual guide provides:
 
 ---
 
-**Version:** 1.0.0  
-**Last Updated:** October 25, 2025  
-**Created for:** Eco Balance Documentation v1.0.0
+**Document Version:** 2.0.0
+**Last Updated:** 2024-11-08
+**Status:** Active
+**Aligned with:** Bootstrap Model v2.0
 
 [[00_Eco_Balance_Hub|← Back to Hub]] | [[QUICK_REFERENCE_GUIDE|Quick Reference]] | [[CHANGELOG|Changelog]]

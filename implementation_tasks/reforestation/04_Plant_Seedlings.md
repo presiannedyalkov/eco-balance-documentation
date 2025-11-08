@@ -1,3 +1,10 @@
+---
+**Document Version:** 2.0.0
+**Last Updated:** 2024-11-08
+**Status:** Active
+**Aligned with:** Bootstrap Model v2.0
+---
+
 # Step 4: Plant the Seedlings
 
 ← Back to [[00_Reforestation_Overview|Reforestation Overview]] | [[../README|Implementation Tasks]]
