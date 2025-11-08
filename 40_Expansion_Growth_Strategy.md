@@ -8,9 +8,31 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ---
 
-## Phase 1: Foundation & Pilot (Year 1)
+## Bootstrap Phase (Months 1-12): Proof of Concept
 
-**Goal:** Establish proof of concept with first land acquisition
+**Goal:** Validate restoration approach at 1 hectare pilot scale
+
+**This is Year 0** - proving the model before Phase 1 expansion. See:
+- [[42_Next_Steps_90_Days|First 90 Days]]: Campaign & land acquisition
+- [[43_Operations_Action_Plan|Operations Guide]]: Bootstrap operations
+- [[44_Site_Selection_Land_Acquisition|Site Selection]]: Finding 1 ha site
+
+**Bootstrap Success Metrics:**
+- 1 hectare secured and operational
+- 100-200 trees planted with 70%+ survival
+- €20-30k Year 1 budget managed effectively
+- Restoration methods documented
+- Model proven viable for scaling
+
+**After Bootstrap Success** → Phase 1 expansion begins (below)
+
+---
+
+## Phase 1: Foundation & Scale (Years 2-3)
+
+**Prerequisite:** Successful 1 hectare Bootstrap pilot complete
+
+**Goal:** Scale proven approach to 5-10 hectares
 
 ### Key Objectives
 
@@ -561,11 +583,13 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ## Immediate Next Steps (90 Days)
 
+**NOTE**: These are Bootstrap Phase actions. The "Phase 1" expansion described above begins AFTER successful completion of 1 hectare pilot (typically Year 2+).
+
 **These expansion plans begin after:**
 1. Legal NGO registration complete → [[13_Legal_Framework|Legal Framework]]
-2. Initial funding secured (€250-500k) → [[32_Funding_Strategy|Funding Strategy]]
-3. Core team recruited → [[12_Team_Roles|Team Roles]]
-4. First land site identified → [[42_Next_Steps_90_Days|Next Steps]]
+2. Initial funding secured (€20-30k for Bootstrap) → [[32_Funding_Strategy|Funding Strategy]]
+3. Core 1-2 person founder team in place → [[12_Team_Roles|Team Roles]]
+4. First 1 hectare site identified → [[42_Next_Steps_90_Days|Next Steps]]
 
 **Critical 90-Day Milestones:**
 
