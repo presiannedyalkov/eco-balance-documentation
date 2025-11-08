@@ -41,7 +41,7 @@ This release includes:
 **Implementation Tasks** - 6 categories with detailed step-by-step guides
 
 ### Version Control
-**[[VERSION|VERSION]]** - Current version number (1.0.0)  
+**[[VERSION|VERSION]]** - Current version number (2.0.0)  
 **[[CHANGELOG|CHANGELOG.md]]** - Complete version history  
 **[[_versions/README|_versions/]]** - Version-specific artifacts and reports
 
@@ -306,7 +306,7 @@ Restoration (20) → Impact (51) → Revenue (30)
 
 This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 
-**Current Version:** 1.0.0 (Production Release)
+**Current Version:** 2.0.0 (Production Release)
 
 - **MAJOR** (1.x.x) - Breaking changes, fundamental restructuring
 - **MINOR** (x.1.x) - New features, additional documents, enhancements
@@ -413,7 +413,13 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 
 ## 📝 Version History
 
-**[1.0.0]** - October 25, 2025 - **CURRENT**
+**[2.0.0]** - November 8, 2024 - **CURRENT** - Bootstrap Model v2.0 alignment
+- ✅ Aligned with Bootstrap Model v2.0 framework
+- ✅ Updated all strategic documents for €20-30k bootstrap budget
+- ✅ Enhanced implementation task guides
+- ✅ Improved metadata and cross-references
+
+**[1.0.0]** - October 25, 2025
 - ✅ Complete strategic planning documentation (22 files)
 - ✅ Complete implementation task guides (44 files)
 - ✅ Professional version control system

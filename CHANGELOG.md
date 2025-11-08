@@ -282,5 +282,5 @@ Future versions will be documented here as the project evolves. See `_versions/R
 ---
 
 **Current Version:** 2.0.0
-**Last Updated:** 2024-11-08
+**Last Updated:** 2025-11-08
 **Maintained By:** Eco Balance Project Team
