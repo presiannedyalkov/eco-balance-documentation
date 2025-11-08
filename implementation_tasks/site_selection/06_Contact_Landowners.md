@@ -144,7 +144,17 @@ Establishing contact with landowners is a critical step that requires diplomacy,
 
 *"Dear [Landowner Name],*
 
-*My name is [Your Name] and I represent Eco Balance, a non-profit organization dedicated to environmental restoration in Southern Europe. We are currently researching potential sites for holistic ecosystem restoration projects.*
+*My name is [Your Name] and I represent Eco Balance, a non-profit organization dedicated to environmental restoration. We are looking for land in Germany to establish a sustainable regenerative land use pilot project.*
+
+***Preferred Regions:***
+*- Brandenburg: Affordable land, former agricultural areas*
+*- Saxony: Post-mining restoration opportunities*
+*- Rhineland-Palatinate: Forest restoration potential*
+*- Lower Saxony: Wetland restoration opportunities*
+*- Within 100-200km of major cities (Berlin, Frankfurt, Munich)*
+
+***Climate Focus:***
+*Our project is designed for Germany's temperate oceanic/continental climate (Köppen Cfb/Dfb classification) with four distinct seasons and 600-800mm annual rainfall.*
 
 *We have identified your property at [location] as potentially suitable for a restoration project that would benefit biodiversity, soil health, and water management while providing community and educational opportunities.*
 

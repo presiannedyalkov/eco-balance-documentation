@@ -715,34 +715,34 @@ Teaching Others → Program Design → Leadership
 **Employment Costs:**
 - Salaries and wages: Variable (budget 20-40% for local employment)
 - Benefits: 15-30% of salaries
-- Payroll processing: $500-2,000/year
+- Payroll processing: €460-1,840/year
 - Workers compensation: 3-10% of payroll
-- Liability insurance: $1,000-5,000/year
+- Liability insurance: €920-4,600/year
 
 **Volunteer Program:**
-- Tools and equipment: $2,000-10,000
-- Work day supplies: $100-300 per event
-- Volunteer management software: $500-2,000/year
-- Recognition and appreciation: $500-3,000/year
-- Insurance (volunteer coverage): $500-2,000/year
+- Tools and equipment: €1,840-9,200
+- Work day supplies: €90-280 per event
+- Volunteer management software: €460-1,840/year
+- Recognition and appreciation: €460-2,760/year
+- Insurance (volunteer coverage): €460-1,840/year
 
 **Advisory Structures:**
-- Stipends/honoraria: $50-200 per meeting per member
-- Meeting facilitation: $500-2,000 per meeting
-- Childcare and meals: $200-500 per meeting
-- Materials and supplies: $100-300 per meeting
+- Stipends/honoraria: €45-185 per meeting per member
+- Meeting facilitation: €460-1,840 per meeting
+- Childcare and meals: €185-460 per meeting
+- Materials and supplies: €90-280 per meeting
 
 **Training and Capacity Building:**
-- Training programs: $5,000-25,000/year
-- Certification costs: $500-5,000
-- Professional development: $1,000-10,000/year
-- Equipment and materials: $2,000-10,000
+- Training programs: €4,600-23,000/year
+- Certification costs: €460-4,600
+- Professional development: €920-9,200/year
+- Equipment and materials: €1,840-9,200
 
 **Celebration and Recognition:**
-- Annual appreciation event: $1,000-5,000
-- Awards and certificates: $300-1,000
-- T-shirts and gear: $500-3,000
-- Milestone celebrations: $500-5,000 each
+- Annual appreciation event: €920-4,600
+- Awards and certificates: €280-920
+- T-shirts and gear: €460-2,760
+- Milestone celebrations: €460-4,600 each
 
 ## ✅ Success Criteria
 
