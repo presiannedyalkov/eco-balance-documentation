@@ -442,7 +442,7 @@ Choose gGmbH if:
 
 ✅ **3-6 month timeline** from start to operational status
 
-✅ **€30-35k initial investment** including share capital and setup costs
+✅ **€28-35k initial investment** including share capital and setup costs (see detailed breakdown above)
 
 ✅ **Professional advisors essential** - don't attempt without expert guidance
 
@@ -453,3 +453,7 @@ Choose gGmbH if:
 ---
 
 *Legal framework established, ready for organizational growth and impact.*
+
+---
+
+**Document Version:** 2.0.0 | **Last Updated:** 2025-11-08 | **Status:** Active

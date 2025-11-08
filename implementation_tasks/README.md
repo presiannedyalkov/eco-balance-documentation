@@ -8,7 +8,7 @@
 
 ## 📋 Overview
 
-This comprehensive implementation guide represents a complete, integrated framework for ecological restoration—from initial site selection through long-term community stewardship. Spanning 42 detailed task files across 6 major phases, this framework provides step-by-step guidance for transforming degraded landscapes into thriving ecosystems while building community capacity, economic opportunity, and lasting environmental stewardship.
+This comprehensive implementation guide represents a complete, integrated framework for ecological restoration—from initial site selection through long-term community stewardship. Spanning 44 detailed task files across 6 major phases, this framework provides step-by-step guidance for transforming degraded landscapes into thriving ecosystems while building community capacity, economic opportunity, and lasting environmental stewardship.
 
 **What makes this framework unique:**
 - **Holistic Integration:** Environmental, social, and economic dimensions woven together
@@ -35,7 +35,7 @@ This comprehensive implementation guide represents a complete, integrated framew
 │  Phase 2: REFORESTATION (7 tasks)                           │
 │  └─> Restoring forest ecosystems and tree cover             │
 │                                                               │
-│  Phase 3: BIODIVERSITY CONSERVATION (8 tasks)               │
+│  Phase 3: BIODIVERSITY CONSERVATION (7 tasks)               │
 │  └─> Protecting and enhancing species and habitats          │
 │                                                               │
 │  Phase 4: SOIL RESTORATION (7 tasks)                        │

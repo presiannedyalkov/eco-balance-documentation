@@ -1,7 +1,14 @@
 # Eco Balance Git Repository - Push Instructions
 
-**Updated Remote URL:** http://192.168.178.35:3055/pres/eco-balance-documentation.git  
-**Status:** Ready to push  
+> **⚠️ HISTORICAL DOCUMENT - v1.0.0**
+> This document reflects v1.0.0 workflow from October 2024.
+> Current version is v2.0.0 (November 2024).
+> For current Git processes, see _process/git/README.md
+
+---
+
+**Updated Remote URL:** http://192.168.178.35:3055/pres/eco-balance-documentation.git
+**Status:** Ready to push
 **Branch:** main
 
 ---

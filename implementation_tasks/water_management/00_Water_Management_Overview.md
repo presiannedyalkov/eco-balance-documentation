@@ -1,3 +1,10 @@
+---
+**Document Version:** 2.0.0
+**Last Updated:** 2025-11-08
+**Status:** Active
+**Aligned with:** Bootstrap Model v2.0
+---
+
 # Water Management Overview
 
 ← Back to [[README|Implementation Tasks]]

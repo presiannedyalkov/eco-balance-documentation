@@ -136,3 +136,7 @@ Reforestation is a critical pillar of ecosystem restoration. The goal is not jus
 ---
 
 *Remember: Reforestation is a long-term commitment to ecosystem restoration. Success requires patience, persistence, and adaptive management.*
+
+---
+
+**Document Version:** 2.0.0 | **Last Updated:** 2025-11-08 | **Status:** Active
