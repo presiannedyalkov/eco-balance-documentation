@@ -1,10 +1,10 @@
-# 🚀 AUDIT ROUND 3 - VERIFICATION AUDIT
+# 🚀 AUDIT ROUND 3 - COMPREHENSIVE QUALITY AUDIT
 
-**Purpose**: Verify that all Round 2 fixes were applied correctly
+**Purpose**: Find any remaining issues or problems after Round 2 fixes
 **Total Agents**: 10
 **Total Files**: 95
-**Est. Time/Agent**: 30-45 minutes
-**Focus**: Verify v2.0 alignment, link integrity, metadata, geographic/unit corrections
+**Est. Time/Agent**: 40-60 minutes
+**Focus**: Any issues - content quality, accuracy, consistency, links, formatting, etc.
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## 📋 INSTRUCTIONS FOR AGENTS
 
-**Welcome to Audit Round 3!** This is a verification audit to confirm all Round 2 fixes were applied correctly.
+**Welcome to Audit Round 3!** This is a comprehensive quality audit to find ANY remaining issues after Round 2 fixes.
 
 ### Step 1: Read Your Assignment
 
@@ -57,28 +57,31 @@
 
 ### Step 3: Audit ALL Assigned Files
 
-**Focus on verifying**:
-- ✅ Bootstrap Model alignment (1 ha Year 1, €20-30k, 1-2 founders)
-- ✅ Link paths working (../../ from implementation tasks)
-- ✅ Metadata present (version 2.0.0, dates)
-- ✅ Geographic alignment (Germany, not US/Southern Europe)
-- ✅ Unit system (metric, not imperial)
-- ✅ Currency (EUR, not USD)
-- ✅ No future dates in metadata
+**Look for ANY issues**:
+- Content quality and accuracy
+- Bootstrap Model alignment (1 ha Year 1, €20-30k, 1-2 founders)
+- Link integrity (all internal links working)
+- Consistency across documents
+- Metadata completeness and correctness
+- Geographic/cultural appropriateness (Germany-focused)
+- Correct units (metric) and currency (EUR)
+- Formatting and readability
+- Missing information or unclear sections
+- Outdated content or broken references
 
-**NO SAMPLING** - Read every file completely.
+**NO SAMPLING** - Read every file completely. Apply all 6 personas.
 
 ### Step 4: Create Findings
 
 File: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_3/findings/AUDIT_FINDINGS_AGENT_[YOUR_NUMBER].md`
 
-**Expected outcome**: Significantly fewer issues than Round 2 (should find 265 → ~20-50 issues)
+**Expected outcome**: Fewer issues than Round 2, but look for ANYTHING that needs improvement
 
 Include:
-- Summary stats
-- Any remaining issues
-- Confirmation of fixes applied
-- Any new issues discovered
+- Summary stats (total files, issues by severity/persona)
+- ALL issues found (old issues missed, new issues discovered)
+- Clear descriptions and fix recommendations
+- Categorize by severity: CRITICAL/HIGH/MEDIUM/LOW
 
 ### Step 5: Submit PR
 
@@ -87,12 +90,16 @@ Include:
 
 ---
 
-## 🎯 WHAT TO EXPECT
+## 🎯 WHAT TO LOOK FOR
 
-Round 2 resolved 265 issues. This round should find:
-- **Ideal**: 0-10 issues (minor polish only)
-- **Good**: 10-30 issues (some fixes incomplete)
-- **Concerning**: 30+ issues (major fixes not applied)
+Round 2 resolved 265 issues. This audit looks for:
+- **Any remaining issues** from Round 2 that weren't fully fixed
+- **New issues discovered** on close reading
+- **Content quality** problems (unclear, incomplete, outdated)
+- **Technical issues** (broken links, wrong data, inconsistencies)
+- **Polish opportunities** (better examples, clearer explanations)
+
+**Don't assume everything is perfect** - audit thoroughly and report everything you find.
 
 ---
 
