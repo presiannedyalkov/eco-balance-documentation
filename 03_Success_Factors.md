@@ -25,7 +25,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Third-party verification** of results
 - ✅ **Expert Advisory Board** oversight
 
-→ Framework: [[22_Research_Framework|Research & Monitoring]]
+→ Framework: [[22_Restoration_Challenges_Solutions|Research & Monitoring]]
 
 **Failure Mode:** Using unproven methods, exaggerating claims, avoiding monitoring = loss of credibility
 
@@ -135,7 +135,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Government relationships** (policy, permits)
 - ✅ **Community connections** (local leaders)
 
-→ Framework: [[22_Research_Framework|Research Partnerships]]
+→ Framework: [[22_Restoration_Challenges_Solutions|Research Partnerships]]
 
 **Failure Mode:** Isolated operation, competition over collaboration, weak relationships = limited capacity
 

@@ -36,7 +36,7 @@ Local employment, education, and traditional knowledge integration
 
 ### 📊 Scientific Rigor
 Research partnerships, peer-reviewed validation, and continuous monitoring
-→ See [[22_Research_Framework|Research Framework]]
+→ See [[22_Restoration_Challenges_Solutions|Research Framework]]
 
 ### 📈 Scalable Model
 Documented processes designed for global replication
