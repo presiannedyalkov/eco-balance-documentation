@@ -14,6 +14,9 @@ Eco Balance is an ambitious holistic environmental restoration initiative design
 
 To restore degraded ecosystems in Southern Europe through evidence-based, community-engaged, financially sustainable environmental restoration that serves as a replicable model for global climate action.
 
+> **📘 Bootstrap Model Note:**
+> Eco Balance uses a phased approach starting with a 1-hectare Year 1 pilot (€20k-€30k, 1-2 founders) to prove the concept before scaling to 5-10 hectares in Years 2-3 (€250k-€500k, 3-4 staff). This ensures viability before major investment.
+
 ---
 
 ## Key Differentiators
@@ -46,10 +49,10 @@ Documented processes designed for global replication
 
 ## Strategic Objectives (Years 1-10)
 
-### Year 1: Prove Concept
+### Year 1: Prove Concept (Bootstrap Pilot)
 - Establish legal entity (gGmbH)
-- Secure first land (5-10 hectares)
-- Build pilot site
+- Secure first land (1 hectare, with expansion rights to 5-10 hectares)
+- Build minimal viable pilot site
 
 ### Years 2-3: Demonstrate Impact
 - Measurable ecological improvements
@@ -68,18 +71,31 @@ Documented processes designed for global replication
 
 ---
 
-## Investment Ask (Phase 1)
+## Investment Ask (Phased Approach)
 
-**Initial Capital Required:** €250,000 - €500,000
+### Year 1 Bootstrap Phase: €20,000 - €30,000
 
 **Primary Use:**
-- Land acquisition
-- Legal setup
-- Pilot infrastructure
-- Core team (Year 1)
+- Legal setup (gGmbH registration)
+- 1 hectare pilot site establishment
+- Minimal infrastructure (tiny house, basic tools)
+- 1-2 founder operations
 
 **Expected ROI:**
-- Environmental impact
+- Proof of concept demonstration
+- Investor pitch preparation
+- Foundation for expansion funding
+
+### Years 2-3 Expansion Phase: €250,000 - €500,000
+
+**Primary Use:**
+- Land expansion (scaling to 5-10 hectares)
+- Full infrastructure build-out
+- Professional team (3-4 staff)
+- Technology integration (solar, water systems)
+
+**Expected ROI:**
+- Environmental impact at scale
 - Social return
 - Path to financial sustainability by Year 3
 

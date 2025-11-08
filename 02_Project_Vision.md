@@ -167,10 +167,52 @@ Eco Balance draws from successful restoration projects worldwide:
 
 ### Initial Target
 **Portugal or Southern Spain**
-- 5-10 hectares in Year 1
+
+**Year 1 Bootstrap Pilot** (1 hectare)
+- Minimal viable demonstration
+- €20k-€30k investment
+- 1-2 person team
+- Proof of concept for investor outreach
+
+**Year 2-3 Expansion** (scaling to 5-10 hectares)
+- Full-scale demonstration site
+- €250k-€500k with secured funding
+- 3-4 person team
+- Revenue generation begins
+
+**Site Requirements:**
 - Mediterranean climate
 - Proven restoration potential
 - Community receptivity
+- Expansion potential to 5-10 hectares
+
+### 3-Phase Growth Strategy
+
+Eco Balance follows a staged approach to minimize risk and maximize learning:
+
+**Phase 1 (Year 1): 1 ha Bootstrap - Prove Concept**
+- Minimal viable demonstration site
+- €20k-€30k self/friends/family funding
+- 1-2 founder team (hands-on execution)
+- Goal: Demonstrate viability, prepare investor pitch
+- Timeline: 12-18 months
+
+**Phase 2 (Years 2-3): 5-10 ha - Demonstrate Viability**
+- Full-scale demonstration site
+- €250k-€500k secured funding (grants, investors)
+- 3-4 person professional team
+- Goal: Prove financial sustainability, revenue generation
+- Timeline: 18-24 months
+
+**Phase 3 (Years 4+): 50+ ha - Scale Operations**
+- Multi-site network operations
+- €2M+ investment capacity
+- Full organizational structure
+- Goal: Sustainable operations, model replication
+- Timeline: Ongoing expansion
+
+> **📘 Why This Approach Works:**
+> Starting small allows us to prove the concept with minimal capital, learn from mistakes affordably, and build credibility before seeking major funding. Each phase builds on proven success from the previous phase.
 
 ---
 
