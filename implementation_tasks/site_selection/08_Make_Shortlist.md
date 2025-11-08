@@ -50,13 +50,19 @@ These are non-negotiable - sites failing any of these are eliminated:
 
 - [ ] **Legal Access:** Can legally acquire or lease the land
 - [ ] **Budget Fit:** Acquisition costs within available budget
-- [ ] **Size Appropriate:** Meets minimum size requirements (5-10 ha for Year 1)
+- [ ] **Size Appropriate:** 1 hectare for Bootstrap pilot (v2.0 Model)
 - [ ] **Restoration Viable:** Degradation severe enough to justify intervention, but not impossible
 - [ ] **Regulatory Feasible:** Can obtain necessary permits within reasonable timeline
 - [ ] **Safety:** Safe for staff and visitors to access and work
 - [ ] **Geographic:** Located in target region (Southern Europe)
 
 **Sites failing essential criteria are eliminated immediately.**
+
+**Bootstrap Model Site Size:**
+- Year 1-3: 1 hectare pilot site (prove the model)
+- Post-pilot: If successful, consider 5-10 ha replication sites
+- Focus: Validation at small scale, not immediate large-scale operation
+- Budget: 1 ha site fits within €20-30k Year 1 budget
 
 ### Step 3: Develop Scoring Matrix
 
