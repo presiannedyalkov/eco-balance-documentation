@@ -1,6 +1,6 @@
 # Expansion & Growth Strategy
 
-← Back to [[00_Eco_Balance_Hub|Project Hub]]
+**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
 
 ## Overview
 

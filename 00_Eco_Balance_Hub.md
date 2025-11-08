@@ -26,7 +26,7 @@ This release includes:
 - All strategic documents aligned with realistic founder-level execution
 
 → See [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] for full details  
-→ View [[CHANGELOG|Changelog]] for complete version history  
+→ See [[CHANGELOG|Changelog]] for complete version history  
 → Quick start: [[QUICK_REFERENCE_GUIDE|Quick Reference Guide]]
 
 ---
@@ -96,7 +96,7 @@ This release includes:
 **All detailed execution guides ready to use:**
 
 ### ✅ Site Selection (9 files)
-Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview|Site Selection Overview]]
+→ See [[implementation_tasks/site_selection/00_Site_Selection_Overview|Site Selection Overview]]
 - Identify potential locations
 - Evaluate land condition
 - Estimate restoration potential
@@ -107,7 +107,7 @@ Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview|Site 
 - Make shortlist
 
 ### ✅ Reforestation (7 files)
-Navigate: [[implementation_tasks/reforestation/00_Reforestation_Overview|Reforestation Overview]]
+→ See [[implementation_tasks/reforestation/00_Reforestation_Overview|Reforestation Overview]]
 - Identify native species
 - Source seedlings
 - Prepare land
@@ -116,7 +116,7 @@ Navigate: [[implementation_tasks/reforestation/00_Reforestation_Overview|Refores
 - Long-term management
 
 ### ✅ Biodiversity Conservation (7 files)
-Navigate: [[implementation_tasks/biodiversity/00_Biodiversity_Overview|Biodiversity Overview]]
+→ See [[implementation_tasks/biodiversity/00_Biodiversity_Overview|Biodiversity Overview]]
 - Assess biodiversity
 - Restore habitats
 - Create protected areas
@@ -125,7 +125,7 @@ Navigate: [[implementation_tasks/biodiversity/00_Biodiversity_Overview|Biodivers
 - Monitor biodiversity
 
 ### ✅ Soil Restoration (7 files)
-Navigate: [[implementation_tasks/soil_restoration/00_Soil_Restoration_Overview|Soil Restoration Overview]]
+→ See [[implementation_tasks/soil_restoration/00_Soil_Restoration_Overview|Soil Restoration Overview]]
 - Assess soil health
 - Add organic matter
 - Reduce tillage
@@ -134,7 +134,7 @@ Navigate: [[implementation_tasks/soil_restoration/00_Soil_Restoration_Overview|S
 - Monitor soil health
 
 ### ✅ Water Management (7 files)
-Navigate: [[implementation_tasks/water_management/00_Water_Management_Overview|Water Management Overview]]
+→ See [[implementation_tasks/water_management/00_Water_Management_Overview|Water Management Overview]]
 - Assess water needs
 - Rainwater harvesting
 - Build water storage
@@ -143,7 +143,7 @@ Navigate: [[implementation_tasks/water_management/00_Water_Management_Overview|W
 - Monitor water use
 
 ### ✅ Community Engagement (7 files)
-Navigate: [[implementation_tasks/community_engagement/00_Community_Engagement_Overview|Community Engagement Overview]]
+→ See [[implementation_tasks/community_engagement/00_Community_Engagement_Overview|Community Engagement Overview]]
 - Identify stakeholders
 - Communicate plans
 - Educate community
@@ -199,7 +199,7 @@ Navigate: [[implementation_tasks/community_engagement/00_Community_Engagement_Ov
 - Team hired
 - Public presence
 
-→ Full assessment: [[04_Current_Status_Assessment|Current Status]]
+→ See [[04_Current_Status_Assessment|Current Status]]
 
 ---
 
@@ -327,7 +327,7 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 **Templates:** _templates/  
 **History:** archive/
 
-→ Full structure guide: [[QUICK_REFERENCE_GUIDE|Quick Reference Guide]]
+→ See [[QUICK_REFERENCE_GUIDE|Quick Reference Guide]]
 
 ---
 
