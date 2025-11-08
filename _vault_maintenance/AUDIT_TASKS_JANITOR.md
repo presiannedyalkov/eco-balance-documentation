@@ -601,11 +601,11 @@ When ready to merge:
 **Status**: [ ] Not Started
 
 **Files to Audit**:
-1. `implementation_tasks/community_engagement/02_Build_Relationships.md`
-2. `implementation_tasks/community_engagement/03_Organize_Workshops.md`
-3. `implementation_tasks/community_engagement/04_Create_Partnerships.md`
-4. `implementation_tasks/community_engagement/05_Facilitate_Participation.md`
-5. `implementation_tasks/community_engagement/06_Sustain_Involvement.md`
+1. `implementation_tasks/community_engagement/02_Communicate_Plans.md`
+2. `implementation_tasks/community_engagement/03_Educate_Community.md`
+3. `implementation_tasks/community_engagement/04_Involve_Community.md`
+4. `implementation_tasks/community_engagement/05_Share_Benefits.md`
+5. `implementation_tasks/community_engagement/06_Maintain_Communication.md`
 
 **Audit Focus (Curator)**:
 - Relationship building practical for 1-2 founders
