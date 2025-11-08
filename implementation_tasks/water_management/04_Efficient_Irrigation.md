@@ -103,28 +103,28 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 
 **3. Calculate water requirements per zone:**
 - Plant water need × number of plants
-- Convert to gallons per hour or day
+- Convert to liters per hour or day
 - Account for soil type and climate
 
 **4. Size system components:**
-- **Mainline:** Based on total flow, typically 3/4" to 1.5"
-- **Lateral lines:** Based on zone flow, typically 1/2" to 3/4"
-- **Emitters:** 0.5-2 gallons per hour per plant typically
+- **Mainline:** Based on total flow, typically 20-40mm (3/4" to 1.5")
+- **Lateral lines:** Based on zone flow, typically 13-20mm (1/2" to 3/4")
+- **Emitters:** 2-8 liters per hour per plant typically
 - **Filters:** Based on water source (screen or disk filters)
-- **Pressure regulator:** Maintain 15-30 PSI for drip
+- **Pressure regulator:** Maintain 1-2 bar (15-30 PSI) for drip
 
 **Drip system layout example:**
 - Water source (tank or tap)
 - Backflow preventer (if connecting to potable water)
 - Filter (200 mesh minimum)
-- Pressure regulator (10-25 PSI)
+- Pressure regulator (0.7-1.7 bar or 10-25 PSI)
 - Mainline to planting areas
 - Valve for each zone
 - Lateral lines with emitters
 - End caps and flush valves
 
 **Calculations needed:**
-- Total flow rate (GPM) available from source
+- Total flow rate (L/min) available from source
 - Flow rate required per zone
 - Number of emitters per zone
 - Pipe sizing for flow rates
@@ -134,14 +134,14 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 
 **Mainline and laterals:**
 - Polyethylene tubing (PE) standard
-- 1/2" to 1" for most systems
+- 13-25mm (1/2" to 1") for most systems
 - UV-resistant for above-ground installation
-- Buried 2-6 inches for protection
+- Buried 5-15 cm for protection
 
 **Emitters:**
 - **Pressure-compensating:** Maintain even flow at varying pressures (recommended)
 - **Non-compensating:** Cheaper, adequate for flat sites
-- **Flow rates:** 0.5, 1, 2, 4 GPH common
+- **Flow rates:** 2, 4, 8, 15 L/h common (0.5, 1, 2, 4 GPH)
 - **Adjustable:** Allow fine-tuning per plant
 - **Inline:** Built into tubing
 - **On-line:** Individual insertion into tubing
@@ -201,7 +201,7 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 
 3. **Install laterals:**
    - From mainline to plant rows/areas
-   - Secure with stakes every 3-4 feet
+   - Secure with stakes every 0.9-1.2 meters
    - Leave slack for expansion/contraction
 
 4. **Add emitters:**
@@ -268,7 +268,7 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 
 **Regular observations:**
 - Plant appearance (wilting, yellowing, vigor)
-- Soil moisture (dig down 6-12 inches)
+- Soil moisture (dig down 15-30 cm)
 - System performance (leaks, clogs, even distribution)
 - Weather patterns (adjust for rain, heat waves)
 
@@ -331,18 +331,18 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 ## 🛠️ Resources Needed
 
 **System Components:**
-- Drip tubing and fittings: €100-500 per acre
+- Drip tubing and fittings: €250-1,200 per hectare
 - Emitters: €0.20-1 each
 - Filters: €30-150
 - Pressure regulator: €30-80
 - Valves: €20-100 each
 - Controller: €50-300
-- Total basic system: €500-2,000 per acre
-- Total automated system: €1,500-5,000 per acre
+- Total basic system: €1,200-5,000 per hectare
+- Total automated system: €3,700-12,000 per hectare
 
 **Installation:**
-- DIY labor: 20-40 hours per acre
-- Professional installation: €2,000-10,000+ per acre
+- DIY labor: 50-100 hours per hectare
+- Professional installation: €5,000-25,000+ per hectare
 - Tools: Basic hand tools, punch, cutter
 
 **Ongoing Costs:**
