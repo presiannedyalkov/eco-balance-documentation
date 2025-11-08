@@ -55,7 +55,14 @@ Create list of 10-15 potential regions in Germany based on:
 - Known land degradation or abandonment issues
 - Existing conservation interest or proximity to protected areas
 - Bootstrap accessibility (within reasonable distance for founders)
-- Land availability and affordability (€10-20k/hectare range)
+- Land availability and affordability
+
+**Restoration Investment (Year 1):**
+- 1 hectare: €10-20k total restoration investment
+- Includes: seedlings, soil amendments, infrastructure, initial management
+- Range reflects site condition (€10k for good soil, €20k for degraded)
+
+**Note:** This is separate from land acquisition costs. See [[../44_Site_Selection_Land_Acquisition|Site Selection & Land Acquisition]] for land purchase/lease budgets.
 
 **Priority Search Areas:**
 - **Brandenburg:** Affordable land, former agricultural areas, rewilding opportunities

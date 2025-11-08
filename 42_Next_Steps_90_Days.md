@@ -17,7 +17,10 @@ The next 90 days are about **getting ready to launch**. Unlike large-scale organ
 - ✅ Build community of early supporters
 - ❌ NOT building formal organization yet
 - ❌ NOT hiring staff
-- ❌ NOT applying for major grants
+- **Grants:** Apply for 2-3 small grants (€5-15k range)
+  - Local environmental grants
+  - Small business startup support
+  - Regenerative agriculture programs
 
 ---
 
@@ -27,7 +30,7 @@ The next 90 days are about **getting ready to launch**. Unlike large-scale organ
 
 **Crowdfunding Campaign Design:**
 - [ ] Choose platform (StartNext or Betterplace recommended for Germany)
-- [ ] Set campaign goal (€10,000 realistic, €15,000 stretch)
+- [ ] Set campaign goal (€10-12k)
 - [ ] Design reward tiers (€10-€1,000, see [[32_Funding_Strategy#reward-tiers|Reward Structure]])
 - [ ] Write campaign story (your WHY - be authentic!)
 - [ ] Create campaign timeline (45 days)
@@ -241,7 +244,7 @@ The next 90 days are about **getting ready to launch**. Unlike large-scale organ
 
 ### Must-Have Results:
 
-✅ **€8,000-12,000 raised** (crowdfunding + F&F + grants)  
+✅ **€10-12k raised** (crowdfunding + F&F + grants)  
 ✅ **Land identified and deal in progress** (or closed!)  
 ✅ **30-50 engaged supporters** (backed campaign, volunteering interest)  
 ✅ **Equipment ordered or ready to order**  

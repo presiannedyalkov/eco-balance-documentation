@@ -380,7 +380,7 @@ Create table showing monthly supply vs. demand
 
 **Related Tasks:**
 - [[../reforestation/01_Identify_Native_Species|Identify Native Species]]
-- [[../biodiversity_conservation/01_Assess_Biodiversity|Assess Biodiversity]]
+- [[../biodiversity/01_Assess_Biodiversity|Assess Biodiversity]]
 
 ## 💡 Tips & Best Practices
 

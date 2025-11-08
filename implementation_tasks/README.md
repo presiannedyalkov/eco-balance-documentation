@@ -99,13 +99,13 @@ This comprehensive implementation guide represents a complete, integrated framew
 ### Phase 3: Biodiversity Conservation (8 Tasks)
 **Purpose:** Protect and enhance native species and ecological communities
 
-1. **[[biodiversity_conservation/00_Biodiversity_Overview|Biodiversity Overview]]** - Conservation strategy
-2. **[[biodiversity_conservation/01_Assess_Biodiversity|Assess Biodiversity]]** - Baseline surveys
-3. **[[biodiversity_conservation/02_Restore_Habitats|Restore Habitats]]** - Habitat creation
-4. **[[biodiversity_conservation/03_Create_Protected_Areas|Create Protected Areas]]** - Sanctuary establishment
-5. **[[biodiversity_conservation/04_Manage_Invasive_Species|Manage Invasive Species]]** - Control strategies
-6. **[[biodiversity_conservation/05_Reintroduce_Lost_Species|Reintroduce Lost Species]]** - Species recovery
-7. **[[biodiversity_conservation/06_Monitor_Biodiversity|Monitor Biodiversity]]** - Long-term tracking
+1. **[[biodiversity/00_Biodiversity_Overview|Biodiversity Overview]]** - Conservation strategy
+2. **[[biodiversity/01_Assess_Biodiversity|Assess Biodiversity]]** - Baseline surveys
+3. **[[biodiversity/02_Restore_Habitats|Restore Habitats]]** - Habitat creation
+4. **[[biodiversity/03_Create_Protected_Areas|Create Protected Areas]]** - Sanctuary establishment
+5. **[[biodiversity/04_Manage_Invasive_Species|Manage Invasive Species]]** - Control strategies
+6. **[[biodiversity/05_Reintroduce_Lost_Species|Reintroduce Lost Species]]** - Species recovery
+7. **[[biodiversity/06_Monitor_Biodiversity|Monitor Biodiversity]]** - Long-term tracking
 
 **Key Integration Points:**
 - Species inform reforestation choices
@@ -592,7 +592,7 @@ The question is not whether restoration is possible, but whether we will commit 
 
 **🤝 Community Focus:** Begin with [[community_engagement/00_Community_Engagement_Overview|Community Engagement]]
 
-**🌲 Ecological Priority:** Jump to [[reforestation/00_Reforestation_Overview|Reforestation]] or [[biodiversity_conservation/00_Biodiversity_Overview|Biodiversity]]
+**🌲 Ecological Priority:** Jump to [[reforestation/00_Reforestation_Overview|Reforestation]] or [[biodiversity/00_Biodiversity_Overview|Biodiversity]]
 
 **💧 Water Issues:** Focus on [[water_management/00_Water_Management_Overview|Water Management]]
 
@@ -626,7 +626,7 @@ Thank you for choosing restoration over resignation.
 **Phase Overviews:**
 - [[site_selection/00_Site_Selection_Overview|Site Selection Overview]]
 - [[reforestation/00_Reforestation_Overview|Reforestation Overview]]
-- [[biodiversity_conservation/00_Biodiversity_Overview|Biodiversity Conservation Overview]]
+- [[biodiversity/00_Biodiversity_Overview|Biodiversity Conservation Overview]]
 - [[soil_restoration/00_Soil_Restoration_Overview|Soil Restoration Overview]]
 - [[water_management/00_Water_Management_Overview|Water Management Overview]]
 - [[community_engagement/00_Community_Engagement_Overview|Community Engagement Overview]]

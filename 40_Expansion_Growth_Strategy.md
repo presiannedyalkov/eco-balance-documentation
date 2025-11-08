@@ -28,7 +28,15 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ---
 
-## Phase 1: Foundation & Scale (Years 2-3)
+## Phase 1: Bootstrap Pilot (Year 1)
+
+**Goal:** Proof of concept on 1 hectare
+- 1 hectare
+- €20-30k investment
+- 1-2 founders
+- Goal: Demonstrate viable model
+
+## Phase 2: Foundation & Demonstration (Years 2-3)
 
 **Prerequisite:** Successful 1 hectare Bootstrap pilot complete
 
@@ -94,9 +102,9 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ---
 
-## Phase 2: Prove Impact (Years 2-3)
+## Phase 3: Scaled Operations (Years 4-5)
 
-**Goal:** Demonstrate measurable ecological improvement and financial sustainability
+**Goal:** Demonstrate measurable ecological improvement and financial sustainability at 20-30 hectares
 
 ### Key Objectives
 
@@ -165,7 +173,7 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ---
 
-## Phase 3: Scale Operations (Years 4-5)
+## Phase 4: Geographic Expansion (Years 6-10)
 
 **Goal:** Expand geographic reach and diversify impact
 
@@ -235,7 +243,7 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ---
 
-## Phase 4: Systemic Change (Years 6-10)
+## Phase 5: Systemic Change (Years 6-10)
 
 **Goal:** Influence policy and create global movement
 
@@ -639,7 +647,7 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ## Key Takeaways
 
-🌱 **10-year growth strategy** from 5 hectares to 10,000+ hectares of influence
+🌱 **10-year growth strategy** from 1 hectare (Year 1 bootstrap) to 5-10 hectares (Years 2-3), then scale to 20-30 hectares (Years 4-5), ultimately reaching 10,000+ hectares of influence
 
 📈 **Phased approach:** Foundation → Proof → Scale → Global Impact
 

@@ -127,7 +127,7 @@ Your v1 structure includes NEW strategic content:
 
 ---
 
-**Full detailed analysis available in:** [MIGRATION_ANALYSIS_COMPLETE.md](computer:///mnt/user-data/uploads/C:\Users\presi\Home\notes\eco ballance\v1\MIGRATION_ANALYSIS_COMPLETE.md)
+**Full detailed analysis available in:** MIGRATION_ANALYSIS_COMPLETE.md (original source archived)
 
 ---
 

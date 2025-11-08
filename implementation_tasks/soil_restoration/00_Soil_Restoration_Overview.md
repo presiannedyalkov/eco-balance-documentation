@@ -122,11 +122,11 @@ Soil restoration follows a systematic approach across seven key tasks:
 **Strategic Context:**
 - [[../../20_Restoration_Methodology|Restoration Methodology]]
 - [[../../00_Eco_Balance_Hub|Eco Balance Hub]]
-- [[../15_Climate_Action|Climate Action Framework]]
+- [[../../15_Climate_Action|Climate Action Framework]]
 
 **Parallel Tasks:**
 - [[../reforestation/00_Reforestation_Overview|Reforestation Overview]]
-- [[../biodiversity_conservation/00_Biodiversity_Conservation_Overview|Biodiversity Conservation Overview]]
+- [[../biodiversity/00_Biodiversity_Conservation_Overview|Biodiversity Conservation Overview]]
 - [[../water_management/00_Water_Management_Overview|Water Management Overview]] (Coming next)
 
 **Supporting Documents:**

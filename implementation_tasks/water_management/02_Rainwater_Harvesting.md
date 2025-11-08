@@ -373,7 +373,7 @@ Simplified: **Catchment Area (m²) × Rainfall (mm) = Liters captured**
 
 **Related Tasks:**
 - [[../soil_restoration/02_Add_Organic_Matter|Add Organic Matter]] (improves infiltration)
-- [[../biodiversity_conservation/02_Restore_Habitats|Restore Habitats]] (rain gardens as habitat)
+- [[../biodiversity/02_Restore_Habitats|Restore Habitats]] (rain gardens as habitat)
 
 ## 💡 Tips & Best Practices
 

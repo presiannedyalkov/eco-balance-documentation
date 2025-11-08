@@ -563,7 +563,7 @@ Community engagement is not a separate task to be completed and checked off—it
 **Related Phases:**
 - [[../site_selection/00_Site_Selection_Overview|Site Selection]]
 - [[../reforestation/00_Reforestation_Overview|Reforestation]]
-- [[../biodiversity_conservation/00_Biodiversity_Overview|Biodiversity Conservation]]
+- [[../biodiversity/00_Biodiversity_Overview|Biodiversity Conservation]]
 - [[../soil_restoration/00_Soil_Restoration_Overview|Soil Restoration]]
 - [[../water_management/00_Water_Management_Overview|Water Management]]
 

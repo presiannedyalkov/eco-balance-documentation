@@ -44,7 +44,9 @@
 | **Initial Plantings** | €1-3k | 🟡 High | Seeds, starter trees, materials |
 | **Tools & Equipment** | €1-2k | 🟡 High | Essential restoration tools |
 | **Operating Reserve** | €1-2k | 🟢 Medium | 3-month buffer |
-| **TOTAL YEAR 1** | **€23-36k** | | **Target: €25-30k** |
+| **TOTAL YEAR 1** | **€20-30k** | | **Bootstrap Model v2.0** |
+
+**Note:** Additional Year 2 investment: €250-500k for expansion
 
 **Revenue Year 1:** €0 (investment/proof of concept phase)
 - No revenue expected or relied upon

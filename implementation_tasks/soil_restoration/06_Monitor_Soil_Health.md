@@ -389,7 +389,7 @@ Monitoring soil health is essential for measuring restoration progress, adjustin
 - [[05_Manage_Pests_Diseases|Manage Pests and Diseases]]
 
 **Related Monitoring Tasks:**
-- [[../biodiversity_conservation/06_Monitor_Biodiversity|Monitor Biodiversity]]
+- [[../biodiversity/06_Monitor_Biodiversity|Monitor Biodiversity]]
 - [[../reforestation/05_Monitor_Growth|Monitor Growth]]
 - [[../water_management/06_Monitor_Water_Use|Monitor Water Use]]
 

@@ -296,7 +296,7 @@ Adding organic matter is one of the most powerful and fundamental strategies for
 **Strategic Context:**
 - [[00_Soil_Restoration_Overview|Soil Restoration Overview]]
 - [[../../20_Restoration_Methodology|Restoration Methodology]]
-- [[../15_Climate_Action|Climate Action Framework]]
+- [[../../15_Climate_Action|Climate Action Framework]]
 
 **Previous Steps:**
 - [[01_Assess_Soil_Health|Assess Soil Health]]

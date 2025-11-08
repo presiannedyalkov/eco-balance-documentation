@@ -50,6 +50,29 @@
 
 ---
 
+## 🏛️ Legal Structure Decision: gGmbH vs e.V.
+
+### Current Plan: gGmbH (gemeinnützige GmbH)
+- Nonprofit limited liability company
+- €25k share capital requirement
+- Tax-exempt status for environmental work
+- Professional structure for investors/grants
+
+### Alternative Considered: e.V. (eingetragener Verein)
+- Registered association
+- Lower entry barrier (€0-€500 setup)
+- More suitable for volunteer-driven organizations
+- May limit business activities and investment
+
+### Bootstrap Strategy:
+- **Year 1:** Operate as informal partnership or UG (haftungsbeschränkt)
+- **Year 2:** Establish gGmbH with proven model and capital
+- **Reason:** €25k share capital is significant portion of €20-30k bootstrap budget
+
+**Note:** Share capital (€25k) is held as company asset, not spent. However, it ties up funds that could be used for operations. Bootstrap model defers formal gGmbH incorporation until Year 2 when this is feasible.
+
+---
+
 ## 📋 Legal Requirements
 
 ### Share Capital

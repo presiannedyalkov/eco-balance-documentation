@@ -35,7 +35,15 @@ Conduct systematic surveys to identify all species (flora and fauna) present in 
 - Entomologist (insects) - optional but recommended
 - Local naturalists (traditional knowledge)
 
-**Budget:** €2,000-5,000 for expert consultations
+**Budget:**
+- **Bootstrap (Year 1):** €500-1,000 - DIY assessment with citizen science tools, online resources, volunteer experts from local university/NABU
+- **Professional (Year 2+):** €2-5k - Full professional assessment with certified ecologists
+
+**Bootstrap Approach:**
+- Use free identification apps (iNaturalist, Pl@ntNet)
+- Partner with local universities for student projects
+- Engage local NABU or conservation groups for volunteer expertise
+- Focus on indicator species and basic habitat assessment
 
 ### 2. Conduct Flora Survey
 
