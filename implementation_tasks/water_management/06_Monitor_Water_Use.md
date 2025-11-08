@@ -674,7 +674,7 @@ Next Steps:
 
 **Related Tasks:**
 - [[../soil_restoration/06_Monitor_Soil_Health|Monitor Soil Health]]
-- [[../biodiversity_conservation/06_Monitor_Biodiversity|Monitor Biodiversity]]
+- [[../biodiversity/06_Monitor_Biodiversity|Monitor Biodiversity]]
 - [[../reforestation/05_Monitor_Growth|Monitor Growth]]
 
 ## 💡 Tips & Best Practices

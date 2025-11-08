@@ -15,7 +15,8 @@
 This release includes:
 - ✅ **8 Core Documents Converted** - Complete Bootstrap transformation
 - ✅ **1 ha Pilot Scale** - Immediate viability focus (was 10-30 ha)
-- ✅ **€50-75k Total Budget** - Realistic bootstrap funding (was €500k-2M)
+- ✅ **€20-30k Year 1 Budget** - Bootstrap Model v2.0 (was €500k-2M)
+  - Expansion funding: €250-500k (Year 2-3)
 - ✅ **DIY-Friendly Technology** - 3-5 kW solar, rainwater harvesting (was 20 kW, AWG)
 - ✅ **Founder-Level Operations** - 1-2 person teams (was 20-100 people)
 

@@ -295,7 +295,7 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 **Strategic Context:**
 - [[00_Soil_Restoration_Overview|Soil Restoration Overview]]
 - [[../../20_Restoration_Methodology|Restoration Methodology]]
-- [[../15_Climate_Action|Climate Action Framework]]
+- [[../../15_Climate_Action|Climate Action Framework]]
 
 **Previous Steps:**
 - [[01_Assess_Soil_Health|Assess Soil Health]]
@@ -308,7 +308,7 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 
 **Related Tasks:**
 - [[../reforestation/03_Prepare_Land|Prepare Land]]
-- [[../biodiversity_conservation/02_Restore_Habitats|Restore Habitats]]
+- [[../biodiversity/02_Restore_Habitats|Restore Habitats]]
 - [[../water_management/05_Drought_Management|Drought Management]]
 
 ## 💡 Tips & Best Practices

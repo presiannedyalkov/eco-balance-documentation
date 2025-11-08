@@ -642,7 +642,19 @@ CORE CONCEPTS (Adapt to audience):
 ## 🛠️ Resources Needed
 
 **Staff and Expertise:**
-- Education coordinator: 0.25-1.0 FTE
+- **Staffing:**
+  - **Bootstrap (Year 1):** 0.05-0.1 FTE - Founder-led, volunteer-supported
+    - Founders dedicate 2-4 hours/week to community education
+    - Leverage volunteers for workshop support
+    - Focus on low-resource activities (site tours, social media, local talks)
+
+  - **Professional (Year 2-3):** 0.25-0.5 FTE Education Coordinator
+    - Part-time dedicated role with proven demand
+    - Develops structured programs
+
+  - **Scaled (Year 4+):** 0.5-1.0 FTE Education Coordinator
+    - Full professional education program
+
 - Subject matter experts for programs: $100-500 per session
 - Interpretive writer: $2,000-10,000
 - Graphic designer for materials: $1,000-5,000
@@ -746,7 +758,7 @@ CORE CONCEPTS (Adapt to audience):
 
 **Related Phases:**
 - [[../reforestation/00_Reforestation_Overview|Reforestation]] (educational content)
-- [[../biodiversity_conservation/00_Biodiversity_Overview|Biodiversity Conservation]] (species education)
+- [[../biodiversity/00_Biodiversity_Overview|Biodiversity Conservation]] (species education)
 - [[../water_management/00_Water_Management_Overview|Water Management]] (water education)
 
 ## 💡 Tips & Best Practices

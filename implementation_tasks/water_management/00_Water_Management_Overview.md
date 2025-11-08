@@ -123,12 +123,12 @@ Water management follows a systematic approach across seven key tasks:
 **Strategic Context:**
 - [[../../20_Restoration_Methodology|Restoration Methodology]]
 - [[../../00_Eco_Balance_Hub|Eco Balance Hub]]
-- [[../15_Climate_Action|Climate Action Framework]]
+- [[../../15_Climate_Action|Climate Action Framework]]
 
 **Parallel Tasks:**
 - [[../soil_restoration/00_Soil_Restoration_Overview|Soil Restoration Overview]]
 - [[../reforestation/00_Reforestation_Overview|Reforestation Overview]]
-- [[../biodiversity_conservation/00_Biodiversity_Conservation_Overview|Biodiversity Conservation Overview]]
+- [[../biodiversity/00_Biodiversity_Conservation_Overview|Biodiversity Conservation Overview]]
 
 **Site Preparation:**
 - [[../site_selection/08_Make_Shortlist|Make Site Shortlist]]

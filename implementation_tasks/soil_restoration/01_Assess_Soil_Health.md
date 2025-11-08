@@ -249,7 +249,7 @@ Assessing soil health is the critical first step in any soil restoration effort.
 - [[06_Monitor_Soil_Health|Monitor Soil Health]] (future reference)
 
 **Related Tasks:**
-- [[../biodiversity_conservation/01_Assess_Biodiversity|Assess Biodiversity]]
+- [[../biodiversity/01_Assess_Biodiversity|Assess Biodiversity]]
 - [[../water_management/01_Assess_Water_Needs|Assess Water Needs]]
 
 ## 💡 Tips & Best Practices

@@ -387,7 +387,7 @@ Research additional species native to your specific region of Germany
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
 - [[../../20_Restoration_Methodology|Restoration Methodology]]
-- [[../15_Climate_Action|Climate Action Framework]]
+- [[../../15_Climate_Action|Climate Action Framework]]
 
 **Previous Steps:**
 - [[01_Assess_Water_Needs|Assess Water Needs]]
@@ -401,7 +401,7 @@ Research additional species native to your specific region of Germany
 **Related Tasks:**
 - [[../reforestation/01_Identify_Native_Species|Identify Native Species]]
 - [[../soil_restoration/02_Add_Organic_Matter|Add Organic Matter]]
-- [[../biodiversity_conservation/01_Assess_Biodiversity|Assess Biodiversity]]
+- [[../biodiversity/01_Assess_Biodiversity|Assess Biodiversity]]
 
 ## 💡 Tips & Best Practices
 

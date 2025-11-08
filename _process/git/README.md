@@ -87,7 +87,7 @@ git push -u origin feature/bootstrap-updates
 ## Related Documentation
 
 - [[../../CHANGELOG.md|Project Changelog]] - Complete change history
-- [[../_vault_maintenance/|Vault Maintenance]] - Broader maintenance processes
+- [[../../_vault_maintenance/|Vault Maintenance]] - Broader maintenance processes
 - [[../audit/|Audit Process]] - Quality checks before committing
 
 ## Using This Documentation

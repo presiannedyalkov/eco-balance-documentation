@@ -15,7 +15,14 @@ Reforestation is a critical pillar of ecosystem restoration. The goal is not jus
 ## Strategic Context
 
 **From [[../../20_Restoration_Methodology|Restoration Methodology]]:**
-- Year 1 Target: 1,000-2,000 native trees/shrubs planted
+- **Year 1 Target:** 200-500 trees (1 hectare pilot)
+- **Future Scaling:** 1,000-2,000 trees (Years 2-3 - 5-10 hectares)
+
+**Calculation basis:**
+- 1 hectare = ~200-500 trees (depending on spacing and species mix)
+- 5 hectares = ~1,000-2,500 trees
+- 10 hectares = ~2,000-5,000 trees
+
 - Focus on native, drought-tolerant, fire-resistant species
 - Use Miyawaki method and assisted natural regeneration
 - Create diverse age and species structure (no monocultures)

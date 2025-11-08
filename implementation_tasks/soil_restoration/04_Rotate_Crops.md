@@ -318,8 +318,8 @@ Crop rotation—the practice of changing what is grown in a specific area over t
 
 **Related Tasks:**
 - [[../reforestation/01_Identify_Native_Species|Identify Native Species]]
-- [[../biodiversity_conservation/02_Restore_Habitats|Restore Habitats]]
-- [[../biodiversity_conservation/04_Manage_Invasive_Species|Manage Invasive Species]]
+- [[../biodiversity/02_Restore_Habitats|Restore Habitats]]
+- [[../biodiversity/04_Manage_Invasive_Species|Manage Invasive Species]]
 
 ## 💡 Tips & Best Practices
 

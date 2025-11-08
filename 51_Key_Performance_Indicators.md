@@ -98,11 +98,20 @@
 - **Temperature Moderation (°C):** Microclimate cooling
 - **Carbon Credits Generated (#):** Verified credits
 
+**Year 1 Target:** 10-30 tons CO₂ sequestered (1 hectare reforestation)
+
 **Year 3 Targets:**
-- 500+ tons CO₂ sequestered
+- 30-150 tons CO₂ sequestered (3-5 hectares)
 - 100+ tons emissions avoided
 - 2-3°C cooling effect
 - First credits issued
+
+**Realistic Carbon Metrics:**
+- 1 hectare forest: ~10-30 tons CO₂/year (depending on species, age)
+- 5 hectares: ~50-150 tons CO₂/year
+- 10 hectares: ~100-300 tons CO₂/year
+
+*Original 500+ tons target would require ~20-50 hectares of mature forest, not achievable in Year 1.*
 
 → Validation: [[22_Restoration_Challenges_Solutions|Carbon Monitoring]]
 
@@ -120,11 +129,17 @@
 - **Community Satisfaction (1-10 scale):** Survey scores
 
 **Year 3 Targets:**
-- 10+ local employees
+- 3-5 full-time employees
 - 1,000+ community members engaged
 - 500+ volunteer hours
 - 500+ students reached
 - 8+ satisfaction score
+
+**Realistic Team Growth:**
+- Year 1: 1-2 founders (bootstrap)
+- Year 2: 2-3 employees (first professional hires)
+- Year 3: 3-5 employees (core team established)
+- Year 4-5: 6-10 employees (if revenue supports)
 
 → Strategy: [[60_Marketing_Communications_Strategy|Community Engagement]]
 
@@ -157,10 +172,12 @@
 - **Economic Multiplier:** Indirect economic impact
 
 **Year 3 Targets:**
-- 10+ jobs
+- 3-5 jobs created
 - €150,000+ in wages
 - €50,000+ local procurement
 - 1.5x multiplier effect
+
+**Note on Wages:** Year 1 bootstrap includes minimal/no salaries (founders self-funded). Professional market-rate salaries begin Year 2 with funding. Year 3 wages reflect small team (3-5 people) at German market rates (€35-50k average).
 
 ---
 
@@ -210,11 +227,19 @@
 - **Cost per Hectare Restored (€):** Scale efficiency
 
 **Year 3 Targets:**
-- €200,000 operating expenses
+- €80-120k annual operating budget
 - 15% administrative overhead
 - 85% program expenses
 - €5-10 per tree
 - €3,000-5,000 per hectare
+
+**Budget Scaling:**
+- Year 1: €20-30k (bootstrap minimal ops)
+- Year 2: €40-60k (basic team + operations)
+- Year 3: €80-120k (professional operations)
+- Year 4-5: €150-250k (scaled operations)
+
+*Note: €200k represents ~10x growth from Year 1, requiring proven revenue model first.*
 
 → Details: [[31_Financial_Projections|Budget]]
 
@@ -285,10 +310,18 @@
 - **Training Courses (#):** Programs offered
 
 **Year 3 Targets:**
-- 50+ hectares managed
+- 2-5 hectares under active restoration
 - 20+ activities completed
 - 2+ peer-reviewed publications
 - 6+ training courses
+
+**Realistic Growth Path:**
+- Year 1: 1 hectare (bootstrap pilot)
+- Year 2: 2-3 hectares (proven model expansion)
+- Year 3: 3-5 hectares (sustainable operations)
+- Year 4-5: 10-20 hectares (with additional investment)
+
+*Note: 50+ hectares would represent 50x growth from Year 1 - unrealistic without significant outside investment beyond bootstrap model.*
 
 ---
 

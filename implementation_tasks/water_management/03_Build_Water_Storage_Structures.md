@@ -409,7 +409,7 @@ Water storage structures bridge the gap between when rain falls and when water i
 - [[06_Monitor_Water_Use|Monitor Water Use]]
 
 **Related Tasks:**
-- [[../biodiversity_conservation/02_Restore_Habitats|Restore Habitats]] (ponds as habitat)
+- [[../biodiversity/02_Restore_Habitats|Restore Habitats]] (ponds as habitat)
 - [[../site_selection/02_Evaluate_Land_Condition|Evaluate Land Condition]]
 
 ## 💡 Tips & Best Practices

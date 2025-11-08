@@ -155,8 +155,8 @@ Healthy soil is the foundation of pest and disease resistance. Rather than treat
 - [[06_Monitor_Soil_Health|Monitor Soil Health]]
 
 **Related Tasks:**
-- [[../biodiversity_conservation/04_Manage_Invasive_Species|Manage Invasive Species]]
-- [[../biodiversity_conservation/06_Monitor_Biodiversity|Monitor Biodiversity]]
+- [[../biodiversity/04_Manage_Invasive_Species|Manage Invasive Species]]
+- [[../biodiversity/06_Monitor_Biodiversity|Monitor Biodiversity]]
 
 ## 💡 Tips & Best Practices
 
