@@ -56,7 +56,13 @@ Accessibility is a critical factor in site selection that impacts operational co
 - Well drilling required?
 - Distance to nearest water source?
 - Water quality testing needed?
-- Atmospheric water generation feasibility → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential (roof area, annual rainfall) → [[21_Technology_Integration|Technology]]
+
+**Bootstrap Model Water Strategy:**
+- Primary: Rainwater harvesting (IBC tanks, €500-2k)
+- Secondary: Well drilling if groundwater accessible (€1-5k)
+- Tertiary: Municipal connection if available nearby
+- Avoid: Atmospheric water generation (expensive, energy-intensive)
 
 **Internet/Communications:**
 - Mobile signal strength?
