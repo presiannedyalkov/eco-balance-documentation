@@ -549,44 +549,78 @@ Monitoring biodiversity is essential for understanding the effectiveness of your
 
 ## 📊 Sample Monitoring Program
 
-**For 50-hectare restoration site:**
+**For 1-Hectare Bootstrap Site:**
 
-### Year 1 (Baseline)
+### Year 1 (Baseline - Founder-Led)
 
 **Comprehensive Surveys:**
-- Vegetation plots (30 permanent plots)
-- Bird point counts (15 points, 6 visits each)
-- Camera trap array (20 cameras, continuous)
-- Amphibian call surveys (8 points, 6 visits)
-- Butterfly transects (2 routes, 15 weeks)
-- One-time surveys of mammals, reptiles, invertebrates
+- Vegetation plots (6 permanent 10m² plots)
+- Bird point counts (3 points, 6 visits each by founders)
+- Camera traps (2-3 cameras, continuous)
+- Amphibian call surveys (2 points, 4-6 visits)
+- Butterfly transects (1 route, 10-15 weeks)
+- Opportunistic observations (mammals, reptiles, invertebrates)
+- iNaturalist documentation (community science)
 
-**Effort:** ~80 field days, €15,000
+**Effort:** ~20-30 founder field days, ~€2,000-3,000
+- Camera traps: €300-600
+- Identification resources: €100-200
+- Soil samples for biodiversity: €300-500
+- Expert consultation (2-3 days): €800-1,200
+- Materials (flagging, data sheets, etc.): €200-500
 
-### Years 2-5 (Frequent Monitoring)
+### Years 2-5 (Frequent Monitoring - Bootstrap)
 
-**Annual Surveys:**
-- Vegetation plots (annual)
-- Bird surveys (breeding season)
-- Camera traps (continuous)
-- Amphibian surveys (breeding season)
-- Butterfly transects (flight season)
+**Annual Surveys (Founder-Led):**
+- Vegetation plots (annual, spring)
+- Bird surveys (breeding season, 4-6 visits)
+- Camera traps (continuous, founders check weekly)
+- Amphibian surveys (breeding season, 3-4 visits)
+- Butterfly/pollinator observations (10 weeks, casual)
+- iNaturalist ongoing documentation
 
-**Effort:** ~50 field days/year, €10,000/year
+**Effort:** ~15-20 founder field days/year, ~€1,500-2,500/year
+- Camera maintenance/batteries: €100-200
+- Annual expert consultation: €500-800
+- Lab tests (soil biodiversity, etc.): €300-500
+- Materials and apps: €100-300
+- Photo documentation: €0-200
 
-### Years 6+ (Long-Term Monitoring)
+### Years 6+ (Long-Term Monitoring - Bootstrap)
 
-**Reduced Frequency:**
-- Vegetation every 2-3 years
-- Birds annually
-- Camera traps continuous
-- Other groups every 2-5 years depending on trends
+**Reduced Frequency (Maintenance):**
+- Vegetation: Every 2 years
+- Birds: Annually (breeding season)
+- Camera traps: Continuous (founders)
+- Other groups: Every 2-3 years
+- Ongoing iNaturalist observations
 
-**Effort:** ~30 field days/year, €7,000/year
+**Effort:** ~10-15 founder field days/year, ~€1,000-1,500/year
+- Camera costs: €100-200
+- Periodic expert review: €300-500
+- Materials: €100-200
+- Community science engagement: €0-200
 
-### Total 10-Year Cost
+### Total 10-Year Cost (Bootstrap)
 
-**~€110,000** (~€11,000/year average)
+**~€17,000-25,000** (~€1,700-2,500/year average)
+
+**Bootstrap Approach:**
+- Founders conduct most monitoring (labor = time, not cash)
+- Strategic use of camera traps multiplies capacity
+- Community science (iNaturalist) supplements formal monitoring
+- Annual expert consultation for quality control
+- Focus on key indicators rather than comprehensive surveys
+- Budget fits within Bootstrap ongoing operations
+
+**Bootstrap Model Notes:**
+- 1 ha pilot requires scaled-down monitoring
+- Founders are primary observers (reduces costs dramatically)
+- Camera traps provide 24/7 data with minimal effort
+- Community science platforms extend reach
+- Annual expert consultation ensures quality
+- Monitoring budget ~€1,500-2,500/year fits within operational costs
+- As project scales post-pilot, monitoring expands proportionally
 
 ---
 
