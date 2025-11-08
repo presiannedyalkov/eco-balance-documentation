@@ -15,15 +15,15 @@ Calculate feasibility, cost, timeline, and success probability for each potentia
 - Native seed sources present
 - Natural regeneration possible
 - Timeline: 5-10 years
-- Cost: €5,000-10,000/hectare
+- Cost: €3,000-5,000 total for 1 ha Bootstrap pilot
 
 **Level 2 - Medium Difficulty:**
 - Significant degradation
 - Soil needs improvement
 - Some invasives present
 - Active restoration required
-- Timeline: 10-20 years  
-- Cost: €10,000-20,000/hectare
+- Timeline: 10-20 years
+- Cost: €5,000-8,000 total for 1 ha Bootstrap pilot
 
 **Level 3 - High Difficulty:**
 - Severe degradation
@@ -31,7 +31,16 @@ Calculate feasibility, cost, timeline, and success probability for each potentia
 - Extensive invasives
 - Major interventions needed
 - Timeline: 20-30+ years
-- Cost: €20,000-40,000+/hectare
+- Cost: €8,000-12,000 total for 1 ha Bootstrap pilot
+
+> **💡 Bootstrap Model Note:**
+> These cost estimates are for the v2.0 Bootstrap Model approach:
+> - **Scale**: 1 hectare pilot site (not per-hectare costs)
+> - **Budget**: Fits within €20-30k Year 1 total budget (including land, infrastructure, and operations)
+> - **Approach**: Founder-led restoration with strategic expert consultation
+> - **Context**: For larger sites post-pilot expansion, costs scale proportionally
+>
+> See [[30_Business_Model|Business Model]] for complete v2.0 Bootstrap budget framework.
 
 ### 2. Success Probability Factors
 

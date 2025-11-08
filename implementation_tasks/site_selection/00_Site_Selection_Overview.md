@@ -154,9 +154,12 @@ Final decision-making and site selection
 - Site visits (3-5 sites): €5,000-10,000
 - Due diligence: €5,000-15,000
 - Legal fees: €5,000-20,000
-- **Total site selection:** €17,000-50,000 before purchase
+- **Total site selection:** €1,000-3,000 before purchase (Bootstrap Model: desktop research, 1-2 site visits)
 
-**Land acquisition:** Varies widely by region (€2,000-20,000/hectare Southern Europe)
+**Land acquisition:** €2,000-15,000/hectare (or lease options). Bootstrap Model targets 1 hectare.
+
+**Bootstrap Model Context:**
+For the v2.0 Bootstrap Model: Simplified site selection focusing on 1 hectare pilot within €20-30k Year 1 total budget (including land, infrastructure, and operations). Founders conduct assessments with expert consultation as needed, reducing costs significantly compared to larger-scale operations.
 
 ---
 

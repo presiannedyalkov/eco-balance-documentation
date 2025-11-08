@@ -104,7 +104,7 @@
 - 2-3°C cooling effect
 - First credits issued
 
-→ Validation: [[22_Research_Framework|Carbon Monitoring]]
+→ Validation: [[22_Restoration_Challenges_Solutions|Carbon Monitoring]]
 
 ---
 
@@ -252,7 +252,7 @@
 - 30+ grants submitted
 - 20% success rate
 
-→ Strategy: [[22_Research_Framework|Research Partnerships]]
+→ Strategy: [[22_Restoration_Challenges_Solutions|Research Partnerships]]
 
 ---
 

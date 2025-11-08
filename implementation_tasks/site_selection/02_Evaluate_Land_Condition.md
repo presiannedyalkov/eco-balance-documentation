@@ -79,8 +79,11 @@ Conduct thorough on-site assessment of land degradation and restoration opportun
 - Soil testing kit
 - Camera, GPS
 - Plant ID guides
-- €2,000-5,000 per site visit
+- €500-1,500 per site visit (Bootstrap approach: founders conducting assessment, minimal lab tests)
 - 2-3 days per site
+
+**Bootstrap Model Note:**
+For the v2.0 Bootstrap Model (1 hectare pilot, €20-30k Year 1 total budget), founders conduct site assessments with expert consultation as needed. This reduces costs compared to hiring full professional teams for multiple large site evaluations.
 
 ## Success Criteria
 ✅ Comprehensive data collected for each site  

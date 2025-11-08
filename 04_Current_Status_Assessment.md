@@ -207,7 +207,7 @@
 
 **Timeline:** First MOU by Month 6
 
-→ Framework: [[22_Research_Framework|Research Partnerships]]
+→ Framework: [[22_Restoration_Challenges_Solutions|Research Partnerships]]
 
 ---
 
