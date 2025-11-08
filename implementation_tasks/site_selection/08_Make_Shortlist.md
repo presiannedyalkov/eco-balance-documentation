@@ -153,7 +153,7 @@ Complete the scoring matrix for each candidate site:
 - **Close Scores:** Need deeper comparative analysis
 - **Category Strengths:** Site A ecological, Site C practical/financial
 - **Fatal Flaws:** Any category scoring below 50% of possible points?
-- **Risk Assessment:** Low scores identify major risks → [[../50_Risk_Assessment|Risk Assessment]]
+- **Risk Assessment:** Low scores identify major risks → [[../../50_Risk_Assessment|Risk Assessment]]
 
 **Consider Trade-offs:**
 
@@ -489,14 +489,14 @@ For each shortlisted site, create comprehensive profile:
 - [[07_Visit_Sites|Site Visits]]
 
 **Strategic Context:**
-- [[../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
-- [[../02_Project_Vision|Project Vision]]
-- [[../03_Success_Factors|Success Factors]]
-- [[../50_Risk_Assessment|Risk Assessment]]
+- [[../../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
+- [[../../02_Project_Vision|Project Vision]]
+- [[../../03_Success_Factors|Success Factors]]
+- [[../../50_Risk_Assessment|Risk Assessment]]
 
 **Next Steps:**
-- [[../42_Next_Steps_90_Days|90-Day Action Plan]]
-- [[../43_Operations_Action_Plan|Operations Plan]]
+- [[../../42_Next_Steps_90_Days|90-Day Action Plan]]
+- [[../../43_Operations_Action_Plan|Operations Plan]]
 
 ---
 

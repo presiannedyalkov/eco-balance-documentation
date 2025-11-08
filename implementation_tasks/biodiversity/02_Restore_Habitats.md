@@ -353,8 +353,8 @@ Water is critical for biodiversity:
 - [[../water_management/00_Water_Management_Overview|Water Management]]
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../21_Technology_Integration|Technology Integration]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../21_Technology_Integration|Technology Integration]]
 
 ---
 

@@ -40,7 +40,7 @@ Calculate feasibility, cost, timeline, and success probability for each potentia
 > - **Approach**: Founder-led restoration with strategic expert consultation
 > - **Context**: For larger sites post-pilot expansion, costs scale proportionally
 >
-> See [[30_Business_Model|Business Model]] for complete v2.0 Bootstrap budget framework.
+> See [[../../30_Business_Model|Business Model]] for complete v2.0 Bootstrap budget framework.
 
 ### 2. Success Probability Factors
 
@@ -112,7 +112,7 @@ Calculate feasibility, cost, timeline, and success probability for each potentia
 - Cost of mitigation
 - Residual risk level
 
-→ Details: [[50_Risk_Assessment|Risk Assessment]]
+→ Details: [[../../50_Risk_Assessment|Risk Assessment]]
 
 ## Scoring Matrix
 
@@ -166,6 +166,6 @@ Rate each site (1-5 scale):
 → [[04_Consider_Accessibility|Step 4: Consider Accessibility]]
 
 ## Related
-- [[20_Restoration_Methodology|Restoration Methodology]]
-- [[30_Business_Model|Business Model]] - Cost structure
-- [[50_Risk_Assessment|Risk Assessment]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../30_Business_Model|Business Model]] - Cost structure
+- [[../../50_Risk_Assessment|Risk Assessment]]

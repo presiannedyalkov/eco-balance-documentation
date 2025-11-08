@@ -166,7 +166,7 @@ Conduct systematic surveys to identify all species (flora and fauna) present in 
 
 ## Technology Support
 
-- Camera traps → [[21_Technology_Integration|Technology]]
+- Camera traps → [[../../21_Technology_Integration|Technology]]
 - GPS for mapping
 - Identification apps (iNaturalist, eBird)
 - Audio recorders for bird/bat surveys

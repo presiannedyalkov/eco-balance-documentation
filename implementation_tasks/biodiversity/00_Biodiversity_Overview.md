@@ -1,6 +1,6 @@
 # Biodiversity Conservation Implementation Tasks
 
-← Back to [[20_Restoration_Methodology|Restoration Methodology]] | [[00_Eco_Balance_Hub|Project Hub]]
+← Back to [[../../20_Restoration_Methodology|Restoration Methodology]] | [[../../00_Eco_Balance_Hub|Project Hub]]
 
 ---
 
@@ -14,7 +14,7 @@ Biodiversity conservation is essential for ecosystem health and resilience. Ever
 
 ## Strategic Context
 
-**From [[20_Restoration_Methodology|Restoration Methodology]]:**
+**From [[../../20_Restoration_Methodology|Restoration Methodology]]:**
 - Year 1 Target: 50+ species documented, 20% increase over baseline
 - Focus on creating diverse microhabitats
 - Camera traps and monitoring systems
@@ -90,22 +90,22 @@ Biodiversity conservation is essential for ecosystem health and resilience. Ever
 - At least 3 habitat types established
 - Invasive species management plan implemented
 
-→ Detailed KPIs: [[51_Key_Performance_Indicators|Key Performance Indicators]]
+→ Detailed KPIs: [[../../51_Key_Performance_Indicators|Key Performance Indicators]]
 
 ---
 
 ## Resources & Support
 
 **Technical Guidance:**
-- [[20_Restoration_Methodology|Restoration Methodology]]
-- [[21_Technology_Integration|Technology Integration]] (camera traps, monitoring)
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../21_Technology_Integration|Technology Integration]] (camera traps, monitoring)
 
 **Financial Planning:**
-- [[30_Business_Model|Business Model]]
-- [[32_Funding_Strategy|Funding Strategy]]
+- [[../../30_Business_Model|Business Model]]
+- [[../../32_Funding_Strategy|Funding Strategy]]
 
 **Risk Management:**
-- [[50_Risk_Assessment|Risk Assessment]]
+- [[../../50_Risk_Assessment|Risk Assessment]]
 
 ---
 

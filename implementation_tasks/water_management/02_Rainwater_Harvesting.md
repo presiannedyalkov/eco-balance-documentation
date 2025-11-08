@@ -353,7 +353,7 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Previous Steps:**
 - [[01_Assess_Water_Needs|Assess Water Needs]]

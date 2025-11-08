@@ -120,5 +120,5 @@ Narrow to 5-8 most promising regions for deeper investigation.
 → [[02_Evaluate_Land_Condition|Step 2: Evaluate Land Condition]]
 
 ## Related
-- [[02_Project_Vision|Project Vision]] - Geographic priorities
-- [[44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
+- [[../../02_Project_Vision|Project Vision]] - Geographic priorities
+- [[../../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]

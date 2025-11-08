@@ -229,7 +229,7 @@
 
 - [[00_Reforestation_Overview|Reforestation Overview]]
 - [[20_Restoration_Methodology#Reforestation|Restoration Methodology]]
-- [[51_Key_Performance_Indicators|KPIs]] - Survival metrics
+- [[../../51_Key_Performance_Indicators|KPIs]] - Survival metrics
 
 ---
 

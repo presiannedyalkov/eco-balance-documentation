@@ -182,7 +182,7 @@ By the end of this task, you should have:
 - Reference materials/databases: €100-300
 - Site assessment tools: €200-500
 
-→ See: [[30_Business_Model|Business Model]] for budget allocation
+→ See: [[../../30_Business_Model|Business Model]] for budget allocation
 
 ---
 
@@ -225,15 +225,15 @@ Once species are identified:
 ## Related Resources
 
 **Strategic Context:**
-- [[20_Restoration_Methodology|Restoration Methodology]]
-- [[02_Project_Vision|Project Vision]] (geographic focus)
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../02_Project_Vision|Project Vision]] (geographic focus)
 
 **Supporting Tasks:**
 - [[soil_restoration/01_Assess_Soil_Health|Assess Soil Health]]
 - [[biodiversity/01_Assess_Biodiversity|Assess Biodiversity]]
 
 **Risk Management:**
-- [[50_Risk_Assessment|Risk Assessment]] (ecological risks)
+- [[../../50_Risk_Assessment|Risk Assessment]] (ecological risks)
 
 ---
 
