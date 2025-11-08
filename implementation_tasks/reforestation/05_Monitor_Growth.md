@@ -336,9 +336,9 @@ Next Visit Scheduled: ____________
 - GPS: €200-500
 - Drone (if used): €1,000-5,000+
 
-**Annual Monitoring Budget (2 hectares):**
-- Basic program: €2,000-4,000
-- Enhanced with technology: €5,000-10,000
+**Annual Monitoring Budget (1 hectare Bootstrap):**
+- Basic program: €1,000-2,000
+- Enhanced with technology: €2,500-5,000
 
 → See: [[30_Business_Model|Business Model]]
 
