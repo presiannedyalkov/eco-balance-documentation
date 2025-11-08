@@ -56,7 +56,7 @@ Accessibility is a critical factor in site selection that impacts operational co
 - Well drilling required?
 - Distance to nearest water source?
 - Water quality testing needed?
-- Atmospheric water generation feasibility → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential (roof area, annual rainfall) → [[21_Technology_Integration|Technology]]
 
 **Internet/Communications:**
 - Mobile signal strength?
@@ -178,6 +178,13 @@ Accessibility is a critical factor in site selection that impacts operational co
 **Challenge 3: No Grid Electricity**
 - Problem: No power connection, extension costs prohibitive
 - Solution: Full solar installation with battery storage. Calculate long-term cost vs. grid extension → [[21_Technology_Integration|Technology]]
+- **Bootstrap Approach:** Off-grid solar (€3-5k) is often more cost-effective than grid extension for remote sites
+
+**Bootstrap Model Water Strategy:**
+- Primary: Rainwater harvesting (IBC tanks, €500-2k)
+- Secondary: Well drilling if groundwater accessible (€1-5k)
+- Tertiary: Municipal connection if available nearby
+- Avoid: Atmospheric water generation (expensive, energy-intensive)
 
 **Challenge 4: Limited Accommodation**
 - Problem: Nearest accommodation 2+ hours away
@@ -191,12 +198,23 @@ Accessibility is a critical factor in site selection that impacts operational co
 
 ## 💰 Cost Considerations
 
-**One-Time Infrastructure:**
-- Road improvements: €5,000-50,000 depending on scope
-- Grid electricity connection: €3,000-30,000 depending on distance
-- Well drilling: €3,000-15,000
-- On-site accommodation: €30,000-100,000+ per building
-- Internet installation: €500-5,000
+**One-Time Infrastructure (Bootstrap Model):**
+- Road improvements: €500-2,000 minor improvements if needed
+- Grid electricity connection: Off-grid solar (€3-5k) recommended for Bootstrap
+- Well drilling: €1,000-5,000 or rainwater harvesting
+- On-site accommodation: €8,000-12,000 for DIY tiny house (Bootstrap Model)
+- Internet installation: €0-500 (mobile hotspot or satellite)
+
+**Bootstrap Model Accessibility:**
+Focus on sites with basic access already present to minimize infrastructure investment. The Bootstrap approach prioritizes 1-hectare sites that are practical for 1-2 founders to manage within the €20-30k Year 1 budget.
+
+**Key Bootstrap Principles:**
+- Choose sites with existing basic road access (avoid major road construction)
+- Off-grid solar preferred over expensive grid connections
+- Rainwater harvesting + well if needed (avoid municipal hookups)
+- DIY tiny house approach vs. traditional construction
+- Mobile/satellite internet vs. fixed installation
+- Minimize infrastructure costs to stay within bootstrap budget
 
 **Ongoing Operational:**
 - Staff transportation: €200-500/month per staff
