@@ -181,7 +181,7 @@ Unlike single-focus projects, we address **all aspects** of ecosystem health sim
 
 ### Scientific Foundation
 Evidence-based methods validated by peer review.
-→ See [[22_Research_Framework|Research Framework]]
+→ See [[22_Restoration_Challenges_Solutions|Research Framework]]
 
 ### Community Partnership
 Local people are partners, not recipients.
