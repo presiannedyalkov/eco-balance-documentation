@@ -67,7 +67,8 @@ Consider their values, interests, and giving history to tailor messaging effecti
 ### 2. Set Fundraising Goals
 
 Determine how much money you need to raise and by when:
-- **Year 1 Goal**: €250-500k → See [[32_Funding_Strategy|Funding Strategy]]
+- **Year 1 Goal (Bootstrap)**: €20-30k → See [[32_Funding_Strategy|Funding Strategy]]
+- **Post-Bootstrap Scale Goal**: €250-500k for 5-10 ha expansion
 - Be realistic and consider all expenses
 - Break down goals into smaller, achievable milestones
 - Create a sense of urgency and progress tracking
