@@ -360,28 +360,35 @@ Implement adaptive management strategies to guide the developing forest through 
 
 **Annual Management Costs (Years 1-10):**
 
-**Year 1-3 (Intensive):**
-- Labor: €3,000-6,000/year
-- Water: €500-1,500/year
-- Mulch/supplies: €500-1,000/year
-- Replacements: €1,000-3,000/year
-- **Total: €5,000-11,000/year**
+**Year 1-3 (Intensive - 1 hectare Bootstrap):**
+- Labor: €1,500-3,000/year
+- Water: €250-750/year
+- Mulch/supplies: €250-500/year
+- Replacements: €500-1,500/year
+- **Total: €2,500-5,750/year**
 
-**Year 4-7 (Moderate):**
-- Labor: €2,000-4,000/year
-- Water: €300-800/year
-- Tools/supplies: €300-600/year
-- **Total: €2,600-5,400/year**
-
-**Year 8+ (Light):**
+**Year 4-7 (Moderate - 1 hectare Bootstrap):**
 - Labor: €1,000-2,000/year
-- Monitoring: €500-1,000/year
-- Occasional interventions: €500-1,000/year
-- **Total: €2,000-4,000/year**
+- Water: €150-400/year
+- Tools/supplies: €150-300/year
+- **Total: €1,300-2,700/year**
 
-**10-Year Total:** €35,000-70,000 for 2 hectares
+**Year 8+ (Light - 1 hectare Bootstrap):**
+- Labor: €500-1,000/year
+- Monitoring: €250-500/year
+- Occasional interventions: €250-500/year
+- **Total: €1,000-2,000/year**
+
+**10-Year Total:** €17,500-35,000 for 1 hectare Bootstrap
 
 → See: [[30_Business_Model|Business Model]] for revenue to support management
+
+**Bootstrap Model Note:**
+- These budgets reflect 1 hectare pilot site management
+- Costs are within the total €20-30k Year 1 + ongoing funding model
+- Year 1 is most intensive, costs decrease as trees establish
+- For larger sites post-pilot, scale proportionally (but not always linearly - some economies of scale)
+- Many tasks can be done by founders, reducing labor costs
 
 ---
 
