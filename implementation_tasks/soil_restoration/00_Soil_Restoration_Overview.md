@@ -59,10 +59,10 @@ Soil restoration follows a systematic approach across seven key tasks:
 - Soil inoculants (beneficial microbes)
 
 **Financial:**
-- Soil testing: $50-500 per comprehensive analysis
+- Soil testing: €50-500 per comprehensive analysis
 - Organic amendments: Variable based on site size
-- Equipment rental or purchase: $500-5,000+
-- Professional consultation: $1,000-5,000
+- Equipment rental or purchase: €500-5,000+
+- Professional consultation: €1,000-5,000
 
 ## ✅ Success Criteria
 

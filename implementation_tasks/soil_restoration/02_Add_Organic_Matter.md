@@ -220,11 +220,11 @@ Adding organic matter is one of the most powerful and fundamental strategies for
 - Tilling services (if needed)
 
 **Budget Estimates:**
-- Municipal compost: $10-30 per cubic yard
-- Premium compost: $30-60 per cubic yard
-- Bulk manure: $5-20 per cubic yard (or free)
+- Municipal compost: €10-30 per cubic yard
+- Premium compost: €30-60 per cubic yard
+- Bulk manure: €5-20 per cubic yard (or free)
 - Wood chips: Often free from tree services
-- Delivery: $50-150 depending on distance and volume
+- Delivery: €50-150 depending on distance and volume
 - Labor: 10-20 hours per acre for spreading/incorporation
 
 ## ✅ Success Criteria

@@ -230,9 +230,9 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 - Amendments for surface application
 
 **Budget Considerations:**
-- Equipment: No-till drill rental $50-150/day or purchase $5,000-25,000+
-- Mulch: $10-50 per cubic yard delivered
-- Cover crop seed: $30-100 per acre
+- Equipment: No-till drill rental €50-150/day or purchase €5,000-25,000+
+- Mulch: €10-50 per cubic yard delivered
+- Cover crop seed: €30-100 per acre
 - Labor savings: Reduced over time as tillage eliminated
 - Fuel savings: 50-75% reduction in fuel use
 - Long-term cost reduction as system stabilizes

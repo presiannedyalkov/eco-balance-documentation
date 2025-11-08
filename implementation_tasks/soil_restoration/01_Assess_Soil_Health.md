@@ -172,11 +172,11 @@ Assessing soil health is the critical first step in any soil restoration effort.
 - Environmental testing lab (for contamination analysis)
 
 **Equipment:**
-- Soil sampling equipment: $50-200
-- GPS device: $100-400 (or smartphone)
-- Field testing kit (optional): $50-150
-- Laboratory analysis: $30-100 per sample for basic tests
-- Advanced testing: $100-500+ per sample
+- Soil sampling equipment: €50-200
+- GPS device: €100-400 (or smartphone)
+- Field testing kit (optional): €50-150
+- Laboratory analysis: €30-100 per sample for basic tests
+- Advanced testing: €100-500+ per sample
 
 **Documentation:**
 - Field notebook and camera
