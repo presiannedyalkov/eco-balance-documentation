@@ -2,7 +2,7 @@
 
 **Purpose:** Fast navigation and understanding of the documentation structure
 **Version:** 2.0.0 (Bootstrap Model)
-**Last Updated:** 2024-11-08
+**Last Updated:** 2025-11-08
 **For:** All users - new and experienced
 
 ---
@@ -265,8 +265,8 @@ Files are numbered for easy sorting:
 
 ### Semantic Versioning (SemVer)
 
-**Format:** MAJOR.MINOR.PATCH  
-**Current:** 1.0.0
+**Format:** MAJOR.MINOR.PATCH
+**Current:** 2.0.0
 
 **What changes what:**
 
@@ -479,8 +479,8 @@ Version Control ← Historical record
 - Cross-references: 200+
 
 **Version Control:**
-- Current version: 1.0.0
-- Release date: October 25, 2025
+- Current version: 2.0.0
+- Release date: November 8, 2024 (v2.0.0 Bootstrap alignment)
 - Versioning: Semantic (MAJOR.MINOR.PATCH)
 
 **Structure:**
@@ -627,7 +627,7 @@ You now know:
 ---
 
 **Document Version:** 2.0.0
-**Last Updated:** 2024-11-08
+**Last Updated:** 2025-11-08
 **Status:** Active
 
 **Questions?** Check the Hub or search documentation!
