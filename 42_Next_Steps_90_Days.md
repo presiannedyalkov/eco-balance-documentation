@@ -511,9 +511,9 @@ You can't restore nature if you don't restore yourself.
 
 ---
 
-**Last Updated:** November 6, 2025  
-**Document Version:** 2.0 Bootstrap Model  
-**Status:** Ready for Launch
+**Document Version:** 2.0.0
+**Last Updated:** 2024-11-08
+**Status:** Active
 
 ---
 

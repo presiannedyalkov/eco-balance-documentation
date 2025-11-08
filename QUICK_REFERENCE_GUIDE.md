@@ -1,8 +1,8 @@
 # 📖 Quick Reference Guide - Eco Balance Documentation v2.0.0
 
-**Purpose:** Fast navigation and understanding of the documentation structure  
-**Version:** 2.0.0 (Bootstrap Model)  
-**Last Updated:** November 6, 2025  
+**Purpose:** Fast navigation and understanding of the documentation structure
+**Version:** 2.0.0 (Bootstrap Model)
+**Last Updated:** 2024-11-08
 **For:** All users - new and experienced
 
 ---
@@ -626,10 +626,10 @@ You now know:
 
 ---
 
-**Version:** 1.0.0  
-**Last Updated:** October 25, 2025  
-**Next Review:** When v1.1.0 is released
+**Document Version:** 2.0.0
+**Last Updated:** 2024-11-08
+**Status:** Active
 
 **Questions?** Check the Hub or search documentation!
 
-[[00_Eco_Balance_Hub|← Back to Hub]] | [[CHANGELOG|View Changelog]] | [[_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]]
+[[00_Eco_Balance_Hub|← Back to Hub]] | [[CHANGELOG|View Changelog]]

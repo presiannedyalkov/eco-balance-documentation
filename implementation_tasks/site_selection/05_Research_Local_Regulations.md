@@ -1,3 +1,10 @@
+---
+**Document Version:** 2.0.0
+**Last Updated:** 2024-11-08
+**Status:** Active
+**Aligned with:** Bootstrap Model v2.0
+---
+
 # Research Local Regulations
 
 ← Back to [[README|Implementation Tasks]] | [[00_Site_Selection_Overview|Site Selection Overview]]

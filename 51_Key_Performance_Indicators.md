@@ -464,3 +464,9 @@ When KPIs are met or exceeded:
 **Governance:**
 - [[11_Governance|Reporting Requirements]]
 - [[50_Risk_Assessment|Risk Indicators]]
+
+---
+
+**Document Version:** 2.0.0
+**Last Updated:** 2024-11-08
+**Status:** Active

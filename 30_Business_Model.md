@@ -585,6 +585,6 @@ Understanding the budget ranges - what's included at each level:
 
 ---
 
-**Last Updated:** November 8, 2024
-**Document Version:** 2.0 Bootstrap Model
-**Status:** Complete - Ready for Fundraising
+**Document Version:** 2.0.0
+**Last Updated:** 2024-11-08
+**Status:** Active
