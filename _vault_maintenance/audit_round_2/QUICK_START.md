@@ -7,121 +7,84 @@
 
 ---
 
-## 📋 PRE-EXECUTION CHECKLIST
+## 🎯 COPY-PASTE PROMPTS (Super Simple!)
 
-Before running agents:
+Just copy one of these into a Claude Code web session:
 
-- [ ] All agent assignment files generated (AGENT_01_FILES.md through AGENT_10_FILES.md)
-- [ ] Audit instructions ready (AUDIT_INSTRUCTIONS.md)
-- [ ] Repository on main branch
-- [ ] No uncommitted changes
-- [ ] 100% coverage verified (run verify_coverage.py)
+**Agent 01**: `You are Agent 01, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 02**: `You are Agent 02, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 03**: `You are Agent 03, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 04**: `You are Agent 04, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 05**: `You are Agent 05, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 06**: `You are Agent 06, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 07**: `You are Agent 07, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 08**: `You are Agent 08, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 09**: `You are Agent 09, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
+
+**Agent 10**: `You are Agent 10, go to /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/QUICK_START.md to get your tasks`
 
 ---
 
-## 🎯 EXECUTION PROMPTS
+## 📋 INSTRUCTIONS FOR AGENTS
 
-Copy and paste these prompts into separate Claude Code web sessions.
+**Welcome, Agent!** Here's what you need to do:
 
-### Agent 01
+### Step 1: Read Your Assignment File
 
-```
-I am Agent 01 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_01_FILES.md
+Find your agent number above and read your specific file assignment:
 
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
+- **Agent 01**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_01_FILES.md`
+- **Agent 02**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_02_FILES.md`
+- **Agent 03**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_03_FILES.md`
+- **Agent 04**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_04_FILES.md`
+- **Agent 05**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_05_FILES.md`
+- **Agent 06**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_06_FILES.md`
+- **Agent 07**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_07_FILES.md`
+- **Agent 08**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_08_FILES.md`
+- **Agent 09**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_09_FILES.md`
+- **Agent 10**: `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_10_FILES.md`
 
-Create comprehensive findings and submit a PR.
-```
+### Step 2: Read Audit Instructions
 
-### Agent 02
+Read the comprehensive audit criteria here:
+`/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md`
 
-```
-I am Agent 02 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_02_FILES.md
+This tells you:
+- What to audit (6 personas: Curator, Janitor, Librarian, Auditor, Archivist, Quality Inspector)
+- How to categorize issues (CRITICAL/HIGH/MEDIUM/LOW)
+- Output format for findings
+- What NOT to do (NO SAMPLING!)
 
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
+### Step 3: Audit ALL Your Assigned Files
 
-Create comprehensive findings and submit a PR.
-```
+**CRITICAL**: Audit ALL files in your assignment list. NO SAMPLING. Read every file completely.
 
-### Agent 03
+Apply all 6 personas to each file. Document all issues found.
 
-```
-I am Agent 03 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_03_FILES.md
+### Step 4: Create Findings File
 
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
+Create your findings file at:
+`/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/findings/AUDIT_FINDINGS_AGENT_[YOUR_NUMBER].md`
 
-Create comprehensive findings and submit a PR.
-```
+Include:
+- Summary stats (total files, issues by severity/persona)
+- Issues grouped by file
+- Clear fix recommendations
 
-### Agent 04
+### Step 5: Submit Pull Request
 
-```
-I am Agent 04 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_04_FILES.md
-
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
-
-Create comprehensive findings and submit a PR.
-```
-
-### Agent 05
-
-```
-I am Agent 05 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_05_FILES.md
-
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
-
-Create comprehensive findings and submit a PR.
-```
-
-### Agent 06
-
-```
-I am Agent 06 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_06_FILES.md
-
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
-
-Create comprehensive findings and submit a PR.
-```
-
-### Agent 07
-
-```
-I am Agent 07 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_07_FILES.md
-
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
-
-Create comprehensive findings and submit a PR.
-```
-
-### Agent 08
-
-```
-I am Agent 08 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_08_FILES.md
-
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
-
-Create comprehensive findings and submit a PR.
-```
-
-### Agent 09
-
-```
-I am Agent 09 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_09_FILES.md
-
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
-
-Create comprehensive findings and submit a PR.
-```
-
-### Agent 10
-
-```
-I am Agent 10 for Audit Round 2. Read my assignment file at: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AGENT_10_FILES.md
-
-Then audit ALL files listed using the criteria in: /home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/AUDIT_INSTRUCTIONS.md
-
-Create comprehensive findings and submit a PR.
-```
+Create a PR with:
+- Branch name: `audit-round-2/agent-[YOUR_NUMBER]`
+- PR title: "Audit Round 2: Agent [YOUR_NUMBER] Findings"
+- Include only your findings file (do not modify source files)
 
 ---
 
