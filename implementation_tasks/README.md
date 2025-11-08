@@ -389,6 +389,19 @@ Integrate activities to maximize efficiency:
 ## 🛠️ Resource Planning
 
 ### Budget Categories
+
+> **⚠️ Important**: Individual implementation task documents may show full-scale costs (Years 2-3 operations).
+>
+> **Year 1 Bootstrap Budget** (€20-30k total):
+> - Site Selection: €2-3k
+> - Reforestation: €8-12k (simplified planting)
+> - Water Management: €4-6k (basic catchment)
+> - Community Engagement: €1-2k (DIY outreach)
+> - Monitoring: €1-2k (manual data collection)
+> - Living Infrastructure: €4-5k (tiny house setup)
+>
+> **Years 2-3 Full Implementation**: Scale to €150-250k with funding secured.
+
 **Typical project budget allocation:**
 
 - **Site Work (30-40%):** Land prep, planting, infrastructure

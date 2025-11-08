@@ -4,6 +4,17 @@
 
 ---
 
+> **📘 Bootstrap Model (Year 1) Context**:
+>
+> This document describes the complete implementation approach for biodiversity conservation.
+> For the Year 1 Bootstrap pilot (1 hectare, €20-30k budget):
+> - Focus on core activities only (marked with 🎯)
+> - Use simplified/manual methods where noted
+> - Defer advanced techniques to Year 2+
+> - Prioritize low-cost observation and monitoring over expensive equipment
+
+---
+
 ## Overview
 
 Biodiversity conservation is essential for ecosystem health and resilience. Every species plays a unique role, and protecting this diversity creates balanced, self-sustaining ecosystems that can adapt to environmental changes.

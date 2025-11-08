@@ -4,6 +4,17 @@
 
 ---
 
+> **📘 Bootstrap Model (Year 1) Context**:
+>
+> This document describes comprehensive water management for full-scale operations.
+> For the Year 1 Bootstrap pilot (1 hectare, €20-30k budget):
+> - Focus on core activities only (marked with 🎯)
+> - Use simplified/manual methods where noted
+> - Defer advanced infrastructure to Year 2+
+> - Prioritize low-cost rainwater harvesting and simple catchment systems
+
+---
+
 ## 📋 Purpose
 
 Water is the lifeblood of ecosystem restoration. Effective water management ensures that plants, soil organisms, and wildlife have the moisture they need to thrive while working within natural cycles and climate realities. This phase focuses on understanding water needs, capturing and storing water efficiently, using irrigation wisely, and building resilience to drought—creating water-secure restoration sites that function sustainably over the long term.

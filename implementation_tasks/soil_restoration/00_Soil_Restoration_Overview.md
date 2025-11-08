@@ -4,6 +4,17 @@
 
 ---
 
+> **📘 Bootstrap Model (Year 1) Context**:
+>
+> This document describes the complete soil restoration approach for larger sites.
+> For the Year 1 Bootstrap pilot (1 hectare, €20-30k budget):
+> - Focus on core activities only (marked with 🎯)
+> - Use simplified/manual methods where noted
+> - Defer advanced techniques to Year 2+
+> - Prioritize low-cost amendments and DIY testing methods
+
+---
+
 ## 📋 Purpose
 
 Soil restoration is the foundation of successful land restoration and ecosystem recovery. Healthy soil supports plant growth, improves water retention, sequesters carbon, and creates the conditions necessary for biodiversity to thrive. This phase focuses on developing and implementing a comprehensive soil health strategy tailored to your site's specific needs.

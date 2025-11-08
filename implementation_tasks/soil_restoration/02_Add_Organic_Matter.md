@@ -4,6 +4,18 @@
 
 ---
 
+> **📘 Bootstrap Model (Year 1) Context**:
+>
+> This document describes organic matter application for full-scale operations.
+> For the Year 1 Bootstrap pilot (1 hectare, €20-30k budget):
+> - Focus on core activities only (marked with 🎯)
+> - Use simplified/manual methods where noted
+> - Defer advanced techniques to Year 2+
+> - Prioritize local, low-cost compost sources (municipal, farm, DIY)
+> - Target: 10-20 tons for 1 ha (vs. 50-100 tons for 5-10 ha sites)
+
+---
+
 ## 📋 Purpose
 
 Adding organic matter is one of the most powerful and fundamental strategies for restoring soil health. Organic matter improves soil structure, increases water retention, provides nutrients, feeds beneficial soil organisms, and sequesters carbon. This task focuses on selecting, sourcing, and properly applying organic amendments to build healthy, living soil that supports robust ecosystem restoration.
