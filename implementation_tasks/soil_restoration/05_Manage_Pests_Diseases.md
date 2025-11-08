@@ -97,9 +97,9 @@ Healthy soil is the foundation of pest and disease resistance. Rather than treat
 
 **Preventive Materials:** Compost, mulch, cover crop seeds, row covers
 
-**Control Materials:** Beneficial nematodes ($20-50/acre), Bt products, insecticidal soap, neem oil, slug bait
+**Control Materials:** Beneficial nematodes (€20-50/acre), Bt products, insecticidal soap, neem oil, slug bait
 
-**Professional Services:** Extension service identification (often free), IPM consultant ($100-500)
+**Professional Services:** Extension service identification (often free), IPM consultant (€100-500)
 
 ## ✅ Success Criteria
 

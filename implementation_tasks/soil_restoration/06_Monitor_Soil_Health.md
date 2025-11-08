@@ -294,9 +294,9 @@ Monitoring soil health is essential for measuring restoration progress, adjustin
 ## 🛠️ Resources Needed
 
 **Laboratory Testing:**
-- Soil testing services: $30-100 per sample
-- Annual budget: $200-500+ depending on number of samples
-- Special tests: Additional $50-200 each
+- Soil testing services: €30-100 per sample
+- Annual budget: €200-500+ depending on number of samples
+- Special tests: Additional €50-200 each
 
 **Field Equipment:**
 - GPS device or smartphone with GPS
