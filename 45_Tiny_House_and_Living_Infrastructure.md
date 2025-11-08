@@ -508,92 +508,93 @@ Waterless toilet system that composts human waste into usable soil amendment.
 
 ---
 
-## 📦 Complete Housing Budget Summary
+## 📦 Budget Framework for Year 1 Bootstrap
 
-### Budget Tiers: What You Get
+**Total Year 1 Budget: €20-30k**
+- Housing infrastructure: €8-12k (40% of budget)
+- Site costs & restoration: €5-9k (25-30% of budget)
+- Tools & equipment: €3-5k (15% of budget)
+- Operations & contingency: €4-4k (20% of budget)
 
-| Tier | Budget Range | Housing Type | Key Features |
-|------|--------------|--------------|--------------|
-| **Minimal** | €15,000-22,000 | Used tiny house or basic caravan | Functional, requires some DIY, basic comfort |
-| **Standard** | €22,000-30,000 | Good used tiny house or self-build | Comfortable, winterized, good systems |
-| **Comfortable** | €30,000-40,000 | Self-build or new tiny house | High quality, custom features, excellent systems |
+### Housing Budget Tiers (Subset of Total)
 
-### Minimal Budget Breakdown (€15,000-22,000)
+**⚠️ Note**: Housing is one component of total Year 1 budget. Below are housing-only options that must fit within the €8-12k housing allocation (40% of €20-30k total).
 
-| Category | Cost | Notes |
-|----------|------|-------|
-| **Housing** | €10,000-15,000 | Used tiny house |
-| **Transport/Setup** | €500-1,500 | Delivery + basic site prep |
-| **Composting Toilet** | €800-1,000 | Basic model |
-| **Kitchen** | €1,000-1,500 | Essential equipment |
-| **Heating** | €600-1,000 | Small wood stove |
-| **Lighting** | €250-400 | LED basics |
-| **Furnishings** | €800-1,200 | Used/basic furniture |
-| **Storage** | €500-1,000 | Basic organization |
-| **Repairs/Upgrades** | €550-1,400 | Contingency |
-| **TOTAL** | **€15,000-22,000** | Functional off-grid living |
+#### Tier 1: Minimal Bootstrap Housing (€8-10k)
+**Target: €8-10k from total €20k budget**
+- Used/basic tiny house or mobile home
+- Minimal utilities (solar, composting toilet)
+- DIY construction where possible
+- Suitable for 1-2 founders living on-site during pilot
 
-### Standard Budget Breakdown (€22,000-30,000)
+**Components:**
+- Structure: €4-6k (used mobile home or DIY tiny house)
+- Solar system: €1-2k (1-3 kW basic setup)
+- Water: €1-1.5k (rainwater collection, basic filtration)
+- Sanitation: €0.5-1k (composting toilet)
+- Insulation/weatherproofing: €1-1.5k
 
-| Category | Cost | Notes |
-|----------|------|-------|
-| **Housing** | €13,000-18,000 | Good used tiny house OR self-build materials |
-| **Transport/Setup** | €1,000-2,000 | Professional delivery + site prep |
-| **Composting Toilet** | €1,000-1,200 | Quality model |
-| **Kitchen** | €1,500-2,000 | Good appliances |
-| **Heating** | €800-1,500 | Good wood stove + backup |
-| **Lighting** | €400-600 | Complete system |
-| **Furnishings** | €1,200-1,800 | Mix new/used |
-| **Storage** | €1,000-1,500 | Workshop + shed |
-| **Repairs/Contingency** | €2,100-3,400 | 15% buffer |
-| **TOTAL** | **€22,000-30,000** | Comfortable off-grid living |
+#### Tier 2: Standard Bootstrap Housing (€10-12k)
+**Target: €10-12k from total €25k budget**
+- New basic tiny house or upgraded mobile home
+- Standard utilities (improved solar, water systems)
+- Some professional installation
+- Comfortable for 1-2 founders Year 1, expandable Year 2
 
-### Comfortable Budget Breakdown (€30,000-40,000)
+**Components:**
+- Structure: €6-8k (basic new tiny house or good used)
+- Solar system: €2-3k (3-5 kW)
+- Water: €1-2k (improved rainwater + filtration)
+- Sanitation: €0.5-1k (better composting system)
+- Interior/comfort: €1-1.5k
 
-| Category | Cost | Notes |
-|----------|------|-------|
-| **Housing** | €18,000-28,000 | Self-build OR nearly-new tiny house |
-| **Transport/Setup** | €1,500-2,500 | Professional everything |
-| **Composting Toilet** | €1,200-1,500 | Premium model |
-| **Kitchen** | €2,000-2,500 | Quality appliances |
-| **Heating** | €1,200-2,000 | Premium stove + systems |
-| **Lighting** | €500-800 | Excellent system |
-| **Furnishings** | €1,500-2,500 | Mostly new |
-| **Storage/Workshop** | €1,500-2,500 | Comprehensive setup |
-| **Contingency** | €2,600-4,700 | 15% buffer |
-| **TOTAL** | **€30,000-40,000** | Excellent off-grid living |
+#### Tier 3: Comfortable Housing (Year 2+ Only)
+**Target: €15-20k from Year 2 expanded budget**
+- Not applicable for Year 1 Bootstrap (€20-30k total)
+- Requires Year 2 expansion funding (€250-500k total)
+- Professional construction, full utilities
+- Suitable for small team (2-3 people)
+
+**Note**: This tier exceeds Bootstrap Model v2.0 and should only be considered after successful Year 1 pilot secures expansion funding.
 
 ---
 
-## 🎯 Bootstrap Recommendation: €20,000-28,000
+## 🎯 Total Year 1 Bootstrap Investment (€20-30k)
 
-### Recommended Approach (€24,000 target)
+### Budget Allocation
 
-**Housing Choice:** Used tiny house in good condition (€14,000)
-**Why:** Move-in ready, proven systems, customizable
+| Category | Amount | % of Total | Notes |
+|----------|--------|------------|-------|
+| **Housing** | €8-12k | 40% | Tier 1-2 only (on-site living) |
+| **Site Costs** | €5-9k | 30% | Land lease/purchase deposit, legal fees |
+| **Restoration** | €3-5k | 15% | Initial seedlings, soil amendments, fencing |
+| **Tools & Equipment** | €2-3k | 10% | Basic hand tools, used equipment |
+| **Operations** | €2-3k | 10% | Insurance, permits, utilities, contingency |
+| **TOTAL** | **€20-30k** | **100%** | Year 1 Bootstrap Model v2.0 |
 
-**Complete Setup:**
-- Used tiny house: €14,000
-- Transport + setup: €1,500
-- Composting toilet: €1,000
-- Kitchen setup: €1,500
-- Wood stove heating: €1,000
-- LED lighting: €400
-- Furnishings: €1,500
-- Storage: €1,200
-- Site prep: €1,000
-- Contingency: €900
-- **Total: €24,000**
+### Year 2+ Expansion Budget (€250-500k)
 
-**Combined with Technology ([[21_Technology_Integration|Doc 21]]):**
-- Housing: €24,000
-- Solar/water/internet: €12,000-15,000
-- **Total Living Infrastructure: €36,000-39,000**
+After successful Year 1 pilot secures expansion funding:
+- Larger housing: €15-30k
+- Professional solar: €20-40k
+- Expanded restoration: €50-150k
+- Professional equipment: €20-40k
+- Team salaries: €80-150k
+- Operations: €65-90k
 
-**Plus:**
-- Site access/prep (separate): €2,000-4,000
-- Initial plantings (separate): €3,000-5,000
-- **Grand Total Year 1: €41,000-48,000**
+### Critical Distinction
+
+**Year 1 Bootstrap (€20-30k):**
+- Proof of concept, minimal viable infrastructure
+- Founder-operated, on-site living
+- Focus: Learning, documentation, proving model
+- Risk: Low financial exposure
+
+**Year 2+ Expansion (€250-500k):**
+- Professional operation, revenue generation
+- Team expansion, professional infrastructure
+- Focus: Commercial viability, scaling
+- Risk: Higher investment, requires Year 1 success
 
 → Financial overview: [[30_Business_Model|Complete Budget]]
 

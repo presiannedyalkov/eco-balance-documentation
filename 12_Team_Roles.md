@@ -19,6 +19,7 @@
 
 ### Phase 1: Year 1 - Bootstrap Phase (1-2 people)
 **Focus:** Proof of concept, hands-on learning
+**Scale:** 1 hectare bootstrap pilot (Year 1)
 
 **Year 1 Bootstrap Team** (1-2 people):
 - Founders wear multiple hats
@@ -42,7 +43,8 @@ Founder(s)
 ---
 
 ### Phase 2: Years 2-3 - Expansion Phase (3-4 people)
-**Focus:** Professional team, prove impact at 5-10 ha scale
+**Focus:** Professional team, prove impact at scale
+**Scale:** Expansion to 5-10 hectares (Years 2-3 with proven model)
 
 **Year 2+ Expanded Team** (3-4 people):
 - Project Manager/Director (full-time)
@@ -204,9 +206,10 @@ Director    Director  Manager  Director
 
 **Preferred:**
 - PhD in relevant field
-- Mediterranean ecosystem experience
+- Temperate ecosystem restoration experience (Germany/Central Europe)
+- Four-season climate adaptation expertise
+- Native German species knowledge
 - Publication track record
-- Native species expertise
 - GIS and remote sensing skills
 
 **Success Metrics:**
@@ -350,7 +353,7 @@ Director    Director  Manager  Director
 
 **Location:**
 - Primary office: Bonn, Germany
-- Field site: Southern Europe
+- Field site: Germany (temperate climate zone)
 - Remote work: Flexible, as appropriate
 - Travel: 20-40% depending on role
 
@@ -384,7 +387,7 @@ Director    Director  Manager  Director
 
 **1. Restoration Ecology Expert**
 - Senior ecologist or professor
-- Mediterranean ecosystem experience
+- Temperate ecosystem restoration experience (Germany/Central Europe)
 - Publication track record
 
 **2. Sustainable Finance Specialist**

@@ -61,10 +61,18 @@ Holistic environmental restoration goes beyond restoring specific ecosystems or 
 **Eco Balance Solutions:**
 
 **Phased Expansion Strategy:**
-- Start with manageable pilot site (5-10 hectares)
-- Prove concept and refine methods
-- Document and standardize successful approaches
-- Scale systematically: 25-50 ha → 100 ha → regional presence
+- **Year 1 (1 ha):** Proof of concept, learning, documentation
+  - Small scale reduces financial risk
+  - Allows for iterative problem-solving
+  - Builds knowledge base for expansion
+- **Years 2-3 (5-10 ha):** Demonstration and revenue model
+  - Expand proven techniques
+  - Develop commercial viability
+  - Attract larger investment
+- **Years 4-5 (25-50 ha):** Professional scale operations
+- **Years 6+ (100+ ha):** Regional presence and replication
+
+Starting small allows us to prove the concept, refine methods, document successful approaches, and scale systematically based on proven results.
 
 **Replication Model:**
 - Create detailed implementation guides

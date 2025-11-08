@@ -68,7 +68,20 @@ Consider their values, interests, and giving history to tailor messaging effecti
 
 Determine how much money you need to raise and by when:
 - **Year 1 Goal (Bootstrap)**: €20-30k → See [[32_Funding_Strategy|Funding Strategy]]
-- **Post-Bootstrap Scale Goal**: €250-500k for 5-10 ha expansion
+  - **Scale**: 1 hectare bootstrap pilot - proving the concept
+  - **Focus**: Proof of concept, learning, documentation
+  - **Marketing**: Emphasize innovation and impact per hectare
+- **Years 2-3 Goal**: €250-500k for expansion
+  - **Scale**: 5-10 hectares - demonstrating commercial viability
+  - **Focus**: Professional operation, revenue generation
+  - **Marketing**: Show proven model, scalability, financial sustainability
+- **Years 4-5 Goal**: €500k-1M+ for sustainable operations
+  - **Scale**: 20-30 hectares - sustainable business model
+  - **Focus**: Team expansion, regional impact
+  - **Marketing**: Track record, replication potential, regional leadership
+
+**Marketing Philosophy**: Initial marketing focuses on the bootstrap pilot's innovation and impact per hectare, emphasizing that we're proving a replicable model rather than just managing land. Success metrics emphasize learning, documentation quality, and proof of concept over scale.
+
 - Be realistic and consider all expenses
 - Break down goals into smaller, achievable milestones
 - Create a sense of urgency and progress tracking

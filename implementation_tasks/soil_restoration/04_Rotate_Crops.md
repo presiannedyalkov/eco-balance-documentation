@@ -248,12 +248,12 @@ Crop rotation—the practice of changing what is grown in a specific area over t
 - Seed supplier technical support
 
 **Budget Estimates:**
-- Cover crop seed: €30-150 per acre (varies widely by mix)
-- Legume inoculant: €5-20 per acre
-- Seeding services: €20-50 per acre (custom)
+- Cover crop seed: €75-370 per hectare (varies widely by mix)
+- Legume inoculant: €12-50 per hectare
+- Seeding services: €50-125 per hectare (custom)
 - Equipment rental: €50-200 per day
-- Native seed/plants: €200-2,000+ per acre (final planting)
-- Total for 3-year rotation: €500-1,500+ per acre
+- Native seed/plants: €500-5,000+ per hectare (final planting)
+- Total for 3-year rotation: €1,240-3,700+ per hectare
 
 ## ✅ Success Criteria
 
