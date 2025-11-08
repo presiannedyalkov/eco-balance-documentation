@@ -47,28 +47,28 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 
 **Conventional/Intensive Tillage:**
 - **Methods:** Moldboard plow, disc plow, deep ripping
-- **Depth:** 6-12+ inches
+- **Depth:** 15-30+ cm
 - **Impact:** Maximum soil disruption, highest erosion risk, destroys structure
 - **Carbon loss:** Exposes organic matter to oxygen, rapid decomposition
 - **When used:** Historically for initial soil breaking, now often unnecessary
 
 **Reduced/Conservation Tillage:**
 - **Methods:** Chisel plow, field cultivator, shallow discing
-- **Depth:** 2-6 inches
+- **Depth:** 5-15 cm
 - **Impact:** Moderate disruption, leaves some residue on surface
 - **Benefit:** Less erosion than conventional, maintains some structure
 - **When appropriate:** Transition phase, periodic use for specific problems
 
 **No-Till/Zero-Till:**
 - **Methods:** Direct seeding, surface application of amendments
-- **Depth:** No mechanical disturbance (or <2 inches for seeding)
+- **Depth:** No mechanical disturbance (or <5 cm for seeding)
 - **Impact:** Preserves structure, maximum carbon retention
 - **Benefit:** Best for soil health, biodiversity, water quality
 - **When appropriate:** Goal for most restoration sites after transition
 
 **Strip-Till (Selective):**
 - **Methods:** Till only narrow strips where planting occurs
-- **Depth:** 4-6 inches in strips only
+- **Depth:** 10-15 cm in strips only
 - **Impact:** Minimal compared to full-field tillage
 - **When appropriate:** Compromise for certain restoration planting scenarios
 
@@ -104,7 +104,7 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 ### Step 4: Implement Alternative Practices
 
 **For Weed Control (Instead of Tillage):**
-- **Mulching:** 3-6 inch layer suppresses most weeds
+- **Mulching:** 7-15 cm layer suppresses most weeds
 - **Cover crops:** Outcompete weeds, smother with biomass
 - **Mowing:** Cut before seed set, gradually exhaust perennials
 - **Targeted removal:** Hand-pull or spot-spray problem areas only
@@ -114,7 +114,7 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 **For Seedbed Preparation:**
 - **Broadcast seeding:** Spread seed on undisturbed soil surface
 - **Minimal soil disturbance:** Use no-till drill or direct seeding
-- **Seed-to-soil contact:** Roller-crimper or light harrowing (1-2 inches max)
+- **Seed-to-soil contact:** Roller-crimper or light harrowing (2.5-5 cm max)
 - **Natural establishment:** Allow volunteer recruitment from seed bank
 - **Plug planting:** Insert plants directly without full-area disturbance
 
@@ -231,8 +231,8 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 
 **Budget Considerations:**
 - Equipment: No-till drill rental €50-150/day or purchase €5,000-25,000+
-- Mulch: €10-50 per cubic yard delivered
-- Cover crop seed: €30-100 per acre
+- Mulch: €15-65 per cubic meter delivered
+- Cover crop seed: €75-250 per hectare
 - Labor savings: Reduced over time as tillage eliminated
 - Fuel savings: 50-75% reduction in fuel use
 - Long-term cost reduction as system stabilizes
@@ -257,7 +257,7 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 
 **Challenge 1: Weed Pressure During Transition**
 - Problem: Weeds more difficult to control without tillage
-- Solution: Heavy mulching (4-6 inches); aggressive cover crops; patience during 1-2 year transition; mow frequently before seed set; accept that transition requires persistence
+- Solution: Heavy mulching (10-15 cm); aggressive cover crops; patience during 1-2 year transition; mow frequently before seed set; accept that transition requires persistence
 
 **Challenge 2: Compacted Soil from Past Tillage**
 - Problem: Plowpan or severe compaction limits plant growth
@@ -354,7 +354,7 @@ Tillage disrupts soil structure, destroys beneficial soil organisms and fungal n
 ## 🌍 Environmental Benefits of Reducing Tillage
 
 **Carbon Sequestration:**
-- No-till can sequester 0.3-0.5 tons CO₂/acre/year
+- No-till can sequester 0.75-1.25 tons CO₂/hectare/year
 - Preserves existing soil carbon stores
 - Builds organic matter over time
 - Major climate change mitigation strategy
