@@ -224,3 +224,7 @@ For the v2.0 Bootstrap Model: Simplified site selection focusing on 1 hectare pi
 ---
 
 *Finding the right land - where mission meets opportunity.*
+
+---
+
+**Document Version:** 2.0.0 | **Last Updated:** 2025-11-08 | **Status:** Active

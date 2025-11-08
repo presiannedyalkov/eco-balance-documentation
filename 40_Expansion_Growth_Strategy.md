@@ -658,3 +658,7 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 ---
 
 *From seed to global movement - scaling ecological restoration with impact and integrity.*
+
+---
+
+**Document Version:** 2.0.0 | **Last Updated:** 2025-11-08 | **Status:** Active
