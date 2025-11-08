@@ -278,25 +278,25 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 ## 🛠️ Resources Needed
 
 **Active System Components:**
-- Gutters and downspouts: $3-8 per linear foot installed
-- First-flush diverter: $50-200
-- Filters: $30-150
-- Storage tanks: $0.50-3 per gallon capacity
-- Piping and fittings: $200-500
-- Pump (if needed): $150-500
-- Total small system (500-1,000 gal): $1,000-3,000
-- Total large system (5,000-10,000 gal): $5,000-15,000
+- Gutters and downspouts: €3-8 per linear foot installed
+- First-flush diverter: €50-200
+- Filters: €30-150
+- Storage tanks: €0.50-3 per gallon capacity
+- Piping and fittings: €200-500
+- Pump (if needed): €150-500
+- Total small system (500-1,000 gal): €1,000-3,000
+- Total large system (5,000-10,000 gal): €5,000-15,000
 
 **Passive System Resources:**
-- Excavation equipment: $100-200/hour rental or $1,000-5,000 contractor
-- Mulch for swales: $30-60 per cubic yard
-- Plants for infiltration areas: $3-15 per plant
-- Total per acre: $2,000-10,000 depending on complexity
+- Excavation equipment: €100-200/hour rental or €1,000-5,000 contractor
+- Mulch for swales: €30-60 per cubic yard
+- Plants for infiltration areas: €3-15 per plant
+- Total per acre: €2,000-10,000 depending on complexity
 
 **Professional Services:**
-- Rainwater design consultant: $500-2,000
-- Installation contractor: $3,000-15,000+ for complete system
-- Landscape contouring service: $2,000-10,000 per acre
+- Rainwater design consultant: €500-2,000
+- Installation contractor: €3,000-15,000+ for complete system
+- Landscape contouring service: €2,000-10,000 per acre
 
 **Tools:**
 - Level and measuring tape

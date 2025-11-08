@@ -331,26 +331,26 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 ## 🛠️ Resources Needed
 
 **System Components:**
-- Drip tubing and fittings: $100-500 per acre
-- Emitters: $0.20-1 each
-- Filters: $30-150
-- Pressure regulator: $30-80
-- Valves: $20-100 each
-- Controller: $50-300
-- Total basic system: $500-2,000 per acre
-- Total automated system: $1,500-5,000 per acre
+- Drip tubing and fittings: €100-500 per acre
+- Emitters: €0.20-1 each
+- Filters: €30-150
+- Pressure regulator: €30-80
+- Valves: €20-100 each
+- Controller: €50-300
+- Total basic system: €500-2,000 per acre
+- Total automated system: €1,500-5,000 per acre
 
 **Installation:**
 - DIY labor: 20-40 hours per acre
-- Professional installation: $2,000-10,000+ per acre
+- Professional installation: €2,000-10,000+ per acre
 - Tools: Basic hand tools, punch, cutter
 
 **Ongoing Costs:**
 - Water: Based on usage and source
 - Electricity: Minimal for controller/pump
-- Maintenance: $100-500 annually
-- Repairs: $100-300 annually
-- Eventual removal: $500-1,000
+- Maintenance: €100-500 annually
+- Repairs: €100-300 annually
+- Eventual removal: €500-1,000
 
 ## ✅ Success Criteria
 
@@ -465,11 +465,11 @@ While the goal of restoration is to create self-sustaining ecosystems that ultim
 
 | Method | Efficiency | Cost | Maintenance | Best For |
 |--------|-----------|------|-------------|----------|
-| Drip | 85-95% | $$$ | Medium | Most restoration, individual plants |
-| Micro-spray | 75-85% | $$ | Medium | Shrub groups, dense plantings |
-| Soaker hose | 70-80% | $ | Low | Rows, simple layouts, budget projects |
-| Hand watering | 30-50% | $ | High | Small areas, spot treatment |
-| Overhead sprinkler | 50-70% | $$ | Low | Germination only, avoid if possible |
+| Drip | 85-95% | €€€ | Medium | Most restoration, individual plants |
+| Micro-spray | 75-85% | €€ | Medium | Shrub groups, dense plantings |
+| Soaker hose | 70-80% | € | Low | Rows, simple layouts, budget projects |
+| Hand watering | 30-50% | € | High | Small areas, spot treatment |
+| Overhead sprinkler | 50-70% | €€ | Low | Germination only, avoid if possible |
 
 ---
 
