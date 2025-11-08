@@ -475,61 +475,77 @@ Create tiered protection system:
 
 ## 📊 Sample Protection Plan
 
-**Example for 50-hectare Site:**
+**Example for 1-Hectare Bootstrap Site:**
 
 ### Zone Allocation
 
-**Core Protection (8 ha = 16%):**
-- Locations: Wetland area (3 ha) + remnant oak forest (5 ha)
-- Access: Research only, by permit
-- Features: Nesting birds, amphibian breeding, rare plants
+**Core Protection (0.15 ha = 15%):**
+- Location: Small wetland area or remnant vegetation patch (1,500 m²)
+- Access: Research/monitoring only, by founders
+- Features: Critical nesting site, seed bank for native plants, sensitive microhabitats
+- Purpose: Undisturbed reference area
 
-**Buffer Zones (15 ha = 30%):**
-- Locations: 100m around core zones
-- Access: Restoration staff only, limited entry
-- Purpose: Protect core from disturbance
+**Buffer Zone (0.25 ha = 25%):**
+- Location: 10-20m buffer around core zone
+- Access: Founders only for essential restoration work
+- Purpose: Protect core from disturbance, reduce edge effects
 
-**Active Restoration (20 ha = 40%):**
-- Locations: Former agricultural land, degraded slopes
-- Access: Staff, volunteers, researchers
-- Activities: Planting, soil work, habitat creation
+**Active Restoration (0.5 ha = 50%):**
+- Location: Former degraded areas, main planting zone
+- Access: Founders, volunteers (supervised), researchers
+- Activities: Reforestation, soil work, habitat creation, main project focus
 
-**Public Access (7 ha = 14%):**
-- Locations: Entry area, visitor center, loop trail
-- Access: Public during operating hours
-- Features: Interpretive signs, viewing areas
+**Public Access/Demo (0.1 ha = 10%):**
+- Location: Entry area near tiny house, small demonstration zone
+- Access: Visitors during tours (by appointment)
+- Features: Interpretive elements, "before/after" examples, community workshops
 
 ### Seasonal Restrictions
 
-**March 15 - July 31:**
-- Core zones: Completely closed (breeding season)
-- Buffer zones: Essential access only
-- Trail system: Restricted to main loop only
+**March 15 - July 31 (Breeding Season):**
+- Core zone: Completely closed (bird nesting, amphibian breeding)
+- Buffer zone: Essential monitoring only
+- Restoration zone: Avoid noisy work near core
+- Demo area: Tours restricted to quiet observation
 
-**August 1 - March 14:**
-- Core zones: Research access by permit
-- Buffer zones: Restoration work allowed
-- Trail system: Full access during daylight
+**August 1 - March 14 (Non-Breeding):**
+- Core zone: Quarterly monitoring only
+- Buffer zone: Restoration work allowed
+- Restoration zone: Full access for work
+- Demo area: Tours and workshops allowed
 
 ### Infrastructure
 
-**Signage: 35 signs total**
-- 10 zone boundary markers
-- 15 interpretive panels
-- 8 directional/trail markers
-- 2 site entrance signs with rules
+**Signage: 6-8 signs total**
+- 3-4 zone boundary markers (wooden posts with simple signs)
+- 2-3 interpretive panels (wildlife, restoration progress)
+- 1-2 directional markers for visitors
+- Materials: DIY wooden signs, weatherproof printing
 
 **Barriers:**
-- Split-rail fencing along main trail (500m)
-- Rope barriers at core zone access points (8 locations)
-- Dense shrub plantings as natural barriers (buffer zones)
+- Natural barriers primarily (dense plantings, existing features)
+- Simple rope or split-rail markers at core zone entry (50m)
+- Log barriers for path delineation (10-15 logs from site clearing)
 
-**Budget:**
-- Signage: €3,500
-- Fencing/barriers: €2,000
-- Trail work: €4,000
-- Camera traps (4): €1,200
-- Annual maintenance: €1,000
+**Monitoring:**
+- 2-3 camera traps (rotate positions)
+- Founder-led observations (daily/weekly)
+- Quarterly documentation
+
+**Budget (Bootstrap Scale):**
+- Signage materials: €150-300 (DIY approach)
+- Rope/barriers: €50-100
+- Camera traps (2-3): €300-600
+- Trail markers (rocks/logs): €0-50 (use on-site materials)
+- **Total: €500-1,050** (vs €10,700 for 50 ha example)
+- Annual maintenance: €100-200
+
+**Notes:**
+- 1 ha Bootstrap scale focuses on essential protection
+- Founders conduct most monitoring (minimal external labor)
+- DIY approach keeps costs within €20-30k Year 1 budget
+- Simple but effective protection strategy
+- Can expand protection zones as project scales post-pilot
 
 ---
 
