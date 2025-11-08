@@ -60,10 +60,18 @@
 - **Degradation:** Some degradation present (demonstrates restoration impact)
 - **NOT:** Protected nature reserve (too many restrictions), contaminated brownfield (too complex), steep slopes >30% (safety/erosion issues)
 
-**Budget:**
-- **Land cost:** €10-30k maximum for purchase
-- **OR Lease:** €500-2,000/year long-term lease
-- **Must fit:** Within overall €20-30k Year 1 budget
+**Land Acquisition Budget (Year 1 Bootstrap):**
+
+| Cost Component | Amount (EUR) | Notes |
+|----------------|--------------|-------|
+| **Land Purchase/Lease** | €5,000-€15,000 | 1 hectare rural land |
+| Site Assessment | €1,000-€2,000 | Soil testing, surveys |
+| Legal Fees | €1,000-€3,000 | Contract, registration |
+| Initial Preparation | €3,000-€10,000 | Clearing, access |
+| **TOTAL** | **€10,000-€30,000** | Includes all costs |
+
+> **Note**: This is total land acquisition cost, not just purchase price.
+> Leasing options may reduce upfront costs to €2-5k.
 
 ### Desirable Features (Not Required, But Helpful)
 

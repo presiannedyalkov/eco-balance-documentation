@@ -544,8 +544,12 @@ Create tiered protection system:
 - Rope/barriers: €50-100
 - Camera traps (2-3): €300-600
 - Trail markers (rocks/logs): €0-50 (use on-site materials)
-- **Total: €500-1,050** (vs €10,700 for 50 ha example)
+- **Total: €500-1,050**
 - Annual maintenance: €100-200
+
+> **📘 Bootstrap Note**: The €500-1,050 budget is scaled for Year 1 (1 ha pilot).
+> Full-scale projects (5-10 ha) would require proportionally higher budgets (€5-10k range).
+> This example shows evaluation criteria applicable at any scale.
 
 **Notes:**
 - 1 ha Bootstrap scale focuses on essential protection
