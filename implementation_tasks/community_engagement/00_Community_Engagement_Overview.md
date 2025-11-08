@@ -556,8 +556,8 @@ Community engagement is not a separate task to be completed and checked off—it
 - [[06_Maintain_Communication|Maintain Communication]]
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../43_Operations_Action_Plan|Operations Action Plan]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../43_Operations_Action_Plan|Operations Action Plan]]
 - [[../README|Implementation Tasks Hub]]
 
 **Related Phases:**

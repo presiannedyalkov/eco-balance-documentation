@@ -662,8 +662,8 @@ Next Steps:
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../43_Operations_Action_Plan|Operations Action Plan]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../43_Operations_Action_Plan|Operations Action Plan]]
 
 **Previous Steps:**
 - [[01_Assess_Water_Needs|Assess Water Needs]]

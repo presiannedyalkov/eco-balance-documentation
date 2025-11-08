@@ -131,7 +131,7 @@ Create simple 1-5 scale:
 - **Cameras:** Time-lapse or camera traps
 - **Sensors:** Soil moisture at key locations
 
-→ See: [[21_Technology_Integration|Technology Integration]]
+→ See: [[../../21_Technology_Integration|Technology Integration]]
 
 **Data Management:**
 - Enter data promptly (same day if possible)
@@ -297,7 +297,7 @@ Next Visit Scheduled: ____________
 - Lessons learned documentation
 - Plan for next year
 
-→ Reference: [[51_Key_Performance_Indicators|KPIs]]
+→ Reference: [[../../51_Key_Performance_Indicators|KPIs]]
 
 ---
 
@@ -347,7 +347,7 @@ Next Visit Scheduled: ____________
 - Basic program: €1,000-2,000
 - Enhanced with technology: €2,500-5,000
 
-→ See: [[30_Business_Model|Business Model]]
+→ See: [[../../30_Business_Model|Business Model]]
 
 ---
 
@@ -432,11 +432,11 @@ Monitoring continues throughout project, alongside:
 - [[04_Plant_the_Seedlings|Plant the Seedlings]]
 
 **Strategic Context:**
-- [[20_Restoration_Methodology|Restoration Methodology]]
-- [[51_Key_Performance_Indicators|Key Performance Indicators]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../51_Key_Performance_Indicators|Key Performance Indicators]]
 
 **Technology Support:**
-- [[21_Technology_Integration|Technology Integration]]
+- [[../../21_Technology_Integration|Technology Integration]]
 
 **Water Management:**
 - [[water_management/06_Monitor_Water_Use|Monitor Water Use]]

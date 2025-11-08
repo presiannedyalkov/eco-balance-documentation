@@ -397,7 +397,7 @@ Water storage structures bridge the gap between when rain falls and when water i
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Previous Steps:**
 - [[01_Assess_Water_Needs|Assess Water Needs]]

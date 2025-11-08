@@ -235,9 +235,9 @@ Assessing soil health is the critical first step in any soil restoration effort.
 ## 📊 Related Documents
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 - [[00_Soil_Restoration_Overview|Soil Restoration Overview]]
-- [[../00_Eco_Balance_Hub|Eco Balance Hub]]
+- [[../../00_Eco_Balance_Hub|Eco Balance Hub]]
 
 **Previous Steps:**
 - [[../site_selection/08_Make_Shortlist|Make Site Shortlist]]

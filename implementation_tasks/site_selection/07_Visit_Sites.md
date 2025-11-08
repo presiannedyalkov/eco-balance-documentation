@@ -471,9 +471,9 @@ Compare costs across sites when making final decision.
 - [[04_Consider_Accessibility|Accessibility Assessment]]
 
 **Strategic Context:**
-- [[../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../50_Risk_Assessment|Risk Assessment]]
+- [[../../44_Site_Selection_Land_Acquisition|Site Selection Strategy]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../50_Risk_Assessment|Risk Assessment]]
 
 ---
 

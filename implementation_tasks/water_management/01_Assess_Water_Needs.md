@@ -366,7 +366,7 @@ Create table showing monthly supply vs. demand
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Previous Steps:**
 - [[../site_selection/02_Evaluate_Land_Condition|Evaluate Land Condition]]

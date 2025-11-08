@@ -304,8 +304,8 @@ Crop rotation—the practice of changing what is grown in a specific area over t
 
 **Strategic Context:**
 - [[00_Soil_Restoration_Overview|Soil Restoration Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../00_Eco_Balance_Hub|Eco Balance Hub]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../00_Eco_Balance_Hub|Eco Balance Hub]]
 
 **Previous Steps:**
 - [[01_Assess_Soil_Health|Assess Soil Health]]

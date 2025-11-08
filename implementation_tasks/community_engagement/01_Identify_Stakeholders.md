@@ -584,7 +584,7 @@ Priority: HIGH - critical for success
 
 **Strategic Context:**
 - [[00_Community_Engagement_Overview|Community Engagement Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Next Steps:**
 - [[02_Communicate_Plans|Communicate Your Plans]]

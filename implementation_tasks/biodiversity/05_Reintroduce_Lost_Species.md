@@ -503,8 +503,8 @@ Species reintroduction is the deliberate release of organisms into an area where
 - [[03_Create_Protected_Areas|Create Protected Areas]]
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../21_Technology_Integration|Monitoring Technology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../21_Technology_Integration|Monitoring Technology]]
 
 ---
 

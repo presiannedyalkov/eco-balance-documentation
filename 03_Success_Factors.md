@@ -40,13 +40,29 @@ These elements will **make or break** the project. All must be present for succe
 - Team stability needs reliable revenue
 
 **How to Achieve:**
+
+**Year 1 Bootstrap Requirements:** €20,000-€30,000
+- Friends/family investment
+- Personal savings
+- Small grants/crowdfunding
+- Minimal infrastructure and operations
+- 1-2 founders (hands-on, unpaid/minimal salary)
+
+**Years 2-3 Expansion Requirements:** €250,000-€500,000
+- Angel investors and impact investors
+- EU grants and foundation funding
+- Full infrastructure build-out
+- Professional team (3-4 paid staff)
+- Revenue operations begin
+
+**Long-term Sustainability:**
 - ✅ **Multiple revenue streams** (6 sources)
 - ✅ **Lean operations** (<15% overhead)
 - ✅ **Strategic fundraising** (diversified)
 - ✅ **Long-term planning** (3-5 year horizon)
 - ✅ **Cash reserves** (6-12 months)
 
-→ Model: [[30_Business_Model|Business Model]]  
+→ Model: [[30_Business_Model|Business Model]]
 → Strategy: [[32_Funding_Strategy|Funding Approach]]
 
 **Failure Mode:** Over-reliance on grants, unsustainable spending, no earned revenue = eventual collapse
@@ -106,13 +122,28 @@ These elements will **make or break** the project. All must be present for succe
 - Stakeholders want confidence
 
 **How to Achieve:**
-- ✅ **Experienced team** (complementary skills)
+
+**Year 1 Bootstrap Team:** 1-2 multi-skilled founders
+- Hands-on execution across all areas
+- Learning by doing approach
+- Network building and relationship development
+- Resourcefulness and adaptability
+- Shared vision and commitment
+
+**Years 2-3 Professional Team:** 3-4 specialized roles
+- Executive Director (leadership, fundraising)
+- Project Manager (operations, coordination)
+- Ecologist/Restoration Lead (technical expertise)
+- Community Engagement Coordinator (relationships)
+
+**Core Principles:**
+- ✅ **Experienced leadership** (complementary skills)
 - ✅ **Shared vision** (aligned values)
 - ✅ **Effective governance** (board oversight)
 - ✅ **Collaborative culture** (teamwork)
 - ✅ **Ethical practices** (integrity always)
 
-→ Structure: [[12_Team_Roles|Team Building]]  
+→ Structure: [[12_Team_Roles|Team Building]]
 → Governance: [[11_Governance|Governance Framework]]
 
 **Failure Mode:** Inexperienced leadership, internal conflict, weak governance = project chaos
@@ -195,12 +226,13 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 ### Operational Assumptions
 
 **Land:**
-- Suitable land available for acquisition/lease
-- Prices within budget range
+- Year 1: 1 hectare suitable for Bootstrap pilot available for acquisition/lease
+- Prices within €5k-€15k budget range (or affordable lease)
+- Site has expansion potential to 5-10 hectares for Years 2-3
 - Necessary permits obtainable
 - No major title or legal issues
 
-**Reality Check:** We're evaluating 10+ sites specifically to address this. Backup options identified.
+**Reality Check:** We're evaluating 10+ potential 1-hectare sites with expansion potential. Bootstrap approach reduces land acquisition risk significantly compared to acquiring 5-10 hectares immediately. Backup options identified.
 
 → Criteria: [[02_Project_Vision|Site Selection]]
 
@@ -371,7 +403,8 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 ### Behaviors for Success
 
 **START SMALL, EXECUTE WELL:**
-- 5-10 hectares done brilliantly > 50 hectares poorly
+- 1 hectare done brilliantly (Year 1) > 10 hectares poorly
+- Bootstrap proof of concept (1 ha) before scaling to 5-10 ha (Years 2-3)
 - Proof of concept matters more than scale initially
 - Strong foundation enables future growth
 
@@ -455,7 +488,24 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 ## 🎉 Success Indicators
 
-### Green Lights
+### Year 1 Bootstrap Success Metrics
+
+**Proof of Concept Demonstrated:**
+- 1 hectare site successfully established
+- €20k-€30k budget managed efficiently
+- 200-500 trees planted with >70% survival
+- Baseline ecological measurements documented
+- Investor interest secured for expansion funding
+- Community relationships established
+- Legal entity (gGmbH) registered
+
+**Bootstrap Milestones:**
+- Month 3: Site acquired, legal registration submitted
+- Month 6: First plantings completed, monitoring begun
+- Month 9: Initial ecological results visible
+- Month 12: Proof of concept documented, expansion pitch ready
+
+### Long-term Green Lights (Years 2+)
 
 **Organizational:**
 - Team aligned and motivated

@@ -69,9 +69,9 @@ Communication is the bridge between your restoration vision and community unders
 **Create Message Framework:**
 ```
 PROJECT ELEVATOR PITCH (30 seconds):
-"We're restoring [X acres] of [degraded habitat type] 
-at [location] to [primary goal]. This will [key benefit]. 
-We're looking for community input on [specific aspects] 
+"We're restoring [X hectares] of [degraded habitat type]
+at [location] to [primary goal]. This will [key benefit].
+We're looking for community input on [specific aspects]
 and opportunities to [involve community]."
 
 CORE MESSAGES (3-5 key points):
@@ -704,29 +704,29 @@ SUPPORTING DETAILS:
 - Website/social media: 3-5 hours weekly
 
 **Communication Materials:**
-- Graphic design services: $500-5,000
-- Printing (postcards, newsletters, posters): $500-2,000
-- Signage and displays: $500-3,000
-- Photography/videography: $500-3,000
-- Translation services: $500-2,000
+- Graphic design services: €500-5,000
+- Printing (postcards, newsletters, posters): €500-2,000
+- Signage and displays: €500-3,000
+- Photography/videography: €500-3,000
+- Translation services: €500-2,000
 
 **Meeting and Event Costs:**
-- Venue rental: $0-500 per event
-- Refreshments: $100-300 per meeting
-- Childcare: $200-500 per event
-- Materials and supplies: $100-300 per event
+- Venue rental: €0-500 per event
+- Refreshments: €100-300 per meeting
+- Childcare: €200-500 per event
+- Materials and supplies: €100-300 per event
 
 **Digital Tools:**
-- Website development/hosting: $500-5,000/year
-- Email platform: $0-500/year
-- Social media management: $0-1,000/year (free to paid tools)
-- Survey platforms: $0-500/year
+- Website development/hosting: €500-5,000/year
+- Email platform: €0-500/year
+- Social media management: €0-1,000/year (free to paid tools)
+- Survey platforms: €0-500/year
 
 **Professional Services:**
-- Professional facilitator: $1,500-5,000 per major meeting
-- Communication consultant: $5,000-25,000 for comprehensive strategy
-- Media relations support: $2,000-10,000
-- Translator/interpreter: $50-200/hour
+- Professional facilitator: €1,500-5,000 per major meeting
+- Communication consultant: €5,000-25,000 for comprehensive strategy
+- Media relations support: €2,000-10,000
+- Translator/interpreter: €50-200/hour
 
 ## ✅ Success Criteria
 
@@ -779,7 +779,7 @@ SUPPORTING DETAILS:
 
 **Strategic Context:**
 - [[00_Community_Engagement_Overview|Community Engagement Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Previous Steps:**
 - [[01_Identify_Stakeholders|Identify Stakeholders]]

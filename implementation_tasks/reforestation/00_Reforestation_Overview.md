@@ -1,6 +1,6 @@
 # Reforestation Implementation Tasks
 
-← Back to [[20_Restoration_Methodology|Restoration Methodology]] | [[00_Eco_Balance_Hub|Project Hub]]
+← Back to [[../../20_Restoration_Methodology|Restoration Methodology]] | [[../../00_Eco_Balance_Hub|Project Hub]]
 
 ---
 
@@ -14,7 +14,7 @@ Reforestation is a critical pillar of ecosystem restoration. The goal is not jus
 
 ## Strategic Context
 
-**From [[20_Restoration_Methodology|Restoration Methodology]]:**
+**From [[../../20_Restoration_Methodology|Restoration Methodology]]:**
 - Year 1 Target: 1,000-2,000 native trees/shrubs planted
 - Focus on native, drought-tolerant, fire-resistant species
 - Use Miyawaki method and assisted natural regeneration
@@ -90,23 +90,23 @@ Reforestation is a critical pillar of ecosystem restoration. The goal is not jus
 - Soil improvement under tree canopy
 - Water retention and microclimate effects
 
-→ Detailed KPIs: [[51_Key_Performance_Indicators|Key Performance Indicators]]
+→ Detailed KPIs: [[../../51_Key_Performance_Indicators|Key Performance Indicators]]
 
 ---
 
 ## Resources & Support
 
 **Technical Guidance:**
-- [[20_Restoration_Methodology|Restoration Methodology]]
-- [[21_Technology_Integration|Technology Integration]] (drones, monitoring)
-- [[22_Restoration_Challenges_Solutions|Challenges & Solutions]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../21_Technology_Integration|Technology Integration]] (drones, monitoring)
+- [[../../22_Restoration_Challenges_Solutions|Challenges & Solutions]]
 
 **Financial Planning:**
-- [[30_Business_Model|Business Model]] (budget allocation)
-- [[32_Funding_Strategy|Funding Strategy]] (grants for reforestation)
+- [[../../30_Business_Model|Business Model]] (budget allocation)
+- [[../../32_Funding_Strategy|Funding Strategy]] (grants for reforestation)
 
 **Risk Management:**
-- [[50_Risk_Assessment|Risk Assessment]] (ecological risks)
+- [[../../50_Risk_Assessment|Risk Assessment]] (ecological risks)
 
 ---
 
@@ -118,9 +118,9 @@ Reforestation is a critical pillar of ecosystem restoration. The goal is not jus
 2. Review [[01_Identify_Native_Species|Task 1: Identify Native Species]]
 3. Consult with local botanists/ecologists
 4. Work through tasks sequentially
-5. Track progress with [[51_Key_Performance_Indicators|KPIs]]
+5. Track progress with [[../../51_Key_Performance_Indicators|KPIs]]
 
-**Have questions?** Reference the [[20_Restoration_Methodology|Restoration Methodology]] for strategic context.
+**Have questions?** Reference the [[../../20_Restoration_Methodology|Restoration Methodology]] for strategic context.
 
 ---
 

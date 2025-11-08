@@ -58,7 +58,7 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 - Implement all [[02_Rainwater_Harvesting|rainwater harvesting]] strategies
 - Build adequate [[03_Build_Water_Storage_Structures|water storage]]
 - Create swales and berms to slow and sink water
-- Increase soil organic matter (each 1% holds 20,000+ gal/acre)
+- Increase soil organic matter (each 1% holds 185,000+ L/hectare or 185 m³/hectare)
 - Mulch all bare soil to reduce evaporation
 - Contour planting on slopes to capture runoff
 
@@ -105,12 +105,24 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 - Species from wetter climates
 - High-maintenance ornamentals
 
-**Examples by region:**
-- **Southwest US:** Acacia, mesquite, palo verde, agave, yucca
-- **California:** Coast live oak, manzanita, ceanothus, sage species
-- **Great Plains:** Buffalo grass, prairie plants, native grasses
-- **Mediterranean:** Olive, rosemary, lavender, native oaks
-- Research species native to your specific area
+**Drought-Tolerant Native Species for Germany:**
+
+**Trees:**
+- Scots Pine (Pinus sylvestris)
+- Sessile Oak (Quercus petraea)
+- Common Juniper (Juniperus communis)
+
+**Shrubs:**
+- Sea Buckthorn (Hippophae rhamnoides)
+- Dog Rose (Rosa canina)
+- Common Hawthorn (Crataegus monogyna)
+
+**Groundcover:**
+- Wild Thyme (Thymus serpyllum)
+- Sedum species (Sedum acre, Sedum album)
+- Sheep's Fescue (Festuca ovina)
+
+Research additional species native to your specific region of Germany
 
 ### Step 4: Establish Strong Root Systems
 
@@ -137,7 +149,7 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 ### Step 5: Implement Water-Saving Practices
 
 **Mulching (critical for drought management):**
-- 3-6 inch layer around all plants
+- 7-15 cm layer around all plants
 - Organic mulch: wood chips, leaves, straw
 - Reduces evaporation by 50-70%
 - Moderates soil temperature
@@ -174,7 +186,7 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 
 **Drought indicators:**
 - Rainfall below 75% of normal for season
-- Soil dry below 6 inches despite recent rain
+- Soil dry below 15 cm despite recent rain
 - Plants wilting during coolest parts of day
 - Early leaf drop or dormancy
 - Regional drought declarations
@@ -187,9 +199,11 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 - **Exceptional (D5):** Exceptional and widespread losses
 
 **Early warning systems:**
-- US Drought Monitor (droughtmonitor.unl.edu)
+- **European Drought Observatory (EDO)**: edo.jrc.ec.europa.eu - EU-wide drought indicators, forecasts, maps
+- **German Weather Service (DWD)**: dwd.de - Regional drought indices, soil moisture maps
+- **Helmholtz Centre for Environmental Research (UFZ)**: ufz.de/duerreindex - German drought monitor, historical data
+- **Copernicus Climate Data Store**: climate.copernicus.eu - Climate data, drought indicators, projections
 - Local water district alerts
-- Weather service drought forecasts
 - Seasonal climate predictions
 
 ### Step 7: Respond During Drought (Reactive)
@@ -312,7 +326,7 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 - Drought monitoring services: Free online
 
 **Materials:**
-- Mulch: €30-60 per cubic yard
+- Mulch: €40-80 per cubic meter
 - Drought-tolerant plants: €3-20 each
 - Emergency irrigation supplies: Variable
 - Shade cloth (temporary): €50-200
@@ -372,7 +386,7 @@ Drought is an inevitable challenge in restoration, particularly in arid and semi
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 - [[../15_Climate_Action|Climate Action Framework]]
 
 **Previous Steps:**

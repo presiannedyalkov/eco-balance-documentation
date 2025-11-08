@@ -53,27 +53,29 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 ### Step 2: Calculate Rainwater Harvesting Potential
 
 **Basic formula:**
-**Catchment Area (sq ft) × Rainfall (inches) × 0.623 = Gallons captured**
+**Catchment Area (m²) × Rainfall (mm) × 0.001 = Cubic meters (m³) or 1000 liters captured**
+
+Simplified: **Catchment Area (m²) × Rainfall (mm) = Liters captured**
 
 (Accounting for ~10% loss to evaporation and spillage)
 
 **Example calculations:**
 
 **Roof catchment:**
-- Building: 2,000 sq ft roof
-- Annual rainfall: 20 inches
-- Potential: 2,000 × 20 × 0.623 = 24,920 gallons/year
-- Per inch of rain: 2,000 × 0.623 = 1,246 gallons
+- Building: 185 m² roof (approximately 2,000 sq ft)
+- Annual rainfall: 762 mm (Central Germany average)
+- Potential: 185 × 762 = 141,000 liters/year (141 m³)
+- Per mm of rain: 185 × 1 = 185 liters
 
 **Hard surface catchment:**
-- Parking/driveway: 5,000 sq ft
-- Annual rainfall: 20 inches
-- Potential: 5,000 × 20 × 0.623 = 62,300 gallons/year
+- Parking/driveway: 465 m² (approximately 5,000 sq ft)
+- Annual rainfall: 762 mm (Central Germany average)
+- Potential: 465 × 762 = 354,000 liters/year (354 m³)
 
 **Passive landscape catchment:**
-- Swale catchment area: 1 acre (43,560 sq ft)
-- Annual rainfall: 20 inches
-- Runoff captured: 43,560 × 20 × 0.623 = 542,556 gallons/year
+- Swale catchment area: 0.4 hectares (4,047 m², approximately 1 acre)
+- Annual rainfall: 762 mm (Central Germany average)
+- Runoff captured: 4,047 × 762 = 3,084,000 liters/year (3,084 m³)
 - (Note: This infiltrates rather than stores for direct use)
 
 **Determine realistic capture percentage:**
@@ -93,14 +95,14 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 
 **2. Gutters and downspouts:**
 - Sized for peak rainfall intensity
-- Minimum 5-inch gutters for most applications
-- 3×4 inch downspouts standard
+- Minimum 13 cm (125-130mm) gutters for most applications
+- 75×100 mm downspouts standard
 - Secure installation to handle storm flows
 - Leaf guards to reduce debris
 
 **3. First-flush diverter:**
 - Diverts initial dirty water (bird droppings, dust, debris)
-- First 10 gallons per 1,000 sq ft roof discarded
+- First 38 liters per 93 m² roof discarded (approximately 10 gallons per 1,000 sq ft)
 - Automatic or manual reset
 - Critical for water quality
 
@@ -133,25 +135,25 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 
 **Swales (vegetated infiltration trenches):**
 - **Location:** On contour (level along slope)
-- **Dimensions:** 
-  - Width: 3-10 feet depending on site
-  - Depth: 6-18 inches
+- **Dimensions:**
+  - Width: 0.9-3 meters depending on site
+  - Depth: 15-45 cm
   - Length: Along contour
-  - Berm on downslope side: 6-12 inches high
-- **Spacing:** Every 20-50 feet of vertical elevation
+  - Berm on downslope side: 15-30 cm high
+- **Spacing:** Every 6-15 meters of vertical elevation
 - **Function:** Capture runoff, slow water, allow infiltration
 - **Vegetation:** Deep-rooted plants enhance infiltration
 
 **Berms:**
 - **Purpose:** Direct water to desired locations
-- **Height:** 6-18 inches
-- **Width:** 2-4 feet at base
+- **Height:** 15-45 cm
+- **Width:** 0.6-1.2 meters at base
 - **Location:** Along contours, around basins
 - **Combination:** Often paired with swales
 
 **Rain gardens/infiltration basins:**
 - **Size:** 10-20% of contributing drainage area
-- **Depth:** 6-12 inches
+- **Depth:** 15-30 cm
 - **Location:** Low points that naturally collect water
 - **Soil:** Amended for good drainage if needed
 - **Plants:** Water-tolerant species that can handle both wet and dry
@@ -184,7 +186,7 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 - Splash blocks to prevent erosion
 
 **Collection at downspouts:**
-- Rain barrels (50-100 gallons) for small-scale
+- Rain barrels (200-400 liters) for small-scale
 - Daisy-chain multiple barrels
 - Overflow to infiltration areas
 - Mosquito screens essential
@@ -285,25 +287,25 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 ## 🛠️ Resources Needed
 
 **Active System Components:**
-- Gutters and downspouts: €3-8 per linear foot installed
+- Gutters and downspouts: €10-25 per linear meter installed
 - First-flush diverter: €50-200
 - Filters: €30-150
-- Storage tanks: €0.50-3 per gallon capacity
+- Storage tanks: €0.15-0.80 per liter capacity
 - Piping and fittings: €200-500
 - Pump (if needed): €150-500
-- Total small system (500-1,000 gal): €1,000-3,000
-- Total large system (5,000-10,000 gal): €5,000-15,000
+- Total small system (2,000-4,000 L): €1,000-3,000
+- Total large system (20,000-40,000 L): €5,000-15,000
 
 **Passive System Resources:**
 - Excavation equipment: €100-200/hour rental or €1,000-5,000 contractor
-- Mulch for swales: €30-60 per cubic yard
+- Mulch for swales: €40-80 per cubic meter
 - Plants for infiltration areas: €3-15 per plant
-- Total per acre: €2,000-10,000 depending on complexity
+- Total per hectare: €5,000-25,000 depending on complexity
 
 **Professional Services:**
 - Rainwater design consultant: €500-2,000
 - Installation contractor: €3,000-15,000+ for complete system
-- Landscape contouring service: €2,000-10,000 per acre
+- Landscape contouring service: €5,000-25,000 per hectare
 
 **Tools:**
 - Level and measuring tape
@@ -360,7 +362,7 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 
 **Strategic Context:**
 - [[00_Water_Management_Overview|Water Management Overview]]
-- [[../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
 
 **Previous Steps:**
 - [[01_Assess_Water_Needs|Assess Water Needs]]
@@ -425,16 +427,16 @@ Rainwater harvesting is one of the most sustainable and cost-effective water man
 4. Add 20% buffer for dry spells
 
 **Example:**
-- Peak deficit: July needs 3 inches over 2 acres = 163,000 gallons
-- July rainfall: Typically zero
+- Peak deficit: July needs 75mm over 0.8 hectares (8,000 m²) = 600,000 liters (600 m³)
+- July rainfall: Typically minimal (50-70mm in Central Germany)
 - Prior months surplus: Wet season fills storage
-- Storage needed: ~5,000-10,000 gallons for critical plants
-- Full 163,000 gallons impractical; prioritize high-value areas
+- Storage needed: ~20,000-40,000 liters for critical plants
+- Full 600,000 liters impractical; prioritize high-value areas
 
 **Rule of thumb:**
-- Basic system: 500-1,000 gallons per roof
-- Comprehensive system: 1,000-2,000 gallons per 1,000 sq ft roof
-- Commercial scale: 5,000-50,000 gallons
+- Basic system: 2,000-4,000 liters per roof
+- Comprehensive system: 4,000-8,000 liters per 93 m² roof
+- Commercial scale: 20,000-200,000 liters
 - Passive systems: Size to handle peak storm (not seasonal storage)
 
 ---

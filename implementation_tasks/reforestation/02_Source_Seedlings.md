@@ -228,7 +228,7 @@ Before committing to a supplier, verify:
 - Seedling budget fits within €20-30k Year 1 total budget
 - For larger sites post-pilot, scale calculations proportionally
 
-→ See: [[32_Funding_Strategy|Funding Strategy]] for grant opportunities
+→ See: [[../../32_Funding_Strategy|Funding Strategy]] for grant opportunities
 
 ---
 
@@ -332,9 +332,9 @@ Once seedlings are sourced and delivery scheduled:
 - [[01_Identify_Native_Species|Identify Native Species]]
 
 **Strategic Context:**
-- [[20_Restoration_Methodology|Restoration Methodology]]
-- [[30_Business_Model|Business Model]] (budget)
-- [[32_Funding_Strategy|Funding Strategy]] (grants)
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../30_Business_Model|Business Model]] (budget)
+- [[../../32_Funding_Strategy|Funding Strategy]] (grants)
 
 **Supporting Tasks:**
 - [[water_management/02_Rainwater_Harvesting|Water for Establishment]]

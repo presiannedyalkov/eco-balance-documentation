@@ -298,7 +298,7 @@ Create tiered protection system:
 
 **Wildlife Response:**
 - Track wildlife use of protected areas
-- Camera traps to document species → [[../21_Technology_Integration|Technology]]
+- Camera traps to document species → [[../../21_Technology_Integration|Technology]]
 - Nesting success rates
 - Population changes over time
 - Behavior observations (less wary = good sign)
@@ -417,7 +417,7 @@ Create tiered protection system:
 
 **Technology:**
 - GIS software
-- Camera traps → [[../21_Technology_Integration|Technology]]
+- Camera traps → [[../../21_Technology_Integration|Technology]]
 - GPS units
 - Communication devices (radios)
 
@@ -568,8 +568,8 @@ Create tiered protection system:
 - [[06_Monitor_Biodiversity|Monitor Biodiversity]]
 
 **Strategic Context:**
-- [[../20_Restoration_Methodology|Restoration Methodology]]
-- [[../51_Key_Performance_Indicators|KPIs]]
+- [[../../20_Restoration_Methodology|Restoration Methodology]]
+- [[../../51_Key_Performance_Indicators|KPIs]]
 
 ---
 
