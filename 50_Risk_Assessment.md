@@ -41,18 +41,36 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 **Priority:** 🔴 **CRITICAL**
 
 ### Specific Scenarios
+
+**Year 1 Bootstrap Phase:**
+- Personal savings insufficient
+- Friends/family funding falls short
+- Small grants rejected
+- Cannot secure €20-30k needed for 1 ha pilot
+- Economic constraints delay launch
+
+**Year 2+ Expansion Phase:**
 - Grant applications rejected
 - Corporate partners don't materialize
-- Crowdfunding falls short
 - Major donor prospects decline
+- Cannot secure €250-500k for scaling
 - Economic downturn reduces giving
 
 ### Consequences
-- Cannot acquire land
-- Cannot hire core team
-- Cannot install infrastructure
-- Project delayed or stalled
-- Credibility damaged
+
+**Year 1 Bootstrap:**
+- Cannot acquire 1 ha pilot site
+- Cannot afford basic infrastructure
+- Cannot prove concept
+- Must delay entire project
+- Personal financial risk
+
+**Year 2+ Expansion:**
+- Cannot scale beyond pilot
+- Cannot hire professional team
+- Cannot install full infrastructure
+- Growth stalled at 1 hectare
+- Credibility with larger funders damaged
 
 ### Mitigation Strategies
 
@@ -69,7 +87,17 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 - Advisory Board credibility
 
 #### Phased Approach
-- **Start smaller if needed:** 2-5 hectares vs. 5-10
+
+**Year 1 Bootstrap Risk Mitigation:**
+- **Start with 1 hectare:** Minimal viable scale (€20-30k)
+- **Ruthless prioritization:** Only essentials in Year 1
+- **DIY approach:** Founders do all work, no salaries
+- **Phased investment:** Can start with €15-20k if needed
+- **Use Year 1 pilot to de-risk Year 2+ fundraising**
+
+**Year 2+ Expansion Risk Mitigation:**
+- **Proven concept attracts investors:** Use Year 1 results
+- **Start smaller if needed:** 3-5 hectares vs. 5-10
 - **Defer non-essentials:** Can add technology later
 - **Lease vs. buy:** Consider land lease if purchase too expensive
 - **Milestone funding:** Secure tranches tied to progress
@@ -95,23 +123,40 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 ### Risk Description
 **Suitable land unavailable, too expensive, or regulatory barriers**
 
-**Likelihood:** Medium  
-**Impact:** High  
+**Likelihood:** Medium
+**Impact:** High
 **Priority:** 🟡 **HIGH**
 
 ### Specific Scenarios
-- Land prices exceed budget
-- Degraded land harder to find than expected
-- Owners unwilling to sell
-- Regulatory restrictions discovered late
-- Competition from other buyers
+
+**Year 1 Bootstrap (1 hectare):**
+- Cannot find suitable 1 ha site in Germany
+- Land prices exceed €10-15k budget for 1 ha
+- Owners unwilling to sell small parcels
+- Regulatory restrictions on target sites
 - Community opposition to project
 
+**Year 2+ Expansion (5-10 hectares):**
+- Cannot expand from 1 ha to 5-10 ha
+- Adjacent land unavailable
+- Expansion costs exceed €250-500k budget
+- Competition from other buyers
+- Scaling regulatory challenges
+
 ### Consequences
-- Cannot launch pilot site
-- Delays entire timeline
-- Investor confidence shaken
-- Team demotivated
+
+**Year 1 Bootstrap:**
+- Cannot launch pilot site at all
+- Entire project delayed
+- Must find alternative location
+- Founders demotivated
+
+**Year 2+ Expansion:**
+- Stuck at 1 hectare scale
+- Cannot demonstrate scalability
+- Investor confidence in scaling shaken
+- Limited to proof-of-concept only
+- (Less critical if Year 1 pilot succeeds)
 
 ### Mitigation Strategies
 
@@ -123,10 +168,18 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 - **Community consultation:** Gauge receptivity early
 
 #### Flexible Criteria
-- **Backup sites identified:** Have alternatives ready
-- **Geographic flexibility:** Open to Portugal OR Spain OR Greece
-- **Size flexibility:** 2-10 hectare range acceptable
-- **Consider lease options:** 25-50 year lease vs. purchase
+
+**Year 1 Bootstrap:**
+- **Backup sites identified:** Evaluate 5-10 potential 1 ha sites
+- **Geographic flexibility:** Multiple German states (Brandenburg, Saxony, Rhineland-Palatinate, Lower Saxony)
+- **Size flexibility:** 0.5-2 hectare range acceptable for pilot
+- **Consider lease options:** Long-term lease vs. purchase
+
+**Year 2+ Expansion:**
+- **Backup expansion plans:** Adjacent land or nearby parcels
+- **Regional flexibility:** Within Germany initially
+- **Size flexibility:** 3-10 hectare expansion range
+- **Phased acquisition:** Secure options for future expansion
 
 #### Local Expertise
 - **Engage real estate professionals** in target region
@@ -218,17 +271,34 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 **Priority:** 🟡 **HIGH**
 
 ### Specific Scenarios
+
+**Year 1 Bootstrap:**
+- €20-30k runs out before proving concept
+- Unexpected costs deplete budget quickly
+- Cannot generate any revenue
+- 6-9 month runway risk
+
+**Year 2+ Expansion:**
 - Eco-tourism demand lower than expected
 - Carbon credit prices crash
 - Energy sales less profitable
 - Grant funding dries up after Year 3
 - Competition increases
+- Monthly burn rate €15-25k unsustainable
 
 ### Consequences
+
+**Year 1 Bootstrap:**
+- Run out of funds mid-pilot
+- Cannot complete 1 ha demonstration
+- Personal financial hardship for founders
+- Project abandoned before proof of concept
+
+**Year 2+ Expansion:**
 - Cannot cover operating costs
 - Must continue grant dependency
 - Cannot scale operations
-- May need to reduce activities
+- May need to reduce activities or team
 - Project becomes unsustainable
 
 ### Mitigation Strategies
@@ -323,7 +393,73 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 
 ---
 
-## ⚖️ 6. REGULATORY/LEGAL RISKS
+## 👥 6. TEAM DEPENDENCY RISKS
+
+### Risk Description
+**High dependency on small founder team; loss of key person could halt project**
+
+**Likelihood:** Medium
+**Impact:** Medium-High
+**Priority:** 🟢 **MEDIUM**
+
+### Specific Scenarios
+
+**Year 1 Bootstrap Risk:**
+- High dependency on 1-2 founders
+- Illness or injury sidelines founder(s)
+- Founder departure/withdrawal
+- Burnout from wearing multiple hats
+- No backup for critical skills
+- Project completely halts if founder unavailable
+
+**Year 2+ Risk:**
+- Losing specialized team members (restoration specialist, project manager)
+- Key employee departure
+- Difficulty replacing niche expertise
+- Knowledge loss
+- Project continuity threatened
+
+### Consequences
+
+**Year 1 Bootstrap:**
+- Entire project at risk
+- Cannot continue operations
+- All work falls on remaining person (if 2 founders)
+- Must delay or abandon pilot
+- Learning and documentation lost
+
+**Year 2+ Expansion:**
+- Operations disrupted
+- Projects delayed
+- Team morale affected
+- Recruitment and training costs
+- Temporary capability gaps
+
+### Mitigation Strategies
+
+**Year 1 Bootstrap Risk Mitigation:**
+- **Document everything:** Processes, decisions, contacts, learnings
+- **Build network:** Connect with advisors and potential helpers
+- **Cross-train skills:** Both founders learn all critical tasks
+- **Health/safety priority:** Don't take unnecessary risks
+- **Succession planning:** Identify who could step in if needed
+- **Advisory board:** Can provide temporary support if needed
+- **Insurance:** Personal health/disability insurance for founders
+
+**Year 2+ Risk Mitigation:**
+- **Professional contracts:** Clear employment agreements
+- **Knowledge documentation:** Written procedures and systems
+- **Cross-training:** Team members learn each other's roles
+- **Succession planning:** Identify backup for each role
+- **Competitive compensation:** Retain talent through fair pay
+- **Career development:** Growth opportunities
+- **Positive culture:** People want to stay
+
+→ Team Planning: [[12_Team_Roles|Team Structure]]
+
+---
+
+## ⚖️ 7. REGULATORY/LEGAL RISKS
 
 ### Risk Description
 **Regulatory changes, permitting delays, legal challenges**
@@ -372,7 +508,7 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 
 ---
 
-## 🌡️ 7. CLIMATE RISKS
+## 🌡️ 8. CLIMATE RISKS
 
 ### Risk Description
 **Extreme weather (drought, fire, flood) damages restoration**
@@ -432,7 +568,7 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 
 ---
 
-## 💔 8. REPUTATIONAL RISKS
+## 💔 9. REPUTATIONAL RISKS
 
 ### Risk Description
 **Project fails, greenwashing accusations, financial scandal**

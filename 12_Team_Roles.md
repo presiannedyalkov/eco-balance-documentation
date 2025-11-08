@@ -17,39 +17,49 @@
 
 ## 📊 Team Evolution
 
-### Phase 1: Year 1 (3 staff)
-**Focus:** Establish foundation
+### Phase 1: Year 1 - Bootstrap Phase (1-2 people)
+**Focus:** Proof of concept, hands-on learning
+
+**Year 1 Bootstrap Team** (1-2 people):
+- Founders wear multiple hats
+- Hands-on execution across all areas
+- Focus: Proof of concept, learning, documentation
+- Minimal/no salaries (€0-€5k total)
 
 ```
-Executive Director
-        |
-    ---------
-    |       |
-Project   Ecologist/
-Manager   Restoration
-          Specialist
+Founder(s)
+   |
+   +-- All Roles Combined:
+       - Project leadership
+       - Restoration work
+       - Community engagement
+       - Documentation
+       - Fundraising prep
 ```
 
-**Budget:** €90,000-€120,000/year
+**Budget:** €0-€5,000/year (living expenses/minimal stipend only)
 
 ---
 
-### Phase 2: Years 2-3 (5-8 staff)
-**Focus:** Prove impact
+### Phase 2: Years 2-3 - Expansion Phase (3-4 people)
+**Focus:** Professional team, prove impact at 5-10 ha scale
+
+**Year 2+ Expanded Team** (3-4 people):
+- Project Manager/Director (full-time)
+- Restoration Specialist (full-time)
+- Operations & Community Engagement (full-time)
+- Financial & Admin Support (part-time or as needed)
 
 ```
 Executive Director
         |
     -------------------
     |        |        |
-Project  Ecologist  Communications
-Manager  Team (2)   Specialist
-                         |
-                    Community
-                    Coordinator
+Project  Restoration Operations/
+Manager  Specialist   Community
 ```
 
-**Budget:** €150,000-€200,000/year
+**Budget:** €120,000-€160,000/year (professional market-rate salaries)
 
 ---
 
@@ -71,13 +81,19 @@ Director    Director  Manager  Director
 
 ---
 
-## 🎯 Core Roles (Year 1)
+## 🎯 Core Roles (Professional Team - Year 2+)
+
+> **📘 Bootstrap Note**: In Year 1, these roles are fulfilled part-time by founders alongside other duties. The descriptions below reflect Year 2+ when roles become full-time specialized positions with professional compensation.
 
 ### 1. Executive Director / Managing Director
 
-**Status:** Full-time, hire Month 6-9
+> **📘 Bootstrap Note**: In Year 1, this role is fulfilled part-time by founders alongside other duties. Full-time specialization begins in Year 2 with expansion funding.
 
-**Compensation:** €40,000-€50,000/year
+**Status:** Full-time, hire Year 2 (Month 12-15 from project start)
+
+**Compensation:**
+- **Year 1**: Minimal/no salary (founder role, €0-€2k stipend)
+- **Year 2+**: €40,000-€50,000/year (professional market rate)
 
 **Reports To:** Board of Directors
 
@@ -115,9 +131,13 @@ Director    Director  Manager  Director
 
 ### 2. Project Manager
 
-**Status:** Full-time, hire Month 9-12
+> **📘 Bootstrap Note**: In Year 1, this role is fulfilled part-time by founders alongside other duties. Full-time specialization begins in Year 2 with expansion funding.
 
-**Compensation:** €35,000-€45,000/year
+**Status:** Full-time, hire Year 2 (Month 12-18 from project start)
+
+**Compensation:**
+- **Year 1**: Minimal/no salary (founder role, €0-€2k stipend)
+- **Year 2+**: €35,000-€45,000/year (professional market rate)
 
 **Reports To:** Executive Director
 
@@ -154,9 +174,13 @@ Director    Director  Manager  Director
 
 ### 3. Ecologist / Restoration Specialist
 
-**Status:** Full-time, hire Month 9-12
+> **📘 Bootstrap Note**: In Year 1, this role is fulfilled part-time by founders alongside other duties. Full-time specialization begins in Year 2 with expansion funding.
 
-**Compensation:** €35,000-€45,000/year
+**Status:** Full-time, hire Year 2 (Month 12-18 from project start, often first professional hire)
+
+**Compensation:**
+- **Year 1**: Minimal/no salary (founder role, €0-€2k stipend)
+- **Year 2+**: €35,000-€45,000/year (professional market rate)
 
 **Reports To:** Executive Director
 
@@ -198,23 +222,24 @@ Director    Director  Manager  Director
 
 ### Recruitment Timeline
 
-**Month 3-6:**
-- Define job descriptions
-- Determine compensation
-- Post positions
-- Begin screening
+**Phase 1 (Year 1)**: No external hiring
+- Founders execute all roles
+- Volunteer support where available
+- Build network and identify potential future hires
+- Document all processes for future team onboarding
 
-**Month 6-9:**
-- Executive Director interviews
-- Reference checks
-- Offer and negotiation
-- Onboarding preparation
+**Phase 2 (Year 2)**: First professional hires
+- **Month 12-15:** Restoration Specialist recruitment (often first hire)
+  - Define job description
+  - Post position
+  - Interview and hire
+- **Month 15-18:** Project Manager (if not founder)
+  - Begin recruitment process
+  - Onboarding and integration
 
-**Month 9-12:**
-- Project Manager recruitment
-- Ecologist recruitment
-- Simultaneous hiring if possible
-- Team onboarding
+**Phase 3 (Year 3)**: Full professional team
+- **Year 3 Q1-Q2:** Operations/Community role
+- **Year 3 Q3-Q4:** Financial/Admin role (as budget allows)
 
 ---
 
@@ -333,7 +358,14 @@ Director    Director  Manager  Director
 
 ### Professional Development
 
-**Annual Budget:** €1,000-€2,000 per staff
+**Annual Budget:**
+- **Year 1**: Self-directed learning €0-€1,000 total
+  - Free online courses, webinars
+  - Local networking events
+  - Knowledge sharing with advisors
+- **Year 2+**: Professional development €15,000-€20,000 total
+  - €1,000-€2,000 per staff member
+  - Organizational training initiatives
 
 **Opportunities:**
 - Conference attendance

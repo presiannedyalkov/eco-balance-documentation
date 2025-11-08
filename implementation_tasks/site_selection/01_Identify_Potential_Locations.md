@@ -3,74 +3,118 @@
 ← Back to [[00_Site_Selection_Overview|Site Selection Overview]]
 
 ## Purpose
-Conduct desktop research to identify promising regions and sites across Southern Europe that match restoration goals.
+Conduct desktop research to identify promising regions and sites across Germany that match restoration goals and Bootstrap Model requirements.
 
 ## Process
 
 ### 1. Define Search Criteria
+
 **Climate:**
-- Mediterranean or transitional climate zones
-- Suitable temperature and rainfall for target ecosystems
-- Consider climate change projections
+- Temperate oceanic/continental climate zones (Köppen: Cfb/Dfb)
+- Annual rainfall 600-800mm with seasonal variation
+- 4 distinct seasons with cold winters
+- Consider climate change adaptation (increasing drought resilience)
 
 **Geography:**
-- Southern Europe focus (Spain, Portugal, Italy, Greece, Southern France)
-- Proximity to existing natural areas
+- **Germany focus:** Priority regions within 100-200km of major cities (Frankfurt, Berlin, Munich)
+- **Target states:** Brandenburg, Saxony, Rhineland-Palatinate, Lower Saxony
+- Proximity to existing natural areas and conservation zones
 - Watershed or landscape-scale opportunities
+- Accessibility for Bootstrap operations (founders can reach site regularly)
 
 **Degradation Type:**
-- Deforested or degraded lands
-- Eroded or compacted soil
-- Water-stressed areas
-- Loss of biodiversity
+- Former agricultural land (abandoned or degraded farmland)
+- Depleted forest areas needing restoration
+- Post-industrial sites suitable for rewilding
+- Eroded or compacted soil from intensive agriculture
+- Areas with reduced biodiversity
 
 ### 2. Use Mapping Tools
+
+**Germany-Specific Resources:**
 - Google Earth / satellite imagery
-- Regional environmental databases
-- Land use maps
-- Climate data (WorldClim, etc.)
-- Protected area databases
+- **German Climate Atlas** (Deutscher Klimaatlas): climate projections
+- **ATKIS/DLM**: German topographic and land use data
+- **OpenStreetMap Germany**: Detailed infrastructure mapping
+- **Bundesamt für Naturschutz (BfN)**: Protected area databases
+- State forestry agency maps (Landesforstämter)
+- Agricultural land registries (by state)
 
 ### 3. Identify Candidate Regions
-Create list of 10-20 potential regions based on:
-- Environmental match to criteria
-- Strategic geographic distribution
-- Known degradation issues
-- Existing conservation interest
+
+Create list of 10-15 potential regions in Germany based on:
+- Environmental match to temperate restoration criteria
+- Geographic distribution across target German states
+- Known land degradation or abandonment issues
+- Existing conservation interest or proximity to protected areas
+- Bootstrap accessibility (within reasonable distance for founders)
+- Land availability and affordability (€10-20k/hectare range)
+
+**Priority Search Areas:**
+- **Brandenburg:** Affordable land, former agricultural areas, rewilding opportunities
+- **Saxony:** Post-mining restoration potential, forest regeneration
+- **Rhineland-Palatinate:** Mixed forest restoration, river valley opportunities
+- **Lower Saxony:** Wetland restoration, agricultural transition zones
 
 ### 4. Research Each Region
+
 **Environmental:**
-- Native ecosystems historically present
-- Current state of degradation
-- Existing protected areas nearby
-- Water bodies and sources
+- **Native ecosystems:** German mixed deciduous forests (beech, oak), wetlands, heathlands
+- **Historical ecology:** Pre-agricultural landscape composition
+- Current state of degradation and causes
+- Existing protected areas nearby (Naturschutzgebiete, FFH-Gebiete)
+- Water bodies, groundwater, and watershed health
+- **Target species:** Native German flora (Fagus sylvatica, Quercus robur, Pinus sylvestris, etc.)
 
 **Social:**
-- Population density and communities
-- Land use patterns
-- Economic activities
-- Cultural significance
+- Population density and nearest communities
+- Land use patterns and ownership structure
+- Economic activities (agriculture, forestry, tourism)
+- Cultural significance and local attitudes to rewilding
+- Community relationship with nature conservation
+
+**Legal/Regulatory:**
+- **Federal laws:** Bundesnaturschutzgesetz (Federal Nature Conservation Act)
+- **State regulations:** Landeswaldgesetze (State Forest Laws)
+- Land use planning (Flächennutzungsplan)
+- Building/development restrictions
+- Environmental protection requirements
 
 **Accessibility:**
-- Major roads and transport
-- Nearest cities/towns
-- Infrastructure availability
+- Major roads (Autobahn/Bundesstraße access)
+- Nearest towns with services (< 30km ideal)
+- Internet availability (for off-grid work)
+- Emergency services access
 
 ### 5. Initial Screening
 Narrow to 5-8 most promising regions for deeper investigation.
 
 ## Resources
+
+**Desktop Research Tools:**
 - Internet and GIS tools
-- Climate databases
-- Regional planning documents
-- Conservation organization contacts
-- 20-40 hours research time
+- German Climate Atlas (Deutscher Klimaatlas)
+- Bundesamt für Naturschutz (BfN) databases
+- State environmental agency websites
+- Regional planning documents (Regionalplanung)
+- Real estate portals (ImmobilienScout24, etc.)
+
+**Organizations to Contact:**
+- **NABU Deutschland** (German nature conservation organization)
+- **Bundesamt für Naturschutz** (Federal Agency for Nature Conservation)
+- State forestry agencies (Landesforstämter)
+- Local conservation groups (Naturschutzvereine)
+- University ecology/forestry departments
+
+**Estimated Time:** 20-40 hours research time
 
 ## Success Criteria
-✅ 5-8 promising regions identified  
-✅ Basic environmental data compiled  
-✅ Geographic diversity across Southern Europe  
-✅ Clear rationale for each selection
+✅ 5-8 promising regions identified in Germany
+✅ Basic environmental data compiled for each region
+✅ Geographic diversity across target German states
+✅ Clear rationale for each selection based on Bootstrap criteria
+✅ Preliminary land availability and cost assessment
+✅ Understanding of German regulatory requirements
 
 ## Next Steps
 → [[02_Evaluate_Land_Condition|Step 2: Evaluate Land Condition]]

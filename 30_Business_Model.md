@@ -46,9 +46,10 @@
 | **Operating Reserve** | €1-2k | 🟢 Medium | 3-month buffer |
 | **TOTAL YEAR 1** | **€23-36k** | | **Target: €25-30k** |
 
-**Revenue Year 1:** €0-2k (minimal, not relied upon)
-- Small donation trickle from crowdfunding
-- Possible small research partnership honorarium
+**Revenue Year 1:** €0 (investment/proof of concept phase)
+- No revenue expected or relied upon
+- Focus entirely on establishing infrastructure and proving concept
+- Any small donations (<€500) go directly to operating reserve
 
 **Funding Sources Year 1:**
 - Crowdfunding campaign: €8-15k (primary)
@@ -125,10 +126,10 @@
 
 | Period | Investment | Revenue | Net Funding Needed | Cumulative |
 |--------|------------|---------|-------------------|------------|
-| **Year 1** | €25-30k | €0-2k | €23-28k | €23-28k |
-| **Year 2** | €18-22k | €2-5k | €13-20k | €36-48k |
-| **Year 3** | €15-18k | €5-12k | €3-13k | €39-61k |
-| **TOTAL** | **€58-70k** | **€7-19k** | **€51-61k** | |
+| **Year 1** | €25-30k | €0 | €25-30k | €25-30k |
+| **Year 2** | €18-22k | €2-5k | €13-20k | €38-50k |
+| **Year 3** | €15-18k | €5-12k | €3-13k | €41-63k |
+| **TOTAL** | **€58-70k** | **€7-17k** | **€51-63k** | |
 
 **Most Realistic 3-Year Total:** €50-60k net funding needed
 
@@ -584,6 +585,6 @@ Understanding the budget ranges - what's included at each level:
 
 ---
 
-**Last Updated:** November 6, 2025  
-**Document Version:** 2.0 Bootstrap Model  
+**Last Updated:** November 8, 2024
+**Document Version:** 2.0 Bootstrap Model
 **Status:** Complete - Ready for Fundraising
