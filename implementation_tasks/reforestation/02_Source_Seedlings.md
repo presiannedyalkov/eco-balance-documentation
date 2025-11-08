@@ -90,20 +90,20 @@ Identify and engage with nurseries, conservation organizations, or commercial su
 - Account for mortality during establishment
 - Have backup seedlings for replacement
 
-**Example Calculation:**
+**Example Calculation (Bootstrap Model - 1 hectare):**
 ```
-Area: 2 hectares
-Density: 1,000 trees/hectare
-Base need: 2,000 seedlings
-Buffer (25%): 500 seedlings
-Total order: 2,500 seedlings
+Area: 1 hectare
+Density: 1,000 trees/hectare (dense restoration planting)
+Base need: 1,000 seedlings
+Buffer (25%): 250 seedlings
+Total order: 1,250 seedlings
 ```
 
 **Species Breakdown:**
 Apply your species mix percentages:
-- 30% Oak = 750 seedlings
-- 20% Pine = 500 seedlings
-- 15% Carob = 375 seedlings
+- 30% Oak = 375 seedlings
+- 20% Pine = 250 seedlings
+- 15% Carob = 188 seedlings
 - etc.
 
 ### 4. Request Quotes
@@ -211,9 +211,15 @@ Before committing to a supplier, verify:
 - Container plants: €5-15 per plant (easier to establish)
 - Delivery: €100-500 (depends on distance and quantity)
 
-**For 2,000 seedlings:**
-- Budget estimate: €5,000-15,000
-- Add 20% contingency: €6,000-18,000
+**For 1,000-1,250 seedlings (1 hectare Bootstrap):**
+- Budget estimate: €2,500-8,000
+- Add 20% contingency: €3,000-10,000
+
+**Bootstrap Model Note:**
+- 1 hectare pilot site requires 1,000-1,250 seedlings (with buffer)
+- Dense planting (1,000 trees/ha) for faster canopy closure
+- Seedling budget fits within €20-30k Year 1 total budget
+- For larger sites post-pilot, scale calculations proportionally
 
 → See: [[32_Funding_Strategy|Funding Strategy]] for grant opportunities
 
