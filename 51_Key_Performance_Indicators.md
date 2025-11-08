@@ -126,7 +126,7 @@
 - 500+ students reached
 - 8+ satisfaction score
 
-→ Strategy: [[60_Marketing_Strategy|Community Engagement]]
+→ Strategy: [[60_Marketing_Communications_Strategy|Community Engagement]]
 
 ---
 
@@ -272,7 +272,7 @@
 - 1,000+ email subscribers
 - 30%+ open rate
 
-→ Strategy: [[60_Marketing_Strategy|Communications Plan]]
+→ Strategy: [[60_Marketing_Communications_Strategy|Communications Plan]]
 
 ---
 
@@ -459,7 +459,7 @@ When KPIs are met or exceeded:
 **Data Sources:**
 - [[20_Restoration_Methodology|Ecological Methods]]
 - [[30_Business_Model|Financial Model]]
-- [[60_Marketing_Strategy|Communications]]
+- [[60_Marketing_Communications_Strategy|Communications]]
 
 **Governance:**
 - [[11_Governance|Reporting Requirements]]
