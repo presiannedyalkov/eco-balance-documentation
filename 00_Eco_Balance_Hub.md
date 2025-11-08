@@ -25,9 +25,12 @@ This release includes:
 - Business model adapted for crowdfunding and sustainable Year 1 operations
 - All strategic documents aligned with realistic founder-level execution
 
-→ See [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] for full details  
-→ See [[CHANGELOG|Changelog]] for complete version history  
+→ See [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] for full details
+→ See [[CHANGELOG|Changelog]] for complete version history
 → Quick start: [[QUICK_REFERENCE_GUIDE|Quick Reference Guide]]
+
+> **📘 Bootstrap Model Approach:**
+> The v2.0.0 Bootstrap Model starts with a **1 hectare Year 1 pilot** (€20k-€30k, 1-2 founders) to prove viability before scaling to **5-10 hectares in Years 2-3** (€250k-€500k, 3-4 staff). Implementation tasks describe full-scale methods; Year 1 focuses on core subset aligned with 1 ha scope.
 
 ---
 
@@ -95,6 +98,9 @@ This release includes:
 
 **All detailed execution guides ready to use:**
 
+> **📘 Bootstrap Implementation Note:**
+> Implementation tasks below describe full-scale restoration methods. For Year 1 Bootstrap (1 ha), focus on core activities aligned with minimal viable demonstration. Scale up in Years 2-3.
+
 ### ✅ Site Selection (9 files)
 → See [[implementation_tasks/site_selection/00_Site_Selection_Overview|Site Selection Overview]]
 - Identify potential locations
@@ -159,9 +165,13 @@ This release includes:
 
 **Mission:** Restore degraded ecosystems in Southern Europe through evidence-based, community-engaged, financially sustainable environmental restoration.
 
-**Initial Investment Ask:** €250,000-€500,000
+**Year 1 Bootstrap Investment:** €20,000-€30,000
 
-**Year 1 Goal:** Establish gGmbh, secure 5-10 hectares, plant 1,000+ trees, engage 100+ community members
+**Year 1 Bootstrap Goal:** Establish gGmbH, secure 1 hectare pilot site, plant 200-500 trees, engage local community, prove concept
+
+**Years 2-3 Expansion Investment:** €250,000-€500,000
+
+**Years 2-3 Expansion Goal:** Scale to 5-10 hectares, professional team (3-4 staff), revenue generation begins
 
 **Long-term Vision (10 years):** 10,000+ hectares managed globally, financial sustainability achieved, model replicated worldwide
 
@@ -207,18 +217,20 @@ This release includes:
 
 **90-Day Goals:**
 - [ ] gGmbH registration submitted
-- [ ] €50k+ in funding pipeline
-- [ ] 5 potential land sites identified
+- [ ] €20k-€30k in funding pipeline (Bootstrap capital)
+- [ ] 5 potential 1-hectare land sites identified
 - [ ] Website and social media launched
-- [ ] 5+ Advisory Board members
-- [ ] 10+ grant applications submitted
+- [ ] 3+ Advisory Board members committed
+- [ ] Personal network funding outreach begun
 
-**Year 1 Goals:**
-- [ ] Legal entity registered
-- [ ] €250k+ funding secured
-- [ ] Land site acquired (5-10 ha)
-- [ ] Core team hired (3 staff)
-- [ ] First plantings completed (1,000+ trees)
+**Year 1 Bootstrap Goals:**
+- [ ] Legal entity registered (gGmbH)
+- [ ] €20k-€30k Bootstrap funding secured
+- [ ] 1 hectare pilot site acquired (with expansion rights)
+- [ ] 1-2 founders operational
+- [ ] First plantings completed (200-500 trees)
+- [ ] Proof of concept demonstrated
+- [ ] Expansion funding pitch prepared
 
 **Critical Path:** See [[42_Next_Steps_90_Days|Next 90 Days]]
 

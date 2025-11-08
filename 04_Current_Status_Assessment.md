@@ -133,17 +133,23 @@
 
 **Impact:** Cannot acquire land or begin operations
 
-**Actions Needed:**
-- [ ] Create pitch deck and case for support
-- [ ] Submit 10+ grant applications (first 90 days)
-- [ ] Engage corporate partners
-- [ ] Launch crowdfunding campaign
-- [ ] Identify major donors
+**Year 1 Bootstrap Funding Actions:**
+- [ ] Create Bootstrap pitch deck (€20k-€30k ask)
+- [ ] Reach out to friends/family network
+- [ ] Launch small crowdfunding campaign (€5k-€10k)
+- [ ] Apply for 3-5 small grants/microfinance
+- [ ] Prepare detailed Year 1 budget
 
-**Targets:**
-- 90 days: €50,000 committed or strong pipeline
-- 6 months: €100,000-€150,000 secured
-- 12 months: €250,000+ secured
+**Year 1 Bootstrap Targets:**
+- 90 days: €10,000 committed or strong pipeline
+- 6 months: €15,000-€20,000 secured
+- 12 months: Full €20,000-€30,000 secured
+
+**Year 2-3 Expansion Funding (Future):**
+- Launch major grant applications (10+ applications)
+- Engage angel/impact investors
+- Approach corporate partners
+- Target: €250,000-€500,000
 
 → Strategy: [[32_Funding_Strategy|Detailed Funding Plan]]
 
@@ -156,15 +162,18 @@
 **Impact:** Core project asset not identified
 
 **Actions Needed:**
-- [ ] Create site evaluation scorecard
-- [ ] Research 15-20 potential sites online
+- [ ] Create site evaluation scorecard for 1 hectare Bootstrap sites
+- [ ] Research 15-20 potential 1-hectare sites with expansion potential
 - [ ] Contact local real estate agents/NGOs
 - [ ] Visit top 5 sites
 - [ ] Conduct preliminary assessments
-- [ ] Negotiate purchase/lease
+- [ ] Negotiate purchase/lease with expansion rights
 
-**Timeline:** Select by Month 6, acquire by Month 9-12  
-**Cost:** €100,000-€200,000 (purchase) or €5,000-€20,000/year (lease)
+**Year 1 Bootstrap Timeline:** Select by Month 3-4, acquire by Month 6
+**Year 1 Bootstrap Cost:** €5,000-€15,000 (purchase) or €500-€2,000/year (lease)
+
+**Year 2-3 Expansion:** Scale to 5-10 hectares
+**Expansion Cost:** €100,000-€200,000 (purchase) or €5,000-€20,000/year (lease)
 
 → Criteria: [[02_Project_Vision|Target Geography]]
 
@@ -178,15 +187,23 @@
 
 **Impact:** Cannot execute without people
 
-**Actions Needed:**
-- [ ] Define founding team (3-5 people)
-- [ ] Create job descriptions
-- [ ] Recruit Executive Director
-- [ ] Hire Project Manager & Ecologist (Month 6)
-- [ ] Build Advisory Board (5-7 members)
+**Year 1 Bootstrap Team Actions:**
+- [ ] Identify 1-2 committed founders
+- [ ] Define multi-skilled founder roles
+- [ ] Build Advisory Board (3-5 volunteer advisors)
+- [ ] Network with potential future hires
 
-**Timeline:** Founding team Month 1, hires Month 6  
-**Cost:** €90,000-€120,000/year (3 staff)
+**Year 1 Bootstrap Timeline:** Founding team Month 1
+**Year 1 Bootstrap Cost:** €0-€20,000/year (founders unpaid or minimal stipend)
+
+**Year 2-3 Professional Team (Future):**
+- [ ] Recruit Executive Director
+- [ ] Hire Project Manager & Ecologist
+- [ ] Expand Advisory Board to 5-7 members
+- [ ] Hire Community Engagement Coordinator
+
+**Expansion Timeline:** Begin hiring Month 12-18
+**Expansion Cost:** €90,000-€120,000/year (3-4 staff)
 
 → Structure: [[12_Team_Roles|Team Roles]]
 
@@ -270,13 +287,20 @@
 - ❌ Legal: Not registered
 - ❌ Team: Not assembled
 
-**Where We Need to Be (Seed Phase):**
-- ✅ Legal entity registered
-- ✅ €250,000+ funding secured
-- ✅ Core team hired (3+ people)
-- ✅ Land acquired (5-10 ha)
-- ✅ First plantings established
+**Where We Need to Be (Bootstrap Phase - Year 1):**
+- ✅ Legal entity registered (gGmbH)
+- ✅ €20k-€30k Bootstrap funding secured
+- ✅ 1-2 founders operational
+- ✅ 1 hectare pilot site acquired (with expansion potential)
+- ✅ First plantings established (200-500 trees)
 - ✅ Baseline measurements done
+- ✅ Proof of concept demonstrated
+
+**Future Expansion Phase (Years 2-3):**
+- ✅ €250k-€500k expansion funding secured
+- ✅ Core team hired (3-4 people)
+- ✅ Land expanded to 5-10 hectares
+- ✅ Revenue operations begun
 - ✅ 2+ partnerships formalized
 
 **Gap Analysis:** Still in preparation phase. Need to transition to execution.
@@ -310,76 +334,92 @@
 
 ## ⏱️ Timeline Reality Check
 
-### Realistic Path to Operations
+### Realistic Path to Bootstrap Operations (Year 1)
 
-**Optimistic Scenario:** 9 months
-- Month 1-2: Legal setup expedited
-- Month 3-4: Large grant secured
-- Month 5-6: Land acquired quickly
-- Month 7-9: Team hired, operations begin
+**Optimistic Scenario:** 6 months
+- Month 1-2: Legal setup expedited, founders committed
+- Month 2-3: Bootstrap funding (€20k-€30k) secured quickly
+- Month 3-4: 1 hectare site acquired
+- Month 5-6: First plantings completed, operations begun
 
-**Realistic Scenario:** 12-18 months
-- Month 1-3: Legal setup
-- Month 3-9: Gradual funding secured
-- Month 6-12: Land search and acquisition
-- Month 9-18: Team building, operations begin
+**Realistic Scenario:** 9-12 months (Bootstrap approach)
+- Month 1-3: Legal setup, founding team confirmed
+- Month 3-6: Bootstrap funding gradually secured (€20k-€30k)
+- Month 4-8: 1 hectare land search and acquisition
+- Month 9-12: Plantings completed, proof of concept demonstrated
 
-**Conservative Scenario:** 18-24 months
-- Funding comes slowly
-- Multiple challenges encountered
+**Conservative Scenario:** 12-18 months
+- Bootstrap funding comes slowly
+- Land acquisition challenges
 - Patient building approach
 - Steady progress but slower
 
-**Recommendation:** Plan for 12-18 months. Accept that preparation takes time. Use this period for thorough foundation building.
+**Recommendation:** Plan for 9-12 months to Bootstrap launch. The Bootstrap approach significantly reduces timeline compared to seeking €250k+ upfront. Focus on proving concept first, then scaling.
 
 ---
 
 ## 🎯 Next Phase Requirements
 
-### To Advance to Seed/Pilot Phase
+### To Advance to Bootstrap Pilot Phase (Year 1)
 
 **Must Complete:**
 1. Legal entity registered (gGmbH)
-2. Funding secured (€250,000+ minimum)
-3. Land identified and acquired (5-10 ha)
-4. Core team assembled (3+ staff)
-5. Partnerships established (2+ universities)
+2. Bootstrap funding secured (€20,000-€30,000)
+3. 1 hectare pilot site identified and acquired (with expansion potential)
+4. 1-2 founders committed and operational
+5. Initial partnerships established (1-2 advisors/universities)
 6. Public presence launched (website, social)
 7. Community relationships begun
 
-**Estimated Timeline:** 9-18 months  
-**Estimated Investment:** €15,000-€30,000 pre-operational costs
+**Estimated Timeline:** 6-12 months
+**Estimated Investment:** €5,000-€10,000 pre-operational costs (legal, planning)
+
+### To Advance to Expansion Phase (Years 2-3)
+
+**Must Complete:**
+1. Year 1 Bootstrap pilot successfully demonstrated
+2. Expansion funding secured (€250,000-€500,000)
+3. Land expanded to 5-10 hectares
+4. Professional team hired (3-4 staff)
+5. Formal partnerships established (2+ universities)
+6. Revenue operations begun
+7. Proof of financial sustainability pathway
+
+**Estimated Timeline:** 18-24 months from Bootstrap completion
+**Estimated Investment:** Bootstrap success required before expansion funding
 
 ---
 
 ## 📈 Progress Tracking
 
-### Monthly Assessment Framework
+### Monthly Assessment Framework (Bootstrap Year 1)
 
 **Month 1 Check:**
-- Founding team confirmed? ☐
-- Legal process started? ☐
-- Pitch materials drafted? ☐
+- 1-2 founders confirmed and committed? ☐
+- Legal process started (gGmbH)? ☐
+- Bootstrap funding strategy drafted? ☐
 
 **Month 3 Check:**
 - gGmbH registration submitted? ☐
-- €50k in pipeline? ☐
-- 5 land sites identified? ☐
+- €20k-€30k Bootstrap funding pipeline identified? ☐
+- 5+ potential 1-hectare land sites identified? ☐
 
 **Month 6 Check:**
 - gGmbH complete? ☐
-- €100k+ secured? ☐
-- Partnerships forming? ☐
+- €15k+ Bootstrap funding secured? ☐
+- 1 hectare site acquired or lease signed? ☐
+- Initial partnerships forming? ☐
 
 **Month 9 Check:**
-- €200k+ secured? ☐
-- Land acquisition in progress? ☐
-- Team hiring begun? ☐
+- Full €20k-€30k Bootstrap funding secured? ☐
+- First plantings completed (200-500 trees)? ☐
+- Baseline measurements established? ☐
 
 **Month 12 Check:**
-- Operations begun? ☐
-- First plantings completed? ☐
-- Community engaged? ☐
+- Bootstrap pilot operational? ☐
+- Community relationships established? ☐
+- Proof of concept documented? ☐
+- Expansion funding pitch prepared? ☐
 
 → Detailed actions: [[42_Next_Steps_90_Days|90-Day Plan]]
 
