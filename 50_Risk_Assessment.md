@@ -319,7 +319,7 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 - **Local leadership roles:** Community members on Advisory Board
 - **Benefit sharing:** Community shares in success
 
-→ Strategy: [[60_Marketing_Strategy|Community Engagement]]
+→ Strategy: [[60_Marketing_Communications_Strategy|Community Engagement]]
 
 ---
 

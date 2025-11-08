@@ -32,7 +32,7 @@ Multiple revenue streams including eco-tourism, carbon credits, and energy surpl
 
 ### 🤝 Community-Centric
 Local employment, education, and traditional knowledge integration
-→ See [[60_Marketing_Strategy|Community Engagement]]
+→ See [[60_Marketing_Communications_Strategy|Community Engagement]]
 
 ### 📊 Scientific Rigor
 Research partnerships, peer-reviewed validation, and continuous monitoring

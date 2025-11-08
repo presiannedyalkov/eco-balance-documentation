@@ -224,10 +224,10 @@
 - [ ] Begin content creation
 - [ ] Create pitch video
 
-**Timeline:** Launch Month 2-3  
+**Timeline:** Launch Month 2-3
 **Cost:** €5,000-€10,000
 
-→ Strategy: [[60_Marketing_Strategy|Marketing & Communications]]
+→ Strategy: [[60_Marketing_Communications_Strategy|Marketing & Communications]]
 
 ---
 

@@ -75,7 +75,7 @@ We don't just plant trees—we rebuild entire ecosystems through a comprehensive
 - Education programs
 - Community ownership
 
-→ Details in [[60_Marketing_Strategy|Community Engagement]]
+→ Details in [[60_Marketing_Communications_Strategy|Community Engagement]]
 
 #### 3. Leverage Technology
 - Solar energy systems
@@ -185,7 +185,7 @@ Evidence-based methods validated by peer review.
 
 ### Community Partnership
 Local people are partners, not recipients.
-→ See [[60_Marketing_Strategy|Community Engagement]]
+→ See [[60_Marketing_Communications_Strategy|Community Engagement]]
 
 ### Financial Model
 Multiple revenue streams ensure sustainability.

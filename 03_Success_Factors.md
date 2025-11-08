@@ -68,7 +68,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Cultural sensitivity** (respect traditions)
 - ✅ **Long-term relationships** (not transactional)
 
-→ Strategy: [[60_Marketing_Strategy|Community Engagement]]
+→ Strategy: [[60_Marketing_Communications_Strategy|Community Engagement]]
 
 **Failure Mode:** Top-down approach, broken promises, ignoring concerns = community resistance and project failure
 
@@ -236,7 +236,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** Early engagement critical. We'll listen, adapt, and build trust.
 
-→ Strategy: [[60_Marketing_Strategy|Community Approach]]
+→ Strategy: [[60_Marketing_Communications_Strategy|Community Approach]]
 
 **Economic:**
 - No major economic disruption
