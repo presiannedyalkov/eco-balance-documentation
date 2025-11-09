@@ -32,6 +32,110 @@
 
 ---
 
+## 🌍 Location Selection - Adaptive Framework
+
+**Vision**: Find optimal location for ecosystem restoration in Europe
+
+### Core Requirements (Non-Negotiable)
+
+- **Climate** suitable for reforestation (400-800mm annual rainfall)
+- **Legal framework** allows small-scale restoration (1-5ha)
+- **Affordable land** (€5-30k budget for purchase OR €500-2k/year lease)
+- **Founders can legally live/work** there (EU residency/work permits)
+- **Reasonable access** to services (within 30-60 min of town)
+
+---
+
+### Geographic Options - Where to Build in Europe
+
+#### Option A: Germany (Temperate Climate)
+
+**Regions**: Brandenburg (east), Saxony, Thuringia, Bavaria (varied)
+
+**Climate**: 500-700mm rain, 4 seasons, -5°C to 30°C, moderate
+
+**Land costs**: €5,000-15,000/ha (Brandenburg cheap, Bavaria expensive)
+
+**Species**: Oak, Beech, Birch, Pine, Willow, Hazel - native temperate forest
+
+**Pros**:
+- Strong environmental laws/support
+- Excellent grant opportunities (DBU, EU LIFE, Länder programs)
+- Founder familiar with culture/language (if applicable)
+- e.V. legal structure well-established (€500, 4-8 weeks)
+- Good infrastructure
+
+**Cons**:
+- More expensive than Southern Europe
+- Slower growing season
+- Bureaucratic processes
+- Less sunny/warm (if that matters to founders)
+
+**Best if**: Grant funding secured, want institutional support, temperate climate preference
+
+**Status**: Strong candidate, researching specific regions
+
+---
+
+#### Option B: Portugal (Mediterranean Climate)
+
+**Regions**: Alentejo (interior), Beira Interior, Trás-os-Montes (north interior)
+
+**Climate**: 400-600mm rain (winter concentrated), summer drought, 0°C to 40°C
+
+**Land costs**: €3,000-10,000/ha (interior much cheaper than coast)
+
+**Species**: Cork Oak, Holm Oak, Stone Pine, Strawberry Tree, Carob - Mediterranean adapted
+
+**Pros**:
+- Very affordable land (€3-5k/ha in interior)
+- Warm climate, longer growing season
+- High restoration need (fire-prone, degraded land)
+- Startup-friendly culture, lower cost of living
+- Grant opportunities (Fundo Ambiental, EU programs)
+
+**Cons**:
+- Summer drought requires irrigation planning
+- Language barrier (if founders don't speak Portuguese)
+- Slower bureaucracy than Germany
+- Legal structure (Associação) less familiar
+- Wildfire risk requires firebreaks
+
+**Best if**: Budget constrained, warm climate preference, willing to adapt to Mediterranean methods
+
+**Status**: Strong candidate, appealing for lifestyle + cost
+
+---
+
+#### Option C: Spain (Mediterranean/Varied Climate)
+
+**Regions**: Castile (interior), Aragon, Extremadura, Andalusia (south), Galicia (northwest)
+
+**Climate**: Varied - Mediterranean (south/interior), oceanic (northwest), continental (center)
+
+**Land costs**: €4,000-12,000/ha (varies by region, interior cheapest)
+
+**Species**: Depends on region - Mediterranean (Holm Oak, Aleppo Pine) or temperate (Oak, Chestnut)
+
+**Pros**:
+- Large country with diverse options
+- Affordable land in many regions
+- Strong restoration movement (reforestation culture)
+- EU member (grants, legal framework)
+- Good climate (depending on region)
+
+**Cons**:
+- Language barrier (Spanish required)
+- Bureaucracy varies by region
+- Water scarcity in many areas
+- Legal structure unfamiliar (Asociación)
+
+**Best if**: Want climate/geographic diversity, Spanish language ability, open to various regions
+
+**Status**: Exploring opportunistically
+
+---
+
 ## 🎯 Bootstrap Site Requirements
 
 ### Essential Criteria (Non-Negotiable)
