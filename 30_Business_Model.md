@@ -194,8 +194,145 @@ Understanding the budget ranges - what's included at each level:
 
 **All ranges are correct - they measure different scopes.**
 
-→ Detailed technology: [[21_Technology_Integration|Tech Specs]]  
+→ Detailed technology: [[21_Technology_Integration|Tech Specs]]
 → Detailed housing: [[45_Tiny_House_and_Living_Infrastructure|Housing Options]]
+
+---
+
+## Funding Pathways - Adaptive Framework
+
+**Philosophy:** Multiple pathways, adaptive strategy, pursue parallel opportunities
+
+### Overview: Decision Framework for Year 1 Funding
+
+**Total Needed:** €20-30k
+**Strategy:** Portfolio approach - pursue 2-3 pathways simultaneously
+**Timeline:** 3-6 months to secure primary funding
+
+**Key Principle:** Don't put all eggs in one basket. Start multiple pathways, pivot based on early signals.
+
+---
+
+### Option A: Crowdfunding Campaign (€15-25k)
+
+**Target Amount:** €15-25k
+**Timeline:** 3-6 months (2-3 months prep + 30-60 day campaign)
+**Success Rate:** 30-60% (varies widely by preparation and network)
+
+#### Cost Structure
+- **Campaign Costs:** €500-2,000
+  - Platform fees (5-8% of raised amount)
+  - Video production (€200-800)
+  - Professional photos (€100-400)
+  - Marketing materials (€100-300)
+  - Ads/promotion (€100-500)
+
+**Net Raised:** €13-23k (after fees)
+
+#### Pros
+- ✅ **Fast timeline** - Results in 30-60 days once launched
+- ✅ **Community building** - Creates engaged supporter base
+- ✅ **No equity loss** - Keep full control of project
+- ✅ **Marketing benefit** - Raises awareness beyond funding
+- ✅ **Validation** - Tests market interest in concept
+- ✅ **Flexible use** - No restrictions on how funds are spent
+
+#### Cons
+- ❌ **All-or-nothing risk** - Most platforms require hitting goal to receive funds
+- ❌ **Requires existing audience** - Hard to succeed without network
+- ❌ **Marketing skills needed** - Video, storytelling, social media crucial
+- ❌ **Time intensive** - 2-3 months prep + active campaign management
+- ❌ **Uncertain outcome** - Success depends on many variables
+- ❌ **Donor fatigue** - Hard to re-run if first campaign fails
+
+#### Best If You Have
+- Strong storytelling ability (written + video)
+- Existing network or social media following (500+ engaged contacts)
+- 2-3 months to dedicate to campaign preparation
+- Marketing/social media skills or willing to learn
+- Emotional resilience (public campaigns can be stressful)
+
+#### Current Status: Primary Pathway
+- **Prep Stage:** Active preparation in progress
+- **Timeline:** Target launch Q2 2025
+- **Resources:** Campaign materials being developed
+- **Decision Point:** Launch if reach 200+ warm contacts and solid video
+
+→ Detailed crowdfunding strategy: [[32_Funding_Strategy|Funding Strategy Doc]]
+
+---
+
+### Option B: Major Grant Applications (€20-50k)
+
+**Target Amount:** €20-50k
+**Timeline:** 6-12 months (application to decision)
+**Success Rate:** 5-15% (highly competitive)
+
+#### Primary Grant Targets
+
+**1. Deutsche Bundesstiftung Umwelt (DBU) - Germany**
+- **Amount:** €20,000 - €250,000
+- **Focus:** Innovative environmental projects, pilot initiatives
+- **Timeline:** 6-12 months (application to decision)
+- **Requirements:** Detailed project plan, German language helpful
+- **Fit:** Excellent - restoration + technology integration matches perfectly
+- **Application Complexity:** High (60-80 hours for quality proposal)
+
+**2. Fundo Ambiental - Portugal**
+- **Amount:** €10,000 - €50,000
+- **Focus:** Environmental restoration, conservation projects
+- **Timeline:** 4-8 months
+- **Requirements:** Portuguese entity helpful, detailed budget
+- **Fit:** Good - direct match for restoration focus
+- **Application Complexity:** Medium-High (40-60 hours)
+
+**3. EU LIFE Programme - Small Grants**
+- **Amount:** €50,000+ (typically larger)
+- **Focus:** Biodiversity, nature restoration, climate adaptation
+- **Timeline:** 12-18 months (very long)
+- **Requirements:** Multi-year project plan, co-financing (25-40%)
+- **Fit:** Good for expansion phase, too large for bootstrap
+- **Application Complexity:** Very High (100+ hours)
+
+#### Cost Structure
+- **Application Costs:** €500-2,000
+  - Proposal writing time (60-100 hours)
+  - Translation services (€200-500 if needed)
+  - Professional budget development (€100-300)
+  - Required documentation (€100-400)
+  - Travel for meetings (€200-800 if required)
+
+**Net Received:** Full amount (no fees) but significant time investment
+
+#### Pros
+- ✅ **Large amounts** - Can fully fund Year 1 with single grant
+- ✅ **Prestige** - Validation from respected institutions
+- ✅ **No repayment** - Pure grant, not loan
+- ✅ **Network access** - Opens doors to other funders
+- ✅ **Credibility** - Strengthens future applications
+- ✅ **Mission aligned** - Funders who genuinely care about impact
+
+#### Cons
+- ❌ **Very slow** - 6-12 months minimum, often longer
+- ❌ **Highly competitive** - 5-15% success rates typical
+- ❌ **Time intensive** - 60-100 hours per quality application
+- ❌ **Bureaucratic** - Extensive reporting requirements
+- ❌ **Uncertain timing** - Hard to plan around unpredictable decisions
+- ❌ **May require matching funds** - Some grants need 25-40% co-financing
+
+#### Best If You Have
+- Strong proposal writing skills (or can hire help)
+- Patience to wait 6-12+ months for decisions
+- Can apply in German/Portuguese (or budget for translation)
+- Established entity or can partner with one
+- Time to develop high-quality applications (60-100 hours each)
+- Can pursue other funding in parallel (don't rely solely on grants)
+
+#### Current Status: Exploring in Parallel
+- **Research Stage:** Identifying best-fit opportunities
+- **Timeline:** Applications Q1-Q2 2025 for potential Q3-Q4 funding
+- **Strategy:** Apply to 2-3 top targets, don't wait for results
+- **Decision Point:** Submit applications but pursue crowdfunding simultaneously
 
 ---
 
