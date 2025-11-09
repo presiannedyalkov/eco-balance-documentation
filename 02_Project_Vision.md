@@ -519,7 +519,7 @@ We are in a **critical decade** for climate action:
 
 **Implementation:**
 - [[20_Restoration_Methodology|Restoration Methodology]]
-- [[42_Next_Steps_90_Days|Phase 1 - Next 90 Days]]
+- [[42_Adaptive_Timeline|Phase 1 - Next 90 Days]]
 
 **Risk Management:**
 - [[50_Risk_Assessment|Risk Assessment]]

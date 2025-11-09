@@ -632,7 +632,7 @@
 - [[44_Site_Selection_Land_Acquisition|Land Acquisition Costs]] - Land purchase/lease analysis
 
 **Timeline & Operations**:
-- [[42_Next_Steps_90_Days|Timeline & Phasing]] - How timeline affects financial projections
+- [[42_Adaptive_Timeline|Timeline & Phasing]] - How timeline affects financial projections
 - [[43_Operations_Action_Plan|Daily Operations]] - Operating cost drivers
 
 **Performance & Risk**:

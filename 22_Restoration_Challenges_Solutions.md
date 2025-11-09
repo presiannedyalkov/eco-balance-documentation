@@ -505,7 +505,7 @@ Our strategy deliberately addresses all these challenges:
 **Implementation:**
 - [[30_Business_Model|Business Model]] - Financial sustainability
 - [[32_Funding_Strategy|Funding Strategy]] - Securing resources
-- [[42_Next_Steps_90_Days|Next Steps]] - Getting started
+- [[42_Adaptive_Timeline|Next Steps]] - Getting started
 
 ---
 

@@ -70,7 +70,7 @@ Research partnerships, peer-reviewed validation, and continuous monitoring
 
 ### 📈 Scalable Model
 Documented processes designed for global replication
-→ See [[40_Expansion_Growth_Strategy|Growth Roadmap]] and [[43_Daily_Operations|Operations]]
+→ See [[40_Expansion_Growth_Strategy|Growth Roadmap]] and [[43_Operations_Action_Plan|Operations]]
 
 ---
 
@@ -391,7 +391,7 @@ This comprehensive yet flexible approach creates lasting, transformative change.
 
 **Implementation**:
 - [[42_Adaptive_Timeline|Adaptive Timeline]] (formerly Next 90 Days)
-- [[43_Daily_Operations|Daily Operations]]
+- [[43_Operations_Action_Plan|Daily Operations]]
 - [[32_Funding_Strategy|Funding Strategy]]
 
 **Organization & Legal**:

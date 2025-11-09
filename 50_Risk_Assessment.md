@@ -1238,7 +1238,7 @@ Monitor these signals that risks may be materializing:
 **Specific Risk Areas:**
 - [[30_Business_Model|Financial Sustainability]]
 - [[20_Restoration_Methodology|Ecological Approach]]
-- [[42_Next_Steps_90_Days|Implementation Risks]]
+- [[42_Adaptive_Timeline|Implementation Risks]]
 
 **Monitoring:**
 - [[51_Key_Performance_Indicators|Risk Indicators]]

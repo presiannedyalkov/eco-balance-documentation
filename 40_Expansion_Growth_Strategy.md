@@ -13,7 +13,7 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 **Goal:** Validate restoration approach at 1 hectare pilot scale
 
 **This is Year 0** - proving the model before Phase 1 expansion. See:
-- [[42_Next_Steps_90_Days|First 90 Days]]: Campaign & land acquisition
+- [[42_Adaptive_Timeline|First 90 Days]]: Campaign & land acquisition
 - [[43_Operations_Action_Plan|Operations Guide]]: Bootstrap operations
 - [[44_Site_Selection_Land_Acquisition|Site Selection]]: Finding 1 ha site
 
@@ -1157,7 +1157,7 @@ Significant scale requiring professional team, equipment, and infrastructure. Re
 1. Legal NGO registration complete → [[13_Legal_Framework|Legal Framework]]
 2. Initial funding secured (€20-30k for Bootstrap) → [[32_Funding_Strategy|Funding Strategy]]
 3. Core 1-2 person founder team in place → [[12_Team_Roles|Team Roles]]
-4. First 1 hectare site identified → [[42_Next_Steps_90_Days|Next Steps]]
+4. First 1 hectare site identified → [[42_Adaptive_Timeline|Next Steps]]
 
 **Critical 90-Day Milestones:**
 
@@ -1173,7 +1173,7 @@ Significant scale requiring professional team, equipment, and infrastructure. Re
 10. **Begin recruiting core team members** → [[12_Team_Roles|Team Roles]]
 
 **First 90 days focus on Phase 1 foundation - detailed in:**
-- [[42_Next_Steps_90_Days|Next Steps]] - Week-by-week action plan
+- [[42_Adaptive_Timeline|Next Steps]] - Week-by-week action plan
 
 ---
 
@@ -1189,7 +1189,7 @@ Significant scale requiring professional team, equipment, and infrastructure. Re
 - [[30_Business_Model|Business Model]] - Financial sustainability plan
 
 **Implementation:**
-- [[42_Next_Steps_90_Days|Next Steps]] - Immediate action plan
+- [[42_Adaptive_Timeline|Next Steps]] - Immediate action plan
 - [[51_Key_Performance_Indicators|KPIs]] - Success measurement
 
 ---

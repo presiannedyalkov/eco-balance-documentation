@@ -610,7 +610,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 - **Response:** Pause project, ultra-lean bootstrap only if viable, or graceful exit
 - **Major restructuring or pause required**
 
-→ Actions: [[42_Next_Steps_90_Days|Decision Points]]
+→ Actions: [[42_Adaptive_Timeline|Decision Points]]
 
 ---
 
@@ -856,7 +856,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 **Implementation:**
 - [[40_Expansion_Growth_Strategy|Growth Roadmap]]
 - [[43_Operations_Action_Plan|Operations Plan]]
-- [[42_Next_Steps_90_Days|Immediate Actions]]
+- [[42_Adaptive_Timeline|Immediate Actions]]
 
 **Risk & Performance:**
 - [[50_Risk_Assessment|Risk Management]]

@@ -79,7 +79,7 @@ This release includes:
 
 ### Implementation
 - [[40_Expansion_Growth_Strategy|Expansion & Growth Strategy]] - 10-year scaling plan
-- [[42_Next_Steps_90_Days|Next 90 Days]] - Week-by-week critical actions
+- [[42_Adaptive_Timeline|Next 90 Days]] - Week-by-week critical actions
 - [[43_Operations_Action_Plan|Operations & Action Plan]] - Complete NGO building guide
 - [[44_Site_Selection_Land_Acquisition|Site Selection & Land Acquisition]] - Finding and acquiring land
 - [[implementation_tasks/README|Implementation Tasks Hub]] ✅ - 44 detailed step-by-step guides
@@ -234,7 +234,7 @@ This release includes:
 - [ ] Proof of concept demonstrated
 - [ ] Expansion funding pitch prepared
 
-**Critical Path:** See [[42_Next_Steps_90_Days|Next 90 Days]]
+**Critical Path:** See [[42_Adaptive_Timeline|Next 90 Days]]
 
 ---
 
@@ -244,7 +244,7 @@ This release includes:
 1. [[QUICK_REFERENCE_GUIDE|Quick Reference Guide]] - Navigation help (5 min)
 2. [[01_Executive_Summary|Executive Summary]] - Quick overview (5 min)
 3. [[02_Project_Vision|Project Vision]] - Why this matters (10 min)
-4. [[42_Next_Steps_90_Days|Next 90 Days]] - Immediate actions (15 min)
+4. [[42_Adaptive_Timeline|Next 90 Days]] - Immediate actions (15 min)
 
 ### If You're a Potential Funder
 1. [[01_Executive_Summary|Executive Summary]] - Investment ask
@@ -529,7 +529,7 @@ This is a **living knowledge base** that follows semantic versioning:
 3. Check [[_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]] (10 min)
 
 **Ready to take action?**
-1. Go to [[42_Next_Steps_90_Days|Next 90 Days]]
+1. Go to [[42_Adaptive_Timeline|Next 90 Days]]
 2. Review [[implementation_tasks/README|Implementation Tasks]]
 3. Start executing!
 

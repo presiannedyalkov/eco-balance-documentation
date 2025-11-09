@@ -2081,7 +2081,7 @@
 - [[02_Project_Vision|Why This Matters]]
 
 **Implementation:**
-- [[42_Next_Steps_90_Days|Immediate Action Plan]]
+- [[42_Adaptive_Timeline|Immediate Action Plan]]
 - [[43_Operations_Action_Plan|Launch Operations]]
 
 **Infrastructure Investment:**

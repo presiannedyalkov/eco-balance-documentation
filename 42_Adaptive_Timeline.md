@@ -681,7 +681,7 @@ The actual timeline will emerge based on these key factors:
 - Assess expansion possibilities for Years 2-5
 
 **See Related Documents**:
-- [[43_Daily_Operations|Operations Plan]] - What daily/weekly work looks like
+- [[43_Operations_Action_Plan|Operations Plan]] - What daily/weekly work looks like
 - [[40_Expansion_Growth_Strategy|Expansion Options]] - How to scale beyond 1ha
 - [[51_Key_Performance_Indicators|Measuring Success]] - How to track progress
 
@@ -753,7 +753,7 @@ Whether your timeline is 6 months or 36 months:
 - [[10_Organizational_Structure|Legal Structure Options]] - e.V., Associação, gGmbH, and more
 
 **Implementation**:
-- [[43_Daily_Operations|Operations Plan]] - What happens after you launch
+- [[43_Operations_Action_Plan|Operations Plan]] - What happens after you launch
 - [[20_Restoration_Methodology|Restoration Methods]] - Temperate vs Mediterranean approaches
 - [[21_Technology_Integration|Technology Options]] - Solar, water, monitoring equipment
 

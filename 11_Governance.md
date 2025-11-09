@@ -1000,7 +1000,7 @@
 
 **Risk and Operations**:
 - [[50_Risk_Assessment|Risk Assessment]] - Detailed risk analysis and mitigation
-- [[42_Next_Steps_90_Days|Adaptive Timeline]] - Governance setup timeline
+- [[42_Adaptive_Timeline|Adaptive Timeline]] - Governance setup timeline
 
 **Stakeholder Engagement**:
 - [[60_Marketing_Communications_Strategy|Communications Strategy]] - Transparency and reporting to supporters

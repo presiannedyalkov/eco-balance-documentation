@@ -820,7 +820,7 @@ Understanding the budget ranges - what's included at each level:
 **Next Steps:**
 → Detailed crowdfunding strategy: [[32_Funding_Strategy|Funding Strategy]]
 → Grant landscape: [[32_Funding_Strategy|Grant Options]]
-→ Timeline integration: [[42_Next_Steps_90_Days|Action Plan]]
+→ Timeline integration: [[42_Adaptive_Timeline|Action Plan]]
 
 ---
 
@@ -1194,7 +1194,7 @@ Understanding the budget ranges - what's included at each level:
 
 **Financial Planning:**
 - [[32_Funding_Strategy|Funding Strategy & Crowdfunding]]
-- [[42_Next_Steps_90_Days|Immediate Action Plan]]
+- [[42_Adaptive_Timeline|Immediate Action Plan]]
 
 **Infrastructure Investment:**
 - [[21_Technology_Integration|Technology Budget Details]]

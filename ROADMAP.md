@@ -69,7 +69,7 @@ Transform degraded ecosystems in Southern Europe through evidence-based, communi
 - Community of 200-500 supporters built
 - Documented baseline data collected
 
-→ Detailed plan: [[42_Next_Steps_90_Days|Next 90 Days]]
+→ Detailed plan: [[42_Adaptive_Timeline|Next 90 Days]]
 
 ---
 
@@ -405,7 +405,7 @@ Year 5-10: Phase 5 (Replication & Network)
 - [[FEATURE_WISHLIST|Feature Wishlist]] - Desired features and enhancements
 
 **Phase 1 (Bootstrap Launch)**:
-- [[42_Next_Steps_90_Days|Next 90 Days]] - Detailed action plan
+- [[42_Adaptive_Timeline|Next 90 Days]] - Detailed action plan
 - [[32_Funding_Strategy|Funding Strategy]] - Crowdfunding and fundraising
 - [[44_Site_Selection_Land_Acquisition|Site Selection]] - Finding land
 - [[43_Operations_Action_Plan|Operations Plan]] - Site setup and management

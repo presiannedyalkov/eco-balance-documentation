@@ -1419,7 +1419,7 @@ Week 3-4:
 - [[21_Technology_Integration|Technology Setup]]
 
 **Next Steps:**
-- [[42_Next_Steps_90_Days|Immediate Actions - Land Search]]
+- [[42_Adaptive_Timeline|Immediate Actions - Land Search]]
 - [[43_Operations_Action_Plan|Overall Implementation]]
 
 **Legal & Risk:**

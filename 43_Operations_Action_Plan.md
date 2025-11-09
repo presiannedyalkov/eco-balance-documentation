@@ -122,7 +122,7 @@
 - Launch crowdfunding campaign
 - Land search and site visits
 - Build supporter base
-- See: [[42_Next_Steps_90_Days|90-Day Action Plan]]
+- See: [[42_Adaptive_Timeline|90-Day Action Plan]]
 
 **Months 4-6: Site Setup**
 - Land acquisition complete
@@ -1028,7 +1028,7 @@
 - [[45_Tiny_House_and_Living_Infrastructure|Living Infrastructure]]
 
 **Implementation Plans:**
-- [[42_Next_Steps_90_Days|First 90 Days Action Plan]]
+- [[42_Adaptive_Timeline|First 90 Days Action Plan]]
 - [[20_Restoration_Methodology|Restoration Techniques]]
 - [[44_Site_Selection_Land_Acquisition|Finding Your Land]]
 

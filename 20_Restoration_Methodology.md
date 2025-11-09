@@ -1005,7 +1005,7 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 - [[21_Technology_Integration|Monitoring & Tools]]
 
 **Implementation:**
-- [[42_Next_Steps_90_Days|Immediate Actions]]
+- [[42_Adaptive_Timeline|Immediate Actions]]
 - [[43_Operations_Action_Plan|Daily Operations]]
 - [[44_Site_Selection_Land_Acquisition|Finding the Right Site]]
 

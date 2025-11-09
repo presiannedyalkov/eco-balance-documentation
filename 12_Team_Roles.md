@@ -556,7 +556,7 @@
 
 **Work Model & Timeline:**
 - [[42_Adaptive_Timeline|Timeline Options & Work Phases]]
-- [[43_Daily_Operations|Daily Operations & Schedules]]
+- [[43_Operations_Action_Plan|Daily Operations & Schedules]]
 
 **Financial Viability:**
 - [[30_Business_Model|Revenue Model & Funding Pathways]]
