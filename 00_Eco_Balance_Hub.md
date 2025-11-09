@@ -169,7 +169,7 @@ This release includes:
 
 **Year 1 Bootstrap Investment:** €20,000-€30,000
 
-**Year 1 Bootstrap Goal:** Establish gGmbH, secure 1 hectare pilot site, plant 200-500 trees, engage local community, prove concept
+**Year 1 Bootstrap Goal:** Establish legal entity (e.V. or gGmbH, location-dependent), secure 1 hectare pilot site, plant 200-500 trees, engage local community, prove concept
 
 **Years 2-3 Expansion Investment:** €250,000-€500,000
 
@@ -181,8 +181,8 @@ This release includes:
 
 ## 📊 Current Phase: v2.0.0 Bootstrap Model - Ready for Execution
 
-**Project Maturity:** Pre-Seed / Bootstrap Phase  
-**Timeline to Operations:** 6-12 months (Bootstrap approach)  
+**Project Maturity:** Pre-Seed / Bootstrap Phase
+**Timeline to Operations:** 12-18 months baseline (6-9 months fast track, 24-36 months slow track)
 **Documentation Version:** 2.0.0 (Bootstrap Model - Production Release)
 
 ### ✅ Completed
@@ -190,7 +190,7 @@ This release includes:
 - ✅ **ALL strategic planning documents (22 files)**
 - ✅ **ALL implementation task guides (44 files)**
 - ✅ **Professional version control system**
-- ✅ Legal structure identified (gGmbh)
+- ✅ Legal structure options researched (e.V., gGmbH, or Associação - TBD based on location)
 - ✅ Methodology documented
 - ✅ Expansion plan drafted
 - ✅ Business model outlined
@@ -217,8 +217,8 @@ This release includes:
 
 ## 🚀 Next Major Milestones
 
-**90-Day Goals:**
-- [ ] gGmbH registration submitted
+**Phase 0 Goals (Months 1-6):**
+- [ ] Location decision finalized (Germany, Portugal, or other EU)
 - [ ] €20k-€30k in funding pipeline (Bootstrap capital)
 - [ ] 5 potential 1-hectare land sites identified
 - [ ] Website and social media launched
@@ -226,7 +226,7 @@ This release includes:
 - [ ] Personal network funding outreach begun
 
 **Year 1 Bootstrap Goals:**
-- [ ] Legal entity registered (gGmbH)
+- [ ] Legal entity registered (e.V., gGmbH, or Associação - location-dependent)
 - [ ] €20k-€30k Bootstrap funding secured
 - [ ] 1 hectare pilot site acquired (with expansion rights)
 - [ ] 1-2 founders operational
@@ -415,7 +415,7 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 
 ## 📝 Version History
 
-**[2.0.0]** - November 8, 2024 - **CURRENT** - Bootstrap Model v2.0 alignment
+**[2.0.0]** - November 8, 2025 - **CURRENT** - Bootstrap Model v2.0 alignment
 - ✅ Aligned with Bootstrap Model v2.0 framework
 - ✅ Updated all strategic documents for €20-30k bootstrap budget
 - ✅ Enhanced implementation task guides
