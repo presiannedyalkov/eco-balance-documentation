@@ -35,23 +35,81 @@ The world faces interconnected environmental crises that threaten our future:
 
 ---
 
-## Southern Europe: A Critical Battleground
+## Vision vs Execution: Clarity on What, Flexibility on How
 
-Mediterranean ecosystems face exceptional vulnerability:
+### What We Want to Achieve (Vision - Fixed and Clear)
 
+**Our Core Mission** (non-negotiable):
+- **Restore degraded ecosystems** to healthy, biodiverse, functioning states
+- **Demonstrate replicable model** that others can adopt globally
+- **Create sustainable livelihood** from restoration work (not charity-dependent)
+- **Build community** around ecological regeneration
+- **Generate measurable impact** through science-based methods
+
+**Core Values** (unchanging):
+- Ecological integrity (native species, evidence-based methods)
+- Transparency and accountability to supporters
+- Community partnership (not top-down imposition)
+- Financial sustainability (not perpetual fundraising)
+- Knowledge sharing (open documentation for replication)
+
+### How We'll Get There (Execution - Flexible and Adaptive)
+
+**Multiple Pathways Available** (TBD based on opportunities):
+- **Funding**: Crowdfunding, grants, partnerships, bootstrap, or combination
+- **Location**: Germany, Portugal, Spain, France, Italy, or other EU based on opportunities
+- **Timeline**: 6-36 months depending on circumstances
+- **Legal structure**: e.V., gGmbH, Associação, or other based on location
+- **Work model**: Part-time Year 1-2, transition to full-time as revenue supports
+
+**Core Constraints** (non-negotiable limits on execution):
+- **Founder health and financial security** maintained (keep jobs until project revenue is €30-50k/year)
+- **Legal and ethical operation** (full regulatory compliance)
+- **Basic security and rule of law** (operate in stable countries)
+- **No debt/loans** (bootstrap approach only)
+
+**Decision Philosophy**:
+We know **what** we want to achieve (restore ecosystems). We remain flexible on **how** we get there (location, funding, timeline). Decisions will be made based on:
+1. Which opportunities emerge (grants, partnerships, land offers)
+2. What constraints we face (budget, time, regulations)
+3. What maintains our core requirements (security, health, ecological integrity)
+
+**Current Status**:
+- ✅ **Decided**: Vision, values, work model (part-time start), core constraints
+- 🔄 **Exploring**: Funding pathway, location, legal structure, land acquisition
+- ⏳ **Timeline**: Major decisions by Month 4-6 based on what emerges
+
+→ See [[04_Current_Status_Assessment|Current Status]] for detailed decision tracking
+
+---
+
+## European Restoration Opportunities
+
+Europe offers diverse restoration opportunities across multiple climate zones:
+
+### Mediterranean Region Challenges
+**Countries**: Portugal, Spain, Southern France, Greece, Italy
+**Key Issues**:
 - Increased drought frequency and severity
 - Wildfire risk escalating
 - Desertification spreading northward
 - Biodiversity hotspots under threat
 
-**Countries needing urgent intervention:**
-- Portugal
-- Spain
-- Southern France
-- Greece
-- Italy
+### Temperate Region Challenges
+**Countries**: Germany, Northern France, Poland, Czech Republic, Austria
+**Key Issues**:
+- Forest degradation from monoculture forestry
+- Agricultural intensification reducing biodiversity
+- Soil degradation from industrial farming
+- Native ecosystem fragmentation
 
-→ See [[44_Site_Selection_Land_Acquisition|Site Selection]] for target geography details
+**Both regions offer viable restoration opportunities** - final location will depend on:
+- Grant/funding opportunities tied to specific regions
+- Land availability and cost
+- Partnership and mentorship opportunities
+- Regulatory and legal frameworks
+
+→ See [[44_Site_Selection_Land_Acquisition|Site Selection]] for detailed geographic decision framework
 
 ---
 
@@ -138,81 +196,279 @@ Eco Balance draws from successful restoration projects worldwide:
 
 ---
 
-## Target Geography
+## Geographic Strategy: Opportunistic Within Europe
 
-### Primary Focus
-**Southern Europe** - Mediterranean and semi-arid regions
+### Vision
+Establish 1-hectare restoration site in location that offers best combination of opportunity, security, and viability.
 
-### Site Selection Criteria
+### Core Requirements (non-negotiable)
+- **Healthcare accessibility**: Founders have ongoing access to quality healthcare
+- **Basic security and rule of law**: Stable, safe operating environment
+- **Legal framework**: Allows nonprofit land ownership and environmental work
+- **Living viability**: Can live/work there (visa, language manageable)
+- **Restoration potential**: Climate suitable for ecosystem restoration (not extreme desert/arctic)
+
+### Option A: Germany
+
+**Summary**: Temperate forest restoration in founders' home country
+
+**Geographic Focus**: Brandenburg, Saxony, Mecklenburg-Vorpommern (degraded former industrial/agricultural land)
+
+**Pros**:
+- Citizenship (no visa issues, familiar systems)
+- Existing base and networks
+- Established rule of law and healthcare
+- Known regulatory environment
+- German language fluency
+
+**Cons**:
+- Higher costs (land €15-30k/hectare, living €15-30k/year)
+- Temperate climate limits species diversity compared to Mediterranean
+- Slower growing season
+
+**Ecosystem Type**: Temperate forest (Oak, Beech, Birch) | Rainfall: 700-800mm/year
+
+**Legal Structure**: e.V. (€500, 4-8 weeks) or gGmbH (€40k, 3-6 months if Year 3+)
+
+**Best if**: No better opportunity emerges, default safe choice
+
+**Status**: Baseline option - will default here if no compelling alternative within 6 months
+
+### Option B: Portugal
+
+**Summary**: Mediterranean dryland restoration with lower costs
+
+**Geographic Focus**: Alentejo, Beira Interior, Trás-os-Montes (abandoned agricultural land, fire-affected areas)
+
+**Pros**:
+- Lower costs (land €5-15k/hectare, living €10-18k/year)
+- Appealing climate and landscape
+- Mediterranean biodiversity hotspot
+- Growing expat community (English widely spoken in some areas)
+- Strong environmental grant opportunities (Fundo Ambiental)
+
+**Cons**:
+- Bureaucracy can be challenging
+- May need Portuguese language skills
+- Less familiar systems
+- Healthcare system variable by region
+
+**Ecosystem Type**: Mediterranean dryland (Cork Oak, Holm Oak, Stone Pine) | Rainfall: 400-600mm/year
+
+**Legal Structure**: Associação or IPSS (€500-2,000, 2-4 months)
+
+**Best if**: Strong grant/partnership opportunity emerges OR exceptional land offer OR Mediterranean ecosystem preferred
+
+**Status**: Strong candidate if opportunity emerges
+
+### Option C: Spain
+
+**Summary**: Mediterranean to Atlantic diversity, strong regional variation
+
+**Geographic Focus**: Galicia (Atlantic), Castilla y León (Continental), Extremadura (Mediterranean)
+
+**Pros**:
+- Similar to Portugal (costs, climate, opportunities)
+- More English spoken in some regions
+- Diverse ecosystems within one country
+- EU LIFE program funding opportunities
+
+**Cons**:
+- Regional variation (Catalonia vs Andalusia very different)
+- Bureaucracy varies by region
+- Language barrier (Spanish/regional languages)
+
+**Ecosystem Type**: Mediterranean to Atlantic depending on region
+
+**Legal Structure**: Asociación (€500-1,500, 2-4 months)
+
+**Best if**: Grant or partnership specifically in Spain
+
+**Status**: Open if opportunity arises
+
+### Option D: France (Southern)
+
+**Summary**: Mediterranean restoration with strong environmental policies
+
+**Geographic Focus**: Provence, Languedoc, Ardèche (degraded garrigue, maquis, abandoned terraces)
+
+**Pros**:
+- Strong environmental policies and support
+- Accessible from Germany
+- Diverse Mediterranean ecosystems
+- EU funding access
+
+**Cons**:
+- Language barrier (French required)
+- Bureaucracy can be complex
+- Higher costs than Portugal/Spain
+
+**Ecosystem Type**: Mediterranean (south) to temperate (north)
+
+**Legal Structure**: Association loi 1901 (€500-1,000, 2-3 months)
+
+**Best if**: Specific opportunity in France OR grant tied to French operations
+
+**Status**: Open if opportunity arises
+
+### Option E: Italy
+
+**Summary**: Mediterranean biodiversity hotspot with strong local culture
+
+**Geographic Focus**: Tuscany, Umbria, Abruzzo (abandoned agricultural terraces, degraded pastures)
+
+**Pros**:
+- Mediterranean climate diversity
+- Strong local food/agriculture culture
+- Beautiful landscapes (eco-tourism potential)
+- EU funding opportunities
+
+**Cons**:
+- Regional variation in regulation and support
+- Bureaucracy can be challenging
+- Language barrier (Italian required)
+- Variable costs by region
+
+**Ecosystem Type**: Mediterranean
+
+**Legal Structure**: Associazione (€500-2,000, 2-4 months)
+
+**Best if**: Specific opportunity in Italy
+
+**Status**: Open if opportunity arises
+
+### Option F: Other EU OR Opportunity-Driven
+
+**Description**: Custom pathway based on emerging opportunities
+
+**Examples**:
+- €30k grant specifically tied to Region X → Establish there
+- Landowner offers free land in Country Y → Serious consideration
+- Mentor/partner with land and expertise in Location Z → Partnership model
+- University research collaboration tied to specific site → Joint project
+
+**Best if**: Compelling opportunity that meets core requirements emerges
+
+**Status**: Actively monitoring for unexpected opportunities
+
+### Decision Criteria (Priority Order)
+
+1. **Grant/funding opportunity**: Is there €20-50k grant tied to specific region? → Go there
+2. **Mentorship/partnership**: Is there experienced practitioner offering support in specific location? → Strong consideration
+3. **Land availability**: Exceptional land offer (free, very cheap, ideal conditions)? → Serious consideration
+4. **Core requirements check**: Does it meet healthcare, security, legal, living viability? → If no, eliminate
+5. **Cost comparison**: Can we afford land + living expenses on available budget?
+6. **Default timing**: If no clear opportunity by Month 6 → Default to Germany (familiar, secure)
+
+### Methodology Adaptation by Location
+
+**Location determines restoration approach**:
+
+**If Temperate (Germany, N France, etc.)**:
+- **Species**: Oak, Beech, Birch, Hazel, native wildflowers
+- **Climate**: 700-800mm annual rainfall, 4 distinct seasons
+- **Planting season**: April-May (spring)
+- **Water strategy**: Natural rainfall usually sufficient
+- **Fire risk**: Low
+
+**If Mediterranean (Portugal, Spain, S France, Italy)**:
+- **Species**: Cork Oak, Holm Oak, Stone Pine, Mediterranean shrubs
+- **Climate**: 400-600mm annual rainfall, summer drought
+- **Planting season**: October-February (before summer drought)
+- **Water strategy**: Water harvesting critical, drought-adapted species
+- **Fire risk**: High (firebreaks, fire-resistant species essential)
+
+→ Detailed species selection and methodology will be finalized once location and site conditions are assessed
+
+→ See [[20_Restoration_Methodology|Restoration Methodology]] for both temperate and Mediterranean approaches
+
+### Current Status
+
+**Exploration Phase** (Month 0):
+- **Researching**: Grant opportunities across multiple countries
+- **Networking**: Connecting with practitioners in Germany, Portugal, Spain
+- **Monitoring**: Land availability in multiple regions
+- **TBD**: Final location decision deferred until opportunity emerges or Month 6
+
+**Decision Timeline**:
+- **Month 1-3**: Active exploration across all options
+- **Month 4-6**: Evaluate which pathways showing most promise
+- **Month 6**: Make location decision if no clear opportunity (default Germany)
+- **Month 6-12**: Focus on chosen location (legal setup, land search)
+
+**Trigger Events** (Decide Immediately):
+- **€20k+ grant awarded in specific country** → Finalize that location within 2 weeks
+- **Perfect land offer (free or very cheap)** → Secure immediately, adapt plan to location
+- **Strong partnership/mentorship in specific location** → Serious consideration, decide within 2 weeks
+
+### Site Selection Criteria (Once Location Decided)
 
 #### Environmental
-- Degraded land with restoration potential
-- Mediterranean or semi-arid climate
-- Water access for establishment phase
+- Degraded land with clear restoration potential
+- Appropriate climate for chosen restoration approach
+- Water access for establishment phase (especially Mediterranean)
 - High biodiversity restoration potential
+- Soil conditions suitable for native species
 
 #### Practical
-- Land available for acquisition/lease
-- Proximity to population centers (education/tourism)
-- Regulatory support for restoration
-- Reasonable cost
+- Land available for acquisition/lease within budget
+- Proximity to population centers (education/tourism potential)
+- Regulatory support for restoration activities
+- Reasonable cost (within €8-30k range depending on location)
+- Access for founders and visitors
 
 #### Social
-- Community acceptance
+- Community acceptance and interest
 - Local employment potential
-- Cultural fit
-- Safety considerations
+- Cultural fit with local area
+- Safety and security considerations
 
-→ See [[50_Risk_Assessment|Risk Assessment]] for site evaluation
+→ See [[50_Risk_Assessment|Risk Assessment]] for detailed site evaluation framework
 
-### Initial Target
-**Portugal or Southern Spain**
+### Adaptation Note
 
-**Year 1 Bootstrap Pilot** (1 hectare)
-- Minimal viable demonstration
-- €20k-€30k investment
-- 1-2 person team
-- Proof of concept for investor outreach
+This describes possible geographic pathways. Actual location will be determined by opportunities, constraints, and circumstances as they emerge. We maintain flexibility to pursue the best option that meets our core requirements while advancing our vision.
 
-**Year 2-3 Expansion** (scaling to 5-10 hectares)
-- Full-scale demonstration site
-- €250k-€500k with secured funding
-- 3-4 person team
-- Revenue generation begins
+### 3-Phase Growth Strategy: Adaptive Scaling
 
-**Site Requirements:**
-- Mediterranean climate
-- Proven restoration potential
-- Community receptivity
-- Expansion potential to 5-10 hectares
+Eco Balance follows a staged approach to minimize risk and maximize learning. **Note**: Timelines and budgets are flexible based on funding pathway and opportunities.
 
-### 3-Phase Growth Strategy
+**Phase 1 (Year 1-2): 1 ha Proof of Concept**
+- **Goal**: Demonstrate viability at minimal scale
+- **Budget**: €15-30k (varies by location and funding pathway)
+  - Option A: €15-20k crowdfunding
+  - Option B: €20-30k grant
+  - Option C: €10k/year bootstrap over 2 years
+  - Option D: Partnership (shared resources)
+- **Team**: 1-2 founders (part-time, 15-25 hr/week, keep jobs)
+- **Location**: TBD based on opportunity (Germany baseline, Portugal strong candidate)
+- **Timeline**: 12-18 months baseline (flexible 6-36 months based on pathway)
+- **Success Metrics**: Tree survival rate >70%, soil health improving, documentation complete
 
-Eco Balance follows a staged approach to minimize risk and maximize learning:
+**Phase 2 (Years 2-4): 5-10 ha Scaled Demonstration**
+- **Goal**: Prove financial sustainability and operational capability
+- **Budget**: €100k-€500k (funding mix: grants, revenue, investors)
+- **Team**: 2-4 people (transition to full-time as revenue supports)
+- **Location**: Expand at Phase 1 site OR establish new site if opportunity better
+- **Timeline**: 18-36 months
+- **Success Metrics**: Revenue €20-50k/year, replication guide published, partnerships established
+- **Trigger to Start**: Phase 1 success confirmed + funding secured OR compelling expansion opportunity
 
-**Phase 1 (Year 1): 1 ha Bootstrap - Prove Concept**
-- Minimal viable demonstration site
-- €20k-€30k self/friends/family funding
-- 1-2 founder team (hands-on execution)
-- Goal: Demonstrate viability, prepare investor pitch
-- Timeline: 12-18 months
+**Phase 3 (Years 4+): Multi-Site Network**
+- **Goal**: Sustainable operations, model replication
+- **Budget**: €500k-€2M+ (diverse funding: grants, revenue, investors, partnerships)
+- **Team**: Full organizational structure (operations, education, research)
+- **Location**: Multiple sites (original + replications)
+- **Timeline**: Ongoing expansion
+- **Success Metrics**: Self-sustaining revenue, 5+ sites operational, training program established
+- **Trigger to Start**: Phase 2 financial sustainability proven + demand for replication
 
-**Phase 2 (Years 2-3): 5-10 ha - Demonstrate Viability**
-- Full-scale demonstration site
-- €250k-€500k secured funding (grants, investors)
-- 3-4 person professional team
-- Goal: Prove financial sustainability, revenue generation
-- Timeline: 18-24 months
-
-**Phase 3 (Years 4+): 50+ ha - Scale Operations**
-- Multi-site network operations
-- €2M+ investment capacity
-- Full organizational structure
-- Goal: Sustainable operations, model replication
-- Timeline: Ongoing expansion
-
-> **📘 Why This Approach Works:**
-> Starting small allows us to prove the concept with minimal capital, learn from mistakes affordably, and build credibility before seeking major funding. Each phase builds on proven success from the previous phase.
+> **📘 Why This Adaptive Approach Works:**
+> - **Start small**: Prove concept with minimal capital, learn affordably
+> - **Build credibility**: Each phase builds on proven success from previous phase
+> - **Maintain flexibility**: Can adapt timeline, budget, and approach based on what works
+> - **Reduce risk**: Only commit to next phase when previous phase proves viable
+> - **Multiple pathways**: Not locked into single funding or growth trajectory
 
 ---
 
