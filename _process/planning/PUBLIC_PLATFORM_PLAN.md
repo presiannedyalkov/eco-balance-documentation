@@ -1,9 +1,72 @@
 # Public Platform Plan - Phase 2
 
-**Version:** 0.1.0 (Draft)  
-**Created:** October 29, 2025  
-**Status:** Planning Phase  
+**Version:** 0.2.0 (Updated)
+**Created:** October 29, 2025
+**Updated:** November 9, 2025
+**Status:** Planning Phase - Ready for Implementation
+**Project Version:** v2.0.0 (Bootstrap Model)
 **← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+
+---
+
+## 📋 Document Status & Handoff Guide
+
+**Purpose**: This document defines the complete vision and implementation plan for transforming Eco Balance Documentation into a public, AI-driven collaborative platform.
+
+**For Future AI Assistants**: This document is designed for handoff to another AI assistant for implementation. Everything needed to understand and execute this plan is contained within this document and the referenced project files. Read the entire document before beginning implementation.
+
+### Current State (as of November 9, 2025)
+
+**Project Context**:
+- **Project**: Eco Balance - Ecosystem restoration initiative in Southern Europe
+- **Version**: v2.0.0 (Bootstrap Model) - 1 hectare pilot, €20-30k Year 1 budget
+- **Documentation**: 373 markdown files, 100% complete for v2.0.0
+- **Repository**: https://github.com/presiannedyalkov/eco-balance-documentation
+
+**What Exists**:
+- ✅ Comprehensive strategic documentation (00-70 series in root)
+- ✅ 44 implementation task guides in [implementation_tasks/](../../implementation_tasks/)
+- ✅ AI skills framework in [ai_skills/](../../ai_skills/) (1 role defined: Documentation Curator)
+- ✅ Git repository with 280+ commits, proper version control
+- ✅ Templates and process documentation
+
+**What Doesn't Exist Yet**:
+- ❌ Public-facing web platform
+- ❌ AI chatbot interface
+- ❌ Comment/feedback system
+- ❌ User authentication
+- ❌ Moderation pipeline
+- ❌ Task management system (beyond local markdown files)
+- ❌ Community engagement (project is currently private)
+
+**Critical Dependencies**:
+- Resolve 3 blocking issues from [ASSUMPTIONS_AUDIT_SUMMARY.md](../../_vault_maintenance/ASSUMPTIONS_AUDIT_SUMMARY.md):
+  1. Legal structure cost contradiction (Germany gGmbH vs. e.V.)
+  2. Geographic location ambiguity (Germany vs. Southern Europe)
+  3. Budget source confirmation (€20-30k availability)
+- Note: These issues are being resolved in parallel (separate thread) and may impact platform content
+
+### How to Use This Document
+
+**If you're implementing this plan**:
+1. Read entire document first (don't skip sections)
+2. Review the [Implementation Roadmap](#implementation-roadmap) for phased approach
+3. Check [System Architecture](#system-architecture) for technical overview
+4. Reference [Component Specifications](#component-specifications) for detailed requirements
+5. Use [Technical Stack Recommendations](#technical-stack-recommendations) as starting point (can be adjusted)
+6. Follow [AI Assistant Framework](#ai-assistant-framework) to understand AI role structure
+
+**Key Sections by Role**:
+- **Developers**: System Architecture, Component Specifications, Technical Stack, Budget Estimate
+- **AI Engineers**: AI Assistant Framework, AI Chatbot Interface, Moderation Pipeline
+- **Product Managers**: Executive Summary, Vision & Principles, Stakeholder Roles, Success Metrics
+- **Project Leads**: Implementation Roadmap, Risk Assessment, Next Steps
+
+**Important Notes**:
+- This is a **living document** - expect to adapt as you learn during implementation
+- The project uses **wiki-style markdown links** (`[[file|display text]]`) throughout
+- All costs are in **Euros (€)**
+- Timeline assumes **dedicated development team** - adjust as needed for your resources
 
 ---
 
@@ -1008,35 +1071,122 @@ Technical support: €3,000 - €8,000/month
 
 ---
 
-## Next Steps
+## Next Steps for Implementation
 
-### Immediate Actions (This Week)
-1. **Review this plan** - Does it align with your vision?
-2. **Refine priorities** - What's most critical to you?
-3. **Create skill templates** - Start with 2-3 core roles
-4. **Set up development** - Initialize Git repo for platform
-5. **Design mockups** - Visualize the user experience
+### Pre-Implementation Checklist
 
-### Short-Term (Next 2 Weeks)
-1. **Write detailed skill templates** for all AI roles
-2. **Create technical architecture** diagram
-3. **Set up development environment**
-4. **Build MVP of documentation website**
-5. **Test basic AI integration**
+**Before starting development**, ensure:
+- [ ] 3 critical issues from assumptions audit are resolved (or acceptable to proceed with known ambiguities)
+- [ ] Project lead has approved this plan and budget
+- [ ] Development resources are secured (developers, budget, timeline)
+- [ ] Technical stack choices are finalized (or use recommendations as-is)
+- [ ] Access to necessary services (GitHub, hosting provider, Claude API key)
 
-### Medium-Term (Next Month)
-1. **Develop core platform features**
-2. **Integrate authentication**
-3. **Build comment system**
-4. **Create AI chatbot**
-5. **Internal testing**
+### Phase 1: Foundation (Weeks 1-8)
 
-### Long-Term (Months 2-4)
-1. **Beta testing program**
-2. **Iterate based on feedback**
-3. **Public launch**
-4. **Community building**
-5. **Continuous improvement**
+**Week 1-2: Planning & Design**
+- [ ] Review entire PUBLIC_PLATFORM_PLAN.md document
+- [ ] Create detailed project plan with milestones
+- [ ] Finalize technology stack decisions
+- [ ] Design database schema (see data models in Component Specifications)
+- [ ] Create UI/UX wireframes for all components
+- [ ] Write remaining 6 AI skill templates (see AI Assistant Roles)
+- [ ] Set up development environment and repositories
+
+**Week 3-4: Core Infrastructure**
+- [ ] Initialize new repository for web platform
+- [ ] Set up Next.js project with recommended stack
+- [ ] Implement SSO authentication (NextAuth.js with Google, Apple, email)
+- [ ] Create PostgreSQL database with schema
+- [ ] Build basic documentation rendering from markdown files
+- [ ] Set up sync mechanism with eco-balance-documentation repo
+- [ ] Deploy staging environment
+
+**Week 5-6: AI Integration**
+- [ ] Integrate Claude API with proper error handling
+- [ ] Build RAG system (embeddings + vector database)
+- [ ] Implement chatbot UI component
+- [ ] Create AI skill loading system
+- [ ] Test each AI role in isolation
+- [ ] Build moderation pipeline (Tier 1: AI pre-filter)
+
+**Week 7-8: Comment System & Testing**
+- [ ] Implement inline text highlighting
+- [ ] Build comment creation/display UI
+- [ ] Connect comments to AI response system
+- [ ] Create moderation dashboard
+- [ ] Internal testing with project team
+- [ ] Fix critical bugs
+- [ ] Performance optimization
+- [ ] Write user-facing documentation
+
+### Phase 2: Beta Launch (Weeks 9-12)
+
+**Week 9-10: Controlled Beta**
+- [ ] Invite 20-30 beta testers (researchers, restoration practitioners, supporters)
+- [ ] Enable full platform functionality
+- [ ] Monitor system performance and logs
+- [ ] Collect structured feedback
+- [ ] Daily check-ins on system health
+
+**Week 11-12: Iteration**
+- [ ] Address beta feedback systematically
+- [ ] Refine AI chatbot responses based on real questions
+- [ ] Improve UI/UX based on user behavior
+- [ ] Optimize moderation workflow
+- [ ] Prepare marketing materials for public launch
+- [ ] Final security and performance audit
+
+### Phase 3: Public Launch (Weeks 13-16)
+
+**Week 13-14: Soft Launch**
+- [ ] Open platform to public
+- [ ] Announce on social media and relevant communities
+- [ ] Monitor systems closely (24/7 availability for first 48 hours)
+- [ ] Rapid response team for critical issues
+- [ ] Collect analytics and usage patterns
+
+**Week 15-16: Stabilization**
+- [ ] Address post-launch issues
+- [ ] Optimize based on real usage patterns
+- [ ] Scale infrastructure if needed
+- [ ] Analyze success metrics
+- [ ] Plan enhancement roadmap
+
+### Phase 4: Enhancement (Months 5-6)
+
+**Prioritized Feature Additions**:
+- [ ] Advanced search with filters and facets
+- [ ] Email notification system for comments
+- [ ] Multi-language support (Spanish, Portuguese, French, German)
+- [ ] Task claiming workflow for contributors
+- [ ] Contribution leaderboard and gamification
+- [ ] Mobile app or PWA
+- [ ] API for external integrations
+- [ ] Integration with project management tools
+
+### Ongoing Operations (Post-Launch)
+
+**Daily**:
+- Monitor system health and performance
+- AI moderates new comments automatically
+- Community moderators review flagged items
+
+**Weekly**:
+- Project lead reviews moderation decisions
+- Execute 2-3 high-priority documentation tasks
+- Update task tracker with progress
+
+**Monthly**:
+- Quality audit of documentation
+- AI performance review and tuning
+- Community engagement analysis
+- Infrastructure cost review
+
+**Quarterly**:
+- Strategic review of platform direction
+- Success metrics assessment
+- Plan next quarter's enhancements
 
 ---
 
@@ -1059,42 +1209,64 @@ Technical support: €3,000 - €8,000/month
 
 ---
 
-## Questions for Refinement
+## Questions for Project Lead (Before Implementation)
 
-Before proceeding, let's clarify:
+**These questions should be answered before beginning implementation**:
 
 1. **Priority**: What's most important to launch first?
-   - Documentation website?
-   - AI chatbot?
-   - Comment system?
-   - All simultaneously?
+   - Recommendation: All three core features simultaneously (docs + chatbot + comments) for coherent MVP
+   - Alternative: Documentation website first, then chatbot, then comments (slower but lower risk)
 
 2. **Timeline**: What's your target launch date?
-   - 3 months?
-   - 6 months?
-   - Flexible?
+   - Recommended: 4 months (16 weeks) for full implementation
+   - Minimum viable: 8 weeks for basic platform (docs + simple chatbot only)
+   - Conservative: 6 months (24 weeks) with extensive testing
 
 3. **Resources**: What's available?
-   - Budget range?
-   - Developer time?
-   - Your time commitment?
+   - Budget range: See Budget Estimate section (€60k-€120k one-time + €910-€3,110/month)
+   - Developer time: 2-3 developers full-time recommended
+   - Your time commitment: 10-20 hours/week for oversight and decisions
 
 4. **Scope**: What's the MVP?
-   - Full featured vs. gradual rollout?
-   - Which AI roles are essential vs. nice-to-have?
+   - Recommendation: Full featured (docs + chatbot + comments + moderation)
+   - Essential AI roles: Community Liaison (chatbot), Moderator, Documentation Curator
+   - Nice-to-have roles: Research Analyst, Quality Auditor (can be added post-launch)
 
 5. **Community**: Expected scale?
-   - Dozens, hundreds, thousands of users?
-   - Impacts architecture decisions
+   - Initial: 50-200 users in first month
+   - 6 months: 500-2,000 users
+   - 1 year: 2,000-10,000 users
+   - Architecture recommendations scale to 10,000+ users
 
 6. **Technical Preferences**: Any constraints?
-   - Hosting preferences?
-   - Technology stack preferences?
-   - Existing tools to integrate?
+   - Hosting: Vercel recommended (Next.js optimized, easy deployment)
+   - Database: Supabase recommended (all-in-one solution)
+   - Budget constraints: Use free tiers initially, scale as needed
 
 ---
 
-**This plan is a living document. Let's refine it together!**
+## Conclusion
 
-*Version: 0.1.0 (Draft)*  
-*Last Updated: October 29, 2025*
+This plan provides a comprehensive roadmap for transforming the Eco Balance Documentation into a public, AI-driven collaborative platform. The key innovations are:
+
+1. **Bidirectional documentation-task relationship** - continuous feedback loop
+2. **AI-first execution with human oversight** - scalable and consistent
+3. **Community co-creation** - public engagement with quality control
+4. **Preventing AI problems** - role-based skills prevent common failures
+
+**For Future AI Implementers**: You have everything needed in this document. Start with the Pre-Implementation Checklist, follow the phased approach, and refer back to component specifications as you build. Don't hesitate to adapt the plan based on what you learn during implementation - this is a living document.
+
+**For the Project Lead**: Review this plan, answer the questions above, and approve before implementation begins. This is a significant undertaking but will transform the project into a scalable, community-driven initiative.
+
+---
+
+**Document Version History**:
+- v0.1.0 (October 29, 2025): Initial draft
+- v0.2.0 (November 9, 2025): Updated with handoff guide, current state, actionable next steps
+
+**Related Documents**:
+- [ROADMAP.md](../../ROADMAP.md) - Overall project roadmap including this feature
+- [ai_skills/README.md](../../ai_skills/README.md) - AI skills framework
+- [ASSUMPTIONS_AUDIT_SUMMARY.md](../../_vault_maintenance/ASSUMPTIONS_AUDIT_SUMMARY.md) - Critical issues to resolve
+
+**Status**: Ready for implementation when resources are available
