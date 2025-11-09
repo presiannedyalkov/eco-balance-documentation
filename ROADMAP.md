@@ -402,6 +402,7 @@ Year 5-10: Phase 5 (Replication & Network)
 - [[00_Eco_Balance_Hub|Project Hub]] - Main navigation
 - [[VERSION|Current Version]] - Version tracking
 - [[CHANGELOG|Changelog]] - Complete version history
+- [[FEATURE_WISHLIST|Feature Wishlist]] - Desired features and enhancements
 
 **Phase 1 (Bootstrap Launch)**:
 - [[42_Next_Steps_90_Days|Next 90 Days]] - Detailed action plan

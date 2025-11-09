@@ -5,7 +5,7 @@
 **✅ Status:** Production Release - Ready for Execution
 **📊 Documentation:** 100% Complete
 **🔗 Version Info:** [[_versions/v2.0.0/RELEASE_NOTES|Release Notes]] | [[CHANGELOG|Changelog]] | [[VERSION|Current Version]]
-**🗺️ Future Planning:** [[ROADMAP|Project Roadmap]] - Multi-year vision and phases
+**🗺️ Future Planning:** [[ROADMAP|Project Roadmap]] - Multi-year vision and phases | [[FEATURE_WISHLIST|Feature Wishlist]] - Desired enhancements
 
 ---
 
@@ -461,12 +461,14 @@ This is a **living knowledge base** that follows semantic versioning:
 
 ## 📚 Reference Materials
 
-### Version Control
+### Version Control & Planning
 - [[VERSION|Current Version]] - Version number (2.0.0)
 - [[CHANGELOG|Changelog]] - Complete version history
 - [[_versions/README|Version System]] - How versioning works
 - [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] - Bootstrap Model release details
 - [[_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]] - Initial release (archived)
+- [[ROADMAP|Project Roadmap]] - Multi-year vision and phases
+- [[FEATURE_WISHLIST|Feature Wishlist]] - Desired features and enhancements
 
 ### Process Documentation
 - [[_process/README|Process Documentation]] - Development history
