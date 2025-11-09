@@ -333,7 +333,7 @@ We plan for the best, prepare for the worst, and expect reality somewhere in bet
 - **Alternative income:** Additional streams if needed
 
 → Model: [[30_Business_Model|Revenue Strategy]]
-→ Projections: [[31_Financial_Projections|Financial Forecasts]]
+→ Projections: [[30_Business_Model|Financial Forecasts]]
 
 ---
 
@@ -721,7 +721,7 @@ Monitor these signals that risks may be materializing:
 **Specific Risk Areas:**
 - [[30_Business_Model|Financial Sustainability]]
 - [[20_Restoration_Methodology|Ecological Approach]]
-- [[41_Phase_1_Foundation|Implementation Risks]]
+- [[42_Next_Steps_90_Days|Implementation Risks]]
 
 **Monitoring:**
 - [[51_Key_Performance_Indicators|Risk Indicators]]

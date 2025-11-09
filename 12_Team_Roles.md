@@ -557,10 +557,10 @@ Director    Director  Manager  Director
 
 **Implementation:**
 - [[42_Next_Steps_90_Days|Hiring Timeline]]
-- [[41_Phase_1_Foundation|Year 1 Team Building]]
+- [[42_Next_Steps_90_Days|Year 1 Team Building]]
 
 **Financial:**
-- [[31_Financial_Projections|Staff Budget]]
+- [[30_Business_Model|Staff Budget]]
 - [[32_Funding_Strategy|Fundraising for Salaries]]
 
 **Strategy:**

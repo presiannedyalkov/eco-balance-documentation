@@ -481,8 +481,8 @@
 
 **Operations:**
 - [[50_Risk_Assessment|Risk Management]]
-- [[31_Financial_Projections|Financial Management]]
+- [[30_Business_Model|Financial Management]]
 
 **Implementation:**
 - [[42_Next_Steps_90_Days|Board Recruitment]]
-- [[41_Phase_1_Foundation|Year 1 Governance Setup]]
+- [[42_Next_Steps_90_Days|Year 1 Governance Setup]]

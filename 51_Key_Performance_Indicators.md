@@ -241,7 +241,7 @@
 
 *Note: €200k represents ~10x growth from Year 1, requiring proven revenue model first.*
 
-→ Details: [[31_Financial_Projections|Budget]]
+→ Details: [[30_Business_Model|Budget]]
 
 ---
 

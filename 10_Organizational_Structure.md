@@ -363,7 +363,7 @@ Director      Director    Director  Director
 - External audit starting Year 2
 - Tax audit compliance
 
-→ Financial details: [[31_Financial_Projections|Financial Projections]]
+→ Financial details: [[30_Business_Model|Financial Projections]]
 
 ---
 
@@ -490,10 +490,10 @@ Director      Director    Director  Director
 
 **Implementation:**
 - [[42_Next_Steps_90_Days|Legal Registration Steps]]
-- [[41_Phase_1_Foundation|Year 1 Setup]]
+- [[42_Next_Steps_90_Days|Year 1 Setup]]
 
 **Operations:**
-- [[31_Financial_Projections|Financial Management]]
+- [[30_Business_Model|Financial Management]]
 - [[50_Risk_Assessment|Legal Risks]]
 
 **Strategy:**
