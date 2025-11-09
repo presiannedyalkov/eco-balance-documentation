@@ -28,6 +28,188 @@ This document outlines Eco Balance's strategic growth plan over 10 years, detail
 
 ---
 
+## Expansion Strategy - Adaptive Framework
+
+**Vision:** Scale restoration impact across Europe while maintaining quality and financial sustainability.
+
+**Core Requirements:**
+- Proven model at 1ha before expanding
+- Financial sustainability at each scale
+- Maintain founder control and vision
+- Expansion only when capacity allows
+
+### Option A: Stay at 1ha, Intensify (Low Risk)
+
+**Cost:** €0-5k/year | **Timeline:** Year 1-5+ | **Risk:** Low
+
+**Description:**
+Perfect the model at 1ha, maximize biodiversity and learning without geographic expansion.
+
+**Activities:**
+- Dense planting with diverse native species (1,000-2,000 trees on 1ha)
+- Extensive monitoring and documentation
+- Host workshops and educational programs on-site
+- Create showcase demonstration site
+- Develop consulting services based on proven methods
+
+**Pros:**
+- Low cost and low complexity
+- Deep learning and expertise development
+- Perfect showcase for methodology
+- Manageable workload for 1-2 people
+- Lower risk, easier to maintain quality
+- Can still generate meaningful revenue
+
+**Cons:**
+- Limited total ecological impact (just 1ha)
+- May feel small or limiting long-term
+- Revenue ceiling lower than larger operations
+- Less visibility than multi-site projects
+- Slower path to major influence
+
+**Best If:**
+- Risk-averse, want to perfect the craft
+- Limited capital available for expansion
+- Strong focus on education/consulting revenue
+- Prefer depth over breadth of impact
+- 1-2 person team without plans to scale team
+
+**Financial Model:**
+- **Revenue potential:** €20-40k/year
+- **Sources:** Workshops (€10-15k), consulting (€10-15k), plant sales (€5-10k)
+- **Operating costs:** €15-25k/year
+- **Break-even:** Achievable by Year 3-4
+
+**Trigger Metrics (to stay in Option A):**
+- 1ha achieving >80% tree survival
+- Revenue from education/consulting >€20k/year
+- Strong local reputation and demand
+- Founder satisfaction with scale and workload
+
+**Status:** Baseline plan for Year 1-3
+
+---
+
+### Option B: Expand to 2-5ha (Moderate Growth)
+
+**Cost:** €10-30k (land acquisition) + €5-10k/year additional opex | **Timeline:** Year 3-5 | **Risk:** Medium
+
+**Description:**
+Expand to adjacent or nearby land, applying same proven methods at larger scale while remaining manageable.
+
+**Activities:**
+- Expand planting to 5,000-15,000 trees total
+- Acquire adjacent land or expand lease
+- Scale operations while maintaining founder involvement
+- Increase impact and credibility
+- Larger demonstration site for visitors
+
+**Pros:**
+- Greater ecological impact (2-5x multiplier)
+- Economies of scale in operations
+- Credibility boost for funding and partnerships
+- More revenue potential from larger site
+- Still manageable by 1-2 people with seasonal help
+- Better data for research and validation
+
+**Cons:**
+- Significant capital needed upfront (€10-30k)
+- Maintenance workload increases substantially
+- Still requires substantial founder time (40-60 hr/week)
+- More complexity in operations
+- Risk if expansion fails
+
+**Best If:**
+- 1ha pilot proven successful (>80% survival)
+- Funding available from crowdfunding/grant (€20-40k)
+- Can dedicate 40-60 hr/week to operations
+- Want to scale impact without full professionalization
+- Adjacent land available at reasonable cost
+
+**Financial Model:**
+- **Revenue potential:** €40-80k/year
+- **Sources:** Workshops (€15-25k), consulting (€15-30k), carbon credits (€5-15k), plant sales (€5-10k)
+- **Operating costs:** €30-50k/year
+- **Break-even:** Achievable by Year 4-5
+
+**Trigger Metrics (to expand from A to B):**
+- 1ha thriving: >80% tree survival, increasing biodiversity
+- Proven methodology documented and replicable
+- Revenue >€30k/year from 1ha operations
+- Community of 1,000+ engaged supporters
+- Funding secured for land acquisition
+- Founder capacity available (not overloaded)
+
+**Exit Option:**
+- Can scale back to 1ha if needed
+- Lease portions to reduce cost if necessary
+
+**Status:** Evaluate at end of Year 2 based on pilot success
+
+---
+
+### Option C: Expand to 10-20ha (Aggressive Growth)
+
+**Cost:** €40-100k (land) + €20-40k/year additional opex | **Timeline:** Year 5-7 | **Risk:** High
+
+**Description:**
+Significant scale requiring professional team, equipment, and infrastructure. Regional impact demonstration.
+
+**Activities:**
+- Plant 30,000-60,000 trees across 10-20ha
+- Build full-time team (2-4 people)
+- Acquire professional equipment (tractor, tools, irrigation)
+- Establish permanent infrastructure (workshop, storage, facilities)
+- Transition from founder-led to managed operation
+
+**Pros:**
+- Major ecological impact (regional significance)
+- High visibility and credibility
+- Significant revenue potential
+- Attract major grants and partnerships
+- Career opportunity for founders (full-time paid)
+- Research and education at meaningful scale
+
+**Cons:**
+- High capital requirements (€60-150k total)
+- Requires team building and management
+- Complexity increases substantially
+- Founder role shifts to management (less hands-on)
+- Higher financial risk if revenue targets not met
+- Difficult to scale back if problems arise
+
+**Best If:**
+- 2-5ha proven successful for 2+ years
+- Significant funding secured (€80-150k from grants/partnerships)
+- Ready to hire and manage team
+- Strong community and partnership support
+- Excellent land opportunity available
+- Want to create lasting institution/organization
+
+**Financial Model:**
+- **Revenue potential:** €100-200k/year
+- **Sources:** Carbon credits (€30-50k), eco-tourism (€20-40k), grants (€20-40k), workshops/consulting (€15-30k), corporate partnerships (€15-40k)
+- **Operating costs:** €80-150k/year (including 2-4 salaries)
+- **Break-even:** Achievable by Year 6-8
+
+**Trigger Metrics (to expand from B to C):**
+- 5ha thriving with strong results
+- Revenue >€80k/year from operations
+- Grant or partnership funding secured (€50k+)
+- Proven ability to manage complexity
+- Team ready to hire (candidates identified)
+- Infrastructure needs identified and budgeted
+
+**Risk Mitigation:**
+- Secure multi-year funding commitments before expansion
+- Phase expansion (10ha first, then 15ha, then 20ha)
+- Maintain strong reserves (6-12 months operating costs)
+- Develop exit strategy (can downsize if needed)
+
+**Status:** Long-term aspiration, re-evaluate Year 4-5
+
+---
+
 ## Phase 1: Bootstrap Pilot (Year 1)
 
 **Goal:** Proof of concept on 1 hectare
