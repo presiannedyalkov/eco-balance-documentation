@@ -54,6 +54,51 @@ Just say one of these phrases to trigger an analysis:
 "Polish documentation"
 ```
 
+### 🔬 Knowledge Synthesizer (Research Analysis)
+```
+"Run the Knowledge Synthesizer"
+"Run Knowledge Synthesizer analysis"
+"Synthesize research"
+"Analyze bookmarks"
+"Extract research insights"
+```
+
+### 🔐 Security Auditor (Information Security)
+```
+"Run the Security Auditor"
+"Run Security Auditor analysis"
+"Security scan"
+"Check for sensitive data"
+"Audit privacy compliance"
+```
+
+### 🛠️ Implementation Coach (Execution Planning)
+```
+"Run the Implementation Coach"
+"Run Implementation Coach analysis"
+"Create playbook"
+"Create execution plan"
+"Break down implementation"
+```
+
+### 🎯 Strategic Advisor (Critical Analysis)
+```
+"Run the Strategic Advisor"
+"Run Strategic Advisor analysis"
+"Challenge strategy"
+"Stress-test plan"
+"Find blind spots"
+```
+
+### 👥 Stakeholder Advocate (Multi-Perspective Review)
+```
+"Run the Stakeholder Advocate"
+"Run Stakeholder Advocate analysis"
+"Review stakeholder fit"
+"Check stakeholder messaging"
+"Assess stakeholder value"
+```
+
 ---
 
 ## Task Management

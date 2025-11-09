@@ -24,6 +24,16 @@ When the user says any of these, execute the corresponding workflow:
 | "Check links" / "Check navigation" | Execute Librarian Analysis |
 | "Run Quality Inspector" | Execute Quality Inspector Analysis |
 | "Check formatting" / "Check quality" | Execute Quality Inspector Analysis |
+| "Run the Knowledge Synthesizer" | Execute Knowledge Synthesizer Analysis |
+| "Synthesize research" / "Analyze bookmarks" | Execute Knowledge Synthesizer Analysis |
+| "Run the Security Auditor" | Execute Security Auditor Analysis |
+| "Security scan" / "Check for sensitive data" | Execute Security Auditor Analysis |
+| "Run the Implementation Coach" | Execute Implementation Coach Analysis |
+| "Create playbook" / "Create execution plan" | Execute Implementation Coach Analysis |
+| "Run the Strategic Advisor" | Execute Strategic Advisor Analysis |
+| "Challenge strategy" / "Stress-test plan" | Execute Strategic Advisor Analysis |
+| "Run the Stakeholder Advocate" | Execute Stakeholder Advocate Analysis |
+| "Review stakeholder fit" / "Check stakeholder messaging" | Execute Stakeholder Advocate Analysis |
 | "Execute tasks" | Execute Task Workflow |
 | "Check vault health" | Quick Health Check |
 | "Summarize the work in this version and prepare to commit" | Version Release Workflow |
@@ -182,7 +192,7 @@ Continue with next task?"
 When user says "Check vault health":
 
 ### Execute
-1. Read all 6 state files in `_vault_maintenance/state/`
+1. Read all 11 state files in `_vault_maintenance/state/`
 2. Extract health scores and last analysis dates
 3. Summarize critical issues
 
@@ -207,6 +217,21 @@ Response template:
    Last checked: [date] | [Notable issues]
 
 ✨ **Quality Inspector (Polish):** XX/100 - [Status]
+   Last checked: [date] | [Notable issues]
+
+🔬 **Knowledge Synthesizer (Research):** XX/100 - [Status]
+   Last checked: [date] | [Notable issues]
+
+🔐 **Security Auditor (Security):** XX/100 - [Status]
+   Last checked: [date] | [Notable issues]
+
+🛠️ **Implementation Coach (Execution):** XX/100 - [Status]
+   Last checked: [date] | [Notable issues]
+
+🎯 **Strategic Advisor (Strategy):** XX/100 - [Status]
+   Last checked: [date] | [Notable issues]
+
+👥 **Stakeholder Advocate (Messaging):** XX/100 - [Status]
    Last checked: [date] | [Notable issues]
 
 **Overall Status:** [Assessment]
