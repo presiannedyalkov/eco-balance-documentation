@@ -258,7 +258,7 @@
 
 **Actions:** Create detailed budgets and 5-year projections
 
-→ See: [[31_Financial_Projections|Financial Projections]]
+→ See: [[30_Business_Model|Business Model & Financial Projections]]
 
 ---
 
@@ -471,7 +471,7 @@ Now you need:
 **Strategic Planning:**
 - [[01_Executive_Summary|Vision & Mission]]
 - [[42_Next_Steps_90_Days|Immediate Actions]]
-- [[40_Implementation_Roadmap|Full Roadmap]]
+- [[40_Expansion_Growth_Strategy|Full Roadmap]]
 
 **Core Gaps:**
 - [[10_Organizational_Structure|Legal Setup]]

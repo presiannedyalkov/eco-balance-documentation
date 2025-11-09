@@ -51,7 +51,7 @@ Mediterranean ecosystems face exceptional vulnerability:
 - Greece
 - Italy
 
-→ See [[41_Phase_1_Foundation|Phase 1]] for target geography details
+→ See [[44_Site_Selection_Land_Acquisition|Site Selection]] for target geography details
 
 ---
 
@@ -239,7 +239,7 @@ Open data, honest reporting, third-party verification.
 
 ### Scalability
 Documented processes designed for global replication.
-→ See [[40_Implementation_Roadmap|Roadmap]]
+→ See [[40_Expansion_Growth_Strategy|Growth Roadmap]]
 
 ---
 
@@ -263,7 +263,7 @@ We are in a **critical decade** for climate action:
 
 **Implementation:**
 - [[20_Restoration_Methodology|Restoration Methodology]]
-- [[41_Phase_1_Foundation|Phase 1 Details]]
+- [[42_Next_Steps_90_Days|Phase 1 - Next 90 Days]]
 
 **Risk Management:**
 - [[50_Risk_Assessment|Risk Assessment]]

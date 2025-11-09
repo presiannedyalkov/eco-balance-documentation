@@ -43,7 +43,7 @@ Research partnerships, peer-reviewed validation, and continuous monitoring
 
 ### 📈 Scalable Model
 Documented processes designed for global replication
-→ See [[40_Implementation_Roadmap|Roadmap]]
+→ See [[40_Expansion_Growth_Strategy|Growth Roadmap]] and [[43_Operations_Action_Plan|Operations Plan]]
 
 ---
 
@@ -67,7 +67,7 @@ Documented processes designed for global replication
 - 10,000+ hectares managed
 - Model replicated globally
 
-→ Details in [[40_Implementation_Roadmap|Implementation Roadmap]]
+→ Details in [[43_Operations_Action_Plan|Operations Plan]]
 
 ---
 
@@ -99,7 +99,7 @@ Documented processes designed for global replication
 - Social return
 - Path to financial sustainability by Year 3
 
-→ Financial details in [[31_Financial_Projections|Financial Projections]]
+→ Financial details in [[30_Business_Model|Business Model & Financial Projections]]
 
 ---
 
@@ -145,7 +145,7 @@ This comprehensive approach creates lasting, transformative change.
 
 **Implementation:**
 - [[42_Next_Steps_90_Days|Next 90 Days]]
-- [[41_Phase_1_Foundation|Phase 1 Details]]
+- [[42_Next_Steps_90_Days|Phase 1 - Next 90 Days]]
 
 **Governance:**
 - [[10_Organizational_Structure|Organizational Structure]]
