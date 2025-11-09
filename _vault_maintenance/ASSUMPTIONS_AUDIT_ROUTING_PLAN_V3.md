@@ -783,3 +783,27 @@ _vault_maintenance/assumptions_audit/
 **Time Savings**: 50% faster than V2, 80% faster than sequential
 **Complexity Per Agent**: Minimal (just 1-2 files each)
 **Expected Success Rate**: 100%
+
+---
+
+## SIMPLIFIED ONE-LINE PROMPTS (Change N Once Only)
+
+**For Agents 1-18** (change N to 1, 2, 3... 18):
+```
+N=1; You are Agent $N. Execute from ASSUMPTIONS_AUDIT_ROUTING_PLAN_V3.md (search "Agent $N:"). Analyze assigned file(s), create ONE small output file (<300 lines), commit, push branch.
+```
+
+**For Agent 19** (consolidation):
+```
+You are Agent 19 consolidation. Execute from ASSUMPTIONS_AUDIT_ROUTING_PLAN_V3.md (search "Agent 19:"). Read all 18 analyses, create 3 SHORT consolidated files, commit, push branch.
+```
+
+**Examples**:
+- Agent 1: Change `N=1;` to use agent 1
+- Agent 2: Change `N=2;` to use agent 2
+- Agent 5: Change `N=5;` to use agent 5 (CRITICAL - gGmbH vs e.V.)
+- Agent 11: Change `N=11;` to use agent 11 (CRITICAL - Budget source)
+- Agent 18: Change `N=18;` to use agent 18
+
+**Just change the number once at N=X and the rest auto-updates!**
+
