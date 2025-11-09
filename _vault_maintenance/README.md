@@ -98,9 +98,34 @@ _vault_maintenance/
 **Trigger**: "Run the Librarian" or "Check links"
 
 ### ✨ The Quality Inspector
-**Role**: Documentation standards and polish  
-**Focus**: Formatting, style guide adherence, readability  
+**Role**: Documentation standards and polish
+**Focus**: Formatting, style guide adherence, readability
 **Trigger**: "Run Quality Inspector" or "Check formatting"
+
+### 🔬 The Knowledge Synthesizer
+**Role**: Research Analysis & Knowledge Extraction
+**Focus**: Transform research bookmarks into actionable insights
+**Trigger**: "Run the Knowledge Synthesizer" or "Synthesize research"
+
+### 🔐 The Security Auditor
+**Role**: Information Security & Privacy Compliance
+**Focus**: Prevent sensitive data exposure, ensure compliance
+**Trigger**: "Run the Security Auditor" or "Security scan"
+
+### 🛠️ The Implementation Coach
+**Role**: Execution Planning & Operational Readiness
+**Focus**: Turn strategy into step-by-step action plans
+**Trigger**: "Run the Implementation Coach" or "Create playbook"
+
+### 🎯 The Strategic Advisor
+**Role**: Critical Analysis & Strategic Challenge
+**Focus**: Stress-test plans, challenge assumptions, find blind spots
+**Trigger**: "Run the Strategic Advisor" or "Challenge strategy"
+
+### 👥 The Stakeholder Advocate
+**Role**: Multi-Perspective Review & Audience Alignment
+**Focus**: Ensure messaging resonates with each stakeholder group
+**Trigger**: "Run the Stakeholder Advocate" or "Review stakeholder fit"
 
 ## Using the System
 
