@@ -76,9 +76,77 @@ Our approach draws lessons from proven restoration projects worldwide:
 
 ---
 
+## Geographic Adaptability: Location-Responsive Methodology
+
+### Vision
+Demonstrate holistic ecosystem restoration using locally-adapted, evidence-based methods that work with the specific climate, soil, and ecology of the selected site.
+
+### Core Requirements (Non-Negotiable)
+- **Native species only** - matched to local ecosystem type
+- **Evidence-based methods** - proven restoration ecology practices
+- **Sustainable approach** - no ongoing external inputs after Year 3
+- **Measurable results** - documented baseline and recovery
+- **Bootstrap viability** - achievable at 1 hectare with 1-2 founders
+
+### Methodology Options by Climate Zone
+
+**Option A: Temperate Approach** (Germany, Northern France, Austria, etc.)
+- **Climate**: 700-800mm rainfall/year, four distinct seasons, cold winters
+- **Ecosystem**: Oak-Beech-Birch mixed temperate forest
+- **Species**: Oaks, Beech, Birch, Hazel, Wild Cherry, Rowan, Hawthorn
+- **Planting Season**: April-May (spring primary), Oct-Nov (fall secondary)
+- **Water Strategy**: Moderate rainfall, focus on soil retention
+- **Challenges**: Cold winters, moderate growing season
+- **Best if**: Site located in Central/Northern Europe temperate zone
+- **Status**: Strong candidate if Germany location chosen
+
+**Option B: Mediterranean Approach** (Portugal, Spain, Southern France, Italy)
+- **Climate**: 400-600mm rainfall/year, hot dry summers, mild winters
+- **Ecosystem**: Cork Oak-Holm Oak-Pine Mediterranean dryland forest
+- **Species**: Cork Oak, Holm Oak, Stone Pine, Arbutus, Cistus, Rosemary, Lavender
+- **Planting Season**: October-February (after summer drought, before spring growth)
+- **Water Strategy**: Critical - intensive mulching, swales, drought-adapted species
+- **Challenges**: Summer drought stress, fire risk, water scarcity
+- **Best if**: Site located in Mediterranean climate zone
+- **Status**: Strong candidate if Portugal/Spain location chosen
+
+**Option C: Atlantic/Mixed Approach** (UK, Ireland, Brittany, NW Spain)
+- **Climate**: 800-1200mm rainfall/year, mild winters, cool summers, high humidity
+- **Ecosystem**: Oak-Ash-Hazel Atlantic temperate forest
+- **Species**: Pedunculate Oak, Ash, Hazel, Alder, Willow, Birch, Holly
+- **Planting Season**: November-March (dormant season, ample moisture)
+- **Water Strategy**: Abundant water, focus on drainage if needed
+- **Challenges**: High rainfall management, mild but wet conditions
+- **Best if**: Site in Atlantic climate zone with high rainfall
+- **Status**: Open if opportunity arises in these regions
+
+**Option D: Other European Climate OR Site-Specific Adaptation**
+- **Approach**: Customize methodology to specific site microclimate and conditions
+- **Examples**: Alpine transition zones, Eastern European continental, Pannonian steppe
+- **Decision**: Made after detailed site assessment
+- **Best if**: Site has unique conditions requiring customized approach
+
+### Decision Criteria (How to Choose Methodology)
+1. **Location determined** → Climate zone identified → Methodology selected
+2. **Site assessment completed** → Specific conditions (soil, water, sun) → Fine-tune species and techniques
+3. **Local expertise consulted** → Regional best practices integrated
+4. **Pilot phase results** (Year 1) → Adaptive refinement for Year 2+
+
+### Current Status: Methodology TBD
+- **Decided**: Five-pillar framework (Reforestation, Soil, Water, Biodiversity, Community), bootstrap scale (1 ha), native species only
+- **TBD**: Specific methodology approach (Temperate vs Mediterranean vs Atlantic) - deferred until location finalized (Month 6)
+- **Trigger Event**: Location decision → Within 2 weeks, finalize methodology and species list with local experts
+
+### Adaptation Note
+The detailed restoration techniques below show examples for both **Temperate** and **Mediterranean** approaches. Final species lists, planting schedules, and water strategies will be customized to the actual site location and conditions once determined.
+
+---
+
 ## Five-Pillar Integration Framework
 
 Eco Balance employs an integrated approach addressing **five interconnected pillars**. Even at 1 hectare pilot scale, each pillar supports the others, creating synergistic ecosystem recovery.
+
+**The five pillars remain constant across all climate zones. The specific techniques within each pillar adapt to location.**
 
 ---
 
@@ -98,24 +166,54 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 - **Weekend Warriors:** Mobilize volunteers for planting events
 - **Learn by Doing:** Hands-on experience with techniques
 
-### Native Species Selection
+### Native Species Selection: Location-Adaptive
 
-**Bootstrap Strategy:**
+**Bootstrap Strategy (Universal):**
 - Work with local forest service or conservation group (free/low-cost consultation)
-- **Priority:** Locally adapted natives, proven survivors
+- **Priority:** Locally adapted natives, proven survivors in regional climate
 - Start with 8-12 species (manageable diversity)
 - Mix of pioneer species (fast-growing) + climax species (long-term)
 - Source: Local nurseries, seed collection, cuttings
 
-**Example Species Mix (Germany):**
+**Final Species List**: Deferred until location and site conditions confirmed. Below are example species mixes for different climate zones.
+
+---
+
+**Example A: Temperate Species Mix** (Germany, N France, Austria)
 - Oaks (*Quercus robur*, *Q. petraea*) - Keystone species
 - Beech (*Fagus sylvatica*) - Dominant climax species
 - Birch (*Betula pendula*) - Pioneer, nurse tree
 - Hazel (*Corylus avellana*) - Understory, wildlife food
 - Rowan (*Sorbus aucuparia*) - Birds, autumn color
 - Wild cherry (*Prunus avium*) - Wildlife, timber
-- Hawthorn (*Crataegus*) - Hedgerow, wildlife
+- Hawthorn (*Crataegus monogyna*) - Hedgerow, wildlife
 - Elder (*Sambucus nigra*) - Fast-growing, wildlife
+- **Planting Season**: April-May (primary), October-November (secondary)
+- **Water Needs**: Moderate (700-800mm rainfall sufficient, establishment watering Year 1)
+
+**Example B: Mediterranean Species Mix** (Portugal, Spain, S France, Italy)
+- Cork Oak (*Quercus suber*) - Keystone, drought-adapted, long-lived
+- Holm Oak (*Quercus ilex*) - Evergreen, extremely drought-tolerant
+- Stone Pine (*Pinus pinea*) - Pioneer, edible nuts, iconic Mediterranean
+- Strawberry Tree (*Arbutus unedo*) - Evergreen shrub/small tree, wildlife
+- Cistus (*Cistus* spp.) - Pioneer shrub, fire-adapted, fast colonizer
+- Rosemary (*Rosmarinus officinalis*) - Aromatic shrub, pollinator
+- Mastic (*Pistacia lentiscus*) - Drought-tolerant shrub
+- Wild Olive (*Olea europaea* var. *sylvestris*) - Long-lived, drought-adapted
+- **Planting Season**: October-February (avoid summer drought stress)
+- **Water Needs**: High care Year 1-2 (400-600mm rainfall insufficient for establishment without irrigation)
+
+**Example C: Atlantic Species Mix** (UK, Ireland, Brittany, NW Spain)
+- Pedunculate Oak (*Quercus robur*) - Keystone, wet-tolerant
+- Ash (*Fraxinus excelsior*) - Tall canopy species (avoid if ash dieback present)
+- Hazel (*Corylus avellana*) - Understory, coppicing
+- Alder (*Alnus glutinosa*) - Wet areas, nitrogen-fixing
+- Willow (*Salix* spp.) - Wet areas, fast-growing, wildlife
+- Birch (*Betula pubescens*) - Pioneer, wet-tolerant
+- Holly (*Ilex aquifolium*) - Evergreen understory, wildlife
+- Gorse (*Ulex europaeus*) - Nitrogen-fixer, pioneer (control spread)
+- **Planting Season**: November-March (dormant season, high moisture)
+- **Water Needs**: Low (abundant rainfall, may need drainage in wet areas)
 
 ### Planting Strategies (Bootstrap)
 
@@ -294,97 +392,139 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 
 ---
 
-## 💧 C. Water Management (Bootstrap Scale)
+## 💧 C. Water Management: Climate-Adaptive Strategies
 
 ### Objectives (1 Hectare)
-- Maximize water infiltration on-site
-- Provide supplemental water for new plantings (Year 1-2)
-- Create small wildlife water features
-- Work with existing water flows
+- Maximize water infiltration and retention on-site
+- Provide supplemental water for new plantings (Year 1-2, critical in Mediterranean)
+- Create small wildlife water features (optional)
+- Work with existing water flows and rainfall patterns
 
-### Bootstrap Water Strategy
+### Water Strategy: Adapts to Location
 
-**Primary: Rainwater Harvesting**
-- IBC tank collection from tiny house roof (2,000-4,000L storage)
-- Gutters and downspouts (€100-200)
-- See [[45_Tiny_House_and_Living_Infrastructure|Water Systems]] for details
-- **Use:** Establishment watering (Year 1-2 only)
-
-**Secondary: Soil Water Retention**
-- Heavy mulching around plantings (free, using site materials)
-- Reduce evaporation, increase infiltration
-- Swales on contour (if sloped site, DIY)
+**Core Approach**: Water management varies significantly by climate zone. Mediterranean sites require intensive water harvesting and conservation; temperate sites focus on retention; Atlantic sites may need drainage.
 
 **NO Atmospheric Water Generators** (AWG)
 - Too expensive for bootstrap (€15-30k)
 - Not viable at 1 ha scale
 - See [[21_Technology_Integration|Why Not AWG]]
 
-### Water Harvesting (Small-Scale)
+---
 
-#### Simple Techniques (DIY)
+### Option A: Temperate Water Strategy (Germany, N France, Austria)
 
-**1. Swales and Berms (If Sloped Site):**
-- Hand-dig shallow trenches on contour
-- Pile soil on downhill side (berm)
-- Captures runoff, allows infiltration
-- Free labor, just time investment (2-3 days work)
+**Climate Context**: 700-800mm rainfall/year, distributed across seasons
 
-**2. Check Dams in Gullies (If Erosion Present):**
+**Primary: Soil Water Retention**
+- Heavy mulching around plantings (5-10cm layer)
+- Reduce evaporation, increase infiltration
+- Swales on contour if sloped site (hand-dug, DIY)
+- **Priority**: Keep water where it falls
+
+**Secondary: Rainwater Harvesting**
+- IBC tank collection from tiny house roof (1,000-2,000L storage)
+- Gutters and downspouts (€100-200)
+- **Use**: Supplemental watering during dry spells only (occasional)
+- **Not critical**: Natural rainfall usually sufficient
+
+**Establishment Watering**:
+- Year 1: Watering during summer dry periods (4-8 weeks)
+- Year 2: Minimal watering, only extreme drought
+- Year 3+: Trees established, no watering needed
+
+**Budget**: €200-400 (basic rainwater collection, mulch materials)
+
+---
+
+### Option B: Mediterranean Water Strategy (Portugal, Spain, S France, Italy)
+
+**Climate Context**: 400-600mm rainfall/year, concentrated in winter, summer drought (3-5 months)
+
+**PRIMARY CRITICAL: Intensive Rainwater Harvesting**
+- **Essential**: IBC tank collection from tiny house roof (4,000-6,000L storage minimum)
+- Multiple tanks (3-4 × 1,000L) for redundancy
+- Gutters, first-flush diverter, filtration (€200-400)
+- **Use**: Critical establishment watering Year 1-3 (summer survival depends on this)
+- 20-30 m² roof × 500mm winter rain = 10,000-15,000L potential harvest
+- Store 4,000-6,000L for summer distribution
+
+**SECONDARY CRITICAL: Soil Water Retention**
+- **Heavy mulching** (10-15cm layer, replenish annually) - reduces evaporation 50-70%
+- **Swales and berms** on contour (mandatory if sloped) - capture every drop of winter rain
+- **Deep planting** - roots start 5-10cm deeper to access moisture
+- Cover crops in winter (biomass for mulch, soil protection)
+
+**Establishment Watering**:
+- Year 1-2: **Critical weekly watering** April-September (5-6 months)
+- Each tree needs ~20L/week in summer = 2,000-4,000L/week for 100-200 trees
+- Prioritize high-value transplants, let direct-seeded trees self-select (Darwinian)
+- Year 3: Reduced watering, drought-adapted species established
+- Year 4+: Minimal intervention except extreme drought years
+
+**Swale Construction** (Essential for Mediterranean):
+- Hand-dig contour trenches 30-50cm deep × 50cm wide
+- Space 5-10m apart on slopes
+- Berm on downhill side for tree planting
+- Captures winter runoff, allows slow infiltration
+- 2-4 days labor for 1 hectare
+
+**Budget**: €600-1,200 (large water storage, intensive mulch, swale tools)
+
+---
+
+### Option C: Atlantic Water Strategy (UK, Ireland, Brittany, NW Spain)
+
+**Climate Context**: 800-1,200mm rainfall/year, year-round, high humidity
+
+**Primary: Drainage Management**
+- May need to manage excess water, not scarcity
+- Swales can double as drainage features
+- Plant wet-tolerant species (Alder, Willow) in low spots
+- Avoid waterlogging in planting areas
+
+**Secondary: Minimal Rainwater Harvesting**
+- Small collection for household use (drinking, washing)
+- Not needed for irrigation (abundant natural rainfall)
+
+**Establishment Watering**:
+- Rarely needed except unusual drought
+- Focus on drainage and preventing waterlogging
+
+**Budget**: €100-300 (minimal infrastructure needed)
+
+---
+
+### Universal Water Techniques (All Climates)
+
+**Efficient Water Use Principles**:
+- **Deep watering weekly** better than shallow daily (encourages deep roots)
+- **Mulch heavily** to reduce evaporation 40-70% depending on climate
+- **Focus on high-value transplants** - let direct-seeded trees self-select
+- **Bucket/hose watering** from IBC tanks (no complex irrigation needed)
+- **Morning watering** preferred (reduces fungal issues, less evaporation)
+
+**Check Dams in Gullies** (If Erosion Present):
 - Stack rocks or logs in eroding channels
 - Slows water flow, captures sediment
 - Free using site materials
 - 1-2 days work per dam
-
-**3. Rainwater Collection from Building:**
-- Primary source for establishment watering
-- 20-30 m² roof × 700mm rain = 14,000L potential/year
-- But actual harvest: ~10,000L/year
-- Enough for establishment watering of 100-200 trees
+- Useful in all climates with slope
 
 **NOT DOING Year 1:**
-- ❌ Pond excavation (expensive, permits needed)
-- ❌ Solar-powered pumping systems (not needed yet)
-- ❌ Irrigation infrastructure (hand-watering sufficient)
-
-### Efficient Water Use
-
-**Year 1-2 Establishment Phase:**
-- Water newly planted trees during dry periods
-- Bucket watering or hose from IBC tanks
-- Focus on high-value transplants (not direct seeding)
-- Mulch heavily to reduce watering needs
-- Deep watering weekly better than shallow daily
-
-**Year 3+:**
-- Trees established, minimal supplemental watering
-- Rainwater collection for drinking/household only
-- Natural precipitation sufficient
-
-### Ecological Water Features (Year 2-3)
-
-**Small Wildlife Pond (Future):**
-- Hand-dig or hire small excavator (1-2 days)
-- 20-50 m² × 1-2m deep
-- Line with clay or butyl liner
-- Attracts amphibians, birds, insects
-- Cost: €500-2,000 (Year 2-3 project)
-
-**NOT DOING Year 1:**
+- ❌ Pond excavation (expensive €500-2k, permits needed, Year 2-3 project)
+- ❌ Solar-powered pumping systems (not needed for bootstrap scale)
+- ❌ Drip irrigation infrastructure (hand-watering sufficient, more adaptive)
 - ❌ Large ponds or wetlands (permits, cost, complexity)
-- ❌ Riparian restoration (no waterways on typical 1 ha site)
 
-### Monitoring (Bootstrap)
+### Water Monitoring (Simple, All Climates)
 
-**Simple Checks:**
-- Rainfall measurement (rain gauge, €10-30)
-- Plant moisture stress observation (wilting check)
-- Soil moisture feel test (handful squeeze)
-- Water table depth (if well present)
+**Essential Tracking:**
+- Rainfall measurement (rain gauge €10-30)
+- Plant moisture stress observation (visual wilting check)
+- Soil moisture feel test (handful squeeze test)
+- Water storage levels (tank volume tracking)
 
-**Year 1 Target:** Rainwater system operational, establishment watering functional
-
-**Budget:** €300-600 total (tanks, gutters, hose, basic tools)
+**Year 1 Target**: Water system operational and adequate for establishment needs (specific adequacy depends on climate)
 
 → Technology: [[21_Technology_Integration|Water Systems Detail]]
 
@@ -749,29 +889,41 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 
 ---
 
-## Bootstrap Timeline: What Happens When
+## Bootstrap Timeline: Location-Adaptive Schedule
+
+**Note**: Planting seasons vary by climate zone. Timeline below shows universal phases; specific months adapt to location.
 
 ### Year 1 (Months 1-12)
 
-**Months 1-3: Site Prep**
+**Months 1-3: Site Prep & Methodology Finalization**
 - Land acquisition
+- **Location determined → Methodology selected** (Temperate vs Mediterranean vs Atlantic)
+- Consultation with local forest service / conservation group
+- Final species list created with local experts
 - Initial assessment (soil, biodiversity baseline)
 - Site cleaning (invasive removal, basic access)
 
 **Months 4-6: First Planting Season**
-- Spring planting (if timing allows) OR Fall planting
-- 50-100 trees/shrubs
-- Mulching, initial watering setup
+- **Temperate**: Spring planting (April-May)
+- **Mediterranean**: Fall/winter planting (October-December if land acquired early, otherwise wait to Month 10-12)
+- **Atlantic**: Fall/winter planting (November-January)
+- 50-100 trees/shrubs initial planting
+- Mulching, water system installation
+- **Note**: Timing depends on land acquisition date + climate zone optimal planting window
 
 **Months 7-9: Establishment Care**
-- Supplemental watering during dry spells
-- Weed/invasive management
+- **Temperate**: Light watering during dry spells
+- **Mediterranean**: Critical intensive watering if spring/summer (April-September)
+- **Atlantic**: Minimal watering, focus on weed management
+- Invasive species management
 - Monitoring and documentation
 
-**Months 10-12: Second Planting (if spring start)**
-- Fall planting season
+**Months 10-12: Second Planting Season (if applicable)**
+- **Temperate**: Fall planting (October-November) if started in spring
+- **Mediterranean**: PRIMARY planting season (October-February) if land acquired mid-year
+- **Atlantic**: Main planting window (November-January)
 - Additional 50-100 trees
-- Winter prep (mulching, protection)
+- Winter prep (mulching, protection in temperate/Atlantic; growth in Mediterranean)
 
 ### Year 2 (Months 13-24)
 
@@ -793,27 +945,45 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 
 ---
 
-## Budget Summary: Restoration Activities
+## Budget Summary: Restoration Activities (Location-Adaptive)
 
 ### Year 1 Initial Planting Budget
+
+**Note**: Budget varies by location. Mediterranean sites require higher water infrastructure costs; temperate sites need less.
+
+#### Budget Option A: Temperate Climate (Germany, N France, Austria)
 
 | Category | Cost | Details |
 |----------|------|---------|
 | **Seeds & Bare-Root** | €200-600 | 50-100 saplings + seed collection materials |
 | **Mulch & Soil Amendments** | €100-300 | Wood chips (often free), compost materials, cover crop seeds |
 | **Tools & Equipment** | €200-400 | Shovels, pruners, buckets, hoses (see [[21_Technology_Integration\|Tools]]) |
-| **Water System** | €300-600 | IBC tanks, gutters (see [[45_Tiny_House_and_Living_Infrastructure\|Water]]) |
+| **Water System** | €200-400 | 1-2 IBC tanks, gutters (modest - rainfall adequate) |
 | **Monitoring** | €200-500 | Trail cameras, field guides, notebook, measuring tools |
-| **Wildflower Seeds** | €50-100 | Native mix for pollinator support |
+| **Wildflower Seeds** | €50-100 | Native temperate mix for pollinator support |
 | **Volunteer Events** | €300-600 | Refreshments, materials for 2-3 events |
 | **Community Materials** | €200-400 | Website, printed materials, signage |
-| **TOTAL YEAR 1** | **€1,550-3,500** | **Target: €2,000-3,000** |
+| **TOTAL YEAR 1** | **€1,450-3,300** | **Target: €2,200-2,800** |
 
-**Most Realistic:** €2,500 for comprehensive Year 1 restoration activities
+#### Budget Option B: Mediterranean Climate (Portugal, Spain, S France, Italy)
 
-**Contingency:** €500 (unexpected needs, failed plantings requiring replacement)
+| Category | Cost | Details |
+|----------|------|---------|
+| **Seeds & Bare-Root** | €200-600 | 50-100 drought-adapted saplings + seed collection |
+| **Mulch & Soil Amendments** | €200-500 | Heavy mulch essential (may need to purchase), cover crops |
+| **Tools & Equipment** | €200-400 | Shovels, pruners, buckets, hoses, swale-digging tools |
+| **Water System** | €600-1,200 | **3-4 IBC tanks, gutters, filtration (CRITICAL for summer)** |
+| **Monitoring** | €200-500 | Trail cameras, field guides, notebook, measuring tools |
+| **Wildflower Seeds** | €50-100 | Native Mediterranean mix (drought-tolerant) |
+| **Volunteer Events** | €300-600 | Refreshments, materials for 2-3 events |
+| **Community Materials** | €200-400 | Website, printed materials, signage |
+| **TOTAL YEAR 1** | **€1,950-4,300** | **Target: €2,800-3,500** |
 
-**Grand Total Year 1 Restoration:** €3,000 (within overall €20-30k Year 1 budget)
+**Mediterranean sites cost €500-800 more** primarily due to essential water infrastructure.
+
+**Contingency (All Climates):** €500 (unexpected needs, failed plantings requiring replacement)
+
+**Current Status**: Final budget TBD until location confirmed (Month 6)
 
 ### Year 2-3 Expansion Budget
 
@@ -851,6 +1021,52 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 
 ---
 
-**Document Version:** 2.0.0
-**Last Updated:** 2025-11-08
-**Status:** Active
+## Adaptive Methodology Summary
+
+### What's Fixed (Non-Negotiable)
+- **Five-pillar framework**: Reforestation, Soil, Water, Biodiversity, Community
+- **Bootstrap scale**: 1 hectare, 1-2 founders, 100-200 trees Year 1
+- **Native species only**: Matched to local ecosystem
+- **Evidence-based practices**: Proven restoration ecology methods
+- **Monitoring and documentation**: Baseline assessment and ongoing tracking
+- **Community engagement**: Volunteer participation from Day 1
+
+### What's Flexible (Location-Adaptive)
+- **Species lists**: Temperate (Oak/Beech/Birch) vs Mediterranean (Cork Oak/Holm Oak/Pine) vs Atlantic (Oak/Ash/Alder)
+- **Planting seasons**: Spring (temperate) vs Fall-Winter (Mediterranean/Atlantic)
+- **Water management intensity**: Moderate (temperate) vs Critical (Mediterranean) vs Minimal (Atlantic)
+- **Water infrastructure budget**: €200-400 (temperate) vs €600-1,200 (Mediterranean)
+- **Establishment care**: Light watering (temperate) vs Intensive summer watering (Mediterranean)
+- **Mulching intensity**: 5-10cm (temperate) vs 10-15cm (Mediterranean)
+- **Swale construction**: Optional (temperate/Atlantic) vs Essential (Mediterranean slopes)
+
+### Decision Process
+1. **Location finalized** (Month 6 or when opportunity emerges)
+2. **Climate zone identified** → Methodology selected (Temperate A, Mediterranean B, or Atlantic C)
+3. **Local experts consulted** (forest service, conservation groups)
+4. **Site-specific assessment** → Fine-tune species, techniques, timing
+5. **Final planting plan created** (2-4 weeks before first planting season)
+6. **Execute and adapt** → Year 1 results inform Year 2 refinements
+
+### Why This Adaptive Approach Works
+- **Respects ecological reality**: Each climate zone has fundamentally different restoration requirements
+- **Avoids premature precision**: Detailed specs impossible until site and climate known
+- **Maintains flexibility**: Ready to implement in Germany, Portugal, Spain, France, or other EU locations
+- **Evidence-based**: All approaches use proven regional restoration practices
+- **Bootstrap-compatible**: All options viable at 1 hectare with 1-2 founders and modest budget
+
+### Current Status
+- **Methodology framework**: Complete and documented (this file)
+- **Specific approach**: TBD pending location decision (Month 6)
+- **Species lists**: Example lists ready for 3 climate zones, final list pending site
+- **Timeline**: Adaptive to planting windows of chosen climate zone
+- **Budget**: Estimated for all climate options, final budget after location confirmed
+
+**Next Action**: Location decision → Within 2 weeks, activate specific methodology (Temperate/Mediterranean/Atlantic), consult local experts, finalize species list
+
+---
+
+**Document Version:** 2.1.0 - Adaptive Transformation
+**Last Updated:** 2025-11-09
+**Status:** Active - Location-Adaptive Framework
+**Transformation**: Agent 9 - Geographic flexibility + climate-specific methodologies added
