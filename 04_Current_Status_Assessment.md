@@ -936,3 +936,8 @@ Now you need to choose **when to start and at what pace**:
 - [[50_Risk_Assessment|Risk Management & Decision Framework]]
 - [[12_Team_Roles|Team & Work Model]]
 - [[60_Marketing_Communications_Strategy|Public Presence Strategy]]
+---
+
+**Document Version:** 3.0.0 - Adaptive Framework
+**Last Updated:** 2025-11-10
+**Status:** Transformed to Adaptive Framework

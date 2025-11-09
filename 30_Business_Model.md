@@ -1217,3 +1217,8 @@ Understanding the budget ranges - what's included at each level:
 **Document Version:** 2.0.0
 **Last Updated:** 2025-11-08
 **Status:** Active
+---
+
+**Document Version:** 3.0.0 - Adaptive Framework
+**Last Updated:** 2025-11-10
+**Status:** Transformed to Adaptive Framework

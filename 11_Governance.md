@@ -1004,3 +1004,8 @@
 
 **Stakeholder Engagement**:
 - [[60_Marketing_Communications_Strategy|Communications Strategy]] - Transparency and reporting to supporters
+---
+
+**Document Version:** 3.0.0 - Adaptive Framework
+**Last Updated:** 2025-11-10
+**Status:** Transformed to Adaptive Framework

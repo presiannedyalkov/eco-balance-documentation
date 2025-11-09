@@ -1243,3 +1243,8 @@ Monitor these signals that risks may be materializing:
 **Monitoring:**
 - [[51_Key_Performance_Indicators|Risk Indicators]]
 - [[11_Governance|Oversight Mechanisms]]
+---
+
+**Document Version:** 3.0.0 - Adaptive Framework
+**Last Updated:** 2025-11-10
+**Status:** Transformed to Adaptive Framework

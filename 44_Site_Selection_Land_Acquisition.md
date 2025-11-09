@@ -1434,4 +1434,8 @@ Week 3-4:
 
 ---
 
-*Finding the right 1 hectare - affordable, manageable, and perfect for proving our restoration model.*
+*Finding the right 1 hectare - affordable, manageable, and perfect for proving our restoration model.*---
+
+**Document Version:** 3.0.0 - Adaptive Framework
+**Last Updated:** 2025-11-10
+**Status:** Transformed to Adaptive Framework
