@@ -32,6 +32,252 @@
 
 ---
 
+## 🌍 Location Selection - Adaptive Framework (Geographic Options D-F)
+
+### Option D: France (Varied Climate)
+
+**Regions**: Auvergne, Limousin, Burgundy (central), Provence (south), Brittany (northwest)
+
+**Climate**: Temperate (north/center) to Mediterranean (south)
+- North/Central: 600-900mm rain, 4 seasons, -5°C to 30°C
+- South: 500-700mm rain (winter concentrated), Mediterranean, 0°C to 35°C
+
+**Land Costs**: €5,000-15,000/ha (central regions moderate, south more expensive)
+
+**Species Palette**:
+- North/Central: Oak, Chestnut, Beech, Hornbeam, Birch - temperate forest
+- South: Holm Oak, Downy Oak, Aleppo Pine, Strawberry Tree - Mediterranean
+
+**Pros**:
+- Diverse geography and climates (can choose ideal region)
+- Strong environmental culture and policies
+- EU member (grants available: ADEME, EU LIFE, regional programs)
+- Good infrastructure and services
+- Large country with many options
+
+**Cons**:
+- Language barrier (French required for bureaucracy, local relationships)
+- More expensive land than Spain/Portugal (but cheaper than Germany)
+- Complex regulations and bureaucracy
+- Legal structure (Association loi 1901) less familiar than German e.V.
+- Some regions face summer drought (south)
+
+**Legal Structure**:
+- Association loi 1901 (non-profit association)
+- Setup cost: €500-1,500
+- Timeline: 4-8 weeks
+- Can own land and operate
+
+**Best if**:
+- French language ability (or willing to learn)
+- Want temperate climate with cultural richness
+- Diverse geographic options important
+- Comfortable navigating French bureaucracy
+
+**Status**: Lower priority, but possible if opportunity emerges
+
+---
+
+### Option E: Italy (Mediterranean Climate)
+
+**Regions**: Tuscany, Umbria, Abruzzo, Basilicata, Molise (interior regions cheaper)
+
+**Climate**: Mediterranean (hot, dry summers)
+- Annual rain: 600-900mm (higher in mountains, lower in south)
+- Temperature: 0°C to 40°C
+- Summer drought: May-September (irrigation essential)
+- Long growing season: March-November
+
+**Land Costs**: €5,000-20,000/ha (varies widely, interior cheaper, Tuscany expensive)
+
+**Species Palette**:
+- Mediterranean Oak (Holm Oak, Downy Oak, Turkey Oak)
+- Pines (Stone Pine, Aleppo Pine)
+- Shrubs (Strawberry Tree, Mastic, Rosemary, Myrtle)
+- Fruit/Nut (Olive, Fig, Almond, Carob)
+
+**Pros**:
+- Beautiful landscapes, high restoration need
+- EU grants available (LIFE, Italian environmental programs)
+- Strong agriturismo/ecotourism culture (revenue potential high)
+- Excellent climate for diverse species
+- Rich restoration tradition (many examples to learn from)
+
+**Cons**:
+- More expensive than Spain/Portugal (especially popular regions)
+- Language barrier (Italian required)
+- Bureaucracy complex and slow (regional variation)
+- Water scarcity in summer (irrigation infrastructure needed)
+- Wildfire risk in some regions
+
+**Legal Structure**:
+- Associazione (non-profit association)
+- Setup cost: €500-2,000
+- Timeline: 6-10 weeks
+- Regional variation in requirements
+
+**Best if**:
+- Italian language ability
+- Want Mediterranean climate and culture
+- Ecotourism revenue focus (agriturismo synergy)
+- Comfortable with bureaucratic complexity
+
+**Status**: Lower priority, opportunistic
+
+---
+
+### Option F: Opportunity-Driven (Other/TBD)
+
+**Description**: Remain open to unexpected opportunities outside primary focus countries
+
+**Potential Scenarios**:
+- Someone offers free/cheap land in Austria, Slovenia, Croatia, etc.
+- Major grant requires specific region (we adapt location to secure funding)
+- Partnership with organization that has land (location determined by partner)
+- Founders relocate for personal reasons, choose location accordingly
+- Exceptional land deal emerges in non-primary country
+
+**Candidate Countries** (if opportunity emerges):
+- Austria: Similar to Germany, higher costs, beautiful landscapes
+- Slovenia: Lower costs, Mediterranean/Alpine mix, EU member
+- Croatia: Adriatic coast, lower costs, emerging eco-tourism
+- Poland: Very affordable, temperate climate, EU member
+- Czech Republic: Central Europe, moderate costs, good infrastructure
+- Greece: Mediterranean, very cheap in rural areas, bureaucratic challenges
+
+**Pros**:
+- Maximize opportunity capture
+- Flexibility to pursue best available option
+- Don't miss great deals due to geographic restrictions
+- Allows for serendipity and network effects
+
+**Cons**:
+- Unpredictable timeline
+- Harder to plan systematically
+- May face unknown regulatory environments
+- Language barriers in unexpected locations
+
+**Best if**:
+- No strong location preference among founders
+- Prioritize best opportunity over specific geography
+- Flexible and adaptable mindset
+- Have network across multiple countries
+
+**Status**: Always monitoring, will pursue if compelling opportunity emerges
+
+---
+
+## 💰 Land Acquisition Options - Adaptive Framework
+
+### Overview
+
+**Philosophy**: Match acquisition strategy to funding available and commitment level
+
+**Key Decision Factors**:
+- **Funding Available**: €0-5k → Partnership; €5-15k → Lease; €20-30k → Purchase
+- **Commitment Level**: Testing model → Lease; Long-term committed → Purchase
+- **Land Availability**: Scarce market → Take what's available; Abundant → Be selective
+- **Flexibility Need**: Want exit option → Lease; Want permanence → Buy
+
+---
+
+### Option A: Purchase (€5-30k depending on location)
+
+**Land Costs by Country**:
+- **Portugal**: €3,000-8,000/ha (interior regions like Alentejo, Trás-os-Montes)
+- **Spain**: €4,000-12,000/ha (interior Castile, Aragon, Extremadura)
+- **Germany**: €5,000-15,000/ha (Brandenburg, Saxony, Thuringia)
+- **France**: €5,000-15,000/ha (central regions: Auvergne, Limousin)
+- **Italy**: €5,000-20,000/ha (interior regions, avoid Tuscany/Umbria premium)
+
+**Timeline**: 1-3 months (due diligence, contracts, registration)
+
+**Total Purchase Costs** (1 hectare):
+- Land price: €3,000-20,000 (varies by country/region)
+- Notary fees: €500-1,500 (varies by country)
+- Legal fees: €300-1,000 (contract review)
+- Registration: €200-800 (land registry)
+- Transfer tax: €0-2,000 (varies by country)
+- **Total**: €5,000-30,000
+
+**Pros**:
+- **Full control**: Do whatever you want (within zoning)
+- **Permanent**: No landlord, no rent, no risk of losing access
+- **Can build**: Structures, infrastructure, long-term investments
+- **Asset value**: Land appreciates, especially after restoration
+- **No ongoing payments**: One-time cost (except small property tax)
+- **Fundraising credibility**: Ownership shows commitment
+
+**Cons**:
+- **High upfront capital**: €5-30k needed at once
+- **Less flexibility**: Committed to location, harder to exit
+- **Property taxes**: Small ongoing cost (€50-200/year usually)
+- **Maintenance responsibility**: You own all problems
+- **Opportunity cost**: Capital tied up in land vs. operations
+
+**Best if**:
+- Crowdfunding/grant successful (€20-30k available for land)
+- Want permanence and long-term commitment (10+ years)
+- Need to build structures (tiny house, barn, workshop)
+- Want full control over restoration decisions
+- Confident in location choice (no regrets about geography)
+
+**Status**: Preferred if funding secured (crowdfunding/grant succeeds)
+
+---
+
+### Option B: Long-term Lease (€500-2,000/year for 10-20 years)
+
+**Description**: Rent land with long-term contract (10-20 year lease minimum)
+
+**Typical Terms**:
+- **Duration**: 10-20 years (minimum for restoration investment to make sense)
+- **Annual Rent**: €500-2,000/year (varies by land value, country, landlord)
+- **Upfront**: €0-3,000 (security deposit, first/last month)
+- **Renewal Option**: Right to extend for additional term
+- **Purchase Option**: Ideally included (price set in advance)
+
+**Timeline**: 1-2 months (negotiate, contract, take possession)
+
+**Year 1 Costs**:
+- Security deposit: €0-2,000
+- First year rent: €500-2,000
+- Legal review: €200-500
+- **Total**: €700-4,500 (much lower than purchase!)
+
+**Pros**:
+- **Low upfront cost**: Can start immediately with €1-5k
+- **Can start quickly**: Less due diligence needed than purchase
+- **Test before buying**: Prove model works before major capital commitment
+- **Exit option**: Can leave after lease term if needed (flexibility)
+- **More capital for operations**: Money not tied up in land purchase
+
+**Cons**:
+- **Ongoing payments**: €500-2,000/year forever (or until purchase)
+- **Landowner can interfere**: May have opinions on restoration approach
+- **Improvements benefit owner**: Your tree planting increases their land value
+- **Less control**: Can't build without landlord permission
+- **Risk of non-renewal**: Owner could decide not to extend (mitigate with strong contract)
+
+**Best if**:
+- Low initial capital (crowdfunding modest or bootstrap)
+- Want to test model before major commitment
+- Flexibility important (may relocate, scale up elsewhere)
+- Found perfect site but can't afford purchase yet
+- Purchase option included in lease (rent-to-own path)
+
+**Contract Essentials** (negotiate these terms):
+- Minimum 10 years (20 preferred) - restoration takes time
+- Right to plant trees and make improvements
+- Purchase option at pre-set price (protect against land value increase)
+- Right to build small structures (tiny house, tool shed) with permission
+- Renewal terms clearly defined (not at landlord's whim)
+- Exit terms (what happens to improvements if you leave?)
+
+**Status**: Strong option if crowdfunding modest or as bridge to purchase
+
+---
+
 ## 🎯 Bootstrap Site Requirements
 
 ### Essential Criteria (Non-Negotiable)
