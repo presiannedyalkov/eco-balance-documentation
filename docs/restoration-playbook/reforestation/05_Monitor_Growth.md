@@ -255,7 +255,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once monitoring is established:
-→ [Task 6: Long-Term Management](../../06_Long_Term_Management)
+→ [Task 6: Long-Term Management](/restoration-playbook/reforestation/restoration-playbook-reforestation-06_Long_Term_Management)
 
 ---
 

@@ -256,7 +256,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once soil health is assessed:
-→ [Task 2: Add Organic Matter](../../02_Add_Organic_Matter)
+→ [Task 2: Add Organic Matter](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-02_Add_Organic_Matter)
 
 ---
 

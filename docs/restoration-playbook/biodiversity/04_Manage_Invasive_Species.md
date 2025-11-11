@@ -136,7 +136,7 @@ These must be followed - they are based on scientific and ethical consensus:
 ### Step 1: Identify Invasive Species
 
 **Comprehensive Survey:**
-- Conduct thorough site assessment → [Assess Biodiversity](../../01_Assess_Biodiversity)
+- Conduct thorough site assessment → [Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)
 - Identify all non-native species present
 - Document distribution and abundance
 - Map invasive species locations with GPS
@@ -630,18 +630,18 @@ Use multiple methods in combination:
 ## 📊 Related Documents
 
 **Biodiversity Conservation:**
-- [Biodiversity Overview](../../00_Biodiversity_Overview)
-- [Previous: Create Protected Areas](../../03_Create_Protected_Areas)
-- [Next: Reintroduce Lost Species](../../05_Reintroduce_Lost_Species)
+- [Biodiversity Overview](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)
+- [Previous: Create Protected Areas](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-03_Create_Protected_Areas)
+- [Next: Reintroduce Lost Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-05_Reintroduce_Lost_Species)
 
 **Related Tasks:**
-- [Assess Biodiversity](../../01_Assess_Biodiversity)
-- [Restore Habitats](../../02_Restore_Habitats)
-- [Monitor Biodiversity](../../06_Monitor_Biodiversity)
+- [Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)
+- [Restore Habitats](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-02_Restore_Habitats)
+- [Monitor Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-06_Monitor_Biodiversity)
 
 **Strategic Context:**
-- [Restoration Methodology](../../20_Restoration_Methodology)
-- [Restoration Challenges](../../22_Restoration_Challenges_Solutions)
+- [Restoration Methodology](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-20_Restoration_Methodology)
+- [Restoration Challenges](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-22_Restoration_Challenges_Solutions)
 
 ---
 
@@ -703,4 +703,4 @@ Use multiple methods in combination:
 ---
 
 *Part of the [Implementation Tasks](README) series*  
-*Next: [Reintroduce Lost Species](../../05_Reintroduce_Lost_Species)*
+*Next: [Reintroduce Lost Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-05_Reintroduce_Lost_Species)*

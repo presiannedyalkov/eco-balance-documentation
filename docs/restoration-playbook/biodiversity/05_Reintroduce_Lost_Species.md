@@ -299,7 +299,7 @@ These must be followed - they are based on scientific and ethical consensus:
 ## Next Steps
 
 Once species are reintroduced:
-→ [Task 6: Monitor Biodiversity](../../06_Monitor_Biodiversity)
+→ [Task 6: Monitor Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-06_Monitor_Biodiversity)
 
 ---
 

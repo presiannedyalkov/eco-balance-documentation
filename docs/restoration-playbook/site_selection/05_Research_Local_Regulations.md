@@ -297,7 +297,7 @@ These must be followed - they are based on legal and practical consensus:
 ## Next Steps
 
 Once regulations are researched:
-→ [Step 6: Contact Landowners](../../06_Contact_Landowners)
+→ [Step 6: Contact Landowners](/restoration-playbook/site_selection/restoration-playbook-site_selection-06_Contact_Landowners)
 
 ---
 

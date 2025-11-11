@@ -154,7 +154,7 @@ These must be followed - they are based on scientific consensus:
 - Check for compaction
 - Test drainage rate
 
-→ For soil details: [Assess Soil Health](../soil_restoration/01_Assess_Soil_Health)
+→ For soil details: [Assess Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-01_Assess_Soil_Health)
 
 ### Step 2: Clear Unwanted Vegetation
 
@@ -167,7 +167,7 @@ These must be followed - they are based on scientific consensus:
 - May require multiple treatments
 - Document species removed for monitoring
 
-→ Details: [Manage Invasive Species](../biodiversity/04_Manage_Invasive_Species)
+→ Details: [Manage Invasive Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-04_Manage_Invasive_Species)
 
 **Native Vegetation:**
 - **Preserve** existing native plants and trees
@@ -199,7 +199,7 @@ These must be followed - they are based on scientific consensus:
 - Enhance water retention
 - Support beneficial soil organisms
 
-→ Details: [Add Organic Matter](../soil_restoration/02_Add_Organic_Matter)
+→ Details: [Add Organic Matter](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-02_Add_Organic_Matter)
 
 **Address Compaction:**
 - Break up compacted layers if severe
@@ -267,7 +267,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once land is prepared:
-→ [Task 4: Plant Seedlings](../../04_Plant_Seedlings)
+→ [Task 4: Plant Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-04_Plant_Seedlings)
 
 ---
 

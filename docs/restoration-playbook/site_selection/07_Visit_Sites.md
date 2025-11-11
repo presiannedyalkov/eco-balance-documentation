@@ -134,7 +134,7 @@ These must be followed - they are based on practical and scientific consensus:
 - Prepare equipment and materials
 
 **Permissions:**
-- Confirm access permission from landowner → [Contact Landowners](../../06_Contact_Landowners)
+- Confirm access permission from landowner → [Contact Landowners](/restoration-playbook/site_selection/restoration-playbook-site_selection-06_Contact_Landowners)
 - Understand any restrictions or sensitive areas
 - Inform local authorities if required
 - Bring written permission if needed
@@ -294,7 +294,7 @@ These must be followed - they are based on practical and scientific consensus:
 ## Next Steps
 
 Once sites are visited:
-→ [Step 8: Make Shortlist](../../08_Make_Shortlist)
+→ [Step 8: Make Shortlist](/restoration-playbook/site_selection/restoration-playbook-site_selection-08_Make_Shortlist)
 
 ---
 

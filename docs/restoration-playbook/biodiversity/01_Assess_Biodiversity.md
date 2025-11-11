@@ -326,7 +326,7 @@ These must be done - they are based on scientific consensus:
 ## Next Steps
 
 Once baseline is established:
-→ [Task 2: Restore Habitats](../../02_Restore_Habitats)
+→ [Task 2: Restore Habitats](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-02_Restore_Habitats)
 
 ---
 

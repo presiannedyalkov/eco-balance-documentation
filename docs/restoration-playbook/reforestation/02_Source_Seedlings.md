@@ -315,7 +315,7 @@ Apply your species mix percentages to determine quantities for each species.
 ## Next Steps
 
 Once seedlings are sourced:
-→ [Task 3: Prepare Land](../../03_Prepare_Land)
+→ [Task 3: Prepare Land](/restoration-playbook/reforestation/restoration-playbook-reforestation-03_Prepare_Land)
 
 ---
 

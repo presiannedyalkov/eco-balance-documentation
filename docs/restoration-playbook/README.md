@@ -94,70 +94,70 @@ This is a **comprehensive template and playbook** for ecological restoration pro
 ### Phase 1: Site Selection (9 Tasks)
 **Purpose:** Find and evaluate locations with highest restoration potential
 
-1. **[Site Selection Overview](/restoration-playbook/site_selection/00_Site_Selection_Overview)** - Strategic framework
-2. **[Identify Potential Locations](/restoration-playbook/site_selection/01_Identify_Potential_Locations)** - Geographic analysis
-3. **[Evaluate Land Condition](/restoration-playbook/site_selection/02_Evaluate_Land_Condition)** - Site assessment
-4. **[Estimate Restoration Potential](/restoration-playbook/site_selection/03_Estimate_Restoration_Potential)** - Feasibility analysis
-5. **[Consider Accessibility](/restoration-playbook/site_selection/04_Consider_Accessibility)** - Practical access
-6. **[Research Local Regulations](/restoration-playbook/site_selection/05_Research_Local_Regulations)** - Legal compliance
-7. **[Contact Landowners](/restoration-playbook/site_selection/06_Contact_Landowners)** - Relationship building
-8. **[Visit Sites](/restoration-playbook/site_selection/07_Visit_Sites)** - Ground-truthing
-9. **[Make a Shortlist](/restoration-playbook/site_selection/08_Make_Shortlist)** - Final selection
+1. **[Site Selection Overview](/restoration-playbook/site_selection/restoration-playbook-site_selection-00_Site_Selection_Overview)** - Strategic framework
+2. **[Identify Potential Locations](/restoration-playbook/site_selection/restoration-playbook-site_selection-01_Identify_Potential_Locations)** - Geographic analysis
+3. **[Evaluate Land Condition](/restoration-playbook/site_selection/restoration-playbook-site_selection-02_Evaluate_Land_Condition)** - Site assessment
+4. **[Estimate Restoration Potential](/restoration-playbook/site_selection/restoration-playbook-site_selection-03_Estimate_Restoration_Potential)** - Feasibility analysis
+5. **[Consider Accessibility](/restoration-playbook/site_selection/restoration-playbook-site_selection-04_Consider_Accessibility)** - Practical access
+6. **[Research Local Regulations](/restoration-playbook/site_selection/restoration-playbook-site_selection-05_Research_Local_Regulations)** - Legal compliance
+7. **[Contact Landowners](/restoration-playbook/site_selection/restoration-playbook-site_selection-06_Contact_Landowners)** - Relationship building
+8. **[Visit Sites](/restoration-playbook/site_selection/restoration-playbook-site_selection-07_Visit_Sites)** - Ground-truthing
+9. **[Make a Shortlist](/restoration-playbook/site_selection/restoration-playbook-site_selection-08_Make_Shortlist)** - Final selection
 
 ### Phase 2: Reforestation (7 Tasks)
 **Purpose:** Restore forest ecosystems through strategic tree planting
 
-1. **[Reforestation Overview](/restoration-playbook/reforestation/00_Reforestation_Overview)** - Forest restoration framework
-2. **[Identify Native Species](/restoration-playbook/reforestation/01_Identify_Native_Species)** - Species selection
-3. **[Source Seedlings](/restoration-playbook/reforestation/02_Source_Seedlings)** - Procurement strategies
-4. **[Prepare Land](/restoration-playbook/reforestation/03_Prepare_Land)** - Site preparation
-5. **[Plant Seedlings](/restoration-playbook/reforestation/04_Plant_Seedlings)** - Planting techniques
-6. **[Monitor Growth](/restoration-playbook/reforestation/05_Monitor_Growth)** - Progress tracking
-7. **[Long-Term Management](/restoration-playbook/reforestation/06_Long_Term_Management)** - Ongoing stewardship
+1. **[Reforestation Overview](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview)** - Forest restoration framework
+2. **[Identify Native Species](/restoration-playbook/reforestation/restoration-playbook-reforestation-01_Identify_Native_Species)** - Species selection
+3. **[Source Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-02_Source_Seedlings)** - Procurement strategies
+4. **[Prepare Land](/restoration-playbook/reforestation/restoration-playbook-reforestation-03_Prepare_Land)** - Site preparation
+5. **[Plant Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-04_Plant_Seedlings)** - Planting techniques
+6. **[Monitor Growth](/restoration-playbook/reforestation/restoration-playbook-reforestation-05_Monitor_Growth)** - Progress tracking
+7. **[Long-Term Management](/restoration-playbook/reforestation/restoration-playbook-reforestation-06_Long_Term_Management)** - Ongoing stewardship
 
 ### Phase 3: Biodiversity Conservation (7 Tasks)
 **Purpose:** Protect and enhance native species and ecological communities
 
-1. **[Biodiversity Overview](/restoration-playbook/biodiversity/00_Biodiversity_Overview)** - Conservation strategy
-2. **[Assess Biodiversity](/restoration-playbook/biodiversity/01_Assess_Biodiversity)** - Baseline surveys
-3. **[Restore Habitats](/restoration-playbook/biodiversity/02_Restore_Habitats)** - Habitat creation
-4. **[Create Protected Areas](/restoration-playbook/biodiversity/03_Create_Protected_Areas)** - Sanctuary establishment
-5. **[Manage Invasive Species](/restoration-playbook/biodiversity/04_Manage_Invasive_Species)** - Control strategies
-6. **[Reintroduce Lost Species](/restoration-playbook/biodiversity/05_Reintroduce_Lost_Species)** - Species recovery
-7. **[Monitor Biodiversity](/restoration-playbook/biodiversity/06_Monitor_Biodiversity)** - Long-term tracking
+1. **[Biodiversity Overview](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)** - Conservation strategy
+2. **[Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)** - Baseline surveys
+3. **[Restore Habitats](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-02_Restore_Habitats)** - Habitat creation
+4. **[Create Protected Areas](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-03_Create_Protected_Areas)** - Sanctuary establishment
+5. **[Manage Invasive Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-04_Manage_Invasive_Species)** - Control strategies
+6. **[Reintroduce Lost Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-05_Reintroduce_Lost_Species)** - Species recovery
+7. **[Monitor Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-06_Monitor_Biodiversity)** - Long-term tracking
 
 ### Phase 4: Soil Restoration (7 Tasks)
 **Purpose:** Rebuild soil health as foundation for ecosystem recovery
 
-1. **[Soil Restoration Overview](/restoration-playbook/soil_restoration/00_Soil_Restoration_Overview)** - Soil health framework
-2. **[Assess Soil Health](/restoration-playbook/soil_restoration/01_Assess_Soil_Health)** - Testing and analysis
-3. **[Add Organic Matter](/restoration-playbook/soil_restoration/02_Add_Organic_Matter)** - Soil amendments
-4. **[Reduce Tillage](/restoration-playbook/soil_restoration/03_Reduce_Tillage)** - Conservation practices
-5. **[Rotate Crops](/restoration-playbook/soil_restoration/04_Rotate_Crops)** - Diversification strategies
-6. **[Manage Pests & Diseases](/restoration-playbook/soil_restoration/05_Manage_Pests_Diseases)** - Integrated management
-7. **[Monitor Soil Health](/restoration-playbook/soil_restoration/06_Monitor_Soil_Health)** - Progress tracking
+1. **[Soil Restoration Overview](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview)** - Soil health framework
+2. **[Assess Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-01_Assess_Soil_Health)** - Testing and analysis
+3. **[Add Organic Matter](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-02_Add_Organic_Matter)** - Soil amendments
+4. **[Reduce Tillage](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-03_Reduce_Tillage)** - Conservation practices
+5. **[Rotate Crops](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-04_Rotate_Crops)** - Diversification strategies
+6. **[Manage Pests & Diseases](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-05_Manage_Pests_Diseases)** - Integrated management
+7. **[Monitor Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-06_Monitor_Soil_Health)** - Progress tracking
 
 ### Phase 5: Water Management (7 Tasks)
 **Purpose:** Ensure sustainable water use supporting ecosystem and community
 
-1. **[Water Management Overview](/restoration-playbook/water_management/00_Water_Management_Overview)** - Water strategy
-2. **[Assess Water Needs](/restoration-playbook/water_management/01_Assess_Water_Needs)** - Demand analysis
-3. **[Rainwater Harvesting](/restoration-playbook/water_management/02_Rainwater_Harvesting)** - Capture systems
-4. **[Build Water Storage Structures](/restoration-playbook/water_management/03_Build_Water_Storage_Structures)** - Infrastructure
-5. **[Efficient Irrigation](/restoration-playbook/water_management/04_Efficient_Irrigation)** - Conservation techniques
-6. **[Drought Management](/restoration-playbook/water_management/05_Drought_Management)** - Resilience planning
-7. **[Monitor Water Use](/restoration-playbook/water_management/06_Monitor_Water_Use)** - Usage tracking
+1. **[Water Management Overview](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview)** - Water strategy
+2. **[Assess Water Needs](/restoration-playbook/water_management/restoration-playbook-water_management-01_Assess_Water_Needs)** - Demand analysis
+3. **[Rainwater Harvesting](/restoration-playbook/water_management/restoration-playbook-water_management-02_Rainwater_Harvesting)** - Capture systems
+4. **[Build Water Storage Structures](/restoration-playbook/water_management/restoration-playbook-water_management-03_Build_Water_Storage_Structures)** - Infrastructure
+5. **[Efficient Irrigation](/restoration-playbook/water_management/restoration-playbook-water_management-04_Efficient_Irrigation)** - Conservation techniques
+6. **[Drought Management](/restoration-playbook/water_management/restoration-playbook-water_management-05_Drought_Management)** - Resilience planning
+7. **[Monitor Water Use](/restoration-playbook/water_management/restoration-playbook-water_management-06_Monitor_Water_Use)** - Usage tracking
 
 ### Phase 6: Community Engagement (7 Tasks)
 **Purpose:** Build lasting partnerships ensuring long-term stewardship
 
-1. **[Community Engagement Overview](/restoration-playbook/community_engagement/00_Community_Engagement_Overview)** - Engagement strategy
-2. **[Identify Stakeholders](/restoration-playbook/community_engagement/01_Identify_Stakeholders)** - Stakeholder mapping
-3. **[Communicate Plans](/restoration-playbook/community_engagement/02_Communicate_Plans)** - Outreach and dialogue
-4. **[Educate Community](/restoration-playbook/community_engagement/03_Educate_Community)** - Environmental education
-5. **[Involve Community](/restoration-playbook/community_engagement/04_Involve_Community)** - Active participation
-6. **[Share Benefits](/restoration-playbook/community_engagement/05_Share_Benefits)** - Equitable distribution
-7. **[Maintain Communication](/restoration-playbook/community_engagement/06_Maintain_Communication)** - Long-term relationships
+1. **[Community Engagement Overview](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)** - Engagement strategy
+2. **[Identify Stakeholders](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-01_Identify_Stakeholders)** - Stakeholder mapping
+3. **[Communicate Plans](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-02_Communicate_Plans)** - Outreach and dialogue
+4. **[Educate Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-03_Educate_Community)** - Environmental education
+5. **[Involve Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-04_Involve_Community)** - Active participation
+6. **[Share Benefits](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-05_Share_Benefits)** - Equitable distribution
+7. **[Maintain Communication](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-06_Maintain_Communication)** - Long-term relationships
 
 ---
 
@@ -290,15 +290,15 @@ This template represents:
 
 **Choose Your Path:**
 
-**🌱 New Project:** Start with [Site Selection](/restoration-playbook/site_selection/00_Site_Selection_Overview)
+**🌱 New Project:** Start with [Site Selection](/restoration-playbook/site_selection/restoration-playbook-site_selection-00_Site_Selection_Overview)
 
-**🤝 Community Focus:** Begin with [Community Engagement](/restoration-playbook/community_engagement/00_Community_Engagement_Overview)
+**🤝 Community Focus:** Begin with [Community Engagement](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)
 
-**🌲 Ecological Priority:** Jump to [Reforestation](/restoration-playbook/reforestation/00_Reforestation_Overview) or [Biodiversity](/restoration-playbook/biodiversity/00_Biodiversity_Overview)
+**🌲 Ecological Priority:** Jump to [Reforestation](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview) or [Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)
 
-**💧 Water Issues:** Focus on [Water Management](/restoration-playbook/water_management/00_Water_Management_Overview)
+**💧 Water Issues:** Focus on [Water Management](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview)
 
-**🌾 Soil Health:** Start with [Soil Restoration](/restoration-playbook/soil_restoration/00_Soil_Restoration_Overview)
+**🌾 Soil Health:** Start with [Soil Restoration](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview)
 
 **📚 Complete Overview:** Explore each phase systematically
 

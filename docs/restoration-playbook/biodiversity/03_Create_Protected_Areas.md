@@ -138,7 +138,7 @@ These must be followed - they are based on scientific consensus:
 - Wetlands, riparian zones, springs
 - Old-growth or mature forest patches
 - Rare habitat types
-- Species-rich areas identified in assessment → [Assess Biodiversity](../../01_Assess_Biodiversity)
+- Species-rich areas identified in assessment → [Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)
 
 **Critical Wildlife Areas:**
 - Nesting sites (birds, mammals)
@@ -296,7 +296,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once protected areas are established:
-→ [Task 4: Manage Invasive Species](../../04_Manage_Invasive_Species)
+→ [Task 4: Manage Invasive Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-04_Manage_Invasive_Species)
 
 ---
 

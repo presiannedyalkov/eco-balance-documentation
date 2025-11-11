@@ -173,7 +173,7 @@ These must be followed - they are based on scientific consensus:
 ### Step 3: Implement Preventive Practices
 
 **Cultural practices:**
-- Crop rotation → [Rotate Crops](../../04_Rotate_Crops)
+- Crop rotation → [Rotate Crops](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-04_Rotate_Crops)
 - Sanitation (remove infected material)
 - Proper timing (plant when conditions favor plants, not pests)
 - Appropriate spacing (good air circulation)
@@ -303,7 +303,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once pest and disease management is established:
-→ [Task 6: Monitor Soil Health](../../06_Monitor_Soil_Health)
+→ [Task 6: Monitor Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-06_Monitor_Soil_Health)
 
 ---
 

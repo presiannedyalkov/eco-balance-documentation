@@ -10,7 +10,7 @@ sidebar_position: 0
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
-[]( )| [Project Hub](../../00_Eco_Balance_Hub)
+[]( )| [Project Hub](/)
 
 ---
 
@@ -129,32 +129,32 @@ These are the constraints based on scientific consensus that cannot be compromis
 ## 📋 Implementation Process
 
 ### Phase 1: Assessment
-1. **[Assess Soil Health](../../01_Assess_Soil_Health)** - Test soil composition, nutrients, pH, organic matter content, and biological activity
+1. **[Assess Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-01_Assess_Soil_Health)** - Test soil composition, nutrients, pH, organic matter content, and biological activity
 
 ### Phase 2: Enhancement
-2. **[Add Organic Matter](../../02_Add_Organic_Matter)** - Incorporate compost, mulch, and organic amendments
-3. **[Reduce Tillage](../../03_Reduce_Tillage)** - Minimize soil disturbance to preserve structure
-4. **[Rotate Crops](../../04_Rotate_Crops)** - Plan diverse planting sequences to improve soil health
+2. **[Add Organic Matter](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-02_Add_Organic_Matter)** - Incorporate compost, mulch, and organic amendments
+3. **[Reduce Tillage](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-03_Reduce_Tillage)** - Minimize soil disturbance to preserve structure
+4. **[Rotate Crops](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-04_Rotate_Crops)** - Plan diverse planting sequences to improve soil health
 
 ### Phase 3: Management
-5. **[Manage Pests and Diseases](../../05_Manage_Pests_Diseases)** - Implement integrated pest management for soil health
+5. **[Manage Pests and Diseases](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-05_Manage_Pests_Diseases)** - Implement integrated pest management for soil health
 
 ### Phase 4: Monitoring
-6. **[Monitor Soil Health](../../06_Monitor_Soil_Health)** - Track improvements and adjust strategies
+6. **[Monitor Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-06_Monitor_Soil_Health)** - Track improvements and adjust strategies
 
 ---
 
 ## 🔗 Integration with Other Phases
 
-**Site Selection:** Site conditions determine soil restoration approach → [Site Selection](../site_selection/00_Site_Selection_Overview)
+**Site Selection:** Site conditions determine soil restoration approach → [Site Selection](/restoration-playbook/site_selection/restoration-playbook-site_selection-00_Site_Selection_Overview)
 
-**Reforestation:** Healthy soil is essential for tree survival → [Reforestation](../reforestation/00_Reforestation_Overview)
+**Reforestation:** Healthy soil is essential for tree survival → [Reforestation](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview)
 
-**Water Management:** Soil health affects water retention → [Water Management](../water_management/00_Water_Management_Overview)
+**Water Management:** Soil health affects water retention → [Water Management](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview)
 
-**Biodiversity:** Soil biodiversity supports above-ground life → [Biodiversity Conservation](../biodiversity/00_Biodiversity_Overview)
+**Biodiversity:** Soil biodiversity supports above-ground life → [Biodiversity Conservation](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)
 
-**Community Engagement:** Soil work ideal for community involvement → [Community Engagement](../community_engagement/00_Community_Engagement_Overview)
+**Community Engagement:** Soil work ideal for community involvement → [Community Engagement](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)
 
 ---
 
@@ -180,12 +180,12 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 📚 Task Files
 
-1. [Assess Soil Health](../../01_Assess_Soil_Health)
-2. [Add Organic Matter](../../02_Add_Organic_Matter)
-3. [Reduce Tillage](../../03_Reduce_Tillage)
-4. [Rotate Crops](../../04_Rotate_Crops)
-5. [Manage Pests and Diseases](../../05_Manage_Pests_Diseases)
-6. [Monitor Soil Health](../../06_Monitor_Soil_Health)
+1. [Assess Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-01_Assess_Soil_Health)
+2. [Add Organic Matter](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-02_Add_Organic_Matter)
+3. [Reduce Tillage](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-03_Reduce_Tillage)
+4. [Rotate Crops](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-04_Rotate_Crops)
+5. [Manage Pests and Diseases](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-05_Manage_Pests_Diseases)
+6. [Monitor Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-06_Monitor_Soil_Health)
 
 ---
 

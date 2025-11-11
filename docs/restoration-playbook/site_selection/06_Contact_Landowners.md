@@ -314,7 +314,7 @@ These must be followed - they are based on legal and ethical consensus:
 ## Next Steps
 
 Once landowners are contacted:
-→ [Step 7: Visit Sites](../../07_Visit_Sites)
+→ [Step 7: Visit Sites](/restoration-playbook/site_selection/restoration-playbook-site_selection-07_Visit_Sites)
 
 ---
 

@@ -10,7 +10,7 @@ sidebar_position: 0
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
-[]( )| [Project Hub](../../00_Eco_Balance_Hub)
+[]( )| [Project Hub](/)
 
 ---
 
@@ -128,56 +128,56 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 📋 Complete 8-Step Process
 
-### [Step 1: Identify Potential Locations](../../01_Identify_Potential_Locations)
+### [Step 1: Identify Potential Locations](/restoration-playbook/site_selection/restoration-playbook-site_selection-01_Identify_Potential_Locations)
 Research and map promising regions
 - Climate and environmental criteria
 - Biodiversity priorities
 - Strategic geographic focus
 - Initial desktop screening
 
-### [Step 2: Evaluate Land Condition](../../02_Evaluate_Land_Condition)
+### [Step 2: Evaluate Land Condition](/restoration-playbook/site_selection/restoration-playbook-site_selection-02_Evaluate_Land_Condition)
 Comprehensive on-site assessment of degradation and opportunity
 - Soil health analysis
 - Vegetation assessment
 - Water availability
 - Contamination screening
 
-### [Step 3: Estimate Restoration Potential](../../03_Estimate_Restoration_Potential)
+### [Step 3: Estimate Restoration Potential](/restoration-playbook/site_selection/restoration-playbook-site_selection-03_Estimate_Restoration_Potential)
 Calculate feasibility, timeline, and likelihood of success
 - Restoration difficulty rating
 - Cost-benefit analysis
 - Timeline estimates
 - Success probability
 
-### [Step 4: Consider Accessibility](../../04_Consider_Accessibility)
+### [Step 4: Consider Accessibility](/restoration-playbook/site_selection/restoration-playbook-site_selection-04_Consider_Accessibility)
 Evaluate practical logistics and infrastructure needs
 - Road and transport access
 - Utilities availability
 - Staff and visitor accommodation
 - Emergency access
 
-### [Step 5: Research Local Regulations](../../05_Research_Local_Regulations)
+### [Step 5: Research Local Regulations](/restoration-playbook/site_selection/restoration-playbook-site_selection-05_Research_Local_Regulations)
 Understand legal requirements and constraints
 - Land use regulations
 - Environmental permits
 - Protected area designations
 - Local ordinances
 
-### [Step 6: Contact Landowners](../../06_Contact_Landowners)
+### [Step 6: Contact Landowners](/restoration-playbook/site_selection/restoration-playbook-site_selection-06_Contact_Landowners)
 Initiate negotiations and partnerships
 - Outreach strategies
 - Purchase vs partnership options
 - Legal due diligence
 - Contract negotiations
 
-### [Step 7: Visit Sites](../../07_Visit_Sites)
+### [Step 7: Visit Sites](/restoration-playbook/site_selection/restoration-playbook-site_selection-07_Visit_Sites)
 In-person inspection and verification
 - Field reconnaissance
 - Ground-truthing desktop research
 - Community and stakeholder meetings
 - Final assessment
 
-### [Step 8: Make a Shortlist](../../08_Make_Shortlist)
+### [Step 8: Make a Shortlist](/restoration-playbook/site_selection/restoration-playbook-site_selection-08_Make_Shortlist)
 Compare options and select best site(s)
 - Multi-criteria analysis
 - Risk assessment
@@ -188,15 +188,15 @@ Compare options and select best site(s)
 
 ## 🔗 Integration with Other Phases
 
-**Biodiversity:** Site characteristics determine species potential → [Biodiversity Conservation](../biodiversity/00_Biodiversity_Overview)
+**Biodiversity:** Site characteristics determine species potential → [Biodiversity Conservation](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)
 
-**Soil Health:** Site condition informs restoration approach → [Soil Restoration](../soil_restoration/00_Soil_Restoration_Overview)
+**Soil Health:** Site condition informs restoration approach → [Soil Restoration](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview)
 
-**Water Management:** Site determines water needs and strategies → [Water Management](../water_management/00_Water_Management_Overview)
+**Water Management:** Site determines water needs and strategies → [Water Management](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview)
 
-**Reforestation:** Site characteristics determine tree species and methods → [Reforestation](../reforestation/00_Reforestation_Overview)
+**Reforestation:** Site characteristics determine tree species and methods → [Reforestation](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview)
 
-**Community Engagement:** Site location shapes community approach → [Community Engagement](../community_engagement/00_Community_Engagement_Overview)
+**Community Engagement:** Site location shapes community approach → [Community Engagement](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)
 
 ---
 
@@ -222,14 +222,14 @@ Compare options and select best site(s)
 
 ## 📚 Task Files
 
-1. [Identify Potential Locations](../../01_Identify_Potential_Locations)
-2. [Evaluate Land Condition](../../02_Evaluate_Land_Condition)
-3. [Estimate Restoration Potential](../../03_Estimate_Restoration_Potential)
-4. [Consider Accessibility](../../04_Consider_Accessibility)
-5. [Research Local Regulations](../../05_Research_Local_Regulations)
-6. [Contact Landowners](../../06_Contact_Landowners)
-7. [Visit Sites](../../07_Visit_Sites)
-8. [Make a Shortlist](../../08_Make_Shortlist)
+1. [Identify Potential Locations](/restoration-playbook/site_selection/restoration-playbook-site_selection-01_Identify_Potential_Locations)
+2. [Evaluate Land Condition](/restoration-playbook/site_selection/restoration-playbook-site_selection-02_Evaluate_Land_Condition)
+3. [Estimate Restoration Potential](/restoration-playbook/site_selection/restoration-playbook-site_selection-03_Estimate_Restoration_Potential)
+4. [Consider Accessibility](/restoration-playbook/site_selection/restoration-playbook-site_selection-04_Consider_Accessibility)
+5. [Research Local Regulations](/restoration-playbook/site_selection/restoration-playbook-site_selection-05_Research_Local_Regulations)
+6. [Contact Landowners](/restoration-playbook/site_selection/restoration-playbook-site_selection-06_Contact_Landowners)
+7. [Visit Sites](/restoration-playbook/site_selection/restoration-playbook-site_selection-07_Visit_Sites)
+8. [Make a Shortlist](/restoration-playbook/site_selection/restoration-playbook-site_selection-08_Make_Shortlist)
 
 ---
 

@@ -275,7 +275,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once water needs are assessed:
-→ [Task 2: Rainwater Harvesting](../../02_Rainwater_Harvesting)
+→ [Task 2: Rainwater Harvesting](/restoration-playbook/water_management/restoration-playbook-water_management-02_Rainwater_Harvesting)
 
 ---
 

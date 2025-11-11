@@ -10,7 +10,7 @@ sidebar_position: 0
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
-[]( )| [Project Hub](../../00_Eco_Balance_Hub)
+[]( )| [Project Hub](/)
 
 ---
 
@@ -137,19 +137,19 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ### Phase 1: Planning & Preparation (Months 1-3)
 
-1. **[Identify Native Species](../../01_Identify_Native_Species)**
+1. **[Identify Native Species](/restoration-playbook/reforestation/restoration-playbook-reforestation-01_Identify_Native_Species)**
    - Research native trees and shrubs
    - Consult botanists and ecologists
    - Consider climate adaptation and ecosystem roles
    - *Duration: 2-4 weeks*
 
-2. **[Source Seedlings](../../02_Source_Seedlings)**
+2. **[Source Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-02_Source_Seedlings)**
    - Find reputable nurseries or suppliers
    - Ensure health and disease-free stock
    - Plan timing for optimal planting season
    - *Duration: 4-6 weeks (including lead time)*
 
-3. **[Prepare the Land](../../03_Prepare_Land)**
+3. **[Prepare the Land](/restoration-playbook/reforestation/restoration-playbook-reforestation-03_Prepare_Land)**
    - Clear debris and assess soil conditions
    - Plan planting layout and spacing
    - Improve soil fertility if needed
@@ -157,7 +157,7 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ### Phase 2: Implementation (Months 3-4)
 
-4. **[Plant Seedlings](../../04_Plant_Seedlings)**
+4. **[Plant Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-04_Plant_Seedlings)**
    - Follow proper planting techniques
    - Ensure adequate spacing and depth
    - Water thoroughly after planting
@@ -165,13 +165,13 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ### Phase 3: Monitoring & Management (Ongoing)
 
-5. **[Monitor Growth](../../05_Monitor_Growth)**
+5. **[Monitor Growth](/restoration-playbook/reforestation/restoration-playbook-reforestation-05_Monitor_Growth)**
    - Regular site visits and health checks
    - Track survival rates and growth metrics
    - Replace dead or diseased trees promptly
    - *Frequency: Monthly (Year 1), Quarterly thereafter*
 
-6. **[Long-Term Management](../../06_Long_Term_Management)**
+6. **[Long-Term Management](/restoration-playbook/reforestation/restoration-playbook-reforestation-06_Long_Term_Management)**
    - Pruning and thinning as needed
    - Pest, disease, and fire protection
    - Adaptive management based on results
@@ -181,15 +181,15 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 🔗 Integration with Other Phases
 
-**Site Selection:** Site characteristics determine tree species and methods → [Site Selection](../site_selection/00_Site_Selection_Overview)
+**Site Selection:** Site characteristics determine tree species and methods → [Site Selection](/restoration-playbook/site_selection/restoration-playbook-site_selection-00_Site_Selection_Overview)
 
-**Soil Health:** Healthy soil is essential for tree survival → [Soil Restoration](../soil_restoration/00_Soil_Restoration_Overview)
+**Soil Health:** Healthy soil is essential for tree survival → [Soil Restoration](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview)
 
-**Water Management:** Adequate water during establishment → [Water Management](../water_management/00_Water_Management_Overview)
+**Water Management:** Adequate water during establishment → [Water Management](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview)
 
-**Biodiversity:** Trees create habitat for wildlife → [Biodiversity Conservation](../biodiversity/00_Biodiversity_Overview)
+**Biodiversity:** Trees create habitat for wildlife → [Biodiversity Conservation](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)
 
-**Community Engagement:** Local participation in planting activities → [Community Engagement](../community_engagement/00_Community_Engagement_Overview)
+**Community Engagement:** Local participation in planting activities → [Community Engagement](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)
 
 ---
 
@@ -215,12 +215,12 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 📚 Task Files
 
-1. [Identify Native Species](../../01_Identify_Native_Species)
-2. [Source Seedlings](../../02_Source_Seedlings)
-3. [Prepare Land](../../03_Prepare_Land)
-4. [Plant Seedlings](../../04_Plant_Seedlings)
-5. [Monitor Growth](../../05_Monitor_Growth)
-6. [Long-Term Management](../../06_Long_Term_Management)
+1. [Identify Native Species](/restoration-playbook/reforestation/restoration-playbook-reforestation-01_Identify_Native_Species)
+2. [Source Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-02_Source_Seedlings)
+3. [Prepare Land](/restoration-playbook/reforestation/restoration-playbook-reforestation-03_Prepare_Land)
+4. [Plant Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-04_Plant_Seedlings)
+5. [Monitor Growth](/restoration-playbook/reforestation/restoration-playbook-reforestation-05_Monitor_Growth)
+6. [Long-Term Management](/restoration-playbook/reforestation/restoration-playbook-reforestation-06_Long_Term_Management)
 
 ---
 

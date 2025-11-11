@@ -130,7 +130,7 @@ These must be followed - they are based on scientific consensus:
 ### Step 1: Establish Baseline and Monitoring Framework
 
 **Use initial assessment as baseline:**
-- Refer to data from [Assess Soil Health](../../01_Assess_Soil_Health)
+- Refer to data from [Assess Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-01_Assess_Soil_Health)
 - Establish Year 0 baseline for all key indicators
 - Document starting conditions thoroughly
 - Take baseline photos from fixed points

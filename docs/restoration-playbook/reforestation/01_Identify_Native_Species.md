@@ -137,7 +137,7 @@ These must be followed - they are based on scientific consensus:
 - Organic matter content
 - Existing vegetation indicators
 
-→ Reference: [Assess Soil Health](../soil_restoration/01_Assess_Soil_Health)
+→ Reference: [Assess Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-01_Assess_Soil_Health)
 
 ### Step 3: Evaluate Species Suitability
 
@@ -210,7 +210,7 @@ These must be followed - they are based on scientific consensus:
 
 2. **Climate Adaptation:** Select species adapted to your climate (consider climate change projections)
 
-3. **Site Conditions:** Match species to your actual soil, water, and light conditions
+3. **Site Conditions:** Match species to your actual [soil](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview), [water](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview), and light conditions
 
 4. **Ecosystem Type:** Choose species appropriate for your target ecosystem (forest, woodland, savanna, etc.)
 
@@ -225,7 +225,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once species are identified:
-→ [Task 2: Source Seedlings](../../02_Source_Seedlings)
+→ [Task 2: Source Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-02_Source_Seedlings)
 
 ---
 

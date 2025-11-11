@@ -466,7 +466,7 @@ These must be followed - they are based on scientific and ethical consensus:
 ## Next Steps
 
 Once community is involved:
-→ [Task 5: Share Benefits](../../05_Share_Benefits)
+→ [Task 5: Share Benefits](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-05_Share_Benefits)
 
 ---
 

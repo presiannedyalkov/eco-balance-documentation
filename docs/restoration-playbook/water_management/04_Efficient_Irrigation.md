@@ -131,7 +131,7 @@ These must be followed - they are based on scientific consensus:
 ### Step 1: Assess Irrigation Needs
 
 **Review water assessment:**
-- Refer to [Assess Water Needs](../../01_Assess_Water_Needs)
+- Refer to [Assess Water Needs](/restoration-playbook/water_management/restoration-playbook-water_management-01_Assess_Water_Needs)
 - Identify areas requiring supplemental water
 - Determine irrigation duration (establishment only vs. ongoing)
 - Calculate peak demand periods
@@ -301,7 +301,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once irrigation is established:
-→ [Task 5: Drought Management](../../05_Drought_Management)
+→ [Task 5: Drought Management](/restoration-playbook/water_management/restoration-playbook-water_management-05_Drought_Management)
 
 ---
 
