@@ -96,14 +96,14 @@ This project follows [Semantic Versioning 2.0.0](https://semver.org/):
 
 | Version | Release Date | Status | Description |
 |---------|-------------|--------|-------------|
-| **1.0.0** | 2025-10-25 | ✅ Current | Initial complete release |
+| **2.0.0** | 2025-11-06 | ✅ Current | Bootstrap Model transformation |
+| **1.0.0** | 2025-10-25 | ✅ Released | Initial complete release |
 
 ### Upcoming Versions
 
 | Version | Target Date | Status | Description |
 |---------|-------------|--------|-------------|
-| 1.1.0 | TBD | 📋 Planned | Additional task categories |
-| 2.0.0 | TBD | 💭 Concept | Methodology evolution |
+| 2.1.0 | TBD | 📋 Planned | Location/budget decisions finalized |
 
 ---
 
@@ -300,8 +300,8 @@ See `v1.0.0/RELEASE_NOTES.md` for complete details.
 
 ---
 
-**Current Version:** 1.0.0  
-**Last Updated:** October 25, 2025  
+**Current Version:** 2.0.0  
+**Last Updated:** November 10, 2025  
 **Maintained By:** Eco Balance Project Team
 
 *Professional version control for professional documentation.* 📦✨

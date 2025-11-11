@@ -31,11 +31,11 @@ Transform degraded ecosystems in Southern Europe through evidence-based, communi
 - Version control and release management established
 
 **Current Blockers** (Being Resolved in Parallel):
-1. Legal structure cost contradiction (Germany gGmbH €40k vs. e.V. €500)
+1. ~~Legal structure cost contradiction (Germany gGmbH €40k vs. e.V. €500)~~ ✅ **RESOLVED** - All documents now align: e.V./Associação recommended for Year 1-2 (€500-2k), gGmbH deferred to Year 3-5 with correct €28-35k cost documented
 2. Geographic location ambiguity (Germany vs. Southern Europe)
 3. Budget source confirmation (€20-30k availability)
 
-→ See [[_vault_maintenance/ASSUMPTIONS_AUDIT_SUMMARY|Assumptions Audit Summary]] for details
+→ See [[_vault_maintenance/audits/ASSUMPTIONS_AUDIT_SUMMARY|Assumptions Audit Summary]] for details
 
 ---
 
@@ -400,7 +400,7 @@ Year 5-10: Phase 5 (Replication & Network)
 
 **Current State**:
 - [[00_Eco_Balance_Hub|Project Hub]] - Main navigation
-- [[VERSION|Current Version]] - Version tracking
+- [[_versions/README|Version Information]] - Version tracking
 - [[CHANGELOG|Changelog]] - Complete version history
 - [[FEATURE_WISHLIST|Feature Wishlist]] - Desired features and enhancements
 

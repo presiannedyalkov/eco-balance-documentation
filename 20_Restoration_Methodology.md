@@ -8,34 +8,34 @@
 
 ### What Makes It Holistic?
 
-**Holistic environmental restoration** goes beyond single-issue interventions. Instead of just planting trees or protecting species, we address the entire ecosystem as an interconnected web:
+**Holistic environmental restoration** goes beyond single-issue interventions. Instead of just planting trees or protecting species, we **will address** the entire ecosystem as an interconnected web:
 
 **Multiple Environmental Issues:**
-- Tackles deforestation, soil degradation, water scarcity, and biodiversity loss simultaneously
+- **Will tackle** deforestation, soil degradation, water scarcity, and biodiversity loss simultaneously
 - Recognizes these issues are interconnected and must be addressed together
 - Example: Restoring forests also improves soil health, regulates water cycles, and conserves biodiversity
 
 **Ecosystem Health and Functionality:**
-- Focus on overall ecosystem health, not just isolated components
-- Restore natural balance and resilience
-- Enable ecosystems to regenerate and sustain themselves
+- **Will focus** on overall ecosystem health, not just isolated components
+- **Will restore** natural balance and resilience
+- **Will enable** ecosystems to regenerate and sustain themselves
 
 **Community Engagement:**
-- Involve local communities throughout the process
-- Incorporate traditional ecological knowledge
-- Foster sense of ownership and long-term stewardship
-- Create social and economic benefits alongside ecological recovery
+- **Will involve** local communities throughout the process
+- **Will incorporate** traditional ecological knowledge
+- **Will foster** sense of ownership and long-term stewardship
+- **Will create** social and economic benefits alongside ecological recovery
 
 **Minimal Human Intervention:**
-- Facilitate nature's ability to heal itself
-- Use adaptive management to respond to ecosystem needs
-- Allow natural systems to recover with strategic support
+- **Will facilitate** nature's ability to heal itself
+- **Will use** adaptive management to respond to ecosystem needs
+- **Will allow** natural systems to recover with strategic support
 
 **Social and Economic Integration:**
-- Job creation and skills training
-- Eco-tourism opportunities (long-term)
-- Improved human health and wellbeing
-- Sustainable livelihoods for local communities
+- **Will include** job creation and skills training
+- **Will explore** eco-tourism opportunities (long-term)
+- **Will contribute to** improved human health and wellbeing
+- **Will support** sustainable livelihoods for local communities
 
 ### Inspired by Global Success
 
@@ -49,13 +49,13 @@ Our approach draws lessons from proven restoration projects worldwide:
 
 ---
 
-## v2.0 Bootstrap Model: Starting Small, Proving the Model
+## Starting Small, Proving the Model
 
-### Bootstrap Restoration Approach
+### Small-Scale Restoration Approach
 
-**Our v2.0 model focuses on:**
-- ✅ **1 hectare pilot site** (not 10-30 hectares)
-- ✅ **1-2 founders** doing restoration work (not 5-10 person team)
+**Our approach focuses on:**
+- ✅ **1 hectare pilot site**
+- ✅ **1-2 founders** doing restoration work
 - ✅ **100-200 trees Year 1** (partial year, proving feasibility)
 - ✅ **€3-5k initial investment** (seeds, materials, tools)
 - ✅ **Volunteer mobilization** (community engagement from Day 1)
@@ -86,7 +86,7 @@ Demonstrate holistic ecosystem restoration using locally-adapted, evidence-based
 - **Evidence-based methods** - proven restoration ecology practices
 - **Sustainable approach** - no ongoing external inputs after Year 3
 - **Measurable results** - documented baseline and recovery
-- **Bootstrap viability** - achievable at 1 hectare with 1-2 founders
+- **Achievable at small scale** - viable at 1 hectare with 1-2 founders
 
 ### Methodology Options by Climate Zone
 
@@ -144,7 +144,7 @@ The detailed restoration techniques below show examples for both **Temperate** a
 
 ## Five-Pillar Integration Framework
 
-Eco Balance employs an integrated approach addressing **five interconnected pillars**. Even at 1 hectare pilot scale, each pillar supports the others, creating synergistic ecosystem recovery.
+Eco Balance **will employ** an integrated approach addressing **five interconnected pillars**. Even at 1 hectare pilot scale, each pillar **will support** the others, creating synergistic ecosystem recovery.
 
 **The five pillars remain constant across all climate zones. The specific techniques within each pillar adapt to location.**
 
@@ -153,10 +153,10 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 ## 🌳 A. Reforestation & Habitat Restoration (Bootstrap Scale)
 
 ### Objectives (1 Hectare Pilot)
-- Establish native forest demonstration area
-- Create wildlife habitat on small scale
-- Demonstrate carbon sequestration potential
-- Prove methodology before scaling
+- **Will establish** native forest demonstration area
+- **Will create** wildlife habitat on small scale
+- **Will demonstrate** carbon sequestration potential
+- **Will prove** methodology before scaling
 
 ### Bootstrap Approach: Small-Scale, High-Quality
 
@@ -294,10 +294,10 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 ## 🌱 B. Soil Restoration (Bootstrap Scale)
 
 ### Objectives (1 Hectare)
-- Understand baseline soil health
-- Begin organic matter restoration
-- Prevent erosion on site
-- Create foundation for plant establishment
+- **Will understand** baseline soil health
+- **Will begin** organic matter restoration
+- **Will prevent** erosion on site
+- **Will create** foundation for plant establishment
 
 ### Bootstrap Baseline Assessment
 
@@ -397,7 +397,7 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 ### Objectives (1 Hectare)
 - Maximize water infiltration and retention on-site
 - Provide supplemental water for new plantings (Year 1-2, critical in Mediterranean)
-- Create small wildlife water features (optional)
+- **Will create** small wildlife water features (optional)
 - Work with existing water flows and rainfall patterns
 
 ### Water Strategy: Adapts to Location
@@ -660,7 +660,7 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 
 **Year 1 Target:** 
 - Document baseline species (aim for 50+ species)
-- Establish monitoring protocol
+- **Will establish** monitoring protocol
 - Engage 10-20 volunteer observers (citizen science)
 
 **Year 2+ Targets:**
@@ -957,7 +957,7 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 |----------|------|---------|
 | **Seeds & Bare-Root** | €200-600 | 50-100 saplings + seed collection materials |
 | **Mulch & Soil Amendments** | €100-300 | Wood chips (often free), compost materials, cover crop seeds |
-| **Tools & Equipment** | €200-400 | Shovels, pruners, buckets, hoses (see [[21_Technology_Integration\|Tools]]) |
+| **Tools & Equipment** | €200-400 | Shovels, pruners, buckets, hoses (see [[21_Technology_Integration|Tools]]) |
 | **Water System** | €200-400 | 1-2 IBC tanks, gutters (modest - rainfall adequate) |
 | **Monitoring** | €200-500 | Trail cameras, field guides, notebook, measuring tools |
 | **Wildflower Seeds** | €50-100 | Native temperate mix for pollinator support |
@@ -1066,7 +1066,8 @@ Eco Balance employs an integrated approach addressing **five interconnected pill
 
 ---
 
-**Document Version:** 2.1.0 - Adaptive Transformation
-**Last Updated:** 2025-11-09
+---
+
+**Document Version:** 2.0.0 (Bootstrap Model)
+**Last Updated:** 2025-11-10
 **Status:** Active - Location-Adaptive Framework
-**Transformation**: Agent 9 - Geographic flexibility + climate-specific methodologies added

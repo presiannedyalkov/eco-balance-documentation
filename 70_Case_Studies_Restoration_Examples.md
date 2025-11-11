@@ -82,7 +82,7 @@ This document presents detailed case studies of successful large-scale environme
 
 ✅ **Patience pays** - Major results took 10-15 years
 
-→ Application: [[20_Restoration_Methodology#Community Engagement|Community Engagement Strategy]]
+→ Application: [[20_Restoration_Methodology#🤝 E. Community Engagement & Education (Bootstrap Scale)|Community Engagement Strategy]]
 
 ---
 
@@ -373,7 +373,7 @@ This document presents detailed case studies of successful large-scale environme
 
 ✅ **Sustainability can be profitable** - Financial and environmental goals aligned
 
-→ Application: [[30_Business_Model#Eco-Tourism|Eco-Tourism Revenue]]
+→ Application: [[30_Business_Model#Eco-Tourism (Future)|Eco-Tourism Revenue]]
 
 ---
 
@@ -741,3 +741,9 @@ Eco Balance combines the best elements:
 ---
 
 *Standing on the shoulders of giants - learning from those who've proven restoration is possible.*
+
+---
+
+**Document Version:** 2.0.0 (Bootstrap Model)
+**Last Updated:** 2025-11-10
+**Status:** Active

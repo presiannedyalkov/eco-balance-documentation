@@ -91,6 +91,77 @@
 
 ## Task Generation Guidelines
 
+### Task Splitting Guidelines
+
+**SPLIT LARGE TASKS INTO SMALLER SUBTASKS** when:
+
+1. **Task affects >5 files** → Split by file or logical group
+   - Example: "Fix broken cross-references in 12 files" → Split into 3-4 tasks of 3-4 files each
+   - Use task IDs: `CUR-YYYY-MM-DD-001a`, `CUR-YYYY-MM-DD-001b`, etc.
+
+2. **Task has >10 action steps** → Split into phases
+   - Example: "Complete content quality review" → Split into "Content completeness check", "Cross-reference validation", "Narrative flow assessment"
+   - Each phase becomes a separate task
+
+3. **Estimated effort is MAJOR** → Break into smaller chunks
+   - Example: "Fix all content gaps" → Split by document category or topic area
+
+4. **Task spans multiple categories** → Split by category
+   - Example: "Fix all content issues" → Split into "Fix cross-references", "Fill content gaps", "Improve narrative flow"
+
+5. **Task has dependencies** → Split into sequential subtasks
+   - Example: "Update all links after restructuring" → Split into "Restructure files", "Update links in strategic docs", "Update links in implementation docs"
+
+**How to Split Tasks:**
+
+**Method 1: By File Group**
+```
+Original: Fix broken links in all 15 files
+Split into:
+- CUR-001a: Fix links in strategic docs (5 files)
+- CUR-001b: Fix links in implementation docs (5 files)
+- CUR-001c: Fix links in reference docs (5 files)
+```
+
+**Method 2: By Sub-Task**
+```
+Original: Complete cross-reference audit
+Split into:
+- CUR-001a: Identify all broken references
+- CUR-001b: Fix references in strategic docs
+- CUR-001c: Fix references in implementation docs
+```
+
+**Method 3: By Topic Area**
+```
+Original: Fill all content gaps
+Split into:
+- CUR-001a: Fill gaps in methodology documentation
+- CUR-001b: Fill gaps in business model documentation
+- CUR-001c: Fill gaps in implementation documentation
+```
+
+**Task Dependency Management:**
+
+When splitting tasks, document dependencies:
+```yaml
+task_id: CUR-YYYY-MM-DD-001a
+depends_on: []
+blocks: [CUR-YYYY-MM-DD-001b]
+
+task_id: CUR-YYYY-MM-DD-001b
+depends_on: [CUR-YYYY-MM-DD-001a]
+blocks: []
+```
+
+**Benefits of Task Splitting:**
+- ✅ Easier to track progress
+- ✅ Smaller, more manageable work units
+- ✅ Better parallel execution opportunities
+- ✅ Clearer verification criteria
+- ✅ Reduced risk of incomplete work
+- ✅ Easier to prioritize and schedule
+
 ### Task Template
 ```yaml
 task_id: CUR-YYYY-MM-DD-###

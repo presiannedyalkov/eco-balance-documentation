@@ -4,7 +4,7 @@
 
 **Using code.claude.com with autonomous merge requests?**
 
-→ **🚀 USE THIS PROMPT**: [CLAUDE_CODE_WEB_PROMPT.md](CLAUDE_CODE_WEB_PROMPT.md) ← **START HERE!**
+→ **🚀 USE THIS PROMPT**: [guides/CLAUDE_CODE_WEB_PROMPT.md](guides/CLAUDE_CODE_WEB_PROMPT.md) ← **START HERE!**
 
 Copy-paste the prompt, Claude will:
 1. Find next unchecked task
@@ -20,9 +20,9 @@ Copy-paste the prompt, Claude will:
 
 **Preparing v2.0.0 Bootstrap Model for Release**
 
-→ **Start Here**: Read [WORKFLOW.md](WORKFLOW.md) - The complete two-phase process  
-→ **Phase 1 (Audit)**: Use [AUDIT_TASKS.md](AUDIT_TASKS.md) - Check every file systematically  
-→ **Phase 2 (Fix)**: Use [FIX_TASKS.md](FIX_TASKS.md) - Fix all issues by priority
+→ **Start Here**: Read [guides/WORKFLOW.md](guides/WORKFLOW.md) - The complete two-phase process  
+→ **Phase 1 (Audit)**: Use [tasks/AUDIT_TASKS_*.md](tasks/) - Check every file systematically (persona-specific task lists)  
+→ **Phase 2 (Fix)**: Use [tasks/FIX_TASKS_*.md](tasks/) - Fix all issues by priority (persona-specific fix lists)
 
 **The Process**: 
 1. **AUDIT** every file with every persona (~270 tasks) → Document issues in FIX_TASKS.md
@@ -38,9 +38,9 @@ Copy-paste the prompt, Claude will:
 
 **Want to use this system right now?**
 
-→ **For Users**: Read [PROMPT_REFERENCE.md](PROMPT_REFERENCE.md) - Just say "Run the Janitor"!  
-→ **For AI Assistants**: Read [AI_ASSISTANT_GUIDE.md](AI_ASSISTANT_GUIDE.md) - Complete execution guide  
-→ **New to the system?**: Read [QUICKSTART.md](QUICKSTART.md) - 5-minute introduction
+→ **For Users**: Read [guides/PROMPT_REFERENCE.md](guides/PROMPT_REFERENCE.md) - Just say "Run the Janitor"!  
+→ **For AI Assistants**: Read [guides/AI_ASSISTANT_GUIDE.md](guides/AI_ASSISTANT_GUIDE.md) - Complete execution guide  
+→ **New to the system?**: Read [guides/QUICKSTART.md](guides/QUICKSTART.md) - 5-minute introduction
 
 ---
 
@@ -53,12 +53,18 @@ This directory contains a sophisticated AI-driven vault maintenance system desig
 ```
 _vault_maintenance/
 ├── personas/              # AI persona definitions and skills
-├── tasks/                 # Task management and tracking
+├── tasks/                 # Task management and tracking (AUDIT_TASKS_*, FIX_TASKS_*)
 ├── workflows/             # Process templates and procedures
 ├── state/                 # Current state tracking and history
-├── PROMPT_REFERENCE.md    # 👈 Simple commands to trigger personas
-├── AI_ASSISTANT_GUIDE.md  # 👈 Full guide for AI execution
-├── QUICKSTART.md          # 👈 Get started in 5 minutes
+├── guides/                # 👈 User guides and references
+│   ├── PROMPT_REFERENCE.md    # Simple commands to trigger personas
+│   ├── AI_ASSISTANT_GUIDE.md  # Full guide for AI execution
+│   ├── QUICKSTART.md          # Get started in 5 minutes
+│   ├── WORKFLOW.md            # Two-phase process guide
+│   └── ...
+├── plans/                 # Planning documents and strategies
+├── audits/                # Audit reports and summaries
+├── reports/               # Status reports and updates
 └── README.md              # This file
 ```
 
@@ -72,60 +78,33 @@ _vault_maintenance/
 
 ## Personas
 
-### 🧹 The Janitor
-**Role**: File organization and hygiene  
-**Focus**: Proper file placement, redundancy elimination, naming conventions  
-**Trigger**: "Run the Janitor" or "Check organization"
+**📋 See [PERSONA_CATEGORIZATION.md](PERSONA_CATEGORIZATION.md) for complete categorization and when to use each persona.**
 
-### 📚 The Curator
-**Role**: Content quality and coherence  
-**Focus**: Cross-references, content gaps, narrative flow  
-**Trigger**: "Run the Curator" or "Check content quality"
+### 🔧 Vault Maintenance Crew (6 personas)
+**Purpose**: Keep documentation vault clean, organized, consistent, and discoverable  
+**Use for**: Regular maintenance, pre-release checks, quality assurance
 
-### 🗄️ The Archivist
-**Role**: Historical preservation and version control  
-**Focus**: Archive management, changelog maintenance, version tracking  
-**Trigger**: "Run the Archivist" or "Check archives"
+- 🧹 **The Janitor** - File organization and hygiene
+- 📚 **The Curator** - Content quality and coherence
+- 🗄️ **The Archivist** - Historical preservation and version control
+- 🔍 **The Auditor** - Completeness and consistency verification
+- 📖 **The Librarian** - Navigation and discoverability
+- ✨ **The Quality Inspector** - Documentation standards and polish
 
-### 🔍 The Auditor
-**Role**: Completeness and consistency verification  
-**Focus**: Gap analysis, standards compliance, structural integrity  
-**Trigger**: "Run the Auditor" or "Check completeness"
+### 🚀 Strategic & Operational Personas (5 personas)
+**Purpose**: Project strategy, execution planning, research, security, stakeholder alignment  
+**Use for**: Strategic decisions, planning phases, research synthesis, security reviews
 
-### 📖 The Librarian
-**Role**: Navigation and discoverability  
-**Focus**: Index maintenance, link management, documentation maps  
-**Trigger**: "Run the Librarian" or "Check links"
+- 🔬 **The Knowledge Synthesizer** - Research analysis & knowledge extraction
+- 🔐 **The Security Auditor** - Information security & privacy compliance
+- 🛠️ **The Implementation Coach** - Execution planning & operational readiness
+- 🎯 **The Strategic Advisor** - Critical analysis & strategic challenge
+- 👥 **The Stakeholder Advocate** - Multi-perspective review & audience alignment
 
-### ✨ The Quality Inspector
-**Role**: Documentation standards and polish
-**Focus**: Formatting, style guide adherence, readability
-**Trigger**: "Run Quality Inspector" or "Check formatting"
-
-### 🔬 The Knowledge Synthesizer
-**Role**: Research Analysis & Knowledge Extraction
-**Focus**: Transform research bookmarks into actionable insights
-**Trigger**: "Run the Knowledge Synthesizer" or "Synthesize research"
-
-### 🔐 The Security Auditor
-**Role**: Information Security & Privacy Compliance
-**Focus**: Prevent sensitive data exposure, ensure compliance
-**Trigger**: "Run the Security Auditor" or "Security scan"
-
-### 🛠️ The Implementation Coach
-**Role**: Execution Planning & Operational Readiness
-**Focus**: Turn strategy into step-by-step action plans
-**Trigger**: "Run the Implementation Coach" or "Create playbook"
-
-### 🎯 The Strategic Advisor
-**Role**: Critical Analysis & Strategic Challenge
-**Focus**: Stress-test plans, challenge assumptions, find blind spots
-**Trigger**: "Run the Strategic Advisor" or "Challenge strategy"
-
-### 👥 The Stakeholder Advocate
-**Role**: Multi-Perspective Review & Audience Alignment
-**Focus**: Ensure messaging resonates with each stakeholder group
-**Trigger**: "Run the Stakeholder Advocate" or "Review stakeholder fit"
+**Quick Triggers**:
+- Maintenance: "Run the Janitor" / "Check organization"
+- Strategic: "Run the Strategic Advisor" / "Challenge strategy"
+- See [guides/PROMPT_REFERENCE.md](guides/PROMPT_REFERENCE.md) for complete command list
 
 ## Using the System
 
@@ -140,7 +119,7 @@ Just say any of these to an AI assistant:
 "Run the Curator"           → Analyze content quality
 ```
 
-See [PROMPT_REFERENCE.md](PROMPT_REFERENCE.md) for complete command list.
+See [guides/PROMPT_REFERENCE.md](guides/PROMPT_REFERENCE.md) for complete command list.
 
 ### Workflow
 
@@ -170,7 +149,7 @@ The relevant persona verifies the completed work.
 5. ✓ Calculate and report health score
 6. ✓ Update state file with findings
 
-**Full execution guide:** [AI_ASSISTANT_GUIDE.md](AI_ASSISTANT_GUIDE.md)
+**Full execution guide:** [guides/AI_ASSISTANT_GUIDE.md](guides/AI_ASSISTANT_GUIDE.md)
 
 ## For Humans
 
@@ -210,9 +189,11 @@ Each persona maintains a state file with:
 ## Documentation
 
 ### Essential Reading
-- **[PROMPT_REFERENCE.md](PROMPT_REFERENCE.md)** - Quick command reference
-- **[QUICKSTART.md](QUICKSTART.md)** - Get started in 5 minutes
-- **[AI_ASSISTANT_GUIDE.md](AI_ASSISTANT_GUIDE.md)** - Complete AI execution guide
+- **[PERSONA_CATEGORIZATION.md](PERSONA_CATEGORIZATION.md)** - 👈 **Which persona to use when**
+- **[guides/PROMPT_REFERENCE.md](guides/PROMPT_REFERENCE.md)** - Quick command reference
+- **[guides/QUICKSTART.md](guides/QUICKSTART.md)** - Get started in 5 minutes
+- **[guides/AI_ASSISTANT_GUIDE.md](guides/AI_ASSISTANT_GUIDE.md)** - Complete AI execution guide
+- **[guides/TASK_SPLITTING_GUIDE.md](guides/TASK_SPLITTING_GUIDE.md)** - 👈 **How to split large tasks into smaller ones**
 
 ### Detailed Workflows
 - **[analysis_workflow.md](workflows/analysis_workflow.md)** - How to run an analysis

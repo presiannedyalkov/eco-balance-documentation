@@ -6,9 +6,9 @@
 
 ## Business Model Philosophy
 
-**Bootstrap first, scale second.** Eco Balance begins as a **proof-of-concept pilot** focused on demonstrating viable restoration methodology before pursuing revenue generation or expansion.
+**Start small, scale later.** Eco Balance begins as a **proof-of-concept pilot** focused on demonstrating viable restoration methodology before pursuing revenue generation or expansion.
 
-### v2.0 Bootstrap Model Principles:
+### Core Principles:
 
 - **Year 1 Focus:** Establish off-grid living + begin restoration (€20-30k)
 - **Years 1-3 Focus:** Prove the model works (€50-75k total)
@@ -23,32 +23,32 @@
 
 **What This Model IS:**
 - ✅ Viable proof of concept
-- ✅ Founder-led bootstrap operation
+- ✅ Founder-led operation
 - ✅ Crowdfunding + small grants focus
 - ✅ Research partnership foundation
 - ✅ Path to sustainability by Year 5
 
 ---
 
-## Bootstrap Financial Overview (Years 1-3)
+## Financial Overview (Years 1-3)
 
-### Year 1: Foundation & Setup (€20-30k)
+### Year 1: Foundation & Setup (approximately €20-30k, varies by funding pathway and location)
 
 **Investment Breakdown:**
 
 | Category | Amount | % Guide | Priority | Notes |
 |----------|--------|---------|----------|-------|
-| **Housing** | €8-12k | ~40% | 🔴 Critical | Tiny house/caravan (see [[45_Tiny_House_and_Living_Infrastructure\|Doc 45]]) |
-| **Site Costs** | €5-9k | ~25-30% | 🔴 Critical | Land lease/deposit, access, legal fees |
-| **Restoration** | €3-5k | ~15% | 🟡 High | Seedlings, soil amendments, fencing |
-| **Tools & Equipment** | €2-3k | ~10% | 🟡 High | Basic hand tools, used equipment |
-| **Living Infrastructure** | €2-3k | ~10% | 🔴 Critical | Solar, water (see [[21_Technology_Integration\|Doc 21]]) |
-| **Operations** | €1-2k | ~5% | 🟢 Medium | Insurance, permits, utilities, contingency |
-| **TOTAL YEAR 1** | **€21-34k*** | **100%** | | **Bootstrap Model v2.0 target: €20-30k** |
+| **Housing** | Approximately €8-12k | ~40% | 🔴 Critical | Tiny house/caravan (costs vary by condition, size, and DIY vs purchase - see [[45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]) |
+| **Site Costs** | Approximately €5-9k | ~25-30% | 🔴 Critical | Land lease/deposit, access, legal fees (varies by location and opportunity) |
+| **Restoration** | Approximately €3-5k | ~15% | 🟡 High | Seedlings, soil amendments, fencing (depends on site size and conditions) |
+| **Tools & Equipment** | Approximately €2-3k | ~10% | 🟡 High | Basic hand tools, used equipment (varies by availability and needs) |
+| **Living Infrastructure** | Approximately €2-3k | ~10% | 🔴 Critical | Solar, water (costs vary by location, installation approach, and equipment choices - see [[21_Technology_Integration|Technology Integration]]) |
+| **Operations** | Approximately €1-2k | ~5% | 🟢 Medium | Insurance, permits, utilities, contingency (varies by location and requirements) |
+| **TOTAL YEAR 1** | **€21-34k*** | **100%** | | **Year 1 target: approximately €20-30k** |
 
-***Note**: Line items show full range of potential costs. Actual Year 1 budget stays within €20-30k through prioritization and trade-offs based on available funding and site conditions.
+***Note**: Line items show full range of potential costs. Actual Year 1 budget stays within approximately €20-30k through prioritization and trade-offs based on available funding and site conditions.
 
-**Additional Year 2 Investment**: €250-500k for expansion
+**Additional Year 2 Investment**: Approximately €250-500k for expansion (depends on scale and location)
 
 **Revenue Year 1:** €0 (investment/proof of concept phase)
 - No revenue expected or relied upon
@@ -56,17 +56,17 @@
 - Any small donations (<€500) go directly to operating reserve
 
 **Funding Sources Year 1:**
-- Crowdfunding campaign: €8-15k (primary)
-- Friends & family: €5-10k
-- Small grants: €3-8k
-- Founder savings/sweat equity: €5-10k
-- **Total Funding Needed: €21-43k**
+- Crowdfunding campaign: Approximately €8-15k range (primary, actual amount depends on campaign success)
+- Friends & family: Approximately €5-10k range (varies by network size and commitment)
+- Small grants: Approximately €3-8k range (depends on grant availability and proposal success)
+- Founder savings/sweat equity: Approximately €5-10k range (varies by founder capacity)
+- **Total Funding Needed: Approximately €21-43k (varies by funding pathway)**
 
 → Funding strategy: [[32_Funding_Strategy|Detailed Funding Plan]]
 
 ---
 
-### Year 2: Establishment & Demonstration (€15-25k)
+### Year 2: Establishment & Demonstration (approximately €15-25k, depends on Year 1 results and funding opportunities)
 
 **Investment Breakdown:**
 
@@ -81,22 +81,22 @@
 | **Operating Costs** | €4-6k | 🔴 Critical | Internet, water, supplies, insurance |
 | **TOTAL YEAR 2** | **€15-27k** | | **Target: €18-22k** |
 
-**Revenue Year 2:** €2-5k
-- Research partnership fees (€1-3k)
-- Small donations (€1-2k)
-- Possible workshop/tour fees (€0-1k)
+**Revenue Year 2:** Approximately €2-5k range (depends on workshop demand, consulting opportunities, and early partnerships)
+- Research partnership fees (approximately €1-3k, depends on partnership terms)
+- Small donations (approximately €1-2k, depends on donor base and campaign success)
+- Possible workshop/tour fees (approximately €0-1k, depends on demand and pricing)
 
 **Funding Sources Year 2:**
-- Small grants: €5-10k
-- Continuing donations: €3-5k
-- Research partnerships: €1-3k
-- Revenue generation: €2-5k
-- Founder contribution: €4-7k
-- **Total Funding Needed: €15-30k**
+- Small grants: Approximately €5-10k range (depends on grant availability)
+- Continuing donations: Approximately €3-5k range (depends on donor base)
+- Research partnerships: Approximately €1-3k range (depends on partnership terms)
+- Revenue generation: Approximately €2-5k range (depends on market conditions)
+- Founder contribution: Approximately €4-7k range (varies by founder capacity)
+- **Total Funding Needed: Approximately €15-30k (varies by opportunities)**
 
 ---
 
-### Year 3: Maturation & Early Revenue (€12-20k)
+### Year 3: Maturation & Early Revenue (approximately €12-20k, depends on revenue generation and funding opportunities)
 
 **Investment Breakdown:**
 
@@ -108,19 +108,19 @@
 | **Operating Costs** | €5-8k | 🔴 Critical | All systems, maintenance |
 | **TOTAL YEAR 3** | **€12-20k** | | **Target: €15-18k** |
 
-**Revenue Year 3:** €5-12k
-- Research partnerships (€2-5k)
-- Workshop/training fees (€1-3k)
-- Small donations (€1-2k)
-- Possible eco-tourism pilot (€1-2k)
+**Revenue Year 3:** Approximately €5-12k range (scales with proven results and market interest)
+- Research partnerships (approximately €2-5k, depends on partnership terms)
+- Workshop/training fees (approximately €1-3k, depends on workshop demand and pricing)
+- Small donations (approximately €1-2k, depends on donor base)
+- Possible eco-tourism pilot (approximately €1-2k, depends on market and capacity)
 
 **Funding Sources Year 3:**
-- Revenue generation: €5-12k (covers 30-60% of costs)
-- Small grants: €3-5k
-- Donations: €2-4k
-- Research fees: €2-5k
-- Founder contribution: €0-4k
-- **Total Funding Needed: €12-20k**
+- Revenue generation: Approximately €5-12k range (covers 30-60% of costs, depends on market conditions)
+- Small grants: Approximately €3-5k range (depends on grant availability)
+- Donations: Approximately €2-4k range (depends on donor base)
+- Research fees: Approximately €2-5k range (depends on partnership terms)
+- Founder contribution: Approximately €0-4k range (varies by founder capacity)
+- **Total Funding Needed: Approximately €12-20k (varies by opportunities)**
 
 ---
 
@@ -1105,24 +1105,38 @@ Understanding the budget ranges - what's included at each level:
 
 ### Organizational Form
 
-**Recommended:** gemeinnützige GmbH (gGmbH) - Non-profit limited liability company
+**Year 1-2 Recommended:** e.V. (Germany) or Associação (Portugal) - Low-cost nonprofit association
 
-**Why gGmbH:**
+**Why Association Structure for Bootstrap:**
 - ✅ Tax-exempt status (charitable purpose)
 - ✅ Can accept tax-deductible donations
-- ✅ Limited liability protection
-- ✅ Can conduct commercial activities within mission
-- ✅ Professional image for partnerships
-- ✅ Flexible governance structure
+- ✅ Low formation cost (€500-2,000 vs €30-40k for gGmbH)
+- ✅ Fast registration (4-8 weeks vs 3-6 months)
+- ✅ Suitable for grant applications and crowdfunding
+- ✅ Same tax benefits as gGmbH for nonprofit work
 
 **Formation Timeline:**
-- Year 1: Operate as informal partnership
-- Year 2: Form gGmbH once operations are established
-- Year 3+: Full legal entity operations
+- Year 1: Form e.V. or Associação (4-8 weeks, €500-2,000)
+- Year 1-2: Operate under association structure
+- Year 3-5: Consider gGmbH upgrade if commercial revenue justifies €30k+ investment
 
-**Formation Costs:** €1,000-3,000 (legal fees, registration)
+**Future Option: gGmbH (Year 3-5 if Revenue Justifies)**
 
-→ Legal details: [[13_Legal_Framework|Legal Structure]]
+**When to Consider gGmbH:**
+- Annual revenue reaches €50k+ and commercial activities planned
+- Seeking institutional investors or major grants requiring corporate structure
+- Scaling operations beyond 5-10 hectares
+
+**gGmbH Formation Costs (if pursued Year 3-5):**
+- **Share capital requirement:** €25,000 (legally mandated, held as company asset)
+- **Setup costs:** €3,000-8,000 (notary, legal, tax advisor, registration)
+- **Total initial investment:** €28,000-35,000
+- **Timeline:** 3-6 months from formation to operational
+
+**Status:** gGmbH deferred to Year 3-5 - bootstrap budget (€20-30k) insufficient for €30k+ legal formation. Association structure (e.V./Associação) provides same nonprofit benefits at 2% of the cost.
+
+→ Legal details: [[13_Legal_Framework|Legal Structure]]  
+→ Structure options: [[10_Organizational_Structure|Organizational Structure]]
 
 ---
 
@@ -1212,11 +1226,6 @@ Understanding the budget ranges - what's included at each level:
 **Legal:**
 - [[13_Legal_Framework|Legal Structure & Compliance]]
 
----
-
-**Document Version:** 2.0.0
-**Last Updated:** 2025-11-08
-**Status:** Active
 ---
 
 **Document Version:** 3.0.0 - Adaptive Framework

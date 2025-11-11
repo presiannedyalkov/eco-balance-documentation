@@ -400,7 +400,7 @@
 
 ### Land Acquisition Options (Multiple Pathways)
 
-**See detailed framework**: [[44_Site_Selection|Site Selection - Geographic Flexibility]]
+**See detailed framework**: [[44_Site_Selection_Land_Acquisition|Site Selection - Geographic Flexibility]]
 
 **Quick summary of options**:
 
@@ -600,7 +600,7 @@
 4. **Opportunity alignment**: Does it align with funding/partnership opportunities?
 5. **Default timing**: If no clear best option by Month 6, choose most viable within Germany (familiar, lower risk)
 
-→ **Site Selection Framework**: [[44_Site_Selection|Site Selection - Options & Criteria]]
+→ **Site Selection Framework**: [[44_Site_Selection_Land_Acquisition|Site Selection - Options & Criteria]]
 → **Geographic Strategy**: [[02_Project_Vision|Geographic Flexibility]]
 
 ---

@@ -35,6 +35,47 @@ The world faces interconnected environmental crises that threaten our future:
 
 ---
 
+## Our Core Vision (Immutable - This Will Not Change)
+
+> **Our Core Vision** (Immutable - This will not change):
+> 
+> Create a **habitat for wildlife** and **restore land to become a shelter and sanctuary for wildlife**. Through different trees, plants, mushrooms, and diverse areas, we promote different habitats and increase biodiversity. This is our primary purpose - to provide sanctuary and shelter for wildlife in the face of climate change and mass extinction.
+
+**This is the immutable core of Eco Balance.** All other documents, plans, and operational details can and will change as we learn and adapt. But this vision - creating a habitat and sanctuary for wildlife through biodiversity restoration - is the anchor that remains constant.
+
+**Key Elements:**
+- **Wildlife habitat and sanctuary** as primary vision
+- **Different trees, plants, mushrooms** to promote diverse habitats
+- **Increase biodiversity** as core goal
+- **Climate change context** (manmade factors, mass extinction)
+- **Sanctuary and shelter** for wildlife as fundamental purpose
+
+### Alignment with UN Sustainable Development Goals
+
+Our work aligns with the **United Nations Sustainable Development Goals (SDGs)**, specifically:
+
+- **Goal 13: Climate Action** - Take urgent action to combat climate change and its impacts
+- **Goal 14: Life Below Water** - Conserve and sustainably use oceans, seas and marine resources  
+- **Goal 15: Life on Land** - Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and biodiversity loss
+
+While the SDGs cover many important areas (17 goals total), we focus our efforts on **biodiversity conservation and ecosystem restoration** as our primary contribution to addressing climate change. This aligns our work with international climate agreements, including the Paris Agreement (2015), and provides a clear framework for our restoration efforts.
+
+→ Learn more about the UN Sustainable Development Goals: [un.org/sustainabledevelopment](https://www.un.org/sustainabledevelopment/climate-action/)
+
+### Scientific Grounding
+
+This project **will be firmly grounded in science and scientific principles**. We **will maintain strong ties to universities and other types of climate science** institutions. We **will measure how the land is doing under our guardianship** when implementing approved plans with measures. Scientific rigor and measurement are core to our vision and approach, not optional add-ons. This ensures our restoration work will be evidence-based, measurable, and contribute to climate science knowledge.
+
+### Local Integration Opportunities
+
+We see opportunities in the **energy sector, food sector, society, and more areas** by **transitioning to more local and pragmatic sources and services**, **integrating local knowledge** into the project, and **alleviating actual local problems**. This is not just community engagement - it's about creating local solutions that address real local needs while advancing our restoration goals. By integrating with local systems and knowledge, we create more sustainable and culturally appropriate restoration approaches.
+
+---
+
+**This complete vision guides all our work**, from the smallest pilot site to future expansion. These elements together - wildlife habitat, biodiversity focus, scientific grounding, and local integration - make Eco Balance what it is, and they will not change.
+
+---
+
 ## Vision vs Execution: Clarity on What, Flexibility on How
 
 ### What We Want to Achieve (Vision - Fixed and Clear)
@@ -117,7 +158,7 @@ Europe offers diverse restoration opportunities across multiple climate zones:
 
 ### 🌍 Holistic Environmental Restoration
 
-We don't just plant trees—we rebuild entire ecosystems through a comprehensive approach:
+We don't just plant trees—we **will rebuild** entire ecosystems through a comprehensive approach:
 
 #### 1. Restore Ecosystem Functionality
 - Native species selection

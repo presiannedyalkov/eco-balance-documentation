@@ -32,11 +32,11 @@
 
 ---
 
-## Year 1 Funding Need: €20-30k
+## Year 1 Funding Need: Approximately €20-30k (varies by funding pathway and location)
 
 ### Budget Breakdown & Sources
 
-**Total Target:** €25,000 (standard bootstrap scenario)
+**Total Target:** Approximately €25,000 (standard bootstrap scenario, actual amount depends on funding pathway)
 
 | Investment Category | Amount | Funding Source |
 |---------------------|--------|----------------|
@@ -48,7 +48,7 @@
 | **Reserve** (3-month buffer) | €1-2k | F&F (€1k) + Grants (€1k) |
 | **TOTAL** | **€23-36k** | **Mixed sources** |
 
-**Target: €25k from external funding + €5-10k founder contribution (sweat equity + modest savings)**
+**Target: Approximately €25k from external funding (varies by campaign success) + approximately €5-10k founder contribution (sweat equity + modest savings, varies by founder capacity)**
 
 → Complete budget: [[30_Business_Model|Business Model]]
 
@@ -60,22 +60,22 @@
 
 | Source | Target Amount | % of Total | Timeline | Difficulty |
 |--------|---------------|------------|----------|-----------|
-| **1. Crowdfunding** | €8-15k | 35% | Months 2-4 | Medium |
-| **2. Friends & Family** | €5-10k | 25% | Months 1-6 | Low |
-| **3. Small Grants** | €3-8k | 20% | Months 3-9 | Medium |
-| **4. Founder Investment** | €5-10k | 20% | Ongoing | Low |
-| **5. Research Fees** | €0-3k | 5% | Months 6-12 | Medium |
-| **TOTAL** | **€21-46k** | **100%** | **6-12 months** | |
+| **1. Crowdfunding** | Approximately €8-15k range | 35% | Months 2-4 (varies by audience building speed) | Medium |
+| **2. Friends & Family** | Approximately €5-10k range | 25% | Months 1-6 (varies by network size) | Low |
+| **3. Small Grants** | Approximately €3-8k range | 20% | Months 3-9 (varies by program) | Medium |
+| **4. Founder Investment** | Approximately €5-10k range | 20% | Ongoing (varies by founder capacity) | Low |
+| **5. Research Fees** | Approximately €0-3k range | 5% | Months 6-12 (depends on partnership opportunities) | Medium |
+| **TOTAL** | **€21-46k** | **100%** | **Approximately 6-12 months** | |
 
-**Most Realistic Mix:** €10k crowdfunding + €7k F&F + €5k grants + €7k founder = **€29k total**
+**Most Realistic Mix:** Approximately €10k crowdfunding + €7k F&F + €5k grants + €7k founder = **approximately €29k total** (varies by actual campaign success and opportunities)
 
 ---
 
 ## 💻 SOURCE 1: Crowdfunding Campaign (PRIMARY)
 
-**Target:** €8,000-€15,000 (realistic for first-time campaign)  
-**Timeline:** Launch Month 2-3, run 30-45 days  
-**Expected Success Rate:** 60-70% of projects reach goal  
+**Target:** Approximately €8,000-€15,000 range (realistic for first-time campaign, actual amount depends on campaign success and network reach)  
+**Timeline:** Launch Months 2-3 (varies by audience building speed), run 30-45 days  
+**Expected Success Rate:** 60-70% of projects reach goal (varies by platform and campaign quality)  
 **Our Probability:** High (compelling story, clear need, engaged founders)
 
 ### Why Crowdfunding First?
@@ -89,10 +89,10 @@
 - ✅ Immediate credibility signal
 
 **Realistic Expectations:**
-- First-time campaigns: €5-15k typical
-- Strong campaigns: €10-20k
-- Exceptional campaigns: €20k+
-- Our target: €10,000 (stretch to €15,000)
+- First-time campaigns: Approximately €5-15k typical (varies by network and campaign quality)
+- Strong campaigns: Approximately €10-20k range (depends on audience size and engagement)
+- Exceptional campaigns: €20k+ (rare, requires exceptional network and timing)
+- Our target: Approximately €10,000 (stretch to approximately €15,000, actual amount depends on campaign success)
 
 ### Platform Selection
 
@@ -1834,7 +1834,7 @@
 - [ ] Develop crowdfunding campaign plan
 - [ ] Identify friends & family prospects (20-30 people)
 - [ ] Research 15-20 grant opportunities
-- [ ] Begin gGmbH registration process
+- [ ] Begin legal entity formation (e.V. or Associação based on location decision)
 
 **Fundraising Activity:** €0 (preparation only)  
 **Cumulative:** €0

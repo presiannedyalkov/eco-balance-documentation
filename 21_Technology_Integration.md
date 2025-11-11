@@ -638,14 +638,15 @@ Water systems must adapt to location rainfall patterns:
 
 ---
 
-### What We're NOT Doing (And Why)
+### What We're NOT Doing in Bootstrap Phase (And Why)
 
-**❌ Atmospheric Water Generator (AWG)**:
+**❌ Atmospheric Water Generator (AWG) - Not in Bootstrap Plan**:
 - Cost: €15,000-30,000 (10-20× rainwater cost)
 - Energy: 5-10 kW solar required (doubles solar budget)
 - Output: 100-500 L/day (still insufficient for all needs)
 - Complexity: High maintenance, technical expertise
-- **Verdict**: Not viable at bootstrap scale
+- **Bootstrap Verdict**: Not viable at bootstrap scale (€20-30k total budget)
+- **Future Vision**: Creating water from air using solar energy remains a long-term aspiration - a sustainable water source that doesn't depend on rainfall or wells. This is part of the vision layer, not the bootstrap execution plan.
 
 **❌ Desalination**:
 - Only relevant for coastal brackish/saltwater (site-dependent)
@@ -653,11 +654,31 @@ Water systems must adapt to location rainfall patterns:
 - Energy-intensive (high solar requirement)
 - **Verdict**: Not applicable unless coastal site with no other water source
 
-**Why Rainwater + Delivery (or Well) Makes Sense**:
+**Why Rainwater + Delivery (or Well) Makes Sense for Bootstrap**:
 - Total cost: €1,000-5,000 setup vs €15k+ for AWG
 - Simple, proven, maintainable
 - Expandable as budget allows (add tanks, larger catchment)
 - Works with existing infrastructure
+- **Status**: Bootstrap reality - what we're actually doing Year 1-3
+
+---
+
+### 🌟 Future Vision: Advanced Water Technologies (Years 5-10+)
+
+**These are long-term aspirations, not budgeted or planned, but something to work towards:**
+
+- **Atmospheric Water Generation**: Creating water from air using solar energy - sustainable, independent water source
+- **Advanced Water Storage**: Large-scale reservoirs for wildlife and ecosystem support
+- **Smart Water Management**: Automated systems optimizing water use across the site
+- **Water Quality Enhancement**: Advanced filtration and treatment systems
+
+**Status**: Vision layer - aspirational technologies that inform long-term direction but don't drive immediate planning. These become viable when:
+- Project has proven success and stable revenue (€50k+/year)
+- Technology costs decrease or efficiency improves
+- Site expansion justifies larger infrastructure investments
+- Specific need emerges that justifies the investment
+
+**Current Focus**: Bootstrap-appropriate rainwater harvesting and delivery systems that work within €20-30k Year 1 budget.
 
 ---
 
@@ -1246,3 +1267,9 @@ Water systems must adapt to location rainfall patterns:
 → Housing integration: [[45_Tiny_House_and_Living_Infrastructure|Living Infrastructure]]
 → Restoration methods: [[20_Restoration_Methodology|Water Management]]
 → Timeline: [[42_Adaptive_Timeline|Implementation Timeline]]
+
+---
+
+**Document Version:** 2.0.0 (Bootstrap Model)
+**Last Updated:** 2025-11-10
+**Status:** Active - Bootstrap Model

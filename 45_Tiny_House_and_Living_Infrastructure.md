@@ -16,10 +16,10 @@
 - **Sustainable:** Low environmental impact, efficient systems
 - **Practical:** Prioritizes function over luxury
 
-### v2.0 Bootstrap Model
+### Small-Scale Pilot Approach
 
-This document reflects our **Bootstrap Model** approach:
-- **Year 1 Budget:** €10-30k housing investment
+This document reflects our **small-scale pilot approach**:
+- **Housing Budget (Part of Total Year 1):** Approximately €8-12k (housing is 40% of total €20-30k Year 1 budget)
 - **Scale:** 1-2 person living space (15-25 m²)
 - **Timeline:** 2-6 months to establish
 - **Philosophy:** Simple, functional, affordable
@@ -570,7 +570,7 @@ Waterless toilet system that composts human waste into usable soil amendment.
 | **Restoration** | €3-5k | 15% | Initial seedlings, soil amendments, fencing |
 | **Tools & Equipment** | €2-3k | 10% | Basic hand tools, used equipment |
 | **Operations** | €2-3k | 10% | Insurance, permits, utilities, contingency |
-| **TOTAL** | **€20-30k** | **100%** | Year 1 Bootstrap Model v2.0 |
+| **TOTAL** | **€20-30k** | **100%** | Year 1 total budget (housing is part of this total) |
 
 ### Year 2+ Expansion Budget (€250-500k)
 
