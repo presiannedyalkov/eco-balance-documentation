@@ -2,7 +2,7 @@
 
 **Purpose:** Track desired features and enhancements without concrete timelines
 **Status:** Living document - priorities may shift based on project needs
-**Last Updated:** November 10, 2025
+**Last Updated:** November 10, 2025 (v1.2.0)
 
 ---
 
@@ -91,6 +91,70 @@ Transform the documentation repository into a public-facing website using Docusa
 
 ---
 
+### Documentation Export Formats (EPUB & PDF)
+**Status:** Planned
+**Priority:** Medium
+**Related:** Public Documentation Website
+
+**Description:**
+Enable exporting the entire documentation repository into portable formats for offline reading and distribution. Support EPUB format for Kindle and e-reader devices, and PDF format for universal document sharing and printing.
+
+**Key Features:**
+- **EPUB Export**: Export all documentation into a single EPUB file compatible with Kindle and other e-readers
+- **PDF Export**: Export all documentation into a single PDF file for printing, sharing, and archival
+- **Content Selection**: Option to include/exclude specific sections (e.g., exclude internal maintenance files)
+- **Automatic Table of Contents**: Generate navigation structure based on document hierarchy
+- **Formatting Preservation**: Maintain headings, lists, links, and basic formatting in exported formats
+- **Metadata**: Include project information, version, and export date in exported files
+
+**Export Options:**
+- **Full Export**: All public documentation (00-70 series, main content)
+- **Custom Export**: Select specific documents or sections to include
+- **Exclusions**: Automatically exclude internal files (`_vault_maintenance/`, `_process/`, etc.)
+
+**Technical Implementation:**
+- **EPUB Generation**: Use markdown-to-epub conversion tools (e.g., Pandoc, mdbook-epub)
+- **PDF Generation**: Use markdown-to-pdf conversion tools (e.g., Pandoc, mdbook-pdf, or headless browser rendering)
+- **Automation**: GitHub Actions workflow to generate exports on documentation updates
+- **Manual Trigger**: Script or command to generate exports on-demand
+
+**Benefits:**
+- **Offline Access**: Read documentation without internet connection
+- **E-Reader Compatibility**: Read on Kindle, Kobo, and other e-reader devices
+- **Print-Friendly**: PDF format for physical printing and archival
+- **Distribution**: Easy sharing of complete documentation as single files
+- **Accessibility**: Alternative format for users who prefer offline or e-reader access
+- **Portability**: Single file contains entire documentation set
+
+**Use Cases:**
+- Reading documentation on e-reader during travel
+- Printing documentation for physical reference
+- Sharing complete documentation with stakeholders who prefer offline formats
+- Archiving documentation in standard formats
+- Distributing documentation to team members without internet access
+
+**Dependencies:**
+- Documentation structure and markdown files
+- Conversion tools (Pandoc, mdbook, or similar)
+- Optional: GitHub Actions for automated generation
+
+**Estimated Effort:**
+- EPUB export setup: 2-3 hours
+- PDF export setup: 2-3 hours
+- Automation (GitHub Actions): 1-2 hours
+- Testing and refinement: 1-2 hours
+- Total: 6-10 hours
+
+**Success Metrics:**
+- EPUB file generates successfully with all documentation
+- PDF file generates successfully with all documentation
+- Exported files open correctly in target applications (Kindle, PDF readers)
+- Table of contents and navigation work in exported formats
+- Formatting is preserved and readable
+- Export process can be automated or run on-demand
+
+---
+
 ## 🤖 AI & Automation
 
 ### AI Skills Framework Implementation
@@ -116,6 +180,53 @@ Complete the AI skills framework with all 7 specialized roles to prevent AI prob
 - Systematic handoff between roles
 - Quality standards enforcement
 - Scalable project execution
+
+---
+
+### Team Role AI Personas
+**Status:** Planned
+**Priority:** Medium
+**Related:** 12_Team_Roles.md, Maintenance Personas Framework
+
+**Description:**
+Create AI personas for active team member roles (similar to maintenance personas like CURATOR and AUDITOR) that can perform tasks and write tasks from each role's perspective. These personas help actual people in these roles by providing AI assistance with tasks, research, and organization, while ensuring the AI asks questions based on researched options rather than making assumptions.
+
+**Key Features:**
+- **Role-Specific Personas**: AI personas for active team roles (e.g., Project Manager, Restoration Ecologist, Fundraising Coordinator, Communications Lead)
+- **Task Execution**: AI can perform tasks from each role's perspective, understanding their priorities, constraints, and decision-making context
+- **Task Generation**: AI can write tasks from each role's perspective, ensuring tasks are framed appropriately for the person who will execute them
+- **Research-Based Questioning**: AI personas research options and present questions to humans rather than assuming how something should work
+- **Human-Centric Design**: These personas support actual people in these roles - AI assists with complex tasks but requires human decision-making for critical choices
+
+**Persona Structure** (similar to maintenance personas):
+- Identity and role definition
+- Core responsibilities from that role's perspective
+- Task execution guidelines
+- Task generation guidelines
+- Research and question-asking protocols
+- Interaction patterns with other roles
+
+**Benefits:**
+- **Support for Team Members**: Helps actual people in these roles by providing AI assistance tailored to their specific needs
+- **Context-Aware Task Management**: Tasks are written and executed from the appropriate role's perspective
+- **Informed Decision-Making**: AI researches options and presents questions rather than making assumptions
+- **Consistency**: Similar structure to maintenance personas ensures familiarity and systematic approach
+- **Scalability**: As team grows, new role personas can be added following the same framework
+
+**Implementation Approach:**
+1. Expand team roles documentation (12_Team_Roles.md) with detailed role descriptions
+2. Create persona files for each active team role (similar to `_vault_maintenance/personas/curator.md`)
+3. Define task execution and generation guidelines for each role
+4. Establish research and question-asking protocols that prevent assumption-making
+5. Document interaction patterns between team role personas and maintenance personas
+
+**Key Principle:**
+These personas are tools to help real people in these roles. AI can assist with many tasks, research, and organization, but should not make assumptions about how something should work. Instead, AI should research options and ask questions based on that research, enabling informed human decision-making.
+
+**Related Documents:**
+- `12_Team_Roles.md` - Team structure and roles
+- `_vault_maintenance/personas/` - Maintenance persona examples
+- `_vault_maintenance/stakeholders/stakeholder_personas.md` - Stakeholder persona reference
 
 ---
 
@@ -347,4 +458,6 @@ Real-time public dashboard showing project impact metrics and progress toward go
 ---
 
 **Version History:**
+- v1.2.0 (November 10, 2025): Added Documentation Export Formats (EPUB & PDF) feature
+- v1.1.0 (November 10, 2025): Added Team Role AI Personas feature
 - v1.0.0 (November 10, 2025): Initial wishlist created with Docusaurus documentation site as first feature
