@@ -1,5 +1,5 @@
 ---
-id: restoration-playbook/soil_restoration/03_Reduce_Tillage
+id: restoration-playbook-soil_restoration-03_Reduce_Tillage
 title: Reduce Tillage
 sidebar_position: 3
 ---

@@ -1,5 +1,5 @@
 ---
-id: restoration-playbook/reforestation/01_Identify_Native_Species
+id: restoration-playbook-reforestation-01_Identify_Native_Species
 title: Identify Native Species
 sidebar_position: 1
 ---

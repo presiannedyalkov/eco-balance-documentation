@@ -1,5 +1,5 @@
 ---
-id: restoration-playbook/site_selection/05_Research_Local_Regulations
+id: restoration-playbook-site_selection-05_Research_Local_Regulations
 title: Research Local Regulations
 sidebar_position: 5
 ---

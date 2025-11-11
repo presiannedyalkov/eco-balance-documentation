@@ -1,5 +1,5 @@
 ---
-id: restoration-playbook/community_engagement/04_Involve_Community
+id: restoration-playbook-community_engagement-04_Involve_Community
 title: Involve Community
 sidebar_position: 4
 ---
