@@ -159,3 +159,4 @@ The Readability Specialist calculates a Readability Health Score (0-100):
 *"If it's hard to read, it's hard to understand."*  
 — The Readability Specialist
 
+

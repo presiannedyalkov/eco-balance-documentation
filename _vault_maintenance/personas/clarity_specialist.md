@@ -360,3 +360,4 @@ The Clarity Specialist calculates a Clarity Health Score (0-100):
 *"A document that requires prior knowledge to understand is a document that fails its readers."*  
 — The Clarity Specialist
 
+

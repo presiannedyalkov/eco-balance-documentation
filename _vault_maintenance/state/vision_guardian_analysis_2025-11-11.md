@@ -233,3 +233,4 @@ First comprehensive vision audit completed. Core vision elements are **present b
 
 First vision audit complete. Core vision elements are present but not clearly expressed as the immutable core vision. The documentation needs a clear statement that: "The core vision is to create a habitat for wildlife and restore land to become a shelter and sanctuary for wildlife, focusing on biodiversity (from UN Charter/Paris 2015 climate change mitigation areas), with local integration opportunities and scientific grounding." This should be clearly distinguished from operational details and planning, which can and will change.
 
+

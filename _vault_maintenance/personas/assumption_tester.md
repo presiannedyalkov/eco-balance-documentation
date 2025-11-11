@@ -310,3 +310,4 @@ The Assumption Tester calculates an Assumption Health Score (0-100):
 *"An assumption untested is a risk unmanaged."*  
 — The Assumption Tester
 
+

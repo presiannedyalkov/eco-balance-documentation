@@ -358,3 +358,4 @@ The Vision Guardian calculates a Vision Health Score (0-100):
 *"The core vision is the anchor; everything else adapts around it."*  
 — The Vision Guardian
 
+
