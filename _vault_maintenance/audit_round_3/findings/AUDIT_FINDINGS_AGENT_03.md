@@ -37,7 +37,7 @@
 - **Quality Inspector**: 0 issues (overall quality)
 
 ### Files with Issues
-- 00_Eco_Balance_Hub.md: 6 issues
+- 00_Eco_Balance_Hub.md (root): 6 issues
 - 13_Legal_Framework.md: 2 issues
 - 32_Funding_Strategy.md: 1 issue
 - 40_Expansion_Growth_Strategy.md: 3 issues
@@ -51,7 +51,7 @@
 
 ## DETAILED FINDINGS
 
-## File: 00_Eco_Balance_Hub.md
+## File: 00_Eco_Balance_Hub.md (root)
 
 ### Issue 1: Version Number Inconsistency in VERSION File Reference
 - **Persona**: Auditor
@@ -163,7 +163,7 @@
 - **Persona**: Auditor
 - **Severity**: MEDIUM
 - **Location**: Line 18
-- **Issue**: States "Year 1 Target: 1,000-2,000 native trees/shrubs planted" but the Hub document (00_Eco_Balance_Hub.md line 170) states "plant 200-500 trees" for the 1 hectare Bootstrap pilot. This is a significant discrepancy.
+- **Issue**: States "Year 1 Target: 1,000-2,000 native trees/shrubs planted" but the Hub document (00_Eco_Balance_Hub.md (root) line 170) states "plant 200-500 trees" for the 1 hectare Bootstrap pilot. This is a significant discrepancy.
 - **Fix Needed**: Update to align with Bootstrap Model: "Year 1 Bootstrap Target: 200-500 native trees/shrubs planted (1 ha pilot). Full-scale operations (5-10 ha): 1,000-2,000 trees/shrubs."
 
 ### Issue 2: Missing Version Information
@@ -245,7 +245,7 @@
 ## RECOMMENDATIONS
 
 ### High Priority (Complete First)
-1. Fix all version number inconsistencies in 00_Eco_Balance_Hub.md (Issues 1, 2, 3)
+1. Fix all version number inconsistencies in 00_Eco_Balance_Hub.md (root) (Issues 1, 2, 3)
 2. Correct all date errors (2024 → 2025) in funding and implementation documents
 3. Resolve tree planting target inconsistency between Hub and Reforestation Overview
 

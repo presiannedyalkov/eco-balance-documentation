@@ -35,7 +35,7 @@ This audit analyzed all cross-references (`[[filename]]` or `[[filename|text]]`)
 - **13_Legal_Framework.md**: 16/16 references ✓
 
 ### Most Referenced Files (Top 10)
-1. **00_Eco_Balance_Hub.md** - 20 references (hub file)
+1. **00_Eco_Balance_Hub.md (root)** - 20 references (hub file)
 2. **32_Funding_Strategy.md** - 24 references
 3. **30_Business_Model.md** - 20 references
 4. **42_Adaptive_Timeline.md** - 18 references (when corrected)
@@ -58,45 +58,45 @@ This audit analyzed all cross-references (`[[filename]]` or `[[filename|text]]`)
 
 1. **03_Success_Factors.md:613**
    ```
-   → Actions: [[42_Next_Steps_90_Days|Decision Points]]
+   → Actions: [[strategic/42_Next_Steps_90_Days|Decision Points]]
    ```
-   **Fix:** Change to `[[42_Adaptive_Timeline|Decision Points]]`
+   **Fix:** Change to `[[strategic/42_Adaptive_Timeline|Decision Points]]`
 
 2. **03_Success_Factors.md:859**
    ```
-   - [[42_Next_Steps_90_Days|Immediate Actions]]
+   - [[strategic/42_Next_Steps_90_Days|Immediate Actions]]
    ```
-   **Fix:** Change to `[[42_Adaptive_Timeline|Immediate Actions]]`
+   **Fix:** Change to `[[strategic/42_Adaptive_Timeline|Immediate Actions]]`
 
 3. **02_Project_Vision.md:522**
    ```
-   - [[42_Next_Steps_90_Days|Phase 1 - Next 90 Days]]
+   - [[strategic/42_Next_Steps_90_Days|Phase 1 - Next 90 Days]]
    ```
-   **Fix:** Change to `[[42_Adaptive_Timeline|Phase 1 - Next 90 Days]]`
+   **Fix:** Change to `[[strategic/42_Adaptive_Timeline|Phase 1 - Next 90 Days]]`
 
 4. **30_Business_Model.md:823**
    ```
-   → Timeline integration: [[42_Next_Steps_90_Days|Action Plan]]
+   → Timeline integration: [[strategic/42_Next_Steps_90_Days|Action Plan]]
    ```
-   **Fix:** Change to `[[42_Adaptive_Timeline|Action Plan]]`
+   **Fix:** Change to `[[strategic/42_Adaptive_Timeline|Action Plan]]`
 
 5. **30_Business_Model.md:1197**
    ```
-   - [[42_Next_Steps_90_Days|Immediate Action Plan]]
+   - [[strategic/42_Next_Steps_90_Days|Immediate Action Plan]]
    ```
-   **Fix:** Change to `[[42_Adaptive_Timeline|Immediate Action Plan]]`
+   **Fix:** Change to `[[strategic/42_Adaptive_Timeline|Immediate Action Plan]]`
 
 6. **40_Expansion_Growth_Strategy.md:16**
    ```
-   - [[42_Next_Steps_90_Days|First 90 Days]]: Campaign & land acquisition
+   - [[strategic/42_Next_Steps_90_Days|First 90 Days]]: Campaign & land acquisition
    ```
-   **Fix:** Change to `[[42_Adaptive_Timeline|First 90 Days]]`
+   **Fix:** Change to `[[strategic/42_Adaptive_Timeline|First 90 Days]]`
 
 7. **40_Expansion_Growth_Strategy.md:1160**
    ```
-   4. First 1 hectare site identified → [[42_Next_Steps_90_Days|Next Steps]]
+   4. First 1 hectare site identified → [[strategic/42_Next_Steps_90_Days|Next Steps]]
    ```
-   **Fix:** Change to `[[42_Adaptive_Timeline|Next Steps]]`
+   **Fix:** Change to `[[strategic/42_Adaptive_Timeline|Next Steps]]`
 
 ---
 
@@ -106,19 +106,19 @@ This audit analyzed all cross-references (`[[filename]]` or `[[filename|text]]`)
 
 8. **42_Adaptive_Timeline.md:684**
    ```
-   - [[43_Daily_Operations|Operations Plan]] - What daily/weekly work looks like
+   - [[strategic/43_Daily_Operations|Operations Plan]] - What daily/weekly work looks like
    ```
-   **Fix:** Change to `[[43_Operations_Action_Plan|Operations Plan]]`
+   **Fix:** Change to `[[strategic/43_Operations_Action_Plan|Operations Plan]]`
 
 9. **42_Adaptive_Timeline.md:756**
    ```
-   - [[43_Daily_Operations|Operations Plan]] - What happens after you launch
+   - [[strategic/43_Daily_Operations|Operations Plan]] - What happens after you launch
    ```
-   **Fix:** Change to `[[43_Operations_Action_Plan|Operations Plan]]`
+   **Fix:** Change to `[[strategic/43_Operations_Action_Plan|Operations Plan]]`
 
 10. **40_Expansion_Growth_Strategy.md:17**
     ```
-    - [[43_Operations_Action_Plan|Operations Guide]]: Bootstrap operations
+    - [[strategic/43_Operations_Action_Plan|Operations Guide]]: Bootstrap operations
     ```
     **Fix:** Already correct! (false positive)
 
@@ -136,7 +136,7 @@ This audit analyzed all cross-references (`[[filename]]` or `[[filename|text]]`)
     - Line 38: `[[_vault_maintenance/ASSUMPTIONS_AUDIT_SUMMARY|...]]`
     - Line 162: `[[_process/planning/PUBLIC_PLATFORM_PLAN|...]]`
     - Line 403: `[[VERSION|...]]`
-    - Line 404: `[[CHANGELOG|...]]`
+    - Line 404: `[[_process/documentation/CHANGELOG|...]]`
     - Line 413: `[[_process/planning/PUBLIC_PLATFORM_PLAN|...]]`
     - Line 414: `[[ai_skills/README|...]]`
 
@@ -149,17 +149,17 @@ This audit analyzed all cross-references (`[[filename]]` or `[[filename|text]]`)
 
 ### High Priority - Missing Logical Connections
 
-#### 1. **01_Executive_Summary.md** (No outbound links!)
+#### 1. **strategic/01_Executive_Summary.md** (No outbound links!)
 **Current:** 0 cross-references
 **Issue:** Entry point document doesn't link to any other strategic docs
 **Suggested additions:**
 ```markdown
 Add in "What's Next" or final section:
-- [[02_Project_Vision|Project Vision]] - Our adaptive approach
-- [[03_Success_Factors|Success Factors]] - What determines success
-- [[04_Current_Status_Assessment|Current Status]] - Where we are now
-- [[42_Adaptive_Timeline|Adaptive Timeline]] - Timeline scenarios
-- [[32_Funding_Strategy|Funding Strategy]] - How we'll fund this
+- [[strategic/02_Project_Vision|Project Vision]] - Our adaptive approach
+- [[strategic/03_Success_Factors|Success Factors]] - What determines success
+- [[strategic/04_Current_Status_Assessment|Current Status]] - Where we are now
+- [[strategic/42_Adaptive_Timeline|Adaptive Timeline]] - Timeline scenarios
+- [[strategic/32_Funding_Strategy|Funding Strategy]] - How we'll fund this
 ```
 
 #### 2. **31_Financial_Projections.md** (Under-referenced)
@@ -209,7 +209,7 @@ Add in "What's Next" or final section:
 #### 9. Add 00_Eco_Balance_Hub reference to more files
 **Current:** 20 files reference it
 **Target:** All 20 strategic files should have hub reference at top
-**Missing from:** 01_Executive_Summary.md
+**Missing from:** strategic/01_Executive_Summary.md
 
 #### 10. Standardize "Related Documents" sections
 **Current:** Most files have this but format varies
@@ -240,7 +240,7 @@ The following circular reference patterns are intentional and healthy:
 5. **42_Adaptive_Timeline.md** - 20 outbound references
 
 ### Files with Low Outbound References (Potentially Isolated)
-1. **01_Executive_Summary.md** - 0 outbound references ⚠️
+1. **strategic/01_Executive_Summary.md** - 0 outbound references ⚠️
 2. **02_Project_Vision.md** - 14 references (good)
 3. **60_Marketing_Communications_Strategy.md** - 8 references (moderate)
 4. **70_Case_Studies_Restoration_Examples.md** - Not audited (outside 01-70 strategic set)
@@ -264,7 +264,7 @@ The following circular reference patterns are intentional and healthy:
    - Files: 42 (2x)
 
 ### High Priority (This Sprint)
-3. **Add cross-references to 01_Executive_Summary.md** (currently has none)
+3. **Add cross-references to strategic/01_Executive_Summary.md** (currently has none)
 4. **Increase references to 31_Financial_Projections.md** in financial documents
 5. **Add 70_Case_Studies references** to methodology documents
 
@@ -294,11 +294,11 @@ The following circular reference patterns are intentional and healthy:
 
 ### Reference Pattern Observed
 - Most files use format: `[[filename|Display Text]]`
-- Hub references consistently use: `[[00_Eco_Balance_Hub|Project Hub]]`
+- Hub references consistently use: `[[strategic/00_Eco_Balance_Hub|Project Hub]]`
 - "Back to hub" link at top of most files (line 3)
 
 ### Files Outside Strategic Range Referenced
-- **00_Eco_Balance_Hub.md** - Hub file (expected)
+- **00_Eco_Balance_Hub.md (root)** - Hub file (expected)
 - **22_Restoration_Challenges_Solutions.md** - Included in audit scope
 - **45_Tiny_House_and_Living_Infrastructure.md** - Included in audit scope
 - **CHANGELOG.md**, **VERSION**, **ROADMAP.md** - Meta files (expected)
@@ -315,7 +315,7 @@ Files follow naming convention: `NN_Title_With_Underscores.md`
 **Audit Status:** Complete
 **Next Steps:**
 1. Execute priority fixes (9 old filename updates)
-2. Add missing cross-references to 01_Executive_Summary.md
+2. Add missing cross-references to strategic/01_Executive_Summary.md
 3. Consider standardizing Related Documents sections
 4. Re-audit after fixes to verify 100% working references
 

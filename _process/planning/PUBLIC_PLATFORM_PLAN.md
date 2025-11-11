@@ -5,7 +5,7 @@
 **Updated:** November 9, 2025
 **Status:** Planning Phase - Ready for Implementation
 **Project Version:** v2.0.0 (Bootstrap Model)
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 
 ---
 

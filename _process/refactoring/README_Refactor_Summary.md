@@ -82,22 +82,22 @@ The comprehensive 40+ page business plan has been broken down into **smaller, in
 Every file contains links to related documents using Obsidian's `[[double bracket]]` syntax:
 
 ```markdown
-→ See [[20_Restoration_Methodology|Restoration Methodology]]
-→ Details in [[30_Business_Model|Business Model]]
+→ See [[strategic/20_Restoration_Methodology|Restoration Methodology]]
+→ Details in [[strategic/30_Business_Model|Business Model]]
 ```
 
 ### Back Navigation
 Each file links back to the hub:
 ```markdown
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 ```
 
 ### Cross-References
 Files link to related topics naturally:
 ```markdown
-→ Technology: [[21_Technology_Integration|Solar & Water Systems]]
-→ Financial: [[31_Financial_Projections|Budget Details]]
-→ Implementation: [[42_Next_Steps_90_Days|Next Actions]]
+→ Technology: [[strategic/21_Technology_Integration|Solar & Water Systems]]
+→ Financial: [[strategic/31_Financial_Projections|Budget Details]]
+→ Implementation: [[strategic/42_Next_Steps_90_Days|Next Actions]]
 ```
 
 ### Hierarchical Organization

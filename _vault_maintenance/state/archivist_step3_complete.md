@@ -51,12 +51,12 @@ All 4 converted documents (20, 21, 30, 32) show:
 ### ⚠️ Missing Documents Identified
 
 **22_Research_Framework.md**: DOES NOT EXIST
-- Referenced in multiple docs (01_Executive_Summary.md, 03_Success_Factors.md)
+- Referenced in multiple docs (strategic/01_Executive_Summary.md, 03_Success_Factors.md)
 - Actual file is: 22_Restoration_Challenges_Solutions.md (different document)
 - Already documented as FIX-005 (HIGH priority - fix broken references)
 
 **31_Financial_Projections.md**: DOES NOT EXIST
-- Referenced in multiple docs (01_Executive_Summary.md, others)
+- Referenced in multiple docs (strategic/01_Executive_Summary.md, others)
 - Already documented as FIX-006 (HIGH priority - fix broken references)
 
 ### ⚠️ Historical Preservation: Previous v1.0 Versions NOT Archived

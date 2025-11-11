@@ -70,7 +70,7 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 520-532
-- **Issue**: Multiple internal links present but not verified during audit (e.g., `[[00_Eco_Balance_Hub|Project Hub]]`, `[[10_Organizational_Structure|Organizational Chart]]`, etc.).
+- **Issue**: Multiple internal links present but not verified during audit (e.g., `[[strategic/00_Eco_Balance_Hub|Project Hub]]`, `[[strategic/10_Organizational_Structure|Organizational Chart]]`, etc.).
 - **Fix Needed**: Verify all internal links resolve correctly. Links to check: lines 3, 520, 521, 524, 525, 528, 529, 532.
 
 ### Issue 6: Vague Location Reference
@@ -170,14 +170,14 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 52, 59, 186
-- **Issue**: Links to `[[21_Technology_Integration|...]]` use incorrect relative path (should be `../../` not missing or single `../`). Same issue appears three times.
+- **Issue**: Links to `[[strategic/21_Technology_Integration|...]]` use incorrect relative path (should be `../../` not missing or single `../`). Same issue appears three times.
 - **Fix Needed**: Update all three occurrences to use correct path: `[[../../21_Technology_Integration|Technology Integration]]`.
 
 ### Issue 2: Incorrect Relative Link Paths for Strategy Documents
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 235, 236
-- **Issue**: Links to `[[32_Funding_Strategy|...]]` and `[[30_Business_Model|...]]` are missing the correct relative path prefix.
+- **Issue**: Links to `[[strategic/32_Funding_Strategy|...]]` and `[[strategic/30_Business_Model|...]]` are missing the correct relative path prefix.
 - **Fix Needed**: Update to `[[../../32_Funding_Strategy|Funding Strategy]]` and `[[../../30_Business_Model|Business Model]]`.
 
 ### Issue 3: Missing Version Information

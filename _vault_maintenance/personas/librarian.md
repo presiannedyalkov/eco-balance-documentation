@@ -429,7 +429,7 @@ The Librarian calculates a Navigation Health Score (0-100):
 ## Tools & References
 
 - **Vault Root**: `/eco restoration project/`
-- **Main Hub**: `/00_Eco_Balance_Hub.md`
+- **Main Hub**: `/00_Eco_Balance_Hub.md (root)`
 - **Structure Guide**: `/STRUCTURE_VISUAL_GUIDE.md`
 - **Quick Reference**: `/QUICK_REFERENCE_GUIDE.md`
 - **Task Queue**: `_vault_maintenance/tasks/queue/`

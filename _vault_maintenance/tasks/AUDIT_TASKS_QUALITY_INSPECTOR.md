@@ -38,14 +38,14 @@ When ready to merge:
 
 ## ✅ QUALITY INSPECTOR AUDIT TASKS
 
-- [x] **QUALITY INSPECTOR** - File: `00_Eco_Balance_Hub.md`
+- [x] **QUALITY INSPECTOR** - File: `00_Eco_Balance_Hub.md (root)`
   - Check: Formatting consistent, style professional, readability high
   - Focus: This is the front door - must be polished
   - Result: ⚠️ MINOR ISSUES - Added FIX-023 to FIX_TASKS.md
           Navigation patterns inconsistent ("→ See" vs "→ Details in" vs direct links). Otherwise formatting excellent, professional presentation, good readability. Content issues (v1.0/v2.0 mixing) will be addressed separately by other personas.
 
 
-- [x] **QUALITY INSPECTOR** - File: `01_Executive_Summary.md`
+- [x] **QUALITY INSPECTOR** - File: `strategic/01_Executive_Summary.md`
   - Check: Writing quality, formatting, professional tone
   - Focus: After v2.0 conversion, check polish and clarity
   - Result: ✅ PASS - Excellent formatting, professional tone, clear structure. Markdown syntax correct, headers consistent, good readability. Content accuracy issues (v1.0→v2.0) already covered by FIX-001.

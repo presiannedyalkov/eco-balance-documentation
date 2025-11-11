@@ -21,7 +21,7 @@ This file outlines a comprehensive marketing and communications strategy with **
 **Location**: Section "Content Calendar"
 **Type**: Team/Resource/Timeline
 
-**Assumption**: A 1-2 person founding team (per 01_Executive_Summary.md) can execute a comprehensive multi-channel marketing strategy while simultaneously running restoration operations, fundraising, site selection, legal setup, and all other startup activities.
+**Assumption**: A 1-2 person founding team (per strategic/01_Executive_Summary.md) can execute a comprehensive multi-channel marketing strategy while simultaneously running restoration operations, fundraising, site selection, legal setup, and all other startup activities.
 
 **Alternatives**:
 - Current: Full marketing strategy from Day 1 with weekly/monthly content across all channels

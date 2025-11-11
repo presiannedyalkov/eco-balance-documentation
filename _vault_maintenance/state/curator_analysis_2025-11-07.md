@@ -21,7 +21,7 @@ The vault demonstrates **good foundational content quality** with well-structure
 **Status**: MAJOR ISSUES DETECTED
 
 **Critical Inconsistencies:**
-- ❌ **01_Executive_Summary.md** - Still references Large-Scale model
+- ❌ **strategic/01_Executive_Summary.md** - Still references Large-Scale model
   - States €250k-500k initial capital (should be €20-30k Year 1)
   - References 5-10 hectares Year 1 (should be 1 hectare)
   - Mentions "atmospheric water generation" (removed in v2.0)
@@ -42,21 +42,21 @@ The vault demonstrates **good foundational content quality** with well-structure
 **Missing Important Links**: 3 (MEDIUM priority)
 
 **Broken Cross-References:**
-1. **01_Executive_Summary.md**
-   - Line 78: Links to [[22_Research_Framework|Research Framework]]  
+1. **strategic/01_Executive_Summary.md**
+   - Line 78: Links to [[strategic/22_Research_Framework|Research Framework]]  
      → File 22 does not exist (gap between 21-30)
-   - Line 86: Links to [[31_Financial_Projections|Financial Projections]]  
+   - Line 86: Links to [[strategic/31_Financial_Projections|Financial Projections]]  
      → File 31 does not exist (gap at 31, have 32)
-   - Line 55: Links to [[40_Implementation_Roadmap|Roadmap]]  
+   - Line 55: Links to [[strategic/40_Implementation_Roadmap|Roadmap]]  
      → File 40 exists (Expansion Growth Strategy) but not named "Implementation Roadmap"
-   - Line 73: Links to [[41_Phase_1_Foundation|Phase 1]]  
+   - Line 73: Links to [[strategic/41_Phase_1_Foundation|Phase 1]]  
      → File 41 does not exist (gap between 40-42)
 
 **Valid Cross-References (Good Examples):**
-- ✅ [[00_Eco_Balance_Hub|Project Hub]] - Used consistently
-- ✅ [[20_Restoration_Methodology]] - Working link
-- ✅ [[21_Technology_Integration]] - Working link
-- ✅ [[30_Business_Model]] - Working link
+- ✅ [[strategic/00_Eco_Balance_Hub|Project Hub]] - Used consistently
+- ✅ [[strategic/20_Restoration_Methodology]] - Working link
+- ✅ [[strategic/21_Technology_Integration]] - Working link
+- ✅ [[strategic/30_Business_Model]] - Working link
 - ✅ Implementation task cross-references functional
 
 ### 📋 Identified Gaps
@@ -273,7 +273,7 @@ The vault demonstrates **good foundational content quality** with well-structure
 ### 🚨 Immediate Actions (Next 24 hours)
 
 1. **Fix Executive Summary version conflict**
-   - Update 01_Executive_Summary.md to v2.0 Bootstrap Model
+   - Update strategic/01_Executive_Summary.md to v2.0 Bootstrap Model
    - Align budget figures (€250k-500k → €20-30k Year 1)
    - Update scale (5-10 ha → 1 ha pilot)
    - Remove AWG references
@@ -419,7 +419,7 @@ The vault underwent MAJOR methodology change (v1.0 → v2.0) on 2025-11-06:
 - ✅ 45_Tiny_House_and_Living_Infrastructure.md
 
 **Documents Suspected Non-Compliant (Need Audit):**
-- ❌ 01_Executive_Summary.md (confirmed)
+- ❌ strategic/01_Executive_Summary.md (confirmed)
 - ❓ 02_Project_Vision.md (likely)
 - ❓ 03_Success_Factors.md (likely)
 - ❓ 04_Current_Status_Assessment.md (likely)
@@ -432,23 +432,23 @@ The vault underwent MAJOR methodology change (v1.0 → v2.0) on 2025-11-06:
 
 ### Broken Link Details
 
-**File**: 01_Executive_Summary.md
+**File**: strategic/01_Executive_Summary.md
 
-1. **Line ~35**: [[22_Research_Framework|Research Framework]]
+1. **Line ~35**: [[strategic/22_Research_Framework|Research Framework]]
    - Target file does not exist
    - Context: Scientific rigor differentiator
    - **Options**: Create doc 22 OR redirect to relevant section of existing doc
 
-2. **Line ~55**: [[40_Implementation_Roadmap|Roadmap]]
+2. **Line ~55**: [[strategic/40_Implementation_Roadmap|Roadmap]]
    - File 40 exists but is "Expansion_Growth_Strategy"
    - **Options**: Rename link OR update file 40 title
 
-3. **Line ~73**: [[41_Phase_1_Foundation|Phase 1]]
+3. **Line ~73**: [[strategic/41_Phase_1_Foundation|Phase 1]]
    - Target file does not exist (gap: 40, 42, 43, 44, 45 exist)
    - Context: Phased approach reference
    - **Options**: Create doc 41 OR redirect to 42_Next_Steps_90_Days
 
-4. **Line ~86**: [[31_Financial_Projections|Financial Projections]]
+4. **Line ~86**: [[strategic/31_Financial_Projections|Financial Projections]]
    - Target file does not exist (have 30, 32)
    - Context: Investment ROI details
    - **Options**: Create doc 31 OR redirect to 30_Business_Model or 32_Funding_Strategy

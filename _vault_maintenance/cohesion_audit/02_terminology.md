@@ -37,7 +37,7 @@ Status: Transformed to Adaptive Framework
 ```
 
 **Files with explicit version metadata:**
-- 01_Executive_Summary.md:248 ✅ Has context ("3.0.0 - Adaptive Framework")
+- strategic/01_Executive_Summary.md:248 ✅ Has context ("3.0.0 - Adaptive Framework")
 - 02_Project_Vision.md:200 ✅ Has context
 - 03_Success_Factors.md:171 ✅ Has context
 - 04_Current_Status_Assessment.md:153 ✅ Has context
@@ -102,10 +102,10 @@ Status: Transformed to Adaptive Framework
 ```
 
 **Specific Fixes Needed:**
-1. 01_Executive_Summary.md:79 - Change "€15-30k" to "€15-25k (standard bootstrap)"
-2. 01_Executive_Summary.md:140 - Clarify "€8k (ultra-lean) to €30k (comprehensive)"
+1. strategic/01_Executive_Summary.md:79 - Change "€15-30k" to "€15-25k (standard bootstrap)"
+2. strategic/01_Executive_Summary.md:140 - Clarify "€8k (ultra-lean) to €30k (comprehensive)"
 3. Standardize across 32_Funding_Strategy.md with clear scenario labels
-4. Add definitions section to 01_Executive_Summary.md explaining the three tiers
+4. Add definitions section to strategic/01_Executive_Summary.md explaining the three tiers
 
 ---
 
@@ -131,7 +131,7 @@ Status: Transformed to Adaptive Framework
 ```
 
 **Specific Fixes Needed:**
-1. 01_Executive_Summary.md:79 - Standardize to "€15-25k"
+1. strategic/01_Executive_Summary.md:79 - Standardize to "€15-25k"
 2. 60_Marketing_Communications_Strategy.md - Keep detailed breakdown but use consistent summary
 3. All other files - Use "€15-25k crowdfunding target" consistently
 
@@ -196,7 +196,7 @@ Always specify which track when using timeline ranges
 **Specific Fixes Needed:**
 1. Ensure 42_Adaptive_Timeline.md defines these three tracks explicitly
 2. All other files should reference these standardized tracks
-3. Add cross-reference note: "See [[42_Adaptive_Timeline]] for track definitions"
+3. Add cross-reference note: "See [[strategic/42_Adaptive_Timeline]] for track definitions"
 
 ---
 
@@ -510,11 +510,11 @@ Survival rate consistently referenced as:
 
 ### Priority 1: High Impact - Funding Consistency (6 fixes)
 
-1. **01_Executive_Summary.md:79**
+1. **strategic/01_Executive_Summary.md:79**
    - CHANGE: "€15-30k initial funding"
    - TO: "€15-25k crowdfunding target (€15k minimum, €25k target)"
 
-2. **01_Executive_Summary.md:140**
+2. **strategic/01_Executive_Summary.md:140**
    - ADD: Clarify "€8k (ultra-lean) to €30k (comprehensive)" with scenario labels
    - TO: "€8-10k (ultra-lean), €15-25k (standard), or €25-35k (comfortable) depending on funding secured"
 
@@ -545,7 +545,7 @@ Survival rate consistently referenced as:
 
 9. **All files referencing "12-18 months"**
    - ADD: Specify "(baseline track)" after first mention in each file
-   - CROSS-REFERENCE: "See [[42_Adaptive_Timeline]] for track options"
+   - CROSS-REFERENCE: "See [[strategic/42_Adaptive_Timeline]] for track options"
 
 10. **60_Marketing_Communications_Strategy.md campaign options**
     - KEEP: Multiple options are intentional
@@ -579,13 +579,13 @@ Survival rate consistently referenced as:
     - ADD: Specify whether target or threshold in each instance
 
 17. **Add Terminology Glossary**
-    - LOCATION: Consider adding to 01_Executive_Summary.md or as separate document
+    - LOCATION: Consider adding to strategic/01_Executive_Summary.md or as separate document
     - CONTENT: Define all standard terms (bootstrap tiers, timeline tracks, grant sizes)
     - BENEFIT: Single reference for all terminology questions
 
 18. **Cross-reference improvements**
-    - ADD: "See [[32_Funding_Strategy]] for funding definitions" where funding mentioned
-    - ADD: "See [[42_Adaptive_Timeline]] for timeline options" where timelines mentioned
+    - ADD: "See [[strategic/32_Funding_Strategy]] for funding definitions" where funding mentioned
+    - ADD: "See [[strategic/42_Adaptive_Timeline]] for timeline options" where timelines mentioned
     - IMPROVE: Consistency of cross-reference formatting
 
 ### Priority 4: Enhancement - Documentation Improvements (10 recommendations)
@@ -699,7 +699,7 @@ The Eco Balance strategic documentation demonstrates **GOOD overall terminology 
    - Reference: This audit report
 
 2. **Fix Priority 1 funding inconsistencies** (2-3 hours)
-   - Update 01_Executive_Summary.md
+   - Update strategic/01_Executive_Summary.md
    - Update 32_Funding_Strategy.md
    - Standardize bootstrap references
 
@@ -728,7 +728,7 @@ The Eco Balance strategic documentation demonstrates **GOOD overall terminology 
 
 ## 📝 APPENDIX: FILES AUDITED
 
-1. ✅ 01_Executive_Summary.md
+1. ✅ strategic/01_Executive_Summary.md
 2. ✅ 02_Project_Vision.md
 3. ✅ 03_Success_Factors.md
 4. ✅ 04_Current_Status_Assessment.md

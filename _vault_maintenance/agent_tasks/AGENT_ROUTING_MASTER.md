@@ -298,7 +298,7 @@
 **Task File**: [`AGENT_20_TASKS.md`](./_vault_maintenance/agent_tasks/AGENT_20_TASKS.md)
 
 **Tasks**:
-- FIX-023 (QI): Standardize navigation patterns in 00_Eco_Balance_Hub.md
+- FIX-023 (QI): Standardize navigation patterns in 00_Eco_Balance_Hub.md (root)
 - FIX-024 (QI): Fix back link formatting in 3 files
 - Cosmetic polish improvements
 

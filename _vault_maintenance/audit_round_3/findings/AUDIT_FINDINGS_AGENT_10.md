@@ -230,8 +230,8 @@ All of the following files show "**Last Updated:** 2024-11-08" but today's date 
 - **Issue**: All files contain internal links that need verification to ensure they point to existing files with correct anchors. This is standard maintenance, not necessarily indicating problems, but needs systematic verification.
 - **Files with Links**: All 11 files
 - **Fix Needed**: Run link checker or manually verify all internal links work correctly. Example links to verify:
-  - `[[00_Eco_Balance_Hub|Project Hub]]`
-  - `[[32_Funding_Strategy|Crowdfunding Strategy]]`
+  - `[[strategic/00_Eco_Balance_Hub|Project Hub]]`
+  - `[[strategic/32_Funding_Strategy|Crowdfunding Strategy]]`
   - `[[README|Implementation Tasks]]`
   - And many others throughout the documents
 

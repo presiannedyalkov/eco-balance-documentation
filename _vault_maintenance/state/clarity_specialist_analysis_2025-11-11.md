@@ -75,13 +75,13 @@ First comprehensive clarity audit completed. Found **extensive use of contextual
 
 ### Incomprehensible Without Prior Knowledge
 
-1. **Hub Page - "VERSION 2.0.0 RELEASED!" section** (00_Eco_Balance_Hub.md:12-35)
+1. **Hub Page - "VERSION 2.0.0 RELEASED!" section** (00_Eco_Balance_Hub.md (root):12-35)
    - **Issue**: Entire section assumes knowledge of v1.0.0 and "Large-Scale Model"
    - **Text**: "MAJOR METHODOLOGY CHANGE: Large-Scale Model → Bootstrap Model"
    - **Problem**: Readers don't know what "Large-Scale Model" was or why it changed
    - **Impact**: CRITICAL - First thing readers see, completely incomprehensible without version history
 
-2. **Hub Page - "was X, now Y" comparisons** (00_Eco_Balance_Hub.md:18-22)
+2. **Hub Page - "was X, now Y" comparisons** (00_Eco_Balance_Hub.md (root):18-22)
    - **Issue**: Multiple comparisons to unknown old approach
    - **Examples**: 
      - "was 10-30 ha" (readers don't know this was the old approach)
@@ -89,7 +89,7 @@ First comprehensive clarity audit completed. Found **extensive use of contextual
      - "was 20-100 people" (readers don't know this was the old team size)
    - **Impact**: CRITICAL - Core information presented comparatively, not directly
 
-3. **Executive Summary - "Bootstrap Approach"** (01_Executive_Summary.md:38)
+3. **Executive Summary - "Bootstrap Approach"** (strategic/01_Executive_Summary.md:38)
    - **Issue**: Uses "Bootstrap Approach" without explaining what bootstrap means
    - **Text**: "Bootstrap Approach: Starting with a small pilot site..."
    - **Problem**: Assumes readers understand "bootstrap" concept
@@ -127,8 +127,8 @@ First comprehensive clarity audit completed. Found **extensive use of contextual
 ### Model Name References
 
 **Files with "Bootstrap Model" references:**
-1. `00_Eco_Balance_Hub.md` - 8 instances
-2. `01_Executive_Summary.md` - 6 instances
+1. `00_Eco_Balance_Hub.md (root)` - 8 instances
+2. `strategic/01_Executive_Summary.md` - 6 instances
 3. `20_Restoration_Methodology.md` - 3 instances
 4. `30_Business_Model.md` - 4 instances
 5. `21_Technology_Integration.md` - 1 instance
@@ -138,8 +138,8 @@ First comprehensive clarity audit completed. Found **extensive use of contextual
 ### Version-Specific Language
 
 **Files with version-specific language:**
-1. `00_Eco_Balance_Hub.md` - "v2.0.0", "v2.0 Bootstrap Model"
-2. `01_Executive_Summary.md` - "v2.0.0 Release Notes", "v2.0 Bootstrap Model"
+1. `00_Eco_Balance_Hub.md (root)` - "v2.0.0", "v2.0 Bootstrap Model"
+2. `strategic/01_Executive_Summary.md` - "v2.0.0 Release Notes", "v2.0 Bootstrap Model"
 3. `20_Restoration_Methodology.md` - "v2.0 Bootstrap Model"
 4. `30_Business_Model.md` - "v2.0 Bootstrap Model", "Bootstrap Model v2.0"
 5. `_versions/v2.0.0/RELEASE_NOTES.md` - Extensive (acceptable in release notes)
@@ -236,7 +236,7 @@ First comprehensive clarity audit completed. Found **extensive use of contextual
 
 ## Specific Issues by File
 
-### 00_Eco_Balance_Hub.md (CRITICAL)
+### 00_Eco_Balance_Hub.md (root) (CRITICAL)
 - Line 3: "Version: 2.0.0 (Bootstrap Model)" - Model name in version
 - Line 14: "MAJOR METHODOLOGY CHANGE: Large-Scale Model → Bootstrap Model" - Assumes knowledge of both
 - Lines 18-22: Multiple "was X, now Y" comparisons
@@ -244,7 +244,7 @@ First comprehensive clarity audit completed. Found **extensive use of contextual
 - Line 34: "v2.0.0 Bootstrap Model" - Version-specific model name
 - **Priority**: CRITICAL - First document readers see
 
-### 01_Executive_Summary.md (HIGH)
+### strategic/01_Executive_Summary.md (HIGH)
 - Line 38: "Bootstrap Approach" - Undefined terminology
 - Line 38: "Bootstrap Model transformation details" - Assumes knowledge of transformation
 - Line 67: "v2.0 Bootstrap Model" - Version-specific model name

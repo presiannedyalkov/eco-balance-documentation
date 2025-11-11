@@ -165,7 +165,7 @@ Round 3 audit reveals **high-quality documentation** with only minor issues rema
 3. water_management/00_Water_Management_Overview.md - Add metadata
 
 ### High Priority (10 files)
-- 00_Eco_Balance_Hub.md - Version inconsistencies
+- 00_Eco_Balance_Hub.md (root) - Version inconsistencies
 - QUICK_REFERENCE_GUIDE.md - Version refs
 - STRUCTURE_VISUAL_GUIDE.md - v1.0 references
 - 12_Team_Roles.md - Geographic errors

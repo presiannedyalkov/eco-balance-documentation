@@ -882,8 +882,8 @@ OUTCOME: Properly escalated, avoided making incorrect change
 #### Cross-References
 ```markdown
 Standard format: [[filename|Display Text]]
-Hub reference: [[00_Eco_Balance_Hub|Project Hub]]
-Implementation: [[implementation_tasks/category/file|Task Name]]
+Hub reference: [[strategic/00_Eco_Balance_Hub|Project Hub]]
+Implementation: [[strategic/restoration_playbook/category/file|Task Name]]
 ```
 
 #### Emphasis

@@ -68,8 +68,8 @@ The Executive Summary (01_Executive_Summary.md) currently presents the v1.0 Larg
 - Replicable model documented
 - Path to expansion validated
 
-→ Financial details in [[30_Business_Model|Business Model]]  
-→ Funding approach in [[32_Funding_Strategy|Funding Strategy]]
+→ Financial details in [[strategic/30_Business_Model|Business Model]]  
+→ Funding approach in [[strategic/32_Funding_Strategy|Funding Strategy]]
 ```
 
 **Strategic Objectives Section (Update Timeline)**:
@@ -100,8 +100,8 @@ The Executive Summary (01_Executive_Summary.md) currently presents the v1.0 Larg
 - Model replicated by others
 - 10,000+ hectare vision progresses
 
-→ Details in [[42_Next_Steps_90_Days|Next 90 Days]]  
-→ Expansion in [[40_Expansion_Growth_Strategy|Expansion Strategy]]
+→ Details in [[strategic/42_Next_Steps_90_Days|Next 90 Days]]  
+→ Expansion in [[strategic/40_Expansion_Growth_Strategy|Expansion Strategy]]
 ```
 
 **Key Differentiators Section (Update Technology)**:
@@ -113,8 +113,8 @@ Bootstrap-appropriate off-grid technology:
 - Essential monitoring tools (€500-1k)
 - DIY-first, maintainable approach
 
-→ See [[21_Technology_Integration|Technology Integration]]  
-→ Living setup in [[45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]
+→ See [[strategic/21_Technology_Integration|Technology Integration]]  
+→ Living setup in [[strategic/45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]
 ```
 
 **Update or Clarify**:

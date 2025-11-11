@@ -10,7 +10,7 @@
 > **Status**: Work finished, document retained for historical reference only.
 >
 > For current documentation structure, see:
-> - [[00_Eco_Balance_Hub|Project Hub]] - Current documentation overview
+> - [[strategic/00_Eco_Balance_Hub|Project Hub]] - Current documentation overview
 > - [[_process/README|Process Documentation]] - Active process guides
 
 ---

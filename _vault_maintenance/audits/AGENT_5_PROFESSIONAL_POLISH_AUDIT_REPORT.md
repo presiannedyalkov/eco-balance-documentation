@@ -36,7 +36,7 @@ The Eco Balance documentation demonstrates strong professional quality with cons
 ### Files Audited (20 Total)
 
 **Vision & Foundation (01-04):**
-- 01_Executive_Summary.md
+- strategic/01_Executive_Summary.md
 - 02_Project_Vision.md
 - 03_Success_Factors.md
 - 04_Current_Status_Assessment.md
@@ -311,7 +311,7 @@ The Eco Balance documentation demonstrates strong professional quality with cons
 - Clean syntax throughout
 
 **2. Back Navigation Links - Excellent**
-- All files include `**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+- All files include `**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**`
 - Consistent placement at top of each file
 - Facilitates easy navigation
 

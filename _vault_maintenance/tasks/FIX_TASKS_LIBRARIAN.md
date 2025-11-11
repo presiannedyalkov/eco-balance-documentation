@@ -109,7 +109,7 @@ Site selection implementation files contain budget assumptions and cost estimate
 
 **General Updates to All Files**:
 - Add Bootstrap context boxes where budget figures appear
-- Reference [[30_Business_Model|Business Model]] for v2.0 budget framework
+- Reference [[strategic/30_Business_Model|Business Model]] for v2.0 budget framework
 - Note that larger-scale costs apply to post-pilot expansion phases
 
 **Verification**:
@@ -129,7 +129,7 @@ Site selection implementation files contain budget assumptions and cost estimate
 **File**: Multiple files link to doc 60 with wrong filename
 
 **Files Affected**:
-- `01_Executive_Summary.md` (line 35)
+- `strategic/01_Executive_Summary.md` (line 35)
 - `02_Project_Vision.md` (lines 78, 188)
 - `03_Success_Factors.md` (lines 71, 239)
 - `04_Current_Status_Assessment.md` (line 230)
@@ -137,16 +137,16 @@ Site selection implementation files contain budget assumptions and cost estimate
 - `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
 
 **Issue**:
-Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
+Links reference [[strategic/60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
 
 **Fix Required**:
 
 Update all links to use correct filename:
-- FROM: `[[60_Marketing_Strategy|...]]`
-- TO: `[[60_Marketing_Communications_Strategy|...]]`
+- FROM: `[[strategic/60_Marketing_Strategy|...]]`
+- TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 **Files to Update** (10 instances):
-1. 01_Executive_Summary.md (line 35)
+1. strategic/01_Executive_Summary.md (line 35)
 2. 02_Project_Vision.md (line 78)
 3. 02_Project_Vision.md (line 188)
 4. 03_Success_Factors.md (line 71)
@@ -246,7 +246,7 @@ Site selection implementation files contain budget assumptions and cost estimate
 
 **General Updates to All Files**:
 - Add Bootstrap context boxes where budget figures appear
-- Reference [[30_Business_Model|Business Model]] for v2.0 budget framework
+- Reference [[strategic/30_Business_Model|Business Model]] for v2.0 budget framework
 - Note that larger-scale costs apply to post-pilot expansion phases
 
 **Verification**:
@@ -266,7 +266,7 @@ Site selection implementation files contain budget assumptions and cost estimate
 **File**: Multiple files link to doc 60 with wrong filename
 
 **Files Affected**:
-- `01_Executive_Summary.md` (line 35)
+- `strategic/01_Executive_Summary.md` (line 35)
 - `02_Project_Vision.md` (lines 78, 188)
 - `03_Success_Factors.md` (lines 71, 239)
 - `04_Current_Status_Assessment.md` (line 230)
@@ -274,16 +274,16 @@ Site selection implementation files contain budget assumptions and cost estimate
 - `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
 
 **Issue**:
-Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
+Links reference [[strategic/60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
 
 **Fix Required**:
 
 Update all links to use correct filename:
-- FROM: `[[60_Marketing_Strategy|...]]`
-- TO: `[[60_Marketing_Communications_Strategy|...]]`
+- FROM: `[[strategic/60_Marketing_Strategy|...]]`
+- TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 **Files to Update** (10 instances):
-1. 01_Executive_Summary.md (line 35)
+1. strategic/01_Executive_Summary.md (line 35)
 2. 02_Project_Vision.md (line 78)
 3. 02_Project_Vision.md (line 188)
 4. 03_Success_Factors.md (line 71)
@@ -314,7 +314,7 @@ These improve vault quality and consistency. Complete after HIGH priority fixes.
 
 ### 🟢 LOW PRIORITY
 
-### ⚠️ FIX-023: Standardize Navigation Patterns in 00_Eco_Balance_Hub.md
+### ⚠️ FIX-023: Standardize Navigation Patterns in 00_Eco_Balance_Hub.md (root)
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
@@ -396,12 +396,12 @@ All soil restoration and water management files use USD ($) for budget estimates
 - None - isolated cosmetic issue
 - Does not affect any other fixes or content
 **Task ID**: LIB-2025-11-07-004
-**Found By**: Librarian during audit of 00_Eco_Balance_Hub.md
+**Found By**: Librarian during audit of 00_Eco_Balance_Hub.md (root)
 
 **File**: `_templates/README.md` (CREATE)
 
 **Issue**:
-The Hub file (00_Eco_Balance_Hub.md) links to `[[_templates/README|_templates/]]` (line 46), but `_templates/README.md` does NOT exist. The _templates directory exists with 4 template files but no README.
+The Hub file (00_Eco_Balance_Hub.md (root)) links to `[[_templates/README|_templates/]]` (line 46), but `_templates/README.md` does NOT exist. The _templates directory exists with 4 template files but no README.
 
 **Existing Templates**:
 - changelog_entry_template.md
@@ -446,9 +446,9 @@ Purpose: Maintain consistency across vault documents
 
 **Related Tasks**: None (standalone documentation enhancement)
 **Task ID**: QI-2025-11-07-001
-**Found By**: Quality Inspector during audit of 00_Eco_Balance_Hub.md
+**Found By**: Quality Inspector during audit of 00_Eco_Balance_Hub.md (root)
 
-**File**: `00_Eco_Balance_Hub.md`
+**File**: `00_Eco_Balance_Hub.md (root)`
 
 **Issue**:
 Navigation link patterns are inconsistent throughout the Hub document, reducing professional polish and creating slight user experience friction.
@@ -461,10 +461,10 @@ Navigation link patterns are inconsistent throughout the Hub document, reducing 
 - Some use "→ Full assessment: [[link]]"
 
 **Examples**:
-- Line 23: "→ See [[20_Restoration_Methodology]]"
-- Line 68: "→ See [[21_Technology_Integration]]"
-- Line 99: "Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview]]"
-- Line 202: "→ Full assessment: [[04_Current_Status_Assessment]]"
+- Line 23: "→ See [[strategic/20_Restoration_Methodology]]"
+- Line 68: "→ See [[strategic/21_Technology_Integration]]"
+- Line 99: "Navigate: [[strategic/restoration_playbook/site_selection/00_Site_Selection_Overview]]"
+- Line 202: "→ Full assessment: [[strategic/04_Current_Status_Assessment]]"
 
 **Fix Required**:
 

@@ -24,7 +24,7 @@ First comprehensive vision audit completed. Core vision elements are **present b
 - Mentioned: "biodiversity conservation", "wildlife populations", "habitat creation"
 - **MISSING**: Clear statement "create a habitat for wildlife and restore land to become a shelter and sanctuary for wildlife"
 - Vision is implied but not explicitly stated as the core purpose
-- Found in: `02_Project_Vision.md` (biodiversity mentioned), `01_Executive_Summary.md` (biodiversity conservation mentioned)
+- Found in: `02_Project_Vision.md` (biodiversity mentioned), `strategic/01_Executive_Summary.md` (biodiversity conservation mentioned)
 - **Issue**: Not clearly stated as the primary vision
 
 ### 2. Biodiversity Focus (Trees, Plants, Mushrooms, Diverse Habitats)
@@ -175,7 +175,7 @@ First comprehensive vision audit completed. Core vision elements are **present b
 ## Recommendations
 
 ### Immediate Actions (Next 24 hours)
-1. **Add core vision statement** to `02_Project_Vision.md` and `01_Executive_Summary.md`
+1. **Add core vision statement** to `02_Project_Vision.md` and `strategic/01_Executive_Summary.md`
 2. **Add UN Charter/Paris 2015 reference** to vision documents
 3. **Clarify scientific grounding** as core vision element
 
@@ -200,14 +200,14 @@ First comprehensive vision audit completed. Core vision elements are **present b
 - **Missing**: Scientific grounding (university ties, measurement, guardianship) as core vision
 - **Issue**: Vision is implied but not explicitly stated as immutable core
 
-### 01_Executive_Summary.md (HIGH PRIORITY)
+### strategic/01_Executive_Summary.md (HIGH PRIORITY)
 - **Missing**: Clear core vision statement
 - **Missing**: UN Charter/Paris 2015 reference
 - **Missing**: Local integration as core vision
 - **Missing**: Scientific grounding as core vision
 - **Issue**: Vision mixed with operational details
 
-### 00_Eco_Balance_Hub.md (MEDIUM PRIORITY)
+### 00_Eco_Balance_Hub.md (root) (MEDIUM PRIORITY)
 - **Missing**: Core vision statement prominence
 - **Issue**: Vision not clearly visible as immutable core
 

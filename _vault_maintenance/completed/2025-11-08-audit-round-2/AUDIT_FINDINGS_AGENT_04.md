@@ -66,7 +66,7 @@
 - **Severity**: 🟢 LOW
 - **Location**: Line 70
 - **Issue**: "Year 1 Goal (Bootstrap): €20-30k" - This is correct and aligned with v2.0, but should be cross-referenced with primary budget documents for consistency.
-- **Fix Needed**: No fix required, but add cross-reference link to ensure consistency: "€20-30k → See [[30_Business_Model|Business Model]]"
+- **Fix Needed**: No fix required, but add cross-reference link to ensure consistency: "€20-30k → See [[strategic/30_Business_Model|Business Model]]"
 
 ---
 
@@ -159,14 +159,14 @@
 - **Severity**: 🟡 MEDIUM
 - **Location**: Line 199
 - **Issue**: Link to Technology Integration document needs correct relative path from implementation_tasks/reforestation/ folder.
-- **Fix Needed**: Change "[[21_Technology_Integration|Technology Integration]]" to "[[../../21_Technology_Integration|Technology Integration]]"
+- **Fix Needed**: Change "[[strategic/21_Technology_Integration|Technology Integration]]" to "[[../../21_Technology_Integration|Technology Integration]]"
 
 #### Issue 2: Incorrect Path to Restoration Methodology with Section Anchor
 - **Persona**: 📚 Librarian
 - **Severity**: 🟡 MEDIUM
 - **Location**: Line 401
 - **Issue**: Link to Restoration Methodology with section anchor needs two levels up from current folder.
-- **Fix Needed**: Change "[[20_Restoration_Methodology#Reforestation|Restoration Methodology]]" to "[[../../20_Restoration_Methodology#Reforestation|Restoration Methodology]]"
+- **Fix Needed**: Change "[[strategic/20_Restoration_Methodology#Reforestation|Restoration Methodology]]" to "[[../../20_Restoration_Methodology#Reforestation|Restoration Methodology]]"
 
 #### Issue 3: Document Structure Quality
 - **Persona**: ✅ Quality Inspector

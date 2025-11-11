@@ -301,7 +301,7 @@ After fixing, verify alignment with:
 Complete link validation would require checking existence of all target files and sections. This was beyond the scope of this audit (would require reading 95+ additional files). Link validation should be performed as a separate systematic check.
 
 **Cross-Reference Patterns Observed:**
-- Hub references: `[[00_Eco_Balance_Hub|Project Hub]]`
+- Hub references: `[[strategic/00_Eco_Balance_Hub|Project Hub]]`
 - Strategic documents linking appropriately
 - Implementation tasks cross-referencing methodology docs
 - Process docs appropriately self-contained

@@ -23,18 +23,18 @@ Fix broken cross-references to `22_Restoration_Challenges_Solutions.md`. Multipl
 **Task ID**: CUR-2025-11-07-024
 
 **Issue**:
-Links throughout vault reference `[[22_Research_Framework]]` but the actual file is named `22_Restoration_Challenges_Solutions.md`.
+Links throughout vault reference `[[strategic/22_Research_Framework]]` but the actual file is named `22_Restoration_Challenges_Solutions.md`.
 
 **Known Files Affected**:
-- 01_Executive_Summary.md
+- strategic/01_Executive_Summary.md
 - 02_Project_Vision.md
 - 03_Success_Factors.md
 - 04_Current_Status_Assessment.md
 - Potentially others
 
 **Fix Required**:
-- FROM: `[[22_Research_Framework]]` or `[[22_Research_Framework|...]]`
-- TO: `[[22_Restoration_Challenges_Solutions]]` or `[[22_Restoration_Challenges_Solutions|...]]`
+- FROM: `[[strategic/22_Research_Framework]]` or `[[strategic/22_Research_Framework|...]]`
+- TO: `[[strategic/22_Restoration_Challenges_Solutions]]` or `[[strategic/22_Restoration_Challenges_Solutions|...]]`
 
 ---
 

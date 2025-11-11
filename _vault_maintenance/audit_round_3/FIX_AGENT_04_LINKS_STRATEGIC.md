@@ -105,7 +105,7 @@ See also:
 
 ```markdown
 <!-- BEFORE -->
-See [[15_Climate_Action]] for carbon benefits.
+See [[strategic/15_Climate_Action]] for carbon benefits.
 
 <!-- AFTER -->
 See [[../../15_Climate_Action]] for carbon benefits.
@@ -482,7 +482,7 @@ Initial investment: €20-30k (Bootstrap Model v2.0)
 Additional Year 2 investment: €250-500k for expansion
 ```
 
-### File: 00_Eco_Balance_Hub.md
+### File: 00_Eco_Balance_Hub.md (root)
 
 **Lines 18 vs 168**: Budget figure inconsistency
 
@@ -563,7 +563,7 @@ Future: 1,000-2,000 trees (Years 2-3 - 5-10 hectares)
 - [ ] Site selection budget phrasing clear
 - [ ] Technology strategy (AWS) clarified
 - [ ] 30_Business_Model.md budget aligned
-- [ ] 00_Eco_Balance_Hub.md budget consistent
+- [ ] 00_Eco_Balance_Hub.md (root) budget consistent
 - [ ] Reforestation tree targets realistic
 
 ---

@@ -41,11 +41,11 @@
 ## 🔗 Related Documents
 
 **Strategic Planning:**
-- [[00_Eco_Balance_Hub|Project Hub]]
+- [[strategic/00_Eco_Balance_Hub|Project Hub]]
 - [[relevant_document|Relevant Document]]
 
 **Implementation:**
-- [[implementation_tasks/README|Implementation Tasks]]
+- [[strategic/restoration_playbook/README|Implementation Tasks]]
 - [[relevant_task|Relevant Task]]
 
 ---
@@ -76,7 +76,7 @@
 
 ---
 
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 
 ---
 

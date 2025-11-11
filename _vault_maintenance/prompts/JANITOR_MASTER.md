@@ -49,8 +49,8 @@ Once you've detected your current step, execute it:
 ### STEP 1: STRATEGIC ENTRY DOCS (00-04)
 
 **Scope**: 5 files
-- 00_Eco_Balance_Hub.md
-- 01_Executive_Summary.md
+- 00_Eco_Balance_Hub.md (root)
+- strategic/01_Executive_Summary.md
 - 02_Project_Vision.md
 - 03_Success_Factors.md
 - 04_Current_Status_Assessment.md

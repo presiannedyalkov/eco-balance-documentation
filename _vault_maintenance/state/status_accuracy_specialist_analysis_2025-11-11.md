@@ -29,15 +29,15 @@ Comprehensive status accuracy audit completed. Found **8 instances** where langu
    - **Issue**: Present tense describes future activity as current
    - **Should be**: "We will rebuild" or "will rebuild"
 
-2. "Addressing interconnected environmental challenges simultaneously" (01_Executive_Summary.md:150)
+2. "Addressing interconnected environmental challenges simultaneously" (strategic/01_Executive_Summary.md:150)
    - **Issue**: Present participle describes future approach as current
    - **Should be**: "Will address" or "aims to address"
 
-3. "Research partnerships, peer-reviewed validation, and continuous monitoring" (01_Executive_Summary.md:179)
+3. "Research partnerships, peer-reviewed validation, and continuous monitoring" (strategic/01_Executive_Summary.md:179)
    - **Issue**: Listed as current reality but these are vision/planning elements
    - **Should be**: "Will include research partnerships" or "aims for peer-reviewed validation"
 
-4. "Local employment, education, and traditional knowledge integration" (01_Executive_Summary.md:175)
+4. "Local employment, education, and traditional knowledge integration" (strategic/01_Executive_Summary.md:175)
    - **Issue**: Listed as current reality but these are vision/planning elements
    - **Should be**: "Will include local employment" or "aims to integrate"
 
@@ -82,7 +82,7 @@ Comprehensive status accuracy audit completed. Found **8 instances** where langu
 ---
 
 #### SAS-2025-11-11-002: Key Differentiators Describe Future as Current
-**File**: `01_Executive_Summary.md`  
+**File**: `strategic/01_Executive_Summary.md`  
 **Lines**: 150, 175, 179  
 **Current Text**: 
 - "Addressing interconnected environmental challenges simultaneously"
@@ -136,7 +136,7 @@ Comprehensive status accuracy audit completed. Found **8 instances** where langu
 ---
 
 #### SAS-2025-11-11-006: Key Differentiators Section Tense
-**File**: `01_Executive_Summary.md`  
+**File**: `strategic/01_Executive_Summary.md`  
 **Lines**: 149-184  
 **Issue**: Some differentiators use present tense, some use future - inconsistent  
 **Priority**: MEDIUM - Consistency needed

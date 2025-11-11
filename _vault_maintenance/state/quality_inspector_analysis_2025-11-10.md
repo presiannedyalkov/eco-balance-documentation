@@ -36,13 +36,13 @@ First comprehensive quality audit completed. Overall documentation quality is **
    - **Fix**: Remove duplicate, keep most recent version
 
 2. **Inconsistent Footer Metadata** (MEDIUM)
-   - **Files with footer**: 30_Business_Model.md, 51_Key_Performance_Indicators.md, 01_Executive_Summary.md (partial)
+   - **Files with footer**: 30_Business_Model.md, 51_Key_Performance_Indicators.md, strategic/01_Executive_Summary.md (partial)
    - **Files without footer**: Most other strategic documents
    - **Impact**: Inconsistent documentation tracking
    - **Fix**: Standardize footer metadata across all strategic documents
 
 3. **Version References in Hub** (HIGH)
-   - **File**: `00_Eco_Balance_Hub.md`
+   - **File**: `00_Eco_Balance_Hub.md (root)`
    - **Issues**:
      - Line 305: "Documentation System (v1.0.0)" should be "v2.0.0"
      - Line 380: "Document Status (v1.0.0)" should be "v2.0.0"
@@ -224,7 +224,7 @@ First comprehensive quality audit completed. Overall documentation quality is **
 
 ### Formatting Issues by File
 
-**00_Eco_Balance_Hub.md**:
+**00_Eco_Balance_Hub.md (root)**:
 - Line 305: "Documentation System (v1.0.0)" should be "v2.0.0"
 - Line 380: "Document Status (v1.0.0)" should be "v2.0.0"
 
@@ -233,7 +233,7 @@ First comprehensive quality audit completed. Overall documentation quality is **
 - Should have single footer with most recent version
 
 **Footer Metadata Status**:
-- ✅ Has footer: 01_Executive_Summary.md (partial), 30_Business_Model.md, 51_Key_Performance_Indicators.md
+- ✅ Has footer: strategic/01_Executive_Summary.md (partial), 30_Business_Model.md, 51_Key_Performance_Indicators.md
 - ❌ Missing footer: Most other strategic documents
 - **Recommendation**: Standardize across all documents
 

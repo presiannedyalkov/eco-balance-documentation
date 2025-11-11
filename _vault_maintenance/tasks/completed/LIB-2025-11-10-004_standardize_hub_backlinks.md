@@ -15,7 +15,7 @@ Not all strategic documents have consistent "← Back to Hub" links at the top. 
 
 ## Current State
 
-- **Documents with back-link**: Most strategic documents have `**← Back to [[00_Eco_Balance_Hub|Project Hub]]**` at top
+- **Documents with back-link**: Most strategic documents have `**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**` at top
 - **Documents missing back-link**: Some strategic documents lack this navigation aid
 - **Inconsistent formatting**: Some variations in link text or placement
 - **Impact**: Users may have difficulty returning to hub from some documents
@@ -24,7 +24,7 @@ Not all strategic documents have consistent "← Back to Hub" links at the top. 
 
 All strategic documents (01-70) should have a consistent back-link at the top:
 ```markdown
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 ```
 
 ## Action Required
@@ -50,7 +50,7 @@ All strategic documents (01-70) should have a consistent back-link at the top:
 ## Verification Criteria
 
 - [ ] All strategic documents (01-70) have back-link at top
-- [ ] Back-link format is consistent: `**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+- [ ] Back-link format is consistent: `**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**`
 - [ ] All back-links work correctly
 - [ ] Navigation pattern is uniform
 

@@ -33,7 +33,7 @@
 
 ## 🚨 CRITICAL ISSUES
 
-### File: 01_Executive_Summary.md
+### File: strategic/01_Executive_Summary.md
 
 #### Issue 1: Incorrect Land Size (v2.0 Bootstrap Model Violation)
 - **Persona**: Auditor
@@ -79,15 +79,15 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Line 804
-- **Issue**: Link syntax uses backslash instead of forward slash: `[[21_Technology_Integration\|Tools]]`
-- **Fix Needed**: Change to `[[21_Technology_Integration|Tools]]`
+- **Issue**: Link syntax uses backslash instead of forward slash: `[[strategic/21_Technology_Integration\|Tools]]`
+- **Fix Needed**: Change to `[[strategic/21_Technology_Integration|Tools]]`
 
 #### Issue 2: Broken Wiki Link Syntax
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Line 805
-- **Issue**: Link syntax uses backslash instead of forward slash: `[[45_Tiny_House_and_Living_Infrastructure\|Water]]`
-- **Fix Needed**: Change to `[[45_Tiny_House_and_Living_Infrastructure|Water]]`
+- **Issue**: Link syntax uses backslash instead of forward slash: `[[strategic/45_Tiny_House_and_Living_Infrastructure\|Water]]`
+- **Fix Needed**: Change to `[[strategic/45_Tiny_House_and_Living_Infrastructure|Water]]`
 
 #### Issue 3: Non-Standard Version Format
 - **Persona**: Archivist
@@ -102,8 +102,8 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Line 635
-- **Issue**: Link syntax `[[CHANGELOG|View Changelog]]` may not work properly in Obsidian without file extension
-- **Fix Needed**: Consider changing to `[[CHANGELOG.md|View Changelog]]` for reliability
+- **Issue**: Link syntax `[[_process/documentation/CHANGELOG|View Changelog]]` may not work properly in Obsidian without file extension
+- **Fix Needed**: Consider changing to `[[_process/documentation/CHANGELOG|View Changelog]]` for reliability
 
 ### File: implementation_tasks/soil_restoration/02_Add_Organic_Matter.md
 
@@ -114,7 +114,7 @@
 - **Issue**: References `[[../15_Climate_Action|Climate Action Framework]]` but this file may not exist based on documented file structure
 - **Fix Needed**: Verify file existence. If it doesn't exist, either create it or update link to correct document
 
-### File: 01_Executive_Summary.md
+### File: strategic/01_Executive_Summary.md
 
 #### Issue 3: Missing Version Number
 - **Persona**: Archivist
@@ -196,7 +196,7 @@
 
 ### Strategic Documents (6 files audited)
 
-#### ✅ 01_Executive_Summary.md (136 lines)
+#### ✅ strategic/01_Executive_Summary.md (136 lines)
 - **Issues Found**: 3 (2 CRITICAL, 1 MEDIUM)
 - **Overall Quality**: Good structure and flow, but CRITICAL v2.0 Bootstrap Model alignment issues must be fixed
 - **Status**: ⚠️ REQUIRES IMMEDIATE ATTENTION

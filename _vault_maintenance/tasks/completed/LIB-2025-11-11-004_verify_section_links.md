@@ -18,8 +18,8 @@ Two links in `70_Case_Studies_Restoration_Examples.md` use section anchors (`#he
 **File Affected**: `70_Case_Studies_Restoration_Examples.md`
 
 **Section Links to Verify:**
-1. Line 85: `[[20_Restoration_Methodology#Community Engagement|Community Engagement Strategy]]`
-2. Line 376: `[[30_Business_Model#Eco-Tourism|Eco-Tourism Revenue]]`
+1. Line 85: `[[strategic/20_Restoration_Methodology#Community Engagement|Community Engagement Strategy]]`
+2. Line 376: `[[strategic/30_Business_Model#Eco-Tourism|Eco-Tourism Revenue]]`
 
 **Issue**: Need to verify that these section headings exist in the target files.
 
@@ -45,7 +45,7 @@ All section links should point to existing headings in target files. If headings
 3. **Fix links if headings don't match**:
    - If heading exists but text differs, update link to match
    - If heading doesn't exist, either:
-     - Remove section anchor: `[[20_Restoration_Methodology|Community Engagement Strategy]]`
+     - Remove section anchor: `[[strategic/20_Restoration_Methodology|Community Engagement Strategy]]`
      - Or add missing heading to target file
      - Or update link to point to existing related heading
 

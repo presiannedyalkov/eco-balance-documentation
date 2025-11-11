@@ -38,13 +38,13 @@ When ready to merge:
 
 ## ✅ LIBRARIAN AUDIT TASKS
 
-- [x] **LIBRARIAN** - File: `00_Eco_Balance_Hub.md`
+- [x] **LIBRARIAN** - File: `00_Eco_Balance_Hub.md (root)`
   - Check: All internal links functional, navigation clear, no broken links
   - Focus: Hub is main navigation - all links must work
   - Result: ⚠️ ISSUES FOUND - 2 missing files: _versions/v2.0.0/RELEASE_NOTES.md, _templates/README.md
 
 
-- [x] **LIBRARIAN** - File: `01_Executive_Summary.md`
+- [x] **LIBRARIAN** - File: `strategic/01_Executive_Summary.md`
   - Check: Cross-references functional
   - Focus: **KNOWN** - 4 broken links: [[22]], [[31]], [[40-mismatch]], [[41]]
   - Result: ⚠️ ISSUES FOUND - 6 broken links: 22 (wrong name), 31 (missing), 40 (wrong name x2), 41 (missing), 60 (wrong name)
@@ -185,7 +185,7 @@ When ready to merge:
 - [x] **LIBRARIAN** - File: `70_Case_Studies_Restoration_Examples.md`
   - Check: Links to methodology, technology, business model
   - Focus: Case studies connect to implementation plans
-  - Result: ✅ PASS - All links functional, comprehensive cross-referencing. Note: Correctly uses [[22_Restoration_Challenges_Solutions]] (actual filename)
+  - Result: ✅ PASS - All links functional, comprehensive cross-referencing. Note: Correctly uses [[strategic/22_Restoration_Challenges_Solutions]] (actual filename)
 
 
 - [ ] **LIBRARIAN** - File: `QUICK_REFERENCE_GUIDE.md`

@@ -21,7 +21,7 @@
 **Branch**: `feature/assumptions-audit-vision-status`
 
 **Files to Analyze & Create** (one output file per analyzed file):
-1. Analyze `01_Executive_Summary.md` → Create `_vault_maintenance/assumptions_audit/agent_01/FILE_01_EXECUTIVE_SUMMARY.md`
+1. Analyze `strategic/01_Executive_Summary.md` → Create `_vault_maintenance/assumptions_audit/agent_01/FILE_01_EXECUTIVE_SUMMARY.md`
 2. Analyze `02_Project_Vision.md` → Create `_vault_maintenance/assumptions_audit/agent_01/FILE_02_PROJECT_VISION.md`
 3. Analyze `03_Success_Factors.md` → Create `_vault_maintenance/assumptions_audit/agent_01/FILE_03_SUCCESS_FACTORS.md`
 4. Analyze `04_Current_Status_Assessment.md` → Create `_vault_maintenance/assumptions_audit/agent_01/FILE_04_CURRENT_STATUS.md`
@@ -182,7 +182,7 @@ You are Agent 1 conducting assumptions audit for Vision & Status documents.
 
 **Process** (ONE FILE AT A TIME):
 
-**Step 1**: Analyze `01_Executive_Summary.md`
+**Step 1**: Analyze `strategic/01_Executive_Summary.md`
 - Identify 5-10 key assumptions (not everything, just important ones)
 - Create `_vault_maintenance/assumptions_audit/agent_01/FILE_01_EXECUTIVE_SUMMARY.md`
 - Use template from ASSUMPTIONS_AUDIT_ROUTING_PLAN_V2.md

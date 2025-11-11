@@ -115,7 +115,7 @@ For each file listed above:
 
 ## 📋 TASK 2: VERSION NUMBER CORRECTIONS (8 instances)
 
-### File 1: 00_Eco_Balance_Hub.md (3 instances)
+### File 1: 00_Eco_Balance_Hub.md (root) (3 instances)
 
 **Line 44:**
 ```markdown
@@ -276,7 +276,7 @@ After completing fixes, verify:
 - [ ] Verify git diff shows ~44 files changed
 
 ### Version Corrections
-- [ ] 00_Eco_Balance_Hub.md: All 3 version references now 2.0.0
+- [ ] 00_Eco_Balance_Hub.md (root): All 3 version references now 2.0.0
 - [ ] QUICK_REFERENCE_GUIDE.md: Version and release date corrected
 - [ ] STRUCTURE_VISUAL_GUIDE.md: Header shows 2.0.0
 - [ ] GIT_PUSH_INSTRUCTIONS.md: Archived or updated

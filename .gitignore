@@ -1,29 +1,32 @@
-# Obsidian workspace files
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
 
-# OS-specific files
+# Build outputs
+build/
+.docusaurus/
+.cache-loader/
+
+# Misc
 .DS_Store
-Thumbs.db
-desktop.ini
+*.pem
 
-# Temporary files
-*.tmp
-*.temp
-*~
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Editor backup files
-*.bak
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea/
+.vscode/
 *.swp
 *.swo
-
-# Git-specific
-.git/
-
-# Optional: Ignore specific Obsidian plugins if needed
-# .obsidian/plugins/
-
-# Keep Obsidian config but ignore workspace
-!.obsidian/
-!.obsidian/**
-.obsidian/workspace*.json
+*~

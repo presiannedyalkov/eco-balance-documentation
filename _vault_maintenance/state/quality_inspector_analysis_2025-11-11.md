@@ -35,11 +35,11 @@ Second comprehensive quality audit completed. Overall documentation quality is *
    - **Issue**: Back link missing bold formatting: `← Back to` instead of `**← Back to**`
    - **Impact**: Inconsistent with all other strategic documents (24/25 have bold formatting)
    - **Fix**: Add bold formatting to match standard pattern
-   - **Context**: All other strategic documents (01-70) use `**← Back to [[00_Eco_Balance_Hub|Project Hub]]**` format
+   - **Context**: All other strategic documents (01-70) use `**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**` format
 
 2. **Footer Metadata Still Incomplete** (MEDIUM - Ongoing)
    - **Status**: Previous task (QI-2025-11-10-003) was created but not fully executed
-   - **Files with footer**: 01_Executive_Summary.md (partial), 30_Business_Model.md, 51_Key_Performance_Indicators.md
+   - **Files with footer**: strategic/01_Executive_Summary.md (partial), 30_Business_Model.md, 51_Key_Performance_Indicators.md
    - **Files without footer**: 02, 03, 04, 10, 11, 12, 13, 20, 21, 22, 31, 32, 40, 42, 43, 44, 45, 50, 60, 70 (20 files)
    - **Impact**: Inconsistent documentation tracking and version management
    - **Note**: This is a known issue from previous analysis; task exists but needs completion

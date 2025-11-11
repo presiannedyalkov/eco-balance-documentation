@@ -19,29 +19,29 @@ One strategic document (`22_Restoration_Challenges_Solutions.md`) has a back lin
 
 **Current Format**:
 ```markdown
-← Back to [[00_Eco_Balance_Hub|Project Hub]]
+← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]
 ```
 
 **Issue**: Missing bold formatting (`**`)
 
 **Context**: All other strategic documents (01-70, 24/25 checked) use bold formatting:
 ```markdown
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 ```
 
 ## Desired State
 
 Standard back link format with bold formatting:
 ```markdown
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 ```
 
 ## Action Required
 
 1. **Open** `22_Restoration_Challenges_Solutions.md`
 2. **Locate** line 3 (back link)
-3. **Change** from: `← Back to [[00_Eco_Balance_Hub|Project Hub]]`
-4. **To**: `**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+3. **Change** from: `← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]`
+4. **To**: `**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**`
 5. **Verify** formatting matches other strategic documents
 
 ## Impact
@@ -58,7 +58,7 @@ Standard back link format with bold formatting:
 ## Verification Criteria
 
 - [ ] Back link in `22_Restoration_Challenges_Solutions.md` has bold formatting
-- [ ] Format matches: `**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+- [ ] Format matches: `**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**`
 - [ ] Consistent with all other strategic documents
 - [ ] No other formatting issues introduced
 

@@ -51,7 +51,7 @@ When ready to merge:
 **File**: Multiple files link to doc 22 incorrectly
 
 **Files Affected** (from Librarian audit):
-- `01_Executive_Summary.md` (line 39)
+- `strategic/01_Executive_Summary.md` (line 39)
 - `02_Project_Vision.md` (line 184)
 - `03_Success_Factors.md` (lines 28, 138)
 - `04_Current_Status_Assessment.md` (line 210)

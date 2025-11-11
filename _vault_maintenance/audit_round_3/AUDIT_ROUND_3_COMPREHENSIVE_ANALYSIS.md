@@ -140,7 +140,7 @@ Audit Round 3 reveals **significantly improved documentation quality** compared 
 
 ### 2. Version Number Inconsistencies (8 issues)
 
-**00_Eco_Balance_Hub.md** (Agent 03)
+**00_Eco_Balance_Hub.md (root)** (Agent 03)
 - Line 44: Shows "1.0.0" should be "2.0.0"
 - Line 309: Shows "1.0.0" should be "2.0.0"
 - Line 416: Version history shows 1.0.0 as current, not 2.0.0
@@ -299,7 +299,7 @@ Audit Round 3 reveals **significantly improved documentation quality** compared 
 **30_Business_Model.md** (Agent 08)
 - Line 47: Budget range inconsistency (€23-36k vs €25-30k)
 
-**00_Eco_Balance_Hub.md** (Agent 03)
+**00_Eco_Balance_Hub.md (root)** (Agent 03)
 - Line 18 vs 168: Budget figure inconsistency (€50-75k vs €20-30k)
 
 **reforestation/00_Reforestation_Overview.md** (Agent 03)
@@ -342,7 +342,7 @@ Multiple files flagged for systematic link verification:
    - Create backup before execution
 
 2. **Version Number Updates (8 instances)**
-   - 00_Eco_Balance_Hub.md: Update 3 version references to 2.0.0
+   - 00_Eco_Balance_Hub.md (root): Update 3 version references to 2.0.0
    - QUICK_REFERENCE_GUIDE.md: Update version references
    - STRUCTURE_VISUAL_GUIDE.md: Update header version
    - GIT_PUSH_INSTRUCTIONS.md: Update or archive
@@ -504,7 +504,7 @@ find . -name "*.md" -type f -exec sed -i 's/\*\*Last Updated:\*\* 2024-11-08/**L
    - 10_Organizational_Structure.md: Clarify legal structure
    - 01_Identify_Potential_Locations.md: Clarify budget phrasing
    - 30_Business_Model.md: Fix budget range
-   - 00_Eco_Balance_Hub.md: Clarify budget figures
+   - 00_Eco_Balance_Hub.md (root): Clarify budget figures
    - reforestation/00_Reforestation_Overview.md: Align tree planting targets
 
 **Deliverables:**
@@ -581,13 +581,13 @@ find . -name "*.md" -type f ! -path "./_process/*" -exec grep -L "**Last Updated
 1. **45_Tiny_House_and_Living_Infrastructure.md** - 2 CRITICAL + 2 other
 2. **12_Team_Roles.md** - 1 CRITICAL + 2 HIGH
 3. **51_Key_Performance_Indicators.md** - 3 HIGH + 3 MEDIUM
-4. **00_Eco_Balance_Hub.md** - 3 HIGH + 3 MEDIUM
+4. **00_Eco_Balance_Hub.md (root)** - 3 HIGH + 3 MEDIUM
 5. **soil_restoration/00_Soil_Restoration_Overview.md** - 1 CRITICAL (missing metadata) + 3 MEDIUM
 
 ### Files with Most Issues
 
 1. **45_Tiny_House_and_Living_Infrastructure.md** - 4 issues (2 CRITICAL)
-2. **00_Eco_Balance_Hub.md** - 6 issues (3 HIGH)
+2. **00_Eco_Balance_Hub.md (root)** - 6 issues (3 HIGH)
 3. **51_Key_Performance_Indicators.md** - 6 issues (3 HIGH)
 4. **soil_restoration/00_Soil_Restoration_Overview.md** - 4 issues (1 CRITICAL)
 5. **water_management/00_Water_Management_Overview.md** - 3 issues (1 CRITICAL metadata)
@@ -614,7 +614,7 @@ find . -name "*.md" -type f ! -path "./_process/*" -exec grep -L "**Last Updated
 - 50_Risk_Assessment.md
 
 **Agent 07:**
-- 01_Executive_Summary.md
+- strategic/01_Executive_Summary.md
 - 11_Governance.md
 - 21_Technology_Integration.md
 - 70_Case_Studies_Restoration_Examples.md

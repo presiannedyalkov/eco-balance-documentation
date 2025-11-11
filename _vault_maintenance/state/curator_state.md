@@ -202,7 +202,7 @@
 - Executive Summary CRITICAL to convert (first doc users read)
 
 **Documents Known v2.0 Compliant:**
-- 01_Executive_Summary.md ✅ (converted 2025-11-10)
+- strategic/01_Executive_Summary.md ✅ (converted 2025-11-10)
 - 20_Restoration_Methodology.md ✅
 - 21_Technology_Integration.md ✅
 - 30_Business_Model.md ✅
@@ -225,13 +225,13 @@
 
 ### Broken Link Inventory
 
-**File**: 01_Executive_Summary.md  
+**File**: strategic/01_Executive_Summary.md  
 **Broken Links**: 4
 
-1. [[22_Research_Framework|Research Framework]] → Does not exist
-2. [[31_Financial_Projections|Financial Projections]] → Does not exist
-3. [[40_Implementation_Roadmap|Roadmap]] → File 40 has different name
-4. [[41_Phase_1_Foundation|Phase 1]] → Does not exist
+1. [[strategic/22_Research_Framework|Research Framework]] → Does not exist
+2. [[strategic/31_Financial_Projections|Financial Projections]] → Does not exist
+3. [[strategic/40_Implementation_Roadmap|Roadmap]] → File 40 has different name
+4. [[strategic/41_Phase_1_Foundation|Phase 1]] → Does not exist
 
 **Options:**
 - Create missing documents (22, 31, 41)

@@ -17,7 +17,7 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 ## Findings by Category
 
 ### Index Status
-**Index Files**: 1 (00_Eco_Balance_Hub.md serves as main index)  
+**Index Files**: 1 (00_Eco_Balance_Hub.md (root) serves as main index)  
 **Total Indexed Items**: 24 strategic documents + 44 implementation tasks = 68 core documents  
 **Unindexed Content**: Some _vault_maintenance files, archive content (expected)  
 **Outdated Entries**: Hub references v1.0.0 release notes in one location (line 376)  
@@ -31,11 +31,11 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 **Critical Broken Links**:
 - `[[_versions/v2.0.0/RELEASE_NOTES]]` - Referenced 4 times in hub, directory doesn't exist
 - `[[_templates/README]]` - Referenced in hub, file doesn't exist
-- `[[44_Site_Selection]]` - Short form used in multiple files, should be `[[44_Site_Selection_Land_Acquisition]]`
+- `[[strategic/44_Site_Selection]]` - Short form used in multiple files, should be `[[strategic/44_Site_Selection_Land_Acquisition]]`
 - `[[wiki-link]]` - Example link in hub documentation (not a real link)
 
 ### Navigation Structure
-**Hub Pages**: 1 (00_Eco_Balance_Hub.md) - ✅ Well-structured  
+**Hub Pages**: 1 (00_Eco_Balance_Hub.md (root)) - ✅ Well-structured  
 **README Files**: Multiple in subdirectories - ✅ Present  
 **Navigation Gaps**: 
 - Missing v2.0.0 release notes directory breaks version info links
@@ -58,7 +58,7 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 ### Documentation Maps
 **Structural Guides**: 
 - QUICK_REFERENCE_GUIDE.md ✅ (current, v2.0.0)
-- 00_Eco_Balance_Hub.md ✅ (serves as navigation hub)
+- 00_Eco_Balance_Hub.md (root) ✅ (serves as navigation hub)
 **Current Guides**: ✅ Both guides are up-to-date  
 **Outdated Guides**: 
 - Hub page line 376 references v1.0.0 release notes (should be v2.0.0 or removed)
@@ -72,19 +72,19 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 
 1. **Missing v2.0.0 Release Notes Directory** (CRITICAL)
    - **Location**: `_versions/v2.0.0/RELEASE_NOTES.md`
-   - **Referenced in**: 00_Eco_Balance_Hub.md (4 times)
+   - **Referenced in**: 00_Eco_Balance_Hub.md (root) (4 times)
    - **Impact**: Version info links in hub page are broken
    - **Fix**: Create directory and release notes file, or update links to point to existing v1.0.0 notes
 
 2. **Missing Templates README** (HIGH)
    - **Location**: `_templates/README.md`
-   - **Referenced in**: 00_Eco_Balance_Hub.md
+   - **Referenced in**: 00_Eco_Balance_Hub.md (root)
    - **Impact**: Template directory link broken
    - **Fix**: Create README.md in _templates/ directory
 
 3. **Incorrect Site Selection Links** (HIGH)
-   - **Pattern**: `[[44_Site_Selection]]` (short form)
-   - **Should be**: `[[44_Site_Selection_Land_Acquisition]]`
+   - **Pattern**: `[[strategic/44_Site_Selection]]` (short form)
+   - **Should be**: `[[strategic/44_Site_Selection_Land_Acquisition]]`
    - **Found in**: Multiple strategic documents
    - **Impact**: Links to site selection document are broken
    - **Fix**: Update all instances to use full filename
@@ -188,7 +188,7 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 
 1. **Create v2.0.0 release notes directory and file** OR update hub links to point to v1.0.0
 2. **Create _templates/README.md** to fix broken template directory link
-3. **Fix all `[[44_Site_Selection]]` links** to use full filename `[[44_Site_Selection_Land_Acquisition]]`
+3. **Fix all `[[strategic/44_Site_Selection]]` links** to use full filename `[[strategic/44_Site_Selection_Land_Acquisition]]`
 
 ### Short-term Actions (Next week)
 
@@ -219,7 +219,7 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 
 1. `[[_versions/v2.0.0/RELEASE_NOTES]]` (4 instances in hub)
 2. `[[_templates/README]]` (1 instance in hub)
-3. `[[44_Site_Selection]]` (multiple instances, needs full filename)
+3. `[[strategic/44_Site_Selection]]` (multiple instances, needs full filename)
 
 ### Missing Essential Links
 
@@ -274,7 +274,7 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 - `_templates/README.md` (1 reference)
 
 **Incorrect Filenames**:
-- `[[44_Site_Selection]]` should be `[[44_Site_Selection_Land_Acquisition]]` (multiple files)
+- `[[strategic/44_Site_Selection]]` should be `[[strategic/44_Site_Selection_Land_Acquisition]]` (multiple files)
 
 **Example/Placeholder Links**:
 - `[[wiki-link]]` in hub documentation (not a real link, just example)
@@ -285,13 +285,13 @@ First comprehensive navigation and discoverability audit completed. Found **173 
 
 ### Files with Most Broken Links
 
-1. **00_Eco_Balance_Hub.md** - 6 broken links (version info, templates, example)
+1. **00_Eco_Balance_Hub.md (root)** - 6 broken links (version info, templates, example)
 2. **Multiple strategic docs** - Short site selection links
 3. **Implementation tasks** - Some internal cross-references
 
 ### Navigation Structure Assessment
 
-**Hub Page (00_Eco_Balance_Hub.md)**: ✅ Excellent
+**Hub Page (00_Eco_Balance_Hub.md (root))**: ✅ Excellent
 - Clear organization by category
 - All strategic documents linked
 - Implementation tasks well-organized

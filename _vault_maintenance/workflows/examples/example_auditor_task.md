@@ -54,7 +54,7 @@ impact: |
 
 affected_files:
   - Potentially 31_*.md, 41_*.md (if created)
-  - 00_Eco_Balance_Hub.md (may need update)
+  - 00_Eco_Balance_Hub.md (root) (may need update)
   - QUICK_REFERENCE_GUIDE.md (may need update)
 
 estimated_effort: MODERATE

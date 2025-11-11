@@ -56,7 +56,7 @@ All 4 fix agents executed successfully and completed their assigned tasks. The d
 
 #### 2. Version Number Corrections (8 instances in 4 files)
 ✅ **COMPLETE** - All active document versions updated
-- 00_Eco_Balance_Hub.md: Updated 3 version references (1.0.0 → 2.0.0)
+- 00_Eco_Balance_Hub.md (root): Updated 3 version references (1.0.0 → 2.0.0)
 - QUICK_REFERENCE_GUIDE.md: Updated version and release date
 - STRUCTURE_VISUAL_GUIDE.md: Header updated to 2.0.0
 - GIT_PUSH_INSTRUCTIONS.md: Marked as historical (v1.0.0 reference preserved with archive notice)
@@ -348,7 +348,7 @@ All 4 fix agents executed successfully and completed their assigned tasks. The d
 - 01_Identify_Potential_Locations.md: Clarified budget phrasing
 - 04_Consider_Accessibility.md: Clarified technology strategy (local-first)
 - 30_Business_Model.md: Aligned budget ranges (€20-30k)
-- 00_Eco_Balance_Hub.md: Aligned budget figures
+- 00_Eco_Balance_Hub.md (root): Aligned budget figures
 - reforestation/00: Aligned tree planting targets (200-500 Year 1)
 - implementation_tasks/README.md: Fixed task/file counts
 

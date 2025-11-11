@@ -11,13 +11,13 @@ status: queued
 title: Repair broken links in main hub page
 
 description: |
-  The 00_Eco_Balance_Hub.md serves as the main navigation entry point. 
+  The 00_Eco_Balance_Hub.md (root) serves as the main navigation entry point. 
   Link integrity check found 3 broken links that prevent users from 
   accessing important documentation. This blocks the primary navigation 
   pathway through the vault.
 
 current_state: |
-  00_Eco_Balance_Hub.md contains these broken links:
+  00_Eco_Balance_Hub.md (root) contains these broken links:
   1. Link to "31_Revenue_Strategy.md" (file doesn't exist)
   2. Link to "implementation/site-selection" (should be "implementation_tasks/site_selection")
   3. Link to "../archive/README.md" (incorrect relative path, should be "archive/README.md")
@@ -28,7 +28,7 @@ desired_state: |
   sections without hitting dead ends.
 
 action_required: |
-  1. Open 00_Eco_Balance_Hub.md
+  1. Open 00_Eco_Balance_Hub.md (root)
   2. Fix link #1:
      - Determine if 31_Revenue_Strategy.md should exist
      - If yes: Create placeholder or remove link temporarily
@@ -49,7 +49,7 @@ impact: |
   - Critical for vault usability
 
 affected_files:
-  - 00_Eco_Balance_Hub.md
+  - 00_Eco_Balance_Hub.md (root)
 
 estimated_effort: TRIVIAL
 

@@ -146,7 +146,7 @@ Create findings in this format:
 - All `[[internal_links]]` work
 - All `[markdown](links)` work
 - References to implementation task files are correct
-- Hub file (00_Eco_Balance_Hub.md) links are accurate
+- Hub file (00_Eco_Balance_Hub.md (root)) links are accurate
 
 ---
 

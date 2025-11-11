@@ -160,12 +160,12 @@ Each agent creates **ONE small file**:
 ### Agent 1: File 01 (Executive Summary)
 
 ```
-Agent 1: Analyze 01_Executive_Summary.md for assumptions.
+Agent 1: Analyze strategic/01_Executive_Summary.md for assumptions.
 
 **Branch**: `feature/assumptions-file-01`
 
 **Task**:
-1. Read 01_Executive_Summary.md
+1. Read strategic/01_Executive_Summary.md
 2. Identify 5-10 key assumptions
 3. Create _vault_maintenance/assumptions_audit/FILE_01_EXECUTIVE_SUMMARY.md
 4. Use template from ASSUMPTIONS_AUDIT_ROUTING_PLAN_V3.md

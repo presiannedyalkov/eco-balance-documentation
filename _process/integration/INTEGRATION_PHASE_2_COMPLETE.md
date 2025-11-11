@@ -263,32 +263,32 @@ All content from the "Fight against climate change" folder has been successfully
 ## 📖 How to Use Enhanced System
 
 ### For Site Selection
-1. Start with [[44_Site_Selection_Land_Acquisition]]
+1. Start with [[strategic/44_Site_Selection_Land_Acquisition]]
 2. Follow 7-step process systematically
-3. Reference [[02_Project_Vision]] for geographic priorities
-4. Use [[32_Funding_Strategy]] for budget guidance
-5. Check [[13_Legal_Framework]] for regulatory considerations
+3. Reference [[strategic/02_Project_Vision]] for geographic priorities
+4. Use [[strategic/32_Funding_Strategy]] for budget guidance
+5. Check [[strategic/13_Legal_Framework]] for regulatory considerations
 
 ### For NGO Formation
-1. Begin with [[43_Operations_Action_Plan]]
+1. Begin with [[strategic/43_Operations_Action_Plan]]
 2. Follow 10-step building process
-3. Reference [[13_Legal_Framework]] for legal details
-4. Use [[11_Governance]] and [[12_Team_Roles]] when created
-5. Apply [[32_Funding_Strategy]] for financing
+3. Reference [[strategic/13_Legal_Framework]] for legal details
+4. Use [[strategic/11_Governance]] and [[strategic/12_Team_Roles]] when created
+5. Apply [[strategic/32_Funding_Strategy]] for financing
 
 ### For Marketing Launch
-1. Start with [[60_Marketing_Communications_Strategy]]
+1. Start with [[strategic/60_Marketing_Communications_Strategy]]
 2. Use elevator pitch and extended pitch
 3. Follow 10-step fundraising campaign
 4. Implement 90-day launch plan
-5. Track with [[51_Key_Performance_Indicators]]
+5. Track with [[strategic/51_Key_Performance_Indicators]]
 
 ### For Operations
-1. Reference [[43_Operations_Action_Plan]] for workflows
+1. Reference [[strategic/43_Operations_Action_Plan]] for workflows
 2. Use project cycle for restoration activities
 3. Apply financial management processes
 4. Follow HR procedures for team building
-5. Monitor with [[51_Key_Performance_Indicators]]
+5. Monitor with [[strategic/51_Key_Performance_Indicators]]
 
 ---
 
@@ -370,7 +370,7 @@ This integration is successful if:
 
 **Next phase:** Clean up old folders and rename v1 to "Climate Change"
 
-**Then:** Start executing! Follow [[42_Next_Steps_90_Days]] to begin.
+**Then:** Start executing! Follow [[strategic/42_Next_Steps_90_Days]] to begin.
 
 ---
 

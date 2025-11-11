@@ -48,8 +48,8 @@ These are historical/reference files - audit only if capacity allows.
 
 | # | File Path | Lines | Status |
 |---|-----------|-------|--------|
-| 001 | ./00_Eco_Balance_Hub.md | 559 | ⏸️ Ready |
-| 002 | ./01_Executive_Summary.md | 136 | ⏸️ Ready |
+| 001 | ./00_Eco_Balance_Hub.md (root) | 559 | ⏸️ Ready |
+| 002 | ./strategic/01_Executive_Summary.md | 136 | ⏸️ Ready |
 | 003 | ./02_Project_Vision.md | 227 | ⏸️ Ready |
 | 004 | ./03_Success_Factors.md | 543 | ⏸️ Ready |
 | 005 | ./04_Current_Status_Assessment.md | 443 | ⏸️ Ready |

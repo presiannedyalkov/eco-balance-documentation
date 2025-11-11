@@ -1,6 +1,6 @@
 # Assumptions Analysis: Executive Summary
 
-**File Analyzed**: 01_Executive_Summary.md
+**File Analyzed**: strategic/01_Executive_Summary.md
 **Agent**: Agent 1
 **Date**: 2025-11-09
 **Category**: Strategic/Financial/Organizational

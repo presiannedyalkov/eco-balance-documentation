@@ -18,7 +18,7 @@ Fix critical Bootstrap Model v2.0 alignment issues in strategic documents. These
 
 ## 📁 FILES TO FIX (5 strategic documents)
 
-### File 1: `01_Executive_Summary.md`
+### File 1: `strategic/01_Executive_Summary.md`
 
 **Issues** (3 critical/high):
 
@@ -73,7 +73,7 @@ Fix critical Bootstrap Model v2.0 alignment issues in strategic documents. These
 
 ---
 
-### File 3: `00_Eco_Balance_Hub.md`
+### File 3: `00_Eco_Balance_Hub.md (root)`
 
 **Issues** (6 critical/high):
 

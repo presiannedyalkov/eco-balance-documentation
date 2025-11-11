@@ -206,7 +206,7 @@ Comprehensive audit round completed with all 8 Vault Maintenance Crew personas. 
 - Scientific grounding not clearly stated as core vision
 - Local integration not clearly stated as core vision
 
-**Affected Files**: `01_Executive_Summary.md`, `02_Project_Vision.md`, `00_Eco_Balance_Hub.md`
+**Affected Files**: `strategic/01_Executive_Summary.md`, `02_Project_Vision.md`, `00_Eco_Balance_Hub.md (root)`
 
 ---
 
@@ -221,7 +221,7 @@ Comprehensive audit round completed with all 8 Vault Maintenance Crew personas. 
 - "What Changed in v2.0.0" requires knowledge of v1.0.0
 - Obsolete comparisons ("was X, now Y")
 
-**Affected Files**: `00_Eco_Balance_Hub.md`, `01_Executive_Summary.md`, `20_Restoration_Methodology.md`, `30_Business_Model.md`
+**Affected Files**: `00_Eco_Balance_Hub.md (root)`, `strategic/01_Executive_Summary.md`, `20_Restoration_Methodology.md`, `30_Business_Model.md`
 
 ---
 
@@ -252,7 +252,7 @@ Comprehensive audit round completed with all 8 Vault Maintenance Crew personas. 
 - Outdated v1.0.0 reference in hub
 - Archive verification date outdated
 
-**Affected Files**: `22_Restoration_Challenges_Solutions.md`, `00_Eco_Balance_Hub.md`, `archive/README.md`
+**Affected Files**: `22_Restoration_Challenges_Solutions.md`, `00_Eco_Balance_Hub.md (root)`, `archive/README.md`
 
 ---
 
@@ -390,8 +390,8 @@ Comprehensive audit round completed with all 8 Vault Maintenance Crew personas. 
 ## Files Affected Summary
 
 ### Strategic Documents (Primary Focus):
-- `00_Eco_Balance_Hub.md` - 6 tasks (core vision, Bootstrap removal, version references, links)
-- `01_Executive_Summary.md` - 2 tasks (core vision, Bootstrap removal)
+- `00_Eco_Balance_Hub.md (root)` - 6 tasks (core vision, Bootstrap removal, version references, links)
+- `strategic/01_Executive_Summary.md` - 2 tasks (core vision, Bootstrap removal)
 - `02_Project_Vision.md` - 1 task (core vision)
 - `20_Restoration_Methodology.md` - 1 task (Bootstrap removal)
 - `30_Business_Model.md` - 1 task (Bootstrap removal)

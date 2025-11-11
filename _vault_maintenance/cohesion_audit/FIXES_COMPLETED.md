@@ -21,11 +21,11 @@
 **Files Modified:** 17 strategic documentation files
 
 **Issues Fixed:**
-- ✅ Fixed 20+ instances: `[[42_Next_Steps_90_Days|...]]` → `[[42_Adaptive_Timeline|...]]`
-- ✅ Fixed 5 instances: `[[43_Daily_Operations|...]]` → `[[43_Operations_Action_Plan|...]]`
+- ✅ Fixed 20+ instances: `[[strategic/42_Next_Steps_90_Days|...]]` → `[[strategic/42_Adaptive_Timeline|...]]`
+- ✅ Fixed 5 instances: `[[strategic/43_Daily_Operations|...]]` → `[[strategic/43_Operations_Action_Plan|...]]`
 
 **Files Updated:**
-1. 00_Eco_Balance_Hub.md
+1. 00_Eco_Balance_Hub.md (root)
 2. 02_Project_Vision.md
 3. 03_Success_Factors.md
 4. 11_Governance.md
@@ -52,7 +52,7 @@
 
 ### Commit 2: Hub File Critical Fixes (Agent 4)
 **Commit:** `9ac738c` - Fix critical contradictions in Hub file
-**Files Modified:** 1 file (00_Eco_Balance_Hub.md)
+**Files Modified:** 1 file (00_Eco_Balance_Hub.md (root))
 
 **Legal Structure Contradictions Fixed:**
 - ❌ "Establish gGmbH"
@@ -97,7 +97,7 @@
 - Navigation between strategic documents improved
 
 **What Remains (Optional - Low Priority):**
-- Add cross-references to 01_Executive_Summary.md (currently has 0)
+- Add cross-references to strategic/01_Executive_Summary.md (currently has 0)
 - Strengthen cross-pillar connections (Financial, Legal, Methodology groups)
 - Standardize "Related Documents" sections across files
 

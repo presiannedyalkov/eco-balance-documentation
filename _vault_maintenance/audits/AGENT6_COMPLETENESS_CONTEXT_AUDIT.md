@@ -37,7 +37,7 @@
 
 ## Detailed Audit Findings by File
 
-### 01_Executive_Summary.md
+### strategic/01_Executive_Summary.md
 **Status:** ⚠️ **NEEDS REVIEW** (Content not fully accessible for detailed audit)
 - **Expected Role:** High-level project overview for newcomers
 - **Self-contained:** Should summarize key concepts without assuming prior knowledge
@@ -399,8 +399,8 @@
 **Observation:** Files consistently use helpful cross-reference pattern.
 
 **Good Pattern (prevalent):**
-- "→ See: [[21_Technology_Integration|Water Systems Detail]]" - tells reader what additional detail is available
-- "→ Details: [[32_Funding_Strategy|Crowdfunding Execution Plan]]" - indicates what the linked file contains
+- "→ See: [[strategic/21_Technology_Integration|Water Systems Detail]]" - tells reader what additional detail is available
+- "→ Details: [[strategic/32_Funding_Strategy|Crowdfunding Execution Plan]]" - indicates what the linked file contains
 
 **Less Helpful Pattern (rare):**
 - "As discussed in X" - requires reader to find and read other document
