@@ -94,15 +94,15 @@ This is a **comprehensive template and playbook** for ecological restoration pro
 ### Phase 1: Site Selection (9 Tasks)
 **Purpose:** Find and evaluate locations with highest restoration potential
 
-1. **[Site Selection Overview](site_selection/00_Site_Selection_Overview)** - Strategic framework
-2. **[Identify Potential Locations](site_selection/01_Identify_Potential_Locations)** - Geographic analysis
-3. **[Evaluate Land Condition](site_selection/02_Evaluate_Land_Condition)** - Site assessment
-4. **[Estimate Restoration Potential](site_selection/03_Estimate_Restoration_Potential)** - Feasibility analysis
-5. **[Consider Accessibility](site_selection/04_Consider_Accessibility)** - Practical access
-6. **[Research Local Regulations](site_selection/05_Research_Local_Regulations)** - Legal compliance
-7. **[Contact Landowners](site_selection/06_Contact_Landowners)** - Relationship building
-8. **[Visit Sites](site_selection/07_Visit_Sites)** - Ground-truthing
-9. **[Make a Shortlist](site_selection/08_Make_Shortlist)** - Final selection
+1. **[Site Selection Overview](/restoration-playbook/site_selection/00_Site_Selection_Overview)** - Strategic framework
+2. **[Identify Potential Locations](/restoration-playbook/site_selection/01_Identify_Potential_Locations)** - Geographic analysis
+3. **[Evaluate Land Condition](/restoration-playbook/site_selection/02_Evaluate_Land_Condition)** - Site assessment
+4. **[Estimate Restoration Potential](/restoration-playbook/site_selection/03_Estimate_Restoration_Potential)** - Feasibility analysis
+5. **[Consider Accessibility](/restoration-playbook/site_selection/04_Consider_Accessibility)** - Practical access
+6. **[Research Local Regulations](/restoration-playbook/site_selection/05_Research_Local_Regulations)** - Legal compliance
+7. **[Contact Landowners](/restoration-playbook/site_selection/06_Contact_Landowners)** - Relationship building
+8. **[Visit Sites](/restoration-playbook/site_selection/07_Visit_Sites)** - Ground-truthing
+9. **[Make a Shortlist](/restoration-playbook/site_selection/08_Make_Shortlist)** - Final selection
 
 ### Phase 2: Reforestation (7 Tasks)
 **Purpose:** Restore forest ecosystems through strategic tree planting
@@ -290,11 +290,11 @@ This template represents:
 
 **Choose Your Path:**
 
-**🌱 New Project:** Start with [Site Selection](site_selection/00_Site_Selection_Overview)
+**🌱 New Project:** Start with [Site Selection](/restoration-playbook/site_selection/00_Site_Selection_Overview)
 
 **🤝 Community Focus:** Begin with [Community Engagement](/restoration-playbook/community_engagement/00_Community_Engagement_Overview)
 
-**🌲 Ecological Priority:** Jump to [Reforestation](reforestation/00_Reforestation_Overview) or [Biodiversity](biodiversity/00_Biodiversity_Overview)
+**🌲 Ecological Priority:** Jump to [Reforestation](/restoration-playbook/reforestation/00_Reforestation_Overview) or [Biodiversity](/restoration-playbook/biodiversity/00_Biodiversity_Overview)
 
 **💧 Water Issues:** Focus on [Water Management](/restoration-playbook/water_management/00_Water_Management_Overview)
 
