@@ -206,7 +206,7 @@ After running automated fixes, manually verify these edge cases:
 
 **Check**: References to `implementation_tasks/README.md`
 **From subdirectory**: `[[../README]]` is CORRECT
-**From root strategic doc**: `[[implementation_tasks/README]]` is CORRECT
+**From root strategic doc**: `[[strategic/restoration_playbook/README]]` is CORRECT
 
 ### 3. Process Documentation Links
 

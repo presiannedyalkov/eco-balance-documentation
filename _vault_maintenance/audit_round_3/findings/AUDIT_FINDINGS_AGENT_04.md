@@ -90,8 +90,8 @@ This file is well-structured, properly versioned (2.0.0), aligned with Bootstrap
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Line 408, Section "Related Documents"
-- **Issue**: The link `[[20_Restoration_Methodology#Reforestation|Restoration Methodology]]` is missing the correct relative path prefix. Since this file is located in `implementation_tasks/reforestation/`, the link should use `../../` to navigate up to the root directory.
-- **Fix Needed**: Change `[[20_Restoration_Methodology#Reforestation|Restoration Methodology]]` to `[[../../20_Restoration_Methodology#Reforestation|Restoration Methodology]]` to ensure the link works correctly.
+- **Issue**: The link `[[strategic/20_Restoration_Methodology#Reforestation|Restoration Methodology]]` is missing the correct relative path prefix. Since this file is located in `implementation_tasks/reforestation/`, the link should use `../../` to navigate up to the root directory.
+- **Fix Needed**: Change `[[strategic/20_Restoration_Methodology#Reforestation|Restoration Methodology]]` to `[[../../20_Restoration_Methodology#Reforestation|Restoration Methodology]]` to ensure the link works correctly.
 
 ---
 

@@ -47,7 +47,7 @@ Update reference to current version or make it version-agnostic:
 
 **Option C**: Remove version-specific reference
 ```markdown
-- Review [[CHANGELOG|Changelog]] for complete version history
+- Review [[_process/documentation/CHANGELOG|Changelog]] for complete version history
 ```
 
 ## Action Required

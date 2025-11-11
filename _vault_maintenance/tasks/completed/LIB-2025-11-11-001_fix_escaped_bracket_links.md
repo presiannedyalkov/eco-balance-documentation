@@ -29,22 +29,22 @@ Three strategic documents contain escaped bracket links (`\[\[` instead of `[[`)
 All links should use proper wiki-link syntax: `[[filename]]` or `[[filename|display text]]`
 
 **Fixed Links:**
-- `[[21_Technology_Integration]]` or `[[21_Technology_Integration|Technology Integration]]`
-- `[[45_Tiny_House_and_Living_Infrastructure]]` or `[[45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]`
+- `[[strategic/21_Technology_Integration]]` or `[[strategic/21_Technology_Integration|Technology Integration]]`
+- `[[strategic/45_Tiny_House_and_Living_Infrastructure]]` or `[[strategic/45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]`
 
 ## Action Required
 
 1. **Fix `20_Restoration_Methodology.md:960`**:
    - Find: `\[\[21_Technology_Integration\]\]`
-   - Replace: `[[21_Technology_Integration|Tools]]` (maintains context from original text)
+   - Replace: `[[strategic/21_Technology_Integration|Tools]]` (maintains context from original text)
 
 2. **Fix `30_Business_Model.md:41`**:
    - Find: `\[\[45_Tiny_House_and_Living_Infrastructure\]\]`
-   - Replace: `[[45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]`
+   - Replace: `[[strategic/45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]`
 
 3. **Fix `30_Business_Model.md:45`**:
    - Find: `\[\[21_Technology_Integration\]\]`
-   - Replace: `[[21_Technology_Integration|Technology Integration]]`
+   - Replace: `[[strategic/21_Technology_Integration|Technology Integration]]`
 
 4. **Verify links work**:
    - Test each link in Obsidian

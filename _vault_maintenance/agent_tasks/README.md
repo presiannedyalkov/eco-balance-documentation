@@ -212,7 +212,7 @@ This will show how many agents have been completed.
 - **Source Fix Tasks**: `../*.md` (FIX_TASKS_CURATOR.md, FIX_TASKS_LIBRARIAN.md, etc.)
 - **Audit Reports**: `../AUDIT_TASKS_*.md`
 - **Workflow**: `../WORKFLOW.md`
-- **Project Hub**: `../../00_Eco_Balance_Hub.md`
+- **Project Hub**: `../../00_Eco_Balance_Hub.md (root)`
 
 ---
 

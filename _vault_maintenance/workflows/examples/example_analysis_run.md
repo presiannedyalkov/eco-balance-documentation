@@ -56,7 +56,7 @@ Status: First analysis, no baseline exists
   - Need to verify if intentional
 
 ✓ **Hub and guide files - GOOD**
-  - 00_Eco_Balance_Hub.md (main entry)
+  - 00_Eco_Balance_Hub.md (root) (main entry)
   - QUICK_REFERENCE_GUIDE.md
   - STRUCTURE_VISUAL_GUIDE.md
   - All present and properly named

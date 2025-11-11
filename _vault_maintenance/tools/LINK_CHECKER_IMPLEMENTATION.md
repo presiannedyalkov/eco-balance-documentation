@@ -479,7 +479,7 @@ cat > .markdown-link-check.json <<'EOF'
 EOF
 
 # Test on a single file
-markdown-link-check --config .markdown-link-check.json 00_Eco_Balance_Hub.md
+markdown-link-check --config .markdown-link-check.json 00_Eco_Balance_Hub.md (root)
 
 # Option B: Using lychee (faster, recommended for large docs)
 # Install: cargo install lychee
@@ -507,7 +507,7 @@ EOF
 chmod +x .git/hooks/pre-commit
 
 # Test it
-git add 00_Eco_Balance_Hub.md
+git add 00_Eco_Balance_Hub.md (root)
 git commit -m "test" --dry-run
 # Should run link check before committing
 ```
@@ -601,7 +601,7 @@ Files with broken links: 1
 ✗ Broken links found:
 
 02_Project_Vision.md
-  Line   45: [[99_Nonexistent_File]]
+  Line   45: [[strategic/99_Nonexistent_File]]
 
 ❌ Broken links found! Fix them or use --no-verify to bypass.
 ```

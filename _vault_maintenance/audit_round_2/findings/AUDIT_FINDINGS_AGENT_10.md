@@ -58,7 +58,7 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 242, 588, 702, 791
-- **Issue**: Multiple references to [[21_Technology_Integration]] throughout the document. Need to verify this document exists at the root level and links work correctly.
+- **Issue**: Multiple references to [[strategic/21_Technology_Integration]] throughout the document. Need to verify this document exists at the root level and links work correctly.
 - **Fix Needed**: Verify document exists and all link paths are correct
 
 ### Issue 3: Budget Calculation in Summary
@@ -83,7 +83,7 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 107, 255
-- **Issue**: References to [[22_Restoration_Challenges_Solutions]] appear twice. Need to verify this document exists at root level.
+- **Issue**: References to [[strategic/22_Restoration_Challenges_Solutions]] appear twice. Need to verify this document exists at root level.
 - **Fix Needed**: Verify document 22_Restoration_Challenges_Solutions.md exists and links work correctly
 
 ### Issue 3: Inconsistent Formatting in Related Documents Section

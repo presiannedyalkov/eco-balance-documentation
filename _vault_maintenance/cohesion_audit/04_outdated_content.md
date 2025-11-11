@@ -14,20 +14,20 @@
 ## 🔴 CRITICAL ISSUES
 
 ### 1. Date Contradictions
-**00_Eco_Balance_Hub.md**:
+**00_Eco_Balance_Hub.md (root)**:
 - L4: `November 6, 2025` (FUTURE) vs L418: `November 8, 2024` → **FIX: Align dates**
 
 ### 2. Broken Cross-References
 **Files with outdated links**:
-- `[[42_Next_Steps_90_Days]]` → Should be `[[42_Adaptive_Timeline]]`
+- `[[strategic/42_Next_Steps_90_Days]]` → Should be `[[strategic/42_Adaptive_Timeline]]`
   - 00:82, 00:237, 00:530, 01, 02:522, 03:613, 04
-- `[[43_Daily_Operations]]` → Should be `[[43_Operations_Action_Plan]]`
+- `[[strategic/43_Daily_Operations]]` → Should be `[[strategic/43_Operations_Action_Plan]]`
   - 01:73, 04:561
 
 **Fix**: Global find-replace
 
 ### 3. Legal Structure Contradictions
-**00_Eco_Balance_Hub.md contradicts adaptive framework**:
+**00_Eco_Balance_Hub.md (root) contradicts adaptive framework**:
 - L172: "Establish gGmbH" → **Should be**: "Establish legal entity (TBD)"
 - L193: "Legal structure identified (gGmbh)" → **Should be**: "TBD (location-dependent)"
 - L221: "gGmbH registration" → **Should be**: "Legal entity registration (TBD)"
@@ -136,8 +136,8 @@ Mix of `[[file|Text]]` and `[[file]]` - both valid, minor inconsistency
 
 | File | Status | Issues | Priority |
 |------|--------|--------|----------|
-| 00_Eco_Balance_Hub.md | ⚠️ NEEDS FIXES | 8 | 🔴 Critical |
-| 01_Executive_Summary.md | ⚠️ MINOR | 4 | 🟡 Important |
+| 00_Eco_Balance_Hub.md (root) | ⚠️ NEEDS FIXES | 8 | 🔴 Critical |
+| strategic/01_Executive_Summary.md | ⚠️ MINOR | 4 | 🟡 Important |
 | 02_Project_Vision.md | ⚠️ MINOR | 3 | 🟡 Important |
 | 03_Success_Factors.md | ⚠️ MINOR | 2 | 🟡 Important |
 | 04_Current_Status_Assessment.md | ✅ GOOD | 3 | 🟢 Minor |
@@ -178,7 +178,7 @@ Mix of `[[file|Text]]` and `[[file]]` - both valid, minor inconsistency
 
 **Est. Fix Time**: 6-9 hours total (2-3h critical, 3-4h important, 1-2h minor)
 
-**Priority**: Fix cross-references and 00_Eco_Balance_Hub.md contradictions first
+**Priority**: Fix cross-references and 00_Eco_Balance_Hub.md (root) contradictions first
 
 ---
 
@@ -188,7 +188,7 @@ Mix of `[[file|Text]]` and `[[file]]` - both valid, minor inconsistency
 
 The adaptive transformation is **largely successful**. Most outdated rigid assumptions have been removed. Remaining issues are primarily:
 1. Cross-reference updates (mechanical)
-2. Hub file contradictions (00_Eco_Balance_Hub.md)
+2. Hub file contradictions (00_Eco_Balance_Hub.md (root))
 3. Terminology standardization (minor)
 
 **Not found** (successfully removed):
@@ -197,7 +197,7 @@ The adaptive transformation is **largely successful**. Most outdated rigid assum
 - ❌ "gGmbH required Year 1"
 - ❌ "Germany only" fixed location
 
-**Recommendation**: Proceed with fixes per priority order. Most issues in 00_Eco_Balance_Hub.md.
+**Recommendation**: Proceed with fixes per priority order. Most issues in 00_Eco_Balance_Hub.md (root).
 
 ---
 

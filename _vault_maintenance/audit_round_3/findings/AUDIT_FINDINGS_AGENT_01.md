@@ -89,17 +89,17 @@ The assigned documentation demonstrates **excellent quality** with strong v2.0 B
 - **Location**: Throughout document (lines 3, 54, 70, 78, 86, 96, 104, 166, 226, 238, 242, 261-266)
 - **Issue**: Document contains 15+ cross-references that should be verified to ensure all links work correctly and point to existing files
 - **Fix Needed**: Test all cross-reference links:
-  - `[[00_Eco_Balance_Hub|Project Hub]]`
-  - `[[41_Phase_1_Foundation|Phase 1]]`
-  - `[[20_Restoration_Methodology|Restoration Methodology]]`
-  - `[[60_Marketing_Communications_Strategy|Community Engagement]]`
-  - `[[21_Technology_Integration|Technology Integration]]`
-  - `[[51_Key_Performance_Indicators|KPIs]]`
-  - `[[30_Business_Model|Business Model]]`
-  - `[[50_Risk_Assessment|Risk Assessment]]`
-  - `[[22_Restoration_Challenges_Solutions|Research Framework]]`
-  - `[[11_Governance|Governance]]`
-  - `[[40_Implementation_Roadmap|Roadmap]]`
+  - `[[strategic/00_Eco_Balance_Hub|Project Hub]]`
+  - `[[strategic/41_Phase_1_Foundation|Phase 1]]`
+  - `[[strategic/20_Restoration_Methodology|Restoration Methodology]]`
+  - `[[strategic/60_Marketing_Communications_Strategy|Community Engagement]]`
+  - `[[strategic/21_Technology_Integration|Technology Integration]]`
+  - `[[strategic/51_Key_Performance_Indicators|KPIs]]`
+  - `[[strategic/30_Business_Model|Business Model]]`
+  - `[[strategic/50_Risk_Assessment|Risk Assessment]]`
+  - `[[strategic/22_Restoration_Challenges_Solutions|Research Framework]]`
+  - `[[strategic/11_Governance|Governance]]`
+  - `[[strategic/40_Implementation_Roadmap|Roadmap]]`
   - And others in Related Documents section
 
 ### ✅ Strengths Observed
@@ -137,10 +137,10 @@ The assigned documentation demonstrates **excellent quality** with strong v2.0 B
 - **Location**: Throughout document (20+ cross-references)
 - **Issue**: Multiple cross-references throughout document need verification
 - **Fix Needed**: Systematically test all cross-reference links including those to:
-  - `[[22_Restoration_Challenges_Solutions|Research & Monitoring]]`
-  - `[[30_Business_Model|Business Model]]`
-  - `[[32_Funding_Strategy|Funding Approach]]`
-  - `[[60_Marketing_Communications_Strategy|Community Engagement]]`
+  - `[[strategic/22_Restoration_Challenges_Solutions|Research & Monitoring]]`
+  - `[[strategic/30_Business_Model|Business Model]]`
+  - `[[strategic/32_Funding_Strategy|Funding Approach]]`
+  - `[[strategic/60_Marketing_Communications_Strategy|Community Engagement]]`
   - And many others throughout
 
 ### ✅ Strengths Observed

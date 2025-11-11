@@ -180,7 +180,7 @@ Divide by number of agents you want:
 ```
 AGENT 1: Tasks 1-54
 Location: Strategic docs 00-04 (all 6 personas × ~9 files)
-Files: 00_Eco_Balance_Hub.md through 04_Current_Status_Assessment.md
+Files: 00_Eco_Balance_Hub.md (root) through 04_Current_Status_Assessment.md
 
 AGENT 2: Tasks 55-108  
 Location: Organizational docs 10-13 (all 6 personas × ~9 files)

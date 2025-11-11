@@ -23,7 +23,7 @@ Audit ALL files listed below using the 6 persona perspectives. NO SAMPLING - eve
 
 ### Strategic Documents (6 files)
 
-- [ ] `./01_Executive_Summary.md` (136 lines)
+- [ ] `./strategic/01_Executive_Summary.md` (136 lines)
 - [ ] `./11_Governance.md` (488 lines)
 - [ ] `./20_Restoration_Methodology.md` (855 lines)
 - [ ] `./21_Technology_Integration.md` (471 lines)

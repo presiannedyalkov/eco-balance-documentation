@@ -195,7 +195,7 @@ Many implementation task files describe full-scale approach without Bootstrap co
 
 - 🏠 [[../../00_Eco_Balance_Hub|Return to Eco-Balance Hub]]
 - 📋 [[00_Community_Engagement_Overview|Community Engagement Overview]]
-- ➡️ [[02_Communicate_Plans|Next: Communicate Plans]]
+- ➡️ [[strategic/02_Communicate_Plans|Next: Communicate Plans]]
 ```
 
 ---
@@ -251,8 +251,8 @@ Some files have abstract concepts without examples:
 
 **Pattern**: Links say "see related document" without specifying what to look for
 
-**Before**: "For more information, see [[30_Business_Model]]"
-**After**: "For revenue projections from education workshops, see [[30_Business_Model#Education Revenue]]"
+**Before**: "For more information, see [[strategic/30_Business_Model]]"
+**After**: "For revenue projections from education workshops, see [[strategic/30_Business_Model#Education Revenue]]"
 
 ### Task 3: Strengthen Transition Sentences
 

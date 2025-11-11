@@ -378,7 +378,7 @@ Remove or replace line 59 reference to AWG:
 
 **Option B**: Replace with:
 ```markdown
-- Rainwater harvesting potential → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential → [[strategic/21_Technology_Integration|Technology]]
 ```
 
 **Recommendation**: Option B - Maintain the water infrastructure consideration but reference correct technology.
@@ -735,7 +735,7 @@ Remove or replace line 59 reference to AWG:
 
 **Option B**: Replace with:
 ```markdown
-- Rainwater harvesting potential → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential → [[strategic/21_Technology_Integration|Technology]]
 ```
 
 **Recommendation**: Option B - Maintain the water infrastructure consideration but reference correct technology.
@@ -901,10 +901,10 @@ Navigation link patterns are inconsistent throughout the Hub document, reducing 
 - Some use "→ Full assessment: [[link]]"
 
 **Examples**:
-- Line 23: "→ See [[20_Restoration_Methodology]]"
-- Line 68: "→ See [[21_Technology_Integration]]"
-- Line 99: "Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview]]"
-- Line 202: "→ Full assessment: [[04_Current_Status_Assessment]]"
+- Line 23: "→ See [[strategic/20_Restoration_Methodology]]"
+- Line 68: "→ See [[strategic/21_Technology_Integration]]"
+- Line 99: "Navigate: [[strategic/restoration_playbook/site_selection/00_Site_Selection_Overview]]"
+- Line 202: "→ Full assessment: [[strategic/04_Current_Status_Assessment]]"
 
 **Fix Required**:
 
@@ -1278,7 +1278,7 @@ Remove or replace line 59 reference to AWG:
 
 **Option B**: Replace with:
 ```markdown
-- Rainwater harvesting potential → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential → [[strategic/21_Technology_Integration|Technology]]
 ```
 
 **Recommendation**: Option B - Maintain the water infrastructure consideration but reference correct technology.

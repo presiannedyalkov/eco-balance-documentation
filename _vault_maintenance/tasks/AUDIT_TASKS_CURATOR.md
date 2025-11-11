@@ -38,7 +38,7 @@ When ready to merge:
 
 ## ✅ CURATOR AUDIT TASKS
 
-- [x] **CURATOR** - File: `00_Eco_Balance_Hub.md`
+- [x] **CURATOR** - File: `00_Eco_Balance_Hub.md (root)`
   - Check: Content completeness, version consistency (v2.0 Bootstrap), cross-references valid
   - Focus: Recently updated to v2.0 - verify all references accurate
   - Result: ⚠️ ISSUES FOUND - Added FIX-023 to FIX_TASKS.md
@@ -50,7 +50,7 @@ When ready to merge:
            Date: 2025-11-07
 
 
-- [x] **CURATOR** - File: `01_Executive_Summary.md`
+- [x] **CURATOR** - File: `strategic/01_Executive_Summary.md`
   - Check: Content quality, version consistency (v1.0 vs v2.0?), narrative flow
   - Focus: **CRITICAL** - Known to have v1.0 Large-Scale content (€250-500k, 5-10 ha, AWG)
   - Result: ⚠️ ISSUES FOUND - FIX-001 already exists in FIX_TASKS.md

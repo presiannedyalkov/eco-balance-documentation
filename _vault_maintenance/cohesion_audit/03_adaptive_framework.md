@@ -289,7 +289,7 @@ The strategic documentation demonstrates excellent adaptive framework implementa
 
 ### ⚪ TIER 3: FOUNDATIONAL (Context-Setting) (2 files)
 
-#### 01_Executive_Summary.md
+#### strategic/01_Executive_Summary.md
 **Rating:** ⚪ FOUNDATIONAL
 **Assessment:** Executive summaries by nature are high-level overviews. This file sets the context but doesn't require detailed adaptive framework - that's appropriate for its purpose.
 

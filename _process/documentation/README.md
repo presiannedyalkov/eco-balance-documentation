@@ -82,7 +82,7 @@ The vault uses a **hybrid numbering and naming system**:
 - [[../../_templates/|Document Templates]] - Templates for creating new files
 - [[../../_vault_maintenance/|Vault Maintenance]] - Ongoing care and updates
 - [[../audit/|Audit Process]] - Quality assurance procedures
-- [[../../00_Eco_Balance_Hub.md|Project Hub]] - Main vault entry point
+- [[../../00_Eco_Balance_Hub.md (root)|Project Hub]] - Main vault entry point
 
 ## Using This Documentation
 

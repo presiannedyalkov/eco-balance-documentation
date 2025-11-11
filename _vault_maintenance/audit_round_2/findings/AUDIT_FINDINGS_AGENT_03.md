@@ -39,7 +39,7 @@
 
 ## 📁 FILE-BY-FILE FINDINGS
 
-## File: ./00_Eco_Balance_Hub.md
+## File: ./00_Eco_Balance_Hub.md (root)
 
 ### Issue 1: Critical Budget Inconsistency - Bootstrap vs Large-Scale Model
 

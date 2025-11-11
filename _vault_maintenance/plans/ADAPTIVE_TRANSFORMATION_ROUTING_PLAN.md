@@ -21,7 +21,7 @@
 
 ### GROUP A: Vision & Foundation (Agents 1-4)
 
-**Agent 1**: File 01_Executive_Summary.md
+**Agent 1**: File strategic/01_Executive_Summary.md
 **Agent 2**: File 02_Project_Vision.md
 **Agent 3**: File 03_Success_Factors.md
 **Agent 4**: File 04_Current_Status_Assessment.md
@@ -81,11 +81,11 @@ N=1; You are Agent $N transforming strategic documents to adaptive framework. Re
 
 ## 📖 Detailed Agent Instructions
 
-### Agent 1: File 01_Executive_Summary.md
+### Agent 1: File strategic/01_Executive_Summary.md
 
 **Branch**: `feature/adaptive-transform-file-01`
 
-**File to Transform**: `01_Executive_Summary.md`
+**File to Transform**: `strategic/01_Executive_Summary.md`
 
 **Key Transformations**:
 1. **Add Vision Framework section** at top (using Pattern from Master Plan)

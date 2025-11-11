@@ -103,7 +103,7 @@ _versions/
 - No scale assumptions embedded (work for 1 ha or 100 ha)
 - No budget references to v1.0 (€250-500k) or v2.0 (€20-30k) project totals
 - Only operational costs listed (€500-2,000 per activity - normal costs)
-- Reference strategic documents (e.g., "See [[44_Site_Selection]]") but don't duplicate scale assumptions
+- Reference strategic documents (e.g., "See [[strategic/44_Site_Selection]]") but don't duplicate scale assumptions
 - Content is **stable and evergreen** - not tied to specific project version
 
 **Sample Verified**:
@@ -178,7 +178,7 @@ _versions/
 8. 45_Tiny_House_and_Living_Infrastructure.md - Excellent (NEW)
 
 **Also v2.0 Compliant** (not converted, already correct):
-9. 00_Eco_Balance_Hub.md - v2.0 header (minor issue on line 41: FIX-023)
+9. 00_Eco_Balance_Hub.md (root) - v2.0 header (minor issue on line 41: FIX-023)
 10. 70_Case_Studies_Restoration_Examples.md - Version-neutral educational doc
 
 **Quality Indicators**:
@@ -343,7 +343,7 @@ The historical preservation and version tracking systems are functioning excelle
 **PHASE 2 BEGINS: FIX**
 - Use FIX_TASKS.md to execute fixes
 - Priority order: CRITICAL → HIGH → MEDIUM → LOW
-- Start with FIX-001 (Convert 01_Executive_Summary.md to v2.0)
+- Start with FIX-001 (Convert strategic/01_Executive_Summary.md to v2.0)
 - Expected completion: 3-4 weeks
 
 **Archivist Role Complete**: Historical preservation and version tracking verified. Handoff to other personas for fix execution.

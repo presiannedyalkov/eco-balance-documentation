@@ -88,7 +88,7 @@ Math: Honest €21-34k with clear explanation ✅
 > **Status**: Work finished, document retained for historical reference only.
 >
 > For current documentation structure, see:
-> - [[00_Eco_Balance_Hub|Project Hub]] - Current documentation overview
+> - [[strategic/00_Eco_Balance_Hub|Project Hub]] - Current documentation overview
 > - [[_process/README|Process Documentation]] - Active process guides
 
 ---
@@ -109,16 +109,16 @@ Math: Honest €21-34k with clear explanation ✅
 **Issue**: 2 links pointed to non-existent files
 
 **Broken Link 1** (Line 213):
-- **Before**: `[[31_Financial_Projections|Financial Scenarios]]`
-- **After**: `[[30_Business_Model|Financial Scenarios]]`
+- **Before**: `[[strategic/31_Financial_Projections|Financial Scenarios]]`
+- **After**: `[[strategic/30_Business_Model|Financial Scenarios]]`
 - **Reason**: File 31 doesn't exist; financial info is in file 30
 
 **Broken Link 2** (Line 583):
-- **Before**: `[[40_Implementation_Roadmap|Roadmap]]`
+- **Before**: `[[strategic/40_Implementation_Roadmap|Roadmap]]`
 - **After**:
   ```markdown
-  - [[40_Expansion_Growth_Strategy|Growth Roadmap]]
-  - [[43_Operations_Action_Plan|Operations Plan]]
+  - [[strategic/40_Expansion_Growth_Strategy|Growth Roadmap]]
+  - [[strategic/43_Operations_Action_Plan|Operations Plan]]
   ```
 - **Reason**: File 40 was renamed; added both relevant files
 

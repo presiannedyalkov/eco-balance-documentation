@@ -41,7 +41,7 @@
 - **Severity**: MEDIUM
 - **Location**: Throughout document (lines 3, 41, 42, 60, 192, 193, 495, 526, 559, 566-583)
 - **Issue**: Multiple wiki-style links need verification to ensure they point to existing files with correct paths
-- **Fix Needed**: Verify each link: `[[00_Eco_Balance_Hub|Project Hub]]`, `[[21_Technology_Integration|Doc 21]]`, `[[45_Tiny_House_and_Living_Infrastructure|Doc 45]]`, `[[32_Funding_Strategy|Detailed Funding Plan]]`, `[[13_Legal_Framework|Legal Structure]]`, `[[50_Risk_Assessment|Comprehensive Risk Assessment]]`, `[[51_Key_Performance_Indicators|Performance Metrics]]`, and all related documents links
+- **Fix Needed**: Verify each link: `[[00_Eco_Balance_Hub|Project Hub]]`, `[[strategic/21_Technology_Integration|Doc 21]]`, `[[strategic/45_Tiny_House_and_Living_Infrastructure|Doc 45]]`, `[[strategic/32_Funding_Strategy|Detailed Funding Plan]]`, `[[strategic/13_Legal_Framework|Legal Structure]]`, `[[strategic/50_Risk_Assessment|Comprehensive Risk Assessment]]`, `[[strategic/51_Key_Performance_Indicators|Performance Metrics]]`, and all related documents links
 
 ---
 
@@ -65,7 +65,7 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 169, 189
-- **Issue**: Wiki links need verification: `[[00_Biodiversity_Overview|Biodiversity Overview]]`, `[[21_Technology_Integration|Technology]]`, `[[02_Restore_Habitats|Task 2: Restore Habitats]]`
+- **Issue**: Wiki links need verification: `[[00_Biodiversity_Overview|Biodiversity Overview]]`, `[[strategic/21_Technology_Integration|Technology]]`, `[[strategic/02_Restore_Habitats|Task 2: Restore Habitats]]`
 - **Fix Needed**: Verify all cross-reference links work correctly
 
 ---
@@ -98,7 +98,7 @@
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 728-743, 840-841
 - **Issue**: Many cross-reference links throughout document need verification
-- **Fix Needed**: Verify all links: `[[README|Implementation Tasks]]`, `[[00_Community_Engagement_Overview|Community Engagement Overview]]`, `[[../20_Restoration_Methodology|Restoration Methodology]]`, `[[01_Identify_Stakeholders|Identify Stakeholders]]`, `[[02_Communicate_Plans|Communicate Your Plans]]`, `[[04_Involve_Community|Involve the Community]]`, `[[05_Share_Benefits|Share the Benefits]]`, `[[06_Maintain_Communication|Maintain Communication]]`, and all related phase links
+- **Fix Needed**: Verify all links: `[[README|Implementation Tasks]]`, `[[00_Community_Engagement_Overview|Community Engagement Overview]]`, `[[../20_Restoration_Methodology|Restoration Methodology]]`, `[[strategic/01_Identify_Stakeholders|Identify Stakeholders]]`, `[[strategic/02_Communicate_Plans|Communicate Your Plans]]`, `[[strategic/04_Involve_Community|Involve the Community]]`, `[[strategic/05_Share_Benefits|Share the Benefits]]`, `[[strategic/06_Maintain_Communication|Maintain Communication]]`, and all related phase links
 
 ### Issue 5: Content May Be Too Ambitious for Bootstrap Phase
 - **Persona**: Curator
@@ -123,7 +123,7 @@
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 265, 295, 321, 384, 483-496
 - **Issue**: Multiple cross-reference links need verification
-- **Fix Needed**: Verify all links: `[[00_Reforestation_Overview|Reforestation Overview]]`, `[[community_engagement/00_Community_Engagement_Overview|Community Engagement]]`, `[[70_Case_Studies_Restoration_Examples|Case Studies]]`, `[[51_Key_Performance_Indicators|KPIs]]`, `[[30_Business_Model|Business Model]]`, `[[05_Monitor_Growth|Monitor Growth]]`, `[[20_Restoration_Methodology|Restoration Methodology]]`, `[[40_Expansion_Growth_Strategy|Long-term Scaling]]`, `[[50_Risk_Assessment|Risk Assessment]]`, and `[[21_Technology_Integration|Technology for Long-term Monitoring]]`
+- **Fix Needed**: Verify all links: `[[00_Reforestation_Overview|Reforestation Overview]]`, `[[community_engagement/00_Community_Engagement_Overview|Community Engagement]]`, `[[strategic/70_Case_Studies_Restoration_Examples|Case Studies]]`, `[[strategic/51_Key_Performance_Indicators|KPIs]]`, `[[strategic/30_Business_Model|Business Model]]`, `[[strategic/05_Monitor_Growth|Monitor Growth]]`, `[[strategic/20_Restoration_Methodology|Restoration Methodology]]`, `[[strategic/40_Expansion_Growth_Strategy|Long-term Scaling]]`, `[[strategic/50_Risk_Assessment|Risk Assessment]]`, and `[[strategic/21_Technology_Integration|Technology for Long-term Monitoring]]`
 
 ### Issue 3: Excellent Bootstrap Alignment
 - **Persona**: Quality Inspector
@@ -148,7 +148,7 @@
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 29, 45, 68, 96, 99-101
 - **Issue**: Multiple cross-reference links need verification
-- **Fix Needed**: Verify all links: `[[00_Site_Selection_Overview|Site Selection Overview]]`, `[[../soil_restoration/01_Assess_Soil_Health|Assess Soil Health]]`, `[[../water_management/01_Assess_Water_Needs|Assess Water Needs]]`, `[[../biodiversity/01_Assess_Biodiversity|Assess Biodiversity]]`, `[[03_Estimate_Restoration_Potential|Step 3: Estimate Restoration Potential]]`, `[[../soil_restoration/00_Soil_Restoration_Overview|Soil Restoration]]`, `[[../biodiversity/00_Biodiversity_Overview|Biodiversity Conservation]]`, `[[../water_management/00_Water_Management_Overview|Water Management]]`
+- **Fix Needed**: Verify all links: `[[00_Site_Selection_Overview|Site Selection Overview]]`, `[[../soil_restoration/01_Assess_Soil_Health|Assess Soil Health]]`, `[[../water_management/01_Assess_Water_Needs|Assess Water Needs]]`, `[[../biodiversity/01_Assess_Biodiversity|Assess Biodiversity]]`, `[[strategic/03_Estimate_Restoration_Potential|Step 3: Estimate Restoration Potential]]`, `[[../soil_restoration/00_Soil_Restoration_Overview|Soil Restoration]]`, `[[../biodiversity/00_Biodiversity_Overview|Biodiversity Conservation]]`, `[[../water_management/00_Water_Management_Overview|Water Management]]`
 
 ### Issue 3: Good Bootstrap Context
 - **Persona**: Quality Inspector
@@ -180,7 +180,7 @@
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 27-38, 113-124, 150, 317, 327
 - **Issue**: Multiple cross-reference links need verification
-- **Fix Needed**: Verify all links: `[[README|Implementation Tasks]]`, task links (01-06), `[[../20_Restoration_Methodology|Restoration Methodology]]`, `[[../00_Eco_Balance_Hub|Eco Balance Hub]]`, `[[../15_Climate_Action|Climate Action Framework]]`, `[[../soil_restoration/00_Soil_Restoration_Overview|Soil Restoration Overview]]`, `[[../reforestation/00_Reforestation_Overview|Reforestation Overview]]`, `[[../biodiversity_conservation/00_Biodiversity_Conservation_Overview|Biodiversity Conservation Overview]]`, `[[../site_selection/08_Make_Shortlist|Make Site Shortlist]]`, `[[../site_selection/02_Evaluate_Land_Condition|Evaluate Land Condition]]`, `[[01_Assess_Water_Needs|Assess Water Needs]]`
+- **Fix Needed**: Verify all links: `[[README|Implementation Tasks]]`, task links (01-06), `[[../20_Restoration_Methodology|Restoration Methodology]]`, `[[../00_Eco_Balance_Hub|Eco Balance Hub]]`, `[[../15_Climate_Action|Climate Action Framework]]`, `[[../soil_restoration/00_Soil_Restoration_Overview|Soil Restoration Overview]]`, `[[../reforestation/00_Reforestation_Overview|Reforestation Overview]]`, `[[../biodiversity_conservation/00_Biodiversity_Conservation_Overview|Biodiversity Conservation Overview]]`, `[[../site_selection/08_Make_Shortlist|Make Site Shortlist]]`, `[[../site_selection/02_Evaluate_Land_Condition|Evaluate Land Condition]]`, `[[strategic/01_Assess_Water_Needs|Assess Water Needs]]`
 
 ### Issue 4: Content Appears Scaled for Larger Projects
 - **Persona**: Curator
@@ -244,7 +244,7 @@
 - **Severity**: MEDIUM
 - **Location**: Line 783
 - **Issue**: Wiki links at bottom need verification
-- **Fix Needed**: Verify links: `[[00_Eco_Balance_Hub|← Back to Hub]]`, `[[QUICK_REFERENCE_GUIDE|Quick Reference]]`, `[[CHANGELOG|Changelog]]`
+- **Fix Needed**: Verify links: `[[00_Eco_Balance_Hub|← Back to Hub]]`, `[[_process/documentation/QUICK_REFERENCE_GUIDE|Quick Reference]]`, `[[_process/documentation/CHANGELOG|Changelog]]`
 
 ### Issue 6: Mermaid Diagrams May Need Updates for v2.0
 - **Persona**: Curator

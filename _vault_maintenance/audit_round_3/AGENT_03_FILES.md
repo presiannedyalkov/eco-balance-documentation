@@ -23,7 +23,7 @@ Audit ALL files listed below using the 6 persona perspectives. NO SAMPLING - eve
 
 ### Strategic Documents (4 files)
 
-- [ ] `./00_Eco_Balance_Hub.md` (559 lines)
+- [ ] `./00_Eco_Balance_Hub.md (root)` (559 lines)
 - [ ] `./13_Legal_Framework.md` (455 lines)
 - [ ] `./32_Funding_Strategy.md` (1002 lines)
 - [ ] `./40_Expansion_Growth_Strategy.md` (649 lines)

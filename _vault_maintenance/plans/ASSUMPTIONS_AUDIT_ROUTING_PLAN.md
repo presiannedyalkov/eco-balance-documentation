@@ -79,7 +79,7 @@ This plan orchestrates a comprehensive assumptions audit using the **Strategic A
 ### Agent 1: Vision & Status (4 files)
 **Branch**: `feature/assumptions-audit-vision-status`
 **Files to Analyze**:
-- 01_Executive_Summary.md
+- strategic/01_Executive_Summary.md
 - 02_Project_Vision.md
 - 03_Success_Factors.md
 - 04_Current_Status_Assessment.md
@@ -300,7 +300,7 @@ You are Agent 1 conducting a Strategic Advisor assumptions audit for Eco Balance
 **Branch**: Create and work on branch `feature/assumptions-audit-vision-status`
 
 **Files to Analyze**:
-1. 01_Executive_Summary.md
+1. strategic/01_Executive_Summary.md
 2. 02_Project_Vision.md
 3. 03_Success_Factors.md
 4. 04_Current_Status_Assessment.md

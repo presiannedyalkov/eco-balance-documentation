@@ -175,7 +175,7 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 103, 104, 130, etc.
-- **Issue**: Uses relative paths for wiki links (e.g., "[[README|Implementation Tasks]]", "[[02_Restore_Habitats|Restore Habitats]]"). Need to verify these resolve correctly.
+- **Issue**: Uses relative paths for wiki links (e.g., "[[README|Implementation Tasks]]", "[[strategic/02_Restore_Habitats|Restore Habitats]]"). Need to verify these resolve correctly.
 - **Fix Needed**: Test all internal links in Obsidian to ensure proper resolution. Adjust if needed based on vault structure.
 
 ### Issue 2: Missing Version/Date Metadata
@@ -194,7 +194,7 @@
 - **Severity**: MEDIUM
 - **Location**: Lines 3, 27, 397-406
 - **Issue**: Uses relative paths for wiki links that need verification against vault structure.
-- **Fix Needed**: Test all internal links ([[README|Implementation Tasks]], [[00_Water_Management_Overview]], etc.) to ensure they work correctly.
+- **Fix Needed**: Test all internal links ([[README|Implementation Tasks]], [[strategic/00_Water_Management_Overview]], etc.) to ensure they work correctly.
 
 ### Issue 2: Missing Version/Date Metadata
 - **Persona**: Archivist

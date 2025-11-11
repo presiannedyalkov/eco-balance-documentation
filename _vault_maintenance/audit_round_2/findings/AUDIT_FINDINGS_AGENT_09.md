@@ -103,7 +103,7 @@
 - **Persona**: Librarian
 - **Severity**: MEDIUM
 - **Location**: Lines 127, 157, 293, 343, 418, 435
-- **Issue**: Similar to File 2, cross-directory links use inconsistent formats (e.g., `[[water_management/06_Monitor_Water_Use|...]]` and `[[21_Technology_Integration|...]]`). Some include directory prefix, others don't.
+- **Issue**: Similar to File 2, cross-directory links use inconsistent formats (e.g., `[[water_management/06_Monitor_Water_Use|...]]` and `[[strategic/21_Technology_Integration|...]]`). Some include directory prefix, others don't.
 - **Fix Needed**: Apply consistent link syntax standard across all implementation task files.
 
 ---
@@ -199,7 +199,7 @@ This demonstrates proper alignment with current project standards. Other files s
 - **Persona**: Quality Inspector
 - **Severity**: LOW
 - **Location**: Lines 56-60, 128-151
-- **Issue**: Document names are referenced (e.g., "01_Executive_Summary", "02_Project_Vision") but not as markdown links `[[01_Executive_Summary]]`. While this is a planning document, adding links would improve navigability.
+- **Issue**: Document names are referenced (e.g., "01_Executive_Summary", "02_Project_Vision") but not as markdown links `[[strategic/01_Executive_Summary]]`. While this is a planning document, adding links would improve navigability.
 - **Fix Needed**: Convert document name references to proper internal links where appropriate.
 
 ---

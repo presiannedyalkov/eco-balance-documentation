@@ -37,7 +37,7 @@ Content quality and coherence audit completed. Overall content health is **GOOD*
 **Issues Found**:
 
 1. **Short Filename Links** (HIGH - identified by Librarian)
-   - `[[44_Site_Selection]]` used instead of `[[44_Site_Selection_Land_Acquisition]]`
+   - `[[strategic/44_Site_Selection]]` used instead of `[[strategic/44_Site_Selection_Land_Acquisition]]`
    - 13 instances across 6 files
    - **Fix**: Update to full filenames (LIB-2025-11-10-003)
 
@@ -51,7 +51,7 @@ Content quality and coherence audit completed. Overall content health is **GOOD*
    - **Impact**: Low - doesn't break functionality, but could improve discoverability
 
 **Working Cross-References**: ✅
-- Executive Summary correctly links to `[[22_Restoration_Challenges_Solutions]]` (fixed)
+- Executive Summary correctly links to `[[strategic/22_Restoration_Challenges_Solutions]]` (fixed)
 - Financial documents properly cross-referenced
 - Hub page links functional
 - Implementation tasks well-linked

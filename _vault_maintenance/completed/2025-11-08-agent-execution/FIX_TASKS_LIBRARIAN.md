@@ -109,7 +109,7 @@ Site selection implementation files contain budget assumptions and cost estimate
 
 **General Updates to All Files**:
 - Add Bootstrap context boxes where budget figures appear
-- Reference [[30_Business_Model|Business Model]] for v2.0 budget framework
+- Reference [[strategic/30_Business_Model|Business Model]] for v2.0 budget framework
 - Note that larger-scale costs apply to post-pilot expansion phases
 
 **Verification**:
@@ -137,13 +137,13 @@ Site selection implementation files contain budget assumptions and cost estimate
 - `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
 
 **Issue**:
-Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
+Links reference [[strategic/60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
 
 **Fix Required**:
 
 Update all links to use correct filename:
-- FROM: `[[60_Marketing_Strategy|...]]`
-- TO: `[[60_Marketing_Communications_Strategy|...]]`
+- FROM: `[[strategic/60_Marketing_Strategy|...]]`
+- TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 **Files to Update** (10 instances):
 1. 01_Executive_Summary.md (line 35)
@@ -246,7 +246,7 @@ Site selection implementation files contain budget assumptions and cost estimate
 
 **General Updates to All Files**:
 - Add Bootstrap context boxes where budget figures appear
-- Reference [[30_Business_Model|Business Model]] for v2.0 budget framework
+- Reference [[strategic/30_Business_Model|Business Model]] for v2.0 budget framework
 - Note that larger-scale costs apply to post-pilot expansion phases
 
 **Verification**:
@@ -274,13 +274,13 @@ Site selection implementation files contain budget assumptions and cost estimate
 - `51_Key_Performance_Indicators.md` (lines 129, 275, 462) - Added from Step 4 audit
 
 **Issue**:
-Links reference [[60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
+Links reference [[strategic/60_Marketing_Strategy|...]] but the actual file is `60_Marketing_Communications_Strategy.md`, NOT `60_Marketing_Strategy.md`.
 
 **Fix Required**:
 
 Update all links to use correct filename:
-- FROM: `[[60_Marketing_Strategy|...]]`
-- TO: `[[60_Marketing_Communications_Strategy|...]]`
+- FROM: `[[strategic/60_Marketing_Strategy|...]]`
+- TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 **Files to Update** (10 instances):
 1. 01_Executive_Summary.md (line 35)
@@ -461,10 +461,10 @@ Navigation link patterns are inconsistent throughout the Hub document, reducing 
 - Some use "→ Full assessment: [[link]]"
 
 **Examples**:
-- Line 23: "→ See [[20_Restoration_Methodology]]"
-- Line 68: "→ See [[21_Technology_Integration]]"
-- Line 99: "Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview]]"
-- Line 202: "→ Full assessment: [[04_Current_Status_Assessment]]"
+- Line 23: "→ See [[strategic/20_Restoration_Methodology]]"
+- Line 68: "→ See [[strategic/21_Technology_Integration]]"
+- Line 99: "Navigate: [[strategic/restoration_playbook/site_selection/00_Site_Selection_Overview]]"
+- Line 202: "→ Full assessment: [[strategic/04_Current_Status_Assessment]]"
 
 **Fix Required**:
 

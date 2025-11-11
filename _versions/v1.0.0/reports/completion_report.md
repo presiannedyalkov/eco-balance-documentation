@@ -100,16 +100,16 @@ Every implementation file includes:
 ## 📂 KEY FILES TO REVIEW
 
 ### Start Here:
-1. **[[00_Eco_Balance_Hub]]** - Your central navigation hub
-2. **[[01_Executive_Summary]]** - Quick project overview
+1. **[[strategic/00_Eco_Balance_Hub]]** - Your central navigation hub
+2. **[[strategic/01_Executive_Summary]]** - Quick project overview
 
 ### For Immediate Action:
-3. **[[42_Next_Steps_90_Days]]** - Week-by-week action plan
-4. **[[04_Current_Status_Assessment]]** - Current gaps analysis
+3. **[[strategic/42_Next_Steps_90_Days]]** - Week-by-week action plan
+4. **[[strategic/04_Current_Status_Assessment]]** - Current gaps analysis
 
 ### For Implementation:
-5. **[[implementation_tasks/README]]** - Hub for all 44 task guides
-6. **[[20_Restoration_Methodology]]** - Core technical approach
+5. **[[strategic/restoration_playbook/README]]** - Hub for all 44 task guides
+6. **[[strategic/20_Restoration_Methodology]]** - Core technical approach
 
 ---
 
@@ -159,7 +159,7 @@ With this documentation, you have:
 Now that documentation is 100% complete, focus on **execution**:
 
 ### This Week:
-1. Review [[42_Next_Steps_90_Days]] in detail
+1. Review [[strategic/42_Next_Steps_90_Days]] in detail
 2. Schedule founding team meeting
 3. Contact lawyer for gGmbH setup
 4. Begin identifying potential sites

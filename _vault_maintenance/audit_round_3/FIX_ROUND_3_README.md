@@ -433,7 +433,7 @@ grep -L "Document Version" implementation_tasks/*/00_*.md
 - **audit_round_2/STATUS_REPORT.md** - Round 2 results
 
 ### Project Context
-- **00_Eco_Balance_Hub.md** - Project overview
+- **00_Eco_Balance_Hub.md (root)** - Project overview
 - **CHANGELOG.md** - Version history including Bootstrap conversion
 - **_process/README.md** - Overall process documentation
 

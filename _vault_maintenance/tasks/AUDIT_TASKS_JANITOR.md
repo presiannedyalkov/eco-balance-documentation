@@ -38,18 +38,18 @@ When ready to merge:
 
 ## ✅ JANITOR AUDIT TASKS
 
-- [x] **JANITOR** - File: `00_Eco_Balance_Hub.md`
+- [x] **JANITOR** - File: `00_Eco_Balance_Hub.md (root)`
   - Check: File placement, naming conventions, no duplicates, organizational structure
   - Focus: Verify root directory location, NN_Name.md format, no redundancy
-  - Result: ✅ PASS - File properly placed in root, naming convention correct (00_Eco_Balance_Hub.md), no duplicates found, excellent organization
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (00_Eco_Balance_Hub.md (root)), no duplicates found, excellent organization
 
 #### 01 - Executive Summary
 
 
-- [x] **JANITOR** - File: `01_Executive_Summary.md`
+- [x] **JANITOR** - File: `strategic/01_Executive_Summary.md`
   - Check: File placement, naming conventions, no duplicates, organizational structure
   - Focus: Verify root directory location, NN_Name.md format, no redundancy
-  - Result: ✅ PASS - File properly placed in root, naming convention correct (01_Executive_Summary.md), 1 archived version appropriately in archive/pre-v1.0.0/, no organizational issues
+  - Result: ✅ PASS - File properly placed in root, naming convention correct (strategic/01_Executive_Summary.md), 1 archived version appropriately in archive/pre-v1.0.0/, no organizational issues
 
 #### 02 - Project Vision
 

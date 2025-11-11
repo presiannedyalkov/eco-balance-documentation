@@ -176,7 +176,7 @@ The following directories will be excluded from the public site:
 #### 3.2 Link Conversion
 
 **Markdown Link Format:**
-- Current: `[[01_Executive_Summary|Executive Summary]]`
+- Current: `[[strategic/01_Executive_Summary|Executive Summary]]`
 - Docusaurus: `[Executive Summary](executive-summary)` or `[Executive Summary](/docs/vision-strategy/executive-summary)`
 
 **Cross-References:**

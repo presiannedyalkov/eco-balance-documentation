@@ -87,7 +87,7 @@ Each file should follow this structure:
 ```markdown
 # [Task Name]
 
-← Back to [[README|Implementation Tasks]] | [[00_Overview|Category Overview]]
+← Back to [[README|Implementation Tasks]] | [[strategic/00_Overview|Category Overview]]
 
 ---
 
@@ -255,8 +255,8 @@ You'll know the integration is complete when:
 **For reference:**
 - [[INTEGRATION_COMPLETION_PLAN]] - Full detailed plan
 - [[INTEGRATION_PROGRESS_TRACKER]] - Current status
-- [[implementation_tasks/INTEGRATION_STATUS]] - Live status
-- [[00_Eco_Balance_Hub]] - Main project hub
+- [[strategic/restoration_playbook/INTEGRATION_STATUS]] - Live status
+- [[strategic/00_Eco_Balance_Hub]] - Main project hub
 
 ---
 

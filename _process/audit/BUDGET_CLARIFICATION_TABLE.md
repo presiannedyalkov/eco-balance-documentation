@@ -108,9 +108,9 @@ Different documents reference different budget ranges depending on scope. Here's
 5. **Add Cross-References:**
    Add these lines at the end of the new section:
    ```markdown
-   → Detailed tech specs: [[21_Technology_Integration|Technology Budget Details]]
-   → Living infrastructure: [[45_Tiny_House_and_Living_Infrastructure|Housing Options & Costs]]
-   → Funding approach: [[32_Funding_Strategy|Phased Funding Timeline]]
+   → Detailed tech specs: [[strategic/21_Technology_Integration|Technology Budget Details]]
+   → Living infrastructure: [[strategic/45_Tiny_House_and_Living_Infrastructure|Housing Options & Costs]]
+   → Funding approach: [[strategic/32_Funding_Strategy|Phased Funding Timeline]]
    ```
 
 6. **Save:** Document

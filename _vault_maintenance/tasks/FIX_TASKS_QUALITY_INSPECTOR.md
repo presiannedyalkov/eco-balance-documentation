@@ -58,20 +58,20 @@ Back links on line 3 are missing bold markdown formatting, inconsistent with mos
 
 **Current State**:
 ```markdown
-← Back to [[00_Eco_Balance_Hub|Project Hub]]
+← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]
 ```
 
 **Expected State**:
 ```markdown
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 ```
 
 **Fix Required**:
 For each of the 3 files, change line 3 from:
-`← Back to [[00_Eco_Balance_Hub|Project Hub]]`
+`← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]`
 
 To:
-`**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+`**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**`
 
 **Verification**:
 - [ ] All 3 files have bold markdown formatting on back links
@@ -378,7 +378,7 @@ Remove or replace line 59 reference to AWG:
 
 **Option B**: Replace with:
 ```markdown
-- Rainwater harvesting potential → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential → [[strategic/21_Technology_Integration|Technology]]
 ```
 
 **Recommendation**: Option B - Maintain the water infrastructure consideration but reference correct technology.
@@ -415,20 +415,20 @@ Back links on line 3 are missing bold markdown formatting, inconsistent with mos
 
 **Current State**:
 ```markdown
-← Back to [[00_Eco_Balance_Hub|Project Hub]]
+← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]
 ```
 
 **Expected State**:
 ```markdown
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 ```
 
 **Fix Required**:
 For each of the 3 files, change line 3 from:
-`← Back to [[00_Eco_Balance_Hub|Project Hub]]`
+`← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]`
 
 To:
-`**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+`**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**`
 
 **Verification**:
 - [ ] All 3 files have bold markdown formatting on back links
@@ -735,7 +735,7 @@ Remove or replace line 59 reference to AWG:
 
 **Option B**: Replace with:
 ```markdown
-- Rainwater harvesting potential → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential → [[strategic/21_Technology_Integration|Technology]]
 ```
 
 **Recommendation**: Option B - Maintain the water infrastructure consideration but reference correct technology.
@@ -754,7 +754,7 @@ Remove or replace line 59 reference to AWG:
 
 ### 🟢 LOW PRIORITY
 
-### ⚠️ FIX-023: Standardize Navigation Patterns in 00_Eco_Balance_Hub.md
+### ⚠️ FIX-023: Standardize Navigation Patterns in 00_Eco_Balance_Hub.md (root)
 
 **Status**: [ ] Not Started | [ ] In Progress | [ ] Complete (Date: _____)
 
@@ -836,12 +836,12 @@ All soil restoration and water management files use USD ($) for budget estimates
 - None - isolated cosmetic issue
 - Does not affect any other fixes or content
 **Task ID**: LIB-2025-11-07-004
-**Found By**: Librarian during audit of 00_Eco_Balance_Hub.md
+**Found By**: Librarian during audit of 00_Eco_Balance_Hub.md (root)
 
 **File**: `_templates/README.md` (CREATE)
 
 **Issue**:
-The Hub file (00_Eco_Balance_Hub.md) links to `[[_templates/README|_templates/]]` (line 46), but `_templates/README.md` does NOT exist. The _templates directory exists with 4 template files but no README.
+The Hub file (00_Eco_Balance_Hub.md (root)) links to `[[_templates/README|_templates/]]` (line 46), but `_templates/README.md` does NOT exist. The _templates directory exists with 4 template files but no README.
 
 **Existing Templates**:
 - changelog_entry_template.md
@@ -886,9 +886,9 @@ Purpose: Maintain consistency across vault documents
 
 **Related Tasks**: None (standalone documentation enhancement)
 **Task ID**: QI-2025-11-07-001
-**Found By**: Quality Inspector during audit of 00_Eco_Balance_Hub.md
+**Found By**: Quality Inspector during audit of 00_Eco_Balance_Hub.md (root)
 
-**File**: `00_Eco_Balance_Hub.md`
+**File**: `00_Eco_Balance_Hub.md (root)`
 
 **Issue**:
 Navigation link patterns are inconsistent throughout the Hub document, reducing professional polish and creating slight user experience friction.
@@ -901,10 +901,10 @@ Navigation link patterns are inconsistent throughout the Hub document, reducing 
 - Some use "→ Full assessment: [[link]]"
 
 **Examples**:
-- Line 23: "→ See [[20_Restoration_Methodology]]"
-- Line 68: "→ See [[21_Technology_Integration]]"
-- Line 99: "Navigate: [[implementation_tasks/site_selection/00_Site_Selection_Overview]]"
-- Line 202: "→ Full assessment: [[04_Current_Status_Assessment]]"
+- Line 23: "→ See [[strategic/20_Restoration_Methodology]]"
+- Line 68: "→ See [[strategic/21_Technology_Integration]]"
+- Line 99: "Navigate: [[strategic/restoration_playbook/site_selection/00_Site_Selection_Overview]]"
+- Line 202: "→ Full assessment: [[strategic/04_Current_Status_Assessment]]"
 
 **Fix Required**:
 
@@ -958,20 +958,20 @@ Back links on line 3 are missing bold markdown formatting, inconsistent with mos
 
 **Current State**:
 ```markdown
-← Back to [[00_Eco_Balance_Hub|Project Hub]]
+← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]
 ```
 
 **Expected State**:
 ```markdown
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 ```
 
 **Fix Required**:
 For each of the 3 files, change line 3 from:
-`← Back to [[00_Eco_Balance_Hub|Project Hub]]`
+`← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]`
 
 To:
-`**← Back to [[00_Eco_Balance_Hub|Project Hub]]**`
+`**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**`
 
 **Verification**:
 - [ ] All 3 files have bold markdown formatting on back links
@@ -1278,7 +1278,7 @@ Remove or replace line 59 reference to AWG:
 
 **Option B**: Replace with:
 ```markdown
-- Rainwater harvesting potential → [[21_Technology_Integration|Technology]]
+- Rainwater harvesting potential → [[strategic/21_Technology_Integration|Technology]]
 ```
 
 **Recommendation**: Option B - Maintain the water infrastructure consideration but reference correct technology.

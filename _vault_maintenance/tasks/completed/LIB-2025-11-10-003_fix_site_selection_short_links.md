@@ -11,11 +11,11 @@ status: queued
 
 ## Description
 
-Multiple strategic documents use the short link `[[44_Site_Selection]]` but the actual file is named `44_Site_Selection_Land_Acquisition.md`. This creates broken navigation links throughout the vault.
+Multiple strategic documents use the short link `[[strategic/44_Site_Selection]]` but the actual file is named `44_Site_Selection_Land_Acquisition.md`. This creates broken navigation links throughout the vault.
 
 ## Current State
 
-- **Incorrect links**: `[[44_Site_Selection]]` or `[[44_Site_Selection|...]]` (13 instances found)
+- **Incorrect links**: `[[strategic/44_Site_Selection]]` or `[[strategic/44_Site_Selection|...]]` (13 instances found)
 - **Correct filename**: `44_Site_Selection_Land_Acquisition.md`
 - **Files affected**: 7 strategic documents
 - **Impact**: Site selection links are broken, users cannot navigate to site selection documentation
@@ -23,8 +23,8 @@ Multiple strategic documents use the short link `[[44_Site_Selection]]` but the 
 ## Desired State
 
 All links to site selection document use the full filename:
-- `[[44_Site_Selection_Land_Acquisition|Site Selection]]` or
-- `[[44_Site_Selection_Land_Acquisition|...]]` (with appropriate display text)
+- `[[strategic/44_Site_Selection_Land_Acquisition|Site Selection]]` or
+- `[[strategic/44_Site_Selection_Land_Acquisition|...]]` (with appropriate display text)
 
 ## Action Required
 
@@ -43,8 +43,8 @@ All links to site selection document use the full filename:
 1. `50_Risk_Assessment.md` - Fix 2 instances
 
 **For each file:**
-1. Find all instances of `[[44_Site_Selection]]` or `[[44_Site_Selection|...]]`
-2. Replace with `[[44_Site_Selection_Land_Acquisition|...]]` (preserve display text)
+1. Find all instances of `[[strategic/44_Site_Selection]]` or `[[strategic/44_Site_Selection|...]]`
+2. Replace with `[[strategic/44_Site_Selection_Land_Acquisition|...]]` (preserve display text)
 3. Verify link works correctly
 
 ## Impact
@@ -70,7 +70,7 @@ All links to site selection document use the full filename:
 - [ ] All 13 instances updated to full filename
 - [ ] All links work correctly
 - [ ] Display text preserved where appropriate
-- [ ] No `[[44_Site_Selection]]` references remain (except in this task file)
+- [ ] No `[[strategic/44_Site_Selection]]` references remain (except in this task file)
 
 ## Estimated Effort
 

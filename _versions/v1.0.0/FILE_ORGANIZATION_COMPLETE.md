@@ -312,15 +312,15 @@
 ## 🔗 Quick Navigation
 
 **Main Entry Point:**
-- [[00_Eco_Balance_Hub|Eco Balance Hub]] - Start here
+- [[strategic/00_Eco_Balance_Hub|Eco Balance Hub]] - Start here
 
 **Documentation:**
-- [[QUICK_REFERENCE_GUIDE|Quick Reference]] - How to navigate
+- [[_process/documentation/QUICK_REFERENCE_GUIDE|Quick Reference]] - How to navigate
 - [[STRUCTURE_VISUAL_GUIDE|Visual Guide]] - Structure diagrams
 
 **Version Info:**
 - [[VERSION|Current Version]] - 1.0.0
-- [[CHANGELOG|Changelog]] - Complete history
+- [[_process/documentation/CHANGELOG|Changelog]] - Complete history
 - [[_versions/v1.0.0/RELEASE_NOTES|Release Notes]] - v1.0.0 details
 
 **Archive:**

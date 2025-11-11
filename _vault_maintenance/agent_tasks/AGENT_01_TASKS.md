@@ -23,49 +23,49 @@ Fix broken cross-references to `60_Marketing_Communications_Strategy.md` through
 **Task ID**: LIB-2025-11-07-003
 
 **Issue**:
-Links reference `[[60_Marketing_Strategy|...]]` but the actual file is `60_Marketing_Communications_Strategy.md`.
+Links reference `[[strategic/60_Marketing_Strategy|...]]` but the actual file is `60_Marketing_Communications_Strategy.md`.
 
 **Files to Update** (10 link instances total):
 
-1. **01_Executive_Summary.md** (line 35)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+1. **strategic/01_Executive_Summary.md** (line 35)
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 2. **02_Project_Vision.md** (line 78)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 3. **02_Project_Vision.md** (line 188)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 4. **03_Success_Factors.md** (line 71)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 5. **03_Success_Factors.md** (line 239)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 6. **04_Current_Status_Assessment.md** (line 230)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 7. **50_Risk_Assessment.md** (line 322)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 8. **51_Key_Performance_Indicators.md** (line 129)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 9. **51_Key_Performance_Indicators.md** (line 275)
-   - FROM: `[[60_Marketing_Strategy|...]]`
-   - TO: `[[60_Marketing_Communications_Strategy|...]]`
+   - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+   - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 10. **51_Key_Performance_Indicators.md** (line 462)
-    - FROM: `[[60_Marketing_Strategy|...]]`
-    - TO: `[[60_Marketing_Communications_Strategy|...]]`
+    - FROM: `[[strategic/60_Marketing_Strategy|...]]`
+    - TO: `[[strategic/60_Marketing_Communications_Strategy|...]]`
 
 ---
 
@@ -100,7 +100,7 @@ Tasks Completed:
 - Fixed 10 broken cross-references to 60_Marketing_Communications_Strategy
 
 Files Modified:
-- 01_Executive_Summary.md (1 link)
+- strategic/01_Executive_Summary.md (1 link)
 - 02_Project_Vision.md (2 links)
 - 03_Success_Factors.md (2 links)
 - 04_Current_Status_Assessment.md (1 link)

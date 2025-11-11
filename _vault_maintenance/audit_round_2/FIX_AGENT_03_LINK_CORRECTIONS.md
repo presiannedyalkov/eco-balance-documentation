@@ -206,7 +206,7 @@ After running automated fixes, manually verify these edge cases:
 
 **Check**: References to `implementation_tasks/README.md`
 **From subdirectory**: `[[../README]]` is CORRECT
-**From root strategic doc**: `[[implementation_tasks/README]]` is CORRECT
+**From root strategic doc**: `[[strategic/restoration_playbook/README]]` is CORRECT
 
 ### 3. Process Documentation Links
 
@@ -216,7 +216,7 @@ After running automated fixes, manually verify these edge cases:
 ### 4. Duplicate Links
 
 Several files were flagged for having duplicate navigation links. While fixing paths, also:
-- Remove duplicate `[[00_Eco_Balance_Hub]]` references
+- Remove duplicate `[[strategic/00_Eco_Balance_Hub]]` references
 - Consolidate repeated "Related Documents" sections
 
 ---

@@ -38,7 +38,7 @@ When ready to merge:
 
 ## ✅ AUDITOR AUDIT TASKS
 
-- [x] **AUDITOR** - File: `00_Eco_Balance_Hub.md`
+- [x] **AUDITOR** - File: `00_Eco_Balance_Hub.md (root)`
   - Check: All data consistent (budgets, scales, timelines), standards compliance
   - Focus: Version numbers, budget figures, scale assumptions all v2.0
   - Result: ⚠️ **CRITICAL ISSUES FOUND** - Added FIX-000 to FIX_TASKS.md
@@ -48,7 +48,7 @@ When ready to merge:
            - Lines 217-221: Year 1 goals all v1.0 (€250k, 5-10 ha, 3 staff) ❌
 
 
-- [x] **AUDITOR** - File: `01_Executive_Summary.md`
+- [x] **AUDITOR** - File: `strategic/01_Executive_Summary.md`
   - Check: Budget figures, scale assumptions, technology specs
   - Focus: Verify if €250-500k (v1.0) or €20-30k (v2.0), land scale, team size
   - Result: ⚠️ **CRITICAL ISSUES** - FIX-001 already exists (Curator identified)
@@ -65,7 +65,7 @@ When ready to merge:
   - Result: ⚠️ **MODERATE ISSUES** - FIX-002 already exists
            - Line 170: "5-10 hectares in Year 1" ❌ v1.0 scale (should be 1 ha)
            - Line 86: "Atmospheric water generation" ❌ v1.0 tech
-           - Broken references: [[41_Phase_1_Foundation]], [[40_Implementation_Roadmap]]
+           - Broken references: [[strategic/41_Phase_1_Foundation]], [[strategic/40_Implementation_Roadmap]]
            - Vision narrative needs Bootstrap adjustment but less severe than 01
 
 

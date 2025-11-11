@@ -13,7 +13,7 @@ eco restoration project/
 │
 ├── 📄 VERSION                          # Current: 2.0.0
 ├── 📄 CHANGELOG.md                     # Complete version history
-├── 📄 00_Eco_Balance_Hub.md            # 🏠 START HERE - Main navigation
+├── 📄 00_Eco_Balance_Hub.md (root)            # 🏠 START HERE - Main navigation
 ├── 📄 QUICK_REFERENCE_GUIDE.md         # How to use documentation
 ├── 📄 STRUCTURE_VISUAL_GUIDE.md        # This file - visual diagrams
 │
@@ -27,7 +27,7 @@ eco restoration project/
 │   ├── 📄 60: Marketing               # Communications strategy
 │   └── 📄 70: Reference               # Case studies
 │
-├── 📁 implementation_tasks/            # 44 detailed execution guides
+├── 📁 strategic/restoration_playbook/            # 44 detailed execution guides
 │   ├── 📄 README.md                   # Hub for all task categories
 │   ├── 📁 site_selection/            # 9 files (00-08)
 │   ├── 📁 reforestation/             # 7 files (00-06)
@@ -69,7 +69,7 @@ eco restoration project/
 
 ```mermaid
 graph TB
-    Hub[00_Eco_Balance_Hub.md<br/>MAIN NAVIGATION]
+    Hub[00_Eco_Balance_Hub.md (root)<br/>MAIN NAVIGATION]
     
     Strategy[Strategic Documents<br/>01-70]
     Tasks[Implementation Tasks<br/>44 files in 6 categories]
@@ -118,7 +118,7 @@ graph TB
 
 ```mermaid
 graph LR
-    Start([New User]) --> Hub[00_Eco_Balance_Hub.md]
+    Start([New User]) --> Hub[00_Eco_Balance_Hub.md (root)]
     
     Hub --> Quick[Quick Reference Guide]
     Hub --> Strategy[Strategic Docs]
@@ -250,7 +250,7 @@ graph TD
 
 ```mermaid
 graph TB
-    TaskHub[implementation_tasks/<br/>README.md]
+    TaskHub[strategic/restoration_playbook/<br/>README.md]
     
     TaskHub --> Site[site_selection/<br/>9 files]
     TaskHub --> Forest[reforestation/<br/>7 files]
@@ -652,7 +652,7 @@ Version Control Files to Update:
 Question: "Where is X?"
 
 Strategic planning?          → Root directory (01-70)
-Implementation guides?       → implementation_tasks/
+Implementation guides?       → strategic/restoration_playbook/
 Version information?         → VERSION, CHANGELOG, _versions/
 Development history?         → _process/
 Templates?                   → _templates/
@@ -781,4 +781,4 @@ This visual guide provides:
 **Status:** Active
 **Aligned with:** Bootstrap Model v2.0
 
-[[00_Eco_Balance_Hub|← Back to Hub]] | [[QUICK_REFERENCE_GUIDE|Quick Reference]] | [[CHANGELOG|Changelog]]
+[[strategic/00_Eco_Balance_Hub|← Back to Hub]] | [[_process/documentation/QUICK_REFERENCE_GUIDE|Quick Reference]] | [[_process/documentation/CHANGELOG|Changelog]]

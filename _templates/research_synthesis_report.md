@@ -461,5 +461,5 @@ Core Concept: [Main Topic - e.g., "Ecosystem Restoration"]
 
 ---
 
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[strategic/00_Eco_Balance_Hub|Project Hub]]**
 **Research Archive:** `_vault_maintenance/research/synthesis_reports/`

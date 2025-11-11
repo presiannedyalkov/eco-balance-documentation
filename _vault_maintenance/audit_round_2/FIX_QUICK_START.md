@@ -36,7 +36,7 @@ Find your agent number and read your specific fix tasks:
 - **FIX-AGENT-01** (CRITICAL): `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/FIX_AGENT_01_BOOTSTRAP_STRATEGIC.md`
   - **Mission**: Fix Bootstrap Model alignment in 5 strategic documents
   - **Issues**: 21 critical/high issues
-  - **Files**: 01_Executive_Summary.md, 02_Project_Vision.md, 00_Eco_Balance_Hub.md, 03_Success_Factors.md, 04_Current_Status_Assessment.md
+  - **Files**: strategic/01_Executive_Summary.md, 02_Project_Vision.md, 00_Eco_Balance_Hub.md (root), 03_Success_Factors.md, 04_Current_Status_Assessment.md
   - **Time**: 4-6 hours
 
 - **FIX-AGENT-02** (CRITICAL): `/home/presi/projects/eco-balance-documentation/_vault_maintenance/audit_round_2/FIX_AGENT_02_BOOTSTRAP_IMPLEMENTATION.md`

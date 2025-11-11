@@ -17,7 +17,7 @@ Fresh comprehensive navigation audit completed. **977 broken links found out of 
 ## Findings by Category
 
 ### Index Status
-**Index Files**: 1 (00_Eco_Balance_Hub.md serves as main index)  
+**Index Files**: 1 (00_Eco_Balance_Hub.md (root) serves as main index)  
 **Total Indexed Items**: 24 strategic documents + 44 implementation tasks = 68 core documents  
 **Unindexed Content**: Process documentation, vault maintenance files (expected)  
 **Outdated Entries**: Hub still contains 6 references to v1.0.0 (should reference v2.0.0 or be archived references)  
@@ -37,8 +37,8 @@ Fresh comprehensive navigation audit completed. **977 broken links found out of 
    - `30_Business_Model.md:45`: `[[21_Technology_Integration\]\]` (escaped)
 
 2. **VERSION file links** (8 instances):
-   - `00_Eco_Balance_Hub.md`: 7 instances of `[[VERSION]]`
-   - `01_Executive_Summary.md`: 1 instance
+   - `00_Eco_Balance_Hub.md (root)`: 7 instances of `[[VERSION]]`
+   - `strategic/01_Executive_Summary.md`: 1 instance
    - `ROADMAP.md`: 1 instance
    - **Issue**: VERSION is a plain text file (not .md), so wiki links won't work in Obsidian
 
@@ -47,17 +47,17 @@ Fresh comprehensive navigation audit completed. **977 broken links found out of 
    - Should link to `_vault_maintenance/assumptions_audit/TOP_ASSUMPTIONS.md` or similar
 
 4. **Section links to verify** (2 instances):
-   - `70_Case_Studies_Restoration_Examples.md:85`: `[[20_Restoration_Methodology#Community Engagement]]`
-   - `70_Case_Studies_Restoration_Examples.md:376`: `[[30_Business_Model#Eco-Tourism]]`
+   - `70_Case_Studies_Restoration_Examples.md:85`: `[[strategic/20_Restoration_Methodology#Community Engagement]]`
+   - `70_Case_Studies_Restoration_Examples.md:376`: `[[strategic/30_Business_Model#Eco-Tourism]]`
    - **Issue**: Need to verify these section headings exist in target files
 
 5. **Example/placeholder links** (3 instances):
-   - `00_Eco_Balance_Hub.md:351`: `[[wiki-link]]` (example, not real)
+   - `00_Eco_Balance_Hub.md (root):351`: `[[wiki-link]]` (example, not real)
    - `QUICK_REFERENCE_GUIDE.md:208`: `[[link]]` (example)
    - `QUICK_REFERENCE_GUIDE.md:549`: `[[filename]]` (example)
 
 ### Navigation Structure
-**Hub Pages**: 1 (00_Eco_Balance_Hub.md) - ⚠️ Contains outdated v1.0.0 references  
+**Hub Pages**: 1 (00_Eco_Balance_Hub.md (root)) - ⚠️ Contains outdated v1.0.0 references  
 **README Files**: Multiple in subdirectories - ✅ Present  
 **Navigation Gaps**: 
 - Outdated version references in hub (6 instances of v1.0.0)
@@ -99,11 +99,11 @@ Fresh comprehensive navigation audit completed. **977 broken links found out of 
 ### Section Link Verification Needed
 
 1. **Community Engagement Section** (MEDIUM)
-   - `70_Case_Studies_Restoration_Examples.md` links to `[[20_Restoration_Methodology#Community Engagement]]`
+   - `70_Case_Studies_Restoration_Examples.md` links to `[[strategic/20_Restoration_Methodology#Community Engagement]]`
    - Need to verify this heading exists
 
 2. **Eco-Tourism Section** (MEDIUM)
-   - `70_Case_Studies_Restoration_Examples.md` links to `[[30_Business_Model#Eco-Tourism]]`
+   - `70_Case_Studies_Restoration_Examples.md` links to `[[strategic/30_Business_Model#Eco-Tourism]]`
    - Need to verify this heading exists
 
 ### Outdated References
@@ -180,9 +180,9 @@ Fresh comprehensive navigation audit completed. **977 broken links found out of 
 ## Link Maintenance Plan
 
 ### Critical Links to Fix
-1. `20_Restoration_Methodology.md:960`: `\[\[21_Technology_Integration\]\]` → `[[21_Technology_Integration]]`
-2. `30_Business_Model.md:41`: `\[\[45_Tiny_House_and_Living_Infrastructure\]\]` → `[[45_Tiny_House_and_Living_Infrastructure]]`
-3. `30_Business_Model.md:45`: `\[\[21_Technology_Integration\]\]` → `[[21_Technology_Integration]]`
+1. `20_Restoration_Methodology.md:960`: `\[\[21_Technology_Integration\]\]` → `[[strategic/21_Technology_Integration]]`
+2. `30_Business_Model.md:41`: `\[\[45_Tiny_House_and_Living_Infrastructure\]\]` → `[[strategic/45_Tiny_House_and_Living_Infrastructure]]`
+3. `30_Business_Model.md:45`: `\[\[21_Technology_Integration\]\]` → `[[strategic/21_Technology_Integration]]`
 4. `ROADMAP.md:38`: `[[_vault_maintenance/ASSUMPTIONS_AUDIT_SUMMARY]]` → Correct path or remove
 
 ### VERSION File Links
