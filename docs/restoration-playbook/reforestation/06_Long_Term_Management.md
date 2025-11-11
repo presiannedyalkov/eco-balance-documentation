@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook/reforestation/06_Long_Term_Management
 title: Long Term Management
 sidebar_position: 6
 ---

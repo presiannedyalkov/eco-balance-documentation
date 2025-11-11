@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook/biodiversity/02_Restore_Habitats
 title: Restore Habitats
 sidebar_position: 2
 ---

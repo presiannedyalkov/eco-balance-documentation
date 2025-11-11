@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook/biodiversity/04_Manage_Invasive_Species
 title: Manage Invasive Species
 sidebar_position: 4
 ---

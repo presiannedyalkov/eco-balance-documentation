@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook/site_selection/03_Estimate_Restoration_Potential
 title: Estimate Restoration Potential
 sidebar_position: 3
 ---

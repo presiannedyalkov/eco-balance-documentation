@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook/soil_restoration/04_Rotate_Crops
 title: Rotate Crops
 sidebar_position: 4
 ---

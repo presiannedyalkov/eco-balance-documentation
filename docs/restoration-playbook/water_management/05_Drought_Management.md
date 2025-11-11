@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook/water_management/05_Drought_Management
 title: Drought Management
 sidebar_position: 5
 ---

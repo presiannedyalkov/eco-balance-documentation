@@ -35,9 +35,9 @@ The world faces interconnected environmental crises that threaten our future:
 
 ---
 
-## Our Core Vision (Immutable - This Will Not Change)
+## Our Core Vision
 
-> **Our Core Vision** (Immutable - This will not change):
+> **Our Core Vision**:
 > 
 > Create a **habitat for wildlife** and **restore land to become a shelter and sanctuary for wildlife**. Through different trees, plants, mushrooms, and diverse areas, we promote different habitats and increase biodiversity. This is our primary purpose - to provide sanctuary and shelter for wildlife in the face of climate change and mass extinction.
 

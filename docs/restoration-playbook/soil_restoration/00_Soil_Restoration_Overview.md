@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook/soil_restoration/00_Soil_Restoration_Overview
 title: Soil Restoration Overview
 sidebar_position: 0
 ---
