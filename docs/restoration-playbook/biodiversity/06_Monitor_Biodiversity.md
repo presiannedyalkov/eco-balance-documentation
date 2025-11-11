@@ -152,7 +152,7 @@ These must be followed - they are based on scientific consensus:
 - Trophic structure (predators, prey, plants)
 
 **Establish Baselines:**
-- Conduct initial comprehensive assessment → [Assess Biodiversity](../../01_Assess_Biodiversity)
+- Conduct initial comprehensive assessment → [Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)
 - Document starting conditions
 - Set measurable targets
 - Define success criteria

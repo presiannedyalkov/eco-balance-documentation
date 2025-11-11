@@ -46,61 +46,61 @@ Create a **habitat for wildlife** and **restore land to become a shelter and san
 
 **What we need:** Support to find the right ways, ask the right questions, and organize properly. We need help exploring options, not prescriptive plans with concrete dates and costs.
 
-→ See Current Status for detailed assessment
+→ See [Current Status](/vision-strategy/current-status) for detailed assessment
 
 ---
 
 ## 📋 Quick Navigation
 
 ### Core Strategy
-- Executive Summary - Vision, mission, investment ask
-- Project Vision & Context - Global challenge, solution, geography
-- Success Factors & Assumptions - What makes or breaks this project
-- Current Status - Where we are, what's needed
+- [Executive Summary](/vision-strategy/executive-summary) - Vision, mission, investment ask
+- [Project Vision & Context](/vision-strategy/project-vision) - Global challenge, solution, geography
+- [Success Factors & Assumptions](/vision-strategy/success-factors) - What makes or breaks this project
+- [Current Status](/vision-strategy/current-status) - Where we are, what's needed
 
 ### Organization
-- Organizational Structure - Legal entity setup and structure
-- Governance Framework - Board, decision-making, accountability
-- Team & Roles - Staffing plan, roles, hiring timeline
-- Legal Framework - Regulatory compliance, permits
+- [Organizational Structure](/organization/organizational-structure) - Legal entity setup and structure
+- [Governance Framework](/organization/governance) - Board, decision-making, accountability
+- [Team & Roles](/organization/team-roles) - Staffing plan, roles, hiring timeline
+- [Legal Framework](/organization/legal-framework) - Regulatory compliance, permits
 
 ### Operations
-- Restoration Methodology - Location-adaptive restoration methods
-- Technology Integration - Solar, water, and monitoring systems
-- Restoration Challenges & Solutions - Common challenges and solutions
+- [Restoration Methodology](/operations/restoration-methodology) - Location-adaptive restoration methods
+- [Technology Integration](/operations/technology-integration) - Solar, water, and monitoring systems
+- [Restoration Challenges & Solutions](/operations/challenges-solutions) - Common challenges and solutions
 
 ### Business
-- Business Model - Revenue streams and financial sustainability
-- Financial Projections - Financial scenarios and projections
-- Funding Strategy - Bootstrap funding pathways and strategies
+- [Business Model](/business/business-model) - Revenue streams and financial sustainability
+- [Financial Projections](/business/financial-projections) - Financial scenarios and projections
+- [Funding Strategy](/business/funding-strategy) - Bootstrap funding pathways and strategies
 
 ### Growth
-- Expansion Strategy - Scaling approach and growth phases
-- Site Selection - Geographic options and land acquisition
-- Adaptive Timeline - Phased implementation approach
-- Operations Action Plan - Day-to-day operations guide
-- Tiny House Infrastructure - Off-grid living specifications
+- [Expansion Strategy](/growth/expansion-strategy) - Scaling approach and growth phases
+- [Site Selection](/growth/site-selection) - Geographic options and land acquisition
+- [Adaptive Timeline](/growth/adaptive-timeline) - Phased implementation approach
+- [Operations Action Plan](/growth/operations-action-plan) - Day-to-day operations guide
+- [Tiny House Infrastructure](/growth/tiny-house-infrastructure) - Off-grid living specifications
 
 ### Performance
-- Risk Assessment - Risk management and mitigation strategies
-- Key Performance Indicators - Metrics and success measurement
+- [Risk Assessment](/performance/risk-assessment) - Risk management and mitigation strategies
+- [Key Performance Indicators](/performance/kpis) - Metrics and success measurement
 
 ### Engagement
-- Marketing & Communications - Outreach and community engagement
+- [Marketing & Communications](/engagement/marketing-communications) - Outreach and community engagement
 
 ### Learning
-- Case Studies & Examples - Restoration project references
+- [Case Studies & Examples](/learning/case-studies) - Restoration project references
 
 ### Plans & Templates
-- Restoration Playbook - Complete project template for ecological restoration (44 tasks across 6 phases)
+- [Restoration Playbook](/restoration-playbook/README) - Complete project template for ecological restoration (44 tasks across 6 phases)
   - This is the **Plan** part of Vision → Plan → Reality
   - Template/playbook to customize for your specific project
   - When you start your actual project, copy this to your project folder
 
 ### Resources
-- Quick Reference Guide - How to use this documentation
-- Roadmap - Multi-year vision, phases, and current blockers
-- Feature Wishlist - Desired enhancements and future ideas
+- [Quick Reference Guide](/resources/quick-reference) - How to use this documentation
+- [Roadmap](/resources/roadmap) - Multi-year vision, phases, and current blockers
+- [Feature Wishlist](/resources/feature-wishlist) - Desired enhancements and future ideas
 
 ---
 

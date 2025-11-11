@@ -266,7 +266,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once tillage is reduced:
-→ [Task 4: Rotate Crops](../../04_Rotate_Crops)
+→ [Task 4: Rotate Crops](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-04_Rotate_Crops)
 
 ---
 

@@ -257,7 +257,7 @@ These must be followed - they are based on scientific and ethical consensus:
 ## Next Steps
 
 Once stakeholders are identified:
-→ [Task 2: Communicate Plans](../../02_Communicate_Plans)
+→ [Task 2: Communicate Plans](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-02_Communicate_Plans)
 
 ---
 

@@ -10,7 +10,7 @@ sidebar_position: 0
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
-[]( )| [Project Hub](../../00_Eco_Balance_Hub)
+[]( )| [Project Hub](/)
 
 ---
 
@@ -109,7 +109,7 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ### Phase 1: Assessment & Planning (Months 1-3)
 
-1. **[Assess Biodiversity](../../01_Assess_Biodiversity)**
+1. **[Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)**
    - Baseline species inventory
    - Habitat mapping
    - Identify key species and threats
@@ -117,13 +117,13 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ### Phase 2: Habitat Creation (Months 3-12)
 
-2. **[Restore Habitats](../../02_Restore_Habitats)**
+2. **[Restore Habitats](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-02_Restore_Habitats)**
    - Create diverse microhabitats
    - Restore damaged areas
    - Enhance existing habitats
    - *Duration: 6-12 months*
 
-3. **[Create Protected Areas](../../03_Create_Protected_Areas)**
+3. **[Create Protected Areas](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-03_Create_Protected_Areas)**
    - Designate sensitive zones
    - Minimize human disturbance
    - Establish management protocols
@@ -131,19 +131,19 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ### Phase 3: Active Management (Ongoing)
 
-4. **[Manage Invasive Species](../../04_Manage_Invasive_Species)**
+4. **[Manage Invasive Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-04_Manage_Invasive_Species)**
    - Identify and remove invasives
    - Prevent new introductions
    - Monitor for re-establishment
    - *Frequency: Monthly to quarterly checks*
 
-5. **[Reintroduce Lost Species](../../05_Reintroduce_Lost_Species)** *(Long-term)*
+5. **[Reintroduce Lost Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-05_Reintroduce_Lost_Species)** *(Long-term)*
    - Research historical species
    - Plan reintroduction programs
    - Partner with conservation organizations
    - *Timeline: Years 3-5+*
 
-6. **[Monitor Biodiversity](../../06_Monitor_Biodiversity)**
+6. **[Monitor Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-06_Monitor_Biodiversity)**
    - Regular surveys and observations
    - Track population trends
    - Document ecosystem changes
@@ -153,13 +153,13 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 🔗 Integration with Other Phases
 
-**Reforestation:** Trees create habitat → [Reforestation](../reforestation/00_Reforestation_Overview)
+**Reforestation:** Trees create habitat → [Reforestation](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview)
 
-**Soil Health:** Soil biodiversity supports above-ground life → [Soil Restoration](../soil_restoration/00_Soil_Restoration_Overview)
+**Soil Health:** Soil biodiversity supports above-ground life → [Soil Restoration](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview)
 
-**Water:** Wetlands and ponds support aquatic biodiversity → [Water Management](../water_management/00_Water_Management_Overview)
+**Water:** Wetlands and ponds support aquatic biodiversity → [Water Management](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview)
 
-**Community:** Local knowledge and participation → [Community Engagement](../community_engagement/00_Community_Engagement_Overview)
+**Community:** Local knowledge and participation → [Community Engagement](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)
 
 ---
 
@@ -197,12 +197,12 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 📚 Task Files
 
-1. [Assess Biodiversity](../../01_Assess_Biodiversity)
-2. [Restore Habitats](../../02_Restore_Habitats)
-3. [Create Protected Areas](../../03_Create_Protected_Areas)
-4. [Manage Invasive Species](../../04_Manage_Invasive_Species)
-5. [Reintroduce Lost Species](../../05_Reintroduce_Lost_Species)
-6. [Monitor Biodiversity](../../06_Monitor_Biodiversity)
+1. [Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)
+2. [Restore Habitats](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-02_Restore_Habitats)
+3. [Create Protected Areas](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-03_Create_Protected_Areas)
+4. [Manage Invasive Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-04_Manage_Invasive_Species)
+5. [Reintroduce Lost Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-05_Reintroduce_Lost_Species)
+6. [Monitor Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-06_Monitor_Biodiversity)
 
 ---
 

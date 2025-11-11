@@ -252,7 +252,7 @@ These must be followed - they are based on practical and operational consensus:
 ## Next Steps
 
 Once accessibility is assessed:
-→ [Step 5: Research Local Regulations](../../05_Research_Local_Regulations)
+→ [Step 5: Research Local Regulations](/restoration-playbook/site_selection/restoration-playbook-site_selection-05_Research_Local_Regulations)
 
 ---
 

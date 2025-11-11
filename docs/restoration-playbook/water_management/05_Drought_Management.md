@@ -155,8 +155,8 @@ These must be followed - they are based on scientific consensus:
 **Site-level strategies:**
 
 **Maximize water capture and retention:**
-- Implement all [rainwater harvesting](../../02_Rainwater_Harvesting) strategies
-- Build adequate [water storage](../../03_Build_Water_Storage_Structures)
+- Implement all [rainwater harvesting](/restoration-playbook/water_management/restoration-playbook-water_management-02_Rainwater_Harvesting) strategies
+- Build adequate [water storage](/restoration-playbook/water_management/restoration-playbook-water_management-03_Build_Water_Storage_Structures)
 - Create swales and berms to slow and sink water
 - Increase soil organic matter (each 1% holds significant water)
 - Mulch all bare soil to reduce evaporation
@@ -179,7 +179,7 @@ These must be followed - they are based on scientific consensus:
 
 **Improve soil water efficiency:**
 - Deep, well-structured soil holds more water
-- Follow all [soil restoration](../soil_restoration/00_Soil_Restoration_Overview) practices
+- Follow all [soil restoration](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview) practices
 - Mycorrhizal fungi extend water access
 - Reduce compaction for better infiltration
 - Clay soils hold water better than sand
@@ -202,7 +202,7 @@ These must be followed - they are based on scientific consensus:
 ### Step 4: Implement Water Conservation
 
 **Irrigation efficiency:**
-- Use efficient irrigation methods → [Efficient Irrigation](../../04_Efficient_Irrigation)
+- Use efficient irrigation methods → [Efficient Irrigation](/restoration-playbook/water_management/restoration-playbook-water_management-04_Efficient_Irrigation)
 - Drip irrigation for targeted delivery
 - Water only when necessary
 - Monitor soil moisture
@@ -296,7 +296,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once drought management is established:
-→ [Task 6: Monitor Water Use](../../06_Monitor_Water_Use)
+→ [Task 6: Monitor Water Use](/restoration-playbook/water_management/restoration-playbook-water_management-06_Monitor_Water_Use)
 
 ---
 

@@ -283,7 +283,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once restoration potential is estimated:
-→ [Step 4: Consider Accessibility](../../04_Consider_Accessibility)
+→ [Step 4: Consider Accessibility](/restoration-playbook/site_selection/restoration-playbook-site_selection-04_Consider_Accessibility)
 
 ---
 

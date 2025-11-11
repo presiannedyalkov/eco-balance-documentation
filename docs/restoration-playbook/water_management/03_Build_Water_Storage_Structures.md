@@ -340,7 +340,7 @@ These must be followed - they are based on scientific and practical consensus:
 ## Next Steps
 
 Once water storage is built:
-→ [Task 4: Efficient Irrigation](../../04_Efficient_Irrigation)
+→ [Task 4: Efficient Irrigation](/restoration-playbook/water_management/restoration-playbook-water_management-04_Efficient_Irrigation)
 
 ---
 

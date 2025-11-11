@@ -368,7 +368,7 @@ These must be followed - they are based on scientific and ethical consensus:
 ## Next Steps
 
 Once community education is established:
-→ [Task 4: Involve Community](../../04_Involve_Community)
+→ [Task 4: Involve Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-04_Involve_Community)
 
 ---
 

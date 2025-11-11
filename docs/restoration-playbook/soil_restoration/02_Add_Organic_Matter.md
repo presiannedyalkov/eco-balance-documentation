@@ -324,7 +324,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once organic matter is added:
-→ [Task 3: Reduce Tillage](../../03_Reduce_Tillage)
+→ [Task 3: Reduce Tillage](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-03_Reduce_Tillage)
 
 ---
 

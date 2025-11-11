@@ -246,7 +246,7 @@ Create list of potential regions based on:
 ## Next Steps
 
 Once potential locations are identified:
-→ [Step 2: Evaluate Land Condition](../../02_Evaluate_Land_Condition)
+→ [Step 2: Evaluate Land Condition](/restoration-playbook/site_selection/restoration-playbook-site_selection-02_Evaluate_Land_Condition)
 
 ---
 

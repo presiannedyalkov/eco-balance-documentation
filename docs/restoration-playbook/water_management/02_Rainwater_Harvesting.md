@@ -212,7 +212,7 @@ Simplified: **Catchment Area (m²) × Rainfall (mm) = Liters captured**
 - Inline filters before storage
 - Regular cleaning essential
 
-**5. Storage (see [Build Water Storage Structures](../../03_Build_Water_Storage_Structures)):**
+**5. Storage (see [Build Water Storage Structures](/restoration-playbook/water_management/restoration-playbook-water_management-03_Build_Water_Storage_Structures)):**
 - Tanks, cisterns, or ponds
 - Size based on supply and demand analysis
 - Covered to prevent algae, mosquitoes, evaporation
@@ -354,7 +354,7 @@ Simplified: **Catchment Area (m²) × Rainfall (mm) = Liters captured**
 ## Next Steps
 
 Once rainwater harvesting is implemented:
-→ [Task 3: Build Water Storage Structures](../../03_Build_Water_Storage_Structures)
+→ [Task 3: Build Water Storage Structures](/restoration-playbook/water_management/restoration-playbook-water_management-03_Build_Water_Storage_Structures)
 
 ---
 

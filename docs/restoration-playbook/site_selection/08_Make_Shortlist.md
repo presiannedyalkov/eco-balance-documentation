@@ -130,13 +130,13 @@ These must be followed - they are based on practical and strategic consensus:
 ### Step 1: Compile All Site Data
 
 **Gather Information:**
-- Desk research findings → [Initial Research](../../01_Identify_Potential_Locations)
-- Land condition assessments → [Land Evaluation](../../02_Evaluate_Land_Condition)
-- Restoration potential estimates → [Restoration Potential](../../03_Estimate_Restoration_Potential)
-- Accessibility evaluations → [Accessibility](../../04_Consider_Accessibility)
-- Regulatory research → [Regulations](../../05_Research_Local_Regulations)
-- Landowner communication notes → [Landowner Contact](../../06_Contact_Landowners)
-- Site visit reports → [Site Visits](../../07_Visit_Sites)
+- Desk research findings → [Initial Research](/restoration-playbook/site_selection/restoration-playbook-site_selection-01_Identify_Potential_Locations)
+- Land condition assessments → [Land Evaluation](/restoration-playbook/site_selection/restoration-playbook-site_selection-02_Evaluate_Land_Condition)
+- Restoration potential estimates → [Restoration Potential](/restoration-playbook/site_selection/restoration-playbook-site_selection-03_Estimate_Restoration_Potential)
+- Accessibility evaluations → [Accessibility](/restoration-playbook/site_selection/restoration-playbook-site_selection-04_Consider_Accessibility)
+- Regulatory research → [Regulations](/restoration-playbook/site_selection/restoration-playbook-site_selection-05_Research_Local_Regulations)
+- Landowner communication notes → [Landowner Contact](/restoration-playbook/site_selection/restoration-playbook-site_selection-06_Contact_Landowners)
+- Site visit reports → [Site Visits](/restoration-playbook/site_selection/restoration-playbook-site_selection-07_Visit_Sites)
 
 **Create Master Spreadsheet:**
 - List all candidate sites

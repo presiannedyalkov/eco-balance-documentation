@@ -10,7 +10,7 @@ sidebar_position: 0
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
-[]( )| [Project Hub](../../00_Eco_Balance_Hub)
+[]( )| [Project Hub](/)
 
 ---
 
@@ -131,18 +131,18 @@ These are the constraints based on scientific consensus that cannot be compromis
 ## 📋 Implementation Process
 
 ### Phase 1: Stakeholder Identification (Weeks 1-2)
-1. **[Identify Stakeholders](../../01_Identify_Stakeholders)** - Map all relevant stakeholders and understand community context
+1. **[Identify Stakeholders](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-01_Identify_Stakeholders)** - Map all relevant stakeholders and understand community context
 
 ### Phase 2: Communication & Education (Weeks 3-12)
-2. **[Communicate Plans](../../02_Communicate_Plans)** - Share project vision and seek community input
-3. **[Educate Community](../../03_Educate_Community)** - Build understanding of restoration principles and benefits
+2. **[Communicate Plans](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-02_Communicate_Plans)** - Share project vision and seek community input
+3. **[Educate Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-03_Educate_Community)** - Build understanding of restoration principles and benefits
 
 ### Phase 3: Active Involvement (Implementation Period)
-4. **[Involve Community](../../04_Involve_Community)** - Engage community in restoration activities
+4. **[Involve Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-04_Involve_Community)** - Engage community in restoration activities
 
 ### Phase 4: Benefit Sharing & Maintenance (Ongoing)
-5. **[Share Benefits](../../05_Share_Benefits)** - Ensure community receives benefits from restoration
-6. **[Maintain Communication](../../06_Maintain_Communication)** - Keep relationships and communication ongoing
+5. **[Share Benefits](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-05_Share_Benefits)** - Ensure community receives benefits from restoration
+6. **[Maintain Communication](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-06_Maintain_Communication)** - Keep relationships and communication ongoing
 
 ---
 
@@ -204,15 +204,15 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 **All Phases:** Community engagement supports and enhances all restoration activities
 
-**Site Selection:** Community input shapes site selection → [Site Selection](../site_selection/00_Site_Selection_Overview)
+**Site Selection:** Community input shapes site selection → [Site Selection](/restoration-playbook/site_selection/restoration-playbook-site_selection-00_Site_Selection_Overview)
 
-**Reforestation:** Community involvement in planting activities → [Reforestation](../reforestation/00_Reforestation_Overview)
+**Reforestation:** Community involvement in planting activities → [Reforestation](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview)
 
-**Biodiversity:** Local knowledge improves species selection → [Biodiversity Conservation](../biodiversity/00_Biodiversity_Overview)
+**Biodiversity:** Local knowledge improves species selection → [Biodiversity Conservation](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)
 
-**Soil Restoration:** Community work days for soil improvement → [Soil Restoration](../soil_restoration/00_Soil_Restoration_Overview)
+**Soil Restoration:** Community work days for soil improvement → [Soil Restoration](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview)
 
-**Water Management:** Community input on water priorities → [Water Management](../water_management/00_Water_Management_Overview)
+**Water Management:** Community input on water priorities → [Water Management](/restoration-playbook/water_management/restoration-playbook-water_management-00_Water_Management_Overview)
 
 ---
 
@@ -238,12 +238,12 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 📚 Task Files
 
-1. [Identify Stakeholders](../../01_Identify_Stakeholders)
-2. [Communicate Plans](../../02_Communicate_Plans)
-3. [Educate Community](../../03_Educate_Community)
-4. [Involve Community](../../04_Involve_Community)
-5. [Share Benefits](../../05_Share_Benefits)
-6. [Maintain Communication](../../06_Maintain_Communication)
+1. [Identify Stakeholders](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-01_Identify_Stakeholders)
+2. [Communicate Plans](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-02_Communicate_Plans)
+3. [Educate Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-03_Educate_Community)
+4. [Involve Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-04_Involve_Community)
+5. [Share Benefits](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-05_Share_Benefits)
+6. [Maintain Communication](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-06_Maintain_Communication)
 
 ---
 

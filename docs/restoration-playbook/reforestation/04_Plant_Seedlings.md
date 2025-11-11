@@ -229,7 +229,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once seedlings are planted:
-→ [Task 5: Monitor Growth](../../05_Monitor_Growth)
+→ [Task 5: Monitor Growth](/restoration-playbook/reforestation/restoration-playbook-reforestation-05_Monitor_Growth)
 
 ---
 

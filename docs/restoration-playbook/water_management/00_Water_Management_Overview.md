@@ -10,7 +10,7 @@ sidebar_position: 0
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
-[]( )| [Project Hub](../../00_Eco_Balance_Hub)
+[]( )| [Project Hub](/)
 
 ---
 
@@ -130,32 +130,32 @@ These are the constraints based on scientific consensus that cannot be compromis
 ## 📋 Implementation Process
 
 ### Phase 1: Assessment
-1. **[Assess Water Needs](../../01_Assess_Water_Needs)** - Understand precipitation patterns, soil water-holding capacity, plant water requirements, and current water availability
+1. **[Assess Water Needs](/restoration-playbook/water_management/restoration-playbook-water_management-01_Assess_Water_Needs)** - Understand precipitation patterns, soil water-holding capacity, plant water requirements, and current water availability
 
 ### Phase 2: Capture & Storage
-2. **[Rainwater Harvesting](../../02_Rainwater_Harvesting)** - Implement systems to capture and direct rainfall
-3. **[Build Water Storage Structures](../../03_Build_Water_Storage_Structures)** - Create ponds, swales, tanks, or other storage solutions
+2. **[Rainwater Harvesting](/restoration-playbook/water_management/restoration-playbook-water_management-02_Rainwater_Harvesting)** - Implement systems to capture and direct rainfall
+3. **[Build Water Storage Structures](/restoration-playbook/water_management/restoration-playbook-water_management-03_Build_Water_Storage_Structures)** - Create ponds, swales, tanks, or other storage solutions
 
 ### Phase 3: Efficient Use
-4. **[Efficient Irrigation](../../04_Efficient_Irrigation)** - Design and implement water-wise irrigation when needed
-5. **[Drought Management](../../05_Drought_Management)** - Prepare for and manage through dry periods
+4. **[Efficient Irrigation](/restoration-playbook/water_management/restoration-playbook-water_management-04_Efficient_Irrigation)** - Design and implement water-wise irrigation when needed
+5. **[Drought Management](/restoration-playbook/water_management/restoration-playbook-water_management-05_Drought_Management)** - Prepare for and manage through dry periods
 
 ### Phase 4: Monitoring
-6. **[Monitor Water Use](../../06_Monitor_Water_Use)** - Track water inputs, usage, and efficiency over time
+6. **[Monitor Water Use](/restoration-playbook/water_management/restoration-playbook-water_management-06_Monitor_Water_Use)** - Track water inputs, usage, and efficiency over time
 
 ---
 
 ## 🔗 Integration with Other Phases
 
-**Site Selection:** Site determines water availability and needs → [Site Selection](../site_selection/00_Site_Selection_Overview)
+**Site Selection:** Site determines water availability and needs → [Site Selection](/restoration-playbook/site_selection/restoration-playbook-site_selection-00_Site_Selection_Overview)
 
-**Soil Health:** Soil health affects water retention → [Soil Restoration](../soil_restoration/00_Soil_Restoration_Overview)
+**Soil Health:** Soil health affects water retention → [Soil Restoration](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-00_Soil_Restoration_Overview)
 
-**Reforestation:** Trees need water for establishment → [Reforestation](../reforestation/00_Reforestation_Overview)
+**Reforestation:** Trees need water for establishment → [Reforestation](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview)
 
-**Biodiversity:** Water features create habitat diversity → [Biodiversity Conservation](../biodiversity/00_Biodiversity_Overview)
+**Biodiversity:** Water features create habitat diversity → [Biodiversity Conservation](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-00_Biodiversity_Overview)
 
-**Community Engagement:** Water management can provide community benefits → [Community Engagement](../community_engagement/00_Community_Engagement_Overview)
+**Community Engagement:** Water management can provide community benefits → [Community Engagement](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)
 
 ---
 
@@ -181,12 +181,12 @@ These are the constraints based on scientific consensus that cannot be compromis
 
 ## 📚 Task Files
 
-1. [Assess Water Needs](../../01_Assess_Water_Needs)
-2. [Rainwater Harvesting](../../02_Rainwater_Harvesting)
-3. [Build Water Storage Structures](../../03_Build_Water_Storage_Structures)
-4. [Efficient Irrigation](../../04_Efficient_Irrigation)
-5. [Drought Management](../../05_Drought_Management)
-6. [Monitor Water Use](../../06_Monitor_Water_Use)
+1. [Assess Water Needs](/restoration-playbook/water_management/restoration-playbook-water_management-01_Assess_Water_Needs)
+2. [Rainwater Harvesting](/restoration-playbook/water_management/restoration-playbook-water_management-02_Rainwater_Harvesting)
+3. [Build Water Storage Structures](/restoration-playbook/water_management/restoration-playbook-water_management-03_Build_Water_Storage_Structures)
+4. [Efficient Irrigation](/restoration-playbook/water_management/restoration-playbook-water_management-04_Efficient_Irrigation)
+5. [Drought Management](/restoration-playbook/water_management/restoration-playbook-water_management-05_Drought_Management)
+6. [Monitor Water Use](/restoration-playbook/water_management/restoration-playbook-water_management-06_Monitor_Water_Use)
 
 ---
 

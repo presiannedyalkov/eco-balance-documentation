@@ -308,7 +308,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once crop rotation is established:
-→ [Task 5: Manage Pests and Diseases](../../05_Manage_Pests_Diseases)
+→ [Task 5: Manage Pests and Diseases](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-05_Manage_Pests_Diseases)
 
 ---
 

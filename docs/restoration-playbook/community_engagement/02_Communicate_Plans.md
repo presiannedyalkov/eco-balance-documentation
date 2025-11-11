@@ -395,7 +395,7 @@ These must be followed - they are based on scientific and ethical consensus:
 ## Next Steps
 
 Once plans are communicated:
-→ [Task 3: Educate Community](../../03_Educate_Community)
+→ [Task 3: Educate Community](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-03_Educate_Community)
 
 ---
 

@@ -145,7 +145,7 @@ These must be followed - they are based on scientific consensus:
 - Microbial activity
 - Contamination screening
 
-→ Details: [Assess Soil Health](../soil_restoration/01_Assess_Soil_Health)
+→ Details: [Assess Soil Health](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-01_Assess_Soil_Health)
 
 ### Step 3: Vegetation Survey
 
@@ -163,7 +163,7 @@ These must be followed - they are based on scientific consensus:
 - Evaluate groundwater depth
 - Check rainfall data
 
-→ Related: [Assess Water Needs](../water_management/01_Assess_Water_Needs)
+→ Related: [Assess Water Needs](/restoration-playbook/water_management/restoration-playbook-water_management-01_Assess_Water_Needs)
 
 ### Step 5: Topography & Microclimate
 
@@ -189,7 +189,7 @@ These must be followed - they are based on scientific consensus:
 - Remnant species of value
 - Connectivity to natural areas
 
-→ Details: [Assess Biodiversity](../biodiversity/01_Assess_Biodiversity)
+→ Details: [Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)
 
 ### Step 8: Documentation
 
@@ -224,7 +224,7 @@ These must be followed - they are based on scientific consensus:
 ## Next Steps
 
 Once land condition is evaluated:
-→ [Step 3: Estimate Restoration Potential](../../03_Estimate_Restoration_Potential)
+→ [Step 3: Estimate Restoration Potential](/restoration-playbook/site_selection/restoration-playbook-site_selection-03_Estimate_Restoration_Potential)
 
 ---
 

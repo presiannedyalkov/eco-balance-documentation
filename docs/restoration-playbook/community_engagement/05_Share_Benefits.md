@@ -321,7 +321,7 @@ These must be followed - they are based on ethical and practical consensus:
 ## Next Steps
 
 Once benefits are shared:
-→ [Task 6: Maintain Communication](../../06_Maintain_Communication)
+→ [Task 6: Maintain Communication](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-06_Maintain_Communication)
 
 ---
 

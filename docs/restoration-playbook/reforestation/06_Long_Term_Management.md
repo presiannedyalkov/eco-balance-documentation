@@ -352,7 +352,7 @@ These must be followed - they are based on scientific consensus:
 - Share success stories
 - Build long-term relationships
 
-→ Reference: [Community Engagement](../community_engagement/00_Community_Engagement_Overview)
+→ Reference: [Community Engagement](/restoration-playbook/community_engagement/restoration-playbook-community_engagement-00_Community_Engagement_Overview)
 
 ### Step 8: Documentation and Learning
 

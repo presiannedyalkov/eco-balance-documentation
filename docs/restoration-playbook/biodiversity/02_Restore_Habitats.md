@@ -144,7 +144,7 @@ These must be followed - they are based on scientific consensus:
 - Determine which can be restored vs. created new
 
 **Target Species Needs:**
-- Based on biodiversity assessment → [Assess Biodiversity](../../01_Assess_Biodiversity)
+- Based on biodiversity assessment → [Assess Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-01_Assess_Biodiversity)
 - What habitats do priority species require?
 - Which life stages need which habitats? (breeding, feeding, shelter)
 - Are specialist species dependent on specific habitats?
@@ -165,7 +165,7 @@ Create multi-layered vegetation structure:
 - Mature trees providing cover and food
 - Mix of species with different characteristics
 - Consider deciduous vs. evergreen balance
-- Plan for 15-30 year maturity → [Reforestation](../reforestation/00_Reforestation_Overview)
+- Plan for 15-30 year maturity → [Reforestation](/restoration-playbook/reforestation/restoration-playbook-reforestation-00_Reforestation_Overview)
 
 **Mid-Story Layer:**
 - Smaller trees and tall shrubs (2-8m height)
@@ -216,7 +216,7 @@ Create varied spatial patterns:
 ### Step 3: Native Vegetation Restoration
 
 **Species Selection:**
-- Use only native species → [Identify Native Species](../reforestation/01_Identify_Native_Species)
+- Use only native species → [Identify Native Species](/restoration-playbook/reforestation/restoration-playbook-reforestation-01_Identify_Native_Species)
 - Match species to microhabitats and conditions
 - Include diversity of growth forms
 - Prioritize wildlife value (food, shelter)
@@ -235,8 +235,8 @@ Create varied spatial patterns:
 - Consider mature spacing requirements
 
 **Establishment:**
-- Site preparation → [Prepare Land](../reforestation/03_Prepare_Land)
-- Planting techniques → [Plant Seedlings](../reforestation/04_Plant_Seedlings)
+- Site preparation → [Prepare Land](/restoration-playbook/reforestation/restoration-playbook-reforestation-03_Prepare_Land)
+- Planting techniques → [Plant Seedlings](/restoration-playbook/reforestation/restoration-playbook-reforestation-04_Plant_Seedlings)
 - Protection from herbivores (fencing, guards)
 - Watering and maintenance
 - Weed/invasive control
@@ -246,10 +246,10 @@ Create varied spatial patterns:
 Healthy habitats require healthy soil:
 
 **Soil Health:**
-- Restore soil organic matter → [Add Organic Matter](../soil_restoration/02_Add_Organic_Matter)
+- Restore soil organic matter → [Add Organic Matter](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-02_Add_Organic_Matter)
 - Improve soil structure and drainage
 - Enhance microbial communities
-- Reduce compaction → [Reduce Tillage](../soil_restoration/03_Reduce_Tillage)
+- Reduce compaction → [Reduce Tillage](/restoration-playbook/soil_restoration/restoration-playbook-soil_restoration-03_Reduce_Tillage)
 
 **Soil Fauna:**
 - Encourage earthworms
@@ -268,7 +268,7 @@ Water is critical for biodiversity:
 - Enhance riparian zones
 
 **Created Water Features:**
-- Seasonal ponds for amphibians → [Water Storage](../water_management/03_Build_Water_Storage_Structures)
+- Seasonal ponds for amphibians → [Water Storage](/restoration-playbook/water_management/restoration-playbook-water_management-03_Build_Water_Storage_Structures)
 - Seeps and springs
 - Drinking areas for mammals
 - Birdbaths and shallow pools
@@ -383,7 +383,7 @@ Water is critical for biodiversity:
 ## Next Steps
 
 Once habitats are restored:
-→ [Task 3: Create Protected Areas](../../03_Create_Protected_Areas)
+→ [Task 3: Create Protected Areas](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-03_Create_Protected_Areas)
 
 ---
 
