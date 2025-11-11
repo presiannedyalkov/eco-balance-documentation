@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook-biodiversity-03_Create_Protected_Areas
 title: Create Protected Areas
 sidebar_position: 3
 ---

@@ -1,4 +1,5 @@
 ---
+id: restoration-playbook-soil_restoration-02_Add_Organic_Matter
 title: Add Organic Matter
 sidebar_position: 2
 ---
