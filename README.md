@@ -36,7 +36,7 @@ npm start
 npm run start:local
 ```
 
-The documentation will be available at `http://localhost:3000` (or port 3023 if using `start:local`)
+The documentation will be available at `http://localhost:3023`
 
 ### Building for Production
 
@@ -159,23 +159,24 @@ If you notice errors, have different perspectives, or want to contribute feedbac
 
 This repository contains documentation in two locations:
 
-1. **Root Directory** (`00_Eco_Balance_Hub.md`, `01_Executive_Summary.md`, etc.)
+1. **Root Directory** (`00_Eco_Balance_Hub.md`, `strategic/` folder)
    - Original source files with Obsidian-style links
+   - Strategic documents in `strategic/` folder
+   - Restoration playbook in `strategic/restoration_playbook/`
    - May be used with Obsidian or other markdown tools
-   - Currently contains older content
 
 2. **`docs/` Directory** (Docusaurus site)
    - Organized in subdirectories for the public website
    - Uses standard markdown links
-   - Contains updated, current content
+   - Contains synced content from root files
    - **This is the source for the Docusaurus website**
 
 **⚠️ Important:** 
-- **Root files are the source of truth** - Edit these files
-- **`docs/` files are generated** - Don't edit directly, they're synced from root
-- **Sync process:** Run `npm run sync` after editing root files to update `docs/`
+- **Root files are the source of truth** - Edit files in root or `strategic/` folder
+- **`docs/` files are synced** - Run `node scripts/sync-docs.js` after editing root files
+- **Restoration playbook** is synced from `strategic/restoration_playbook/` to `docs/restoration-playbook/`
 
-See [DOCUMENTATION_STRUCTURE.md](./DOCUMENTATION_STRUCTURE.md) for details on the sync process.
+See [DOCUMENTATION_STRUCTURE.md](_process/documentation/DOCUMENTATION_STRUCTURE.md) for details on the sync process.
 
 ---
 
@@ -211,20 +212,20 @@ eco-balance-documentation/
 - `npm start` - Start development server
 - `npm run build` - Build for production
 - `npm run serve` - Serve built site
-- `npm run sync` or `npm run sync:docs` - Sync root files to `docs/` directory
+- `node scripts/sync-docs.js` - Sync root files to `docs/` directory
 - `npm test` - Run tests (link checking, build validation)
 - `npm run test:links` - Check all internal links
 - `npm run test:build` - Validate build
 
 ### Documentation Workflow
 
-1. **Edit root files** (source of truth) - Files like `00_Eco_Balance_Hub.md`, `01_Executive_Summary.md`, etc.
-2. **Run sync** - `npm run sync` to convert and update `docs/` files
+1. **Edit root files** (source of truth) - Files in `strategic/` folder or root
+2. **Run sync** - `node scripts/sync-docs.js` to convert and update `docs/` files
 3. **Build site** - `npm run build` to generate the Docusaurus site
 4. **Test** - `npm test` to verify links and build
 
 The sync script automatically:
-- Converts Obsidian-style links (``) to Docusaurus links
+- Converts Obsidian-style links (`[[...]]`) to Docusaurus links
 - Adds appropriate frontmatter (id, title, sidebar_position)
 - Preserves all content
 
@@ -284,9 +285,9 @@ Please note that this documentation is primarily maintained by the project found
 
 ## 🔗 Links
 
-- **Project Documentation:** [Link to deployed site if available]
-- **Repository:** [GitHub repository URL]
-- **Contact:** [Add contact information if desired]
+- **Project Documentation:** [View on GitHub Pages](https://presiannedyalkov.github.io/eco-balance-documentation/) (when deployed)
+- **Repository:** [GitHub Repository](https://github.com/presiannedyalkov/eco-balance-documentation)
+- **Restoration Playbook:** [Restoration Playbook Template](/restoration-playbook/README) - Template for ecological restoration projects
 
 ---
 
