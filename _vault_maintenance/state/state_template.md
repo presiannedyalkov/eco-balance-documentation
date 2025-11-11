@@ -8,10 +8,13 @@ State files track the current status of each persona's analysis and findings. Th
 ```markdown
 # [Persona Name] State File
 
-**Last Updated**: YYYY-MM-DD HH:MM
-**Last Analysis**: YYYY-MM-DD
-**Next Scheduled Analysis**: YYYY-MM-DD
-**Current Health Score**: XX/100
+**Last Updated**: YYYY-MM-DD HH:MM  
+**Last Analysis**: YYYY-MM-DD HH:MM (`[analysis_report_filename.md]`)  
+**Next Scheduled Analysis**: YYYY-MM-DD  
+**Current Health Score**: XX/100  
+**Total Analyses Recorded**: X  
+**Last Run Number**: #  
+**State Reset Date**: YYYY-MM-DD HH:MM (set if state contents were cleared after a run)
 
 ## Current Status
 
@@ -74,15 +77,22 @@ State files track the current status of each persona's analysis and findings. Th
 | [Metric 1] | XX | XX | ↑/↓/→ |
 | [Metric 2] | XX | XX | ↑/↓/→ |
 
+## Analysis History
+
+| Run # | Date & Time | Report File | Summary |
+|-------|-------------|-------------|---------|
+| 01 | YYYY-MM-DD HH:MM | `[persona]_analysis_YYYY-MM-DD.md` | [One-line summary] |
+| 02 | YYYY-MM-DD HH:MM | `[persona]_analysis_YYYY-MM-DD.md` | [One-line summary] |
+
 ## Historical Context
 
 ### Previous Health Scores
-- [Date]: XX/100
-- [Date]: XX/100
-- [Date]: XX/100
+- Run 01 (YYYY-MM-DD): XX/100
+- Run 02 (YYYY-MM-DD): XX/100
+- Run 03 (YYYY-MM-DD): XX/100
 
 ### Trends
-[Notable patterns or changes over time]
+[Notable patterns or changes over time. If the state was reset, keep prior run summaries here for continuity.]
 
 ## Next Analysis Plan
 

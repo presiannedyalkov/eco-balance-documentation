@@ -23,7 +23,7 @@ Operational restoration site with:
 - Sustainable work model for founders
 
 ### Core Requirements (Non-Negotiable)
-- **Founder financial security**: Maintain jobs/income until project revenue is €30-50k/year stable
+- **Founder financial security**: Maintain jobs/income until project revenue is approximately €30-50k/year stable (varies by location and market conditions)
 - **Sustainable workload**: Not burnout-inducing (realistic hours based on life circumstances)
 - **Basic milestones achieved**: Legal entity formed, land secured, initial ecological restoration begun
 - **Health and safety**: Founders maintain access to healthcare, safe living conditions
@@ -40,9 +40,9 @@ Operational restoration site with:
 **Probability**: 10-20% (requires everything going right)
 
 **Prerequisites**:
-- €20-30k funding secured upfront (major grant, crowdfunding success, or partnership)
+- Approximately €20-30k funding secured upfront (major grant, crowdfunding success, or partnership - actual amount depends on funding pathway)
 - Founders can go full-time or near-full-time
-- Location decided quickly (Month 1-2)
+- Location decided quickly (Months 1-2, may accelerate or extend based on opportunities)
 - Land found and available fast
 - Regulatory approvals straightforward
 
@@ -75,20 +75,20 @@ Operational restoration site with:
 - Launch community engagement activities
 - Document and share progress
 
-**Cost Range**: €20-35k
-- Land: €8-15k (purchase) or €1-3k (lease deposit + first year)
-- Infrastructure: €8-15k
-- Equipment & tools: €2-3k
-- Legal & operational: €2-4k
+**Cost Range**: Approximately €20-35k (varies by location, land option, and infrastructure choices)
+- Land: Approximately €8-15k (purchase) or approximately €1-3k (lease deposit + first year, depends on location and opportunity)
+- Infrastructure: Approximately €8-15k (costs vary by location, installation approach, and equipment choices)
+- Equipment & tools: Approximately €2-3k (varies by availability and needs)
+- Legal & operational: Approximately €2-4k (varies by location and requirements)
 
 **Best If**:
-- Major grant awarded (€20k+)
+- Major grant awarded (approximately €20k+, varies by grant program)
 - Perfect land opportunity emerges that must be seized quickly
 - Founders have flexibility to leave jobs temporarily
 - Urgent opportunity with time constraint
 
 **Triggers to Accelerate to This Option**:
-- €20k+ grant awarded → Can afford fast execution
+- Approximately €20k+ grant awarded → Can afford fast execution (depends on grant amount)
 - Free or very cheap land offered → Must move quickly to secure
 - Perfect partnership opportunity with timeline → Align to their schedule
 - Personal circumstances allow full-time commitment
@@ -111,8 +111,8 @@ Operational restoration site with:
 
 **Prerequisites**:
 - Part-time commitment (15-25 hr/week) while keeping jobs
-- Crowdfunding campaign or moderate grants (€15-25k)
-- 3-6 months for location decision
+- Crowdfunding campaign or moderate grants (approximately €15-25k range, actual amount depends on campaign success and grant availability)
+- Approximately 3-6 months for location decision (may accelerate or extend based on opportunities)
 - Patient, methodical approach
 
 **Work Model**: Part-time evenings/weekends, maintain jobs for financial security
@@ -124,12 +124,12 @@ Operational restoration site with:
 **Months 1-3: Foundation**
 - Research locations (Germany, Portugal, other EU options)
 - Explore ALL funding pathways (crowdfunding, grants, partnerships, bootstrap)
-- Build community and email list (target: 200-300 subscribers)
+- Build community and email list (target: 200-300 range, actual size depends on outreach success)
 - Network with practitioners, landowners, potential partners
 - Develop core materials (vision, plans, budget)
 - Begin grant applications (2-5 applications)
 - **Time**: 15-20 hr/week
-- **Cost**: €200-500 (travel, tools, materials)
+- **Cost**: Approximately €200-500 (travel, tools, materials, varies by activities)
 
 **Months 4-6: Campaign & Decision**
 - Prepare crowdfunding campaign (video, page, rewards, marketing)
@@ -138,9 +138,9 @@ Operational restoration site with:
 - Form legal entity (4-8 weeks process)
 - Continue grant follow-ups
 - **Time**: 20-30 hr/week (campaign is intensive)
-- **Cost**: €1,500-3,000 (campaign materials, platform fees, ads, legal setup)
+- **Cost**: Approximately €1,500-3,000 (campaign materials, platform fees, ads, legal setup, varies by campaign scope)
 
-**Funding Target Phase 0**: €15-25k (crowdfunding + grants + F&F)
+**Funding Target Phase 0**: Approximately €15-25k range (crowdfunding + grants + F&F, actual amount depends on campaign success and opportunities)
 
 ### Phase 1: Months 7-12 - Land Acquisition & Setup
 
@@ -152,7 +152,7 @@ Operational restoration site with:
 - Finalize purchase or lease agreement
 - Secure land access
 - **Time**: 20-25 hr/week
-- **Cost**: €8-18k (land purchase) OR €1-3k (lease + deposits)
+- **Cost**: Approximately €8-18k (land purchase, depends on location and opportunity) OR approximately €1-3k (lease + deposits, varies by location)
 
 **Months 10-12: Basic Infrastructure**
 - Install shelter (caravan, tiny house, or DIY structure)
@@ -161,7 +161,7 @@ Operational restoration site with:
 - Acquire essential tools
 - Begin site preparation
 - **Time**: 25-30 hr/week (some on-site work begins)
-- **Cost**: €6-12k (infrastructure + equipment)
+- **Cost**: Approximately €6-12k (infrastructure + equipment, costs vary by location, installation approach, and equipment choices)
 
 ### Phase 2: Months 13-18 - Operations & Planting
 
@@ -172,7 +172,7 @@ Operational restoration site with:
 - Document baseline conditions
 - Finalize planting plan (species, zones, timeline)
 - **Time**: 20-25 hr/week
-- **Cost**: €1-3k (materials, plants, tools)
+- **Cost**: Approximately €1-3k (materials, plants, tools, depends on site size and conditions)
 
 **Months 16-18: First Planting & Launch**
 - Execute first major planting (season-appropriate)
@@ -181,9 +181,9 @@ Operational restoration site with:
 - Establish monitoring protocols
 - Celebrate launch with community
 - **Time**: 25-35 hr/week
-- **Cost**: €2-4k (plants, events, materials)
+- **Cost**: Approximately €2-4k (plants, events, materials, depends on scope and pricing)
 
-**Total Cost Range**: €18-40k (varies by location, land option, infrastructure choices)
+**Total Cost Range**: Approximately €18-40k (varies by location, land option, infrastructure choices, and funding pathway)
 
 **Best If**:
 - Building gradually while maintaining job security
@@ -749,7 +749,7 @@ Whether your timeline is 6 months or 36 months:
 **Planning & Strategy**:
 - [[30_Business_Model|Funding Pathways]] - Multiple funding options detailed
 - [[32_Funding_Strategy|Fundraising Playbook]] - Crowdfunding, grants, and more
-- [[44_Site_Selection|Finding Land]] - Geographic flexibility and site options
+- [[44_Site_Selection_Land_Acquisition|Finding Land]] - Geographic flexibility and site options
 - [[10_Organizational_Structure|Legal Structure Options]] - e.V., Associação, gGmbH, and more
 
 **Implementation**:

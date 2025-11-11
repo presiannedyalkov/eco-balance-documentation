@@ -122,6 +122,77 @@ notes: |
   Any additional context or considerations.
 ```
 
+### Task Splitting Guidelines
+
+**SPLIT LARGE TASKS INTO SMALLER SUBTASKS** when:
+
+1. **Task affects >5 files** → Split by file or logical group
+   - Example: "Reorganize 15 misplaced files" → Split into 3-4 tasks of 3-4 files each
+   - Use task IDs: `JAN-YYYY-MM-DD-001a`, `JAN-YYYY-MM-DD-001b`, etc.
+
+2. **Task has >10 action steps** → Split into phases
+   - Example: "Complete file organization audit" → Split into "Identify misplaced files", "Move strategic docs", "Move implementation docs"
+   - Each phase becomes a separate task
+
+3. **Estimated effort is MAJOR** → Break into smaller chunks
+   - Example: "Reorganize entire vault structure" → Split by directory (strategic docs, implementation docs, etc.)
+
+4. **Task spans multiple categories** → Split by category
+   - Example: "Fix all organization issues" → Split into "Fix file placement", "Eliminate redundancy", "Standardize naming"
+
+5. **Task has dependencies** → Split into sequential subtasks
+   - Example: "Archive old files and update references" → Split into "Archive files", "Update references in strategic docs", "Update references in implementation docs"
+
+**How to Split Tasks:**
+
+**Method 1: By File Group**
+```
+Original: Reorganize 20 misplaced files
+Split into:
+- JAN-001a: Reorganize strategic docs (7 files)
+- JAN-001b: Reorganize implementation docs (7 files)
+- JAN-001c: Reorganize reference docs (6 files)
+```
+
+**Method 2: By Sub-Task**
+```
+Original: Complete file organization audit
+Split into:
+- JAN-001a: Identify misplaced files
+- JAN-001b: Identify redundant files
+- JAN-001c: Identify naming inconsistencies
+```
+
+**Method 3: By Directory**
+```
+Original: Reorganize entire vault structure
+Split into:
+- JAN-001a: Reorganize root directory files
+- JAN-001b: Reorganize implementation_tasks/ directory
+- JAN-001c: Reorganize _vault_maintenance/ directory
+```
+
+**Task Dependency Management:**
+
+When splitting tasks, document dependencies:
+```yaml
+task_id: JAN-YYYY-MM-DD-001a
+depends_on: []
+blocks: [JAN-YYYY-MM-DD-001b]
+
+task_id: JAN-YYYY-MM-DD-001b
+depends_on: [JAN-YYYY-MM-DD-001a]
+blocks: []
+```
+
+**Benefits of Task Splitting:**
+- ✅ Easier to track progress
+- ✅ Smaller, more manageable work units
+- ✅ Better parallel execution opportunities
+- ✅ Clearer verification criteria
+- ✅ Reduced risk of incomplete work
+- ✅ Easier to prioritize and schedule
+
 ### Priority Guidelines
 
 **CRITICAL**

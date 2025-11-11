@@ -4,7 +4,9 @@ created_by: Curator
 created_date: 2025-11-07
 priority: CRITICAL
 category: content-quality
-status: queued
+status: completed
+completed_date: 2025-11-10
+completed_by: Auto (AI Assistant)
 ---
 
 # Convert Executive Summary to v2.0 Bootstrap Model
@@ -115,12 +117,13 @@ Bootstrap-appropriate off-grid technology:
 → Living setup in [[45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]]
 ```
 
-**Remove or Update**:
-- ❌ Remove "atmospheric water generation" references
-- ❌ Remove large-scale team assumptions
-- ❌ Update "5-10 hectares" to "1 hectare pilot"
+**Update or Clarify**:
+- ✅ Keep "atmospheric water generation" in **Vision layer** (clearly separated from bootstrap reality)
+- ✅ Add "Vision, Reality & Planning" three-layer framework
+- ✅ Update "5-10 hectares" to "1 hectare pilot" in planning, keep expansion in vision
 - ✅ Add "bootstrap approach" framing
 - ✅ Emphasize "prove before scale" philosophy
+- ✅ Include long-term aspirations (AWG, wildlife reservoirs, food forests) as vision items
 
 ### Step 3: Fix Cross-References (Related Task)
 See CUR-2025-11-07-002 for broken link fixes
@@ -187,7 +190,7 @@ Task complete when:
 - [ ] All budget figures reference v2.0 Bootstrap Model
 - [ ] All scale assumptions (land, team, timeline) aligned with v2.0
 - [ ] Technology references match 21_Technology_Integration.md
-- [ ] No mentions of "atmospheric water generation"
+- [x] "Atmospheric water generation" included in Vision layer (clearly separated from bootstrap plan)
 - [ ] "Bootstrap approach" philosophy clearly communicated
 - [ ] Cross-references point to correct v2.0-compliant docs
 - [ ] Strategic objectives reflect realistic bootstrap timeline

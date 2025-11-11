@@ -102,6 +102,29 @@ notes: |
   Additional context.
 ```
 
+### Task Splitting Guidelines
+
+**SPLIT LARGE TASKS INTO SMALLER SUBTASKS** when:
+
+1. **Task affects >5 files** → Split by file or logical group
+   - Example: "Fix formatting in 12 files" → Split into 3-4 tasks of 3-4 files each
+   - Use task IDs: `QI-YYYY-MM-DD-001a`, `QI-YYYY-MM-DD-001b`, etc.
+
+2. **Task has >10 action steps** → Split into phases
+   - Example: "Complete formatting audit" → Split into "Check markdown formatting", "Fix header consistency", "Standardize lists"
+   - Each phase becomes a separate task
+
+3. **Estimated effort is MAJOR** → Break into smaller chunks
+   - Example: "Polish all documentation" → Split by document category or priority
+
+4. **Task spans multiple categories** → Split by category
+   - Example: "Fix all quality issues" → Split into "Fix formatting", "Improve readability", "Standardize style"
+
+5. **Task has dependencies** → Split into sequential subtasks
+   - Example: "Update style guide and apply to all docs" → Split into "Update style guide", "Apply to strategic docs", "Apply to implementation docs"
+
+**See [guides/TASK_SPLITTING_GUIDE.md](../guides/TASK_SPLITTING_GUIDE.md) for detailed examples and methods.**
+
 ## Priority Guidelines
 
 **CRITICAL**: Major grammar/spelling errors, completely unreadable formatting, broken markdown

@@ -151,6 +151,29 @@ notes: |
   Any additional context or considerations.
 ```
 
+### Task Splitting Guidelines
+
+**SPLIT LARGE TASKS INTO SMALLER SUBTASKS** when:
+
+1. **Task affects >5 files** → Split by file or logical group
+   - Example: "Fix broken links in 12 files" → Split into 3-4 tasks of 3-4 files each
+   - Use task IDs: `LIB-YYYY-MM-DD-001a`, `LIB-YYYY-MM-DD-001b`, etc.
+
+2. **Task has >10 action steps** → Split into phases
+   - Example: "Complete link audit" → Split into "Identify broken links", "Fix links in strategic docs", "Fix links in implementation docs"
+   - Each phase becomes a separate task
+
+3. **Estimated effort is MAJOR** → Break into smaller chunks
+   - Example: "Rebuild entire navigation structure" → Split by directory or document category
+
+4. **Task spans multiple categories** → Split by category
+   - Example: "Fix all navigation issues" → Split into "Fix broken links", "Update indexes", "Improve navigation maps"
+
+5. **Task has dependencies** → Split into sequential subtasks
+   - Example: "Update all links after restructuring" → Split into "Restructure files", "Update links in strategic docs", "Update links in implementation docs"
+
+**See [guides/TASK_SPLITTING_GUIDE.md](../guides/TASK_SPLITTING_GUIDE.md) for detailed examples and methods.**
+
 ### Priority Guidelines
 
 **CRITICAL**

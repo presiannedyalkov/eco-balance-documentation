@@ -154,6 +154,77 @@ notes: |
   Any additional context or considerations.
 ```
 
+### Task Splitting Guidelines
+
+**SPLIT LARGE TASKS INTO SMALLER SUBTASKS** when:
+
+1. **Task affects >5 files** → Split by file or logical group
+   - Example: "Fix budget numbers across 12 files" → Split into 3-4 tasks of 3-4 files each
+   - Use task IDs: `AUD-YYYY-MM-DD-001a`, `AUD-YYYY-MM-DD-001b`, etc.
+
+2. **Task has >10 action steps** → Split into phases
+   - Example: "Complete comprehensive audit" → Split into "Completeness audit", "Consistency audit", "Standards audit"
+   - Each phase becomes a separate task
+
+3. **Estimated effort is MAJOR** → Break into smaller chunks
+   - Example: "Align all budget numbers" → Split by document category (strategic docs, implementation docs, etc.)
+
+4. **Task spans multiple categories** → Split by category
+   - Example: "Fix all inconsistencies" → Split into "Budget inconsistencies", "Timeline inconsistencies", "Terminology inconsistencies"
+
+5. **Task has dependencies** → Split into sequential subtasks
+   - Example: "Update all cross-references after file rename" → Split into "Rename file", "Update references in strategic docs", "Update references in implementation docs"
+
+**How to Split Tasks:**
+
+**Method 1: By File Group**
+```
+Original: Fix budget numbers in all 15 files
+Split into:
+- AUD-001a: Fix budget numbers in strategic docs (5 files)
+- AUD-001b: Fix budget numbers in implementation docs (5 files)
+- AUD-001c: Fix budget numbers in financial docs (5 files)
+```
+
+**Method 2: By Sub-Task**
+```
+Original: Complete comprehensive consistency audit
+Split into:
+- AUD-001a: Audit budget numbers consistency
+- AUD-001b: Audit timeline consistency
+- AUD-001c: Audit terminology consistency
+```
+
+**Method 3: By Phase**
+```
+Original: Fix all broken cross-references
+Split into:
+- AUD-001a: Identify all broken references (audit phase)
+- AUD-001b: Fix references in strategic docs (fix phase 1)
+- AUD-001c: Fix references in implementation docs (fix phase 2)
+```
+
+**Task Dependency Management:**
+
+When splitting tasks, document dependencies:
+```yaml
+task_id: AUD-YYYY-MM-DD-001a
+depends_on: []
+blocks: [AUD-YYYY-MM-DD-001b]
+
+task_id: AUD-YYYY-MM-DD-001b
+depends_on: [AUD-YYYY-MM-DD-001a]
+blocks: []
+```
+
+**Benefits of Task Splitting:**
+- ✅ Easier to track progress
+- ✅ Smaller, more manageable work units
+- ✅ Better parallel execution opportunities
+- ✅ Clearer verification criteria
+- ✅ Reduced risk of incomplete work
+- ✅ Easier to prioritize and schedule
+
 ### Priority Guidelines
 
 **CRITICAL**

@@ -140,7 +140,8 @@ Contains process documents from the early development phase:
 - [[../_process/refactoring/README_Refactor_Summary|Refactor Summary]] - How restructure was done
 
 **Version Control:**
-- [[../_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]] - Current release
+- [[../_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] - Current release
+- [[../_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]] - Initial release (archived)
 - [[../_versions/v1.0.0/reports/documentation_manifest|Documentation Manifest]] - Complete file inventory
 
 ---
@@ -178,7 +179,7 @@ Contains process documents from the early development phase:
 
 ## ✅ Archive Integrity
 
-**Last Verified:** October 25, 2025
+**Last Verified:** November 11, 2025
 
 **Verification Checklist:**
 - [x] All pre-v1.0.0 files present

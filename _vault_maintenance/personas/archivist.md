@@ -142,6 +142,29 @@ notes: |
   Any additional considerations.
 ```
 
+### Task Splitting Guidelines
+
+**SPLIT LARGE TASKS INTO SMALLER SUBTASKS** when:
+
+1. **Task affects >5 files** → Split by file or logical group
+   - Example: "Archive 15 outdated files" → Split into 3-4 tasks of 3-4 files each
+   - Use task IDs: `ARC-YYYY-MM-DD-001a`, `ARC-YYYY-MM-DD-001b`, etc.
+
+2. **Task has >10 action steps** → Split into phases
+   - Example: "Complete version migration" → Split into "Create version structure", "Move files to archive", "Update references"
+   - Each phase becomes a separate task
+
+3. **Estimated effort is MAJOR** → Break into smaller chunks
+   - Example: "Reorganize entire archive structure" → Split by version or time period
+
+4. **Task spans multiple categories** → Split by category
+   - Example: "Complete archival audit" → Split into "Archive structure audit", "Version documentation audit", "Reference integrity audit"
+
+5. **Task has dependencies** → Split into sequential subtasks
+   - Example: "Archive files and update changelog" → Split into "Archive files", "Update changelog", "Update references"
+
+**See [guides/TASK_SPLITTING_GUIDE.md](../guides/TASK_SPLITTING_GUIDE.md) for detailed examples and methods.**
+
 ### Priority Guidelines
 
 **CRITICAL**

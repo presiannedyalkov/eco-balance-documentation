@@ -382,7 +382,7 @@ This document outlines multiple legal structure pathways for establishing Eco Ba
 - ❌ Exact timeline for registration → **4-8 weeks after location finalized**
 
 **Decision Timeline**:
-- **Month 1-6**: Explore location options (see [[44_Site_Selection|Site Selection]])
+- **Month 1-6**: Explore location options (see [[44_Site_Selection_Land_Acquisition|Site Selection]])
 - **Month 6** (or earlier if opportunity): Decide final location
 - **Within 2 weeks of location decision**: Choose legal structure based on criteria above
 - **Month 6-8**: Complete registration process (4-8 weeks)
@@ -646,7 +646,7 @@ This document outlines multiple legal structure pathways for establishing Eco Ba
 - Identify local advisors if non-German path likely
 
 **Month 5-6: Final Decision**
-- Choose based on location decision (see [[44_Site_Selection|Site Selection]])
+- Choose based on location decision (see [[44_Site_Selection_Land_Acquisition|Site Selection]])
 - Commit to 1 structure and begin registration process
 - Timeline: 4-8 weeks to completion
 
@@ -743,7 +743,7 @@ This document outlines multiple legal structure pathways for establishing Eco Ba
 ## Related Documents
 
 **Location Decision**:
-- [[44_Site_Selection|Site Selection]] - Geographic options drive legal structure choice
+- [[44_Site_Selection_Land_Acquisition|Site Selection]] - Geographic options drive legal structure choice
 
 **Organizational Context**:
 - [[10_Organizational_Structure|Organizational Structure]] - Team roles and hierarchy

@@ -659,7 +659,7 @@ Day-to-day without board approval:
 - Decision by Month 6 (or when major opportunity triggers earlier decision)
 - Default to Germany if no clear opportunity by Month 6
 
-→ Site selection details: [[44_Site_Selection|Site Selection]]
+→ Site selection details: [[44_Site_Selection_Land_Acquisition|Site Selection]]
 
 ---
 
@@ -774,7 +774,7 @@ The actual structure chosen will depend on:
 
 **Implementation:**
 - [[42_Adaptive_Timeline|Adaptive Timeline]]
-- [[44_Site_Selection|Site Selection]]
+- [[44_Site_Selection_Land_Acquisition|Site Selection]]
 
 **Financial:**
 - [[30_Business_Model|Business Model]]

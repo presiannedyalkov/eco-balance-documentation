@@ -1,29 +1,29 @@
 # 🌍 ECO BALANCE PROJECT HUB
 
-**📦 Version:** 2.0.0 (Bootstrap Model)
+**📦 Version:** 2.0.0
 **📅 Release Date:** November 6, 2025
 **✅ Status:** Production Release - Ready for Execution
 **📊 Documentation:** 100% Complete
-**🔗 Version Info:** [[_versions/v2.0.0/RELEASE_NOTES|Release Notes]] | [[CHANGELOG|Changelog]] | [[VERSION|Current Version]]
+**🔗 Version Info:** [[_versions/v2.0.0/RELEASE_NOTES|Release Notes]] | [[CHANGELOG|Changelog]] | [[_versions/README|Version Information]]
 **🗺️ Future Planning:** [[ROADMAP|Project Roadmap]] - Multi-year vision and phases | [[FEATURE_WISHLIST|Feature Wishlist]] - Desired enhancements
 
 ---
 
 ## 🎉 VERSION 2.0.0 RELEASED!
 
-**MAJOR METHODOLOGY CHANGE: Large-Scale Model → Bootstrap Model**
+**This release focuses on a small-scale pilot approach designed for immediate viability with founder-level resources.**
 
 This release includes:
-- ✅ **8 Core Documents Converted** - Complete Bootstrap transformation
-- ✅ **1 ha Pilot Scale** - Immediate viability focus (was 10-30 ha)
-- ✅ **€20-30k Year 1 Budget** - Bootstrap Model v2.0 (was €500k-2M)
-  - Expansion funding: €250-500k (Year 2-3)
-- ✅ **DIY-Friendly Technology** - 3-5 kW solar, rainwater harvesting (was 20 kW, AWG)
-- ✅ **Founder-Level Operations** - 1-2 person teams (was 20-100 people)
+- ✅ **8 Core Documents Converted** - Complete transformation to small-scale approach
+- ✅ **Small Pilot Scale** - Immediate viability focus (typically 0.5-1.5 hectares)
+- ✅ **Approximately €20-30k Year 1 Budget** - Varies by funding pathway and location
+  - Expansion funding: Approximately €250-500k (Year 2-3, depends on scale and location)
+- ✅ **DIY-Friendly Technology** - 3-5 kW solar range, rainwater harvesting
+- ✅ **Founder-Level Operations** - Small teams (typically 1-2 people, may expand if additional committed founders join)
 
-**What Changed in v2.0.0:**
-- Complete methodology transformation from aspirational to immediately executable
-- Technology restructuring for bootstrap approach
+**Current Approach:**
+- Small-scale pilot designed for immediate execution
+- Technology appropriate for founder-level resources
 - Business model adapted for crowdfunding and sustainable Year 1 operations
 - All strategic documents aligned with realistic founder-level execution
 
@@ -31,8 +31,37 @@ This release includes:
 → See [[CHANGELOG|Changelog]] for complete version history
 → Quick start: [[QUICK_REFERENCE_GUIDE|Quick Reference Guide]]
 
-> **📘 Bootstrap Model Approach:**
-> The v2.0.0 Bootstrap Model starts with a **1 hectare Year 1 pilot** (€20k-€30k, 1-2 founders) to prove viability before scaling to **5-10 hectares in Years 2-3** (€250k-€500k, 3-4 staff). Implementation tasks describe full-scale methods; Year 1 focuses on core subset aligned with 1 ha scope.
+> **📘 Current Approach:**
+> This approach starts with a **small Year 1 pilot** (typically 0.5-1.5 hectares, approximately €20k-€30k budget range, small founder team typically 1-2 people) to prove viability before scaling to **5-10 hectares in Years 2-3** (approximately €250k-€500k, depends on scale and location, 3-4 staff). Implementation tasks describe full-scale methods; Year 1 focuses on core subset aligned with small-site scope.
+
+---
+
+## 🎯 Our Core Vision (Immutable - This Will Not Change)
+
+> **Our Core Vision** (Immutable - This will not change):
+> 
+> Create a **habitat for wildlife** and **restore land to become a shelter and sanctuary for wildlife**. Through different trees, plants, mushrooms, and diverse areas, we promote different habitats and increase biodiversity. This is our primary purpose - to provide sanctuary and shelter for wildlife in the face of climate change and mass extinction.
+
+**This is the immutable core of Eco Balance.** All other documents, plans, and operational details can and will change as we learn and adapt. But this vision - creating a habitat and sanctuary for wildlife through biodiversity restoration - is the anchor that remains constant.
+
+**Key Elements:**
+- **Wildlife habitat and sanctuary** as primary vision
+- **Different trees, plants, mushrooms** to promote diverse habitats
+- **Increase biodiversity** as core goal
+- **Climate change context** (manmade factors, mass extinction)
+- **Sanctuary and shelter** for wildlife as fundamental purpose
+
+**UN SDG Alignment**: Our work aligns with UN Sustainable Development Goals 13 (Climate Action), 14 (Life Below Water), and 15 (Life on Land), with a primary focus on biodiversity conservation and ecosystem restoration.
+
+**Scientific Grounding**: Will be firmly grounded in science and scientific principles, with strong ties to universities and climate science institutions. We will measure how the land is doing under our guardianship when implementing approved plans with measures.
+
+**Local Integration**: Opportunities in energy, food, society, and more areas by transitioning to local and pragmatic sources, integrating local knowledge, and alleviating actual local problems.
+
+---
+
+**This complete vision guides all our work**, from the smallest pilot site to future expansion. These elements together - wildlife habitat, biodiversity focus, scientific grounding, and local integration - make Eco Balance what it is, and they will not change.
+
+→ See [[02_Project_Vision|Project Vision & Context]] for full vision details
 
 ---
 
@@ -43,7 +72,7 @@ This release includes:
 **Implementation Tasks** - 6 categories with detailed step-by-step guides
 
 ### Version Control
-**[[VERSION|VERSION]]** - Current version number (2.0.0)  
+**[[_versions/README|Version Information]]** - Current version number (2.0.0)  
 **[[CHANGELOG|CHANGELOG.md]]** - Complete version history  
 **[[_versions/README|_versions/]]** - Version-specific artifacts and reports
 
@@ -167,11 +196,11 @@ This release includes:
 
 **Mission:** Restore degraded ecosystems in Southern Europe through evidence-based, community-engaged, financially sustainable environmental restoration.
 
-**Year 1 Bootstrap Investment:** €20,000-€30,000
+**Year 1 Bootstrap Investment:** Approximately €20,000-€30,000 (varies by funding pathway, location, and land acquisition approach)
 
-**Year 1 Bootstrap Goal:** Establish legal entity (e.V. or gGmbH, location-dependent), secure 1 hectare pilot site, plant 200-500 trees, engage local community, prove concept
+**Year 1 Bootstrap Goal:** Establish legal entity (e.V. or Associação, location-dependent), secure small pilot site (typically 0.5-1.5 hectares), plant 200-500 trees, engage local community, prove concept
 
-**Years 2-3 Expansion Investment:** €250,000-€500,000
+**Years 2-3 Expansion Investment:** Approximately €250,000-€500,000 (depends on scale and location)
 
 **Years 2-3 Expansion Goal:** Scale to 5-10 hectares, professional team (3-4 staff), revenue generation begins
 
@@ -179,11 +208,11 @@ This release includes:
 
 ---
 
-## 📊 Current Phase: v2.0.0 Bootstrap Model - Ready for Execution
+## 📊 Current Phase: v2.0.0 - Ready for Execution
 
-**Project Maturity:** Pre-Seed / Bootstrap Phase
-**Timeline to Operations:** 12-18 months baseline (6-9 months fast track, 24-36 months slow track)
-**Documentation Version:** 2.0.0 (Bootstrap Model - Production Release)
+**Project Maturity:** Pre-Seed / Pilot Phase
+**Timeline to Operations:** Approximately 12-18 months baseline (6-9 months fast track if major funding secured early, 24-36 months slow track if ultra-lean approach)
+**Documentation Version:** 2.0.0 (Production Release)
 
 ### ✅ Completed
 - ✅ Exceptional research (400+ bookmarks)
@@ -217,19 +246,19 @@ This release includes:
 
 ## 🚀 Next Major Milestones
 
-**Phase 0 Goals (Months 1-6):**
+**Phase 0 Goals (Months 1-6, target timeline adapts to opportunities):**
 - [ ] Location decision finalized (Germany, Portugal, or other EU)
-- [ ] €20k-€30k in funding pipeline (Bootstrap capital)
-- [ ] 5 potential 1-hectare land sites identified
+- [ ] Approximately €20k-€30k in funding pipeline (Bootstrap capital, varies by funding pathway)
+- [ ] 5 potential small land sites identified (typically 0.5-1.5 hectares)
 - [ ] Website and social media launched
 - [ ] 3+ Advisory Board members committed
 - [ ] Personal network funding outreach begun
 
 **Year 1 Bootstrap Goals:**
-- [ ] Legal entity registered (e.V., gGmbH, or Associação - location-dependent)
-- [ ] €20k-€30k Bootstrap funding secured
-- [ ] 1 hectare pilot site acquired (with expansion rights)
-- [ ] 1-2 founders operational
+- [ ] Legal entity registered (e.V. or Associação - location-dependent)
+- [ ] Approximately €20k-€30k Bootstrap funding secured (varies by funding pathway)
+- [ ] Small pilot site acquired (typically 0.5-1.5 hectares, with expansion rights)
+- [ ] Small founder team operational (typically 1-2 people)
 - [ ] First plantings completed (200-500 trees)
 - [ ] Proof of concept demonstrated
 - [ ] Expansion funding pitch prepared
@@ -302,7 +331,7 @@ Restoration (20) → Impact (51) → Revenue (30)
 
 ---
 
-## 📖 Documentation System (v1.0.0)
+## 📖 Documentation System (v2.0.0)
 
 ### Version-Controlled Documentation
 
@@ -315,7 +344,7 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 - **PATCH** (x.x.1) - Bug fixes, typos, clarifications
 
 **Version Control:**
-- [[VERSION|VERSION file]] - Current version number
+- [[_versions/README|Version Information]] - Current version number
 - [[CHANGELOG|CHANGELOG.md]] - Complete version history
 - [[_versions/README|_versions/]] - Version-specific artifacts
 
@@ -336,7 +365,7 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 
 **Strategic Planning:** Files 00-70 in root  
 **Implementation:** implementation_tasks/ subdirectories  
-**Version Info:** _versions/v1.0.0/  
+**Version Info:** _versions/v2.0.0/  
 **Process Docs:** _process/ subdirectories  
 **Templates:** _templates/  
 **History:** archive/
@@ -371,13 +400,13 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 - Reference tips and troubleshooting sections
 
 ### Version Information
-- Check [[VERSION|VERSION file]] for current version
+- Check [[_versions/README|Version Information]] for current version
 - Review [[CHANGELOG|CHANGELOG]] for what's changed
-- Read [[_versions/v1.0.0/RELEASE_NOTES|Release Notes]] for v1.0.0 details
+- Read [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] for current version details
 
 ---
 
-## 🔄 Document Status (v1.0.0)
+## 🔄 Document Status (v2.0.0)
 
 ### ✅ Production Release: 66 Files
 
@@ -415,8 +444,8 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 
 ## 📝 Version History
 
-**[2.0.0]** - November 8, 2025 - **CURRENT** - Bootstrap Model v2.0 alignment
-- ✅ Aligned with Bootstrap Model v2.0 framework
+**[2.0.0]** - November 8, 2025 - **CURRENT** - Small-scale pilot approach
+- ✅ Aligned with small-scale pilot framework
 - ✅ Updated all strategic documents for €20-30k bootstrap budget
 - ✅ Enhanced implementation task guides
 - ✅ Improved metadata and cross-references
@@ -431,7 +460,7 @@ This knowledge base uses **semantic versioning** (MAJOR.MINOR.PATCH):
 - ✅ Production ready
 
 → Full changelog: [[CHANGELOG|CHANGELOG.md]]  
-→ Release details: [[_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]]
+→ Release details: [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]]
 
 ---
 
@@ -462,10 +491,10 @@ This is a **living knowledge base** that follows semantic versioning:
 ## 📚 Reference Materials
 
 ### Version Control & Planning
-- [[VERSION|Current Version]] - Version number (2.0.0)
+- [[_versions/README|Version Information]] - Version number (2.0.0)
 - [[CHANGELOG|Changelog]] - Complete version history
 - [[_versions/README|Version System]] - How versioning works
-- [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] - Bootstrap Model release details
+- [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] - v2.0.0 release details
 - [[_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]] - Initial release (archived)
 - [[ROADMAP|Project Roadmap]] - Multi-year vision and phases
 - [[FEATURE_WISHLIST|Feature Wishlist]] - Desired features and enhancements
@@ -526,7 +555,7 @@ This is a **living knowledge base** that follows semantic versioning:
 **New to the project?**
 1. Read [[QUICK_REFERENCE_GUIDE|Quick Reference Guide]] (5 min)
 2. Review [[01_Executive_Summary|Executive Summary]] (5 min)
-3. Check [[_versions/v1.0.0/RELEASE_NOTES|v1.0.0 Release Notes]] (10 min)
+3. Check [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] (10 min)
 
 **Ready to take action?**
 1. Go to [[42_Adaptive_Timeline|Next 90 Days]]
@@ -545,7 +574,7 @@ This is a **living knowledge base** that follows semantic versioning:
 
 **Checking status?**
 1. Read [[04_Current_Status_Assessment|Current Status]]
-2. View [[VERSION|Current Version]]
+2. View [[_versions/README|Version Information]]
 3. Review [[CHANGELOG|Recent Changes]]
 
 ---
@@ -553,7 +582,7 @@ This is a **living knowledge base** that follows semantic versioning:
 ## 🎉 v2.0.0 Achievement Unlocked!
 
 **Your Eco Balance project now has:**
-- ✅ Production-ready Bootstrap Model documentation (v2.0.0)
+- ✅ Production-ready documentation (v2.0.0)
 - ✅ Professional version control system
 - ✅ 66 comprehensive files (~700 pages)
 - ✅ 200+ cross-references
@@ -564,7 +593,7 @@ This is a **living knowledge base** that follows semantic versioning:
 
 **Most restoration projects don't have documentation this comprehensive and professional!**
 
-**The Bootstrap Model is ready. Start proving the concept now.**
+**The project is ready. Start proving the concept now.**
 
 ---
 
@@ -576,6 +605,6 @@ This is a **living knowledge base** that follows semantic versioning:
 
 *Version: 2.0.0*  
 *Release Date: November 6, 2025*  
-*Status: Bootstrap Model - Production Release*  
-*Next Milestone: Begin Bootstrap Launch (90-Day Plan)*  
+*Status: Production Release*  
+*Next Milestone: Begin Pilot Launch (90-Day Plan)*  
 [[CHANGELOG|View Changelog]] | [[_versions/v2.0.0/RELEASE_NOTES|v2.0.0 Release Notes]] | [[_versions/v1.0.0/RELEASE_NOTES|v1.0.0 (Archived)]] | [[QUICK_REFERENCE_GUIDE|Quick Reference]]

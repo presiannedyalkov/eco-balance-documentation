@@ -681,9 +681,9 @@
 - Asset inventory (equipment >€100)
 
 **Tax Preparation:**
-- Even as individuals (before gGmbH), keep clean records
+- Keep clean records from Day 1 (even before legal entity formation)
 - May need to file taxes on any revenue (unlikely Year 1)
-- Track for future gGmbH formation (if pursuing)
+- Track expenses for future legal entity formation (e.V., Associação, or gGmbH if scaling)
 - Receipts prove legitimacy for grant applications
 
 → See: [[30_Business_Model|Financial Model Details]]

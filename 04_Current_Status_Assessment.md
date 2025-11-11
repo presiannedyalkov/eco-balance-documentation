@@ -96,7 +96,7 @@
 
 **Decision criteria:** What's available within budget in chosen location?
 
-→ Full details: [[44_Site_Selection|Site Selection]]
+→ Full details: [[44_Site_Selection_Land_Acquisition|Site Selection]]
 
 ---
 
@@ -491,7 +491,7 @@
 
 **Current Status:** Deferred until location and funding clarified (Month 6)
 
-→ Full details: [[44_Site_Selection|Site Selection]]
+→ Full details: [[44_Site_Selection_Land_Acquisition|Site Selection]]
 
 ---
 
@@ -929,7 +929,7 @@ Now you need to choose **when to start and at what pace**:
 **What's Being Explored:**
 - [[32_Funding_Strategy|Funding Pathways (6 options)]]
 - [[10_Organizational_Structure|Legal Structure (4+ options)]]
-- [[44_Site_Selection|Location & Land (multiple options)]]
+- [[44_Site_Selection_Land_Acquisition|Location & Land (multiple options)]]
 - [[42_Adaptive_Timeline|Timeline Scenarios (4 options)]]
 
 **How We'll Decide:**
