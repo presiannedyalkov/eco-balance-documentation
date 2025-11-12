@@ -10,7 +10,7 @@ sidebar_position: 0
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
-[]( )| [Project Hub](/)
+[Project Hub](/)
 
 ---
 
