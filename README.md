@@ -3,8 +3,8 @@
 **Ecosystem restoration project documentation - Creating habitat for wildlife through biodiversity restoration**
 
 **Status:**
-[![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) Deployment Status
-[![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) Verification Status
+- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) Deployment Status
+- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) Verification Status
 
 ---
 
@@ -289,14 +289,14 @@ Please note that this documentation is primarily maintained by the project found
 
 ## 🔗 Links
 
-- **Project Documentation:** [View on GitHub Pages](https://presiannedyalkov.github.io/eco-balance-documentation/)
-- **Repository:** [GitHub Repository](https://github.com/presiannedyalkov/eco-balance-documentation)
-- **Restoration Playbook:** [Restoration Playbook Template](/restoration-playbook/README) - Template for ecological restoration projects
+- **🌐 Live Documentation:** [View on GitHub Pages](https://presiannedyalkov.github.io/eco-balance-documentation/) - Public documentation website
+- **📦 Repository:** [GitHub Repository](https://github.com/presiannedyalkov/eco-balance-documentation)
+- **📚 Restoration Playbook:** [Restoration Playbook Template](/restoration-playbook/README) - Template for ecological restoration projects
 
 ## 🚀 Build Status
 
-[![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) Deployment Status  
-[![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) Verification Status
+- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) Deployment Status
+- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) Verification Status
 
 ---
 
