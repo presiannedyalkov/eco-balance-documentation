@@ -10,6 +10,10 @@ slug: /
 **Current Status:** Exploration Phase  
 **Last Updated:** November 2025
 
+**Build Status:**
+[![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) Deployment
+[![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) Verification
+
 ---
 
 ## 🎯 Vision
