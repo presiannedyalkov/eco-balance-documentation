@@ -24,8 +24,9 @@ Create a **habitat for wildlife** and **restore land to become a shelter and san
 
 ### Viewing the Documentation
 
-**Option 1: View Online (if deployed)**
-- Check if a documentation site is deployed (link will be added when available)
+**Option 1: View Online**
+- **🌐 Live Site:** [https://presiannedyalkov.github.io/eco-balance-documentation/](https://presiannedyalkov.github.io/eco-balance-documentation/)
+- Automatically updated on every push to `main`
 
 **Option 2: Run Locally**
 
