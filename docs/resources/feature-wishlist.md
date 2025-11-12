@@ -8,14 +8,14 @@ sidebar_position: 3
 
 **Purpose:** Track desired features and enhancements without concrete timelines
 **Status:** Living document - priorities may shift based on project needs
-**Last Updated:** November 10, 2025 (v1.2.0)
+**Last Updated:** November 2025 (v1.3.0)
 
 ---
 
 ## 📝 Documentation & Content
 
 ### Public Documentation Website (GitHub Pages)
-**Status:** Planned
+**Status:** In Development
 **Priority:** High
 **Related:** Phase 3 (Public Platform)
 
@@ -80,6 +80,14 @@ Transform the documentation repository into a public-facing website using Docusa
 
 **Dependencies:**
 - None (can be implemented immediately)
+
+**Implementation Status:**
+- ✅ Docusaurus framework installed and configured
+- ✅ Content structure organized in `docs/` directory
+- ✅ GitHub Actions workflow created (`.github/workflows/deploy.yml`)
+- ✅ Docusaurus config updated with repository information
+- ⏳ GitHub Pages settings need to be enabled in repository settings
+- ⏳ First deployment pending (will trigger on next push to main)
 
 **Estimated Effort:**
 - Initial setup: 2-4 hours
@@ -464,6 +472,7 @@ Real-time public dashboard showing project impact metrics and progress toward go
 ---
 
 **Version History:**
+- v1.3.0 (November 2025): Updated Public Documentation Website status to "In Development" - deployment workflow created
 - v1.2.0 (November 10, 2025): Added Documentation Export Formats (EPUB & PDF) feature
 - v1.1.0 (November 10, 2025): Added Team Role AI Personas feature
 - v1.0.0 (November 10, 2025): Initial wishlist created with Docusaurus documentation site as first feature

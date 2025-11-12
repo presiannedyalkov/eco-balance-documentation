@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io',
+  url: 'https://presiannedyalkov.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For local development, use '/' for easier access
   // For GitHub Pages deployment, this should be '/eco-balance-documentation/'
@@ -19,7 +19,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
+  organizationName: 'presiannedyalkov', // Usually your GitHub org/user name.
   projectName: 'eco-balance-documentation', // Usually your repo name.
 
   onBrokenLinks: 'warn',
@@ -41,7 +41,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/your-username/eco-balance-documentation/tree/main/',
+          editUrl: 'https://github.com/presiannedyalkov/eco-balance-documentation/tree/main/',
           routeBasePath: '/', // Serve docs at root instead of /docs
         },
         blog: false, // Disable blog
@@ -72,7 +72,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/your-username/eco-balance-documentation',
+            href: 'https://github.com/presiannedyalkov/eco-balance-documentation',
             label: 'GitHub',
             position: 'right',
           },
@@ -111,7 +111,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-username/eco-balance-documentation',
+                href: 'https://github.com/presiannedyalkov/eco-balance-documentation',
               },
             ],
           },
