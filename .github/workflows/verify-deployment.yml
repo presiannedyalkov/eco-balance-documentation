@@ -87,11 +87,31 @@ jobs:
         id: rollback_info
         run: |
           # Get the commit that was deployed
-          DEPLOYED_COMMIT="${{ github.event.workflow_run.head_sha || github.sha }}"
+          # When triggered by workflow_run, use head_sha; otherwise use current commit
+          if [ -n "${{ github.event.workflow_run.head_sha }}" ]; then
+            DEPLOYED_COMMIT="${{ github.event.workflow_run.head_sha }}"
+          else
+            DEPLOYED_COMMIT="${{ github.sha }}"
+          fi
+          
+          if [ -z "$DEPLOYED_COMMIT" ]; then
+            echo "❌ Error: Could not determine deployed commit"
+            echo "rollback_available=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          
           echo "deployed_commit=$DEPLOYED_COMMIT" >> $GITHUB_OUTPUT
+          echo "Using commit: $DEPLOYED_COMMIT"
           
           # Find the commit before the deployed one (parent)
-          PREVIOUS_COMMIT=$(git rev-parse ${DEPLOYED_COMMIT}^)
+          PREVIOUS_COMMIT=$(git rev-parse ${DEPLOYED_COMMIT}^ 2>/dev/null || echo "")
+          
+          if [ -z "$PREVIOUS_COMMIT" ]; then
+            echo "⚠️  Could not find parent commit for $DEPLOYED_COMMIT"
+            echo "rollback_available=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
           echo "previous_commit=$PREVIOUS_COMMIT" >> $GITHUB_OUTPUT
           
           # Check if previous commit exists
@@ -100,7 +120,7 @@ jobs:
             echo "✅ Found previous commit: $PREVIOUS_COMMIT"
           else
             echo "rollback_available=false" >> $GITHUB_OUTPUT
-            echo "⚠️  Could not find previous commit"
+            echo "⚠️  Previous commit does not exist in repository"
           fi
 
       - name: Attempt automatic rollback
@@ -109,6 +129,12 @@ jobs:
         run: |
           PREVIOUS_COMMIT="${{ steps.rollback_info.outputs.previous_commit }}"
           DEPLOYED_COMMIT="${{ steps.rollback_info.outputs.deployed_commit }}"
+          
+          if [ -z "$PREVIOUS_COMMIT" ]; then
+            echo "❌ PREVIOUS_COMMIT is empty, cannot proceed with rollback"
+            echo "rollback_pushed=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
           
           echo "🔄 Attempting to rollback to: $PREVIOUS_COMMIT"
           
