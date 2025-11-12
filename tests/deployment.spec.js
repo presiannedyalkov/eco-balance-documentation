@@ -35,8 +35,9 @@ test.describe('Deployment Verification', () => {
     
     await expect(page).toHaveTitle(/Eco Balance/i, { timeout: 10000 });
     
-    // Check that main content is visible
-    await expect(page.locator('main, article, .markdown, .docMainContainer, body')).toBeVisible({ timeout: 10000 });
+    // Check that main content is visible (use .first() to avoid strict mode violation)
+    const contentLocator = page.locator('main, article, .markdown, .docMainContainer').first();
+    await expect(contentLocator).toBeVisible({ timeout: 10000 });
   });
 
   test('navigation works', async ({ page }) => {
@@ -157,41 +158,58 @@ test.describe('Deployment Verification', () => {
     expect(linkCount).toBeGreaterThan(0);
     
     // Test a sample of links (first 5 to avoid timeout)
-    const linksToTest = Math.min(5, linkCount);
+    // Get all hrefs first to avoid timing issues with dynamic content
+    const linkHrefs = [];
+    for (let i = 0; i < Math.min(10, linkCount); i++) {
+      try {
+        const link = allLinks.nth(i);
+        const href = await link.getAttribute('href', { timeout: 5000 }).catch(() => null);
+        if (href) {
+          linkHrefs.push({ index: i, href });
+        }
+      } catch (error) {
+        // Skip links that can't be accessed
+        continue;
+      }
+    }
+    
+    // Filter to internal links only
+    const internalLinks = linkHrefs.filter(
+      ({ href }) => href && 
+      !href.startsWith('#') && 
+      !href.startsWith('http') && 
+      !href.startsWith('mailto:') &&
+      (href.startsWith('/') || href.includes('eco-balance-documentation'))
+    );
+    
+    // Test up to 5 internal links
+    const linksToTest = Math.min(5, internalLinks.length);
     let successfulLinks = 0;
     
     for (let i = 0; i < linksToTest; i++) {
-      const link = allLinks.nth(i);
-      const href = await link.getAttribute('href');
-      
-      // Skip anchors, external links, and empty hrefs
-      if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) {
-        continue;
-      }
-      
-      // Only test internal links (relative or containing eco-balance-documentation)
-      if (href.startsWith('/') || href.includes('eco-balance-documentation')) {
-        try {
-          // Get current URL before clicking
-          const beforeUrl = page.url();
-          
-          await link.click({ timeout: 10000 });
-          await page.waitForLoadState('networkidle', { timeout: 15000 });
-          
-          // Check page loaded and stayed on correct domain
-          const afterUrl = page.url();
-          if (afterUrl.includes('eco-balance-documentation') || afterUrl.includes('presiannedyalkov.github.io')) {
-            successfulLinks++;
-          } else {
-            console.warn(`Link ${href} navigated to wrong domain: ${afterUrl}`);
-          }
-          
-          // Go back
-          await page.goBack({ waitUntil: 'networkidle', timeout: 15000 });
-        } catch (error) {
-          console.warn(`Link ${href} failed:`, error.message);
-          // Don't fail the test for individual link failures
+      const { index, href } = internalLinks[i];
+      try {
+        const link = allLinks.nth(index);
+        
+        // Get current URL before clicking
+        const beforeUrl = page.url();
+        
+        await link.click({ timeout: 10000 });
+        await page.waitForLoadState('networkidle', { timeout: 15000 });
+        
+        // Check page loaded and stayed on correct domain
+        const afterUrl = page.url();
+        if (afterUrl.includes('eco-balance-documentation') || afterUrl.includes('presiannedyalkov.github.io')) {
+          successfulLinks++;
+        } else {
+          console.warn(`Link ${href} navigated to wrong domain: ${afterUrl}`);
         }
+        
+        // Go back
+        await page.goBack({ waitUntil: 'networkidle', timeout: 15000 });
+      } catch (error) {
+        console.warn(`Link ${href} failed:`, error.message);
+        // Don't fail the test for individual link failures
       }
     }
     
