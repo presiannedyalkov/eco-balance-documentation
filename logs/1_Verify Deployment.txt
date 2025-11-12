@@ -1,0 +1,700 @@
+﻿2025-11-12T16:14:09.4428454Z Current runner version: '2.329.0'
+2025-11-12T16:14:09.4475827Z ##[group]Runner Image Provisioner
+2025-11-12T16:14:09.4477352Z Hosted Compute Agent
+2025-11-12T16:14:09.4478226Z Version: 20251016.436
+2025-11-12T16:14:09.4479194Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+2025-11-12T16:14:09.4480084Z Build Date: 2025-10-15T20:44:12Z
+2025-11-12T16:14:09.4481508Z ##[endgroup]
+2025-11-12T16:14:09.4482095Z ##[group]Operating System
+2025-11-12T16:14:09.4482977Z Ubuntu
+2025-11-12T16:14:09.4483469Z 24.04.3
+2025-11-12T16:14:09.4484082Z LTS
+2025-11-12T16:14:09.4484586Z ##[endgroup]
+2025-11-12T16:14:09.4485061Z ##[group]Runner Image
+2025-11-12T16:14:09.4485736Z Image: ubuntu-24.04
+2025-11-12T16:14:09.4486245Z Version: 20251102.99.1
+2025-11-12T16:14:09.4487433Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251102.99/images/ubuntu/Ubuntu2404-Readme.md
+2025-11-12T16:14:09.4490007Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251102.99
+2025-11-12T16:14:09.4491806Z ##[endgroup]
+2025-11-12T16:14:09.4493606Z ##[group]GITHUB_TOKEN Permissions
+2025-11-12T16:14:09.4496424Z Contents: read
+2025-11-12T16:14:09.4497359Z Metadata: read
+2025-11-12T16:14:09.4498096Z Packages: read
+2025-11-12T16:14:09.4498847Z ##[endgroup]
+2025-11-12T16:14:09.4502140Z Secret source: Actions
+2025-11-12T16:14:09.4503291Z Prepare workflow directory
+2025-11-12T16:14:09.4900998Z Prepare all required actions
+2025-11-12T16:14:09.4939453Z Getting action download info
+2025-11-12T16:14:09.9586739Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-11-12T16:14:10.0748365Z Download action repository 'actions/setup-node@v3' (SHA:3235b876344d2a9aa001b8d1453c930bba69e610)
+2025-11-12T16:14:10.2254214Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-11-12T16:14:10.9561509Z Complete job name: Verify Deployment
+2025-11-12T16:14:11.0428825Z ##[group]Run actions/checkout@v4
+2025-11-12T16:14:11.0430151Z with:
+2025-11-12T16:14:11.0431138Z   fetch-depth: 0
+2025-11-12T16:14:11.0432181Z   repository: presiannedyalkov/eco-balance-documentation
+2025-11-12T16:14:11.0433738Z   token: ***
+2025-11-12T16:14:11.0434502Z   ssh-strict: true
+2025-11-12T16:14:11.0435286Z   ssh-user: git
+2025-11-12T16:14:11.0436109Z   persist-credentials: true
+2025-11-12T16:14:11.0437024Z   clean: true
+2025-11-12T16:14:11.0437834Z   sparse-checkout-cone-mode: true
+2025-11-12T16:14:11.0438834Z   fetch-tags: false
+2025-11-12T16:14:11.0439664Z   show-progress: true
+2025-11-12T16:14:11.0440492Z   lfs: false
+2025-11-12T16:14:11.0441387Z   submodules: false
+2025-11-12T16:14:11.0442248Z   set-safe-directory: true
+2025-11-12T16:14:11.0443449Z ##[endgroup]
+2025-11-12T16:14:11.1556019Z Syncing repository: presiannedyalkov/eco-balance-documentation
+2025-11-12T16:14:11.1558991Z ##[group]Getting Git version info
+2025-11-12T16:14:11.1561604Z Working directory is '/home/runner/work/eco-balance-documentation/eco-balance-documentation'
+2025-11-12T16:14:11.1565584Z [command]/usr/bin/git version
+2025-11-12T16:14:11.1618159Z git version 2.51.2
+2025-11-12T16:14:11.1645227Z ##[endgroup]
+2025-11-12T16:14:11.1659265Z Temporarily overriding HOME='/home/runner/work/_temp/8ee42ecd-aa94-493b-9e9b-8e88fa073a47' before making global git config changes
+2025-11-12T16:14:11.1662444Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-12T16:14:11.1665658Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eco-balance-documentation/eco-balance-documentation
+2025-11-12T16:14:11.1711262Z Deleting the contents of '/home/runner/work/eco-balance-documentation/eco-balance-documentation'
+2025-11-12T16:14:11.1714498Z ##[group]Initializing the repository
+2025-11-12T16:14:11.1718932Z [command]/usr/bin/git init /home/runner/work/eco-balance-documentation/eco-balance-documentation
+2025-11-12T16:14:11.1815635Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-11-12T16:14:11.1817627Z hint: is subject to change. To configure the initial branch name to use in all
+2025-11-12T16:14:11.1820432Z hint: of your new repositories, which will suppress this warning, call:
+2025-11-12T16:14:11.1822198Z hint:
+2025-11-12T16:14:11.1823180Z hint: 	git config --global init.defaultBranch <name>
+2025-11-12T16:14:11.1824740Z hint:
+2025-11-12T16:14:11.1825939Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-11-12T16:14:11.1827808Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-11-12T16:14:11.1829237Z hint:
+2025-11-12T16:14:11.1830156Z hint: 	git branch -m <name>
+2025-11-12T16:14:11.1831376Z hint:
+2025-11-12T16:14:11.1832615Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-11-12T16:14:11.1835127Z Initialized empty Git repository in /home/runner/work/eco-balance-documentation/eco-balance-documentation/.git/
+2025-11-12T16:14:11.1839050Z [command]/usr/bin/git remote add origin https://github.com/presiannedyalkov/eco-balance-documentation
+2025-11-12T16:14:11.1868018Z ##[endgroup]
+2025-11-12T16:14:11.1869657Z ##[group]Disabling automatic garbage collection
+2025-11-12T16:14:11.1871602Z [command]/usr/bin/git config --local gc.auto 0
+2025-11-12T16:14:11.1901855Z ##[endgroup]
+2025-11-12T16:14:11.1903198Z ##[group]Setting up auth
+2025-11-12T16:14:11.1908677Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-12T16:14:11.1939187Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-12T16:14:11.2259927Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-12T16:14:11.2290441Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-12T16:14:11.2522827Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-11-12T16:14:11.2558004Z ##[endgroup]
+2025-11-12T16:14:11.2559426Z ##[group]Fetching the repository
+2025-11-12T16:14:11.2569195Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2025-11-12T16:14:12.1977388Z From https://github.com/presiannedyalkov/eco-balance-documentation
+2025-11-12T16:14:12.1982603Z  * [new branch]      claude/agent-1-vault-maintenance-011CUxByGeERAoadgdesySJG -> origin/claude/agent-1-vault-maintenance-011CUxByGeERAoadgdesySJG
+2025-11-12T16:14:12.1988749Z  * [new branch]      claude/agent-2-vault-maintenance-011CUxBzZ3EwjYk3ErrR4E9f -> origin/claude/agent-2-vault-maintenance-011CUxBzZ3EwjYk3ErrR4E9f
+2025-11-12T16:14:12.1994878Z  * [new branch]      claude/agent-3-vault-maintenance-011CUxC235ESaf76Zes1J68B -> origin/claude/agent-3-vault-maintenance-011CUxC235ESaf76Zes1J68B
+2025-11-12T16:14:12.2001399Z  * [new branch]      claude/agent-4-vault-maintenance-011CUxC3XjvzemfZtfovmhBZ -> origin/claude/agent-4-vault-maintenance-011CUxC3XjvzemfZtfovmhBZ
+2025-11-12T16:14:12.2007351Z  * [new branch]      claude/agent-5-vault-maintenance-011CUxC57CcSmJoRMz8TuFWo -> origin/claude/agent-5-vault-maintenance-011CUxC57CcSmJoRMz8TuFWo
+2025-11-12T16:14:12.2013349Z  * [new branch]      claude/agent-6-vault-maintenance-011CUxDtp4h4BzeGy2iKL57C -> origin/claude/agent-6-vault-maintenance-011CUxDtp4h4BzeGy2iKL57C
+2025-11-12T16:14:12.2019464Z  * [new branch]      claude/archivist-vault-maintenance-011CUttAWxtUB2DGbNMpYEWN -> origin/claude/archivist-vault-maintenance-011CUttAWxtUB2DGbNMpYEWN
+2025-11-12T16:14:12.2025808Z  * [new branch]      claude/auditor-vault-maintenance-011CUtspZUtd33gMEGeQZXop -> origin/claude/auditor-vault-maintenance-011CUtspZUtd33gMEGeQZXop
+2025-11-12T16:14:12.2032415Z  * [new branch]      claude/curator-vault-maintenance-011CUtsjgfcF2QoLbXX2jj9a -> origin/claude/curator-vault-maintenance-011CUtsjgfcF2QoLbXX2jj9a
+2025-11-12T16:14:12.2038722Z  * [new branch]      claude/curator-vault-maintenance-011CUuBjLZyFHiiXVJVrPSfZ -> origin/claude/curator-vault-maintenance-011CUuBjLZyFHiiXVJVrPSfZ
+2025-11-12T16:14:12.2044900Z  * [new branch]      claude/janitor-vault-maintenance-011CUtt8RNjkd68XR3AW4aAi -> origin/claude/janitor-vault-maintenance-011CUtt8RNjkd68XR3AW4aAi
+2025-11-12T16:14:12.2051148Z  * [new branch]      claude/librarian-vault-maintenance-011CUtsrhuhyBpHr4VyTCpNU -> origin/claude/librarian-vault-maintenance-011CUtsrhuhyBpHr4VyTCpNU
+2025-11-12T16:14:12.2054975Z  * [new branch]      claude/librarian-vault-maintenance-011CUtxhWMmFjppGBt3dTYuQ -> origin/claude/librarian-vault-maintenance-011CUtxhWMmFjppGBt3dTYuQ
+2025-11-12T16:14:12.2058629Z  * [new branch]      claude/vault-maintenance-audit-011CUvrCX3gamKJvGBjTQSrh -> origin/claude/vault-maintenance-audit-011CUvrCX3gamKJvGBjTQSrh
+2025-11-12T16:14:12.2062082Z  * [new branch]      claude/vault-maintenance-audit-011CUvrMa8ip5B4cBkw6waxL -> origin/claude/vault-maintenance-audit-011CUvrMa8ip5B4cBkw6waxL
+2025-11-12T16:14:12.2065233Z  * [new branch]      claude/vault-maintenance-audit-011CUvrPhqsge4PQAUr83pbQ -> origin/claude/vault-maintenance-audit-011CUvrPhqsge4PQAUr83pbQ
+2025-11-12T16:14:12.2068358Z  * [new branch]      claude/vault-maintenance-audit-011CUvrRcduL1a1xzMf1MFNg -> origin/claude/vault-maintenance-audit-011CUvrRcduL1a1xzMf1MFNg
+2025-11-12T16:14:12.2071694Z  * [new branch]      claude/vault-maintenance-audit-011CUvrSaPEpcwXUSJARWf4G -> origin/claude/vault-maintenance-audit-011CUvrSaPEpcwXUSJARWf4G
+2025-11-12T16:14:12.2075284Z  * [new branch]      claude/vault-maintenance-audit-011CUvrTkBNkdB8k1UzbrTXX -> origin/claude/vault-maintenance-audit-011CUvrTkBNkdB8k1UzbrTXX
+2025-11-12T16:14:12.2080226Z  * [new branch]      claude/vault-maintenance-audit-011CUvrV1aNJzmUe1jypKg56 -> origin/claude/vault-maintenance-audit-011CUvrV1aNJzmUe1jypKg56
+2025-11-12T16:14:12.2085887Z  * [new branch]      claude/vault-maintenance-audit-011CUvrY5hkFuZ7aCY6o1ZD1 -> origin/claude/vault-maintenance-audit-011CUvrY5hkFuZ7aCY6o1ZD1
+2025-11-12T16:14:12.2091669Z  * [new branch]      claude/vault-maintenance-audit-011CUvrYqAAUKqELLX7r1JwW -> origin/claude/vault-maintenance-audit-011CUvrYqAAUKqELLX7r1JwW
+2025-11-12T16:14:12.2097287Z  * [new branch]      claude/vault-maintenance-audit-011CUvrZecw4W85RhJQD8um1 -> origin/claude/vault-maintenance-audit-011CUvrZecw4W85RhJQD8um1
+2025-11-12T16:14:12.2102563Z  * [new branch]      claude/vault-maintenance-audit-011CUw2YwVaWJ8FA8upJVoJU -> origin/claude/vault-maintenance-audit-011CUw2YwVaWJ8FA8upJVoJU
+2025-11-12T16:14:12.2105665Z  * [new branch]      claude/vault-maintenance-audit-011CUw2bNXXa9hCNUVHfvXCE -> origin/claude/vault-maintenance-audit-011CUw2bNXXa9hCNUVHfvXCE
+2025-11-12T16:14:12.2108286Z  * [new branch]      claude/vault-maintenance-audit-011CUw2dcDMCoj1YW3S3imZk -> origin/claude/vault-maintenance-audit-011CUw2dcDMCoj1YW3S3imZk
+2025-11-12T16:14:12.2110929Z  * [new branch]      claude/vault-maintenance-audit-011CUw2fy8k5657n2YLWsvJN -> origin/claude/vault-maintenance-audit-011CUw2fy8k5657n2YLWsvJN
+2025-11-12T16:14:12.2114984Z  * [new branch]      claude/vault-maintenance-audit-011CUw2iARTRSe6q6cKsnNaG -> origin/claude/vault-maintenance-audit-011CUw2iARTRSe6q6cKsnNaG
+2025-11-12T16:14:12.2117594Z  * [new branch]      claude/vault-maintenance-audit-011CUw2nR9LfZTNK5KHFoCv6 -> origin/claude/vault-maintenance-audit-011CUw2nR9LfZTNK5KHFoCv6
+2025-11-12T16:14:12.2120116Z  * [new branch]      claude/vault-maintenance-audit-011CUw2oe9TYdTbRyWv24Xvs -> origin/claude/vault-maintenance-audit-011CUw2oe9TYdTbRyWv24Xvs
+2025-11-12T16:14:12.2122829Z  * [new branch]      claude/vault-maintenance-audit-011CUw2q6CQDU4UPhzPPnysL -> origin/claude/vault-maintenance-audit-011CUw2q6CQDU4UPhzPPnysL
+2025-11-12T16:14:12.2125474Z  * [new branch]      claude/vault-maintenance-audit-fixes-011CUw5cmNL3hKkJ3gV6WJP7 -> origin/claude/vault-maintenance-audit-fixes-011CUw5cmNL3hKkJ3gV6WJP7
+2025-11-12T16:14:12.2128280Z  * [new branch]      claude/vault-maintenance-audit-fixes-011CUw5daif3fk5fT6VLDkwc -> origin/claude/vault-maintenance-audit-fixes-011CUw5daif3fk5fT6VLDkwc
+2025-11-12T16:14:12.2131432Z  * [new branch]      claude/vault-maintenance-audit-fixes-011CUw5eK1syKUEbq4GLfeBT -> origin/claude/vault-maintenance-audit-fixes-011CUw5eK1syKUEbq4GLfeBT
+2025-11-12T16:14:12.2136295Z  * [new branch]      claude/vault-maintenance-audit-fixes-011CUw5f5GQv8zhocAmJRdHD -> origin/claude/vault-maintenance-audit-fixes-011CUw5f5GQv8zhocAmJRdHD
+2025-11-12T16:14:12.2141699Z  * [new branch]      claude/vault-maintenance-audit-round-3-011CUw2aW5AfEkgEMqKYPSsd -> origin/claude/vault-maintenance-audit-round-3-011CUw2aW5AfEkgEMqKYPSsd
+2025-11-12T16:14:12.2146923Z  * [new branch]      claude/vault-maintenance-audit-round-3-011CUw2cNmSLA7LKuMTrHuNS -> origin/claude/vault-maintenance-audit-round-3-011CUw2cNmSLA7LKuMTrHuNS
+2025-11-12T16:14:12.2151120Z  * [new branch]      docs/add-maintenance-personas-info -> origin/docs/add-maintenance-personas-info
+2025-11-12T16:14:12.2152989Z  * [new branch]      main       -> origin/main
+2025-11-12T16:14:12.2155203Z [command]/usr/bin/git branch --list --remote origin/main
+2025-11-12T16:14:12.2156251Z   origin/main
+2025-11-12T16:14:12.2157271Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2025-11-12T16:14:12.2175637Z e3b24cd06c975ffca1c39d72de92fecc0800e1c4
+2025-11-12T16:14:12.2184735Z ##[endgroup]
+2025-11-12T16:14:12.2185781Z ##[group]Determining the checkout info
+2025-11-12T16:14:12.2187011Z ##[endgroup]
+2025-11-12T16:14:12.2188317Z [command]/usr/bin/git sparse-checkout disable
+2025-11-12T16:14:12.2229100Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-11-12T16:14:12.2255883Z ##[group]Checking out the ref
+2025-11-12T16:14:12.2260102Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-11-12T16:14:12.2840250Z Switched to a new branch 'main'
+2025-11-12T16:14:12.2841582Z branch 'main' set up to track 'origin/main'.
+2025-11-12T16:14:12.2853824Z ##[endgroup]
+2025-11-12T16:14:12.2896542Z [command]/usr/bin/git log -1 --format=%H
+2025-11-12T16:14:12.2921386Z e3b24cd06c975ffca1c39d72de92fecc0800e1c4
+2025-11-12T16:14:12.3135631Z ##[group]Run actions/setup-node@v3
+2025-11-12T16:14:12.3135955Z with:
+2025-11-12T16:14:12.3136172Z   node-version: 18
+2025-11-12T16:14:12.3136394Z   always-auth: false
+2025-11-12T16:14:12.3136628Z   check-latest: false
+2025-11-12T16:14:12.3137004Z   token: ***
+2025-11-12T16:14:12.3137224Z ##[endgroup]
+2025-11-12T16:14:12.5636042Z Attempting to download 18...
+2025-11-12T16:14:13.5659400Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+2025-11-12T16:14:14.0123166Z Extracting ...
+2025-11-12T16:14:14.0234284Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword -C /home/runner/work/_temp/00889117-00ed-4ed6-adf7-78544b3242e4 -f /home/runner/work/_temp/842fa7cd-a959-49c7-a952-76f9ff1196cc
+2025-11-12T16:14:14.9552399Z Adding to the cache ...
+2025-11-12T16:14:16.5177337Z ##[group]Environment details
+2025-11-12T16:14:16.8207183Z node: v18.20.8
+2025-11-12T16:14:16.8207562Z npm: 10.8.2
+2025-11-12T16:14:16.8207912Z yarn: 1.22.22
+2025-11-12T16:14:16.8208515Z ##[endgroup]
+2025-11-12T16:14:16.8371186Z ##[group]Run npm ci --ignore-scripts || npm install --ignore-scripts
+2025-11-12T16:14:16.8371724Z [36;1mnpm ci --ignore-scripts || npm install --ignore-scripts[0m
+2025-11-12T16:14:16.8408682Z shell: /usr/bin/bash -e {0}
+2025-11-12T16:14:16.8408948Z ##[endgroup]
+2025-11-12T16:14:17.1995186Z npm error code EUSAGE
+2025-11-12T16:14:17.1995592Z npm error
+2025-11-12T16:14:17.1996203Z npm error The `npm ci` command can only install with an existing package-lock.json or
+2025-11-12T16:14:17.1997047Z npm error npm-shrinkwrap.json with lockfileVersion >= 1. Run an install with npm@5 or
+2025-11-12T16:14:17.1997794Z npm error later to generate a package-lock.json file, then try again.
+2025-11-12T16:14:17.1998224Z npm error
+2025-11-12T16:14:17.1998518Z npm error Clean install a project
+2025-11-12T16:14:17.1999145Z npm error
+2025-11-12T16:14:17.1999370Z npm error Usage:
+2025-11-12T16:14:17.1999622Z npm error npm ci
+2025-11-12T16:14:17.1999848Z npm error
+2025-11-12T16:14:17.2000136Z npm error Options:
+2025-11-12T16:14:17.2000695Z npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2025-11-12T16:14:17.2001906Z npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2025-11-12T16:14:17.2002737Z npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+2025-11-12T16:14:17.2003530Z npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+2025-11-12T16:14:17.2004064Z npm error [--no-bin-links] [--no-fund] [--dry-run]
+2025-11-12T16:14:17.2004607Z npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2025-11-12T16:14:17.2005166Z npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2025-11-12T16:14:17.2005520Z npm error
+2025-11-12T16:14:17.2006160Z npm error aliases: clean-install, ic, install-clean, isntall-clean
+2025-11-12T16:14:17.2006739Z npm error
+2025-11-12T16:14:17.2007151Z npm error Run "npm help ci" for more info
+2025-11-12T16:14:17.2007770Z npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-11-12T16_14_16_913Z-debug-0.log
+2025-11-12T16:14:55.3255592Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+2025-11-12T16:14:55.5196136Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+2025-11-12T16:14:55.6376808Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+2025-11-12T16:15:11.0521607Z 
+2025-11-12T16:15:11.0522442Z added 1281 packages, and audited 1282 packages in 54s
+2025-11-12T16:15:11.0522881Z 
+2025-11-12T16:15:11.0523342Z 383 packages are looking for funding
+2025-11-12T16:15:11.0523830Z   run `npm fund` for details
+2025-11-12T16:15:11.2779514Z 
+2025-11-12T16:15:11.2780425Z 15 moderate severity vulnerabilities
+2025-11-12T16:15:11.2781155Z 
+2025-11-12T16:15:11.2781444Z To address all issues, run:
+2025-11-12T16:15:11.2781856Z   npm audit fix
+2025-11-12T16:15:11.2782062Z 
+2025-11-12T16:15:11.2782262Z Run `npm audit` for details.
+2025-11-12T16:15:11.3190958Z ##[group]Run npx playwright install --with-deps chromium
+2025-11-12T16:15:11.3191412Z [36;1mnpx playwright install --with-deps chromium[0m
+2025-11-12T16:15:11.3224244Z shell: /usr/bin/bash -e {0}
+2025-11-12T16:15:11.3224473Z ##[endgroup]
+2025-11-12T16:15:12.2939125Z Installing dependencies...
+2025-11-12T16:15:12.3077452Z Switching to root user to install dependencies...
+2025-11-12T16:15:12.5764641Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2025-11-12T16:15:12.5932210Z Get:3 https://packages.microsoft.com/repos/azure-cli noble InRelease [3564 B]
+2025-11-12T16:15:12.6267450Z Get:4 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2025-11-12T16:15:12.6324690Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2025-11-12T16:15:12.6373590Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2025-11-12T16:15:12.6457273Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2025-11-12T16:15:12.6553619Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2025-11-12T16:15:12.8655484Z Get:8 https://packages.microsoft.com/repos/azure-cli noble/main amd64 Packages [1700 B]
+2025-11-12T16:15:12.9165115Z Get:9 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [49.9 kB]
+2025-11-12T16:15:12.9199307Z Get:10 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [11.2 kB]
+2025-11-12T16:15:12.9220064Z Get:11 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [67.2 kB]
+2025-11-12T16:15:13.0362141Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1585 kB]
+2025-11-12T16:15:13.0448726Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [299 kB]
+2025-11-12T16:15:13.0476044Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+2025-11-12T16:15:13.0499636Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [15.7 kB]
+2025-11-12T16:15:13.0513031Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1498 kB]
+2025-11-12T16:15:13.0612368Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+2025-11-12T16:15:13.0635324Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [31.4 kB]
+2025-11-12T16:15:13.0646506Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2244 kB]
+2025-11-12T16:15:13.0764962Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [509 kB]
+2025-11-12T16:15:13.0800457Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+2025-11-12T16:15:13.1241350Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+2025-11-12T16:15:13.1274086Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7124 B]
+2025-11-12T16:15:13.1293358Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [11.0 kB]
+2025-11-12T16:15:13.1303189Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+2025-11-12T16:15:13.1317815Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+2025-11-12T16:15:13.1607365Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1306 kB]
+2025-11-12T16:15:13.1679438Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [215 kB]
+2025-11-12T16:15:13.1695973Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+2025-11-12T16:15:13.1709587Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [9336 B]
+2025-11-12T16:15:13.1722822Z Get:31 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [906 kB]
+2025-11-12T16:15:13.1771058Z Get:32 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [203 kB]
+2025-11-12T16:15:13.1791555Z Get:33 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [52.2 kB]
+2025-11-12T16:15:13.1803348Z Get:34 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [19.4 kB]
+2025-11-12T16:15:13.1814441Z Get:35 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2140 kB]
+2025-11-12T16:15:13.2367056Z Get:36 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [486 kB]
+2025-11-12T16:15:13.2396341Z Get:37 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+2025-11-12T16:15:13.2406870Z Get:38 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+2025-11-12T16:15:25.3956088Z Fetched 12.6 MB in 2s (7237 kB/s)
+2025-11-12T16:15:26.1748854Z Reading package lists...
+2025-11-12T16:15:26.2015647Z Reading package lists...
+2025-11-12T16:15:26.3960423Z Building dependency tree...
+2025-11-12T16:15:26.3967901Z Reading state information...
+2025-11-12T16:15:26.5865897Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.1).
+2025-11-12T16:15:26.5866477Z libasound2t64 set to manually installed.
+2025-11-12T16:15:26.5867048Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+2025-11-12T16:15:26.5867648Z libatk-bridge2.0-0t64 set to manually installed.
+2025-11-12T16:15:26.5868192Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+2025-11-12T16:15:26.5868687Z libatk1.0-0t64 set to manually installed.
+2025-11-12T16:15:26.5870130Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+2025-11-12T16:15:26.5871013Z libatspi2.0-0t64 set to manually installed.
+2025-11-12T16:15:26.5871754Z libcairo2 is already the newest version (1.18.0-3build1).
+2025-11-12T16:15:26.5872461Z libcairo2 set to manually installed.
+2025-11-12T16:15:26.5873164Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.4).
+2025-11-12T16:15:26.5873949Z libcups2t64 set to manually installed.
+2025-11-12T16:15:26.5874863Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+2025-11-12T16:15:26.5875742Z libdbus-1-3 set to manually installed.
+2025-11-12T16:15:26.5876957Z libdrm2 is already the newest version (2.4.122-1~ubuntu0.24.04.1).
+2025-11-12T16:15:26.5877841Z libdrm2 set to manually installed.
+2025-11-12T16:15:26.5878824Z libgbm1 is already the newest version (25.0.7-0ubuntu0.24.04.2).
+2025-11-12T16:15:26.5879554Z libgbm1 set to manually installed.
+2025-11-12T16:15:26.5880568Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.4).
+2025-11-12T16:15:26.5881521Z libglib2.0-0t64 set to manually installed.
+2025-11-12T16:15:26.5882166Z libnspr4 is already the newest version (2:4.35-1.1build1).
+2025-11-12T16:15:26.5882779Z libnspr4 set to manually installed.
+2025-11-12T16:15:26.5883394Z libnss3 is already the newest version (2:3.98-1build1).
+2025-11-12T16:15:26.5883958Z libnss3 set to manually installed.
+2025-11-12T16:15:26.5884762Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+2025-11-12T16:15:26.5885435Z libpango-1.0-0 set to manually installed.
+2025-11-12T16:15:26.5886118Z libx11-6 is already the newest version (2:1.8.7-1build1).
+2025-11-12T16:15:26.5886690Z libx11-6 set to manually installed.
+2025-11-12T16:15:26.5887261Z libxcb1 is already the newest version (1.15-1ubuntu2).
+2025-11-12T16:15:26.5887815Z libxcb1 set to manually installed.
+2025-11-12T16:15:26.5888516Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+2025-11-12T16:15:26.5889147Z libxcomposite1 set to manually installed.
+2025-11-12T16:15:26.5889816Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+2025-11-12T16:15:26.5890406Z libxdamage1 set to manually installed.
+2025-11-12T16:15:26.5891241Z libxext6 is already the newest version (2:1.3.4-1build2).
+2025-11-12T16:15:26.5891873Z libxext6 set to manually installed.
+2025-11-12T16:15:26.5892880Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+2025-11-12T16:15:26.5893584Z libxfixes3 set to manually installed.
+2025-11-12T16:15:26.5894194Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+2025-11-12T16:15:26.5894561Z libxkbcommon0 set to manually installed.
+2025-11-12T16:15:26.5894936Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+2025-11-12T16:15:26.5895287Z libxrandr2 set to manually installed.
+2025-11-12T16:15:26.5895634Z xvfb is already the newest version (2:21.1.12-1ubuntu1.5).
+2025-11-12T16:15:26.5896123Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2025-11-12T16:15:26.5896617Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2025-11-12T16:15:26.5896999Z libfontconfig1 set to manually installed.
+2025-11-12T16:15:26.5897388Z libfreetype6 is already the newest version (2.13.2+dfsg-1build3).
+2025-11-12T16:15:26.5897746Z libfreetype6 set to manually installed.
+2025-11-12T16:15:26.5898120Z fonts-liberation is already the newest version (1:2.1.5-3).
+2025-11-12T16:15:26.5898492Z fonts-liberation set to manually installed.
+2025-11-12T16:15:26.5898845Z The following additional packages will be installed:
+2025-11-12T16:15:26.5899174Z   xfonts-encodings xfonts-utils
+2025-11-12T16:15:26.5899422Z Recommended packages:
+2025-11-12T16:15:26.5899666Z   fonts-ipafont-mincho fonts-tlwg-loma
+2025-11-12T16:15:26.6430410Z The following NEW packages will be installed:
+2025-11-12T16:15:26.6431275Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2025-11-12T16:15:26.6440696Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2025-11-12T16:15:26.6441489Z   xfonts-utils
+2025-11-12T16:15:26.6642370Z 0 upgraded, 9 newly installed, 0 to remove and 22 not upgraded.
+2025-11-12T16:15:26.6642874Z Need to get 21.1 MB of archives.
+2025-11-12T16:15:26.6643281Z After this operation, 79.5 MB of additional disk space will be used.
+2025-11-12T16:15:26.6643715Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2025-11-12T16:15:26.7508384Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2025-11-12T16:15:26.9119848Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2025-11-12T16:15:27.1407351Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2025-11-12T16:15:27.2122815Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2025-11-12T16:15:27.3314532Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2025-11-12T16:15:27.6128907Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+2025-11-12T16:15:27.6959165Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+2025-11-12T16:15:27.7677347Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+2025-11-12T16:15:27.8426984Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+2025-11-12T16:15:28.1310056Z Fetched 21.1 MB in 1s (17.7 MB/s)
+2025-11-12T16:15:28.1978887Z Selecting previously unselected package fonts-ipafont-gothic.
+2025-11-12T16:15:28.3055453Z (Reading database ... 
+2025-11-12T16:15:28.3055953Z (Reading database ... 5%
+2025-11-12T16:15:28.3056293Z (Reading database ... 10%
+2025-11-12T16:15:28.3056529Z (Reading database ... 15%
+2025-11-12T16:15:28.3056751Z (Reading database ... 20%
+2025-11-12T16:15:28.3056964Z (Reading database ... 25%
+2025-11-12T16:15:28.3057199Z (Reading database ... 30%
+2025-11-12T16:15:28.3057560Z (Reading database ... 35%
+2025-11-12T16:15:28.3057933Z (Reading database ... 40%
+2025-11-12T16:15:28.3058303Z (Reading database ... 45%
+2025-11-12T16:15:28.3058666Z (Reading database ... 50%
+2025-11-12T16:15:28.4146047Z (Reading database ... 55%
+2025-11-12T16:15:28.8515922Z (Reading database ... 60%
+2025-11-12T16:15:29.0477280Z (Reading database ... 65%
+2025-11-12T16:15:29.1529370Z (Reading database ... 70%
+2025-11-12T16:15:29.2521328Z (Reading database ... 75%
+2025-11-12T16:15:29.7992317Z (Reading database ... 80%
+2025-11-12T16:15:30.6193719Z (Reading database ... 85%
+2025-11-12T16:15:31.4526067Z (Reading database ... 90%
+2025-11-12T16:15:32.0996020Z (Reading database ... 95%
+2025-11-12T16:15:32.0996550Z (Reading database ... 100%
+2025-11-12T16:15:32.0997127Z (Reading database ... 215802 files and directories currently installed.)
+2025-11-12T16:15:32.1048175Z Preparing to unpack .../0-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+2025-11-12T16:15:32.1138962Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+2025-11-12T16:15:32.3448909Z Selecting previously unselected package fonts-freefont-ttf.
+2025-11-12T16:15:32.3582551Z Preparing to unpack .../1-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+2025-11-12T16:15:32.3589741Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+2025-11-12T16:15:32.4472354Z Selecting previously unselected package fonts-tlwg-loma-otf.
+2025-11-12T16:15:32.4604648Z Preparing to unpack .../2-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+2025-11-12T16:15:32.4612631Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2025-11-12T16:15:32.4826033Z Selecting previously unselected package fonts-unifont.
+2025-11-12T16:15:32.4960178Z Preparing to unpack .../3-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+2025-11-12T16:15:32.4967624Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+2025-11-12T16:15:32.6179173Z Selecting previously unselected package fonts-wqy-zenhei.
+2025-11-12T16:15:32.6313063Z Preparing to unpack .../4-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+2025-11-12T16:15:32.6466378Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+2025-11-12T16:15:33.1089548Z Selecting previously unselected package xfonts-encodings.
+2025-11-12T16:15:33.1224229Z Preparing to unpack .../5-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+2025-11-12T16:15:33.1232146Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2025-11-12T16:15:33.1528605Z Selecting previously unselected package xfonts-utils.
+2025-11-12T16:15:33.1662207Z Preparing to unpack .../6-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+2025-11-12T16:15:33.1670013Z Unpacking xfonts-utils (1:7.7+6build3) ...
+2025-11-12T16:15:33.2671321Z Selecting previously unselected package xfonts-cyrillic.
+2025-11-12T16:15:33.2804575Z Preparing to unpack .../7-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+2025-11-12T16:15:33.2813304Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+2025-11-12T16:15:33.3172444Z Selecting previously unselected package xfonts-scalable.
+2025-11-12T16:15:33.3306400Z Preparing to unpack .../8-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+2025-11-12T16:15:33.3315353Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+2025-11-12T16:15:33.3740048Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+2025-11-12T16:15:33.3855775Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+2025-11-12T16:15:33.3876062Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+2025-11-12T16:15:33.3894109Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+2025-11-12T16:15:33.3913497Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+2025-11-12T16:15:33.3978067Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+2025-11-12T16:15:33.3994611Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+2025-11-12T16:15:33.4014503Z Setting up xfonts-utils (1:7.7+6build3) ...
+2025-11-12T16:15:33.4053638Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+2025-11-12T16:15:33.4543436Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+2025-11-12T16:15:33.5240729Z Processing triggers for man-db (2.12.0-4build2) ...
+2025-11-12T16:15:50.9251635Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+2025-11-12T16:15:52.2062425Z 
+2025-11-12T16:15:52.2063028Z Running kernel seems to be up-to-date.
+2025-11-12T16:15:52.2063422Z 
+2025-11-12T16:15:52.2063680Z No services need to be restarted.
+2025-11-12T16:15:52.2064323Z 
+2025-11-12T16:15:52.2064567Z No containers need to be restarted.
+2025-11-12T16:15:52.2064881Z 
+2025-11-12T16:15:52.2065124Z No user sessions are running outdated binaries.
+2025-11-12T16:15:52.2065353Z 
+2025-11-12T16:15:52.2065685Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2025-11-12T16:15:53.0592678Z Downloading Chromium 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-linux.zip
+2025-11-12T16:15:53.3567066Z |                                                                                |   0% of 173.9 MiB
+2025-11-12T16:15:53.5098841Z |■■■■■■■■                                                                        |  10% of 173.9 MiB
+2025-11-12T16:15:53.6355448Z |■■■■■■■■■■■■■■■■                                                                |  20% of 173.9 MiB
+2025-11-12T16:15:53.7357506Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 173.9 MiB
+2025-11-12T16:15:53.8251345Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 173.9 MiB
+2025-11-12T16:15:53.9122404Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 173.9 MiB
+2025-11-12T16:15:53.9952472Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 173.9 MiB
+2025-11-12T16:15:54.0879504Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 173.9 MiB
+2025-11-12T16:15:54.1740055Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 173.9 MiB
+2025-11-12T16:15:54.2715643Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 173.9 MiB
+2025-11-12T16:15:54.3399061Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 173.9 MiB
+2025-11-12T16:15:58.2536363Z Chromium 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium-1194
+2025-11-12T16:15:58.2541285Z Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+2025-11-12T16:15:58.5654054Z |                                                                                |   0% of 2.3 MiB
+2025-11-12T16:15:58.5704211Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+2025-11-12T16:15:58.5738080Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+2025-11-12T16:15:58.5772831Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+2025-11-12T16:15:58.5797680Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+2025-11-12T16:15:58.5823272Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+2025-11-12T16:15:58.5846238Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+2025-11-12T16:15:58.5870431Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+2025-11-12T16:15:58.5895378Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+2025-11-12T16:15:58.5920634Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+2025-11-12T16:15:58.5945621Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+2025-11-12T16:15:58.6615839Z FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+2025-11-12T16:15:58.6619562Z Downloading Chromium Headless Shell 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-headless-shell-linux.zip
+2025-11-12T16:15:58.8448822Z |                                                                                |   0% of 104.3 MiB
+2025-11-12T16:15:58.9606020Z |■■■■■■■■                                                                        |  10% of 104.3 MiB
+2025-11-12T16:15:59.0402750Z |■■■■■■■■■■■■■■■■                                                                |  20% of 104.3 MiB
+2025-11-12T16:15:59.1227916Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 104.3 MiB
+2025-11-12T16:15:59.1982183Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 104.3 MiB
+2025-11-12T16:15:59.2645851Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 104.3 MiB
+2025-11-12T16:15:59.3259428Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 104.3 MiB
+2025-11-12T16:15:59.3772886Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 104.3 MiB
+2025-11-12T16:15:59.4339430Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 104.3 MiB
+2025-11-12T16:15:59.4970064Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 104.3 MiB
+2025-11-12T16:15:59.5502980Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 104.3 MiB
+2025-11-12T16:16:01.6129296Z Chromium Headless Shell 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1194
+2025-11-12T16:16:01.9299007Z ##[group]Run echo "Waiting for site to be available..."
+2025-11-12T16:16:01.9299400Z [36;1mecho "Waiting for site to be available..."[0m
+2025-11-12T16:16:01.9299700Z [36;1mMAX_ATTEMPTS=30[0m
+2025-11-12T16:16:01.9299897Z [36;1mATTEMPT=0[0m
+2025-11-12T16:16:01.9300104Z [36;1mwhile [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do[0m
+2025-11-12T16:16:01.9300694Z [36;1m  if curl -f -s -o /dev/null -w "%{http_code}" "https://presiannedyalkov.github.io/eco-balance-documentation/" | grep -q "200\|301\|302"; then[0m
+2025-11-12T16:16:01.9301579Z [36;1m    echo "✅ Site is available!"[0m
+2025-11-12T16:16:01.9301815Z [36;1m    exit 0[0m
+2025-11-12T16:16:01.9301983Z [36;1m  fi[0m
+2025-11-12T16:16:01.9302162Z [36;1m  ATTEMPT=$((ATTEMPT + 1))[0m
+2025-11-12T16:16:01.9302523Z [36;1m  echo "Attempt $ATTEMPT/$MAX_ATTEMPTS: Site not ready yet, waiting 10 seconds..."[0m
+2025-11-12T16:16:01.9302882Z [36;1m  sleep 10[0m
+2025-11-12T16:16:01.9303053Z [36;1mdone[0m
+2025-11-12T16:16:01.9303363Z [36;1mecho "⚠️  Site may not be fully deployed yet, but continuing with tests..."[0m
+2025-11-12T16:16:01.9335734Z shell: /usr/bin/bash -e {0}
+2025-11-12T16:16:01.9335967Z ##[endgroup]
+2025-11-12T16:16:01.9386045Z Waiting for site to be available...
+2025-11-12T16:16:02.0872220Z ✅ Site is available!
+2025-11-12T16:16:02.0905813Z ##[group]Run BASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npx playwright test tests/deployment.spec.js --reporter=html,list
+2025-11-12T16:16:02.0906831Z [36;1mBASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npx playwright test tests/deployment.spec.js --reporter=html,list[0m
+2025-11-12T16:16:02.0938795Z shell: /usr/bin/bash -e {0}
+2025-11-12T16:16:02.0939015Z env:
+2025-11-12T16:16:02.0939296Z   BASE_URL: https://presiannedyalkov.github.io/eco-balance-documentation
+2025-11-12T16:16:02.0939637Z ##[endgroup]
+2025-11-12T16:16:03.4031421Z 
+2025-11-12T16:16:03.4032117Z Running 9 tests using 1 worker
+2025-11-12T16:16:03.4032547Z 
+2025-11-12T16:16:06.8565647Z   ✘  1 [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully (1.3s)
+2025-11-12T16:16:08.6281296Z   ✘  2 [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully (retry #1) (950ms)
+2025-11-12T16:16:10.4013077Z   ✘  3 [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully (retry #2) (1.0s)
+2025-11-12T16:16:12.0287192Z   ✓  4 [chromium] › tests/deployment.spec.js:42:3 › Deployment Verification › navigation works (896ms)
+2025-11-12T16:16:19.4053299Z   ✓  5 [chromium] › tests/deployment.spec.js:69:3 › Deployment Verification › key pages load without errors (7.3s)
+2025-11-12T16:16:50.8100587Z   ✘  6 [chromium] › tests/deployment.spec.js:144:3 › Deployment Verification › internal links work (31.3s)
+2025-11-12T16:17:23.3607000Z   ✘  7 [chromium] › tests/deployment.spec.js:144:3 › Deployment Verification › internal links work (retry #1) (31.8s)
+2025-11-12T16:17:55.7904651Z   ✘  8 [chromium] › tests/deployment.spec.js:144:3 › Deployment Verification › internal links work (retry #2) (31.7s)
+2025-11-12T16:17:57.5886510Z Search functionality not found (may not be configured)
+2025-11-12T16:17:57.6582922Z   ✓  9 [chromium] › tests/deployment.spec.js:206:3 › Deployment Verification › search functionality is accessible (1.1s)
+2025-11-12T16:17:58.4822571Z   ✓  10 [chromium] › tests/deployment.spec.js:226:3 › Deployment Verification › mobile responsive layout works (799ms)
+2025-11-12T16:18:00.0190720Z   ✓  11 [chromium] › tests/deployment.spec.js:254:3 › Deployment Verification › critical user flows work (1.5s)
+2025-11-12T16:18:02.8397561Z   ✓  12 [chromium] › tests/deployment.spec.js:288:3 › Deployment Verification › no broken images (2.8s)
+2025-11-12T16:18:04.6525466Z   ✓  13 [chromium] › tests/deployment.spec.js:319:3 › Deployment Verification › footer links work (1.8s)
+2025-11-12T16:18:04.7290574Z 
+2025-11-12T16:18:04.7295978Z 
+2025-11-12T16:18:04.7306823Z   1) [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully 
+2025-11-12T16:18:04.7307612Z 
+2025-11-12T16:18:04.7308342Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T16:18:04.7308965Z 
+2025-11-12T16:18:04.7309394Z     Locator: locator('main, article, .markdown, .docMainContainer, body')
+2025-11-12T16:18:04.7309981Z     Expected: visible
+2025-11-12T16:18:04.7311152Z     Error: strict mode violation: locator('main, article, .markdown, .docMainContainer, body') resolved to 4 elements:
+2025-11-12T16:18:04.7312467Z         1) <body data-rh="class" class="navigation-with-keyboard">…</body> aka locator('body')
+2025-11-12T16:18:04.7313319Z         2) <main class="docMainContainer_TBSr">…</main> aka getByRole('main')
+2025-11-12T16:18:04.7314619Z         3) <article>…</article> aka getByText('Project HubOn this page🌍 ECO')
+2025-11-12T16:18:04.7316282Z         4) <div class="theme-doc-markdown markdown">…</div> aka getByText('🌍 ECO BALANCE PROJECT HUB Current Status: Exploration Phase Last Updated:')
+2025-11-12T16:18:04.7317182Z 
+2025-11-12T16:18:04.7317316Z     Call log:
+2025-11-12T16:18:04.7317969Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T16:18:04.7319349Z     [2m  - waiting for locator('main, article, .markdown, .docMainContainer, body')[22m
+2025-11-12T16:18:04.7319932Z 
+2025-11-12T16:18:04.7319942Z 
+2025-11-12T16:18:04.7320070Z       37 |     
+2025-11-12T16:18:04.7320503Z       38 |     // Check that main content is visible
+2025-11-12T16:18:04.7321688Z     > 39 |     await expect(page.locator('main, article, .markdown, .docMainContainer, body')).toBeVisible({ timeout: 10000 });
+2025-11-12T16:18:04.7322695Z          |                                                                                     ^
+2025-11-12T16:18:04.7323143Z       40 |   });
+2025-11-12T16:18:04.7323432Z       41 |
+2025-11-12T16:18:04.7323851Z       42 |   test('navigation works', async ({ page }) => {
+2025-11-12T16:18:04.7324922Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:39:85
+2025-11-12T16:18:04.7325673Z 
+2025-11-12T16:18:04.7326714Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7328027Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium/test-failed-1.png
+2025-11-12T16:18:04.7329504Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7329910Z 
+2025-11-12T16:18:04.7330732Z     Error Context: test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium/error-context.md
+2025-11-12T16:18:04.7331790Z 
+2025-11-12T16:18:04.7332396Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7332653Z 
+2025-11-12T16:18:04.7333002Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T16:18:04.7333284Z 
+2025-11-12T16:18:04.7333493Z     Locator: locator('main, article, .markdown, .docMainContainer, body')
+2025-11-12T16:18:04.7333845Z     Expected: visible
+2025-11-12T16:18:04.7334336Z     Error: strict mode violation: locator('main, article, .markdown, .docMainContainer, body') resolved to 4 elements:
+2025-11-12T16:18:04.7335034Z         1) <body data-rh="class" class="navigation-with-keyboard">…</body> aka locator('body')
+2025-11-12T16:18:04.7335575Z         2) <main class="docMainContainer_TBSr">…</main> aka getByRole('main')
+2025-11-12T16:18:04.7336093Z         3) <article>…</article> aka getByText('Project HubOn this page🌍 ECO')
+2025-11-12T16:18:04.7336914Z         4) <div class="theme-doc-markdown markdown">…</div> aka getByText('🌍 ECO BALANCE PROJECT HUB Current Status: Exploration Phase Last Updated:')
+2025-11-12T16:18:04.7337369Z 
+2025-11-12T16:18:04.7337442Z     Call log:
+2025-11-12T16:18:04.7337733Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T16:18:04.7338230Z     [2m  - waiting for locator('main, article, .markdown, .docMainContainer, body')[22m
+2025-11-12T16:18:04.7338507Z 
+2025-11-12T16:18:04.7338523Z 
+2025-11-12T16:18:04.7338587Z       37 |     
+2025-11-12T16:18:04.7338817Z       38 |     // Check that main content is visible
+2025-11-12T16:18:04.7339364Z     > 39 |     await expect(page.locator('main, article, .markdown, .docMainContainer, body')).toBeVisible({ timeout: 10000 });
+2025-11-12T16:18:04.7339880Z          |                                                                                     ^
+2025-11-12T16:18:04.7340119Z       40 |   });
+2025-11-12T16:18:04.7359909Z       41 |
+2025-11-12T16:18:04.7360393Z       42 |   test('navigation works', async ({ page }) => {
+2025-11-12T16:18:04.7361497Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:39:85
+2025-11-12T16:18:04.7362161Z 
+2025-11-12T16:18:04.7362838Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7364114Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/test-failed-1.png
+2025-11-12T16:18:04.7365807Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7366393Z 
+2025-11-12T16:18:04.7367164Z     Error Context: test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/error-context.md
+2025-11-12T16:18:04.7367984Z 
+2025-11-12T16:18:04.7368572Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7369671Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/trace.zip
+2025-11-12T16:18:04.7370458Z     Usage:
+2025-11-12T16:18:04.7370604Z 
+2025-11-12T16:18:04.7371597Z         npx playwright show-trace test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/trace.zip
+2025-11-12T16:18:04.7372456Z 
+2025-11-12T16:18:04.7372952Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7373358Z 
+2025-11-12T16:18:04.7373898Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7374272Z 
+2025-11-12T16:18:04.7374801Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T16:18:04.7375245Z 
+2025-11-12T16:18:04.7375563Z     Locator: locator('main, article, .markdown, .docMainContainer, body')
+2025-11-12T16:18:04.7376055Z     Expected: visible
+2025-11-12T16:18:04.7376801Z     Error: strict mode violation: locator('main, article, .markdown, .docMainContainer, body') resolved to 4 elements:
+2025-11-12T16:18:04.7377661Z         1) <body data-rh="class" class="navigation-with-keyboard">…</body> aka locator('body')
+2025-11-12T16:18:04.7378225Z         2) <main class="docMainContainer_TBSr">…</main> aka getByRole('main')
+2025-11-12T16:18:04.7378751Z         3) <article>…</article> aka getByText('Project HubOn this page🌍 ECO')
+2025-11-12T16:18:04.7379562Z         4) <div class="theme-doc-markdown markdown">…</div> aka getByText('🌍 ECO BALANCE PROJECT HUB Current Status: Exploration Phase Last Updated:')
+2025-11-12T16:18:04.7380040Z 
+2025-11-12T16:18:04.7380111Z     Call log:
+2025-11-12T16:18:04.7380416Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T16:18:04.7381147Z     [2m  - waiting for locator('main, article, .markdown, .docMainContainer, body')[22m
+2025-11-12T16:18:04.7381504Z 
+2025-11-12T16:18:04.7381509Z 
+2025-11-12T16:18:04.7381582Z       37 |     
+2025-11-12T16:18:04.7381836Z       38 |     // Check that main content is visible
+2025-11-12T16:18:04.7382375Z     > 39 |     await expect(page.locator('main, article, .markdown, .docMainContainer, body')).toBeVisible({ timeout: 10000 });
+2025-11-12T16:18:04.7382892Z          |                                                                                     ^
+2025-11-12T16:18:04.7383135Z       40 |   });
+2025-11-12T16:18:04.7383294Z       41 |
+2025-11-12T16:18:04.7383527Z       42 |   test('navigation works', async ({ page }) => {
+2025-11-12T16:18:04.7384259Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:39:85
+2025-11-12T16:18:04.7384658Z 
+2025-11-12T16:18:04.7385032Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7385740Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry2/test-failed-1.png
+2025-11-12T16:18:04.7386452Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7386669Z 
+2025-11-12T16:18:04.7387129Z     Error Context: test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry2/error-context.md
+2025-11-12T16:18:04.7387615Z 
+2025-11-12T16:18:04.7388002Z   2) [chromium] › tests/deployment.spec.js:144:3 › Deployment Verification › internal links work ───
+2025-11-12T16:18:04.7388317Z 
+2025-11-12T16:18:04.7388514Z     TimeoutError: locator.getAttribute: Timeout 30000ms exceeded.
+2025-11-12T16:18:04.7388949Z     Call log:
+2025-11-12T16:18:04.7389266Z     [2m  - waiting for locator('a[href]').nth(2)[22m
+2025-11-12T16:18:04.7389453Z 
+2025-11-12T16:18:04.7389459Z 
+2025-11-12T16:18:04.7389591Z       163 |     for (let i = 0; i < linksToTest; i++) {
+2025-11-12T16:18:04.7389881Z       164 |       const link = allLinks.nth(i);
+2025-11-12T16:18:04.7390201Z     > 165 |       const href = await link.getAttribute('href');
+2025-11-12T16:18:04.7390485Z           |                               ^
+2025-11-12T16:18:04.7390700Z       166 |       
+2025-11-12T16:18:04.7391184Z       167 |       // Skip anchors, external links, and empty hrefs
+2025-11-12T16:18:04.7391659Z       168 |       if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) {
+2025-11-12T16:18:04.7392316Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:165:31
+2025-11-12T16:18:04.7392699Z 
+2025-11-12T16:18:04.7393065Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7393715Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium/test-failed-1.png
+2025-11-12T16:18:04.7394384Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7394597Z 
+2025-11-12T16:18:04.7394885Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7395101Z 
+2025-11-12T16:18:04.7395297Z     TimeoutError: locator.getAttribute: Timeout 30000ms exceeded.
+2025-11-12T16:18:04.7395592Z     Call log:
+2025-11-12T16:18:04.7395869Z     [2m  - waiting for locator('a[href]').nth(2)[22m
+2025-11-12T16:18:04.7396052Z 
+2025-11-12T16:18:04.7396057Z 
+2025-11-12T16:18:04.7396190Z       163 |     for (let i = 0; i < linksToTest; i++) {
+2025-11-12T16:18:04.7396493Z       164 |       const link = allLinks.nth(i);
+2025-11-12T16:18:04.7396820Z     > 165 |       const href = await link.getAttribute('href');
+2025-11-12T16:18:04.7397245Z           |                               ^
+2025-11-12T16:18:04.7397463Z       166 |       
+2025-11-12T16:18:04.7397708Z       167 |       // Skip anchors, external links, and empty hrefs
+2025-11-12T16:18:04.7398168Z       168 |       if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) {
+2025-11-12T16:18:04.7398820Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:165:31
+2025-11-12T16:18:04.7399217Z 
+2025-11-12T16:18:04.7399570Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7400241Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry1/test-failed-1.png
+2025-11-12T16:18:04.7401130Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7401493Z 
+2025-11-12T16:18:04.7401863Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7402497Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry1/trace.zip
+2025-11-12T16:18:04.7402945Z     Usage:
+2025-11-12T16:18:04.7403042Z 
+2025-11-12T16:18:04.7403513Z         npx playwright show-trace test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry1/trace.zip
+2025-11-12T16:18:04.7403994Z 
+2025-11-12T16:18:04.7404273Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7404488Z 
+2025-11-12T16:18:04.7404777Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7404991Z 
+2025-11-12T16:18:04.7405185Z     TimeoutError: locator.getAttribute: Timeout 30000ms exceeded.
+2025-11-12T16:18:04.7405476Z     Call log:
+2025-11-12T16:18:04.7405753Z     [2m  - waiting for locator('a[href]').nth(2)[22m
+2025-11-12T16:18:04.7405952Z 
+2025-11-12T16:18:04.7405957Z 
+2025-11-12T16:18:04.7406098Z       163 |     for (let i = 0; i < linksToTest; i++) {
+2025-11-12T16:18:04.7406388Z       164 |       const link = allLinks.nth(i);
+2025-11-12T16:18:04.7406699Z     > 165 |       const href = await link.getAttribute('href');
+2025-11-12T16:18:04.7406983Z           |                               ^
+2025-11-12T16:18:04.7407195Z       166 |       
+2025-11-12T16:18:04.7407440Z       167 |       // Skip anchors, external links, and empty hrefs
+2025-11-12T16:18:04.7407906Z       168 |       if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:')) {
+2025-11-12T16:18:04.7408556Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:165:31
+2025-11-12T16:18:04.7408936Z 
+2025-11-12T16:18:04.7409284Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7409962Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry2/test-failed-1.png
+2025-11-12T16:18:04.7410950Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T16:18:04.7411198Z 
+2025-11-12T16:18:04.7411263Z   2 failed
+2025-11-12T16:18:04.7411751Z     [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully 
+2025-11-12T16:18:04.7412433Z     [chromium] › tests/deployment.spec.js:144:3 › Deployment Verification › internal links work ────
+2025-11-12T16:18:04.7412819Z   7 passed (2.0m)
+2025-11-12T16:18:04.7560320Z ##[error]Process completed with exit code 1.
+2025-11-12T16:18:04.7627902Z ##[group]Run if [ "failure" != "success" ]; then
+2025-11-12T16:18:04.7628283Z [36;1mif [ "failure" != "success" ]; then[0m
+2025-11-12T16:18:04.7628579Z [36;1m  echo "tests_failed=true" >> $GITHUB_OUTPUT[0m
+2025-11-12T16:18:04.7628916Z [36;1m  echo "❌ Deployment verification tests failed!"[0m
+2025-11-12T16:18:04.7629385Z [36;1m  exit 1[0m
+2025-11-12T16:18:04.7629560Z [36;1melse[0m
+2025-11-12T16:18:04.7629777Z [36;1m  echo "tests_failed=false" >> $GITHUB_OUTPUT[0m
+2025-11-12T16:18:04.7630096Z [36;1m  echo "✅ All deployment tests passed!"[0m
+2025-11-12T16:18:04.7630357Z [36;1mfi[0m
+2025-11-12T16:18:04.7663095Z shell: /usr/bin/bash -e {0}
+2025-11-12T16:18:04.7663342Z ##[endgroup]
+2025-11-12T16:18:04.7716617Z ❌ Deployment verification tests failed!
+2025-11-12T16:18:04.7720110Z ##[error]Process completed with exit code 1.
+2025-11-12T16:18:04.7784410Z ##[group]Run actions/upload-artifact@v4
+2025-11-12T16:18:04.7784685Z with:
+2025-11-12T16:18:04.7784861Z   name: playwright-report
+2025-11-12T16:18:04.7785096Z   path: playwright-report/
+2025-11-12T16:18:04.7785307Z   retention-days: 7
+2025-11-12T16:18:04.7785498Z   if-no-files-found: ignore
+2025-11-12T16:18:04.7785708Z   compression-level: 6
+2025-11-12T16:18:04.7785910Z   overwrite: false
+2025-11-12T16:18:04.7786100Z   include-hidden-files: false
+2025-11-12T16:18:04.7786338Z ##[endgroup]
+2025-11-12T16:18:05.0043759Z With the provided path, there will be 21 files uploaded
+2025-11-12T16:18:05.0051223Z Artifact name is valid!
+2025-11-12T16:18:05.0053059Z Root directory input is valid!
+2025-11-12T16:18:05.3433393Z Beginning upload of artifact content to blob storage
+2025-11-12T16:18:06.2401637Z Uploaded bytes 1389326
+2025-11-12T16:18:06.3248405Z Finished uploading artifact content to blob storage!
+2025-11-12T16:18:06.3252291Z SHA256 digest of uploaded artifact zip is cd65cf90257364d4567932da2a8421efa775b68d2e46ce06ce6c3356144d7195
+2025-11-12T16:18:06.3253952Z Finalizing artifact upload
+2025-11-12T16:18:06.5068577Z Artifact playwright-report.zip successfully finalized. Artifact ID 4545533692
+2025-11-12T16:18:06.5070606Z Artifact playwright-report has been successfully uploaded! Final size is 1389326 bytes. Artifact ID is 4545533692
+2025-11-12T16:18:06.5078366Z Artifact download URL: https://github.com/presiannedyalkov/eco-balance-documentation/actions/runs/19304052642/artifacts/4545533692
+2025-11-12T16:18:06.5252318Z Post job cleanup.
+2025-11-12T16:18:06.6205328Z [command]/usr/bin/git version
+2025-11-12T16:18:06.6241508Z git version 2.51.2
+2025-11-12T16:18:06.6290467Z Temporarily overriding HOME='/home/runner/work/_temp/3c1ce494-6e1a-4ce5-9df1-9738ccdf6ee9' before making global git config changes
+2025-11-12T16:18:06.6292422Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-12T16:18:06.6296853Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/eco-balance-documentation/eco-balance-documentation
+2025-11-12T16:18:06.6329739Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-12T16:18:06.6361203Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-12T16:18:06.6587441Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-12T16:18:06.6607496Z http.https://github.com/.extraheader
+2025-11-12T16:18:06.6620445Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-11-12T16:18:06.6650651Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-12T16:18:06.6975101Z Cleaning up orphan processes
