@@ -167,6 +167,104 @@ Enable exporting the entire documentation repository into portable formats for o
 
 ---
 
+### GitHub Milestones & Roadmap Integration
+**Status:** Planned
+**Priority:** High
+**Related:** Roadmap, Versioning Strategy, Project Management
+
+**Description:**
+Integrate GitHub Milestones, Issues, and Releases with the project roadmap and versioning system to create a visual, timeline-based roadmap that tracks feature progress, links branches to milestones, and automates release management.
+
+**Goals:**
+- Create visual roadmap using GitHub Milestones
+- Link all feature branches and PRs to milestones
+- Integrate GitHub Releases with Calendar Versioning (YYYY.MM)
+- Track completion of features and milestones automatically
+- Keep roadmap documentation in sync with GitHub milestones
+
+**Key Features:**
+- **GitHub Milestones**: Organized by month/quarter (e.g., `2025.12 - Versioning System`, `2026.Q1 - Interactive Features`)
+- **Issue Tracking**: All features from wishlist converted to GitHub Issues linked to milestones
+- **Branch Integration**: Feature branches named with milestone (e.g., `feature/2025.12-versioning-system`)
+- **PR Templates**: Automatic linking of PRs to milestones and issues
+- **Release Management**: Monthly GitHub Releases integrated with Calendar Versioning
+- **Automated Sync**: Roadmap documentation automatically synced from GitHub API
+- **Progress Tracking**: Milestone completion percentages calculated automatically
+- **Release Notes**: Auto-generated from closed issues and merged PRs
+
+**Milestone Structure:**
+- **Monthly Milestones**: `YYYY.MM - Description` (e.g., `2025.12 - Versioning System`)
+- **Quarterly Milestones**: `YYYY.Q# - Description` (e.g., `2026.Q1 - Interactive Features`)
+- **Annual Milestones**: `YYYY - Description` (e.g., `2026 - Platform Maturity`)
+
+**Technical Implementation:**
+- GitHub Milestones created and organized by timeline
+- GitHub Issues created for each feature in wishlist
+- PR templates with milestone linking
+- GitHub Actions workflows for:
+  - Auto-linking PRs to milestones
+  - Milestone progress tracking
+  - Automated release creation
+  - Roadmap documentation sync
+- Scripts for:
+  - Generating release notes from GitHub API
+  - Syncing roadmap from GitHub milestones
+  - Version synchronization
+
+**Workflow Integration:**
+1. **Planning**: Create GitHub Issue from feature wishlist → Assign to milestone
+2. **Development**: Create branch `feature/YYYY.MM-feature-name` → Link to issue
+3. **Review**: Create PR with template → Auto-links to milestone
+4. **Release**: End of month → Auto-create release → Update roadmap
+
+**Benefits:**
+- **Visual Progress**: See roadmap progress at a glance in GitHub
+- **Clear Timeline**: Milestones provide concrete deadlines and timeline
+- **Automatic Tracking**: Progress calculated automatically from closed issues
+- **Integrated Workflow**: Branches, PRs, issues, and releases all connected
+- **Documentation Sync**: Roadmap docs stay current with GitHub status
+- **Release Management**: Monthly releases with auto-generated notes
+- **Version Alignment**: GitHub Releases match Calendar Versioning system
+
+**Use Cases:**
+- Planning features for upcoming months/quarters
+- Tracking progress on multiple features simultaneously
+- Generating release notes automatically
+- Keeping stakeholders informed of roadmap status
+- Managing feature dependencies and priorities
+- Creating visual roadmap for presentations
+
+**Dependencies:**
+- GitHub repository with Issues and Milestones enabled
+- GitHub Actions for automation
+- GitHub API access (via token)
+- Calendar Versioning system (YYYY.MM)
+- Roadmap documentation structure
+
+**Estimated Effort:**
+- Initial setup (milestones, issues): 1-2 hours
+- Branch & PR integration: Ongoing (setup: 1 hour)
+- Release management automation: 1-2 hours
+- Roadmap sync automation: 2-3 hours
+- GitHub Actions workflows: 2-3 hours
+- Testing and refinement: 1-2 hours
+- Total: 8-13 hours for full implementation
+
+**Success Metrics:**
+- All features have GitHub Issues
+- All issues linked to milestones
+- Milestone progress automatically calculated
+- Roadmap documentation stays in sync with GitHub
+- Monthly releases created automatically
+- Release notes generated from closed issues
+- Version tags match VERSION file
+- All documentation versioned consistently
+
+**Implementation Plan:**
+See detailed plan: `_process/documentation/GITHUB_MILESTONES_ROADMAP_PLAN.md`
+
+---
+
 ## 🤖 AI & Automation
 
 ### AI Skills Framework Implementation
