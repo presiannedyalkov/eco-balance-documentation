@@ -71,13 +71,14 @@ function checkLink(link, allFiles) {
     // Remove leading slash for file system path
     let filePath = normalizedHref.substring(1);
     
-    // Handle root/homepage - Docusaurus redirects / to /docs/intro
-    if (filePath === '' || filePath === BASE_URL.substring(1)) {
-      // Check if docs/intro exists (homepage redirects there)
+    // Handle root/homepage - Docusaurus redirects / to /docs/intro or index.html
+    if (filePath === '' || filePath === BASE_URL.substring(1) || filePath === BASE_URL.substring(1) + '/') {
+      // Check if index.html exists (homepage)
+      const indexPath = path.join(BUILD_DIR, 'index.html');
       const introPath = path.join(BUILD_DIR, 'docs', 'intro', 'index.html');
       return {
-        valid: fs.existsSync(introPath),
-        target: 'docs/intro/index.html (homepage redirect)',
+        valid: fs.existsSync(indexPath) || fs.existsSync(introPath),
+        target: 'index.html or docs/intro/index.html (homepage)',
         file: path.relative(BUILD_DIR, file),
         href,
       };
@@ -87,12 +88,19 @@ function checkLink(link, allFiles) {
     if (filePath.endsWith('/')) {
       filePath = filePath + 'index.html';
     } else if (!filePath.endsWith('.html') && !filePath.includes('.')) {
-      // If no extension, assume it's a directory
+      // If no extension, check if it's a directory or a file without extension
       const dirPath = path.join(BUILD_DIR, filePath);
+      const htmlPath = path.join(BUILD_DIR, filePath + '.html');
+      const indexPath = path.join(BUILD_DIR, filePath, 'index.html');
+      
       if (fs.existsSync(dirPath) && fs.statSync(dirPath).isDirectory()) {
         filePath = filePath + '/index.html';
+      } else if (fs.existsSync(htmlPath)) {
+        filePath = filePath + '.html';
+      } else if (fs.existsSync(indexPath)) {
+        filePath = filePath + '/index.html';
       } else {
-        // Try with .html extension
+        // Try with .html extension as fallback
         filePath = filePath + '.html';
       }
     }

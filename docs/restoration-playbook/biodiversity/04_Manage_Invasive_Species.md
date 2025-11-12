@@ -640,8 +640,8 @@ Use multiple methods in combination:
 - [Monitor Biodiversity](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-06_Monitor_Biodiversity)
 
 **Strategic Context:**
-- [Restoration Methodology](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-20_Restoration_Methodology)
-- [Restoration Challenges](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-22_Restoration_Challenges_Solutions)
+- [Restoration Methodology](/operations/restoration-methodology)
+- [Restoration Challenges](/operations/challenges-solutions)
 
 ---
 
@@ -702,5 +702,5 @@ Use multiple methods in combination:
 
 ---
 
-*Part of the [Implementation Tasks](README) series*  
+*Part of the [Restoration Playbook](/restoration-playbook/) series*  
 *Next: [Reintroduce Lost Species](/restoration-playbook/biodiversity/restoration-playbook-biodiversity-05_Reintroduce_Lost_Species)*

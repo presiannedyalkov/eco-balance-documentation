@@ -92,7 +92,7 @@ Create a **habitat for wildlife** and **restore land to become a shelter and san
 - [Case Studies & Examples](/learning/case-studies) - Restoration project references
 
 ### Plans & Templates
-- [Restoration Playbook](/restoration-playbook/README) - Complete project template for ecological restoration (44 tasks across 6 phases)
+- [Restoration Playbook](/restoration-playbook/) - Complete project template for ecological restoration (44 tasks across 6 phases)
   - This is the **Plan** part of Vision → Plan → Reality
   - Template/playbook to customize for your specific project
   - When you start your actual project, copy this to your project folder
