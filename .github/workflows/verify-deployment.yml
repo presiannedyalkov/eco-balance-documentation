@@ -31,6 +31,22 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
+      - name: Wait for deployment to be available
+        run: |
+          echo "Waiting for site to be available..."
+          MAX_ATTEMPTS=30
+          ATTEMPT=0
+          while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
+            if curl -f -s -o /dev/null -w "%{http_code}" "https://presiannedyalkov.github.io/eco-balance-documentation/" | grep -q "200\|301\|302"; then
+              echo "✅ Site is available!"
+              exit 0
+            fi
+            ATTEMPT=$((ATTEMPT + 1))
+            echo "Attempt $ATTEMPT/$MAX_ATTEMPTS: Site not ready yet, waiting 10 seconds..."
+            sleep 10
+          done
+          echo "⚠️  Site may not be fully deployed yet, but continuing with tests..."
+
       - name: Run deployment tests
         id: test
         run: |

@@ -1,0 +1,530 @@
+﻿2025-11-12T15:29:45.1138183Z ##[group]Run BASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npx playwright test tests/deployment.spec.js --reporter=html,list
+2025-11-12T15:29:45.1139265Z [36;1mBASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npx playwright test tests/deployment.spec.js --reporter=html,list[0m
+2025-11-12T15:29:45.1171635Z shell: /usr/bin/bash -e {0}
+2025-11-12T15:29:45.1171872Z env:
+2025-11-12T15:29:45.1172178Z   BASE_URL: https://presiannedyalkov.github.io/eco-balance-documentation
+2025-11-12T15:29:45.1172720Z ##[endgroup]
+2025-11-12T15:29:46.3760301Z 
+2025-11-12T15:29:46.3760813Z Running 9 tests using 1 worker
+2025-11-12T15:29:46.3761312Z 
+2025-11-12T15:29:48.5173290Z   ✘  1 [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully (769ms)
+2025-11-12T15:29:50.0394798Z   ✘  2 [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully (retry #1) (764ms)
+2025-11-12T15:29:51.4191524Z   ✘  3 [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully (retry #2) (641ms)
+2025-11-12T15:30:02.7884452Z   ✘  4 [chromium] › tests/deployment.spec.js:29:3 › Deployment Verification › navigation works (10.6s)
+2025-11-12T15:30:14.2241353Z   ✘  5 [chromium] › tests/deployment.spec.js:29:3 › Deployment Verification › navigation works (retry #1) (10.7s)
+2025-11-12T15:30:25.5957828Z   ✘  6 [chromium] › tests/deployment.spec.js:29:3 › Deployment Verification › navigation works (retry #2) (10.6s)
+2025-11-12T15:30:26.8726392Z Failed to load /: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:30:26.8727099Z 
+2025-11-12T15:30:26.8727385Z Expected: [32m200[39m
+2025-11-12T15:30:26.8727825Z Received: [31m404[39m
+2025-11-12T15:30:26.9770448Z   ✘  7 [chromium] › tests/deployment.spec.js:42:3 › Deployment Verification › key pages load without errors (643ms)
+2025-11-12T15:30:28.2625860Z Failed to load /: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:30:28.2626682Z 
+2025-11-12T15:30:28.2626982Z Expected: [32m200[39m
+2025-11-12T15:30:28.2627468Z Received: [31m404[39m
+2025-11-12T15:30:28.4004281Z   ✘  8 [chromium] › tests/deployment.spec.js:42:3 › Deployment Verification › key pages load without errors (retry #1) (666ms)
+2025-11-12T15:30:29.6876253Z Failed to load /: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:30:29.6877031Z 
+2025-11-12T15:30:29.6877272Z Expected: [32m200[39m
+2025-11-12T15:30:29.6877691Z Received: [31m404[39m
+2025-11-12T15:30:29.7961871Z   ✘  9 [chromium] › tests/deployment.spec.js:42:3 › Deployment Verification › key pages load without errors (retry #2) (644ms)
+2025-11-12T15:30:31.6352386Z Link / failed: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+2025-11-12T15:30:31.6353276Z 
+2025-11-12T15:30:31.6354149Z Expected substring: [32m"eco-balance-documentation"[39m
+2025-11-12T15:30:31.6356466Z Received string:    [31m"https://presiannedyalkov.github.io/"[39m
+2025-11-12T15:30:41.6578215Z Link / failed: locator.click: Timeout 10000ms exceeded.
+2025-11-12T15:30:41.6579058Z Call log:
+2025-11-12T15:30:41.6580449Z [2m  - waiting for locator('a[href^="/"], a[href*="/eco-balance-documentation/"]').nth(1)[22m
+2025-11-12T15:30:41.6581601Z [2m    - locator resolved to <a href="/" class="logo logo-img-2x">…</a>[22m
+2025-11-12T15:30:41.6582423Z [2m  - attempting click action[22m
+2025-11-12T15:30:41.6583243Z [2m    2 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:30:41.6584170Z [2m      - element is not visible[22m
+2025-11-12T15:30:41.6584769Z [2m    - retrying click action[22m
+2025-11-12T15:30:41.6585278Z [2m    - waiting 20ms[22m
+2025-11-12T15:30:41.6586031Z [2m    2 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:30:41.6586768Z [2m      - element is not visible[22m
+2025-11-12T15:30:41.6587718Z [2m    - retrying click action[22m
+2025-11-12T15:30:41.6588277Z [2m      - waiting 100ms[22m
+2025-11-12T15:30:41.6589045Z [2m    19 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:30:41.6589782Z [2m       - element is not visible[22m
+2025-11-12T15:30:41.6590378Z [2m     - retrying click action[22m
+2025-11-12T15:30:41.6590937Z [2m       - waiting 500ms[22m
+2025-11-12T15:30:41.6591199Z 
+2025-11-12T15:30:41.7481973Z   ✘  10 [chromium] › tests/deployment.spec.js:87:3 › Deployment Verification › internal links work (11.2s)
+2025-11-12T15:30:43.6385588Z Link / failed: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+2025-11-12T15:30:43.6386752Z 
+2025-11-12T15:30:43.6389701Z Expected substring: [32m"eco-balance-documentation"[39m
+2025-11-12T15:30:43.6390809Z Received string:    [31m"https://presiannedyalkov.github.io/"[39m
+2025-11-12T15:30:53.6648917Z Link / failed: locator.click: Timeout 10000ms exceeded.
+2025-11-12T15:30:53.6649580Z Call log:
+2025-11-12T15:30:53.6650716Z [2m  - waiting for locator('a[href^="/"], a[href*="/eco-balance-documentation/"]').nth(1)[22m
+2025-11-12T15:30:53.6651903Z [2m    - locator resolved to <a href="/" class="logo logo-img-2x">…</a>[22m
+2025-11-12T15:30:53.6652746Z [2m  - attempting click action[22m
+2025-11-12T15:30:53.6653839Z [2m    2 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:30:53.6654659Z [2m      - element is not visible[22m
+2025-11-12T15:30:53.6655332Z [2m    - retrying click action[22m
+2025-11-12T15:30:53.6656159Z [2m    - waiting 20ms[22m
+2025-11-12T15:30:53.6656993Z [2m    2 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:30:53.6657792Z [2m      - element is not visible[22m
+2025-11-12T15:30:53.6658382Z [2m    - retrying click action[22m
+2025-11-12T15:30:53.6658992Z [2m      - waiting 100ms[22m
+2025-11-12T15:30:53.6659815Z [2m    19 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:30:53.6660610Z [2m       - element is not visible[22m
+2025-11-12T15:30:53.6661231Z [2m     - retrying click action[22m
+2025-11-12T15:30:53.6661795Z [2m       - waiting 500ms[22m
+2025-11-12T15:30:53.6662066Z 
+2025-11-12T15:30:53.7949632Z   ✘  11 [chromium] › tests/deployment.spec.js:87:3 › Deployment Verification › internal links work (retry #1) (11.3s)
+2025-11-12T15:30:55.6344134Z Link / failed: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+2025-11-12T15:30:55.6344734Z 
+2025-11-12T15:30:55.6345115Z Expected substring: [32m"eco-balance-documentation"[39m
+2025-11-12T15:30:55.6345810Z Received string:    [31m"https://presiannedyalkov.github.io/"[39m
+2025-11-12T15:31:05.6529920Z Link / failed: locator.click: Timeout 10000ms exceeded.
+2025-11-12T15:31:05.6530521Z Call log:
+2025-11-12T15:31:05.6531579Z [2m  - waiting for locator('a[href^="/"], a[href*="/eco-balance-documentation/"]').nth(1)[22m
+2025-11-12T15:31:05.6532844Z [2m    - locator resolved to <a href="/" class="logo logo-img-2x">…</a>[22m
+2025-11-12T15:31:05.6533894Z [2m  - attempting click action[22m
+2025-11-12T15:31:05.6534768Z [2m    2 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:31:05.6535523Z [2m      - element is not visible[22m
+2025-11-12T15:31:05.6536143Z [2m    - retrying click action[22m
+2025-11-12T15:31:05.6536660Z [2m    - waiting 20ms[22m
+2025-11-12T15:31:05.6537387Z [2m    2 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:31:05.6538134Z [2m      - element is not visible[22m
+2025-11-12T15:31:05.6538709Z [2m    - retrying click action[22m
+2025-11-12T15:31:05.6539258Z [2m      - waiting 100ms[22m
+2025-11-12T15:31:05.6540074Z [2m    19 × waiting for element to be visible, enabled and stable[22m
+2025-11-12T15:31:05.6540876Z [2m       - element is not visible[22m
+2025-11-12T15:31:05.6541536Z [2m     - retrying click action[22m
+2025-11-12T15:31:05.6542542Z [2m       - waiting 500ms[22m
+2025-11-12T15:31:05.6542829Z 
+2025-11-12T15:31:05.7454268Z   ✘  12 [chromium] › tests/deployment.spec.js:87:3 › Deployment Verification › internal links work (retry #2) (11.2s)
+2025-11-12T15:31:07.1290714Z Search functionality not found (may not be configured)
+2025-11-12T15:31:07.1809185Z   ✓  13 [chromium] › tests/deployment.spec.js:126:3 › Deployment Verification › search functionality is accessible (719ms)
+2025-11-12T15:31:17.8154255Z   ✘  14 [chromium] › tests/deployment.spec.js:142:3 › Deployment Verification › mobile responsive layout works (10.6s)
+2025-11-12T15:31:29.2571010Z   ✘  15 [chromium] › tests/deployment.spec.js:142:3 › Deployment Verification › mobile responsive layout works (retry #1) (10.7s)
+2025-11-12T15:31:40.6215124Z   ✘  16 [chromium] › tests/deployment.spec.js:142:3 › Deployment Verification › mobile responsive layout works (retry #2) (10.6s)
+2025-11-12T15:31:43.2330575Z   ✓  17 [chromium] › tests/deployment.spec.js:158:3 › Deployment Verification › critical user flows work (1.9s)
+2025-11-12T15:31:45.8986449Z   ✓  18 [chromium] › tests/deployment.spec.js:185:3 › Deployment Verification › no broken images (2.6s)
+2025-11-12T15:31:47.4778909Z Footer not found (may not be configured)
+2025-11-12T15:31:47.5294044Z   ✓  19 [chromium] › tests/deployment.spec.js:214:3 › Deployment Verification › footer links work (1.6s)
+2025-11-12T15:31:47.6055336Z 
+2025-11-12T15:31:47.6060600Z 
+2025-11-12T15:31:47.6070417Z   1) [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully 
+2025-11-12T15:31:47.6071274Z 
+2025-11-12T15:31:47.6072123Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:31:47.6072724Z 
+2025-11-12T15:31:47.6073000Z     Expected: [32m200[39m
+2025-11-12T15:31:47.6073723Z     Received: [31m404[39m
+2025-11-12T15:31:47.6073980Z 
+2025-11-12T15:31:47.6074252Z       19 |   test('homepage loads successfully', async ({ page }) => {
+2025-11-12T15:31:47.6074996Z       20 |     const response = await page.goto('/', { waitUntil: 'networkidle', timeout: 30000 });
+2025-11-12T15:31:47.6075693Z     > 21 |     expect(response?.status()).toBe(200);
+2025-11-12T15:31:47.6076356Z          |                                ^
+2025-11-12T15:31:47.6076678Z       22 |     
+2025-11-12T15:31:47.6077132Z       23 |     await expect(page).toHaveTitle(/Eco Balance/i, { timeout: 10000 });
+2025-11-12T15:31:47.6077601Z       24 |     
+2025-11-12T15:31:47.6078583Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:21:32
+2025-11-12T15:31:47.6079190Z 
+2025-11-12T15:31:47.6079741Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6080743Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium/test-failed-1.png
+2025-11-12T15:31:47.6081764Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6082095Z 
+2025-11-12T15:31:47.6082966Z     Error Context: test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium/error-context.md
+2025-11-12T15:31:47.6083956Z 
+2025-11-12T15:31:47.6084615Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6085072Z 
+2025-11-12T15:31:47.6086027Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:31:47.6087089Z 
+2025-11-12T15:31:47.6087287Z     Expected: [32m200[39m
+2025-11-12T15:31:47.6087638Z     Received: [31m404[39m
+2025-11-12T15:31:47.6087826Z 
+2025-11-12T15:31:47.6088098Z       19 |   test('homepage loads successfully', async ({ page }) => {
+2025-11-12T15:31:47.6088803Z       20 |     const response = await page.goto('/', { waitUntil: 'networkidle', timeout: 30000 });
+2025-11-12T15:31:47.6089413Z     > 21 |     expect(response?.status()).toBe(200);
+2025-11-12T15:31:47.6089895Z          |                                ^
+2025-11-12T15:31:47.6090130Z       22 |     
+2025-11-12T15:31:47.6090461Z       23 |     await expect(page).toHaveTitle(/Eco Balance/i, { timeout: 10000 });
+2025-11-12T15:31:47.6090782Z       24 |     
+2025-11-12T15:31:47.6091259Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:21:32
+2025-11-12T15:31:47.6091648Z 
+2025-11-12T15:31:47.6092016Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6092738Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/test-failed-1.png
+2025-11-12T15:31:47.6093675Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6093917Z 
+2025-11-12T15:31:47.6094383Z     Error Context: test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/error-context.md
+2025-11-12T15:31:47.6094896Z 
+2025-11-12T15:31:47.6095259Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6095923Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6096405Z     Usage:
+2025-11-12T15:31:47.6096500Z 
+2025-11-12T15:31:47.6096983Z         npx playwright show-trace test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6097520Z 
+2025-11-12T15:31:47.6097809Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6098030Z 
+2025-11-12T15:31:47.6098325Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6098552Z 
+2025-11-12T15:31:47.6098964Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:31:47.6099333Z 
+2025-11-12T15:31:47.6099449Z     Expected: [32m200[39m
+2025-11-12T15:31:47.6099696Z     Received: [31m404[39m
+2025-11-12T15:31:47.6099826Z 
+2025-11-12T15:31:47.6100020Z       19 |   test('homepage loads successfully', async ({ page }) => {
+2025-11-12T15:31:47.6100508Z       20 |     const response = await page.goto('/', { waitUntil: 'networkidle', timeout: 30000 });
+2025-11-12T15:31:47.6100935Z     > 21 |     expect(response?.status()).toBe(200);
+2025-11-12T15:31:47.6101222Z          |                                ^
+2025-11-12T15:31:47.6101465Z       22 |     
+2025-11-12T15:31:47.6101784Z       23 |     await expect(page).toHaveTitle(/Eco Balance/i, { timeout: 10000 });
+2025-11-12T15:31:47.6102116Z       24 |     
+2025-11-12T15:31:47.6102590Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:21:32
+2025-11-12T15:31:47.6102978Z 
+2025-11-12T15:31:47.6103337Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6104382Z     test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry2/test-failed-1.png
+2025-11-12T15:31:47.6105119Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6105335Z 
+2025-11-12T15:31:47.6105859Z     Error Context: test-results/deployment-Deployment-Veri-b6065-homepage-loads-successfully-chromium-retry2/error-context.md
+2025-11-12T15:31:47.6125908Z 
+2025-11-12T15:31:47.6126641Z   2) [chromium] › tests/deployment.spec.js:29:3 › Deployment Verification › navigation works ───────
+2025-11-12T15:31:47.6127201Z 
+2025-11-12T15:31:47.6127823Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T15:31:47.6128356Z 
+2025-11-12T15:31:47.6128697Z     Locator: locator('nav, .navbar, [role="navigation"]').first()
+2025-11-12T15:31:47.6129112Z     Expected: visible
+2025-11-12T15:31:47.6129353Z     Timeout: 10000ms
+2025-11-12T15:31:47.6129589Z     Error: element(s) not found
+2025-11-12T15:31:47.6129751Z 
+2025-11-12T15:31:47.6129829Z     Call log:
+2025-11-12T15:31:47.6130164Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T15:31:47.6130662Z     [2m  - waiting for locator('nav, .navbar, [role="navigation"]').first()[22m
+2025-11-12T15:31:47.6130940Z 
+2025-11-12T15:31:47.6130946Z 
+2025-11-12T15:31:47.6131144Z       32 |     // Check navbar is visible (might be in different locations)
+2025-11-12T15:31:47.6131640Z       33 |     const navbar = page.locator('nav, .navbar, [role="navigation"]').first();
+2025-11-12T15:31:47.6132086Z     > 34 |     await expect(navbar).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6132396Z          |                          ^
+2025-11-12T15:31:47.6132615Z       35 |     
+2025-11-12T15:31:47.6132858Z       36 |     // Check that navigation links are present
+2025-11-12T15:31:47.6133197Z       37 |     const links = page.locator('a[href*="/"]');
+2025-11-12T15:31:47.6133981Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:34:26
+2025-11-12T15:31:47.6134386Z 
+2025-11-12T15:31:47.6134764Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6135418Z     test-results/deployment-Deployment-Verification-navigation-works-chromium/test-failed-1.png
+2025-11-12T15:31:47.6136078Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6136311Z 
+2025-11-12T15:31:47.6136700Z     Error Context: test-results/deployment-Deployment-Verification-navigation-works-chromium/error-context.md
+2025-11-12T15:31:47.6137124Z 
+2025-11-12T15:31:47.6137434Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6137667Z 
+2025-11-12T15:31:47.6137989Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T15:31:47.6138479Z 
+2025-11-12T15:31:47.6138664Z     Locator: locator('nav, .navbar, [role="navigation"]').first()
+2025-11-12T15:31:47.6138972Z     Expected: visible
+2025-11-12T15:31:47.6139171Z     Timeout: 10000ms
+2025-11-12T15:31:47.6139396Z     Error: element(s) not found
+2025-11-12T15:31:47.6139542Z 
+2025-11-12T15:31:47.6139613Z     Call log:
+2025-11-12T15:31:47.6139916Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T15:31:47.6140390Z     [2m  - waiting for locator('nav, .navbar, [role="navigation"]').first()[22m
+2025-11-12T15:31:47.6140786Z 
+2025-11-12T15:31:47.6140791Z 
+2025-11-12T15:31:47.6140984Z       32 |     // Check navbar is visible (might be in different locations)
+2025-11-12T15:31:47.6141454Z       33 |     const navbar = page.locator('nav, .navbar, [role="navigation"]').first();
+2025-11-12T15:31:47.6141888Z     > 34 |     await expect(navbar).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6142205Z          |                          ^
+2025-11-12T15:31:47.6142423Z       35 |     
+2025-11-12T15:31:47.6142665Z       36 |     // Check that navigation links are present
+2025-11-12T15:31:47.6142994Z       37 |     const links = page.locator('a[href*="/"]');
+2025-11-12T15:31:47.6143755Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:34:26
+2025-11-12T15:31:47.6144163Z 
+2025-11-12T15:31:47.6144537Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6145225Z     test-results/deployment-Deployment-Verification-navigation-works-chromium-retry1/test-failed-1.png
+2025-11-12T15:31:47.6145921Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6146134Z 
+2025-11-12T15:31:47.6146563Z     Error Context: test-results/deployment-Deployment-Verification-navigation-works-chromium-retry1/error-context.md
+2025-11-12T15:31:47.6147018Z 
+2025-11-12T15:31:47.6147366Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6148010Z     test-results/deployment-Deployment-Verification-navigation-works-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6148457Z     Usage:
+2025-11-12T15:31:47.6148553Z 
+2025-11-12T15:31:47.6148998Z         npx playwright show-trace test-results/deployment-Deployment-Verification-navigation-works-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6149477Z 
+2025-11-12T15:31:47.6149755Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6149979Z 
+2025-11-12T15:31:47.6150274Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6150503Z 
+2025-11-12T15:31:47.6150818Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T15:31:47.6151111Z 
+2025-11-12T15:31:47.6151290Z     Locator: locator('nav, .navbar, [role="navigation"]').first()
+2025-11-12T15:31:47.6151604Z     Expected: visible
+2025-11-12T15:31:47.6151803Z     Timeout: 10000ms
+2025-11-12T15:31:47.6152021Z     Error: element(s) not found
+2025-11-12T15:31:47.6152167Z 
+2025-11-12T15:31:47.6152234Z     Call log:
+2025-11-12T15:31:47.6152534Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T15:31:47.6152998Z     [2m  - waiting for locator('nav, .navbar, [role="navigation"]').first()[22m
+2025-11-12T15:31:47.6153262Z 
+2025-11-12T15:31:47.6153268Z 
+2025-11-12T15:31:47.6153812Z       32 |     // Check navbar is visible (might be in different locations)
+2025-11-12T15:31:47.6154290Z       33 |     const navbar = page.locator('nav, .navbar, [role="navigation"]').first();
+2025-11-12T15:31:47.6154728Z     > 34 |     await expect(navbar).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6155035Z          |                          ^
+2025-11-12T15:31:47.6155247Z       35 |     
+2025-11-12T15:31:47.6155486Z       36 |     // Check that navigation links are present
+2025-11-12T15:31:47.6155938Z       37 |     const links = page.locator('a[href*="/"]');
+2025-11-12T15:31:47.6156496Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:34:26
+2025-11-12T15:31:47.6156886Z 
+2025-11-12T15:31:47.6157259Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6157928Z     test-results/deployment-Deployment-Verification-navigation-works-chromium-retry2/test-failed-1.png
+2025-11-12T15:31:47.6158625Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6158838Z 
+2025-11-12T15:31:47.6159267Z     Error Context: test-results/deployment-Deployment-Verification-navigation-works-chromium-retry2/error-context.md
+2025-11-12T15:31:47.6159718Z 
+2025-11-12T15:31:47.6160111Z   3) [chromium] › tests/deployment.spec.js:42:3 › Deployment Verification › key pages load without errors 
+2025-11-12T15:31:47.6160476Z 
+2025-11-12T15:31:47.6160883Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:31:47.6161233Z 
+2025-11-12T15:31:47.6161351Z     Expected: [32m200[39m
+2025-11-12T15:31:47.6161588Z     Received: [31m404[39m
+2025-11-12T15:31:47.6161717Z 
+2025-11-12T15:31:47.6161797Z       61 |       try {
+2025-11-12T15:31:47.6162179Z       62 |         const response = await page.goto(path, { waitUntil: 'networkidle', timeout: 30000 });
+2025-11-12T15:31:47.6162620Z     > 63 |         expect(response?.status()).toBe(200);
+2025-11-12T15:31:47.6162908Z          |                                    ^
+2025-11-12T15:31:47.6163210Z       64 |         
+2025-11-12T15:31:47.6163610Z       65 |         // Check page has content
+2025-11-12T15:31:47.6164173Z       66 |         await expect(page.locator('main, article, .markdown, .docMainContainer')).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6164909Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:63:36
+2025-11-12T15:31:47.6165309Z 
+2025-11-12T15:31:47.6165669Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6166347Z     test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium/test-failed-1.png
+2025-11-12T15:31:47.6167039Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6167255Z 
+2025-11-12T15:31:47.6167823Z     Error Context: test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium/error-context.md
+2025-11-12T15:31:47.6168276Z 
+2025-11-12T15:31:47.6168577Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6168807Z 
+2025-11-12T15:31:47.6169210Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:31:47.6169681Z 
+2025-11-12T15:31:47.6169797Z     Expected: [32m200[39m
+2025-11-12T15:31:47.6170028Z     Received: [31m404[39m
+2025-11-12T15:31:47.6170163Z 
+2025-11-12T15:31:47.6170232Z       61 |       try {
+2025-11-12T15:31:47.6170612Z       62 |         const response = await page.goto(path, { waitUntil: 'networkidle', timeout: 30000 });
+2025-11-12T15:31:47.6171035Z     > 63 |         expect(response?.status()).toBe(200);
+2025-11-12T15:31:47.6171340Z          |                                    ^
+2025-11-12T15:31:47.6171572Z       64 |         
+2025-11-12T15:31:47.6171789Z       65 |         // Check page has content
+2025-11-12T15:31:47.6172294Z       66 |         await expect(page.locator('main, article, .markdown, .docMainContainer')).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6173026Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:63:36
+2025-11-12T15:31:47.6173414Z 
+2025-11-12T15:31:47.6173978Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6174696Z     test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium-retry1/test-failed-1.png
+2025-11-12T15:31:47.6175426Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6175638Z 
+2025-11-12T15:31:47.6176103Z     Error Context: test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium-retry1/error-context.md
+2025-11-12T15:31:47.6176599Z 
+2025-11-12T15:31:47.6176947Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6177617Z     test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6178092Z     Usage:
+2025-11-12T15:31:47.6178195Z 
+2025-11-12T15:31:47.6178669Z         npx playwright show-trace test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6179178Z 
+2025-11-12T15:31:47.6179462Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6179673Z 
+2025-11-12T15:31:47.6179962Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6180189Z 
+2025-11-12T15:31:47.6180585Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+2025-11-12T15:31:47.6181065Z 
+2025-11-12T15:31:47.6181187Z     Expected: [32m200[39m
+2025-11-12T15:31:47.6181421Z     Received: [31m404[39m
+2025-11-12T15:31:47.6181553Z 
+2025-11-12T15:31:47.6181622Z       61 |       try {
+2025-11-12T15:31:47.6181997Z       62 |         const response = await page.goto(path, { waitUntil: 'networkidle', timeout: 30000 });
+2025-11-12T15:31:47.6182425Z     > 63 |         expect(response?.status()).toBe(200);
+2025-11-12T15:31:47.6182713Z          |                                    ^
+2025-11-12T15:31:47.6183055Z       64 |         
+2025-11-12T15:31:47.6183271Z       65 |         // Check page has content
+2025-11-12T15:31:47.6183990Z       66 |         await expect(page.locator('main, article, .markdown, .docMainContainer')).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6184739Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:63:36
+2025-11-12T15:31:47.6185128Z 
+2025-11-12T15:31:47.6185500Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6186210Z     test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium-retry2/test-failed-1.png
+2025-11-12T15:31:47.6186937Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6187148Z 
+2025-11-12T15:31:47.6187617Z     Error Context: test-results/deployment-Deployment-Veri-157ab-y-pages-load-without-errors-chromium-retry2/error-context.md
+2025-11-12T15:31:47.6188114Z 
+2025-11-12T15:31:47.6188519Z   4) [chromium] › tests/deployment.spec.js:87:3 › Deployment Verification › internal links work ────
+2025-11-12T15:31:47.6188842Z 
+2025-11-12T15:31:47.6189226Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+2025-11-12T15:31:47.6189561Z 
+2025-11-12T15:31:47.6189667Z     Expected: > [32m0[39m
+2025-11-12T15:31:47.6189903Z     Received:   [31m0[39m
+2025-11-12T15:31:47.6190051Z 
+2025-11-12T15:31:47.6190119Z       121 |     
+2025-11-12T15:31:47.6190353Z       122 |     // At least some links should work
+2025-11-12T15:31:47.6190678Z     > 123 |     expect(successfulLinks).toBeGreaterThan(0);
+2025-11-12T15:31:47.6190977Z           |                             ^
+2025-11-12T15:31:47.6191202Z       124 |   });
+2025-11-12T15:31:47.6191367Z       125 |
+2025-11-12T15:31:47.6191665Z       126 |   test('search functionality is accessible', async ({ page }) => {
+2025-11-12T15:31:47.6192284Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:123:29
+2025-11-12T15:31:47.6192683Z 
+2025-11-12T15:31:47.6193033Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6193857Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium/test-failed-1.png
+2025-11-12T15:31:47.6194547Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6194775Z 
+2025-11-12T15:31:47.6195181Z     Error Context: test-results/deployment-Deployment-Verification-internal-links-work-chromium/error-context.md
+2025-11-12T15:31:47.6195612Z 
+2025-11-12T15:31:47.6195904Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6196132Z 
+2025-11-12T15:31:47.6196502Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+2025-11-12T15:31:47.6196976Z 
+2025-11-12T15:31:47.6197092Z     Expected: > [32m0[39m
+2025-11-12T15:31:47.6197357Z     Received:   [31m0[39m
+2025-11-12T15:31:47.6197491Z 
+2025-11-12T15:31:47.6197557Z       121 |     
+2025-11-12T15:31:47.6197781Z       122 |     // At least some links should work
+2025-11-12T15:31:47.6198109Z     > 123 |     expect(successfulLinks).toBeGreaterThan(0);
+2025-11-12T15:31:47.6198411Z           |                             ^
+2025-11-12T15:31:47.6198632Z       124 |   });
+2025-11-12T15:31:47.6198925Z       125 |
+2025-11-12T15:31:47.6199227Z       126 |   test('search functionality is accessible', async ({ page }) => {
+2025-11-12T15:31:47.6199837Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:123:29
+2025-11-12T15:31:47.6200226Z 
+2025-11-12T15:31:47.6200584Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6201274Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry1/test-failed-1.png
+2025-11-12T15:31:47.6201979Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6202196Z 
+2025-11-12T15:31:47.6202630Z     Error Context: test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry1/error-context.md
+2025-11-12T15:31:47.6203103Z 
+2025-11-12T15:31:47.6203450Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6204285Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6204750Z     Usage:
+2025-11-12T15:31:47.6204848Z 
+2025-11-12T15:31:47.6205308Z         npx playwright show-trace test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6205787Z 
+2025-11-12T15:31:47.6206074Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6206295Z 
+2025-11-12T15:31:47.6206586Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6206817Z 
+2025-11-12T15:31:47.6207190Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+2025-11-12T15:31:47.6207516Z 
+2025-11-12T15:31:47.6207633Z     Expected: > [32m0[39m
+2025-11-12T15:31:47.6207866Z     Received:   [31m0[39m
+2025-11-12T15:31:47.6208007Z 
+2025-11-12T15:31:47.6208082Z       121 |     
+2025-11-12T15:31:47.6208312Z       122 |     // At least some links should work
+2025-11-12T15:31:47.6208640Z     > 123 |     expect(successfulLinks).toBeGreaterThan(0);
+2025-11-12T15:31:47.6208938Z           |                             ^
+2025-11-12T15:31:47.6209161Z       124 |   });
+2025-11-12T15:31:47.6209350Z       125 |
+2025-11-12T15:31:47.6209837Z       126 |   test('search functionality is accessible', async ({ page }) => {
+2025-11-12T15:31:47.6211174Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:123:29
+2025-11-12T15:31:47.6211629Z 
+2025-11-12T15:31:47.6212015Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6212704Z     test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry2/test-failed-1.png
+2025-11-12T15:31:47.6213407Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6214035Z 
+2025-11-12T15:31:47.6214490Z     Error Context: test-results/deployment-Deployment-Verification-internal-links-work-chromium-retry2/error-context.md
+2025-11-12T15:31:47.6214967Z 
+2025-11-12T15:31:47.6215384Z   5) [chromium] › tests/deployment.spec.js:142:3 › Deployment Verification › mobile responsive layout works 
+2025-11-12T15:31:47.6215739Z 
+2025-11-12T15:31:47.6216064Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T15:31:47.6216364Z 
+2025-11-12T15:31:47.6216559Z     Locator: locator('main, article, .markdown, .docMainContainer')
+2025-11-12T15:31:47.6216878Z     Expected: visible
+2025-11-12T15:31:47.6217071Z     Timeout: 10000ms
+2025-11-12T15:31:47.6217294Z     Error: element(s) not found
+2025-11-12T15:31:47.6217439Z 
+2025-11-12T15:31:47.6217511Z     Call log:
+2025-11-12T15:31:47.6217806Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T15:31:47.6218302Z     [2m  - waiting for locator('main, article, .markdown, .docMainContainer')[22m
+2025-11-12T15:31:47.6218572Z 
+2025-11-12T15:31:47.6218578Z 
+2025-11-12T15:31:47.6218644Z       147 |     
+2025-11-12T15:31:47.6218893Z       148 |     // Check that page is still usable on mobile
+2025-11-12T15:31:47.6219443Z     > 149 |     await expect(page.locator('main, article, .markdown, .docMainContainer')).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6219950Z           |                                                                               ^
+2025-11-12T15:31:47.6220204Z       150 |     
+2025-11-12T15:31:47.6220458Z       151 |     // Check mobile menu button exists (hamburger menu)
+2025-11-12T15:31:47.6221171Z       152 |     const menuButton = page.locator('button[aria-label*="menu"], button[aria-label*="navigation"], button[aria-label*="Toggle"], .navbar__toggle').first();
+2025-11-12T15:31:47.6222046Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:149:79
+2025-11-12T15:31:47.6222445Z 
+2025-11-12T15:31:47.6222806Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6223664Z     test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium/test-failed-1.png
+2025-11-12T15:31:47.6224417Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6224642Z 
+2025-11-12T15:31:47.6225080Z     Error Context: test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium/error-context.md
+2025-11-12T15:31:47.6225533Z 
+2025-11-12T15:31:47.6225830Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6226056Z 
+2025-11-12T15:31:47.6226372Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T15:31:47.6226663Z 
+2025-11-12T15:31:47.6226856Z     Locator: locator('main, article, .markdown, .docMainContainer')
+2025-11-12T15:31:47.6227317Z     Expected: visible
+2025-11-12T15:31:47.6227507Z     Timeout: 10000ms
+2025-11-12T15:31:47.6227723Z     Error: element(s) not found
+2025-11-12T15:31:47.6227866Z 
+2025-11-12T15:31:47.6227933Z     Call log:
+2025-11-12T15:31:47.6228232Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T15:31:47.6228717Z     [2m  - waiting for locator('main, article, .markdown, .docMainContainer')[22m
+2025-11-12T15:31:47.6229110Z 
+2025-11-12T15:31:47.6229116Z 
+2025-11-12T15:31:47.6229183Z       147 |     
+2025-11-12T15:31:47.6229434Z       148 |     // Check that page is still usable on mobile
+2025-11-12T15:31:47.6229974Z     > 149 |     await expect(page.locator('main, article, .markdown, .docMainContainer')).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6230486Z           |                                                                               ^
+2025-11-12T15:31:47.6230737Z       150 |     
+2025-11-12T15:31:47.6230995Z       151 |     // Check mobile menu button exists (hamburger menu)
+2025-11-12T15:31:47.6231697Z       152 |     const menuButton = page.locator('button[aria-label*="menu"], button[aria-label*="navigation"], button[aria-label*="Toggle"], .navbar__toggle').first();
+2025-11-12T15:31:47.6232548Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:149:79
+2025-11-12T15:31:47.6232946Z 
+2025-11-12T15:31:47.6233302Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6234300Z     test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium-retry1/test-failed-1.png
+2025-11-12T15:31:47.6235077Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6235298Z 
+2025-11-12T15:31:47.6235766Z     Error Context: test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium-retry1/error-context.md
+2025-11-12T15:31:47.6236272Z 
+2025-11-12T15:31:47.6236625Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6237292Z     test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6237773Z     Usage:
+2025-11-12T15:31:47.6237869Z 
+2025-11-12T15:31:47.6238341Z         npx playwright show-trace test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium-retry1/trace.zip
+2025-11-12T15:31:47.6238858Z 
+2025-11-12T15:31:47.6239147Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6239358Z 
+2025-11-12T15:31:47.6239654Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6239881Z 
+2025-11-12T15:31:47.6240195Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+2025-11-12T15:31:47.6240485Z 
+2025-11-12T15:31:47.6240821Z     Locator: locator('main, article, .markdown, .docMainContainer')
+2025-11-12T15:31:47.6241140Z     Expected: visible
+2025-11-12T15:31:47.6241328Z     Timeout: 10000ms
+2025-11-12T15:31:47.6241544Z     Error: element(s) not found
+2025-11-12T15:31:47.6241686Z 
+2025-11-12T15:31:47.6241754Z     Call log:
+2025-11-12T15:31:47.6242052Z     [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+2025-11-12T15:31:47.6242532Z     [2m  - waiting for locator('main, article, .markdown, .docMainContainer')[22m
+2025-11-12T15:31:47.6242929Z 
+2025-11-12T15:31:47.6242934Z 
+2025-11-12T15:31:47.6243000Z       147 |     
+2025-11-12T15:31:47.6243249Z       148 |     // Check that page is still usable on mobile
+2025-11-12T15:31:47.6244137Z     > 149 |     await expect(page.locator('main, article, .markdown, .docMainContainer')).toBeVisible({ timeout: 10000 });
+2025-11-12T15:31:47.6244675Z           |                                                                               ^
+2025-11-12T15:31:47.6244932Z       150 |     
+2025-11-12T15:31:47.6245198Z       151 |     // Check mobile menu button exists (hamburger menu)
+2025-11-12T15:31:47.6245896Z       152 |     const menuButton = page.locator('button[aria-label*="menu"], button[aria-label*="navigation"], button[aria-label*="Toggle"], .navbar__toggle').first();
+2025-11-12T15:31:47.6246753Z         at /home/runner/work/eco-balance-documentation/eco-balance-documentation/tests/deployment.spec.js:149:79
+2025-11-12T15:31:47.6247166Z 
+2025-11-12T15:31:47.6247539Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6248258Z     test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium-retry2/test-failed-1.png
+2025-11-12T15:31:47.6248986Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+2025-11-12T15:31:47.6249206Z 
+2025-11-12T15:31:47.6249679Z     Error Context: test-results/deployment-Deployment-Veri-8874b-ile-responsive-layout-works-chromium-retry2/error-context.md
+2025-11-12T15:31:47.6250177Z 
+2025-11-12T15:31:47.6250243Z   5 failed
+2025-11-12T15:31:47.6250715Z     [chromium] › tests/deployment.spec.js:19:3 › Deployment Verification › homepage loads successfully 
+2025-11-12T15:31:47.6251404Z     [chromium] › tests/deployment.spec.js:29:3 › Deployment Verification › navigation works ────────
+2025-11-12T15:31:47.6252091Z     [chromium] › tests/deployment.spec.js:42:3 › Deployment Verification › key pages load without errors 
+2025-11-12T15:31:47.6252790Z     [chromium] › tests/deployment.spec.js:87:3 › Deployment Verification › internal links work ─────
+2025-11-12T15:31:47.6253675Z     [chromium] › tests/deployment.spec.js:142:3 › Deployment Verification › mobile responsive layout works 
+2025-11-12T15:31:47.6254219Z   4 passed (2.0m)
+2025-11-12T15:31:47.6318345Z ##[error]Process completed with exit code 1.
