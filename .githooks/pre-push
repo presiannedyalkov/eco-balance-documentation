@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Pre-push hook to prevent pushing directly to main branch
+# Install: git config core.hooksPath .githooks
+
+protected_branch='main'
+current_branch=$(git symbolic-ref HEAD | sed -e 's,^.*/\(.*\),\1,')
+
+if [ "$protected_branch" = "$current_branch" ]; then
+    echo "❌ ERROR: You are trying to push directly to the '$protected_branch' branch!"
+    echo ""
+    echo "⚠️  The '$protected_branch' branch is protected. All changes must go through Pull Requests."
+    echo ""
+    echo "✅ To fix this:"
+    echo "   1. Create a branch: git checkout -b feature/your-feature-name"
+    echo "   2. Push your branch: git push origin feature/your-feature-name"
+    echo "   3. Open a Pull Request on GitHub"
+    echo ""
+    echo "📖 See CONTRIBUTING.md for more information."
+    exit 1
+fi
+
+exit 0
+

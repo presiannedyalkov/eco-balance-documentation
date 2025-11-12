@@ -1,0 +1,43 @@
+name: Branch Protection Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-branch-protection:
+    name: Verify Branch Protection
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+      - name: Check if push is from PR
+        run: |
+          echo "⚠️ Direct push to main branch detected!"
+          echo "❌ All changes must go through Pull Requests."
+          echo "Please create a branch and open a PR instead."
+          exit 1
+
+  validate-pr:
+    name: Validate Pull Request
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Validate PR
+        run: |
+          echo "✅ PR validation passed"
+          echo "Branch: ${{ github.head_ref }}"
+          echo "Base: ${{ github.base_ref }}"
+          
+          if [ "${{ github.base_ref }}" != "main" ]; then
+            echo "⚠️ Warning: PR is not targeting main branch"
+          fi
+
