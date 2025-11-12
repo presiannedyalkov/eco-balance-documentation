@@ -25,7 +25,8 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm ci --ignore-scripts
+        run: |
+          npm ci --ignore-scripts || npm install --ignore-scripts
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
@@ -33,7 +34,7 @@ jobs:
       - name: Run deployment tests
         id: test
         run: |
-          BASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npx playwright test tests/deployment.spec.js
+          BASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npx playwright test tests/deployment.spec.js --reporter=html,list
         continue-on-error: true
         env:
           BASE_URL: https://presiannedyalkov.github.io/eco-balance-documentation
@@ -57,6 +58,7 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 7
+          if-no-files-found: ignore
 
   rollback:
     name: Rollback Deployment
