@@ -304,54 +304,11 @@ This template represents:
 
 ---
 
-## 🔧 Documentation Maintenance Personas
+## 🔧 Documentation Maintenance
 
-This documentation is maintained by a team of specialized AI personas that ensure quality, consistency, and organization. These personas help keep the documentation vault clean, accurate, and discoverable.
+This documentation is maintained by a team of specialized AI personas that ensure quality, consistency, and organization. These internal maintenance tools help keep the documentation clean, accurate, and discoverable.
 
-### Vault Maintenance Crew
-
-**Purpose**: Keep documentation vault clean, organized, consistent, and discoverable  
-**Use for**: Regular maintenance, pre-release checks, quality assurance
-
-The maintenance crew includes 13 specialized personas:
-
-- 🧹 **[The Janitor](../../../_vault_maintenance/personas/janitor.md)** - File organization and hygiene
-- 📚 **[The Curator](../../../_vault_maintenance/personas/curator.md)** - Content quality and coherence
-- 🗄️ **[The Archivist](../../../_vault_maintenance/personas/archivist.md)** - Historical preservation and version control
-- 🔍 **[The Auditor](../../../_vault_maintenance/personas/auditor.md)** - Completeness and consistency verification
-- 📖 **[The Librarian](../../../_vault_maintenance/personas/librarian.md)** - Navigation and discoverability
-- ✨ **[The Quality Inspector](../../../_vault_maintenance/personas/quality_inspector.md)** - Documentation standards and polish
-- 🎯 **[The Clarity Specialist](../../../_vault_maintenance/personas/clarity_specialist.md)** - Self-contained content and context removal
-- 🎯 **[The Vision Guardian](../../../_vault_maintenance/personas/vision_guardian.md)** - Core vision clarity and consistency
-- ✅ **[The Status Accuracy Specialist](../../../_vault_maintenance/personas/status_accuracy_specialist.md)** - Vision vs Reality vs Planning language accuracy
-- 🧪 **[The Assumption Tester](../../../_vault_maintenance/personas/assumption_tester.md)** - Assumption validation and logic testing
-- ✅ **[The Fact Checker](../../../_vault_maintenance/personas/fact_checker.md)** - Factual accuracy and data verification
-- 📚 **[The Source Verifier](../../../_vault_maintenance/personas/source_verifier.md)** - Source and citation management
-- 📖 **[The Readability Specialist](../../../_vault_maintenance/personas/readability_specialist.md)** - Readability and comprehension optimization
-- 🔄 **[The Update Tracker](../../../_vault_maintenance/personas/update_tracker.md)** - Change impact and update management
-
-### Strategic & Operational Personas
-
-**Purpose**: Project strategy, execution planning, research, security, stakeholder alignment  
-**Use for**: Strategic decisions, planning phases, research synthesis, security reviews
-
-- 🔬 **[The Knowledge Synthesizer](../../../_vault_maintenance/personas/knowledge_synthesizer.md)** - Research analysis & knowledge extraction
-- 🔐 **[The Security Auditor](../../../_vault_maintenance/personas/security_auditor.md)** - Information security & privacy compliance
-- 🛠️ **[The Implementation Coach](../../../_vault_maintenance/personas/implementation_coach.md)** - Execution planning & operational readiness
-- 🎯 **[The Strategic Advisor](../../../_vault_maintenance/personas/strategic_advisor.md)** - Critical analysis & strategic challenge
-- 👥 **[The Stakeholder Advocate](../../../_vault_maintenance/personas/stakeholder_advocate.md)** - Multi-perspective review & audience alignment
-
-### Learn More
-
-- 📋 **[Persona Categorization Guide](../../../_vault_maintenance/PERSONA_CATEGORIZATION.md)** - Complete guide to all personas and when to use them
-- 📖 **[Vault Maintenance README](../../../_vault_maintenance/README.md)** - System overview and how to use the maintenance personas
-- 🚀 **[Quick Start Guide](../../../_vault_maintenance/guides/QUICKSTART.md)** - Get started with maintenance personas in 5 minutes
-- 📝 **[Prompt Reference](../../../_vault_maintenance/guides/PROMPT_REFERENCE.md)** - Simple commands to trigger personas
-
-**Quick Triggers:**
-- Maintenance: "Run the Janitor" / "Check organization"
-- Strategic: "Run the Strategic Advisor" / "Challenge strategy"
-- See the [Prompt Reference](../../../_vault_maintenance/guides/PROMPT_REFERENCE.md) for complete command list
+*Note: Detailed information about maintenance personas and processes is available in the internal documentation repository.*
 
 ---
 
