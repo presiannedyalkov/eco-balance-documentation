@@ -130,6 +130,7 @@ Europe offers diverse restoration opportunities across multiple climate zones:
 
 ### Mediterranean Region Challenges
 **Countries**: Portugal, Spain, Southern France, Greece, Italy
+
 **Key Issues**:
 - Increased drought frequency and severity
 - Wildfire risk escalating
@@ -138,6 +139,7 @@ Europe offers diverse restoration opportunities across multiple climate zones:
 
 ### Temperate Region Challenges
 **Countries**: Germany, Northern France, Poland, Czech Republic, Austria
+
 **Key Issues**:
 - Forest degradation from monoculture forestry
 - Agricultural intensification reducing biodiversity
