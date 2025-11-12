@@ -15,7 +15,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For local development, use '/' for easier access
   // For GitHub Pages deployment, this should be '/eco-balance-documentation/'
-  baseUrl: process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/',
+  baseUrl: process.env.BASE_URL || (process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/'),
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

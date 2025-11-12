@@ -41,17 +41,13 @@ jobs:
       - name: Build website
         run: |
           echo "Building Docusaurus site..."
-          npm run build || (echo "Build failed, showing error:" && exit 1)
-          echo "Build completed, checking build directory..."
-          ls -la build/ | head -20
-          if [ ! -d "build" ] || [ ! -f "build/index.html" ]; then
-            echo "❌ Build directory or index.html missing!"
-            exit 1
-          fi
-          echo "✅ Build successful!"
+          echo "NODE_ENV: $NODE_ENV"
+          echo "NODE_OPTIONS: $NODE_OPTIONS"
+          npm run build
         env:
           NODE_ENV: production
           NODE_OPTIONS: '--max-old-space-size=4096'
+          BASE_URL: '/eco-balance-documentation/'
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
