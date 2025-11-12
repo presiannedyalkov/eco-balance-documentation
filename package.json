@@ -16,6 +16,8 @@
     "test:build": "node scripts/test-build.js",
     "test:links": "node scripts/test-links.js",
     "test:pages": "node scripts/test-pages-http.js",
+    "test:deployment": "playwright test tests/deployment.spec.js",
+    "test:playwright": "playwright test",
     "test": "node scripts/test-all.js",
     "sync:docs": "node scripts/sync-docs.js",
     "sync": "node scripts/sync-docs.js"

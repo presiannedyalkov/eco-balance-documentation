@@ -131,7 +131,7 @@ These must be followed - they are based on scientific and practical consensus:
 ### Step 1: Determine Storage Needs
 
 **Review water budget:**
-- Refer to [Assess Water Needs](/restoration-playbook/water_management/01_Assess_Water_Needs)
+- Refer to [Assess Water Needs](/restoration-playbook/water_management/restoration-playbook-water_management-01_Assess_Water_Needs)
 - Identify monthly deficits requiring irrigation
 - Calculate total volume needed
 - Consider peak demand periods

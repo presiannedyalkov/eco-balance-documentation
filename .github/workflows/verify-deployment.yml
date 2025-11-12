@@ -1,0 +1,211 @@
+name: Verify Deployment
+
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Verify Deployment
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run deployment tests
+        id: test
+        run: |
+          BASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npx playwright test tests/deployment.spec.js
+        continue-on-error: true
+        env:
+          BASE_URL: https://presiannedyalkov.github.io/eco-balance-documentation
+
+      - name: Check test results
+        id: check_results
+        run: |
+          if [ "${{ steps.test.outcome }}" != "success" ]; then
+            echo "tests_failed=true" >> $GITHUB_OUTPUT
+            echo "❌ Deployment verification tests failed!"
+            exit 1
+          else
+            echo "tests_failed=false" >> $GITHUB_OUTPUT
+            echo "✅ All deployment tests passed!"
+          fi
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+
+  rollback:
+    name: Rollback Deployment
+    runs-on: ubuntu-latest
+    needs: verify
+    if: needs.verify.result == 'failure'
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+      issues: write
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Get deployment commit and find previous successful commit
+        id: rollback_info
+        run: |
+          # Get the commit that was deployed
+          DEPLOYED_COMMIT="${{ github.event.workflow_run.head_sha || github.sha }}"
+          echo "deployed_commit=$DEPLOYED_COMMIT" >> $GITHUB_OUTPUT
+          
+          # Find the commit before the deployed one (parent)
+          PREVIOUS_COMMIT=$(git rev-parse ${DEPLOYED_COMMIT}^)
+          echo "previous_commit=$PREVIOUS_COMMIT" >> $GITHUB_OUTPUT
+          
+          # Check if previous commit exists
+          if git cat-file -e "$PREVIOUS_COMMIT" 2>/dev/null; then
+            echo "rollback_available=true" >> $GITHUB_OUTPUT
+            echo "✅ Found previous commit: $PREVIOUS_COMMIT"
+          else
+            echo "rollback_available=false" >> $GITHUB_OUTPUT
+            echo "⚠️  Could not find previous commit"
+          fi
+
+      - name: Attempt automatic rollback
+        if: steps.rollback_info.outputs.rollback_available == 'true'
+        id: rollback
+        run: |
+          PREVIOUS_COMMIT="${{ steps.rollback_info.outputs.previous_commit }}"
+          DEPLOYED_COMMIT="${{ steps.rollback_info.outputs.deployed_commit }}"
+          
+          echo "🔄 Attempting to rollback to: $PREVIOUS_COMMIT"
+          
+          # Create a revert commit
+          git revert --no-edit HEAD || {
+            echo "⚠️  Could not automatically revert. Creating rollback branch instead."
+            git checkout -b rollback/$(date +%Y%m%d-%H%M%S) $PREVIOUS_COMMIT
+            echo "rollback_method=branch" >> $GITHUB_OUTPUT
+            exit 0
+          }
+          
+          echo "rollback_method=revert" >> $GITHUB_OUTPUT
+          
+          # Push the revert
+          git push origin main || {
+            echo "❌ Failed to push rollback. Manual intervention required."
+            echo "rollback_pushed=false" >> $GITHUB_OUTPUT
+            exit 1
+          }
+          
+          echo "rollback_pushed=true" >> $GITHUB_OUTPUT
+          echo "✅ Rollback commit pushed successfully"
+
+      - name: Create rollback issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const rollbackMethod = '${{ steps.rollback.outputs.rollback_method }}';
+            const rollbackPushed = '${{ steps.rollback.outputs.rollback_pushed }}' === 'true';
+            const previousCommit = '${{ steps.rollback_info.outputs.previous_commit }}';
+            const deployedCommit = '${{ steps.rollback_info.outputs.deployed_commit }}';
+            
+            let body = `## 🚨 Deployment Verification Failed - Rollback Initiated
+            
+            The deployment verification tests failed after the latest deployment.
+            
+            **Deployed Commit:** \`${deployedCommit.substring(0, 7)}\`
+            **Previous Commit:** \`${previousCommit.substring(0, 7)}\`
+            
+            **Rollback Status:** `;
+            
+            if (rollbackPushed) {
+              body += `✅ **Automatic rollback completed**\n\n`;
+              body += `A revert commit has been pushed to \`main\`. The deployment will automatically redeploy with the previous version.\n\n`;
+            } else if (rollbackMethod === 'branch') {
+              body += `⚠️ **Rollback branch created**\n\n`;
+              body += `A rollback branch has been created. Please review and merge manually.\n\n`;
+            } else {
+              body += `❌ **Automatic rollback failed**\n\n`;
+              body += `Manual rollback required. Please revert to commit: \`${previousCommit}\`\n\n`;
+            }
+            
+            body += `**Test Results:**\n`;
+            body += `- Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n`;
+            body += `- Artifacts: Check workflow artifacts for Playwright test reports\n\n`;
+            
+            body += `**Manual Rollback (if needed):**\n`;
+            body += `\`\`\`bash\n`;
+            body += `git revert HEAD\n`;
+            body += `git push origin main\n`;
+            body += `\`\`\`\n`;
+            
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🚨 Deployment Verification Failed - Rollback Initiated',
+              body: body,
+              labels: ['bug', 'deployment', 'urgent']
+            });
+            
+            console.log(`Created issue #${issue.data.number}`);
+
+      - name: Comment on commit
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commitSha = '${{ steps.rollback_info.outputs.deployed_commit }}';
+            const previousCommit = '${{ steps.rollback_info.outputs.previous_commit }}';
+            const rollbackPushed = '${{ steps.rollback.outputs.rollback_pushed }}' === 'true';
+            
+            let comment = `⚠️ **Deployment Verification Failed**\n\n`;
+            
+            if (rollbackPushed) {
+              comment += `✅ Automatic rollback has been initiated. The site will redeploy with the previous version.\n\n`;
+            } else {
+              comment += `❌ Automatic rollback failed. Manual intervention required.\n\n`;
+            }
+            
+            comment += `**Previous commit:** \`${previousCommit.substring(0, 7)}\`\n`;
+            comment += `**Test results:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n`;
+            
+            try {
+              await github.rest.repos.createCommitComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                commit_sha: commitSha,
+                body: comment
+              });
+            } catch (error) {
+              console.log('Could not create commit comment:', error.message);
+            }
+

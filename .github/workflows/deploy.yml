@@ -39,11 +39,24 @@ jobs:
           npm ci --ignore-scripts || npm install --ignore-scripts
 
       - name: Build website
+        timeout-minutes: 15
         run: |
+          set -e
           echo "Building Docusaurus site..."
           echo "NODE_ENV: $NODE_ENV"
           echo "NODE_OPTIONS: $NODE_OPTIONS"
-          npm run build
+          echo "BASE_URL: $BASE_URL"
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
+          npm run build 2>&1
+          echo "Build command completed"
+          if [ -d "build" ]; then
+            echo "✅ Build directory exists"
+            ls -la build/ | head -10
+          else
+            echo "❌ Build directory missing!"
+            exit 1
+          fi
         env:
           NODE_ENV: production
           NODE_OPTIONS: '--max-old-space-size=4096'
