@@ -301,13 +301,20 @@ jobs:
             
             // Update PR body if anything changed
             if (updated) {
-              await github.rest.pulls.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: prNumber,
-                body: body
-              });
-              console.log('✅ PR template auto-filled successfully!');
+              console.log(`Updating PR #${prNumber} with body length: ${body.length}`);
+              console.log(`Body contains '[x] Feature': ${body.includes('[x] Feature')}`);
+              try {
+                await github.rest.pulls.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: prNumber,
+                  body: body
+                });
+                console.log('✅ PR template auto-filled successfully!');
+              } catch (error) {
+                console.log(`❌ Error updating PR: ${error.message}`);
+                throw error;
+              }
             } else {
               console.log('ℹ️  PR template already filled or no changes needed');
             }
