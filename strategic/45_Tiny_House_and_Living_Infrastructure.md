@@ -802,9 +802,6 @@ After successful Year 1 pilot secures expansion funding:
 **Legal:**
 - [[strategic/13_Legal_Framework|Regulations & Compliance]]
 
----
-
-**Document Version:** 2.0.0
 **Last Updated:** 2025-11-08
 **Status:** Active
 

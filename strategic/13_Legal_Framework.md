@@ -794,14 +794,9 @@ This framework presents viable legal pathways across Europe. The actual structur
 *Legal framework designed for flexibility - ready to adapt to opportunities as they emerge.*
 
 ---
-
-**Document Version:** 3.0.0 - Adaptive Framework | **Last Updated:** 2025-11-09 | **Status:** Active - Decision Pending
 ---
-
-**Document Version:** 3.0.0 - Adaptive Framework
 **Last Updated:** 2025-11-10
 **Status:** Transformed to Adaptive Framework
-
 ---
 
 **Document Version**: 2025.11 (2025.11.13 01:56)
