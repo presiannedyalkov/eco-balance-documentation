@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Funding Strategy - Bootstrap Approach
 
-**← Back to Project Hub**
+**← Back to [Project Hub](/docs/intro)**
 
 ---
 
