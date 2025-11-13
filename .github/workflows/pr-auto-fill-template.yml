@@ -133,68 +133,56 @@ jobs:
                 'Other (please describe)'
               ];
               
-              const checkboxText = checkboxes[checkboxIndex];
-              // Build regex pattern - match checkbox with optional comment
-              // Pattern: - [ ] Feature <!-- comment --> (with flexible whitespace)
-              const uncheckedPattern = new RegExp(
-                '-\\s*\\[\\s*\\]\\s*' + 
-                checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + 
-                '\\s*(<!--[^>]*-->)?',
-                'gm'  // global and multiline
-              );
-              const checkedReplacement = '- [x] ' + checkboxText;
+              const targetCheckboxText = checkboxes[checkboxIndex];
+              console.log(`Target checkbox: ${targetCheckboxText} (index: ${checkboxIndex})`);
               
-              // Check if already checked - look for [x] in any format
-              const alreadyChecked = body.includes('[x] ' + checkboxText) || 
-                                    body.includes('[x]' + checkboxText) ||
-                                    body.match(new RegExp('-\\s*\\[x\\]\\s*' + checkboxText));
-              console.log(`Checking checkbox: ${checkboxText}`);
-              console.log(`Already checked check: ${alreadyChecked}`);
-              console.log(`Body includes '[x] Feature': ${body.includes('[x] Feature')}`);
-              console.log(`Body includes '[x]Feature': ${body.includes('[x]Feature')}`);
-              // Also log what we actually see
-              const featureIndex = body.indexOf('Feature');
-              if (featureIndex >= 0) {
-                const context = body.substring(Math.max(0, featureIndex - 5), featureIndex + 15);
-                console.log(`Context around Feature: ${JSON.stringify(context)}`);
+              // First, uncheck all other checkboxes in the Type of Change section
+              for (let i = 0; i < checkboxes.length; i++) {
+                const checkboxText = checkboxes[i];
+                if (i !== checkboxIndex) {
+                  // Uncheck this checkbox if it's checked
+                  const checkedPattern = new RegExp(
+                    '-\\s*\\[x\\]\\s*' + checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*(<!--[^>]*-->)?',
+                    'g'
+                  );
+                  if (body.match(checkedPattern)) {
+                    body = body.replace(checkedPattern, (match) => {
+                      return match.replace(/\[x\]/, '[ ]');
+                    });
+                    updated = true;
+                    console.log(`✅ Unchecked: ${checkboxText}`);
+                  }
+                }
               }
               
+              // Now check the target checkbox if it's not already checked
+              const alreadyChecked = body.includes('[x] ' + targetCheckboxText) || 
+                                    body.includes('[x]' + targetCheckboxText) ||
+                                    body.match(new RegExp('-\\s*\\[x\\]\\s*' + targetCheckboxText));
+              
               if (!alreadyChecked) {
-                // Use simple global replace - most reliable approach
-                // Replace: - [ ] Feature <!-- comment --> with - [x] Feature <!-- comment -->
-                const uncheckedPatternSimple = '- [ ] ' + checkboxText;
-                console.log(`Looking for pattern: ${uncheckedPatternSimple}`);
-                console.log(`Pattern exists: ${body.includes(uncheckedPatternSimple)}`);
+                // Find and check the target checkbox
+                const uncheckedPattern = new RegExp(
+                  '-\\s*\\[\\s*\\]\\s*' + 
+                  targetCheckboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + 
+                  '\\s*(<!--[^>]*-->)?',
+                  'g'
+                );
                 
-                if (body.includes(uncheckedPatternSimple)) {
-                  // Build regex - escape checkbox text properly
-                  const escapedCheckbox = checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                  const regexPattern = '-\\s*\\[\\s*\\]\\s*' + escapedCheckbox + '\\s*(<!--[^>]*-->)?';
-                  const regex = new RegExp(regexPattern, 'g');
-                  
-                  console.log(`Regex pattern: ${regexPattern}`);
-                  
-                  // Use replace with a function to preserve the comment
-                  const beforeReplace = body;
-                  body = body.replace(regex, (match) => {
-                    console.log(`Replacing match: ${JSON.stringify(match)}`);
-                    return match.replace(/\[ ?\]/, '[x]');
-                  });
-                  
-                  const changed = beforeReplace !== body;
-                  console.log(`Body changed: ${changed}`);
-                  
-                  if (changed) {
-                    updated = true;
-                    console.log(`✅ Auto-checked type checkbox: ${checkboxText}`);
-                  } else {
-                    console.log(`⚠️  Replacement didn't change body`);
-                  }
+                const beforeReplace = body;
+                body = body.replace(uncheckedPattern, (match) => {
+                  return match.replace(/\[ ?\]/, '[x]');
+                });
+                
+                const changed = beforeReplace !== body;
+                if (changed) {
+                  updated = true;
+                  console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
                 } else {
-                  console.log(`⚠️  Could not find checkbox pattern: ${uncheckedPatternSimple}`);
+                  console.log(`⚠️  Could not find unchecked checkbox pattern for: ${targetCheckboxText}`);
                 }
               } else {
-                console.log(`ℹ️  Checkbox already checked: ${checkboxText}`);
+                console.log(`ℹ️  Target checkbox already checked: ${targetCheckboxText}`);
               }
             }
             
