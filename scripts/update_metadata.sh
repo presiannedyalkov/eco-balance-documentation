@@ -32,11 +32,19 @@ update_metadata() {
     # Backup file
     cp "$file" "${file}.bak"
     
-    # Remove old metadata section (from --- to end, or from Document Version to end)
-    # Find the line with Document Version and remove everything from there to end
-    sed -i '/^---$/,${/^---$/!d}' "$file" 2>/dev/null || true
-    sed -i '/^\*\*Document Version\*\*:/,$d' "$file" 2>/dev/null || true
-    sed -i '/^Document Version:/,$d' "$file" 2>/dev/null || true
+    # Find the line number where metadata starts (look for "Document Version" or "---" separator before metadata)
+    # We want to keep all content BEFORE the metadata section
+    METADATA_START=$(grep -n "^\*\*Document Version\*\*:\|^Document Version:\|^---$" "$file" | tail -1 | cut -d: -f1)
+    
+    if [ -n "$METADATA_START" ]; then
+        # Remove everything from metadata start to end, but keep everything before
+        head -n $((METADATA_START - 1)) "$file" > "${file}.tmp"
+        mv "${file}.tmp" "$file"
+    else
+        # If no metadata found, just remove trailing empty lines and separators
+        # Remove trailing --- separators
+        sed -i -e :a -e '/^---$/!{N;ba' -e '}' -e 's/\n---$//' "$file" 2>/dev/null || true
+    fi
     
     # Remove trailing empty lines
     sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$file" 2>/dev/null || true
