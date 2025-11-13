@@ -69,9 +69,9 @@ Create a **habitat for wildlife** and **restore land to become a shelter and san
 
 ### Growth
 - [[strategic/40_Expansion_Growth_Strategy|Expansion Strategy]] - Scaling approach and growth phases
-- [[strategic/42_Adaptive_Timeline|Site Selection]] - Geographic options and land acquisition
 - [[strategic/42_Adaptive_Timeline|Adaptive Timeline]] - Phased implementation approach
 - [[strategic/43_Operations_Action_Plan|Operations Action Plan]] - Day-to-day operations guide
+- [[strategic/44_Site_Selection_Land_Acquisition|Site Selection]] - Geographic options and land acquisition
 - [[strategic/45_Tiny_House_and_Living_Infrastructure|Tiny House Infrastructure]] - Off-grid living specifications
 
 ### Performance
