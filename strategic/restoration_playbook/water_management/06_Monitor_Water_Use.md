@@ -1,6 +1,5 @@
 # Task 6: Monitor Water Use - Project Template
 
-**Part of:** Plan Section (Vision → Plan → Reality)  
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
@@ -268,3 +267,12 @@ These must be followed - they are based on scientific consensus:
 *Remember: Monitoring water use is essential for optimization. You cannot improve what you don't measure.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:29)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

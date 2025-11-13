@@ -1,6 +1,5 @@
 # Task 5: Share Benefits - Project Template
 
-**Part of:** Plan Section (Vision → Plan → Reality)  
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
@@ -322,3 +321,12 @@ Once benefits are shared:
 *Remember: Sharing benefits with the community is essential for long-term support. Equitable benefit-sharing creates invested protectors rather than passive observers.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:29)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

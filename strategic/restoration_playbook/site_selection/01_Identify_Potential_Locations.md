@@ -1,6 +1,5 @@
 # Step 1: Identify Potential Locations - Project Template
 
-**Part of:** Plan Section (Vision → Plan → Reality)  
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
@@ -247,3 +246,12 @@ Once potential locations are identified:
 *Remember: The right site is the foundation of restoration success. Take time to find the best match.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:29)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

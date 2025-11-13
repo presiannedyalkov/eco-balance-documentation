@@ -1,6 +1,5 @@
 # Step 3: Estimate Restoration Potential - Project Template
 
-**Part of:** Plan Section (Vision → Plan → Reality)  
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
@@ -284,3 +283,12 @@ Once restoration potential is estimated:
 *Remember: Realistic assessment of restoration potential is essential for making informed site selection decisions.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:29)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

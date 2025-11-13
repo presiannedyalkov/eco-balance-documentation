@@ -1,6 +1,5 @@
 # Step 6: Contact Landowners - Project Template
 
-**Part of:** Plan Section (Vision → Plan → Reality)  
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
@@ -315,3 +314,12 @@ Once landowners are contacted:
 *Remember: Building positive relationships with landowners is essential. Respect, transparency, and patience are key.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:29)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

@@ -1,6 +1,5 @@
 # Task 6: Maintain Communication - Project Template
 
-**Part of:** Plan Section (Vision → Plan → Reality)  
 **Type:** Template/Playbook for Small Plot Restoration  
 **Status:** Template - Customize for Your Project
 
@@ -287,3 +286,12 @@ These must be followed - they are based on scientific and ethical consensus:
 *Remember: Sustained communication is the foundation of long-term engagement. Maintain communication throughout and beyond the project to ensure lasting stewardship.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:29)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13
