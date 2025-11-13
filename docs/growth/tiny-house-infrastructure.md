@@ -6,7 +6,7 @@ sidebar_position: 5
 
 # Tiny House and Living Infrastructure
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 

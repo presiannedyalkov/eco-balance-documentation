@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Organizational Structure - Adaptive Framework
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 

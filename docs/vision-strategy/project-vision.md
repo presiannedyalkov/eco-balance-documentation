@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Project Vision & Context
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 ## The Global Challenge

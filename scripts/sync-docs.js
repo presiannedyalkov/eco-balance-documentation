@@ -223,8 +223,8 @@ Object.entries(FILE_MAPPING).forEach(([rootFile, config]) => {
 });
 
 // Special link mappings
-LINK_MAPPING['00_Eco_Balance_Hub'] = '/docs/intro';
-LINK_MAPPING['Eco_Balance_Hub'] = '/docs/intro';
+LINK_MAPPING['00_Eco_Balance_Hub'] = '/';
+LINK_MAPPING['Eco_Balance_Hub'] = '/';
 LINK_MAPPING['ROADMAP'] = '/docs/resources/roadmap';
 LINK_MAPPING['QUICK_REFERENCE_GUIDE'] = '/docs/resources/quick-reference';
 LINK_MAPPING['FEATURE_WISHLIST'] = '/docs/resources/feature-wishlist';

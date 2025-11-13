@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Governance Framework - Adaptive to Legal Structure
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 

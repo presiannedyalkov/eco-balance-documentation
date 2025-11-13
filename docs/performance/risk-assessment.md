@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Risk Assessment & Mitigation
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 

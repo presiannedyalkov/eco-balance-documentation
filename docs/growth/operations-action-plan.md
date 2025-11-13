@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Operations & Action Plan - Bootstrap Model
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 
