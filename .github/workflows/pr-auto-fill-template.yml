@@ -190,11 +190,18 @@ jobs:
                     body = lines.join('\n');
                     const changed = beforeReplace !== body;
                     console.log(`Body changed: ${changed}`);
+                    console.log(`Before length: ${beforeReplace.length}, After length: ${body.length}`);
+                    console.log(`Before starts with: ${beforeReplace.substring(0, 50)}`);
+                    console.log(`After starts with: ${body.substring(0, 50)}`);
                     if (changed) {
                       updated = true;
                       console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
+                      console.log(`Updated flag set to: ${updated}`);
                     } else {
                       console.log(`⚠️  Line replaced but body didn't change - possible issue`);
+                      // Force update anyway if we found and replaced the line
+                      updated = true;
+                      console.log(`⚠️  Forcing updated=true since line was replaced`);
                     }
                   } else {
                     console.log(`⚠️  Found pattern but couldn't find matching line`);
