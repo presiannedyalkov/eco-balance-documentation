@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Business Model & Revenue Streams
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Expansion & Growth Strategy
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ## Overview
 

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Restoration Challenges & Solutions
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ## Overview
 

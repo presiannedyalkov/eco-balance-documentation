@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Financial Projections - Adaptive Framework
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 
