@@ -151,55 +151,54 @@ jobs:
               console.log(`Checking checkbox: ${checkboxText}, already checked: ${alreadyChecked}`);
               
               if (!alreadyChecked) {
-                // Find and replace the checkbox line
-                const match = body.match(uncheckedPattern);
-                console.log(`Regex pattern: ${uncheckedPattern.source}`);
-                console.log(`Match found: ${match ? 'yes' : 'no'}`);
-                if (match && match.length > 0) {
-                  console.log(`Matched line: ${JSON.stringify(match[0].substring(0, 80))}`);
-                  // Replace the entire matched line, preserving comment if present
-                  const originalLine = match[0];
-                  const newLine = originalLine.replace(/\[ ?\]/, '[x]');
-                  console.log(`Replacing with: ${JSON.stringify(newLine.substring(0, 80))}`);
-                  // Use replace with the exact matched string to avoid issues
-                  body = body.replace(originalLine, newLine);
-                  updated = true;
-                  console.log(`✅ Auto-checked type checkbox: ${checkboxText}`);
-                } else {
-                  // Fallback: try direct string replacement with comment
-                  const withCommentPattern = '- [ ] ' + checkboxText + ' <!--';
-                  console.log(`Trying with comment pattern: ${withCommentPattern}`);
-                  if (body.includes(withCommentPattern)) {
-                    // Use replaceAll to handle multiple occurrences
-                    const regex = new RegExp(
-                      '-\\s*\\[\\s*\\]\\s*' + checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*<!--[^>]*-->',
-                      'g'
-                    );
-                    body = body.replace(regex, (match) => match.replace(/\[ ?\]/, '[x]'));
-                    updated = true;
-                    console.log(`✅ Auto-checked type checkbox (direct replace): ${checkboxText}`);
-                  } else {
-                    // Try simple pattern without comment
-                    const simplePattern = '- [ ] ' + checkboxText;
-                    console.log(`Trying simple pattern: ${simplePattern}`);
-                    if (body.includes(simplePattern)) {
-                      body = body.replace(new RegExp(simplePattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'), checkedReplacement);
-                      updated = true;
-                      console.log(`✅ Auto-checked type checkbox (simple): ${checkboxText}`);
-                    } else {
-                      console.log(`⚠️  Could not find checkbox pattern for: ${checkboxText}`);
-                      console.log(`   Pattern: ${uncheckedPattern.source}`);
-                      // Debug: show what's around Feature in the body
-                      const featureIndex = body.indexOf('Feature');
-                      if (featureIndex >= 0) {
-                        const context = body.substring(Math.max(0, featureIndex - 30), featureIndex + 80);
-                        console.log(`   Found 'Feature' at index ${featureIndex}`);
-                        console.log(`   Context: ${JSON.stringify(context)}`);
-                      } else {
-                        console.log(`   'Feature' not found in body`);
-                      }
+                // Try multiple replacement strategies
+                let replaced = false;
+                
+                // Strategy 1: Direct string replacement with comment (most common case)
+                const withCommentPattern = '- [ ] ' + checkboxText + ' <!--';
+                if (body.includes(withCommentPattern)) {
+                  // Replace the entire line including comment
+                  const lines = body.split('\n');
+                  for (let i = 0; i < lines.length; i++) {
+                    if (lines[i].includes(withCommentPattern) && lines[i].includes('[ ]')) {
+                      lines[i] = lines[i].replace(/\[ ?\]/, '[x]');
+                      replaced = true;
+                      break;
                     }
                   }
+                  if (replaced) {
+                    body = lines.join('\n');
+                    updated = true;
+                    console.log(`✅ Auto-checked type checkbox (line-by-line): ${checkboxText}`);
+                  }
+                }
+                
+                // Strategy 2: Regex replacement if line-by-line didn't work
+                if (!replaced) {
+                  const match = body.match(uncheckedPattern);
+                  if (match && match.length > 0) {
+                    const originalLine = match[0];
+                    const newLine = originalLine.replace(/\[ ?\]/, '[x]');
+                    body = body.replace(originalLine, newLine);
+                    updated = true;
+                    replaced = true;
+                    console.log(`✅ Auto-checked type checkbox (regex): ${checkboxText}`);
+                  }
+                }
+                
+                // Strategy 3: Simple pattern without comment
+                if (!replaced) {
+                  const simplePattern = '- [ ] ' + checkboxText;
+                  if (body.includes(simplePattern)) {
+                    body = body.replace(simplePattern, checkedReplacement);
+                    updated = true;
+                    replaced = true;
+                    console.log(`✅ Auto-checked type checkbox (simple): ${checkboxText}`);
+                  }
+                }
+                
+                if (!replaced) {
+                  console.log(`⚠️  Could not find checkbox pattern for: ${checkboxText}`);
                 }
               } else {
                 console.log(`ℹ️  Checkbox already checked: ${checkboxText}`);
