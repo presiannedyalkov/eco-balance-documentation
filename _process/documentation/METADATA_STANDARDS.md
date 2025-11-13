@@ -27,7 +27,8 @@ All strategic files **must** include the following metadata fields in the footer
 ---
 
 **Document Version**: YYYY.MM (YYYY.MM.DD HH:MM)
-**Part of**: [Vision | Plan | Reality] → Strategic Documentation
+**Part of**: Strategic Documentation | Restoration Playbook
+**Category**: Vision | Plan | Reality
 **Type**: [Document type - see Type Standards below]
 **Status**: [Status - see Status Standards below]
 **Last Updated**: YYYY-MM-DD
@@ -38,7 +39,8 @@ All strategic files **must** include the following metadata fields in the footer
 ---
 
 **Document Version**: 2025.11 (2025.11.13 14:30)
-**Part of**: Plan → Strategic Documentation
+**Part of**: Strategic Documentation
+**Category**: Plan
 **Type**: Strategic Planning Document
 **Status**: Active
 **Last Updated**: 2025-11-13
@@ -52,7 +54,8 @@ All playbook files **must** include:
 ---
 
 **Document Version**: YYYY.MM (YYYY.MM.DD HH:MM)
-**Part of**: Plan → Restoration Playbook
+**Part of**: Restoration Playbook
+**Category**: Plan
 **Type**: Template/Playbook
 **Status**: Template - Customize for Your Project
 **Last Updated**: YYYY-MM-DD
@@ -143,10 +146,24 @@ All strategic files should follow this structure:
 
 ### "Part of:" Field
 
-**Decision:** Use Vision/Plan/Reality categorization system (Option 3)
+**Purpose:** Identifies which document collection the file belongs to.
+
+**Values:**
+- `Strategic Documentation` - For strategic files (01-70 range)
+- `Restoration Playbook` - For playbook/template files
+
+**Examples:**
+```markdown
+**Part of**: Strategic Documentation
+**Part of**: Restoration Playbook
+```
+
+### "Category:" Field
+
+**Purpose:** Categorizes documents within the Vision → Plan → Reality framework.
 
 **Categorization System:**
-All files should have a `**Part of:**` field that categorizes them within the Vision → Plan → Reality framework:
+All files should have a `**Category:**` field that categorizes them within the Vision → Plan → Reality framework:
 
 - **Vision:** Core vision, values, mission, goals (immutable purpose)
   - Examples: `01_Executive_Summary.md`, `02_Project_Vision.md`, `03_Success_Factors.md`
@@ -159,27 +176,15 @@ All files should have a `**Part of:**` field that categorizes them within the Vi
 
 **Format:**
 ```markdown
-**Part of:** Vision | Plan | Reality
+**Category**: Vision | Plan | Reality
 ```
 
 **Examples:**
-- `**Part of:** Vision` - For vision and values documents
-- `**Part of:** Plan` - For strategic planning, methodology, playbooks
-- `**Part of:** Reality` - For current status, actual data, constraints
+- `**Category**: Vision` - For vision and values documents
+- `**Category**: Plan` - For strategic planning, methodology, playbooks
+- `**Category**: Reality` - For current status, actual data, constraints
 
-**Document Collection:**
-- `**Part of:** Strategic Documentation` - For the strategic files collection (01-70)
-- `**Part of:** Restoration Playbook` - For playbook/template files
-
-**Combined Format (Recommended):**
-```markdown
-**Part of:** Plan → Strategic Documentation
-**Part of:** Plan → Restoration Playbook
-**Part of:** Vision → Strategic Documentation
-**Part of:** Reality → Strategic Documentation
-```
-
-This provides both the conceptual categorization (Vision/Plan/Reality) and the document collection (Strategic Documentation/Restoration Playbook).
+**Note:** The "Category" field name distinguishes this from the "Type" field (which describes document type like "Strategic Planning Document" vs "Vision Document").
 
 ---
 
@@ -279,7 +284,8 @@ For each strategic file, verify:
 
 - [ ] Has "Document Version" field
 - [ ] Version format is YYYY.MM (YYYY.MM.DD HH:MM)
-- [ ] Has "Part of:" field with Vision/Plan/Reality categorization
+- [ ] Has "Part of:" field (Strategic Documentation or Restoration Playbook)
+- [ ] Has "Category:" field (Vision, Plan, or Reality)
 - [ ] Has "Type:" field describing document type
 - [ ] Has "Status:" field with appropriate status value
 - [ ] Has "Last Updated" field
@@ -288,9 +294,10 @@ For each strategic file, verify:
 - [ ] Field order matches standard:
   1. Document Version
   2. Part of
-  3. Type
-  4. Status
-  5. Last Updated
+  3. Category
+  4. Type
+  5. Status
+  6. Last Updated
 - [ ] All fields present and consistent across all files
 
 ---
@@ -305,7 +312,8 @@ For each strategic file, verify:
 
 ### Phase 2: Metadata Structure Standardization (Next)
 - [ ] Audit all files for metadata consistency
-- [ ] Add "Part of:" field to all files (Vision/Plan/Reality categorization)
+- [ ] Add "Part of:" field to all files (Strategic Documentation or Restoration Playbook)
+- [ ] Add "Category:" field to all files (Vision, Plan, or Reality)
 - [ ] Add "Type:" field to all files (document type classification)
 - [ ] Add "Status:" field to all files (appropriate status value)
 - [ ] Standardize field order across all files
