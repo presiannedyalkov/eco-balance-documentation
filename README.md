@@ -284,7 +284,7 @@ Please note that this documentation is primarily maintained by the project found
 
 ## 📄 License
 
-[Add license information if applicable]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
