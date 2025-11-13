@@ -124,53 +124,47 @@ jobs:
             // 1. Auto-fill Type of Change checkbox
             if (checkboxIndex >= 0) {
               const checkboxes = [
-                '- [ ] Feature',
-                '- [ ] Bug fix',
-                '- [ ] Documentation',
-                '- [ ] Refactoring',
-                '- [ ] Other (please describe)'
+                'Feature',
+                'Bug fix',
+                'Documentation',
+                'Refactoring',
+                'Other (please describe)'
               ];
               
-              const targetCheckbox = checkboxes[checkboxIndex];
-              const checkedPattern = targetCheckbox.replace('[ ]', '[x]');
+              const checkboxText = checkboxes[checkboxIndex];
+              const uncheckedPattern = new RegExp(
+                '-\\s+\\[\\s*\\]\\s+' + 
+                checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + 
+                '(\\s*<!--[^>]*-->)?',
+                'g'
+              );
+              const checkedReplacement = '- [x] ' + checkboxText;
               
               // Check if already checked
-              if (!body.includes(checkedPattern)) {
-                // Try multiple patterns to match the checkbox
-                // Pattern 1: Exact match without comment
-                if (body.includes(targetCheckbox) && !body.includes(targetCheckbox + ' <!--')) {
-                  body = body.replace(targetCheckbox, checkedPattern);
+              if (!body.includes('- [x] ' + checkboxText)) {
+                // Find and replace the checkbox line
+                const match = body.match(uncheckedPattern);
+                if (match) {
+                  // Replace the entire matched line, preserving comment if present
+                  const originalLine = match[0];
+                  const newLine = originalLine.replace(/\[ ?\]/, '[x]');
+                  body = body.replace(originalLine, newLine);
                   updated = true;
-                  console.log(`✅ Auto-checked type checkbox (exact): ${targetCheckbox}`);
-                }
-                // Pattern 2: With markdown comment (most common in template)
-                else {
-                  const escapedCheckbox = targetCheckbox.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                  // Match: - [ ] Feature followed by optional whitespace and comment
-                  const regexWithComment = new RegExp(escapedCheckbox.replace('\\[ \\]', '\\[\\s*\\]') + '\\s*<!--[^>]*-->', 'g');
-                  const match = body.match(regexWithComment);
-                  if (match) {
-                    // Replace with checked version, preserving the comment
-                    const originalMatch = match[0];
-                    const checkedWithComment = originalMatch.replace(/\[ ?\]/, '[x]');
-                    body = body.replace(originalMatch, checkedWithComment);
+                  console.log(`✅ Auto-checked type checkbox: ${checkboxText}`);
+                } else {
+                  // Fallback: try simple string replacement
+                  const simplePattern = '- [ ] ' + checkboxText;
+                  if (body.includes(simplePattern)) {
+                    body = body.replace(simplePattern, checkedReplacement);
                     updated = true;
-                    console.log(`✅ Auto-checked type checkbox (with comment): ${targetCheckbox}`);
-                  }
-                  // Pattern 3: Fallback - any whitespace variations
-                  else {
-                    const regexPattern = new RegExp(escapedCheckbox.replace('\\[ \\]', '\\[\\s*\\]'), 'g');
-                    if (body.match(regexPattern)) {
-                      body = body.replace(regexPattern, checkedPattern);
-                      updated = true;
-                      console.log(`✅ Auto-checked type checkbox (regex fallback): ${targetCheckbox}`);
-                    } else {
-                      console.log(`⚠️  Could not find checkbox pattern: ${targetCheckbox}`);
-                    }
+                    console.log(`✅ Auto-checked type checkbox (simple): ${checkboxText}`);
+                  } else {
+                    console.log(`⚠️  Could not find checkbox pattern for: ${checkboxText}`);
+                    console.log(`   Looking for pattern: ${uncheckedPattern.source}`);
                   }
                 }
               } else {
-                console.log(`ℹ️  Checkbox already checked: ${targetCheckbox}`);
+                console.log(`ℹ️  Checkbox already checked: ${checkboxText}`);
               }
             }
             
