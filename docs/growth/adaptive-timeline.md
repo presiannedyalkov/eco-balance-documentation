@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Adaptive Timeline - Flexible Pathways to Launch
 
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
@@ -783,3 +783,12 @@ Whether your timeline is 6 months or 36 months:
 **Document Version:** 3.0.0 - Adaptive Framework
 **Last Updated:** 2025-11-10
 **Status:** Transformed to Adaptive Framework
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Plan
+**Type**: Strategic Planning Document
+**Status**: Active
+**Last Updated**: 2025-11-13

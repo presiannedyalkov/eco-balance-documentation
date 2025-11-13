@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Restoration Methodology
 
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
@@ -1077,3 +1077,12 @@ Eco Balance **will employ** an integrated approach addressing **five interconnec
 **Document Version:** 2.0.0 (Bootstrap Model)
 **Last Updated:** 2025-11-10
 **Status:** Active - Location-Adaptive Framework
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Plan
+**Type**: Methodology Document
+**Status**: Active
+**Last Updated**: 2025-11-13

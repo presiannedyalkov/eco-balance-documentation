@@ -15,13 +15,13 @@
 ## ✅ What's Confirmed (Decided)
 
 ### Vision & Core Approach
-- **[x] Vision**: Restore degraded ecosystems to healthy, biodiverse states
-- **[x] Proof of concept**: Start with 1-hectare pilot site
-- **[x] Work model**: Part-time Year 1-2 (15-25 hr/week, maintain jobs for security)
-- **[x] Core team**: 1-2 founders leading the project
-- **[x] Geographic scope**: Europe (EU citizenship/access)
-- **[x] Methodology**: Science-based, holistic, community-centered
-- **[x] Financial philosophy**: Bootstrap approach, no debt, sustainable from start
+- [x] **Vision**: Restore degraded ecosystems to healthy, biodiverse states
+- [x] **Proof of concept**: Start with 1-hectare pilot site
+- [x] **Work model**: Part-time Year 1-2 (15-25 hr/week, maintain jobs for security)
+- [x] **Core team**: 1-2 founders leading the project
+- [x] **Geographic scope**: Europe (EU citizenship/access)
+- [x] **Methodology**: Science-based, holistic, community-centered
+- [x] **Financial philosophy**: Bootstrap approach, no debt, sustainable from start
 
 ### Core Constraints (Non-Negotiable)
 - **Health & Security**: Founders maintain healthcare access and financial security

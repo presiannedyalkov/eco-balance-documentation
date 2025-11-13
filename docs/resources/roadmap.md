@@ -9,7 +9,7 @@ sidebar_position: 2
 **Current Version:** v2.0.0 (Bootstrap Model)
 **Last Updated:** November 9, 2025
 **Status:** Phase 1 (Bootstrap Launch) - In Progress
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
