@@ -143,6 +143,109 @@ test.describe('Deployment Verification', () => {
   });
 
   test('internal links work', async ({ page }) => {
+    // Test specific pages that should have working "Back to Project Hub" links
+    const testPages = [
+      '/vision-strategy/project-vision',
+      '/vision-strategy/executive-summary',
+      '/operations/restoration-methodology',
+    ];
+    
+    const brokenLinks = [];
+    
+    for (const testPath of testPages) {
+      const fullUrl = BASE_URL.endsWith('/') 
+        ? BASE_URL + testPath.substring(1) 
+        : BASE_URL + testPath;
+      
+      try {
+        await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+        
+        // Look for "Back to Project Hub" or similar navigation links
+        const backLinks = page.locator('a').filter({ hasText: /back to|project hub/i });
+        const backLinkCount = await backLinks.count();
+        
+        if (backLinkCount > 0) {
+          // Test the first "Back to" link
+          const firstBackLink = backLinks.first();
+          const href = await firstBackLink.getAttribute('href');
+          
+          if (!href || href === '#' || href === '') {
+            brokenLinks.push(`${testPath}: "Back to Project Hub" link is broken (href: ${href || 'empty'})`);
+          } else {
+            // Try clicking it to see if it works
+            try {
+              await firstBackLink.click({ timeout: 5000 });
+              await page.waitForLoadState('networkidle', { timeout: 10000 });
+              const newUrl = page.url();
+              if (!newUrl.includes('eco-balance-documentation') || newUrl.includes('404')) {
+                brokenLinks.push(`${testPath}: "Back to Project Hub" link leads to invalid page`);
+              }
+              // Go back to test page for next iteration
+              await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+            } catch (error) {
+              brokenLinks.push(`${testPath}: "Back to Project Hub" link click failed: ${error.message}`);
+            }
+          }
+        }
+      } catch (error) {
+        brokenLinks.push(`${testPath}: Failed to load page: ${error.message}`);
+      }
+    }
+    
+    if (brokenLinks.length > 0) {
+      console.error('Broken links found:', brokenLinks);
+      throw new Error(`Found ${brokenLinks.length} broken "Back to Project Hub" links:\n${brokenLinks.join('\n')}`);
+    }
+  });
+
+  test('no double horizontal rules', async ({ page }) => {
+    const testPages = [
+      '/vision-strategy/project-vision',
+      '/vision-strategy/executive-summary',
+    ];
+    
+    const issues = [];
+    
+    for (const testPath of testPages) {
+      const fullUrl = BASE_URL.endsWith('/') 
+        ? BASE_URL + testPath.substring(1) 
+        : BASE_URL + testPath;
+      
+      try {
+        await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+        
+        // Get page HTML content
+        const html = await page.content();
+        
+        // Check for double horizontal rules (hr elements or --- markers)
+        // Look for consecutive hr elements or multiple --- in markdown
+        const hrMatches = html.match(/<hr[^>]*>/g) || [];
+        const consecutiveHrs = [];
+        
+        for (let i = 0; i < hrMatches.length - 1; i++) {
+          // Check if there are two hr elements close together (within 50 chars)
+          const firstHrIndex = html.indexOf(hrMatches[i]);
+          const secondHrIndex = html.indexOf(hrMatches[i + 1]);
+          if (secondHrIndex - firstHrIndex < 50) {
+            consecutiveHrs.push(i);
+          }
+        }
+        
+        if (consecutiveHrs.length > 0) {
+          issues.push(`${testPath}: Found ${consecutiveHrs.length} sets of consecutive horizontal rules`);
+        }
+      } catch (error) {
+        issues.push(`${testPath}: Failed to check: ${error.message}`);
+      }
+    }
+    
+    if (issues.length > 0) {
+      console.warn('Double horizontal rules found:', issues);
+      // Don't fail the test, just warn - this is a visual issue, not a breaking issue
+    }
+  });
+
+  test('internal links work (legacy test)', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
     

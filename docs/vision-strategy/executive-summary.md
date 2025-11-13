@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Executive Summary
 
-**← Back to Project Hub**
+**← Back to [Project Hub](/docs/intro)**
 
 ---
 
@@ -519,7 +519,7 @@ This comprehensive yet realistic approach creates lasting, transformative change
 ## Related Documents
 
 **Getting Started**:
-- Project Hub - Main navigation and overview
+- [Project Hub](/docs/intro) - Main navigation and overview
 - Quick Reference Guide - How to use this documentation
 - Project Roadmap - Multi-year vision, phases, and current blockers
 - Feature Wishlist - Desired enhancements and future ideas

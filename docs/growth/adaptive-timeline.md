@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Adaptive Timeline - Flexible Pathways to Launch
 
-**← Back to Project Hub**
+**← Back to [Project Hub](/docs/intro)**
 
 ---
 

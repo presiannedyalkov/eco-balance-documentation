@@ -251,14 +251,19 @@ function convertLinks(content, unmappedSet = null) {
     
     // Check for section links (filename#section)
     const sectionMatch = linkPart.match(/^([^#]+)#(.+)$/);
-    const filename = sectionMatch ? sectionMatch[1].trim() : linkPart.trim();
+    let filename = sectionMatch ? sectionMatch[1].trim() : linkPart.trim();
     const section = sectionMatch ? sectionMatch[2].trim() : null;
+    
+    // Handle relative paths (../filename -> filename)
+    if (filename.startsWith('../')) {
+      filename = filename.replace(/^\.\.\//, '');
+    }
     
     // Check if it's an internal file (skip silently - these aren't in public docs)
     const isInternal = internalFiles.some(internal => 
       filename.startsWith(internal) || 
-      filename.startsWith('_') || 
-      filename.includes('/') ||
+      (filename.startsWith('_') && !filename.startsWith('_process')) || 
+      (filename.includes('/') && !filename.match(/^[^/]+$/)) ||
       filename === 'CHANGELOG' ||
       filename === 'CHANGELOG.md'
     );
