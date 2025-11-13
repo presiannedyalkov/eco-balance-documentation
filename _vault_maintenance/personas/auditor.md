@@ -80,6 +80,23 @@
 - [ ] Check formatting standards adherence
 - [ ] Verify structural guidelines are followed
 - [ ] Confirm required headers and sections present
+- [ ] **Metadata Structure Audit**: Check that all strategic files have consistent metadata fields
+  - [ ] All files have "Document Version" field
+  - [ ] All files have "Last Updated" field
+  - [ ] All files have consistent metadata field order
+  - [ ] All files use same metadata format (markdown bold vs plain)
+  - [ ] Check for inconsistent metadata fields (e.g., "Part of:" only in some files)
+  - [ ] Verify metadata fields are in consistent locations (header vs footer)
+- [ ] **Version Consistency Check**: Verify all strategic files have version metadata
+  - [ ] All strategic files (01-70) have version
+  - [ ] Hub file has version
+  - [ ] All versions use same format (YYYY.MM or YYYY.MM (YYYY.MM.DD HH:MM))
+  - [ ] No files have outdated version formats (2.0.0, 3.0.0)
+- [ ] **Structural Consistency Check**: Ensure all files follow same structure pattern
+  - [ ] Consistent footer/header structure
+  - [ ] Same metadata field order across files
+  - [ ] Consistent section organization
+  - [ ] Same navigation patterns (back links, etc.)
 
 ### Cross-Document Validation
 - [ ] Compare hub/index pages with actual content
