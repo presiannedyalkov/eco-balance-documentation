@@ -16,7 +16,7 @@ We take the security of this project seriously. If you discover a security vulne
 ### How to Report
 
 1. **Do NOT** create a public GitHub issue for security vulnerabilities
-2. Email security concerns to: [INSERT SECURITY EMAIL]
+2. Report security vulnerabilities through GitHub Security Advisories: https://github.com/presiannedyalkov/eco-balance-documentation/security/advisories/new
 3. Include the following information:
    - Description of the vulnerability
    - Steps to reproduce (if applicable)
