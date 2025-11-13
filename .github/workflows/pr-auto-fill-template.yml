@@ -175,14 +175,20 @@ jobs:
                   let found = false;
                   
                   for (let i = 0; i < lines.length; i++) {
-                    if (lines[i].includes(searchPattern) && lines[i].includes('[ ]')) {
-                      const originalLine = lines[i];
-                      // Replace [ ] with [x] in this line
-                      lines[i] = lines[i].replace(/\[ ?\]/, '[x]');
-                      found = true;
-                      console.log(`Found line ${i}: ${originalLine.substring(0, 60)}...`);
-                      console.log(`Replaced to: ${lines[i].substring(0, 60)}...`);
-                      break;
+                    // Check if this line contains the unchecked checkbox pattern
+                    if (lines[i].includes(searchPattern)) {
+                      // Make sure it's not already checked
+                      if (!lines[i].includes('[x] ' + targetCheckboxText) && !lines[i].includes('[x]' + targetCheckboxText)) {
+                        const originalLine = lines[i];
+                        // Replace [ ] with [x] in this line
+                        lines[i] = lines[i].replace(/\[ ?\]/, '[x]');
+                        found = true;
+                        console.log(`Found line ${i}: ${originalLine.substring(0, 60)}...`);
+                        console.log(`Replaced to: ${lines[i].substring(0, 60)}...`);
+                        break;
+                      } else {
+                        console.log(`Line ${i} already has checkbox checked: ${lines[i].substring(0, 60)}...`);
+                      }
                     }
                   }
                   
