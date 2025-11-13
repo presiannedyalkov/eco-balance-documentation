@@ -257,3 +257,12 @@ Once soil health is assessed:
 *Remember: You cannot improve what you don't measure. A thorough soil assessment is the foundation of successful soil restoration.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

@@ -2,7 +2,8 @@
 # sync_versions.sh - Synchronize all strategic files to current global version
 # Detects version mismatches and updates files automatically
 
-set -e
+# Don't exit on error - continue processing all files
+set +e
 
 VERSION_FILE="VERSION"
 JOURNAL_DIR="_versions"
@@ -45,7 +46,12 @@ echo "🔄 Synchronizing files to global version: ${GLOBAL_VERSION}"
 echo ""
 
 # Find all strategic documentation files
-STRATEGIC_FILES=$(find docs -name "*.md" -type f | grep -E "(vision-strategy|organization|operations|business|growth|performance|engagement|learning|resources)" | sort)
+# Focus on strategic/ folder (source of truth) first, then sync to docs/ if needed
+STRATEGIC_FILES=$(find strategic -name "*.md" -type f 2>/dev/null | sort)
+# Also include hub file in root
+if [ -f "00_Eco_Balance_Hub.md" ]; then
+    STRATEGIC_FILES="$STRATEGIC_FILES 00_Eco_Balance_Hub.md"
+fi
 
 UPDATED_COUNT=0
 SYNCED_COUNT=0
@@ -56,48 +62,107 @@ for file in $STRATEGIC_FILES; do
         continue
     fi
     
-    # Extract current global version from file (look for "Document Version: YYYY.MM")
-    FILE_GLOBAL=$(grep -oP 'Document Version:\s*\K[0-9]{4}\.[0-9]{2}' "$file" 2>/dev/null | head -1 || echo "")
-    
-    if [ -z "$FILE_GLOBAL" ]; then
-        # Try alternative format: "Version: YYYY.MM"
-        FILE_GLOBAL=$(grep -oP 'Version:\s*\K[0-9]{4}\.[0-9]{2}' "$file" 2>/dev/null | head -1 || echo "")
+    # Extract current global version from file using sed
+    # Try old SemVer format first (most common): "Document Version: X.X.X" (with or without markdown)
+    # Handle cases with extra text like " - Adaptive Framework"
+    OLD_VERSION=$(sed -n 's/.*\*\*Document Version\*\*: *\([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\).*/\1/p' "$file" 2>/dev/null | head -1)
+    if [ -z "$OLD_VERSION" ]; then
+        OLD_VERSION=$(sed -n 's/.*Document Version: *\([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\).*/\1/p' "$file" 2>/dev/null | head -1)
+    fi
+    if [ -n "$OLD_VERSION" ]; then
+        echo "📝 $file: Found old SemVer format ($OLD_VERSION), will migrate to $GLOBAL_VERSION"
+        FILE_GLOBAL="OLD_SEMVER"  # Mark for migration
     fi
     
+    # If not SemVer, try CalVer format: "Document Version: YYYY.MM" (with or without markdown bold)
     if [ -z "$FILE_GLOBAL" ]; then
-        echo "⚠️  $file: No version found, skipping"
-        ((ERROR_COUNT++))
-        continue
+        FILE_GLOBAL=$(sed -n 's/.*\*\*Document Version\*\*: *\([0-9][0-9][0-9][0-9]\.[0-9][0-9]\).*/\1/p' "$file" 2>/dev/null | head -1)
+        if [ -z "$FILE_GLOBAL" ]; then
+            FILE_GLOBAL=$(sed -n 's/.*Document Version: *\([0-9][0-9][0-9][0-9]\.[0-9][0-9]\).*/\1/p' "$file" 2>/dev/null | head -1)
+        fi
     fi
     
-    if [ "$FILE_GLOBAL" != "$GLOBAL_VERSION" ]; then
-        echo "📝 Updating $file"
-        echo "   Global version: $FILE_GLOBAL -> $GLOBAL_VERSION"
+    # Try alternative format: "Version: YYYY.MM" (with or without markdown)
+    if [ -z "$FILE_GLOBAL" ] && [ "$FILE_GLOBAL" != "OLD_SEMVER" ]; then
+        FILE_GLOBAL=$(sed -n 's/.*\*\*Version\*\*: *\([0-9][0-9][0-9][0-9]\.[0-9][0-9]\).*/\1/p' "$file" 2>/dev/null | head -1)
+        if [ -z "$FILE_GLOBAL" ]; then
+            FILE_GLOBAL=$(sed -n 's/.*Version: *\([0-9][0-9][0-9][0-9]\.[0-9][0-9]\).*/\1/p' "$file" 2>/dev/null | head -1)
+        fi
+    fi
+    
+    # If no version found, add one (for files that should have versions)
+    if [ -z "$FILE_GLOBAL" ]; then
+        # Check if this is a strategic file that should have a version
+        # Skip restoration_playbook files for now (they may not need versions)
+        if [[ "$file" =~ ^strategic/[0-9] ]] || [[ "$file" == "00_Eco_Balance_Hub.md" ]]; then
+            echo "➕ $file: No version found, adding version ${GLOBAL_VERSION} (${CURRENT_DATETIME})"
+            FILE_GLOBAL="NEW_VERSION"  # Mark for adding version
+        else
+            echo "⚠️  $file: No version found, skipping (not a strategic file)"
+            ((ERROR_COUNT++))
+            continue
+        fi
+    fi
+    
+    # Handle migration from SemVer, update from old CalVer, or add new version
+    if [ "$FILE_GLOBAL" = "OLD_SEMVER" ] || [ "$FILE_GLOBAL" = "NEW_VERSION" ] || [ "$FILE_GLOBAL" != "$GLOBAL_VERSION" ]; then
+        if [ "$FILE_GLOBAL" = "OLD_SEMVER" ]; then
+            echo "📝 Migrating $file from SemVer to CalVer: -> $GLOBAL_VERSION"
+        elif [ "$FILE_GLOBAL" = "NEW_VERSION" ]; then
+            echo "➕ Adding version to $file: ${GLOBAL_VERSION} (${CURRENT_DATETIME})"
+        else
+            echo "📝 Updating $file"
+            echo "   Global version: $FILE_GLOBAL -> $GLOBAL_VERSION"
+        fi
         
         # Backup original file
         cp "$file" "${file}.bak"
         
-        # Update global version in file
-        # Pattern 1: "Document Version: YYYY.MM"
-        sed -i "s/Document Version:\s*[0-9]\{4\}\.[0-9]\{2\}/Document Version: ${GLOBAL_VERSION}/g" "$file"
+        # If adding new version, append it to the end of the file
+        if [ "$FILE_GLOBAL" = "NEW_VERSION" ]; then
+            echo "" >> "$file"
+            echo "---" >> "$file"
+            echo "" >> "$file"
+            echo "**Document Version**: ${GLOBAL_VERSION} (${CURRENT_DATETIME})" >> "$file"
+        # Otherwise, update existing version
+        else
+            # Update global version in file
+        # Pattern 1: "**Document Version**: X.X.X" or "**Document Version**: YYYY.MM" (with markdown bold)
+        # Handle cases with extra text like " - Adaptive Framework" by matching everything after version
+        sed -i -E "s/\*\*Document Version\*\*:\s*([0-9]+\.[0-9]+\.[0-9]+|[0-9]{4}\.[0-9]{2})([^0-9]*)/\*\*Document Version\*\*: ${GLOBAL_VERSION}/g" "$file"
         
-        # Pattern 2: "Version: YYYY.MM"
-        sed -i "s/Version:\s*[0-9]\{4\}\.[0-9]\{2\}/Version: ${GLOBAL_VERSION}/g" "$file"
+        # Pattern 2: "Document Version: X.X.X" or "Document Version: YYYY.MM" (without markdown)
+        sed -i -E "s/Document Version:\s*([0-9]+\.[0-9]+\.[0-9]+|[0-9]{4}\.[0-9]{2})([^0-9]*)/Document Version: ${GLOBAL_VERSION}/g" "$file"
         
-        # Update local subversion to current date/time
-        # Pattern: (YYYY.MM.DD HH:MM) or (YYYY.MM.DD HH:MM)
-        if grep -q "(${FILE_GLOBAL}" "$file"; then
-            sed -i "s/(${FILE_GLOBAL}[^)]*)/(${CURRENT_DATETIME})/g" "$file"
+        # Pattern 3: "**Version**: X.X.X" or "**Version**: YYYY.MM" (with markdown bold, for hub file)
+        sed -i -E "s/\*\*Version\*\*:\s*([0-9]+\.[0-9]+\.[0-9]+|[0-9]{4}\.[0-9]{2})([^0-9]*)/\*\*Version\*\*: ${GLOBAL_VERSION}/g" "$file"
+        
+        # Pattern 4: "Version: X.X.X" or "Version: YYYY.MM" (without markdown, for hub file)
+        sed -i -E "s/Version:\s*([0-9]+\.[0-9]+\.[0-9]+|[0-9]{4}\.[0-9]{2})([^0-9]*)/Version: ${GLOBAL_VERSION}/g" "$file"
+        
+        # Update or add local subversion
+        # Check if local subversion already exists in format (YYYY.MM.DD HH:MM)
+        if grep -qE "\([0-9]{4}\.[0-9]{2}\.[0-9]{2} [0-9]{2}:[0-9]{2}\)" "$file"; then
+            # Update existing local subversion
+            sed -i -E "s/\([0-9]{4}\.[0-9]{2}\.[0-9]{2} [0-9]{2}:[0-9]{2}\)/\(${CURRENT_DATETIME}\)/g" "$file"
         else
             # Add local subversion if not present
-            # Find the version line and add subversion
+            # Find the version line and add subversion (handle both markdown and plain formats)
+            sed -i "s/\*\*Document Version\*\*: ${GLOBAL_VERSION}/\*\*Document Version\*\*: ${GLOBAL_VERSION} (${CURRENT_DATETIME})/g" "$file"
             sed -i "s/Document Version: ${GLOBAL_VERSION}/Document Version: ${GLOBAL_VERSION} (${CURRENT_DATETIME})/g" "$file"
+            sed -i "s/\*\*Version\*\*: ${GLOBAL_VERSION}/\*\*Version\*\*: ${GLOBAL_VERSION} (${CURRENT_DATETIME})/g" "$file"
+            sed -i "s/Version: ${GLOBAL_VERSION}/Version: ${GLOBAL_VERSION} (${CURRENT_DATETIME})/g" "$file"
+        fi
         fi
         
         # Log to journal
         echo "" >> "$JOURNAL_FILE"
         echo "### ${CURRENT_DATETIME} - $(basename "$file")" >> "$JOURNAL_FILE"
-        echo "- **Updated:** Global version ${FILE_GLOBAL} -> ${GLOBAL_VERSION}" >> "$JOURNAL_FILE"
+        if [ "$FILE_GLOBAL" = "NEW_VERSION" ]; then
+            echo "- **Added:** Version ${GLOBAL_VERSION} (${CURRENT_DATETIME})" >> "$JOURNAL_FILE"
+        else
+            echo "- **Updated:** Global version ${FILE_GLOBAL} -> ${GLOBAL_VERSION}" >> "$JOURNAL_FILE"
+        fi
         echo "- **Local subversion:** ${CURRENT_DATETIME}" >> "$JOURNAL_FILE"
         echo "- **Type:** Synchronization" >> "$JOURNAL_FILE"
         

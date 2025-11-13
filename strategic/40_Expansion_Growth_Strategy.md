@@ -1214,13 +1214,12 @@ Significant scale requiring professional team, equipment, and infrastructure. Re
 
 ---
 
-*From seed to global movement - scaling ecological restoration with impact and integrity.*
 
 ---
 
-**Document Version:** 2.0.0 | **Last Updated:** 2025-11-08 | **Status:** Active
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Plan
+**Type**: Strategic Planning Document
+**Status**: Active
+**Last Updated**: 2025-11-13

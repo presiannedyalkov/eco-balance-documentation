@@ -276,3 +276,12 @@ Once water needs are assessed:
 *Remember: You cannot manage what you don't understand. A thorough water assessment is the foundation of sustainable water management.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

@@ -396,3 +396,12 @@ Once plans are communicated:
 *Remember: Communication is not about selling or persuading, but about genuine dialogue that respects diverse perspectives while clearly articulating your project's purpose.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

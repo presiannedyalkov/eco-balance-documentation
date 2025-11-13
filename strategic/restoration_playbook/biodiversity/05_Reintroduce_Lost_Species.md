@@ -300,3 +300,12 @@ Once species are reintroduced:
 *Remember: Reintroduction is complex and requires expertise. Start simple and build capacity, or partner with experts for complex species.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

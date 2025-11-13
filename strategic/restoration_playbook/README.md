@@ -300,3 +300,12 @@ This template represents:
 ---
 
 *This is a template/playbook. When you start your actual project, copy this to your project folder and customize with your specific data, decisions, and circumstances.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Overview Document
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

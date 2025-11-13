@@ -1,0 +1,63 @@
+name: Auto-fill PR Template
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  auto-fill-pr:
+    name: Auto-fill PR Template
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    
+    steps:
+      - name: Determine change type from branch name
+        id: changetype
+        run: |
+          BRANCH="${{ github.head_ref }}"
+          
+          if [[ "$BRANCH" =~ ^feature/ ]]; then
+            echo "type=feature" >> $GITHUB_OUTPUT
+            echo "checked_item=New feature" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^fix/ ]]; then
+            echo "type=bug" >> $GITHUB_OUTPUT
+            echo "checked_item=Bug fix" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^docs/ ]]; then
+            echo "type=documentation" >> $GITHUB_OUTPUT
+            echo "checked_item=Documentation update" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^chore/ ]]; then
+            echo "type=chore" >> $GITHUB_OUTPUT
+            echo "checked_item=Chore" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^refactor/ ]]; then
+            echo "type=refactor" >> $GITHUB_OUTPUT
+            echo "checked_item=Refactoring" >> $GITHUB_OUTPUT
+          else
+            echo "type=other" >> $GITHUB_OUTPUT
+            echo "checked_item=" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Add comment to PR with auto-detected type
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const checkedItem = '${{ steps.changetype.outputs.checked_item }}';
+            const branchName = '${{ github.head_ref }}';
+            
+            if (checkedItem) {
+              const comment = `🤖 **Auto-detected Change Type**
+              
+              Based on branch name \`${branchName}\`, this PR is classified as: **${checkedItem}**
+              
+              Please verify this is correct in the PR template checklist.`;
+              
+              github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: comment
+              });
+            }
+

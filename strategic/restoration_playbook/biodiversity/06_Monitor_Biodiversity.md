@@ -303,3 +303,12 @@ These must be followed - they are based on scientific consensus:
 *Remember: Monitoring biodiversity is essential for understanding restoration effectiveness. Track changes over time to demonstrate success and guide management.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13
