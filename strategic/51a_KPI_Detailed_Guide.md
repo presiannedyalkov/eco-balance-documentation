@@ -1,15 +1,8 @@
----
-id: kpis
-title: Key Performance Indicators
-sidebar_position: 2
----
+# KPI Detailed Guide
 
-# Key Performance Indicators (KPIs) - Adaptive Framework
-
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [[strategic/51_Key_Performance_Indicators|Key Performance Indicators]]**
 
 ---
-
 ## KPI Adaptive Framework
 
 ### Vision: Evidence-Based Impact Measurement
@@ -223,7 +216,7 @@ sidebar_position: 2
 - **Year 2 (Tier 1+2)**: 3,000-6,000 trees cumulative, 75-90% survival, 15-30 species, 20-30% canopy cover
 - **Year 3 (Tier 1+2+3)**: 5,000-10,000 trees cumulative, 80-90% survival, 30+ species, 40-60% canopy cover
 
-→ Methods: Reforestation Approach
+→ Methods: [[strategic/20_Restoration_Methodology|Reforestation Approach]]
 
 ---
 
@@ -252,7 +245,7 @@ sidebar_position: 2
 
 **Decision**: Only implement Tier 2-3 if budget/partnership allows. Visual observation (Tier 1) is sufficient for Year 1-2 bootstrap.
 
-→ Methods: Soil Restoration
+→ Methods: [[strategic/20_Restoration_Methodology|Soil Restoration]]
 
 ---
 
@@ -281,7 +274,7 @@ sidebar_position: 2
 
 **Decision**: Tier 1 sufficient unless grant requires water data or site has specific water contamination concern.
 
-→ Methods: Water Management
+→ Methods: [[strategic/20_Restoration_Methodology|Water Management]]
 
 ---
 
@@ -311,7 +304,7 @@ sidebar_position: 2
 
 **Decision**: Tier 1-2 achievable with founder effort. Tier 3 only if university partnership or grant funds research.
 
-→ Methods: Biodiversity Conservation
+→ Methods: [[strategic/20_Restoration_Methodology|Biodiversity Conservation]]
 
 ---
 
@@ -350,7 +343,7 @@ sidebar_position: 2
 
 **Current Status**: Tier 1 estimates only. Tier 3 verification deferred until carbon credit market opportunity or grant requirement. Target: Explore carbon credit programs Year 2-3.
 
-→ Validation: Carbon Monitoring
+→ Validation: [[strategic/22_Restoration_Challenges_Solutions|Carbon Monitoring]]
 
 ---
 
@@ -382,7 +375,7 @@ sidebar_position: 2
 
 **Decision**: Tier 1 always. Tier 2 by Year 2 (low cost). Tier 3 only if grant requires or partnership provides.
 
-→ Strategy: Community Engagement
+→ Strategy: [[strategic/60_Marketing_Communications_Strategy|Community Engagement]]
 
 ---
 
@@ -460,7 +453,7 @@ sidebar_position: 2
 
 **Decision**: Tier 1 is non-negotiable (basic accounting is free and essential). Tier 2 metrics add by Year 2 (still low cost, mostly Excel analysis). Tier 3 audit only when required by funders or budget >€100k/year.
 
-→ Model: Revenue Streams
+→ Model: [[strategic/30_Business_Model|Revenue Streams]]
 
 ---
 
@@ -489,7 +482,7 @@ sidebar_position: 2
 
 **Decision**: Tier 1 always (easy to count). Tier 2 by Year 2 (free tools available, just takes time to analyze).
 
-→ Strategy: Communications Plan
+→ Strategy: [[strategic/60_Marketing_Communications_Strategy|Communications Plan]]
 
 ---
 
@@ -686,7 +679,7 @@ sidebar_position: 2
 
 **Decision**: Social health is crucial for long-term success. Address social red flags quickly even if Tier 1 data (qualitative feedback).
 
-→ Risk protocols: Risk Management
+→ Risk protocols: [[strategic/50_Risk_Assessment|Risk Management]]
 
 ---
 
@@ -744,53 +737,3 @@ sidebar_position: 2
 
 ---
 
-## 🎯 Adaptation Philosophy
-
-**Core Principle**: Measure what matters at the level you can afford and sustain.
-
-**Tier 1 is ALWAYS good enough** to prove basic impact:
-- "We planted 2,000 trees, 80% survived, here are monthly photos showing forest growing, we spent €25k and have €5k left, 150 volunteers contributed 400 hours."
-- → This is credible, transparent, sufficient for small-medium funders and community trust.
-
-**Tier 2 adds credibility** for larger funders:
-- "Soil organic carbon increased 15%, water quality tested good, community survey 8/10 satisfaction."
-- → This is professional, verified by labs, suitable for larger grants and partnerships.
-
-**Tier 3 proves scientific rigor** for research and major programs:
-- "Microbial biomass increased 60% (verified), 45 tons CO₂ sequestered (third-party verified), economic impact study shows €250k local economic activity, peer-reviewed publication accepted."
-- → This is research-grade, suitable for carbon credits, major foundations, academic credibility.
-
-**But**: Don't skip Tier 1 trying to jump to Tier 3. Don't spend Tier 3 money when you have Tier 1 budget.
-
-**Adapt monitoring to match your reality** - budget, capacity, partnerships, funder requirements. Start simple, add complexity as resources allow.
-
----
-
-## Related Documents
-
-**Strategic Context:**
-- Mission & Vision
-- Success Criteria
-- Current Status
-
-**Data Sources:**
-- Ecological Methods
-- Financial Model
-- Communications
-
-**Governance:**
-- Reporting Requirements
-- Risk Indicators
-
-**Last Updated:** 2025-11-09
-**Status:** Transformed to Adaptive Framework
-**Transformation**: Agent 19 - Tiered KPI system based on budget, capacity, and partnerships
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Strategic Planning Document
-**Status**: Active
-**Last Updated**: 2025-11-13

@@ -1,15 +1,8 @@
----
-id: adaptive-timeline
-title: Adaptive Timeline
-sidebar_position: 2
----
+# Adaptive Timeline Guide
 
-# Adaptive Timeline - Flexible Pathways to Launch
-
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [[strategic/42_Adaptive_Timeline|Adaptive Timeline]]**
 
 ---
-
 ## 🎯 Timeline Framework Philosophy
 
 **This is NOT a fixed plan.** The timeline will adapt based on opportunities, constraints, and circumstances as they emerge. We present multiple viable pathways to reach our goal: an operational restoration site with land, basic infrastructure, and initial planting.
@@ -687,9 +680,9 @@ The actual timeline will emerge based on these key factors:
 - Assess expansion possibilities for Years 2-5
 
 **See Related Documents**:
-- Operations Plan - What daily/weekly work looks like
-- Expansion Options - How to scale beyond 1ha
-- Measuring Success - How to track progress
+- [[strategic/43_Operations_Action_Plan|Operations Plan]] - What daily/weekly work looks like
+- [[strategic/40_Expansion_Growth_Strategy|Expansion Options]] - How to scale beyond 1ha
+- [[strategic/51_Key_Performance_Indicators|Measuring Success]] - How to track progress
 
 ### Long-Term Vision (Years 2-5)
 
@@ -710,77 +703,3 @@ The actual timeline will emerge based on these key factors:
 
 ---
 
-## Inspiration & Perspective
-
-### Remember the Big Picture
-
-**You're not just following a timeline - you're creating something meaningful:**
-- Every tree planted matters
-- Every ecosystem restored creates ripples
-- You're building knowledge and capacity
-- You're inspiring others
-- Future you will thank present you
-
-### Timelines Are Tools, Not Masters
-
-- **Fast** isn't always better (rushing can lead to mistakes)
-- **Slow** isn't failure (patient, thorough work often succeeds)
-- **Adaptive** is intelligent (responding to reality is strength)
-
-### This Is A Marathon, Not A Sprint
-
-Whether your timeline is 6 months or 36 months:
-- Pace yourself
-- Take care of your health
-- Maintain relationships
-- Find joy in the process
-- Celebrate small wins
-
-### Quotes for Perspective
-
-> "The best time to plant a tree was 20 years ago. The second best time is now."
-
-> "Start where you are, use what you have, do what you can."
-
-> "Nature does not hurry, yet everything is accomplished." - Lao Tzu
-
-> "Slow is smooth, smooth is fast."
-
-**You've got this. Trust the process, adapt as you go, stay committed to the vision.** 💪🌱
-
----
-
-## Related Documents
-
-**Planning & Strategy**:
-- Funding Pathways - Multiple funding options detailed
-- Fundraising Playbook - Crowdfunding, grants, and more
-- Finding Land - Geographic flexibility and site options
-- Legal Structure Options - e.V., Associação, gGmbH, and more
-
-**Implementation**:
-- Operations Plan - What happens after you launch
-- Restoration Methods - Temperate vs Mediterranean approaches
-- Technology Options - Solar, water, monitoring equipment
-
-**Risk & Evaluation**:
-- Risk Management - Adaptive risk strategies
-- Measuring Success - How to track progress
-- Scaling Options - What comes after Year 1
-
-**Last Updated:** 2025-11-09
-**Status:** Active - Baseline Option B, Flexible to A/C/D
-**File Renamed From:** 42_Next_Steps_90_Days.md
-
----
-
-*The journey of restoration begins with a single step - and continues with adaptive, patient, persistent progress. Your timeline will emerge. Trust the process.* 🚀🌿
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Strategic Planning Document
-**Status**: Active
-**Last Updated**: 2025-11-13

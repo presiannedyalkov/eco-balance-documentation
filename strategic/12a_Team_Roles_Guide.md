@@ -1,15 +1,8 @@
----
-id: team-roles
-title: Team Roles
-sidebar_position: 3
----
+# Team Roles Guide
 
-# Team Roles & Structure - Adaptive Framework
-
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [[strategic/12_Team_Roles|Team Roles]]**
 
 ---
-
 ## 🎯 Team Framework: Vision + Adaptive Reality
 
 ### Vision
@@ -554,45 +547,3 @@ sidebar_position: 3
 
 ---
 
-## Related Documents
-
-**Structure & Governance:**
-- Organizational Chart & Legal Structure
-- Governance Framework
-
-**Work Model & Timeline:**
-- Timeline Options & Work Phases
-- Daily Operations & Schedules
-
-**Financial Viability:**
-- Revenue Model & Funding Pathways
-- Financial Scenarios
-- Fundraising Strategy
-
-**Skills & Strategy:**
-- Team as Critical Success Factor
-- Technical Skills Required
-
----
-
-## Adaptation Note
-
-**This document describes possible team structures and scaling pathways.** The actual team composition, timeline, and growth will adapt based on:
-- Project success and impact achieved
-- Revenue stability and growth
-- Founder capacity and preferences
-- Partnership opportunities that emerge
-- Workload requirements as site scales
-
-**Current baseline**: 1-2 founders, part-time Year 1-2 (15-25 hr/week, keep jobs), evaluate transition Year 3+ based on results.
-
-**Key Philosophy**: Team growth follows success, not assumptions. We stay lean until revenue and impact justify expansion. Founder security and sustainability are non-negotiable constraints.
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Organizational Document
-**Status**: Active
-**Last Updated**: 2025-11-13

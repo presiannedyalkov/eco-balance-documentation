@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # Site Selection & Land Acquisition
 
-**← Back to [Project Hub](/)**
+**← Back to [Project Hub](/docs/intro)**
 
 ---
 

@@ -1,15 +1,8 @@
----
-id: financial-projections
-title: Financial Projections
-sidebar_position: 2
----
+# Financial Projections Guide
 
-# Financial Projections - Adaptive Framework
-
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [[strategic/31_Financial_Projections|Financial Projections]]**
 
 ---
-
 ## Financial Planning Philosophy
 
 **Core Principle**: Multiple pathways to financial viability, flexible to opportunities and constraints as they emerge.
@@ -626,57 +619,3 @@ sidebar_position: 2
 
 ---
 
-## Related Documents
-
-**Financial Planning**:
-- Business Model & Revenue Streams - Detailed revenue stream analysis
-- Funding Strategy - Specific funding pathway details
-
-**Cost Details**:
-- Technology Costs - Solar, water, monitoring systems
-- Housing Costs - Living infrastructure details
-- Land Acquisition Costs - Land purchase/lease analysis
-
-**Timeline & Operations**:
-- Timeline & Phasing - How timeline affects financial projections
-- Daily Operations - Operating cost drivers
-
-**Performance & Risk**:
-- Financial KPIs - Tracking financial performance
-- Financial Risk Management - Risk scenarios and mitigation
-
----
-
-## Adaptation Notes
-
-**This financial projection document is adaptive**:
-- Projections will update based on actual results (quarterly review)
-- Scenario choice made Month 4-6 based on funding reality
-- Revenue projections adjusted based on Year 1-2 actual performance
-- Operating costs updated based on site selection and actual expenses
-- Willing to shift scenarios if major opportunities or constraints emerge
-
-**Honest uncertainty**:
-- We cannot predict exact revenue in Year 5 (range: €20-70k)
-- We don't know which funding pathway will work best (exploring all)
-- We don't know final location (affects costs significantly)
-- We don't know founder time availability in Year 3+ (life circumstances)
-
-**What we DO know**:
-- Minimum viable investment: €8,000 (can start with this)
-- Maximum realistic need: €75-85k over 5-7 years (cumulative)
-- Sustainability achievable: Year 5-7 with revenue €20-45k/year
-- Multiple pathways exist: Not dependent on single scenario working
-
-**Current status**: Month 0 - Exploring all scenarios, will commit to pathway Month 4-6 based on what emerges.
-
-**Status:** Active
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Strategic Planning Document
-**Status**: Active
-**Last Updated**: 2025-11-13

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Technology Integration - Adaptive Framework
 
-**← Back to [Project Hub](/)**
+**← Back to [Project Hub](/docs/intro)**
 
 ---
 

@@ -1,19 +1,8 @@
----
-id: legal-framework
-title: Legal Framework
-sidebar_position: 4
----
+# Legal Framework Guide
 
-# Legal Framework - Adaptive Approach
-
-**← Back to [Project Hub](/docs/intro)**
-
-## Overview
-
-This document outlines multiple legal structure pathways for establishing Eco Balance as a nonprofit entity in Europe. The final structure will be chosen based on the operating location, funding available, and timeline requirements - maintaining flexibility to adapt to opportunities as they emerge.
+**← Back to [[strategic/13_Legal_Framework|Legal Framework]]**
 
 ---
-
 ## Legal Structure: Adaptive Framework
 
 **Vision**: Establish a legitimate nonprofit entity capable of owning land, receiving funds, operating legally, and achieving tax-exempt status for environmental restoration work.
@@ -388,7 +377,7 @@ This document outlines multiple legal structure pathways for establishing Eco Ba
 - ❌ Exact timeline for registration → **4-8 weeks after location finalized**
 
 **Decision Timeline**:
-- **Month 1-6**: Explore location options (see Site Selection)
+- **Month 1-6**: Explore location options (see [[strategic/44_Site_Selection_Land_Acquisition|Site Selection]])
 - **Month 6** (or earlier if opportunity): Decide final location
 - **Within 2 weeks of location decision**: Choose legal structure based on criteria above
 - **Month 6-8**: Complete registration process (4-8 weeks)
@@ -652,7 +641,7 @@ This document outlines multiple legal structure pathways for establishing Eco Ba
 - Identify local advisors if non-German path likely
 
 **Month 5-6: Final Decision**
-- Choose based on location decision (see Site Selection)
+- Choose based on location decision (see [[strategic/44_Site_Selection_Land_Acquisition|Site Selection]])
 - Commit to 1 structure and begin registration process
 - Timeline: 4-8 weeks to completion
 
@@ -712,7 +701,7 @@ This document outlines multiple legal structure pathways for establishing Eco Ba
 
 ## Next Steps - Aligned to Adaptive Timeline
 
-**See Adaptive Timeline for full context**
+**See [[strategic/42_Adaptive_Timeline|Adaptive Timeline]] for full context**
 
 ### Phase 0: Months 1-6 (Location Exploration)
 
@@ -746,64 +735,3 @@ This document outlines multiple legal structure pathways for establishing Eco Ba
 
 ---
 
-## Related Documents
-
-**Location Decision**:
-- Site Selection - Geographic options drive legal structure choice
-
-**Organizational Context**:
-- Organizational Structure - Team roles and hierarchy
-- Governance - Decision-making and accountability
-
-**Financial Planning**:
-- Funding Strategy - Revenue sources and fundraising
-- Business Model - Financial sustainability
-
-**Implementation**:
-- Adaptive Timeline - When legal registration occurs
-- Risk Assessment - Legal and compliance risks
-
----
-
-## Key Takeaways
-
-✅ **Multiple viable pathways** - e.V. (Germany), Associação (Portugal), or equivalents in Spain/France/Italy
-
-✅ **Decision driven by location** - Where you operate determines structure to choose
-
-✅ **Cost range: €500-35k** - Low-cost options (€500-2k) available, expensive gGmbH deferred unless budget justifies
-
-✅ **Timeline: 4-8 weeks** - Once location decided, registration takes 4-8 weeks for most options
-
-✅ **Professional help essential** - Budget €500-2,000 for lawyer/tax advisor in chosen country
-
-✅ **Compliance is critical** - Nonprofit status requires ongoing annual maintenance
-
-✅ **Flexibility maintained** - Final decision deferred until Month 5-6 when location and funding clarify
-
----
-
-## Adaptation Note
-
-This framework presents viable legal pathways across Europe. The actual structure chosen will depend on:
-1. **Which country offers best opportunity** (grants, land, partnerships)
-2. **Budget available** (€500-2k association vs €30k+ gGmbH)
-3. **Timeline urgency** (fast e.V./Loi 1901 vs slower gGmbH)
-4. **Revenue model** (grant-focused = association, commercial = gGmbH)
-
-**Current approach**: Explore all pathways in parallel (Month 1-6), commit to final structure once location decided, register within 4-8 weeks of decision.
-
-**Default if no opportunity by Month 6**: Germany (e.V. if budget &lt;€30k, consider gGmbH if budget >€30k and commercial revenue planned)
-
----
-
-*Legal framework designed for flexibility - ready to adapt to opportunities as they emerge.*
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Organizational Document
-**Status**: Active
-**Last Updated**: 2025-11-13

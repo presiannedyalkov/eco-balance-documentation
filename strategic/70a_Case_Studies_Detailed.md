@@ -1,13 +1,8 @@
+# Case Studies & Restoration Examples - Detailed
+
+**← Back to [[strategic/70_Case_Studies_Restoration_Examples|Case Studies & Restoration Examples]]**
+
 ---
-id: case-studies
-title: Case Studies & Examples
-sidebar_position: 1
----
-
-# Case Studies: Global Restoration Success Stories
-
-**← Back to [Project Hub](/docs/intro)**
-
 ## Overview
 
 This document presents detailed case studies of successful large-scale environmental restoration projects worldwide. These examples demonstrate what's possible and provide lessons learned for Eco Balance's own restoration efforts.
@@ -88,7 +83,7 @@ This document presents detailed case studies of successful large-scale environme
 
 ✅ **Patience pays** - Major results took 10-15 years
 
-→ Application: Community Engagement Strategy
+→ Application: [[strategic/20_Restoration_Methodology#🤝 E. Community Engagement & Education (Bootstrap Scale)|Community Engagement Strategy]]
 
 ---
 
@@ -178,7 +173,7 @@ This document presents detailed case studies of successful large-scale environme
 
 ✅ **Multiple benefits** - Environmental restoration + poverty reduction + peace building
 
-→ Application: Scaling Strategy
+→ Application: [[strategic/40_Expansion_Growth_Strategy|Scaling Strategy]]
 
 ---
 
@@ -274,7 +269,7 @@ This document presents detailed case studies of successful large-scale environme
 
 ✅ **Science matters** - Research improves methods and demonstrates success
 
-→ Application: Funding Partnerships
+→ Application: [[strategic/32_Funding_Strategy|Funding Partnerships]]
 
 ---
 
@@ -379,7 +374,7 @@ This document presents detailed case studies of successful large-scale environme
 
 ✅ **Sustainability can be profitable** - Financial and environmental goals aligned
 
-→ Application: Eco-Tourism Revenue
+→ Application: [[strategic/30_Business_Model#Eco-Tourism (Future)|Eco-Tourism Revenue]]
 
 ---
 
@@ -493,7 +488,7 @@ This document presents detailed case studies of successful large-scale environme
 
 ✅ **Employment creates stakeholders** - Local jobs build community ownership
 
-→ Application: Holistic Integration
+→ Application: [[strategic/20_Restoration_Methodology|Holistic Integration]]
 
 ---
 
@@ -680,7 +675,7 @@ Eco Balance combines the best elements:
 
 ✅ **Holistically integrated** like all successful projects
 
-→ See Our Methodology
+→ See [[strategic/20_Restoration_Methodology|Our Methodology]]
 
 ---
 
@@ -701,60 +696,3 @@ Eco Balance combines the best elements:
 
 ---
 
-## Related Documents
-
-**Our Approach:**
-- Restoration Methodology
-- Challenges & Solutions
-
-**Strategic Planning:**
-- Scaling Strategy
-- Funding Approach
-
-**Operations:**
-- Business Model
-- Success Metrics
-
----
-
-## Sources and Further Reading
-
-**Loess Plateau:**
-- World Bank documentation
-- Scientific publications on results
-- Documentary: "Hope in a Changing Climate"
-
-**Great Green Wall:**
-- African Union program materials
-- UNCCD documentation
-- National program reports
-
-**Atlantic Forest Restoration Pact:**
-- www.pactomataatlantica.org.br
-- Technical restoration guides
-- Scientific publications
-
-**Eden Project:**
-- www.edenproject.com
-- Case studies and educational materials
-- Architectural and design documentation
-
-**Gorongosa National Park:**
-- www.gorongosa.org
-- Scientific publications
-- E.O. Wilson Biodiversity Laboratory
-
----
-
-*Standing on the shoulders of giants - learning from those who've proven restoration is possible.*
-
-**Status:** Active
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Reference Document
-**Status**: Active
-**Last Updated**: 2025-11-13

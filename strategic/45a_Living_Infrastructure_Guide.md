@@ -1,49 +1,8 @@
----
-id: tiny-house-infrastructure
-title: Tiny House Infrastructure
-sidebar_position: 5
----
+# Living Infrastructure Guide
 
-# Tiny House and Living Infrastructure
-
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [[strategic/45_Tiny_House_and_Living_Infrastructure|Tiny House & Living Infrastructure]]**
 
 ---
-
-## Living Infrastructure Philosophy
-
-**Home is where restoration begins.** Our living infrastructure must be sustainable, affordable, and enable effective restoration work while modeling the ecological values we promote.
-
-### Core Principles:
-- **Bootstrap-First:** Minimal viable comfort, maximum restoration focus
-- **Off-Grid Ready:** Self-sufficient systems from day one
-- **Scalable:** Start small, expand as budget allows
-- **Comfortable:** Adequate for full-time living and work
-- **Sustainable:** Low environmental impact, efficient systems
-- **Practical:** Prioritizes function over luxury
-
-### Small-Scale Pilot Approach
-
-This document reflects our **small-scale pilot approach**:
-- **Housing Budget (Part of Total Year 1):** Approximately €8-12k (housing is 40% of total €20-30k Year 1 budget)
-- **Scale:** 1-2 person living space (15-25 m²)
-- **Timeline:** 2-6 months to establish
-- **Philosophy:** Simple, functional, affordable
-
-**What This Is NOT:**
-- ❌ Luxury tiny home with premium finishes
-- ❌ Grid-connected suburban dwelling
-- ❌ Custom architectural design
-- ❌ Multi-room permanent structure
-
-**What This IS:**
-- ✅ Functional off-grid living space
-- ✅ Adequate workspace for restoration planning
-- ✅ Weather-protected storage and shelter
-- ✅ Foundation for long-term site development
-
----
-
 ## 🏠 Housing Options Overview
 
 ### Option 1: Used Tiny House (RECOMMENDED)
@@ -244,7 +203,7 @@ Use a caravan or small RV as temporary housing while building or saving for perm
 - Drainage: €300-800
 
 **Utility Connections:**
-- Solar system: See Technology Integration
+- Solar system: See [[strategic/21_Technology_Integration|Technology Integration]]
 - Water system: IBC tanks + filtration (€600-1,600)
 - Septic/composting toilet: See below
 - Internet: Starlink setup (€450-650)
@@ -602,7 +561,7 @@ After successful Year 1 pilot secures expansion funding:
 - Focus: Commercial viability, scaling
 - Risk: Higher investment, requires Year 1 success
 
-→ Financial overview: Complete Budget
+→ Financial overview: [[strategic/30_Business_Model|Complete Budget]]
 
 ---
 
@@ -682,7 +641,7 @@ After successful Year 1 pilot secures expansion funding:
 - Consider agricultural land designation
 - Plan for potential permit costs (€500-2,000)
 
-→ Legal framework: Legal Guidance
+→ Legal framework: [[strategic/13_Legal_Framework|Legal Guidance]]
 
 ---
 
@@ -706,7 +665,7 @@ After successful Year 1 pilot secures expansion funding:
 - Wood stove: 15-25 years
 - Composting toilet: 10-20 years
 - Refrigerator: 10-15 years
-- Solar system: See Technology Integration
+- Solar system: See [[strategic/21_Technology_Integration|Technology Integration]]
 
 **Year 2-3 Upgrades:**
 - Improved insulation: €500-1,500
@@ -757,65 +716,3 @@ After successful Year 1 pilot secures expansion funding:
 
 ---
 
-## 📚 Resources & Further Reading
-
-### Tiny House Communities (Germany)
-
-**Online:**
-- Tiny House Forum Deutschland
-- Facebook: Tiny House Deutschland
-- Tiny-House-Community.de
-
-**Manufacturers/Builders:**
-- Tiny House Diekmann (www.tiny-house-diekmann.de)
-- Rolling Tiny House (www.rollingtinyhouse.de)
-- Wohnwagon (www.wohnwagon.at) - Austrian, ships to Germany
-
-### Off-Grid Living Resources
-
-**Books:**
-- "Off-Grid Living" by Günther Gerzabek (German)
-- "Tiny House Deutschland" by Various Authors
-- "The Good Life" series (UK, applicable to Germany)
-
-**Websites:**
-- Selbstversorger-Forum.de (self-sufficiency)
-- Autark-Leben.de (off-grid living)
-- Permakultur.de (permaculture principles)
-
-### Composting Toilet Information
-
-**Suppliers:**
-- Kildwick.com (German brand)
-- Separett.com (Swedish, available in Germany)
-- Trockentoiletten.de (comparison site)
-
----
-
-## 🔗 Related Documents
-
-**Technology Integration:**
-- Solar, Water, Internet Systems
-
-**Financial Planning:**
-- Complete Budget Overview
-- Funding Sources
-
-**Site Setup:**
-- Land Requirements
-- Site Development
-
-**Legal:**
-- Regulations & Compliance
-
-**Last Updated:** 2025-11-08
-**Status:** Active
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Operational Document
-**Status**: Active
-**Last Updated**: 2025-11-13

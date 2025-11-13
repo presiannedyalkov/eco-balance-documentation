@@ -1,15 +1,8 @@
----
-id: organizational-structure
-title: Organizational Structure
-sidebar_position: 1
----
+# Organizational Structure Guide
 
-# Organizational Structure - Adaptive Framework
-
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [[strategic/10_Organizational_Structure|Organizational Structure]]**
 
 ---
-
 ## 🎯 Vision Framework
 
 **What We Want to Achieve** (non-negotiable):
@@ -537,7 +530,7 @@ Director      Director      Director Director
 
 **Adaptation Note**: Specific governance roles (board composition, voting rights, etc.) depend on legal structure chosen. Above are core functions needed regardless.
 
-→ Detailed team roles and hiring: Team Roles
+→ Detailed team roles and hiring: [[strategic/12_Team_Roles|Team Roles]]
 
 ---
 
@@ -614,7 +607,7 @@ Day-to-day without board approval:
 
 **Current Status**: Banking and accounting setup deferred until 2-3 months before entity registration
 
-→ Financial details: Business Model and Financial Projections
+→ Financial details: [[strategic/30_Business_Model|Business Model]] and [[strategic/31_Financial_Projections|Financial Projections]]
 
 ---
 
@@ -638,7 +631,7 @@ Day-to-day without board approval:
 
 **Adaptation Note**: Specific policies required vary by legal structure and country. Above is baseline - actual policy manual customized to chosen structure.
 
-→ Governance details: Governance Framework
+→ Governance details: [[strategic/11_Governance|Governance Framework]]
 
 ---
 
@@ -665,7 +658,7 @@ Day-to-day without board approval:
 - Decision by Month 6 (or when major opportunity triggers earlier decision)
 - Default to Germany if no clear opportunity by Month 6
 
-→ Site selection details: Site Selection
+→ Site selection details: [[strategic/44_Site_Selection_Land_Acquisition|Site Selection]]
 
 ---
 
@@ -689,113 +682,7 @@ Day-to-day without board approval:
 
 **Adaptation Note**: Start simple (e.V./Associação), restructure only if scale justifies complexity and cost of gGmbH
 
-→ Expansion strategy: Expansion & Growth
+→ Expansion strategy: [[strategic/40_Expansion_Growth_Strategy|Expansion & Growth]]
 
 ---
 
-## ⚖️ Compliance Requirements: Country-Specific
-
-**Will vary based on chosen country and structure**
-
-### Germany (e.V. or gGmbH):
-- Annual financial statements
-- Annual tax returns
-- Non-profit status review (every 3 years)
-- Commercial register updates (gGmbH only)
-- GDPR compliance
-- Insurance (liability, professional)
-
-### Portugal (Associação):
-- Annual financial statements
-- Tax returns
-- Social security filings (if employees)
-- GDPR compliance
-- Annual report to registry
-
-### Other EU:
-- Research specific requirements when country chosen
-- Common: Annual filings, tax compliance, GDPR, insurance
-
-**Ongoing Obligations** (all countries):
-- Maintain charitable purpose
-- No private benefit distribution
-- Transparent governance and financial reporting
-- Compliance with donor restrictions
-- Adherence to statutes and policies
-
-**Current Status**: Detailed compliance requirements researched when structure/location finalized (Month 6)
-
-→ Legal framework: Legal Framework
-
----
-
-## 🎯 Success Metrics: Organizational Health
-
-**Year 1 Targets**:
-- ✅ Legal structure chosen based on location and funding pathway
-- ✅ Entity registered and operational (e.V., Associação, or informal)
-- ✅ Tax-exempt status confirmed (if formal entity)
-- ✅ Bank account operational
-- ✅ Basic policies in place (5-7 core policies)
-- ✅ Governance functioning (board meetings quarterly)
-- ✅ Financial tracking system operational
-- ✅ Compliance obligations met (annual filings on time)
-
-**Year 2-3 Targets**:
-- ✅ Clean financial audit (if required)
-- ✅ Full policy manual (10-15 policies)
-- ✅ Effective decision-making processes
-- ✅ Strong donor and partner confidence
-- ✅ Transparent reporting (annual report published)
-
-**Year 4+ Targets**:
-- ✅ Consider restructuring if scale justifies (e.V./Associação → gGmbH)
-- ✅ Multi-site operations if expansion successful
-- ✅ Strong organizational culture and systems
-- ✅ Scalable governance model
-
----
-
-## 📋 Adaptation Notes
-
-**This document describes multiple possible pathways for organizational structure.**
-
-The actual structure chosen will depend on:
-1. **Location decision** (Germany vs Portugal vs other EU) - expected Month 6
-2. **Funding pathway** (€500-€2k budget → e.V./Associação; €40k+ → gGmbH)
-3. **Timeline urgency** (Need fast? → e.V.; Can wait? → gGmbH or Associação)
-4. **Opportunity triggers** (Grant in Portugal → Associação; Free land Germany → e.V.)
-
-**Current approach**: Explore all options in parallel through Month 6, commit to structure when location and funding pathway clarify.
-
-**Flexibility maintained**: Can start simple (e.V./Associação) and restructure later if scaling justifies more complex structure (gGmbH).
-
----
-
-## Related Documents
-
-**Governance:**
-- Governance Framework
-- Team Roles & Hiring
-
-**Implementation:**
-- Adaptive Timeline
-- Site Selection
-
-**Financial:**
-- Business Model
-- Funding Strategy
-
-**Strategy:**
-- Executive Summary
-- Current Status Assessment
-- Risk Assessment
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Plan
-**Type**: Organizational Document
-**Status**: Active
-**Last Updated**: 2025-11-13

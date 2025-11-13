@@ -1,15 +1,8 @@
----
-id: success-factors
-title: Success Factors & Assumptions
-sidebar_position: 3
----
+# Success Factors - Detailed Analysis
 
-# Success Factors & Critical Assumptions
-
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [[strategic/03_Success_Factors|Success Factors]]**
 
 ---
-
 ## 💫 Critical Success Factors
 
 These elements will **make or break** the project. All must be present for success.
@@ -32,7 +25,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Defer premature precision** (detailed specs only when context is clear)
 - ✅ **Vision-driven, detail-adaptive** (clear on WHAT, flexible on HOW)
 
-→ Framework: Adaptive Approach
+→ Framework: [[strategic/02_Project_Vision|Adaptive Approach]]
 
 **Success Indicators:**
 - Can articulate 3+ viable pathways for each major decision
@@ -59,7 +52,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Third-party verification** of results
 - ✅ **Expert Advisory Board** oversight
 
-→ Framework: Research & Monitoring
+→ Framework: [[strategic/22_Restoration_Challenges_Solutions|Research & Monitoring]]
 
 **Failure Mode:** Using unproven methods, exaggerating claims, avoiding monitoring = loss of credibility
 
@@ -93,8 +86,8 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Adaptive planning** (3-5 year horizon, adjust based on results)
 - ✅ **Cash reserves** (6-12 months when possible)
 
-→ Model: Business Model
-→ Strategy: Funding Approach
+→ Model: [[strategic/30_Business_Model|Business Model]]
+→ Strategy: [[strategic/32_Funding_Strategy|Funding Approach]]
 
 **Failure Mode:** Over-reliance on grants, unsustainable spending, no earned revenue = eventual collapse
 
@@ -115,7 +108,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Cultural sensitivity** (respect traditions)
 - ✅ **Long-term relationships** (not transactional)
 
-→ Strategy: Community Engagement
+→ Strategy: [[strategic/60_Marketing_Communications_Strategy|Community Engagement]]
 
 **Failure Mode:** Top-down approach, broken promises, ignoring concerns = community resistance and project failure
 
@@ -137,7 +130,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Adaptive management** (adjust based on data)
 - ✅ **Learning culture** (continuous improvement)
 
-→ Metrics: KPIs
+→ Metrics: [[strategic/51_Key_Performance_Indicators|KPIs]]
 
 **Failure Mode:** Avoid monitoring, cherry-pick data, hide failures = credibility destroyed
 
@@ -174,8 +167,8 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Collaborative culture** (partnerships over going alone)
 - ✅ **Ethical practices** (integrity always, transparency)
 
-→ Structure: Team Building
-→ Governance: Governance Framework
+→ Structure: [[strategic/12_Team_Roles|Team Building]]
+→ Governance: [[strategic/11_Governance|Governance Framework]]
 
 **Failure Mode:** Inexperienced leadership, internal conflict, weak governance = project chaos
 
@@ -197,7 +190,7 @@ These elements will **make or break** the project. All must be present for succe
 - ✅ **Government relationships** (policy, permits)
 - ✅ **Community connections** (local leaders)
 
-→ Framework: Research Partnerships
+→ Framework: [[strategic/22_Restoration_Challenges_Solutions|Research Partnerships]]
 
 **Failure Mode:** Isolated operation, competition over collaboration, weak relationships = limited capacity
 
@@ -218,7 +211,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** Climate change is unpredictable. We're planning for resilience but major shifts could require adaptation.
 
-→ Risk: Climate Risks
+→ Risk: [[strategic/50_Risk_Assessment|Climate Risks]]
 
 **Ecology:**
 - Native species will establish with proper care
@@ -227,7 +220,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** Nature is unpredictable. We expect 10-20% plant mortality and will adapt.
 
-→ Methods: Adaptive Approach
+→ Methods: [[strategic/20_Restoration_Methodology|Adaptive Approach]]
 
 ---
 
@@ -249,8 +242,8 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** Fundraising often takes longer than hoped. We're exploring ALL pathways simultaneously, will adapt based on what materializes. Backup: Ultra-lean bootstrap if all else fails.
 
-→ Projections: Financial Scenarios
-→ Strategy: Funding Pathways
+→ Projections: [[strategic/30_Business_Model|Financial Scenarios]]
+→ Strategy: [[strategic/32_Funding_Strategy|Funding Pathways]]
 
 **Revenue: Long-term Aspirations** (Year 5+, highly uncertain)
 
@@ -266,7 +259,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Current Status**: Revenue streams = TBD, deferred until Year 2-3 when operational and can test approaches
 
-→ Model: Revenue Exploration
+→ Model: [[strategic/30_Business_Model|Revenue Exploration]]
 
 ---
 
@@ -299,7 +292,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** Location TBD until opportunities clarify. We're staying flexible and ready to move where the best combination of funding, land, and support emerges.
 
-→ Criteria: Site Selection
+→ Criteria: [[strategic/02_Project_Vision|Site Selection]]
 
 **Team:**
 - Staff and expertise can be recruited
@@ -309,7 +302,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** People are the biggest uncertainty. We'll focus on culture and retention.
 
-→ Structure: Team Planning
+→ Structure: [[strategic/12_Team_Roles|Team Planning]]
 
 ---
 
@@ -323,7 +316,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** We're monitoring policy closely. Legal structure TBD based on location and funding - multiple options available (e.V., gGmbH in Germany; Associação in Portugal; equivalents in other EU countries).
 
-→ Structure: Legal Framework
+→ Structure: [[strategic/10_Organizational_Structure|Legal Framework]]
 
 **Social:**
 - Community receptive to project
@@ -333,7 +326,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **Reality Check:** Early engagement critical. We'll listen, adapt, and build trust.
 
-→ Strategy: Community Approach
+→ Strategy: [[strategic/60_Marketing_Communications_Strategy|Community Approach]]
 
 **Economic:**
 - No major economic disruption
@@ -534,7 +527,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 - Founder health/security compromised → Pause immediately
 - Fundamental ecological or regulatory blocker → Pivot or exit
 
-→ Details: Risk Management
+→ Details: [[strategic/50_Risk_Assessment|Risk Management]]
 
 **Philosophy**: We're willing to be patient, pivot, simplify, or pause - but not willing to compromise founder security or ecological integrity. If it doesn't work, we learn and adapt rather than fail destructively.
 
@@ -616,7 +609,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 - **Response:** Pause project, ultra-lean bootstrap only if viable, or graceful exit
 - **Major restructuring or pause required**
 
-→ Actions: Decision Points
+→ Actions: [[strategic/42_Adaptive_Timeline|Decision Points]]
 
 ---
 
@@ -724,7 +717,7 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 **When red flags appear: address immediately, transparently, and decisively**
 
-→ Protocols: Risk Response
+→ Protocols: [[strategic/50_Risk_Assessment|Risk Response]]
 
 ---
 
@@ -799,85 +792,3 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 
 ---
 
-## 🌟 Vision of Success
-
-### Long-term Vision (Years 5-10+)
-
-**What We're Building Toward** (aspirational, flexible on details)
-
-**Environmental Impact:**
-- Proof-of-concept model proven: 1ha → 10ha → 100ha+ restoration pathway demonstrated
-- Measurable ecosystem recovery: biodiversity increasing, carbon sequestered, watersheds healthy
-- Replicable methodology: others can follow our approach
-- Climate resilience demonstrated
-
-**Social Impact:**
-- Restoration jobs created (10+ local, 100+ if scaled)
-- Knowledge shared freely (open-source methodologies, training materials)
-- Communities benefiting (access, education, livelihoods)
-- Movement catalyzed (others inspired to start restoration projects)
-
-**Economic Impact:**
-- Sustainable revenue model proven (€50-200k/year if successful)
-- Multiple funding sources diversified (not grant-dependent)
-- Cost-effective approach demonstrated (€X per hectare, €Y per ton CO₂)
-- Investment justified (ecological + economic + social returns clear)
-
-**Systemic Impact:**
-- Policy influence (contributing to enabling environment for restoration)
-- Practitioner network (collaborating with 10-100+ other projects)
-- Open-source sharing (methodologies, learnings, data freely available)
-- Restoration as viable livelihood (proved you can make a living doing this)
-
-**How We Get There** (adaptive pathways)
-
-**Year 1-2**: Proof of concept (1ha, learn, document)
-**Year 3-5**: Scale if successful (5-10ha, refine model, train others)
-**Year 5-10**: Either scale further OR help others replicate (whichever creates more impact)
-
-**Success = Contribution to Global Restoration**, whether through:
-- Direct impact (our hectares restored)
-- Indirect impact (others using our methods)
-- Systemic impact (policy, funding, networks)
-- All of the above
-
-**Flexibility**: Exact scale, location, structure, revenue TBD based on what works and where opportunities lead
-
-**Your Legacy** (what really matters):
-- ✅ Proved restoration is viable as a livelihood
-- ✅ Shared knowledge freely so others can replicate
-- ✅ Contributed measurably to ecosystem recovery
-- ✅ Maintained integrity and sustainability throughout
-- ✅ Created path where none existed before
-
----
-
-## Related Documents
-
-**Strategic Planning:**
-- Vision & Mission
-- Context & Solution
-- Current State
-
-**Implementation:**
-- Growth Roadmap
-- Operations Plan
-- Immediate Actions
-
-**Risk & Performance:**
-- Risk Management
-- Success Metrics
-
-**Core Elements:**
-- Methods
-- Financial Model
-- Team
-
----
-
-**Document Version**: 2025.11 (2025.11.13 01:56)
-**Part of**: Strategic Documentation
-**Category**: Vision
-**Type**: Vision Document
-**Status**: Active
-**Last Updated**: 2025-11-13
