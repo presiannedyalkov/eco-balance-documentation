@@ -161,18 +161,35 @@ jobs:
                                     body.match(new RegExp('-\\s*\\[x\\]\\s*' + targetCheckboxText));
               
               if (!alreadyChecked) {
-                // Find and check the target checkbox
-                const uncheckedPattern = new RegExp(
-                  '-\\s*\\[\\s*\\]\\s*' + 
-                  targetCheckboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + 
-                  '\\s*(<!--[^>]*-->)?',
+                // Find and check the target checkbox - try multiple patterns
+                const escapedText = targetCheckboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                
+                // Pattern 1: With comment
+                const patternWithComment = new RegExp(
+                  '-\\s*\\[\\s*\\]\\s*' + escapedText + '\\s*<!--[^>]*-->',
+                  'g'
+                );
+                
+                // Pattern 2: Without comment (just checkbox)
+                const patternWithoutComment = new RegExp(
+                  '-\\s*\\[\\s*\\]\\s*' + escapedText + '(?!\\s*<!--)',
                   'g'
                 );
                 
                 const beforeReplace = body;
-                body = body.replace(uncheckedPattern, (match) => {
-                  return match.replace(/\[ ?\]/, '[x]');
-                });
+                
+                // Try pattern with comment first
+                if (body.match(patternWithComment)) {
+                  body = body.replace(patternWithComment, (match) => {
+                    return match.replace(/\[ ?\]/, '[x]');
+                  });
+                }
+                // Then try pattern without comment
+                else if (body.match(patternWithoutComment)) {
+                  body = body.replace(patternWithoutComment, (match) => {
+                    return match.replace(/\[ ?\]/, '[x]');
+                  });
+                }
                 
                 const changed = beforeReplace !== body;
                 if (changed) {
@@ -180,6 +197,10 @@ jobs:
                   console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
                 } else {
                   console.log(`⚠️  Could not find unchecked checkbox pattern for: ${targetCheckboxText}`);
+                  // Debug: show what we're looking for
+                  const searchPattern = '- [ ] ' + targetCheckboxText;
+                  console.log(`   Looking for: ${searchPattern}`);
+                  console.log(`   Exists in body: ${body.includes(searchPattern)}`);
                 }
               } else {
                 console.log(`ℹ️  Target checkbox already checked: ${targetCheckboxText}`);
