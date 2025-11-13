@@ -20,18 +20,22 @@ update_metadata_safe() {
     local status="$5"
     
     if [ ! -f "$file" ]; then
+        echo "⚠️  File not found: $file"
         return
     fi
     
     # Create backup
     cp "$file" "${file}.bak"
+    OLD_LINES=$(wc -l < "${file}.bak")
     
-    # Find the line where metadata starts
-    # Look for patterns: "**Document Version**", "Document Version:", or "---" separator before metadata
-    METADATA_LINE=$(grep -n "^\*\*Document Version\*\*:\|^Document Version:\|^---$" "$file" | tail -1 | cut -d: -f1)
+    # Find the line where metadata starts by looking for "Document Version" field
+    # This is the most reliable indicator of where metadata begins
+    METADATA_START_LINE=$(grep -n "^\*\*Document Version\*\*:\|^Document Version:" "$file" | head -1 | cut -d: -f1)
     
-    if [ -z "$METADATA_LINE" ]; then
+    if [ -z "$METADATA_START_LINE" ]; then
         # No existing metadata found, just append to end
+        # Remove trailing empty lines first
+        sed -i -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$file"
         echo "" >> "$file"
         echo "---" >> "$file"
         echo "" >> "$file"
@@ -46,10 +50,10 @@ update_metadata_safe() {
         return
     fi
     
-    # Find the separator line before metadata (usually "---")
-    # Look backwards from metadata line for "---"
+    # Now look backwards from the metadata start line to find the "---" separator
+    # We'll look up to 5 lines back (metadata is usually close to the separator)
     SEPARATOR_LINE=""
-    for ((i=$METADATA_LINE; i>=1; i--)); do
+    for ((i=$METADATA_START_LINE; i>=1 && i>=$((METADATA_START_LINE - 5)); i--)); do
         line=$(sed -n "${i}p" "$file")
         if [[ "$line" == "---" ]]; then
             SEPARATOR_LINE=$i
@@ -57,19 +61,35 @@ update_metadata_safe() {
         fi
     done
     
-    # If we found a separator, remove from separator to end
-    # Otherwise, remove from metadata line to end
-    if [ -n "$SEPARATOR_LINE" ] && [ "$SEPARATOR_LINE" -lt "$METADATA_LINE" ]; then
-        # Keep everything up to (but not including) the separator line
-        head -n $((SEPARATOR_LINE - 1)) "$file" > "${file}.tmp"
+    # Determine where to cut: if we found a separator, cut before it
+    # Otherwise, cut before the metadata start line
+    if [ -n "$SEPARATOR_LINE" ] && [ "$SEPARATOR_LINE" -lt "$METADATA_START_LINE" ]; then
+        CUT_LINE=$((SEPARATOR_LINE - 1))
     else
-        # Keep everything up to (but not including) the metadata line
-        head -n $((METADATA_LINE - 1)) "$file" > "${file}.tmp"
+        CUT_LINE=$((METADATA_START_LINE - 1))
     fi
     
+    # Safety check: make sure we're not cutting too much
+    # We should keep at least 80% of the original content
+    MIN_LINES=$((OLD_LINES * 80 / 100))
+    if [ "$CUT_LINE" -lt "$MIN_LINES" ]; then
+        echo "❌ ERROR: Would cut too much content from $file (would keep $CUT_LINE lines, need at least $MIN_LINES)"
+        echo "   Restoring from backup..."
+        mv "${file}.bak" "$file"
+        return 1
+    fi
+    
+    # Keep everything up to the cut line
+    head -n "$CUT_LINE" "$file" > "${file}.tmp"
+    
     # Remove trailing empty lines from the content
-    while [ -s "${file}.tmp" ] && [ -z "$(tail -c 1 "${file}.tmp")" ] || [ "$(tail -c 2 "${file}.tmp" | head -c 1)" = $'\n' ]; do
-        head -n -1 "${file}.tmp" > "${file}.tmp2" && mv "${file}.tmp2" "${file}.tmp"
+    while [ -s "${file}.tmp" ]; do
+        last_line=$(tail -n 1 "${file}.tmp")
+        if [[ -z "$last_line" ]] || [[ "$last_line" =~ ^[[:space:]]*$ ]]; then
+            head -n -1 "${file}.tmp" > "${file}.tmp2" && mv "${file}.tmp2" "${file}.tmp"
+        else
+            break
+        fi
     done
     
     # Add new metadata
@@ -93,18 +113,29 @@ update_metadata_safe() {
         return 1
     fi
     
-    # Verify we didn't lose too much content (at least 50% should remain)
-    OLD_LINES=$(wc -l < "${file}.bak")
+    # Verify we didn't lose too much content (at least 80% should remain)
     NEW_LINES=$(wc -l < "$file")
-    if [ "$NEW_LINES" -lt $((OLD_LINES / 2)) ]; then
-        echo "❌ ERROR: $file lost too much content! (was $OLD_LINES lines, now $NEW_LINES lines)"
+    if [ "$NEW_LINES" -lt "$MIN_LINES" ]; then
+        echo "❌ ERROR: $file lost too much content! (was $OLD_LINES lines, now $NEW_LINES lines, need at least $MIN_LINES)"
         echo "   Restoring from backup..."
         mv "${file}.bak" "$file"
         return 1
     fi
     
+    # Verify the content before metadata is preserved
+    # Compare first 10 lines to ensure content wasn't accidentally deleted
+    head -n 10 "${file}.bak" > "${file}.bak.head"
+    head -n 10 "$file" > "${file}.file.head"
+    if ! diff -q "${file}.bak.head" "${file}.file.head" > /dev/null 2>&1; then
+        echo "❌ ERROR: Beginning of $file changed! Restoring from backup..."
+        rm "${file}.bak.head" "${file}.file.head"
+        mv "${file}.bak" "$file"
+        return 1
+    fi
+    rm "${file}.bak.head" "${file}.file.head"
+    
     rm "${file}.bak"
-    echo "✅ Updated metadata in $file (preserved $NEW_LINES lines of content)"
+    echo "✅ Updated metadata in $file (preserved $NEW_LINES/$OLD_LINES lines of content)"
 }
 
 # Update Vision files
@@ -137,7 +168,7 @@ update_metadata_safe "strategic/60_Marketing_Communications_Strategy.md" "Strate
 update_metadata_safe "strategic/70_Case_Studies_Restoration_Examples.md" "Strategic Documentation" "Plan" "Reference Document" "Active"
 
 # Update restoration playbook files
-find strategic/restoration_playbook -name "*.md" -type f | while read -r file; do
+find strategic/restoration_playbook -name "*.md" -type f | sort | while read -r file; do
     if [ -f "$file" ]; then
         # Determine type
         if [[ "$file" == *"00_"*"Overview"* ]] || [[ "$file" == *"README"* ]]; then
@@ -152,6 +183,8 @@ find strategic/restoration_playbook -name "*.md" -type f | while read -r file; d
     fi
 done
 
+# Update hub file
+update_metadata_safe "00_Eco_Balance_Hub.md" "Strategic Documentation" "Vision" "Vision Document" "Active"
+
 echo ""
 echo "✅ Safe metadata update complete"
-

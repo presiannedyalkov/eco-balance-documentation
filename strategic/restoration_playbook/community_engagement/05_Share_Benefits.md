@@ -322,3 +322,12 @@ Once benefits are shared:
 *Remember: Sharing benefits with the community is essential for long-term support. Equitable benefit-sharing creates invested protectors rather than passive observers.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Task Guide
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13

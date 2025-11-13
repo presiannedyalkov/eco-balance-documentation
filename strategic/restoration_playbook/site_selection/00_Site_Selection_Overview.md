@@ -230,3 +230,12 @@ Compare options and select best site(s)
 *Remember: The right site is the foundation of restoration success. Take time to find the best match for your goals and resources.*
 
 *This is a template. Customize it for your project.*
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Restoration Playbook
+**Category**: Plan
+**Type**: Overview Document
+**Status**: Template - Customize for Your Project
+**Last Updated**: 2025-11-13
