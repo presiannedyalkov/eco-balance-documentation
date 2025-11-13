@@ -1232,11 +1232,6 @@ Understanding the budget ranges - what's included at each level:
 **Legal:**
 - Legal Structure & Compliance
 
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
 
 ---
 

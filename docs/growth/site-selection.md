@@ -1434,18 +1434,7 @@ Week 3-4:
 
 ---
 
-**Document Version:** 2.0.0
-**Last Updated:** 2025-11-08
-**Status:** Active
-
----
-
-*Finding the right 1 hectare - affordable, manageable, and perfect for proving our restoration model.*---
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
-
+*Finding the right 1 hectare - affordable, manageable, and perfect for proving our restoration model.*
 ---
 
 **Document Version**: 2025.11 (2025.11.13 01:56)

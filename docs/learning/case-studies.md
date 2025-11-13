@@ -748,10 +748,6 @@ Eco Balance combines the best elements:
 
 *Standing on the shoulders of giants - learning from those who've proven restoration is possible.*
 
----
-
-**Document Version:** 2.0.0 (Bootstrap Model)
-**Last Updated:** 2025-11-10
 **Status:** Active
 
 ---

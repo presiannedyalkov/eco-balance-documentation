@@ -587,11 +587,6 @@ sidebar_position: 3
 **Current baseline**: 1-2 founders, part-time Year 1-2 (15-25 hr/week, keep jobs), evaluate transition Year 3+ based on results.
 
 **Key Philosophy**: Team growth follows success, not assumptions. We stay lean until revenue and impact justify expansion. Founder security and sustainability are non-negotiable constraints.
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
 
 ---
 

@@ -942,11 +942,6 @@ Now you need to choose **when to start and at what pace**:
 - Risk Management & Decision Framework
 - Team & Work Model
 - Public Presence Strategy
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
 
 ---
 
