@@ -170,25 +170,34 @@ jobs:
                 
                 if (body.includes(searchPattern)) {
                   // Split into lines and find the matching line
+                  const beforeReplace = body;
                   const lines = body.split('\n');
                   let found = false;
                   
                   for (let i = 0; i < lines.length; i++) {
                     if (lines[i].includes(searchPattern) && lines[i].includes('[ ]')) {
+                      const originalLine = lines[i];
                       // Replace [ ] with [x] in this line
                       lines[i] = lines[i].replace(/\[ ?\]/, '[x]');
                       found = true;
-                      console.log(`Found and replaced line ${i}: ${lines[i].substring(0, 60)}...`);
+                      console.log(`Found line ${i}: ${originalLine.substring(0, 60)}...`);
+                      console.log(`Replaced to: ${lines[i].substring(0, 60)}...`);
                       break;
                     }
                   }
                   
                   if (found) {
                     body = lines.join('\n');
-                    updated = true;
-                    console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
+                    const changed = beforeReplace !== body;
+                    console.log(`Body changed: ${changed}`);
+                    if (changed) {
+                      updated = true;
+                      console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
+                    } else {
+                      console.log(`⚠️  Line replaced but body didn't change - possible issue`);
+                    }
                   } else {
-                    console.log(`⚠️  Found pattern but couldn't replace in line`);
+                    console.log(`⚠️  Found pattern but couldn't find matching line`);
                   }
                 } else {
                   console.log(`⚠️  Could not find unchecked checkbox pattern: ${searchPattern}`);
