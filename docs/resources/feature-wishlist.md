@@ -8,7 +8,7 @@ sidebar_position: 3
 
 **Purpose:** Track desired features and enhancements without concrete timelines
 **Status:** Living document - priorities may shift based on project needs
-**Last Updated:** November 2025 (v1.3.0)
+**Last Updated:** 2025.11 (2025.11.13 19:12)
 
 ---
 
@@ -170,6 +170,216 @@ Enable exporting the entire documentation repository into portable formats for o
 - Table of contents and navigation work in exported formats
 - Formatting is preserved and readable
 - Export process can be automated or run on-demand
+
+---
+
+### Research Bookmarks Integration (Submodule)
+**Status:** Planned
+**Priority:** High
+**Related:** Knowledge Synthesizer, AI Personas, Research Repository
+
+**Description:**
+Integrate research bookmarks repository as a Git submodule or folder reference in this documentation repository. The bookmarks will be managed, downloaded, synced, and cleaned in a separate repository, but this repository will reference and use them. AI personas (especially Knowledge Synthesizer and other aggregating personas) will use this information when aggregating information about the project.
+
+**Key Features:**
+- **Submodule Integration**: Add research bookmarks repository as Git submodule or folder reference
+- **Automatic Sync**: Bookmarks are managed in external repo, synced to this repo
+- **AI Persona Integration**: Personas can access and reference bookmark data when aggregating project information
+- **Citation System**: Link documentation claims to research sources from bookmarks
+- **Topic Organization**: Bookmarks organized by topic/category for easy reference
+- **Index/Navigation**: Create index or navigation structure for research sources
+
+**Technical Implementation:**
+- **Git Submodule**: Add research repository as submodule in `research/` or `bookmarks/` directory
+- **Sync Strategy**: Bookmarks downloaded, synced, and cleaned in external repository
+- **AI Context**: Update AI persona context files to include research submodule path
+- **Citation Links**: Add citation system linking strategic documents to bookmark sources
+- **Documentation**: Update README and contributing guides with submodule setup instructions
+
+**Benefits:**
+- **Research-Backed Documentation**: All claims can be traced to research sources
+- **AI Enhancement**: Personas have access to research context when working on documentation
+- **Separation of Concerns**: Research management stays in dedicated repository
+- **Automatic Updates**: Research updates flow into documentation repository via submodule
+- **Credibility**: Transparent sourcing improves documentation credibility
+- **Knowledge Synthesis**: Enables Knowledge Synthesizer persona to extract insights from research
+
+**Use Cases:**
+- AI personas referencing research when writing or updating documentation
+- Adding citations to statistical claims in strategic documents
+- Knowledge Synthesizer persona analyzing research and generating insights
+- Researchers finding relevant sources through organized bookmark structure
+- Validating documentation claims against research sources
+
+**Dependencies:**
+- Research repository with bookmarks (external)
+- Git submodule support
+- AI persona framework (for integration)
+- Citation system design
+
+**Estimated Effort:**
+- Submodule setup: 1-2 hours
+- AI persona context updates: 1-2 hours
+- Citation system implementation: 2-3 hours
+- Index/navigation creation: 1-2 hours
+- Documentation updates: 1 hour
+- Total: 6-10 hours
+
+**Success Metrics:**
+- Research submodule successfully integrated
+- AI personas can access bookmark data
+- Citations added to key statistical claims
+- Research sources organized and navigable
+- Submodule syncs correctly from external repository
+
+---
+
+### Visual Enhancements for Documents
+**Status:** Planned
+**Priority:** Medium
+**Related:** Public Documentation Website, Documentation Quality
+
+**Description:**
+Systematically review each document in the repository and identify opportunities to add visual elements (diagrams, charts, illustrations, infographics) that enhance understanding and engagement. Visuals will be created using markdown-compatible tools like Mermaid diagrams, or embedded images.
+
+**Key Features:**
+- **Document Audit**: Review each strategic document (00-70 series) for visual opportunities
+- **Visual Types**: Identify appropriate visuals (flowcharts, process diagrams, organizational charts, timelines, comparison tables, infographics)
+- **Mermaid Integration**: Use Mermaid diagrams for markdown-native visualizations
+- **Image Management**: Organize and manage visual assets (diagrams, charts, illustrations)
+- **Accessibility**: Ensure visuals are accessible with alt text and descriptions
+- **Consistency**: Maintain consistent visual style across documents
+
+**Visual Opportunities by Document Type:**
+- **Process Documents**: Flowcharts, process diagrams, decision trees
+- **Organizational Documents**: Org charts, role hierarchies, governance structures
+- **Financial Documents**: Charts, graphs, budget breakdowns, revenue models
+- **Strategic Documents**: Timelines, roadmaps, comparison matrices
+- **Technical Documents**: System diagrams, architecture diagrams, data flows
+- **Methodology Documents**: Step-by-step visual guides, before/after comparisons
+
+**Technical Implementation:**
+- **Mermaid Diagrams**: Use Mermaid syntax for diagrams directly in markdown
+- **Image Assets**: Store visual assets in `docs/assets/images/` or similar
+- **Docusaurus Support**: Leverage Docusaurus Mermaid plugin for rendering
+- **Documentation**: Create visual style guide and best practices
+- **Review Process**: Systematic review checklist for each document
+
+**Benefits:**
+- **Enhanced Understanding**: Visuals make complex information easier to grasp
+- **Engagement**: Visual content increases reader engagement
+- **Professional Appearance**: Well-designed visuals improve documentation quality
+- **Accessibility**: Multiple representation formats (text + visual) improve accessibility
+- **Clarity**: Visuals clarify relationships, processes, and structures
+- **Retention**: Visual information is better retained than text alone
+
+**Use Cases:**
+- Process flowcharts for restoration methodology
+- Organizational charts for governance structure
+- Timeline visualizations for project phases
+- Comparison tables for funding options
+- System diagrams for technology integration
+- Budget breakdown charts for financial projections
+
+**Dependencies:**
+- Document review and analysis
+- Mermaid diagram knowledge or design tools
+- Docusaurus Mermaid plugin (if using Mermaid)
+- Image management system
+
+**Estimated Effort:**
+- Document audit (23 strategic files): 4-6 hours
+- Visual design/creation: 2-3 hours per document (varies by complexity)
+- Mermaid diagram creation: 1-2 hours per diagram
+- Image asset management: 1-2 hours
+- Style guide creation: 2-3 hours
+- Total: 30-50 hours (varies significantly based on number of visuals)
+
+**Success Metrics:**
+- Each strategic document reviewed for visual opportunities
+- Appropriate visuals identified and documented
+- Visuals created and integrated into documents
+- Mermaid diagrams render correctly in Docusaurus
+- Visual style is consistent across documents
+- Accessibility requirements met (alt text, descriptions)
+
+---
+
+### Timeline & Milestone Visualization
+**Status:** Planned
+**Priority:** Medium
+**Related:** Roadmap, GitHub Milestones, Project Management
+
+**Description:**
+Create visual timeline and milestone representations using markdown-based tools like Mermaid to show completed tasks, current progress, and future milestones. The visualization will integrate with GitHub Milestones and the project roadmap to provide a clear, visual representation of project progress over time.
+
+**Key Features:**
+- **Mermaid Timeline**: Create timeline diagrams using Mermaid syntax showing project phases
+- **Milestone Markers**: Visual markers for completed, in-progress, and planned milestones
+- **GitHub Integration**: Sync with GitHub Milestones to show actual project status
+- **Progress Indicators**: Show completion status and progress percentages
+- **Interactive Elements**: Clickable milestones linking to GitHub issues or documentation
+- **Multiple Views**: Different timeline views (by phase, by priority, by category)
+
+**Timeline Components:**
+- **Completed Milestones**: Marked as done with checkmarks or green indicators
+- **In-Progress Milestones**: Marked as active with progress indicators
+- **Planned Milestones**: Marked as upcoming with future dates
+- **Phase Boundaries**: Clear separation between project phases
+- **Key Events**: Highlight important events, releases, or decisions
+
+**Technical Implementation:**
+- **Mermaid Gantt/Timeline**: Use Mermaid timeline or Gantt chart syntax
+- **GitHub API Integration**: Fetch milestone data from GitHub API
+- **Automated Updates**: Script to generate timeline from GitHub Milestones
+- **Markdown Native**: Timeline embedded directly in markdown files
+- **Docusaurus Rendering**: Leverage Docusaurus Mermaid plugin for display
+
+**Visualization Types:**
+- **Project Timeline**: Overall project timeline with major phases
+- **Milestone Roadmap**: Detailed milestone timeline with dates and status
+- **Phase Breakdown**: Timeline broken down by project phases
+- **Release Timeline**: Timeline focused on releases and versions
+- **Task Completion**: Visual representation of completed vs. pending tasks
+
+**Benefits:**
+- **Visual Progress**: Clear visual representation of project progress
+- **Stakeholder Communication**: Easy to share progress with stakeholders
+- **Planning Tool**: Helps with planning and resource allocation
+- **Motivation**: Visual progress can motivate team members
+- **Transparency**: Public timeline shows project transparency
+- **Integration**: Combines roadmap, milestones, and actual progress
+
+**Use Cases:**
+- Displaying project progress on documentation website
+- Sharing progress updates with stakeholders
+- Planning future milestones and phases
+- Tracking completion of major project phases
+- Visualizing version releases and updates
+- Showing project history and evolution
+
+**Dependencies:**
+- GitHub Milestones setup
+- Mermaid diagram knowledge
+- Roadmap documentation
+- Docusaurus Mermaid plugin
+- Optional: GitHub API integration for automation
+
+**Estimated Effort:**
+- Timeline design and structure: 2-3 hours
+- Mermaid diagram creation: 2-3 hours
+- GitHub integration (if automated): 3-4 hours
+- Multiple timeline views: 2-3 hours
+- Documentation and updates: 1-2 hours
+- Total: 10-15 hours
+
+**Success Metrics:**
+- Timeline renders correctly in Docusaurus
+- Milestones accurately reflect GitHub Milestone status
+- Timeline is visually clear and easy to understand
+- Timeline updates can be automated or easily maintained
+- Multiple timeline views available (if implemented)
+- Timeline integrates with roadmap documentation
 
 ---
 
@@ -574,7 +784,8 @@ Real-time public dashboard showing project impact metrics and progress toward go
 ---
 
 **Version History:**
-- v1.3.0 (November 2025): Updated Public Documentation Website status to "In Development" - deployment workflow created
-- v1.2.0 (November 10, 2025): Added Documentation Export Formats (EPUB & PDF) feature
-- v1.1.0 (November 10, 2025): Added Team Role AI Personas feature
-- v1.0.0 (November 10, 2025): Initial wishlist created with Docusaurus documentation site as first feature
+- 2025.11 (2025.11.13 19:12): Added Research Bookmarks Integration, Visual Enhancements for Documents, and Timeline & Milestone Visualization features
+- 2025.11 (2025.11.12 14:30): Updated Public Documentation Website status to "In Development" - deployment workflow created
+- 2025.11 (2025.11.10 10:00): Added Documentation Export Formats (EPUB & PDF) feature
+- 2025.11 (2025.11.10 09:00): Added Team Role AI Personas feature
+- 2025.11 (2025.11.10 08:00): Initial wishlist created with Docusaurus documentation site as first feature

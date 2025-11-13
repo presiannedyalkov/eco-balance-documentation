@@ -2,7 +2,7 @@
 
 **Purpose:** Track desired features and enhancements without concrete timelines
 **Status:** Living document - priorities may shift based on project needs
-**Last Updated:** November 2025 (v1.3.0)
+**Last Updated:** 2025.11 (2025.11.13 19:12)
 
 ---
 
@@ -568,7 +568,8 @@ Real-time public dashboard showing project impact metrics and progress toward go
 ---
 
 **Version History:**
-- v1.3.0 (November 2025): Updated Public Documentation Website status to "In Development" - deployment workflow created
-- v1.2.0 (November 10, 2025): Added Documentation Export Formats (EPUB & PDF) feature
-- v1.1.0 (November 10, 2025): Added Team Role AI Personas feature
-- v1.0.0 (November 10, 2025): Initial wishlist created with Docusaurus documentation site as first feature
+- 2025.11 (2025.11.13 19:12): Added Research Bookmarks Integration, Visual Enhancements for Documents, and Timeline & Milestone Visualization features
+- 2025.11 (2025.11.12 14:30): Updated Public Documentation Website status to "In Development" - deployment workflow created
+- 2025.11 (2025.11.10 10:00): Added Documentation Export Formats (EPUB & PDF) feature
+- 2025.11 (2025.11.10 09:00): Added Team Role AI Personas feature
+- 2025.11 (2025.11.10 08:00): Initial wishlist created with Docusaurus documentation site as first feature
