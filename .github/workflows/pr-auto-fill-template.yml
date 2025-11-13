@@ -15,47 +15,101 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Need full history for commit analysis
       
-      - name: Determine change type from branch name
-        id: changetype
+      - name: Analyze PR changes
+        id: analyze
         run: |
           BRANCH="${{ github.head_ref }}"
+          BASE="${{ github.base_ref }}"
           
+          # Determine change type from branch name
           if [[ "$BRANCH" =~ ^feature/ ]]; then
             echo "type=feature" >> $GITHUB_OUTPUT
             echo "checked_item=Feature" >> $GITHUB_OUTPUT
             echo "checkbox_index=0" >> $GITHUB_OUTPUT
+            CHANGE_TYPE="Feature"
           elif [[ "$BRANCH" =~ ^fix/ ]]; then
             echo "type=bug" >> $GITHUB_OUTPUT
             echo "checked_item=Bug fix" >> $GITHUB_OUTPUT
             echo "checkbox_index=1" >> $GITHUB_OUTPUT
+            CHANGE_TYPE="Bug fix"
           elif [[ "$BRANCH" =~ ^docs/ ]]; then
             echo "type=documentation" >> $GITHUB_OUTPUT
             echo "checked_item=Documentation" >> $GITHUB_OUTPUT
             echo "checkbox_index=2" >> $GITHUB_OUTPUT
+            CHANGE_TYPE="Documentation"
           elif [[ "$BRANCH" =~ ^refactor/ ]]; then
             echo "type=refactor" >> $GITHUB_OUTPUT
             echo "checked_item=Refactoring" >> $GITHUB_OUTPUT
             echo "checkbox_index=3" >> $GITHUB_OUTPUT
+            CHANGE_TYPE="Refactoring"
           elif [[ "$BRANCH" =~ ^chore/ ]]; then
             echo "type=chore" >> $GITHUB_OUTPUT
             echo "checked_item=Other (please describe)" >> $GITHUB_OUTPUT
             echo "checkbox_index=4" >> $GITHUB_OUTPUT
+            CHANGE_TYPE="Chore"
           else
             echo "type=other" >> $GITHUB_OUTPUT
             echo "checked_item=" >> $GITHUB_OUTPUT
             echo "checkbox_index=-1" >> $GITHUB_OUTPUT
+            CHANGE_TYPE="Other"
           fi
+          
+          # Extract issue number from branch name (e.g., fix/123-description or feature/456-name)
+          if [[ "$BRANCH" =~ /([0-9]+)- ]]; then
+            ISSUE_NUM="${BASH_REMATCH[1]}"
+            echo "issue_number=$ISSUE_NUM" >> $GITHUB_OUTPUT
+            echo "has_issue=true" >> $GITHUB_OUTPUT
+          else
+            echo "issue_number=" >> $GITHUB_OUTPUT
+            echo "has_issue=false" >> $GITHUB_OUTPUT
+          fi
+          
+          # Get changed files
+          CHANGED_FILES=$(git diff --name-only origin/$BASE...HEAD 2>/dev/null || git diff --name-only HEAD~1...HEAD 2>/dev/null || echo "")
+          echo "changed_files<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          
+          # Check if markdown files changed
+          if echo "$CHANGED_FILES" | grep -qE '\.(md|mdx)$'; then
+            echo "has_markdown=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_markdown=false" >> $GITHUB_OUTPUT
+          fi
+          
+          # Get commit messages for description
+          COMMIT_MSGS=$(git log origin/$BASE..HEAD --pretty=format:"%s" 2>/dev/null || git log HEAD~5..HEAD --pretty=format:"%s" 2>/dev/null || echo "")
+          echo "commit_messages<<EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_MSGS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          
+          # Check if commits follow conventional commits format
+          if echo "$COMMIT_MSGS" | head -1 | grep -qE '^(feat|fix|docs|chore|refactor|style|test|build|ci|perf|revert)(\(.+\))?:'; then
+            echo "conventional_commits=true" >> $GITHUB_OUTPUT
+          else
+            echo "conventional_commits=false" >> $GITHUB_OUTPUT
+          fi
+          
+          # Generate description from branch name
+          BRANCH_DESC=$(echo "$BRANCH" | sed 's|^[^/]*/||' | sed 's/-/ /g' | sed 's/\b\(.\)/\u\1/g')
+          echo "branch_description=$BRANCH_DESC" >> $GITHUB_OUTPUT
       
-      - name: Update PR body with pre-filled checkbox
-        if: steps.changetype.outputs.checkbox_index != '-1'
+      - name: Auto-fill PR template
         uses: actions/github-script@v7
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const checkedItem = '${{ steps.changetype.outputs.checked_item }}';
             const branchName = '${{ github.head_ref }}';
-            const checkboxIndex = parseInt('${{ steps.changetype.outputs.checkbox_index }}');
+            const checkboxIndex = parseInt('${{ steps.analyze.outputs.checkbox_index }}') || -1;
+            const issueNumber = '${{ steps.analyze.outputs.issue_number }}';
+            const hasIssue = '${{ steps.analyze.outputs.has_issue }}' === 'true';
+            const hasMarkdown = '${{ steps.analyze.outputs.has_markdown }}' === 'true';
+            const conventionalCommits = '${{ steps.analyze.outputs.conventional_commits }}' === 'true';
+            const branchDescription = '${{ steps.analyze.outputs.branch_description }}';
+            const commitMessages = `${{ steps.analyze.outputs.commit_messages }}`;
             
             // Get current PR body
             const { data: pr } = await github.rest.pulls.get({
@@ -65,35 +119,117 @@ jobs:
             });
             
             let body = pr.body || '';
+            let updated = false;
             
-            // Define checkbox patterns (matching PR template exactly)
-            const checkboxes = [
-              '- [ ] Feature',
-              '- [ ] Bug fix',
-              '- [ ] Documentation',
-              '- [ ] Refactoring',
-              '- [ ] Other (please describe)'
+            // 1. Auto-fill Type of Change checkbox
+            if (checkboxIndex >= 0) {
+              const checkboxes = [
+                '- [ ] Feature',
+                '- [ ] Bug fix',
+                '- [ ] Documentation',
+                '- [ ] Refactoring',
+                '- [ ] Other (please describe)'
+              ];
+              
+              const targetCheckbox = checkboxes[checkboxIndex];
+              const checkedPattern = targetCheckbox.replace('[ ]', '[x]');
+              
+              if (!body.includes(checkedPattern)) {
+                body = body.replace(targetCheckbox, checkedPattern);
+                updated = true;
+                console.log(`✅ Auto-checked type checkbox: ${targetCheckbox}`);
+              }
+            }
+            
+            // 2. Auto-fill Related Issue
+            if (hasIssue && issueNumber) {
+              const issuePattern = /<!-- Closes #\d+ -->/;
+              const newIssueLine = `<!-- Closes #${issueNumber} -->`;
+              
+              if (!body.includes(`#${issueNumber}`)) {
+                if (body.includes('<!-- Closes #X -->')) {
+                  body = body.replace('<!-- Closes #X -->', newIssueLine);
+                } else if (!body.match(issuePattern)) {
+                  // Add after "Related Issue" section
+                  body = body.replace(
+                    /(## Related Issue[^\n]*\n[^\n]*\n)/,
+                    `$1${newIssueLine}\n`
+                  );
+                }
+                updated = true;
+                console.log(`✅ Auto-filled related issue: #${issueNumber}`);
+              }
+            }
+            
+            // 3. Auto-fill Description if empty
+            if (body.includes('<!-- Describe what this PR does -->') || 
+                body.match(/## Description\s*\n\s*<!--/)) {
+              const firstCommit = commitMessages.split('\n')[0] || '';
+              let description = '';
+              
+              if (firstCommit) {
+                // Use first commit message, remove type prefix if conventional
+                description = firstCommit.replace(/^(feat|fix|docs|chore|refactor|style|test|build|ci|perf|revert)(\(.+\))?:\s*/i, '');
+                description = description.charAt(0).toUpperCase() + description.slice(1);
+              } else {
+                // Fallback to branch description
+                description = branchDescription || `Implements ${branchName.replace(/^[^/]+\//, '')}`;
+              }
+              
+              body = body.replace(
+                /(## Description\s*\n\s*)<!-- Describe what this PR does -->/,
+                `$1${description}`
+              );
+              updated = true;
+              console.log(`✅ Auto-filled description: ${description.substring(0, 50)}...`);
+            }
+            
+            // 4. Auto-check Testing checklist items
+            const testingCheckboxes = [
+              { pattern: '- [ ] Tested locally', shouldCheck: true }, // Always check if files changed
+              { pattern: '- [ ] Documentation preview checked (`npm start`)', shouldCheck: hasMarkdown },
+              { pattern: '- [ ] Build passes (`npm run build`)', shouldCheck: true }, // Always runs in CI
+              { pattern: '- [ ] Link checks pass (`npm run test:links`)', shouldCheck: hasMarkdown } // Docs need link checks
             ];
             
-            // Check if checkbox is already checked
-            const targetCheckbox = checkboxes[checkboxIndex];
-            const checkedPattern = targetCheckbox.replace('[ ]', '[x]');
+            for (const item of testingCheckboxes) {
+              if (item.shouldCheck && body.includes(item.pattern)) {
+                const checked = item.pattern.replace('[ ]', '[x]');
+                if (!body.includes(checked)) {
+                  body = body.replace(item.pattern, checked);
+                  updated = true;
+                  console.log(`✅ Auto-checked: ${item.pattern.substring(0, 40)}...`);
+                }
+              }
+            }
             
-            // Only update if not already checked
-            if (!body.includes(checkedPattern)) {
-              // Replace unchecked with checked
-              body = body.replace(targetCheckbox, checkedPattern);
-              
-              // Update PR body
+            // 5. Auto-check Checklist items
+            const checklistItems = [
+              { pattern: '- [ ] Changes tested locally', shouldCheck: true },
+              { pattern: '- [ ] Commit messages are clear and descriptive', shouldCheck: conventionalCommits }
+            ];
+            
+            for (const item of checklistItems) {
+              if (item.shouldCheck && body.includes(item.pattern)) {
+                const checked = item.pattern.replace('[ ]', '[x]');
+                if (!body.includes(checked)) {
+                  body = body.replace(item.pattern, checked);
+                  updated = true;
+                  console.log(`✅ Auto-checked checklist: ${item.pattern.substring(0, 40)}...`);
+                }
+              }
+            }
+            
+            // Update PR body if anything changed
+            if (updated) {
               await github.rest.pulls.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 pull_number: prNumber,
                 body: body
               });
-              
-              console.log(`✅ Auto-checked "${checkedItem}" based on branch name: ${branchName}`);
+              console.log('✅ PR template auto-filled successfully!');
             } else {
-              console.log(`ℹ️  Checkbox already checked for "${checkedItem}"`);
+              console.log('ℹ️  PR template already filled or no changes needed');
             }
 
