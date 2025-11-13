@@ -163,14 +163,33 @@ jobs:
                 // Use simple global replace - most reliable approach
                 // Replace: - [ ] Feature <!-- comment --> with - [x] Feature <!-- comment -->
                 const uncheckedPatternSimple = '- [ ] ' + checkboxText;
+                console.log(`Looking for pattern: ${uncheckedPatternSimple}`);
+                console.log(`Pattern exists: ${body.includes(uncheckedPatternSimple)}`);
+                
                 if (body.includes(uncheckedPatternSimple)) {
+                  // Build regex - escape checkbox text properly
+                  const escapedCheckbox = checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                  const regexPattern = '-\\s*\\[\\s*\\]\\s*' + escapedCheckbox + '\\s*(<!--[^>]*-->)?';
+                  const regex = new RegExp(regexPattern, 'g');
+                  
+                  console.log(`Regex pattern: ${regexPattern}`);
+                  
                   // Use replace with a function to preserve the comment
-                  body = body.replace(
-                    new RegExp('-\\s*\\[\\s*\\]\\s*' + checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(\\s*<!--[^>]*-->)?', 'g'),
-                    (match) => match.replace(/\[ ?\]/, '[x]')
-                  );
-                  updated = true;
-                  console.log(`✅ Auto-checked type checkbox: ${checkboxText}`);
+                  const beforeReplace = body;
+                  body = body.replace(regex, (match) => {
+                    console.log(`Replacing match: ${JSON.stringify(match)}`);
+                    return match.replace(/\[ ?\]/, '[x]');
+                  });
+                  
+                  const changed = beforeReplace !== body;
+                  console.log(`Body changed: ${changed}`);
+                  
+                  if (changed) {
+                    updated = true;
+                    console.log(`✅ Auto-checked type checkbox: ${checkboxText}`);
+                  } else {
+                    console.log(`⚠️  Replacement didn't change body`);
+                  }
                 } else {
                   console.log(`⚠️  Could not find checkbox pattern: ${uncheckedPatternSimple}`);
                 }
