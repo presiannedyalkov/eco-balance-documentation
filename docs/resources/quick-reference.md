@@ -647,4 +647,4 @@ You now know:
 
 **Questions?** Check the Hub or search documentation!
 
-[← Back to Hub](/)| View Changelog
+← Back to Hub | View Changelog

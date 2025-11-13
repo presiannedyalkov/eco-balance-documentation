@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # Site Selection & Land Acquisition
 
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
@@ -1445,3 +1445,12 @@ Week 3-4:
 **Document Version:** 3.0.0 - Adaptive Framework
 **Last Updated:** 2025-11-10
 **Status:** Transformed to Adaptive Framework
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Plan
+**Type**: Strategic Planning Document
+**Status**: Active
+**Last Updated**: 2025-11-13

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Financial Projections - Adaptive Framework
 
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
@@ -675,3 +675,12 @@ sidebar_position: 2
 **Document Version:** 2.0.0 (Bootstrap Model)
 **Last Updated:** 2025-11-10
 **Status:** Active
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Plan
+**Type**: Strategic Planning Document
+**Status**: Active
+**Last Updated**: 2025-11-13

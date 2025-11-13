@@ -273,81 +273,6 @@ See detailed plan: `_process/documentation/GITHUB_MILESTONES_ROADMAP_PLAN.md`
 
 ## 🤖 AI & Automation
 
-### Research Bookmarks Integration (Submodule)
-**Status:** Planned
-**Priority:** High
-**Related:** Knowledge Integration, Source Citations
-
-**Description:**
-Integrate the 400+ research bookmarks from the separate research vault repository into this documentation repository as a git submodule. This will make research sources available both in the public documentation (as citations) and to AI assistants as a knowledge source.
-
-**Current Situation:**
-- Research bookmarks exist in separate vault/repository
-- 400+ carefully curated bookmarks mentioned in documentation
-- Not currently accessible in this repository
-- Cannot be used for citations or AI context
-
-**Key Features:**
-- **Git Submodule Integration:** Add research vault as submodule to `_research/` or `_sources/` directory
-- **Documentation Integration:** Research sources visible in documentation for citation
-- **AI Context Access:** Research bookmarks available to AI assistants as knowledge source
-- **Citation System:** Link strategic documents to relevant research sources
-- **Search & Discovery:** Enable searching research sources from documentation
-
-**Technical Implementation:**
-- Add research repository as git submodule
-- Organize bookmarks by topic/category
-- Create citation system linking documents to sources
-- Update AI context to include research submodule
-- Create index/navigation for research sources
-
-**Directory Structure:**
-```
-_references/
-├── bookmarks/          # Submodule: research vault
-│   ├── restoration/
-│   ├── biodiversity/
-│   ├── soil-health/
-│   └── ...
-├── citations/          # Citation index
-└── README.md          # Research integration guide
-```
-
-**Benefits:**
-- **Credibility:** Sources available for verification
-- **Evidence Base:** Strategic claims backed by research
-- **AI Enhancement:** AI can reference actual research when answering questions
-- **Knowledge Integration:** Research becomes part of documentation ecosystem
-- **Transparency:** Stakeholders can verify claims
-
-**Use Cases:**
-- Adding citations to statistical claims in strategic documents
-- AI assistant referencing research when answering questions
-- Stakeholders verifying claims by checking sources
-- Research synthesis into strategic recommendations
-
-**Dependencies:**
-- Research vault repository (must exist and be accessible)
-- Git submodule support
-- Citation system design
-
-**Estimated Effort:**
-- Submodule setup: 1 hour
-- Organization & indexing: 2-3 hours
-- Citation system: 3-4 hours
-- AI context integration: 2-3 hours
-- Documentation updates: 2-3 hours
-- Total: 10-14 hours
-
-**Success Metrics:**
-- Research submodule successfully integrated
-- Sources accessible from documentation
-- AI can reference research in responses
-- Citations added to key statistical claims
-- Research index/navigation functional
-
----
-
 ### AI Skills Framework Implementation
 **Status:** In Development
 **Priority:** Medium
@@ -426,12 +351,12 @@ These personas are tools to help real people in these roles. AI can assist with 
 ### Interactive Community Platform
 **Status:** Planned
 **Priority:** High (Phase 3)
-**Related:** Public Platform Plan (internal document)
+**Related:** PUBLIC_PLATFORM_PLAN.md
 
 **Description:**
 Full implementation of the public platform with AI chatbot, inline commenting, community feedback system, and moderation pipeline as detailed in the Public Platform Plan.
 
-**See:** Public Platform Plan (internal document in repository: `_process/planning/PUBLIC_PLATFORM_PLAN.md`) for complete specification
+**See:** `_process/planning/PUBLIC_PLATFORM_PLAN.md` for complete specification
 
 ---
 
@@ -642,9 +567,9 @@ Real-time public dashboard showing project impact metrics and progress toward go
 ---
 
 **Related Documents:**
-- [Roadmap](/resources/roadmap) - Phased project timeline
-- Public Platform Plan (internal document - see repository: `_process/planning/PUBLIC_PLATFORM_PLAN.md`) - Detailed platform specification
-- [Project Hub](/) - Project hub and navigation
+- [ROADMAP.md](ROADMAP.md) - Phased project timeline
+- [PUBLIC_PLATFORM_PLAN.md](_process/planning/PUBLIC_PLATFORM_PLAN.md) - Detailed platform specification
+- [00_Eco_Balance_Hub.md](00_Eco_Balance_Hub.md) - Project hub and navigation
 
 ---
 

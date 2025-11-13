@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Organizational Structure - Adaptive Framework
 
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
@@ -795,3 +795,12 @@ The actual structure chosen will depend on:
 **Document Version:** 3.0.0 - Adaptive Framework
 **Last Updated:** 2025-11-10
 **Status:** Transformed to Adaptive Framework
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Plan
+**Type**: Organizational Document
+**Status**: Active
+**Last Updated**: 2025-11-13

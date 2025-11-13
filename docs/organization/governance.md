@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Governance Framework - Adaptive to Legal Structure
 
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
@@ -1015,3 +1015,12 @@ sidebar_position: 2
 **Document Version:** 3.0.0 - Adaptive Framework
 **Last Updated:** 2025-11-10
 **Status:** Transformed to Adaptive Framework
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Plan
+**Type**: Organizational Document
+**Status**: Active
+**Last Updated**: 2025-11-13

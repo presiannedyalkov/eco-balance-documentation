@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Success Factors & Critical Assumptions
 
-[← Back to Project Hub](/)
+**← Back to Project Hub**
 
 ---
 
@@ -877,3 +877,12 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 **Document Version:** 3.0.0 - Adaptive Framework
 **Last Updated:** 2025-11-10
 **Status:** Transformed to Adaptive Framework
+
+---
+
+**Document Version**: 2025.11 (2025.11.13 01:56)
+**Part of**: Strategic Documentation
+**Category**: Vision
+**Type**: Vision Document
+**Status**: Active
+**Last Updated**: 2025-11-13
