@@ -1,0 +1,100 @@
+name: Auto-fill PR Template
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  auto-fill-template:
+    name: Auto-fill PR Template
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Determine change type from branch name
+        id: changetype
+        run: |
+          BRANCH="${{ github.head_ref }}"
+          
+          if [[ "$BRANCH" =~ ^feature/ ]]; then
+            echo "type=feature" >> $GITHUB_OUTPUT
+            echo "checked_item=New feature" >> $GITHUB_OUTPUT
+            echo "checkbox_index=1" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^fix/ ]]; then
+            echo "type=bug" >> $GITHUB_OUTPUT
+            echo "checked_item=Bug fix" >> $GITHUB_OUTPUT
+            echo "checkbox_index=0" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^docs/ ]]; then
+            echo "type=documentation" >> $GITHUB_OUTPUT
+            echo "checked_item=Documentation update" >> $GITHUB_OUTPUT
+            echo "checkbox_index=3" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^chore/ ]]; then
+            echo "type=chore" >> $GITHUB_OUTPUT
+            echo "checked_item=Chore" >> $GITHUB_OUTPUT
+            echo "checkbox_index=4" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^refactor/ ]]; then
+            echo "type=refactor" >> $GITHUB_OUTPUT
+            echo "checked_item=Refactoring" >> $GITHUB_OUTPUT
+            echo "checkbox_index=5" >> $GITHUB_OUTPUT
+          else
+            echo "type=other" >> $GITHUB_OUTPUT
+            echo "checked_item=" >> $GITHUB_OUTPUT
+            echo "checkbox_index=-1" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Update PR body with pre-filled checkbox
+        if: steps.changetype.outputs.checkbox_index != '-1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const checkedItem = '${{ steps.changetype.outputs.checked_item }}';
+            const branchName = '${{ github.head_ref }}';
+            const checkboxIndex = parseInt('${{ steps.changetype.outputs.checkbox_index }}');
+            
+            // Get current PR body
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+            
+            let body = pr.body || '';
+            
+            // Define checkbox patterns (in order)
+            const checkboxes = [
+              '- [ ] Bug fix',
+              '- [ ] New feature',
+              '- [ ] Breaking change',
+              '- [ ] Documentation update',
+              '- [ ] Chore',
+              '- [ ] Refactoring'
+            ];
+            
+            // Check if checkbox is already checked
+            const targetCheckbox = checkboxes[checkboxIndex];
+            const checkedPattern = targetCheckbox.replace('[ ]', '[x]');
+            
+            // Only update if not already checked
+            if (!body.includes(checkedPattern)) {
+              // Replace unchecked with checked
+              body = body.replace(targetCheckbox, checkedPattern);
+              
+              // Update PR body
+              await github.rest.pulls.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                body: body
+              });
+              
+              console.log(`✅ Auto-checked "${checkedItem}" based on branch name: ${branchName}`);
+            } else {
+              console.log(`ℹ️  Checkbox already checked for "${checkedItem}"`);
+            }
+

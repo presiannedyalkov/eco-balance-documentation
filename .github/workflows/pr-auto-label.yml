@@ -1,0 +1,69 @@
+name: Auto-label PR by Branch Name
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  auto-label:
+    name: Auto-label PR
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    
+    steps:
+      - name: Get branch name
+        id: branch
+        run: |
+          BRANCH_NAME="${{ github.head_ref }}"
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          echo "Branch name: $BRANCH_NAME"
+      
+      - name: Determine change type from branch name
+        id: changetype
+        run: |
+          BRANCH="${{ steps.branch.outputs.branch_name }}"
+          
+          if [[ "$BRANCH" =~ ^feature/ ]]; then
+            echo "type=feature" >> $GITHUB_OUTPUT
+            echo "label=enhancement" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^fix/ ]]; then
+            echo "type=bug" >> $GITHUB_OUTPUT
+            echo "label=bug" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^docs/ ]]; then
+            echo "type=documentation" >> $GITHUB_OUTPUT
+            echo "label=documentation" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^chore/ ]]; then
+            echo "type=chore" >> $GITHUB_OUTPUT
+            echo "label=chore" >> $GITHUB_OUTPUT
+          elif [[ "$BRANCH" =~ ^refactor/ ]]; then
+            echo "type=refactor" >> $GITHUB_OUTPUT
+            echo "label=refactor" >> $GITHUB_OUTPUT
+          else
+            echo "type=other" >> $GITHUB_OUTPUT
+            echo "label=other" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Add label to PR
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          sync-labels: false
+      
+      - name: Add automatic label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const label = '${{ steps.changetype.outputs.label }}';
+            const prNumber = context.payload.pull_request.number;
+            
+            if (label && label !== 'other') {
+              github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: [label]
+              });
+            }
+
