@@ -161,46 +161,37 @@ jobs:
                                     body.match(new RegExp('-\\s*\\[x\\]\\s*' + targetCheckboxText));
               
               if (!alreadyChecked) {
-                // Find and check the target checkbox - try multiple patterns
+                // Find and check the target checkbox - use line-by-line approach for reliability
                 const escapedText = targetCheckboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const searchPattern = '- [ ] ' + targetCheckboxText;
                 
-                // Pattern 1: With comment
-                const patternWithComment = new RegExp(
-                  '-\\s*\\[\\s*\\]\\s*' + escapedText + '\\s*<!--[^>]*-->',
-                  'g'
-                );
+                console.log(`Looking for pattern: ${searchPattern}`);
+                console.log(`Pattern exists: ${body.includes(searchPattern)}`);
                 
-                // Pattern 2: Without comment (just checkbox)
-                const patternWithoutComment = new RegExp(
-                  '-\\s*\\[\\s*\\]\\s*' + escapedText + '(?!\\s*<!--)',
-                  'g'
-                );
-                
-                const beforeReplace = body;
-                
-                // Try pattern with comment first
-                if (body.match(patternWithComment)) {
-                  body = body.replace(patternWithComment, (match) => {
-                    return match.replace(/\[ ?\]/, '[x]');
-                  });
-                }
-                // Then try pattern without comment
-                else if (body.match(patternWithoutComment)) {
-                  body = body.replace(patternWithoutComment, (match) => {
-                    return match.replace(/\[ ?\]/, '[x]');
-                  });
-                }
-                
-                const changed = beforeReplace !== body;
-                if (changed) {
-                  updated = true;
-                  console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
+                if (body.includes(searchPattern)) {
+                  // Split into lines and find the matching line
+                  const lines = body.split('\n');
+                  let found = false;
+                  
+                  for (let i = 0; i < lines.length; i++) {
+                    if (lines[i].includes(searchPattern) && lines[i].includes('[ ]')) {
+                      // Replace [ ] with [x] in this line
+                      lines[i] = lines[i].replace(/\[ ?\]/, '[x]');
+                      found = true;
+                      console.log(`Found and replaced line ${i}: ${lines[i].substring(0, 60)}...`);
+                      break;
+                    }
+                  }
+                  
+                  if (found) {
+                    body = lines.join('\n');
+                    updated = true;
+                    console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
+                  } else {
+                    console.log(`⚠️  Found pattern but couldn't replace in line`);
+                  }
                 } else {
-                  console.log(`⚠️  Could not find unchecked checkbox pattern for: ${targetCheckboxText}`);
-                  // Debug: show what we're looking for
-                  const searchPattern = '- [ ] ' + targetCheckboxText;
-                  console.log(`   Looking for: ${searchPattern}`);
-                  console.log(`   Exists in body: ${body.includes(searchPattern)}`);
+                  console.log(`⚠️  Could not find unchecked checkbox pattern: ${searchPattern}`);
                 }
               } else {
                 console.log(`ℹ️  Target checkbox already checked: ${targetCheckboxText}`);
