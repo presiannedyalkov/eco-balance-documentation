@@ -29,6 +29,9 @@
    - Ensure metadata is present and correct
    - Validate structural standards are met
    - Confirm formatting guidelines are followed
+   - **Metadata Structure Consistency**: Check that all files have consistent metadata fields (Document Version, Status, Type, Part of, Last Updated, etc.)
+   - **Version Consistency**: Verify all strategic files have version metadata in the same format
+   - **Structural Consistency**: Ensure all files follow the same document structure pattern (metadata fields, section order, footer format)
 
 4. **Cross-Document Validation**
    - Verify data consistency across related files

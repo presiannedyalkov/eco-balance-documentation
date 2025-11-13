@@ -90,16 +90,26 @@ for file in $STRATEGIC_FILES; do
         fi
     fi
     
+    # If no version found, add one (for files that should have versions)
     if [ -z "$FILE_GLOBAL" ]; then
-        echo "⚠️  $file: No version found, skipping"
-        ((ERROR_COUNT++))
-        continue
+        # Check if this is a strategic file that should have a version
+        # Skip restoration_playbook files for now (they may not need versions)
+        if [[ "$file" =~ ^strategic/[0-9] ]] || [[ "$file" == "00_Eco_Balance_Hub.md" ]]; then
+            echo "➕ $file: No version found, adding version ${GLOBAL_VERSION} (${CURRENT_DATETIME})"
+            FILE_GLOBAL="NEW_VERSION"  # Mark for adding version
+        else
+            echo "⚠️  $file: No version found, skipping (not a strategic file)"
+            ((ERROR_COUNT++))
+            continue
+        fi
     fi
     
-    # Handle migration from SemVer or update from old CalVer
-    if [ "$FILE_GLOBAL" = "OLD_SEMVER" ] || [ "$FILE_GLOBAL" != "$GLOBAL_VERSION" ]; then
+    # Handle migration from SemVer, update from old CalVer, or add new version
+    if [ "$FILE_GLOBAL" = "OLD_SEMVER" ] || [ "$FILE_GLOBAL" = "NEW_VERSION" ] || [ "$FILE_GLOBAL" != "$GLOBAL_VERSION" ]; then
         if [ "$FILE_GLOBAL" = "OLD_SEMVER" ]; then
             echo "📝 Migrating $file from SemVer to CalVer: -> $GLOBAL_VERSION"
+        elif [ "$FILE_GLOBAL" = "NEW_VERSION" ]; then
+            echo "➕ Adding version to $file: ${GLOBAL_VERSION} (${CURRENT_DATETIME})"
         else
             echo "📝 Updating $file"
             echo "   Global version: $FILE_GLOBAL -> $GLOBAL_VERSION"
@@ -108,7 +118,15 @@ for file in $STRATEGIC_FILES; do
         # Backup original file
         cp "$file" "${file}.bak"
         
-        # Update global version in file
+        # If adding new version, append it to the end of the file
+        if [ "$FILE_GLOBAL" = "NEW_VERSION" ]; then
+            echo "" >> "$file"
+            echo "---" >> "$file"
+            echo "" >> "$file"
+            echo "**Document Version**: ${GLOBAL_VERSION} (${CURRENT_DATETIME})" >> "$file"
+        # Otherwise, update existing version
+        else
+            # Update global version in file
         # Pattern 1: "**Document Version**: X.X.X" or "**Document Version**: YYYY.MM" (with markdown bold)
         # Handle cases with extra text like " - Adaptive Framework" by matching everything after version
         sed -i -E "s/\*\*Document Version\*\*:\s*([0-9]+\.[0-9]+\.[0-9]+|[0-9]{4}\.[0-9]{2})([^0-9]*)/\*\*Document Version\*\*: ${GLOBAL_VERSION}/g" "$file"
@@ -135,11 +153,16 @@ for file in $STRATEGIC_FILES; do
             sed -i "s/\*\*Version\*\*: ${GLOBAL_VERSION}/\*\*Version\*\*: ${GLOBAL_VERSION} (${CURRENT_DATETIME})/g" "$file"
             sed -i "s/Version: ${GLOBAL_VERSION}/Version: ${GLOBAL_VERSION} (${CURRENT_DATETIME})/g" "$file"
         fi
+        fi
         
         # Log to journal
         echo "" >> "$JOURNAL_FILE"
         echo "### ${CURRENT_DATETIME} - $(basename "$file")" >> "$JOURNAL_FILE"
-        echo "- **Updated:** Global version ${FILE_GLOBAL} -> ${GLOBAL_VERSION}" >> "$JOURNAL_FILE"
+        if [ "$FILE_GLOBAL" = "NEW_VERSION" ]; then
+            echo "- **Added:** Version ${GLOBAL_VERSION} (${CURRENT_DATETIME})" >> "$JOURNAL_FILE"
+        else
+            echo "- **Updated:** Global version ${FILE_GLOBAL} -> ${GLOBAL_VERSION}" >> "$JOURNAL_FILE"
+        fi
         echo "- **Local subversion:** ${CURRENT_DATETIME}" >> "$JOURNAL_FILE"
         echo "- **Type:** Synchronization" >> "$JOURNAL_FILE"
         
