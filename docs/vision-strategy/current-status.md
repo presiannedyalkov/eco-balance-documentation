@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # Current Status & Assessment
 
-**← Back to [Project Hub](/)**
+**← Back to [Project Hub](/docs/intro)**
 
 ---
 

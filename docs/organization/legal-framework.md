@@ -6,7 +6,7 @@ sidebar_position: 4
 
 # Legal Framework - Adaptive Approach
 
-**← Back to [Project Hub](/)**
+**← Back to [Project Hub](/docs/intro)**
 
 ## Overview
 

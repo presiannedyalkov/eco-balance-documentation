@@ -1,6 +1,6 @@
 # Project Vision & Context
 
-**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [Project Hub](intro)**
 
 ---
 ## The Global Challenge
