@@ -1268,11 +1268,6 @@ Water systems must adapt to location rainfall patterns:
 → Restoration methods: [[strategic/20_Restoration_Methodology|Water Management]]
 → Timeline: [[strategic/42_Adaptive_Timeline|Implementation Timeline]]
 
----
-
-**Document Version:** 2.0.0 (Bootstrap Model)
-**Last Updated:** 2025-11-10
-**Status:** Active - Bootstrap Model
 
 ---
 

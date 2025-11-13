@@ -183,7 +183,7 @@ Multiple revenue streams including workshops, consulting, plant sales (each opti
 
 ### 📊 Scientific Rigor
 **Will include** research partnerships, peer-reviewed validation, and continuous monitoring
-→ See Research Framework
+→ See Restoration Challenges & Solutions
 
 ### 📈 Scalable Model
 Documented processes designed for global replication

@@ -1089,20 +1089,12 @@ sidebar_position: 3
 - Better to work 5 years part-time than 1 year full-time and burn out
 - Your work model should serve the mission, not the other way around
 
----
-
-**Document Version:** 3.0.0 - Adaptive Work Model Framework
 **Last Updated:** 2025-11-09
 **Status:** Active
 
 ---
 
 *From day-to-day tasks to long-term vision - a practical operations guide for founder-led restoration.*
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
 
 ---
 

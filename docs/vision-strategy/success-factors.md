@@ -872,11 +872,6 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 - Methods
 - Financial Model
 - Team
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
 
 ---
 

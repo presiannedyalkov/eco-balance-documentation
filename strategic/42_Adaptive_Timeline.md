@@ -762,9 +762,6 @@ Whether your timeline is 6 months or 36 months:
 - [[strategic/51_Key_Performance_Indicators|Measuring Success]] - How to track progress
 - [[strategic/40_Expansion_Growth_Strategy|Scaling Options]] - What comes after Year 1
 
----
-
-**Document Version:** 3.0.0 (Adaptive Framework)
 **Last Updated:** 2025-11-09
 **Status:** Active - Baseline Option B, Flexible to A/C/D
 **File Renamed From:** 42_Next_Steps_90_Days.md
@@ -772,11 +769,6 @@ Whether your timeline is 6 months or 36 months:
 ---
 
 *The journey of restoration begins with a single step - and continues with adaptive, patient, persistent progress. Your timeline will emerge. Trust the process.* 🚀🌿
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
 
 ---
 

@@ -76,9 +76,9 @@ Create a **habitat for wildlife** and **restore land to become a shelter and san
 
 ### Growth
 - Expansion Strategy - Scaling approach and growth phases
-- Site Selection - Geographic options and land acquisition
 - Adaptive Timeline - Phased implementation approach
 - Operations Action Plan - Day-to-day operations guide
+- Site Selection - Geographic options and land acquisition
 - Tiny House Infrastructure - Off-grid living specifications
 
 ### Performance

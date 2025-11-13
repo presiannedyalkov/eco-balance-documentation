@@ -664,10 +664,6 @@
 
 **Current status**: Month 0 - Exploring all scenarios, will commit to pathway Month 4-6 based on what emerges.
 
----
-
-**Document Version:** 2.0.0 (Bootstrap Model)
-**Last Updated:** 2025-11-10
 **Status:** Active
 
 ---

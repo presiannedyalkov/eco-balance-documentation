@@ -784,11 +784,6 @@ The actual structure chosen will depend on:
 - [[strategic/01_Executive_Summary|Executive Summary]]
 - [[strategic/04_Current_Status_Assessment|Current Status Assessment]]
 - [[strategic/50_Risk_Assessment|Risk Assessment]]
----
-
-**Document Version:** 3.0.0 - Adaptive Framework
-**Last Updated:** 2025-11-10
-**Status:** Transformed to Adaptive Framework
 
 ---
 
