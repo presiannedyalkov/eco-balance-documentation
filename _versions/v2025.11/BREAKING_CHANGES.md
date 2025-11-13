@@ -1,68 +1,76 @@
-# Breaking Changes Registry: 2025.11
+# Breaking Changes - 2025.11
 
 **Version:** 2025.11  
-**Created:** 2025-11-12  
-**Purpose:** Track breaking changes that require updates across multiple files
+**Date:** November 12, 2025  
+**Type:** Version Format Migration
 
 ---
 
-## Breaking Change Format
+## Summary
 
-```markdown
-## BC-XXX: [Change Title]
-**Date:** YYYY-MM-DD
-**Type:** [Terminology/Structure/Metadata/Format]
-**Affects:** [List of affected files or "All files"]
-**Action Required:**
-- [Specific action items]
+This version introduces a breaking change to the versioning format used throughout the documentation. All documents have been migrated from Semantic Versioning (SemVer) to Calendar Versioning (CalVer).
 
-**Files Affected:**
-- [List of files]
+---
 
-**Status:** [✅ Applied | ⏳ Pending | 🔄 In Progress]
+## Breaking Change: Version Format Migration
+
+### What Changed
+
+**Previous Format (SemVer):**
+```
+Document Version: 2.0.0
+Version: 2.0.0
 ```
 
----
+**New Format (CalVer):**
+```
+Document Version: 2025.11 (2025.11.12 HH:MM)
+Version: 2025.11
+```
 
-## Registered Breaking Changes
+### Impact
 
-*No breaking changes registered yet for version 2025.11*
+- **All strategic documents** now use the new format
+- **VERSION file** changed from `2.0.0` to `2025.11`
+- **Version directories** now use format `_versions/v2025.11/` instead of `_versions/v2.0.0/`
 
----
+### Migration Applied
 
-## How to Register a Breaking Change
+✅ All files have been automatically updated to the new format  
+✅ No manual action required  
+✅ All cross-references remain valid
 
-1. **Identify the Change:**
-   - What is changing?
-   - Why is it a breaking change?
-   - Which files are affected?
+### For Scripts and Automation
 
-2. **Create Entry:**
-   - Use the format above
-   - Assign BC number (sequential)
-   - Document all details
+If you have scripts that parse version numbers:
+- Update regex patterns to match `YYYY.MM` format
+- Update version directory paths to use `vYYYY.MM` format
+- Version comparison logic may need updates (now date-based)
 
-3. **Apply Changes:**
-   - Update all affected files
-   - Update local subversions
-   - Log in journal
+### Compatibility
 
-4. **Update Status:**
-   - Mark as "✅ Applied" when complete
-   - Document any exceptions
-
----
-
-## Breaking Change Types
-
-- **Terminology:** Changes to key terms/phrases used across files
-- **Structure:** Changes to document structure or organization
-- **Metadata:** Changes to footer/metadata format
-- **Format:** Changes to markdown format or conventions
-- **Cross-Reference:** Changes to linking/navigation system
-- **Versioning:** Changes to versioning system itself
+- **Backward Compatibility:** None - this is a breaking change
+- **Migration Path:** All files automatically migrated
+- **Rollback:** Not recommended - would require reverting all document versions
 
 ---
 
-**Note:** Breaking changes should trigger a review of all files to ensure consistency.
+## Files Affected
 
+- All strategic documentation files (00-70 range)
+- Hub file (`00_Eco_Balance_Hub.md`)
+- VERSION file
+- Version directory structure
+
+---
+
+## Notes
+
+- This change is primarily cosmetic/organizational
+- Document content remains unchanged
+- Cross-references and links remain valid
+- Only the version format has changed
+
+---
+
+**Status:** Migration complete. All breaking changes applied.
