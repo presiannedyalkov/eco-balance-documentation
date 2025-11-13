@@ -1,6 +1,6 @@
 # Executive Summary
 
-**← Back to [[../00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
 
 ---
 
@@ -513,7 +513,7 @@ This comprehensive yet realistic approach creates lasting, transformative change
 ## Related Documents
 
 **Getting Started**:
-- [[../00_Eco_Balance_Hub|Project Hub]] - Main navigation and overview
+- [[00_Eco_Balance_Hub|Project Hub]] - Main navigation and overview
 - [[_process/documentation/QUICK_REFERENCE_GUIDE|Quick Reference Guide]] - How to use this documentation
 - [[_process/documentation/ROADMAP|Project Roadmap]] - Multi-year vision, phases, and current blockers
 - [[_process/documentation/FEATURE_WISHLIST|Feature Wishlist]] - Desired enhancements and future ideas

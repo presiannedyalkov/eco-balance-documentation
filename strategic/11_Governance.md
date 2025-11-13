@@ -1,6 +1,6 @@
 # Governance Framework - Adaptive to Legal Structure
 
-**← Back to [[../00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
 
 ---
 

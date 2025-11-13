@@ -1,6 +1,6 @@
 # Team Roles & Structure - Adaptive Framework
 
-**← Back to [[../00_Eco_Balance_Hub|Project Hub]]**
+**← Back to [[00_Eco_Balance_Hub|Project Hub]]**
 
 ---
 
