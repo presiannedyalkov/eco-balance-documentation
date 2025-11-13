@@ -3,8 +3,8 @@
 **Ecosystem restoration project documentation - Creating habitat for wildlife through biodiversity restoration**
 
 **Status:**
-- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) Deployment Status
-- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) Verification Status
+- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml)
+- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml)
 
 ---
 
@@ -296,8 +296,8 @@ Please note that this documentation is primarily maintained by the project found
 
 ## 🚀 Build Status
 
-- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) Deployment Status
-- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) Verification Status
+- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml)
+- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml)
 
 ---
 
