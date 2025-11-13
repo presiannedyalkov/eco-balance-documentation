@@ -134,10 +134,29 @@ jobs:
               const targetCheckbox = checkboxes[checkboxIndex];
               const checkedPattern = targetCheckbox.replace('[ ]', '[x]');
               
+              // Try exact match first
               if (!body.includes(checkedPattern)) {
-                body = body.replace(targetCheckbox, checkedPattern);
-                updated = true;
-                console.log(`✅ Auto-checked type checkbox: ${targetCheckbox}`);
+                // Replace exact match
+                if (body.includes(targetCheckbox)) {
+                  body = body.replace(targetCheckbox, checkedPattern);
+                  updated = true;
+                  console.log(`✅ Auto-checked type checkbox: ${targetCheckbox}`);
+                } else {
+                  // Try with comment (markdown comment after checkbox)
+                  const targetWithComment = new RegExp(targetCheckbox.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*<!--[^>]*-->', 'g');
+                  const checkedWithComment = checkedPattern + ' <!-- Auto-checked -->';
+                  if (body.match(targetWithComment)) {
+                    body = body.replace(targetWithComment, checkedWithComment);
+                    updated = true;
+                    console.log(`✅ Auto-checked type checkbox (with comment): ${targetCheckbox}`);
+                  } else {
+                    // Try regex replacement for any whitespace variations
+                    const regexPattern = new RegExp(targetCheckbox.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace('\\[ \\]', '\\[\\s*\\]'), 'g');
+                    body = body.replace(regexPattern, checkedPattern);
+                    updated = true;
+                    console.log(`✅ Auto-checked type checkbox (regex): ${targetCheckbox}`);
+                  }
+                }
               }
             }
             
