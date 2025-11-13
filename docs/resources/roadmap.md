@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Eco Balance Project Roadmap
 
-**Current Version:** v2.0.0 (Bootstrap Model)
+**Current Version:** 2025.11 (2025.11.13 19:12)
 **Last Updated:** November 9, 2025
 **Status:** Phase 1 (Bootstrap Launch) - In Progress
 **← Back to Project Hub**
