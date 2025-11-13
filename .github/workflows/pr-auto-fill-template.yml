@@ -119,6 +119,8 @@ jobs:
             });
             
             let body = pr.body || '';
+            // Normalize line endings to \n (GitHub API may return \r\n)
+            body = body.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
             let updated = false;
             
             // 1. Auto-fill Type of Change checkbox
@@ -132,11 +134,13 @@ jobs:
               ];
               
               const checkboxText = checkboxes[checkboxIndex];
+              // Build regex pattern - match checkbox with optional comment
+              // Pattern: - [ ] Feature <!-- comment --> (with flexible whitespace)
               const uncheckedPattern = new RegExp(
-                '-\\s+\\[\\s*\\]\\s+' + 
+                '-\\s*\\[\\s*\\]\\s*' + 
                 checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + 
-                '(\\s*<!--[^>]*-->)?',
-                'g'
+                '\\s*(<!--[^>]*-->)?',
+                'gm'  // global and multiline
               );
               const checkedReplacement = '- [x] ' + checkboxText;
               
