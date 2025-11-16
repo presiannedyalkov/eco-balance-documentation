@@ -14,35 +14,35 @@
 
 ### Performance & Accessibility
 
-| Metric | Status | Details |
-|--------|--------|---------|
-| **Lighthouse Performance** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
-| **Lighthouse Accessibility** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
-| **Lighthouse Best Practices** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
-| **Lighthouse SEO** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+| Metric | Status | Details | What It Checks |
+|--------|--------|---------|---------------|
+| **Lighthouse Performance** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Measures page load speed, time to interactive, and resource optimization. Target: ≥80% |
+| **Lighthouse Accessibility** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Checks for accessibility issues (ARIA labels, keyboard navigation, color contrast). Target: ≥90% |
+| **Lighthouse Best Practices** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Validates modern web best practices (HTTPS, image optimization, console errors). Target: ≥80% |
+| **Lighthouse SEO** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Evaluates SEO optimization (meta tags, structured data, mobile-friendly). Target: ≥80% |
 
 ### Security & Code Quality
 
-| Metric | Status | Details |
-|--------|--------|---------|
-| **CodeQL Security** | [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml) | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) |
-| **Dependabot** | [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) | [View Updates](https://github.com/presiannedyalkov/eco-balance-documentation/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies) |
+| Metric | Status | Details | What It Checks |
+|--------|--------|---------|---------------|
+| **CodeQL Security** | [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml) | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) | Scans JavaScript/TypeScript code for security vulnerabilities and coding errors. Runs weekly. |
+| **Dependabot** | [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) | [View Updates](https://github.com/presiannedyalkov/eco-balance-documentation/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies) | Automatically checks dependencies for security vulnerabilities and creates PRs for updates. Weekly checks. |
 
 ### Documentation Quality
 
-| Metric | Status | Details |
-|--------|--------|---------|
-| **Link Checking** | [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) |
-| **Spell Check** | [![Spell Check](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) |
-| **Markdown Linting** | [![Lint Markdown](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) |
+| Metric | Status | Details | What It Checks |
+|--------|--------|---------|---------------|
+| **Link Checking** | [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) | Verifies all external links are valid and accessible. Checks on PRs and weekly. |
+| **Spell Check** | [![Spell Check](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) | Scans all markdown files for spelling errors using custom dictionary. Checks on PRs. |
+| **Markdown Linting** | [![Lint Markdown](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) | Validates markdown formatting consistency and style. Checks on PRs and pushes. |
 
 ### Build & Deployment
 
-| Metric | Status | Details |
-|--------|--------|---------|
-| **Deployment** | [![Deploy](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) | [View Workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) |
-| **Deployment Verification** | [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) | [View Tests](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) |
-| **Documentation Export** | [![Export Docs](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) | [View Exports](https://github.com/presiannedyalkov/eco-balance-documentation/releases) |
+| Metric | Status | Details | What It Checks |
+|--------|--------|---------|---------------|
+| **Deployment** | [![Deploy](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) | [View Workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) | Builds and deploys the Docusaurus site to GitHub Pages. Runs on documentation changes. |
+| **Deployment Verification** | [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) | [View Tests](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) | Runs automated tests to verify the deployed site works correctly. Includes link checks and page load tests. |
+| **Documentation Export** | [![Export Docs](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) | [View Exports](https://github.com/presiannedyalkov/eco-balance-documentation/releases) | Generates PDF and EPUB versions of the documentation for offline reading. Runs on documentation changes. |
 
 ---
 
@@ -358,7 +358,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📅 Last Updated
 
-**November 2025** - Documentation version 2.0.0
+**November 2025** - Documentation version v2025-11
 
 **Status:** Exploration Phase - Actively exploring pathways forward
 

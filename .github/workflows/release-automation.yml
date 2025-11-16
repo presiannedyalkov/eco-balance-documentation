@@ -81,12 +81,29 @@ jobs:
       - name: Check for exported files
         id: exports
         run: |
-          if [ -d "exports" ] && [ -n "$(ls -A exports/*.{pdf,epub} 2>/dev/null)" ]; then
+          # Check if export files exist locally (they won't for monthly releases)
+          EPUB_FILES=$(find exports -name "*.epub" -type f 2>/dev/null | head -1 || true)
+          PDF_FILES=$(find exports -name "*.pdf" -type f 2>/dev/null | head -1 || true)
+          
+          if [ -n "$EPUB_FILES" ] && [ -f "$EPUB_FILES" ]; then
+            echo "has_epub=true" >> $GITHUB_OUTPUT
+            echo "Found EPUB: $EPUB_FILES"
+          else
+            echo "has_epub=false" >> $GITHUB_OUTPUT
+          fi
+          
+          if [ -n "$PDF_FILES" ] && [ -f "$PDF_FILES" ]; then
+            echo "has_pdf=true" >> $GITHUB_OUTPUT
+            echo "Found PDF: $PDF_FILES"
+          else
+            echo "has_pdf=false" >> $GITHUB_OUTPUT
+          fi
+          
+          if ([ -n "$EPUB_FILES" ] && [ -f "$EPUB_FILES" ]) || ([ -n "$PDF_FILES" ] && [ -f "$PDF_FILES" ]); then
             echo "has_exports=true" >> $GITHUB_OUTPUT
-            echo "Found export files"
           else
             echo "has_exports=false" >> $GITHUB_OUTPUT
-            echo "No export files found"
+            echo "Note: Export files are created separately in daily export releases (export-vYYYY-MM-DD tags)."
           fi
       
       - name: Create GitHub Release (Monthly Version)
@@ -95,12 +112,12 @@ jobs:
           # Monthly version: v2025-11 (from VERSION file, for releases)
           tag_name: "v${{ steps.version.outputs.version }}"
           name: "Release v${{ steps.version.outputs.version }} (Monthly)"
-          body: ${{ steps.release_notes.outputs.notes }}
+          body: |
+            ${{ steps.release_notes.outputs.notes }}
+            
+            **📥 Download PDF/EPUB:** PDF and EPUB exports are created in separate daily export releases. Look for releases tagged `export-vYYYY-MM-DD` in the [releases page](https://github.com/${{ github.repository }}/releases) for the latest exports.
           draft: false
           prerelease: false
-          files: |
-            exports/*.pdf
-            exports/*.epub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
