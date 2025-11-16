@@ -43,6 +43,22 @@ npm run start:local
 
 The documentation will be available at `http://localhost:3023`
 
+### Download Offline Versions
+
+**Export Formats Available:**
+- **📱 EPUB** - For e-readers (Kindle, Kobo, etc.)
+- **📄 PDF** - For printing and universal document sharing
+
+**Latest Version (v2025.11):**
+- Download from [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases/latest)
+- Or get from [GitHub Actions artifacts](https://github.com/presiannedyalkov/eco-balance-documentation/actions) (30-day retention)
+
+**Files:**
+- `eco-balance-documentation-v2025.11-[DATE].epub`
+- `eco-balance-documentation-v2025.11-[DATE].pdf`
+
+Exports are automatically generated on documentation updates and attached to releases.
+
 ### Building for Production
 
 ```bash
