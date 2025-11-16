@@ -580,6 +580,369 @@ graph TB
 
 ---
 
+## 🏗️ Architecture Option 3.5: Automated API-Driven (Zotero API + Source Extraction) ⚡
+
+**Best for:** Fully automated workflow, AI-generated content integration, server-based management
+
+**What this approach means:** You use Zotero's REST API (or a self-hosted alternative) to manage your citation database programmatically. When AI tools like Perplexity generate markdown with numbered citations `[1]`, `[2]`, you automatically extract those sources and import them into Zotero via API. When you edit documents and remove paragraphs, a script automatically cleans up unused references.
+
+**Key advantages:**
+- ✅ Fully automated - no manual Zotero GUI needed
+- ✅ Works with AI-generated content (Perplexity, Claude, etc.)
+- ✅ Server-based - can run on any machine with API access
+- ✅ Automatic reference cleanup when content is removed
+- ✅ Button/script-based workflow - one click to process
+
+**Requirements:**
+- Zotero account with API key (or self-hosted Zotero server)
+- Scripts to extract sources from markdown
+- Scripts to import sources via Zotero API
+- Scripts to clean up unused references
+
+### Process Flow
+
+**What this diagram shows:** The automated workflow from AI-generated markdown to cleaned, properly cited documents with sources automatically imported to Zotero.
+
+**Top section - AI content processing:**
+1. **AI Tool (Perplexity/Claude)** → Generates markdown with numbered citations like:
+   ```markdown
+   Forest restoration increases biodiversity [1].
+   Native species have 85% success rate [2].
+   
+   [1] Source title, Author, 2023. URL: https://...
+   [2] Another source, Author, 2024. URL: https://...
+   ```
+2. **Source Extraction Script** → Parses markdown and extracts:
+   - Citation numbers `[1]`, `[2]`
+   - Source details (title, author, URL, year)
+   - Maps citations to sources
+3. **Zotero API Import** → Script automatically:
+   - Checks if source already exists (by URL or title)
+   - Creates new Zotero item if not found
+   - Gets Zotero item key for each source
+   - Maps numbered citations to Zotero keys
+
+**Middle section - Document editing:**
+1. **User Edits Document** → You add/remove paragraphs with citations
+2. **Reference Cleanup Script** → When you run cleanup (button/script):
+   - Scans document for all citation numbers `[1]`, `[2]`, etc.
+   - Finds corresponding sources at bottom
+   - Removes sources that aren't cited anymore
+   - Renumbers remaining citations sequentially
+   - Updates citation numbers in text
+
+**Bottom section - Final output:**
+1. **Convert to BibTeX Keys** → Script converts numbered citations to BibTeX keys:
+   - `[1]` → `[@zotero-key-1]`
+   - `[2]` → `[@zotero-key-2]`
+2. **Pandoc Processing** → Pandoc with `--citeproc` formats citations
+3. **Final Document** → PDF/EPUB with properly formatted citations
+
+```mermaid
+flowchart TD
+    A["AI Tool<br/>(Perplexity/Claude)<br/>Generates markdown with [1], [2]"] --> B[Source Extraction Script<br/>parse-sources.js]
+    B --> C[Extract Sources<br/>Title, Author, URL, Year]
+    C --> D[Zotero API<br/>Check if exists]
+    D --> E{Source exists?}
+    E -->|No| F[Create Zotero Item<br/>via API]
+    E -->|Yes| G[Get Zotero Key]
+    F --> G
+    G --> H[Map Citations<br/>[1] → @zotero-key-1]
+    
+    I[User Edits Document<br/>Add/remove paragraphs] --> J[Reference Cleanup Script<br/>cleanup-references.js]
+    J --> K[Scan for Citations<br/>Find all [1], [2], etc.]
+    K --> L[Check Sources<br/>Which are still used?]
+    L --> M[Remove Unused Sources<br/>Renumber remaining]
+    M --> N[Update Citation Numbers<br/>In text and references]
+    
+    H --> O[Convert to BibTeX Keys<br/>[@zotero-key-1]"]
+    N --> O
+    O --> P[Pandoc --citeproc<br/>Format citations]
+    P --> Q[Final Document<br/>PDF/EPUB with citations]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#e8f5e9
+    style D fill:#f3e5f5
+    style E fill:#fce4ec
+    style F fill:#e0f2f1
+    style G fill:#fff9c4
+    style H fill:#f1f8e9
+    style I fill:#e3f2fd
+    style J fill:#fff4e1
+    style K fill:#e8f5e9
+    style L fill:#f3e5f5
+    style M fill:#fce4ec
+    style N fill:#e0f2f1
+    style O fill:#fff9c4
+    style P fill:#f1f8e9
+    style Q fill:#e3f2fd
+```
+
+**Example workflow:**
+1. Perplexity generates: "Forest restoration [1] increases biodiversity [2]"
+2. Run `node scripts/import-ai-sources.js document.md` → Extracts sources, imports to Zotero
+3. Edit document: Remove paragraph with `[2]`
+4. Run `node scripts/cleanup-references.js document.md` → Removes unused source, renumbers
+5. Run `node scripts/convert-to-bibtex.js document.md` → Converts `[1]` to `[@zotero-key-1]`
+6. Pandoc exports → Final PDF with formatted citations
+
+### System Architecture
+
+**What this diagram shows:** The components of the automated API-driven system, showing how scripts interact with Zotero API and process documents.
+
+**AI Content Input (top-left):**
+- **AI-Generated Markdown** → Content with numbered citations `[1]`, `[2]`
+- **Source List** → Sources listed at bottom with details
+
+**Source Processing (top-center):**
+- **parse-sources.js** → Extracts sources from markdown:
+  - Parses numbered citations `[1]`, `[2]`
+  - Extracts source details (title, author, URL, year)
+  - Handles various formats (URL, DOI, title-only, etc.)
+- **Zotero API Client** → Communicates with Zotero:
+  - `GET /items` - Search for existing items
+  - `POST /items` - Create new items
+  - `GET /items/{key}` - Get item details
+  - Uses API key for authentication
+
+**Zotero Server (center):**
+- **Zotero API** → REST API endpoint (zotero.org or self-hosted)
+- **Zotero Database** → Stores all your sources
+- **Item Keys** → Unique identifiers for each source
+
+**Document Processing (center-right):**
+- **Markdown Documents** → Your documents with numbered citations
+- **cleanup-references.js** → Cleans up references:
+  - Scans document for all citation numbers
+  - Identifies which sources are still used
+  - Removes unused sources
+  - Renumbers citations sequentially
+- **convert-to-bibtex.js** → Converts numbered to BibTeX format
+
+**Export (bottom):**
+- **Pandoc** → Processes citations and generates formatted output
+- **Final Documents** → PDF/EPUB with properly formatted citations
+
+**Automation Layer:**
+- **Button/CLI Interface** → One-click processing:
+  - `import-sources` - Import sources from AI content
+  - `cleanup-refs` - Clean up unused references
+  - `process-all` - Do both in sequence
+
+```mermaid
+graph TB
+    subgraph "AI Content Input"
+        A["AI-Generated Markdown<br/>[1], [2] citations<br/>Sources at bottom"]
+    end
+    
+    subgraph "Source Processing"
+        B[parse-sources.js<br/>Extract sources<br/>Parse citations]
+        C[Zotero API Client<br/>HTTP requests<br/>Authentication]
+    end
+    
+    subgraph "Zotero Server"
+        D[Zotero REST API<br/>zotero.org or<br/>self-hosted]
+        E[Zotero Database<br/>All sources<br/>Item keys]
+    end
+    
+    subgraph "Document Processing"
+        F[Markdown Documents<br/>With numbered citations]
+        G[cleanup-references.js<br/>Remove unused<br/>Renumber]
+        H[convert-to-bibtex.js<br/>[1] → @key]
+    end
+    
+    subgraph "Export"
+        I[Pandoc<br/>--citeproc]
+        J[Final Documents<br/>PDF/EPUB]
+    end
+    
+    subgraph "Automation"
+        K[Button/CLI<br/>import-sources<br/>cleanup-refs<br/>process-all]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> C
+    C --> B
+    B --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    K --> B
+    K --> G
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#e8f5e9
+    style D fill:#f3e5f5
+    style E fill:#fce4ec
+    style F fill:#e0f2f1
+    style G fill:#fff9c4
+    style H fill:#f1f8e9
+    style I fill:#e3f2fd
+    style J fill:#fff9c4
+    style K fill:#fce4ec
+```
+
+### Implementation Details
+
+**1. Source Extraction Script (`parse-sources.js`)**
+
+**What it does:**
+- Parses markdown to find numbered citations `[1]`, `[2]`, etc.
+- Extracts source list at bottom (various formats):
+  ```markdown
+  [1] Title, Author, 2023. URL: https://...
+  [2] Another Title. Author et al. 2024. https://...
+  ```
+- Extracts: title, author(s), year, URL, DOI (if available)
+- Maps citation numbers to source details
+
+**Example input:**
+```markdown
+Forest restoration [1] increases biodiversity [2].
+
+[1] Mediterranean Forest Restoration. Smith, J. 2023. https://example.com/restoration
+[2] Biodiversity in Restored Ecosystems. Doe, J. et al. 2024. https://example.com/biodiversity
+```
+
+**Example output:**
+```json
+{
+  "citations": {
+    "1": {
+      "title": "Mediterranean Forest Restoration",
+      "author": "Smith, J.",
+      "year": 2023,
+      "url": "https://example.com/restoration"
+    },
+    "2": {
+      "title": "Biodiversity in Restored Ecosystems",
+      "author": "Doe, J. et al.",
+      "year": 2024,
+      "url": "https://example.com/biodiversity"
+    }
+  }
+}
+```
+
+**2. Zotero API Import (`import-to-zotero.js`)**
+
+**What it does:**
+- For each extracted source:
+  - Checks if source exists in Zotero (search by URL or title)
+  - If not found, creates new Zotero item via API
+  - Gets Zotero item key
+  - Maps citation number to Zotero key
+
+**Zotero API endpoints:**
+- `GET /users/{userID}/items?q={query}` - Search items
+- `POST /users/{userID}/items` - Create item
+- `GET /users/{userID}/items/{itemKey}` - Get item details
+
+**Example API call:**
+```javascript
+// Check if source exists
+GET https://api.zotero.org/users/12345/items?q=url:https://example.com/restoration
+
+// Create new item if not found
+POST https://api.zotero.org/users/12345/items
+{
+  "itemType": "webpage",
+  "title": "Mediterranean Forest Restoration",
+  "creators": [{"creatorType": "author", "firstName": "J.", "lastName": "Smith"}],
+  "date": "2023",
+  "url": "https://example.com/restoration"
+}
+```
+
+**3. Reference Cleanup Script (`cleanup-references.js`)**
+
+**What it does:**
+- Scans document for all citation numbers `[1]`, `[2]`, etc.
+- Finds source list at bottom
+- Identifies which sources are still cited
+- Removes unused sources
+- Renumbers citations sequentially (1, 2, 3...)
+- Updates citation numbers in text
+
+**Example:**
+```markdown
+# Before cleanup
+Forest restoration [1] increases biodiversity [2].
+Native species [3] are important.
+
+[1] Source 1
+[2] Source 2 (removed paragraph, this is unused)
+[3] Source 3
+```
+
+```markdown
+# After cleanup
+Forest restoration [1] increases biodiversity.
+Native species [2] are important.
+
+[1] Source 1
+[2] Source 3
+```
+
+**4. Button/CLI Interface**
+
+**Options:**
+- **VS Code Extension** → Button in editor toolbar
+- **CLI Script** → `node scripts/process-document.js document.md`
+- **GitHub Action** → Automatic processing on commit
+- **Web Interface** → Simple HTML page with buttons
+
+**Example CLI:**
+```bash
+# Import sources from AI content
+node scripts/import-ai-sources.js document.md
+
+# Clean up unused references
+node scripts/cleanup-references.js document.md
+
+# Do both
+node scripts/process-document.js document.md --import --cleanup
+```
+
+### Zotero API Setup
+
+**Option 1: Zotero.org API (Cloud)**
+- Create account at zotero.org
+- Generate API key: Settings → Feeds/API → Create new private key
+- Use API endpoint: `https://api.zotero.org/users/{userID}/`
+- Free tier: 30,000 requests/day
+
+**Option 2: Self-Hosted Zotero Server**
+- Install Zotero Server (open-source)
+- Run on your own server
+- Full control, no rate limits
+- More setup required
+
+**Option 3: Alternative: Custom Database**
+- Build your own citation database
+- Use SQLite/PostgreSQL
+- Create REST API wrapper
+- Maximum flexibility
+
+### What Each Component Does
+
+| Component | Purpose | Input | Output |
+|-----------|---------|-------|--------|
+| **parse-sources.js** | Extract sources from markdown | AI-generated markdown | Source list (JSON) |
+| **Zotero API Client** | Communicate with Zotero | Source details | Zotero item keys |
+| **import-to-zotero.js** | Import sources to Zotero | Source list | Zotero items created |
+| **cleanup-references.js** | Remove unused references | Markdown with citations | Cleaned markdown |
+| **convert-to-bibtex.js** | Convert numbered to BibTeX | Markdown with [1], [2] | Markdown with [@key] |
+| **Pandoc** | Format citations | Markdown + BibTeX | PDF/EPUB |
+
+---
+
 ## 🏗️ Architecture Option 4: Hybrid (Zotero → BibTeX → Custom Scripts) ⭐
 
 **Best for:** Best of all worlds - recommended approach
