@@ -1,7 +1,15 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-const BASE_URL = process.env.BASE_URL || 'https://presiannedyalkov.github.io/eco-balance-documentation';
+// Use custom domain if set, otherwise fallback to GitHub Pages URL
+const BASE_URL = process.env.BASE_URL || process.env.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io/eco-balance-documentation';
+
+/**
+ * Helper function to check if URL is valid (custom domain or GitHub Pages)
+ */
+function isValidDeploymentUrl(url) {
+  return url.includes('docs.eco-balance.cc') || url.includes('eco-balance-documentation');
+}
 
 /**
  * Deployment verification tests
@@ -30,8 +38,10 @@ test.describe('Deployment Verification', () => {
       await page.waitForLoadState('networkidle', { timeout: 30000 });
     }
     
-    // Verify we're on the correct domain
-    expect(finalUrl).toContain('eco-balance-documentation');
+    // Verify we're on the correct domain (either custom domain or GitHub Pages)
+    const isCustomDomain = finalUrl.includes('docs.eco-balance.cc');
+    const isGitHubPages = finalUrl.includes('eco-balance-documentation');
+    expect(isCustomDomain || isGitHubPages).toBeTruthy();
     
     await expect(page).toHaveTitle(/Eco Balance/i, { timeout: 10000 });
     
@@ -44,9 +54,9 @@ test.describe('Deployment Verification', () => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
     
-    // Verify we're on the correct page
+    // Verify we're on the correct page (custom domain or GitHub Pages)
     const currentUrl = page.url();
-    expect(currentUrl).toContain('eco-balance-documentation');
+    expect(isValidDeploymentUrl(currentUrl)).toBeTruthy();
     
     // Check navbar is visible (might be in different locations)
     // Try multiple selectors as Docusaurus might use different classes
@@ -251,7 +261,7 @@ test.describe('Deployment Verification', () => {
     
     // Verify we're on the correct page first
     const initialUrl = page.url();
-    expect(initialUrl).toContain('eco-balance-documentation');
+        expect(isValidDeploymentUrl(initialUrl)).toBeTruthy();
     
     // Find all internal links on the page
     // Filter out external links and anchors
@@ -329,7 +339,7 @@ test.describe('Deployment Verification', () => {
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
     
     // Verify we're on the correct page
-    expect(page.url()).toContain('eco-balance-documentation');
+    expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Check if search is available (Docusaurus search)
     // Search might be in navbar or as a button
@@ -352,7 +362,7 @@ test.describe('Deployment Verification', () => {
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
     
     // Verify we're on the correct page
-    expect(page.url()).toContain('eco-balance-documentation');
+    expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Check that page is still usable on mobile (try multiple selectors)
     const hasContent = await Promise.race([
@@ -377,7 +387,7 @@ test.describe('Deployment Verification', () => {
     
     // Flow 1: Navigate from homepage to a key document
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
-    expect(page.url()).toContain('eco-balance-documentation');
+    expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Try to find and click Executive Summary link
     const execSummaryLink = page.locator('a[href*="executive-summary"]').first();
@@ -402,14 +412,14 @@ test.describe('Deployment Verification', () => {
     if (await resourcesLink.count() > 0) {
       await resourcesLink.click({ timeout: 10000 });
       await page.waitForLoadState('networkidle', { timeout: 15000 });
-      expect(page.url()).toContain('eco-balance-documentation');
+      expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     }
   });
 
   test('no broken images', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
-    expect(page.url()).toContain('eco-balance-documentation');
+    expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Wait a bit more for images to load
     await page.waitForTimeout(2000);
@@ -440,7 +450,7 @@ test.describe('Deployment Verification', () => {
   test('footer links work', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
-    expect(page.url()).toContain('eco-balance-documentation');
+    expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Scroll to footer
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
@@ -463,7 +473,7 @@ test.describe('Deployment Verification', () => {
           try {
             await firstLink.click({ timeout: 10000 });
             await page.waitForLoadState('networkidle', { timeout: 15000 });
-            expect(page.url()).toContain('eco-balance-documentation');
+            expect(isValidDeploymentUrl(page.url())).toBeTruthy();
           } catch (error) {
             console.warn(`Footer link ${href} failed:`, error.message);
             // Don't fail test for footer link issues
