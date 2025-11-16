@@ -123,100 +123,41 @@ jobs:
             body = body.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
             let updated = false;
             
-            // 1. Auto-fill Type of Change checkbox
+            // 1. Add simple text-based classification (pragmatic approach - more reliable than checkbox manipulation)
             if (checkboxIndex >= 0) {
-              const checkboxes = [
-                'Feature',
-                'Bug fix',
-                'Documentation',
-                'Refactoring',
-                'Other (please describe)'
-              ];
+              const classifications = {
+                0: 'New feature',
+                1: 'Bug fix',
+                2: 'Documentation',
+                3: 'Refactoring',
+                4: 'Other (Chore)'
+              };
               
-              const targetCheckboxText = checkboxes[checkboxIndex];
-              console.log(`Target checkbox: ${targetCheckboxText} (index: ${checkboxIndex})`);
+              const classification = classifications[checkboxIndex] || 'Unknown';
+              const classificationText = `**🤖 Auto-classified:** Based on branch name \`${branchName}\`, this PR is classified as: **${classification}**`;
               
-              // First, uncheck all other checkboxes in the Type of Change section
-              for (let i = 0; i < checkboxes.length; i++) {
-                const checkboxText = checkboxes[i];
-                if (i !== checkboxIndex) {
-                  // Uncheck this checkbox if it's checked
-                  const checkedPattern = new RegExp(
-                    '-\\s*\\[x\\]\\s*' + checkboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*(<!--[^>]*-->)?',
-                    'g'
-                  );
-                  if (body.match(checkedPattern)) {
-                    body = body.replace(checkedPattern, (match) => {
-                      return match.replace(/\[x\]/, '[ ]');
-                    });
-                    updated = true;
-                    console.log(`✅ Unchecked: ${checkboxText}`);
-                  }
-                }
-              }
-              
-              // Now check the target checkbox if it's not already checked
-              const alreadyChecked = body.includes('[x] ' + targetCheckboxText) || 
-                                    body.includes('[x]' + targetCheckboxText) ||
-                                    body.match(new RegExp('-\\s*\\[x\\]\\s*' + targetCheckboxText));
-              
-              if (!alreadyChecked) {
-                // Find and check the target checkbox - use line-by-line approach for reliability
-                const escapedText = targetCheckboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                const searchPattern = '- [ ] ' + targetCheckboxText;
-                
-                console.log(`Looking for pattern: ${searchPattern}`);
-                console.log(`Pattern exists: ${body.includes(searchPattern)}`);
-                
-                if (body.includes(searchPattern)) {
-                  // Split into lines and find the matching line
-                  const beforeReplace = body;
-                  const lines = body.split('\n');
-                  let found = false;
-                  
-                  for (let i = 0; i < lines.length; i++) {
-                    // Check if this line contains the unchecked checkbox pattern
-                    if (lines[i].includes(searchPattern)) {
-                      // Make sure it's not already checked
-                      if (!lines[i].includes('[x] ' + targetCheckboxText) && !lines[i].includes('[x]' + targetCheckboxText)) {
-                        const originalLine = lines[i];
-                        // Replace [ ] with [x] in this line
-                        lines[i] = lines[i].replace(/\[ ?\]/, '[x]');
-                        found = true;
-                        console.log(`Found line ${i}: ${originalLine.substring(0, 60)}...`);
-                        console.log(`Replaced to: ${lines[i].substring(0, 60)}...`);
-                        break;
-                      } else {
-                        console.log(`Line ${i} already has checkbox checked: ${lines[i].substring(0, 60)}...`);
-                      }
-                    }
-                  }
-                  
-                  if (found) {
-                    body = lines.join('\n');
-                    const changed = beforeReplace !== body;
-                    console.log(`Body changed: ${changed}`);
-                    console.log(`Before length: ${beforeReplace.length}, After length: ${body.length}`);
-                    console.log(`Before starts with: ${beforeReplace.substring(0, 50)}`);
-                    console.log(`After starts with: ${body.substring(0, 50)}`);
-                    if (changed) {
-                      updated = true;
-                      console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
-                      console.log(`Updated flag set to: ${updated}`);
-                    } else {
-                      console.log(`⚠️  Line replaced but body didn't change - possible issue`);
-                      // Force update anyway if we found and replaced the line
-                      updated = true;
-                      console.log(`⚠️  Forcing updated=true since line was replaced`);
-                    }
-                  } else {
-                    console.log(`⚠️  Found pattern but couldn't find matching line`);
-                  }
+              // Check if classification already exists
+              if (!body.includes('**🤖 Auto-classified:**')) {
+                // Add classification right after "Type of Change" heading
+                const typeOfChangePattern = /(## Type of Change\s*\n)/;
+                if (typeOfChangePattern.test(body)) {
+                  body = body.replace(typeOfChangePattern, `$1\n${classificationText}\n\n`);
+                  updated = true;
+                  console.log(`✅ Added classification: ${classification}`);
                 } else {
-                  console.log(`⚠️  Could not find unchecked checkbox pattern: ${searchPattern}`);
+                  // Fallback: add at the beginning if pattern not found
+                  body = `${classificationText}\n\n---\n\n${body}`;
+                  updated = true;
+                  console.log(`✅ Added classification at top: ${classification}`);
                 }
               } else {
-                console.log(`ℹ️  Target checkbox already checked: ${targetCheckboxText}`);
+                // Update existing classification
+                const existingPattern = /\*\*🤖 Auto-classified:\*\*[^\n]*/;
+                if (existingPattern.test(body)) {
+                  body = body.replace(existingPattern, classificationText.replace(/\*\*/g, '**'));
+                  updated = true;
+                  console.log(`✅ Updated classification: ${classification}`);
+                }
               }
             }
             
