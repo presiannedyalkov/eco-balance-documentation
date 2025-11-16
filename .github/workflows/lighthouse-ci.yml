@@ -45,7 +45,7 @@ jobs:
         with:
           urls: |
             https://docs.eco-balance.cc/
-            https://docs.eco-balance.cc/docs/intro
+            https://docs.eco-balance.cc/vision-strategy/executive-summary
           uploadArtifacts: true
           temporaryPublicStorage: true
           configPath: .lighthouserc.json
