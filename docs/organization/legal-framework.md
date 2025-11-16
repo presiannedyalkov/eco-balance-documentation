@@ -1,6 +1,6 @@
 ---
 id: legal-framework
-title: Legal Framework
+title: "Legal Framework"
 sidebar_position: 4
 ---
 

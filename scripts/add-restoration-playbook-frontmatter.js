@@ -7,9 +7,7 @@ const RESTORATION_PLAYBOOK_DIR = path.join(__dirname, '..', 'docs', 'restoration
  * Generate frontmatter for restoration playbook files
  */
 function generateFrontmatter(filename, relativePath) {
-  // Extract category and file info
-  const parts = relativePath.split('/');
-  const category = parts[0] || '';
+  // Extract file info
   const basename = path.basename(filename, '.md');
   
   // Generate title from filename

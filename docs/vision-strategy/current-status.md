@@ -1,6 +1,6 @@
 ---
 id: current-status
-title: Current Status & Assessment
+title: "Current Status & Assessment"
 sidebar_position: 4
 ---
 

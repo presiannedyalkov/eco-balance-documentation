@@ -1,6 +1,6 @@
 ---
 id: expansion-strategy
-title: Expansion Strategy
+title: "Expansion Strategy"
 sidebar_position: 1
 ---
 

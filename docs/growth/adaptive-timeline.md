@@ -1,6 +1,6 @@
 ---
 id: adaptive-timeline
-title: Adaptive Timeline
+title: "Adaptive Timeline"
 sidebar_position: 2
 ---
 

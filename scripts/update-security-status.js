@@ -93,7 +93,9 @@ async function getCodeQLAlerts() {
 
     return counts;
   } catch (error) {
-    console.warn('⚠️  Could not fetch CodeQL alerts:', error.message);
+    // Sanitize error message to prevent log injection
+    const sanitizedError = String(error.message || 'Unknown error').replace(/[\r\n]/g, ' ').substring(0, 200);
+    console.warn('⚠️  Could not fetch CodeQL alerts:', sanitizedError);
     return { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
   }
 }
@@ -122,7 +124,9 @@ async function getDependabotAlerts() {
 
     return counts;
   } catch (error) {
-    console.warn('⚠️  Could not fetch Dependabot alerts:', error.message);
+    // Sanitize error message to prevent log injection
+    const sanitizedError = String(error.message || 'Unknown error').replace(/[\r\n]/g, ' ').substring(0, 200);
+    console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizedError);
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }

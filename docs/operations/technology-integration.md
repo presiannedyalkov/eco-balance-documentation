@@ -1,6 +1,6 @@
 ---
 id: technology-integration
-title: Technology Integration
+title: "Technology Integration"
 sidebar_position: 2
 ---
 

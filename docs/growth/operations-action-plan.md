@@ -1,6 +1,6 @@
 ---
 id: operations-action-plan
-title: Operations Action Plan
+title: "Operations Action Plan"
 sidebar_position: 3
 ---
 

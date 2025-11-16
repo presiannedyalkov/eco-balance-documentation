@@ -1,6 +1,6 @@
 ---
 id: marketing-communications
-title: Marketing & Communications
+title: "Marketing & Communications"
 sidebar_position: 1
 ---
 

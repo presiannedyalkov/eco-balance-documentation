@@ -1,6 +1,6 @@
 ---
 id: executive-summary
-title: Executive Summary
+title: "Executive Summary"
 sidebar_position: 1
 ---
 

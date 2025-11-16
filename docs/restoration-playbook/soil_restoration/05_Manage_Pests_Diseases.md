@@ -1,6 +1,6 @@
 ---
 id: restoration-playbook-soil_restoration-05_Manage_Pests_Diseases
-title: Manage Pests Diseases
+title: "Manage Pests Diseases"
 sidebar_position: 5
 ---
 

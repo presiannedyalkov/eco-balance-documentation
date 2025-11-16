@@ -1,6 +1,6 @@
 ---
 id: restoration-playbook-community_engagement-02_Communicate_Plans
-title: Communicate Plans
+title: "Communicate Plans"
 sidebar_position: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: tiny-house-infrastructure
-title: Tiny House Infrastructure
+title: "Tiny House Infrastructure"
 sidebar_position: 5
 ---
 

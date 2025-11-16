@@ -1,6 +1,6 @@
 ---
 id: organizational-structure
-title: Organizational Structure
+title: "Organizational Structure"
 sidebar_position: 1
 ---
 

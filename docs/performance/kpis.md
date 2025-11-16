@@ -1,6 +1,6 @@
 ---
 id: kpis
-title: Key Performance Indicators
+title: "Key Performance Indicators"
 sidebar_position: 2
 ---
 

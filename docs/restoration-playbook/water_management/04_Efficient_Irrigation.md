@@ -1,6 +1,6 @@
 ---
 id: restoration-playbook-water_management-04_Efficient_Irrigation
-title: Efficient Irrigation
+title: "Efficient Irrigation"
 sidebar_position: 4
 ---
 

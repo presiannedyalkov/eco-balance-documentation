@@ -1,6 +1,6 @@
 ---
 id: restoration-playbook-community_engagement-06_Maintain_Communication
-title: Maintain Communication
+title: "Maintain Communication"
 sidebar_position: 6
 ---
 

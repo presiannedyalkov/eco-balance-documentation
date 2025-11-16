@@ -39,8 +39,24 @@ function fixFrontmatter(content) {
     const [, indent, key, value] = keyValueMatch;
     const trimmedValue = value.trim();
     
+    // Skip if already quoted
+    if ((trimmedValue.startsWith('"') && trimmedValue.endsWith('"')) ||
+        (trimmedValue.startsWith("'") && trimmedValue.endsWith("'"))) {
+      fixedLines.push(line);
+      continue;
+    }
+    
+    // Always quote title values (they often have special characters)
     // Check if value needs quoting
-    const needsQuoting = 
+    const isTitle = key.trim() === 'title';
+    const hasSpaces = trimmedValue.includes(' ');
+    const isVersionNumber = /^\d+\.\d+(\.\d+)?$/.test(trimmedValue); // e.g., 1.0, 2.0.0
+    const isNumber = /^\d+$/.test(trimmedValue); // e.g., 1, 42
+    const isBoolean = trimmedValue === 'true' || trimmedValue === 'false' || trimmedValue === 'null';
+    const isEmpty = trimmedValue === '' || trimmedValue.length === 0;
+    
+    // Check for special characters
+    const hasSpecialChars = 
       trimmedValue.includes(':') ||
       trimmedValue.includes("'") ||
       trimmedValue.includes('"') ||
@@ -53,22 +69,32 @@ function fixFrontmatter(content) {
       trimmedValue.includes('*') ||
       trimmedValue.includes('#') ||
       trimmedValue.includes('!') ||
-      trimmedValue.startsWith('@') ||
-      /^\d+$/.test(trimmedValue) === false && trimmedValue.includes(' ') ||
-      trimmedValue === 'true' ||
-      trimmedValue === 'false' ||
-      trimmedValue === 'null';
+      trimmedValue.includes('@') ||
+      trimmedValue.includes('/') ||
+      trimmedValue.includes('\\') ||
+      trimmedValue.includes('`') ||
+      trimmedValue.includes('$') ||
+      trimmedValue.includes('%') ||
+      trimmedValue.includes('^') ||
+      trimmedValue.includes('+') ||
+      trimmedValue.includes('=') ||
+      trimmedValue.includes('?') ||
+      trimmedValue.includes('<') ||
+      trimmedValue.includes('>') ||
+      trimmedValue.includes(',') ||
+      (trimmedValue.includes('.') && !isVersionNumber);
     
-    // Skip if already quoted
-    if ((trimmedValue.startsWith('"') && trimmedValue.endsWith('"')) ||
-        (trimmedValue.startsWith("'") && trimmedValue.endsWith("'"))) {
-      fixedLines.push(line);
-      continue;
-    }
+    // Quote if: title, has spaces (unless it's a number), has special chars, is boolean/null, or is empty
+    const needsQuoting = 
+      isTitle ||
+      isEmpty ||
+      isBoolean ||
+      (hasSpaces && !isNumber && !isVersionNumber) ||
+      (hasSpecialChars && !isNumber && !isVersionNumber);
     
     if (needsQuoting) {
       // Escape quotes and wrap in double quotes
-      const escapedValue = trimmedValue.replace(/"/g, '\\"');
+      const escapedValue = trimmedValue.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
       fixedLines.push(`${indent}${key}: "${escapedValue}"`);
     } else {
       fixedLines.push(line);

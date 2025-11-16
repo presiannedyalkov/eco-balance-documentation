@@ -1,6 +1,6 @@
 ---
 id: funding-strategy
-title: Funding Strategy
+title: "Funding Strategy"
 sidebar_position: 3
 ---
 

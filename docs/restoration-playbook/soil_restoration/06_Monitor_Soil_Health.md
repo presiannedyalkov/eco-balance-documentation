@@ -1,6 +1,6 @@
 ---
 id: restoration-playbook-soil_restoration-06_Monitor_Soil_Health
-title: Monitor Soil Health
+title: "Monitor Soil Health"
 sidebar_position: 6
 ---
 

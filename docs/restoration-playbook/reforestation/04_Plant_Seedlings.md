@@ -1,6 +1,6 @@
 ---
 id: restoration-playbook-reforestation-04_Plant_Seedlings
-title: Plant Seedlings
+title: "Plant Seedlings"
 sidebar_position: 4
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: restoration-playbook-site_selection-04_Consider_Accessibility
-title: Consider Accessibility
+title: "Consider Accessibility"
 sidebar_position: 4
 ---
 
