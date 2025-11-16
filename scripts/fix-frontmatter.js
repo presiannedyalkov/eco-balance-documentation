@@ -48,14 +48,13 @@ function fixFrontmatter(content) {
     
     // Always quote all values to prevent parsing errors
     // This is the safest approach - YAML parsers can be finicky
-    // Only exception: simple numbers and booleans that are already valid YAML
-    const isSimpleNumber = /^-?\d+$/.test(trimmedValue); // e.g., 1, 42, -5
-    const isSimpleFloat = /^-?\d+\.\d+$/.test(trimmedValue); // e.g., 1.0, 3.14
-    const isBoolean = trimmedValue === 'true' || trimmedValue === 'false' || trimmedValue === 'null';
+    // Only exception: simple integers (not floats, as they might have precision issues)
+    const isSimpleInteger = /^-?\d+$/.test(trimmedValue); // e.g., 1, 42, -5, 0
     const isEmpty = trimmedValue === '' || trimmedValue.length === 0;
     
-    // Quote everything except simple numbers, floats, and booleans
-    const needsQuoting = !isSimpleNumber && !isSimpleFloat && !isBoolean && !isEmpty;
+    // Quote everything except simple integers and empty values
+    // Even booleans and null should be quoted for maximum compatibility
+    const needsQuoting = !isSimpleInteger && !isEmpty;
     
     if (needsQuoting) {
       // Escape quotes and wrap in double quotes
