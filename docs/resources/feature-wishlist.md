@@ -561,12 +561,11 @@ These personas are tools to help real people in these roles. AI can assist with 
 ### Interactive Community Platform
 **Status:** Planned
 **Priority:** High (Phase 3)
-**Related:** PUBLIC_PLATFORM_PLAN.md
 
 **Description:**
 Full implementation of the public platform with AI chatbot, inline commenting, community feedback system, and moderation pipeline as detailed in the Public Platform Plan.
 
-**See:** `_process/planning/PUBLIC_PLATFORM_PLAN.md` for complete specification
+**Note:** Detailed specification available in internal planning documents.
 
 ---
 
@@ -777,9 +776,8 @@ Real-time public dashboard showing project impact metrics and progress toward go
 ---
 
 **Related Documents:**
-- [ROADMAP.md](ROADMAP.md) - Phased project timeline
-- [PUBLIC_PLATFORM_PLAN.md](_process/planning/PUBLIC_PLATFORM_PLAN.md) - Detailed platform specification
-- [00_Eco_Balance_Hub.md](00_Eco_Balance_Hub.md) - Project hub and navigation
+- [Roadmap](/resources/roadmap) - Phased project timeline
+- [Project Hub](/) - Project hub and navigation
 
 ---
 
