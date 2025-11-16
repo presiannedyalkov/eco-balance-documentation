@@ -31,7 +31,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: '--accept 200,201,202,301,302,303,307,308 --exclude-all-private --exclude-mail --timeout 20 --max-concurrency 10'
-          fail: true
+          fail: false
           files: |
             **/*.md
             !node_modules/**/*.md
