@@ -6,22 +6,28 @@
 
 ## Current Configuration
 
-- **Host:** `http://192.168.178.35:7777` (local network)
+- **Host:** `https://search.eco-balance.cc` (public via Cloudflare)
 - **Search Key:** `e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489`
 - **Index:** `eco-balance-docs`
+
+✅ **Meilisearch is now publicly accessible** at https://search.eco-balance.cc/
 
 ---
 
 ## For Local Development
 
-The configuration is already set up for local development. Just run:
+If you want to use local Meilisearch during development:
 
-```bash
-npm install
-npm start
-```
+1. Set environment variable:
+   ```bash
+   export MEILISEARCH_HOST=http://192.168.178.35:7777
+   npm start
+   ```
 
-The search will connect to your local Meilisearch instance.
+2. Or create `.env` file:
+   ```
+   MEILISEARCH_HOST=http://192.168.178.35:7777
+   ```
 
 ---
 
@@ -29,22 +35,24 @@ The search will connect to your local Meilisearch instance.
 
 When deploying to production, you'll need to:
 
-### 1. Expose Meilisearch via Cloudflare
+### 1. ✅ Meilisearch Exposed via Cloudflare
 
-1. Add subdomain to Cloudflare (e.g., `search.yourdomain.com`)
-2. Point it to `192.168.178.35:7777`
-3. Enable Cloudflare Proxy (orange cloud)
-4. Configure rate limiting (see `MEILISEARCH_SECURITY.md`)
+**Already configured!** Meilisearch is accessible at:
+- **Public URL:** `https://search.eco-balance.cc`
+- **Cloudflare Proxy:** Enabled (orange cloud)
+- **HTTPS:** Enabled via Cloudflare
 
-### 2. Update GitHub Secrets
+### 2. (Optional) Update GitHub Secrets
 
-Add to GitHub Repository Secrets:
-- `MEILISEARCH_HOST` = `https://search.yourdomain.com`
+If you want to override the default host:
+- `MEILISEARCH_HOST` = `https://search.eco-balance.cc`
 - `MEILISEARCH_SEARCH_KEY` = `e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489`
 
-### 3. Update Deploy Workflow
+**Note:** The configuration already defaults to `https://search.eco-balance.cc`, so this is optional.
 
-The deploy workflow will automatically use these environment variables.
+### 3. Deploy Workflow
+
+The deploy workflow will automatically use the configured host.
 
 ---
 
@@ -92,24 +100,32 @@ The deploy workflow will automatically use these environment variables.
 
 ### Search not working?
 
-1. **Check Meilisearch is running:**
+1. **Check Meilisearch is accessible:**
    ```bash
-   curl http://192.168.178.35:7777/health
+   curl https://search.eco-balance.cc/health
+   # Should return: {"status":"Meilisearch is running"}
    ```
 
 2. **Verify search key works:**
    ```bash
-   curl -X GET "http://192.168.178.35:7777/keys" \
-     -H "Authorization: Bearer e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489"
+   curl -X POST "https://search.eco-balance.cc/indexes/eco-balance-docs/search" \
+     -H "Authorization: Bearer e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489" \
+     -H "Content-Type: application/json" \
+     --data-binary '{"q": "test"}'
    ```
 
-3. **Check browser console** for errors
+3. **Check browser console** for errors (CORS, network, etc.)
 
 4. **Verify index exists:**
    ```bash
-   curl -X GET "http://192.168.178.35:7777/indexes" \
-     -H "Authorization: Bearer kYsKXHMJFnCqAumextwGjS"
+   curl -X GET "https://search.eco-balance.cc/indexes" \
+     -H "Authorization: Bearer e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489"
    ```
+
+5. **Check Cloudflare settings:**
+   - Ensure proxy is enabled (orange cloud)
+   - Check for any firewall rules blocking requests
+   - Verify SSL/TLS is set to "Full" or "Full (strict)"
 
 ---
 

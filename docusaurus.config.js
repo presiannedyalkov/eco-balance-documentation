@@ -58,9 +58,9 @@ const config = {
     [
       require.resolve('./src/plugins/meilisearch-plugin.js'),
       {
-        // For local development: http://192.168.178.35:7777
-        // For production: Set MEILISEARCH_HOST to your Cloudflare subdomain
-        host: process.env.MEILISEARCH_HOST || 'http://192.168.178.35:7777',
+        // Production: https://search.eco-balance.cc (via Cloudflare)
+        // Local development: Set MEILISEARCH_HOST to local network address
+        host: process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc',
         // Search-only key (safe to use in frontend)
         // Set via environment variable: MEILISEARCH_SEARCH_KEY
         searchKey: process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489',

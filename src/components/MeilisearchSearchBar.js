@@ -17,11 +17,12 @@ function MeilisearchSearchBar() {
   const location = useLocation();
 
   // Get config from environment or window (set at build time)
-  // Defaults to local network Meilisearch for development
+  // Production: https://search.eco-balance.cc (via Cloudflare)
+  // Local development: Set MEILISEARCH_HOST to local network address
   const meilisearchHost = 
     typeof window !== 'undefined' 
-      ? (window.MEILISEARCH_HOST || process.env.MEILISEARCH_HOST || 'http://192.168.178.35:7777')
-      : (process.env.MEILISEARCH_HOST || 'http://192.168.178.35:7777');
+      ? (window.MEILISEARCH_HOST || process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc')
+      : (process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc');
   const searchKey = 
     typeof window !== 'undefined'
       ? (window.MEILISEARCH_SEARCH_KEY || process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489')
