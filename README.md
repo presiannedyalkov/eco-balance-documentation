@@ -8,6 +8,44 @@
 
 ---
 
+## 📊 Quality Dashboard
+
+> **Note:** Click on any badge to view detailed results and reports. Lighthouse scores are updated after each audit run and displayed in the workflow summary.
+
+### Performance & Accessibility
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **Lighthouse Performance** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+| **Lighthouse Accessibility** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+| **Lighthouse Best Practices** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+| **Lighthouse SEO** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+
+### Security & Code Quality
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **CodeQL Security** | [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml) | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) |
+| **Dependabot** | [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) | [View Updates](https://github.com/presiannedyalkov/eco-balance-documentation/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies) |
+
+### Documentation Quality
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **Link Checking** | [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) |
+| **Spell Check** | [![Spell Check](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) |
+| **Markdown Linting** | [![Lint Markdown](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) |
+
+### Build & Deployment
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **Deployment** | [![Deploy](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) | [View Workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) |
+| **Deployment Verification** | [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) | [View Tests](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) |
+| **Documentation Export** | [![Export Docs](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) | [View Exports](https://github.com/presiannedyalkov/eco-balance-documentation/releases) |
+
+---
+
 ## 📖 About This Repository
 
 This repository contains the complete documentation for the **Eco Balance** project - an initiative to restore degraded ecosystems in Europe through evidence-based, community-engaged, financially sustainable environmental restoration.
@@ -315,11 +353,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **🌐 Live Documentation:** [View Documentation](https://docs.eco-balance.cc/) - Public documentation website
 - **📦 Repository:** [GitHub Repository](https://github.com/presiannedyalkov/eco-balance-documentation)
 - **📚 Restoration Playbook:** [Restoration Playbook Template](/restoration-playbook/README) - Template for ecological restoration projects
-
-## 🚀 Build Status
-
-- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml)
-- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml)
 
 ---
 

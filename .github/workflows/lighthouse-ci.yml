@@ -51,10 +51,152 @@ jobs:
           configPath: .lighthouserc.json
         continue-on-error: true
       
+      - name: Extract Lighthouse scores
+        if: always()
+        id: lighthouse_scores
+        run: |
+          # Install jq if not available
+          if ! command -v jq &> /dev/null; then
+            sudo apt-get update && sudo apt-get install -y jq
+          fi
+          
+          # Try to find Lighthouse results in common locations
+          SCORES_FILE=""
+          if [ -f ".lighthouseci/assertion-results.json" ]; then
+            SCORES_FILE=".lighthouseci/assertion-results.json"
+          elif [ -f ".lighthouseci/manifest.json" ]; then
+            SCORES_FILE=".lighthouseci/manifest.json"
+          fi
+          
+          if [ -n "$SCORES_FILE" ] && [ -f "$SCORES_FILE" ]; then
+            # Try to extract scores - format may vary
+            PERFORMANCE=$(jq -r '.[0].assertions[]? | select(.id == "categories:performance") | .actual // empty' "$SCORES_FILE" 2>/dev/null || echo "")
+            ACCESSIBILITY=$(jq -r '.[0].assertions[]? | select(.id == "categories:accessibility") | .actual // empty' "$SCORES_FILE" 2>/dev/null || echo "")
+            BEST_PRACTICES=$(jq -r '.[0].assertions[]? | select(.id == "categories:best-practices") | .actual // empty' "$SCORES_FILE" 2>/dev/null || echo "")
+            SEO=$(jq -r '.[0].assertions[]? | select(.id == "categories:seo") | .actual // empty' "$SCORES_FILE" 2>/dev/null || echo "")
+            
+            # Convert to percentage if we got values
+            if [ -n "$PERFORMANCE" ] && [ "$PERFORMANCE" != "null" ] && [ "$PERFORMANCE" != "" ]; then
+              PERF_PCT=$(awk "BEGIN {printf \"%.0f\", $PERFORMANCE * 100}")
+              echo "performance=$PERF_PCT" >> $GITHUB_OUTPUT
+            else
+              echo "performance=N/A" >> $GITHUB_OUTPUT
+            fi
+            
+            if [ -n "$ACCESSIBILITY" ] && [ "$ACCESSIBILITY" != "null" ] && [ "$ACCESSIBILITY" != "" ]; then
+              ACC_PCT=$(awk "BEGIN {printf \"%.0f\", $ACCESSIBILITY * 100}")
+              echo "accessibility=$ACC_PCT" >> $GITHUB_OUTPUT
+            else
+              echo "accessibility=N/A" >> $GITHUB_OUTPUT
+            fi
+            
+            if [ -n "$BEST_PRACTICES" ] && [ "$BEST_PRACTICES" != "null" ] && [ "$BEST_PRACTICES" != "" ]; then
+              BP_PCT=$(awk "BEGIN {printf \"%.0f\", $BEST_PRACTICES * 100}")
+              echo "best_practices=$BP_PCT" >> $GITHUB_OUTPUT
+            else
+              echo "best_practices=N/A" >> $GITHUB_OUTPUT
+            fi
+            
+            if [ -n "$SEO" ] && [ "$SEO" != "null" ] && [ "$SEO" != "" ]; then
+              SEO_PCT=$(awk "BEGIN {printf \"%.0f\", $SEO * 100}")
+              echo "seo=$SEO_PCT" >> $GITHUB_OUTPUT
+            else
+              echo "seo=N/A" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "performance=N/A" >> $GITHUB_OUTPUT
+            echo "accessibility=N/A" >> $GITHUB_OUTPUT
+            echo "best_practices=N/A" >> $GITHUB_OUTPUT
+            echo "seo=N/A" >> $GITHUB_OUTPUT
+          fi
+        continue-on-error: true
+      
       - name: Format Lighthouse scores
         if: always()
         run: |
           echo "## 📊 Lighthouse Scores" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Performance audit completed. Check artifacts for detailed report." >> $GITHUB_STEP_SUMMARY
+          echo "| Category | Score | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          
+          PERF="${{ steps.lighthouse_scores.outputs.performance }}"
+          ACC="${{ steps.lighthouse_scores.outputs.accessibility }}"
+          BP="${{ steps.lighthouse_scores.outputs.best_practices }}"
+          SEO="${{ steps.lighthouse_scores.outputs.seo }}"
+          
+          # Format performance
+          if [ "$PERF" != "N/A" ] && [ -n "$PERF" ]; then
+            PERF_DISPLAY="${PERF}%"
+            if [ "$PERF" -ge 90 ]; then
+              PERF_STATUS="🟢 Excellent"
+            elif [ "$PERF" -ge 75 ]; then
+              PERF_STATUS="🟡 Good"
+            elif [ "$PERF" -ge 50 ]; then
+              PERF_STATUS="🟠 Needs Improvement"
+            else
+              PERF_STATUS="🔴 Poor"
+            fi
+          else
+            PERF_DISPLAY="N/A"
+            PERF_STATUS="⚪ Not Available"
+          fi
+          echo "| Performance | $PERF_DISPLAY | $PERF_STATUS |" >> $GITHUB_STEP_SUMMARY
+          
+          # Format accessibility
+          if [ "$ACC" != "N/A" ] && [ -n "$ACC" ]; then
+            ACC_DISPLAY="${ACC}%"
+            if [ "$ACC" -ge 90 ]; then
+              ACC_STATUS="🟢 Excellent"
+            elif [ "$ACC" -ge 75 ]; then
+              ACC_STATUS="🟡 Good"
+            elif [ "$ACC" -ge 50 ]; then
+              ACC_STATUS="🟠 Needs Improvement"
+            else
+              ACC_STATUS="🔴 Poor"
+            fi
+          else
+            ACC_DISPLAY="N/A"
+            ACC_STATUS="⚪ Not Available"
+          fi
+          echo "| Accessibility | $ACC_DISPLAY | $ACC_STATUS |" >> $GITHUB_STEP_SUMMARY
+          
+          # Format best practices
+          if [ "$BP" != "N/A" ] && [ -n "$BP" ]; then
+            BP_DISPLAY="${BP}%"
+            if [ "$BP" -ge 90 ]; then
+              BP_STATUS="🟢 Excellent"
+            elif [ "$BP" -ge 75 ]; then
+              BP_STATUS="🟡 Good"
+            elif [ "$BP" -ge 50 ]; then
+              BP_STATUS="🟠 Needs Improvement"
+            else
+              BP_STATUS="🔴 Poor"
+            fi
+          else
+            BP_DISPLAY="N/A"
+            BP_STATUS="⚪ Not Available"
+          fi
+          echo "| Best Practices | $BP_DISPLAY | $BP_STATUS |" >> $GITHUB_STEP_SUMMARY
+          
+          # Format SEO
+          if [ "$SEO" != "N/A" ] && [ -n "$SEO" ]; then
+            SEO_DISPLAY="${SEO}%"
+            if [ "$SEO" -ge 90 ]; then
+              SEO_STATUS="🟢 Excellent"
+            elif [ "$SEO" -ge 75 ]; then
+              SEO_STATUS="🟡 Good"
+            elif [ "$SEO" -ge 50 ]; then
+              SEO_STATUS="🟠 Needs Improvement"
+            else
+              SEO_STATUS="🔴 Poor"
+            fi
+          else
+            SEO_DISPLAY="N/A"
+            SEO_STATUS="⚪ Not Available"
+          fi
+          echo "| SEO | $SEO_DISPLAY | $SEO_STATUS |" >> $GITHUB_STEP_SUMMARY
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📋 Check artifacts for detailed Lighthouse report." >> $GITHUB_STEP_SUMMARY
+          echo "🔗 View full results: [Lighthouse CI Workflow](https://github.com/${{ github.repository }}/actions/workflows/lighthouse-ci.yml)" >> $GITHUB_STEP_SUMMARY
 
