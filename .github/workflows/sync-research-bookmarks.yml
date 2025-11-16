@@ -1,0 +1,105 @@
+name: Sync Research Bookmarks
+
+on:
+  schedule:
+    # Run every 6 hours to check for updates
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+  repository_dispatch:
+    # Allow external triggers (e.g., from bookmark repo webhook)
+    types: [bookmarks-updated]
+
+jobs:
+  sync-submodule:
+    name: Sync Research Bookmarks Submodule
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: true
+          fetch-depth: 0
+      
+      - name: Update submodule
+        id: update-submodule
+        run: |
+          echo "🔄 Updating research bookmarks submodule..."
+          
+          # Check current submodule commit
+          SUBMODULE_OLD=$(git submodule status research/bookmarks 2>/dev/null | awk '{print $1}' || echo "none")
+          echo "Current submodule commit: $SUBMODULE_OLD"
+          
+          # Update submodule to latest
+          git submodule update --init --recursive research/bookmarks
+          git submodule update --remote --merge research/bookmarks
+          
+          # Check new submodule commit
+          SUBMODULE_NEW=$(git submodule status research/bookmarks | awk '{print $1}')
+          echo "New submodule commit: $SUBMODULE_NEW"
+          
+          if [ "$SUBMODULE_OLD" != "$SUBMODULE_NEW" ] && [ "$SUBMODULE_OLD" != "none" ]; then
+            echo "✅ Submodule updated: $SUBMODULE_OLD → $SUBMODULE_NEW"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "ℹ️  No changes in submodule"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Count articles
+        id: count_articles
+        run: |
+          if [ -d "research/bookmarks/articles" ]; then
+            ARTICLE_COUNT=$(find research/bookmarks/articles -name "*.md" -type f | wc -l)
+            echo "article_count=$ARTICLE_COUNT" >> $GITHUB_OUTPUT
+            echo "📚 Found $ARTICLE_COUNT articles in research bookmarks"
+          else
+            echo "article_count=0" >> $GITHUB_OUTPUT
+            echo "⚠️  Articles directory not found"
+          fi
+      
+      - name: Commit and push changes
+        if: steps.update-submodule.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add research/bookmarks .gitmodules
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          git commit -m "chore: update research bookmarks submodule
+
+          - Updated to latest commit from climate-change-bookmarks
+          - Article count: ${{ steps.count_articles.outputs.article_count }}"
+          
+          git push origin HEAD:main || echo "Push failed (may need manual merge)"
+      
+      - name: Create summary
+        run: |
+          echo "## 📚 Research Bookmarks Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.update-submodule.outputs.has_changes }}" == "true" ]; then
+            echo "**Status:** ✅ Updated" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "**Status:** ℹ️  No changes" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Article Count:** ${{ steps.count_articles.outputs.article_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Submodule Location:** \`research/bookmarks\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.update-submodule.outputs.has_changes }}" == "true" ]; then
+            echo "✅ Submodule has been updated and changes have been committed." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️  No new changes in the research bookmarks repository." >> $GITHUB_STEP_SUMMARY
+          fi
+
