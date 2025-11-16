@@ -51,11 +51,37 @@ jobs:
           echo "✅ Cache cleared"
       
       - name: Build website
-        run: npm run build
+        run: |
+          echo "🏗️  Building website..."
+          echo "📝 Capturing build output for error analysis..."
+          npm run build 2>&1 | tee build-output.log || {
+            echo ""
+            echo "❌ Build failed. Analyzing errors..."
+            echo ""
+            echo "=== Frontmatter Errors ==="
+            grep -i "error while parsing markdown front matter" build-output.log | head -20 || echo "No frontmatter errors found in grep"
+            echo ""
+            echo "=== Files with frontmatter issues ==="
+            grep -B 5 "Error while parsing Markdown front matter" build-output.log | grep -E "\.md|docs/" | head -20 || echo "No file paths found"
+            echo ""
+            echo "=== All Build Errors (first 30) ==="
+            grep -i "error" build-output.log | head -30 || echo "No errors found"
+            echo ""
+            echo "=== Full build output saved to build-output.log ==="
+            exit 1
+          }
         env:
           NODE_ENV: production
           BASE_URL: ${{ vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
           SITE_URL: ${{ vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
+      
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-log
+          path: build-output.log
+          retention-days: 7
       
       - name: Run Lighthouse CI
         uses: treosh/lighthouse-ci-action@v12
