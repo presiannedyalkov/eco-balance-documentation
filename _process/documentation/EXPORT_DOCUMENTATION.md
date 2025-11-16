@@ -61,8 +61,12 @@ Exported files are saved to the `exports/` directory:
 - `eco-balance-documentation-v[VERSION]-[DATE].pdf`
 
 Example:
-- `eco-balance-documentation-v2025.11-2025-11-13.epub`
-- `eco-balance-documentation-v2025.11-2025-11-13.pdf`
+- `eco-balance-documentation-v2025.11-2025-11-16.epub`
+- `eco-balance-documentation-v2025.11-2025-11-16.pdf`
+
+**Download Links:**
+- Exported files are available from the [README Downloads section](https://github.com/presiannedyalkov/eco-balance-documentation#download-offline-versions)
+- Latest version downloads: [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases/latest)
 
 ---
 

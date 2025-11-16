@@ -1,0 +1,60 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'strategic/**'
+      - 'website/**'
+      - 'docusaurus.config.js'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    name: Lighthouse Performance Audit
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci --ignore-scripts || npm install --ignore-scripts
+      
+      - name: Build website
+        run: npm run build
+        env:
+          NODE_ENV: production
+          BASE_URL: ${{ vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
+          SITE_URL: ${{ vars.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io' }}
+      
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            https://presiannedyalkov.github.io/eco-balance-documentation/
+            https://presiannedyalkov.github.io/eco-balance-documentation/docs/intro
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: .lighthouserc.json
+        continue-on-error: true
+      
+      - name: Format Lighthouse scores
+        if: always()
+        run: |
+          echo "## 📊 Lighthouse Scores" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Performance audit completed. Check artifacts for detailed report." >> $GITHUB_STEP_SUMMARY
+
