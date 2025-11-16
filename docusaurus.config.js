@@ -119,6 +119,11 @@ const config = {
             label: 'Documentation',
           },
           {
+            type: 'html',
+            position: 'right',
+            value: '<div id="meilisearch-search-wrapper"></div>',
+          },
+          {
             href: 'https://github.com/presiannedyalkov/eco-balance-documentation',
             label: 'GitHub',
             position: 'right',

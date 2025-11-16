@@ -14,10 +14,24 @@ function MeilisearchSearchBar() {
   const [isLoading, setIsLoading] = useState(false);
   const searchRef = useRef(null);
   const history = useHistory();
+  const location = useLocation();
 
-  const meilisearchHost = process.env.MEILISEARCH_HOST || window.MEILISEARCH_HOST;
-  const searchKey = process.env.MEILISEARCH_SEARCH_KEY || window.MEILISEARCH_SEARCH_KEY;
+  // Get config from environment or window (set at build time)
+  const meilisearchHost = 
+    typeof window !== 'undefined' 
+      ? (window.MEILISEARCH_HOST || process.env.MEILISEARCH_HOST)
+      : process.env.MEILISEARCH_HOST;
+  const searchKey = 
+    typeof window !== 'undefined'
+      ? (window.MEILISEARCH_SEARCH_KEY || process.env.MEILISEARCH_SEARCH_KEY)
+      : process.env.MEILISEARCH_SEARCH_KEY;
   const indexName = 'eco-balance-docs';
+
+  useEffect(() => {
+    // Close on route change
+    setIsOpen(false);
+    setQuery('');
+  }, [location.pathname]);
 
   useEffect(() => {
     // Close on outside click
@@ -29,13 +43,14 @@ function MeilisearchSearchBar() {
 
     // Keyboard shortcuts
     const handleKeyDown = (event) => {
-      if (event.key === '/' && event.target.tagName !== 'INPUT') {
+      if (event.key === '/' && event.target.tagName !== 'INPUT' && !event.target.isContentEditable) {
         event.preventDefault();
         searchRef.current?.querySelector('input')?.focus();
         setIsOpen(true);
       }
       if (event.key === 'Escape') {
         setIsOpen(false);
+        searchRef.current?.querySelector('input')?.blur();
       }
     };
 
