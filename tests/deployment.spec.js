@@ -133,7 +133,14 @@ test.describe('Deployment Verification', () => {
           console.warn(`Content not immediately visible on ${path}, but page loaded`);
         }
       } catch (error) {
-        console.error(`Failed to load ${path}:`, error.message);
+        // Sanitize error message to prevent log injection
+        const rawMessage = String(error?.message || 'Unknown error');
+        const sanitizedError = rawMessage
+          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+          .substring(0, 200); // Limit length
+        const sanitizedPath = String(path || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+        console.error('Failed to load', String(sanitizedPath) + ':', String(sanitizedError));
         // Don't fail immediately, continue with other pages
       }
     }
@@ -147,7 +154,11 @@ test.describe('Deployment Verification', () => {
     );
     
     if (criticalErrors.length > 0) {
-      console.warn(`Console errors detected:`, criticalErrors);
+      // Sanitize error messages to prevent log injection
+      const sanitizedErrors = criticalErrors.map(err => 
+        String(err || '').replace(/[\x00-\x1F\x7F-\x9F]/g, '').replace(/[\r\n]/g, ' ').substring(0, 200)
+      );
+      console.warn('Console errors detected:', ...sanitizedErrors);
       // Don't fail the test for console errors, just warn
     }
   });
@@ -344,7 +355,14 @@ test.describe('Deployment Verification', () => {
         // Go back
         await page.goBack({ waitUntil: 'networkidle', timeout: 15000 });
       } catch (error) {
-        console.warn(`Link ${href} failed:`, error.message);
+        // Sanitize error message and href to prevent log injection
+        const rawMessage = String(error?.message || 'Unknown error');
+        const sanitizedError = rawMessage
+          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+          .substring(0, 200); // Limit length
+        const sanitizedHref = String(href || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+        console.warn('Link', String(sanitizedHref), 'failed:', String(sanitizedError));
         // Don't fail the test for individual link failures
       }
     }
@@ -498,7 +516,14 @@ test.describe('Deployment Verification', () => {
             await page.waitForLoadState('networkidle', { timeout: 15000 });
             expect(isValidDeploymentUrl(page.url())).toBeTruthy();
           } catch (error) {
-            console.warn(`Footer link ${href} failed:`, error.message);
+            // Sanitize error message and href to prevent log injection
+            const rawMessage = String(error?.message || 'Unknown error');
+            const sanitizedError = rawMessage
+              .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+              .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+              .substring(0, 200); // Limit length
+            const sanitizedHref = String(href || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+            console.warn('Footer link', String(sanitizedHref), 'failed:', String(sanitizedError));
             // Don't fail test for footer link issues
           }
         }

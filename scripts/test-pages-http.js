@@ -159,8 +159,14 @@ async function runTests() {
       process.exit(0);
     }
   } catch (error) {
-    console.error('❌ Test error:', error.message);
-    if (error.message.includes('ECONNREFUSED') || error.message.includes('Connection refused')) {
+    // Sanitize error message to prevent log injection
+    const rawMessage = String(error?.message || 'Unknown error');
+    const sanitizedError = rawMessage
+      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+      .substring(0, 200); // Limit length
+    console.error('❌ Test error:', String(sanitizedError));
+    if (rawMessage.includes('ECONNREFUSED') || rawMessage.includes('Connection refused')) {
       console.error('\n💡 Server is not running. Start it with:');
       console.error('   npm start');
     }
