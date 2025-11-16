@@ -1,6 +1,6 @@
 ---
-id: success-factors
-title: Success Factors & Assumptions
+id: "success-factors"
+title: "Success Factors & Assumptions"
 sidebar_position: 3
 ---
 

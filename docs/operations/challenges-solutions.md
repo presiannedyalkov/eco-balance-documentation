@@ -1,6 +1,6 @@
 ---
-id: challenges-solutions
-title: Restoration Challenges & Solutions
+id: "challenges-solutions"
+title: "Restoration Challenges & Solutions"
 sidebar_position: 3
 ---
 

@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-biodiversity-05_Reintroduce_Lost_Species
-title: Reintroduce Lost Species
+id: "restoration-playbook-biodiversity-05_Reintroduce_Lost_Species"
+title: "Reintroduce Lost Species"
 sidebar_position: 5
 ---
 

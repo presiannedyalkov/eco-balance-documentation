@@ -1,5 +1,5 @@
 ---
-title: Restoration Playbook
+title: "Restoration Playbook"
 sidebar_position: 999
 ---
 

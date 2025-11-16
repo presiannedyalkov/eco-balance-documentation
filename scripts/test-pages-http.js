@@ -138,9 +138,17 @@ async function runTests() {
       console.log(`❌ Failed: ${failed}/${results.length}`);
       console.log('\nFailed pages:');
       results.filter(r => r.status === 'failed').forEach(r => {
-        // Sanitize error message to prevent log injection
-        const sanitizedError = String(r.error || '').replace(/[\r\n]/g, ' ').substring(0, 200);
-        const sanitizedUrl = String(r.url || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+        // Sanitize error message and URL to prevent log injection - remove all control characters and limit length
+        const rawError = String(r?.error || '');
+        const rawUrl = String(r?.url || '');
+        const sanitizedError = rawError
+          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+          .substring(0, 200); // Limit length
+        const sanitizedUrl = rawUrl
+          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+          .substring(0, 100); // Limit length
         console.log(`  - ${sanitizedUrl}: ${sanitizedError}`);
       });
       console.log('\n💡 Make sure the server is running: npm start');

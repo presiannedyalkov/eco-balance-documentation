@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-biodiversity-01_Assess_Biodiversity
-title: Assess Biodiversity
+id: "restoration-playbook-biodiversity-01_Assess_Biodiversity"
+title: "Assess Biodiversity"
 sidebar_position: 1
 ---
 

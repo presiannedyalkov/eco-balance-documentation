@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-site_selection-07_Visit_Sites
-title: Visit Sites
+id: "restoration-playbook-site_selection-07_Visit_Sites"
+title: "Visit Sites"
 sidebar_position: 7
 ---
 

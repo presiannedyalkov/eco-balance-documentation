@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-reforestation-02_Source_Seedlings
-title: Source Seedlings
+id: "restoration-playbook-reforestation-02_Source_Seedlings"
+title: "Source Seedlings"
 sidebar_position: 2
 ---
 

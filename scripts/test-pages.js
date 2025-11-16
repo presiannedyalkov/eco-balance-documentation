@@ -6,9 +6,9 @@
  */
 
 const { chromium } = require('playwright');
+const { spawn } = require('child_process');
 
 const BASE_URL = 'http://localhost:3023/eco-balance-documentation';
-const PORT = 3023;
 
 // Pages to test
 const PAGES_TO_TEST = [

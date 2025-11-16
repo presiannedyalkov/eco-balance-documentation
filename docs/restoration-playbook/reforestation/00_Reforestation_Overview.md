@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-reforestation-00_Reforestation_Overview
-title: Reforestation Overview
+id: "restoration-playbook-reforestation-00_Reforestation_Overview"
+title: "Reforestation Overview"
 sidebar_position: 0
 ---
 

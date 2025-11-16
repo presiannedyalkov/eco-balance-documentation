@@ -1,6 +1,6 @@
 ---
-id: case-studies
-title: Case Studies & Examples
+id: "case-studies"
+title: "Case Studies & Examples"
 sidebar_position: 1
 ---
 

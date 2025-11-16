@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-site_selection-00_Site_Selection_Overview
-title: Site Selection Overview
+id: "restoration-playbook-site_selection-00_Site_Selection_Overview"
+title: "Site Selection Overview"
 sidebar_position: 0
 ---
 

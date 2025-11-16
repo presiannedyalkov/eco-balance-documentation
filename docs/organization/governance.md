@@ -1,6 +1,6 @@
 ---
-id: governance
-title: Governance Framework
+id: "governance"
+title: "Governance Framework"
 sidebar_position: 2
 ---
 

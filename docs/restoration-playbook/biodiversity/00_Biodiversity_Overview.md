@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-biodiversity-00_Biodiversity_Overview
-title: Biodiversity Overview
+id: "restoration-playbook-biodiversity-00_Biodiversity_Overview"
+title: "Biodiversity Overview"
 sidebar_position: 0
 ---
 

@@ -45,6 +45,14 @@ jobs:
         run: |
           npm ci --ignore-scripts || npm install --ignore-scripts
 
+      - name: Fix frontmatter issues
+        run: |
+          if [ -d "docs" ]; then
+            node scripts/fix-frontmatter.js || echo "⚠️  Frontmatter fix script completed with warnings"
+          else
+            echo "⚠️  docs directory not found, skipping frontmatter fix"
+          fi
+      
       - name: Build website
         timeout-minutes: 15
         run: |

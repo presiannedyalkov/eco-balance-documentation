@@ -1,6 +1,6 @@
 ---
-id: restoration-playbook-biodiversity-06_Monitor_Biodiversity
-title: Monitor Biodiversity
+id: "restoration-playbook-biodiversity-06_Monitor_Biodiversity"
+title: "Monitor Biodiversity"
 sidebar_position: 6
 ---
 

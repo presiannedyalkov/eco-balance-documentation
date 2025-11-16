@@ -321,9 +321,22 @@ test.describe('Deployment Verification', () => {
           }
         } catch (urlError) {
           // If URL parsing fails, fall back to string check but log the error
-          console.warn(`Could not parse URL: ${afterUrl}`, urlError);
-          if (afterUrl.includes('eco-balance-documentation') || afterUrl.includes('presiannedyalkov.github.io')) {
-            successfulLinks++;
+          // Sanitize URL and error for logging
+          const sanitizedUrl = String(afterUrl || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+          const sanitizedError = String(urlError?.message || 'Unknown error').replace(/[\r\n]/g, ' ').substring(0, 200);
+          console.warn(`Could not parse URL: ${sanitizedUrl}`, sanitizedError);
+          // Use URL parsing for validation even in fallback
+          try {
+            const fallbackUrl = new URL(afterUrl);
+            const fallbackHostname = fallbackUrl.hostname;
+            // Use exact hostname matching instead of substring to prevent false positives
+            if (fallbackHostname === 'presiannedyalkov.github.io' || 
+                fallbackHostname === 'docs.eco-balance.cc' ||
+                fallbackHostname.endsWith('.github.io')) {
+              successfulLinks++;
+            }
+          } catch {
+            // If all URL parsing fails, skip this link
           }
         }
         
