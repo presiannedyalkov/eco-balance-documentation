@@ -13,6 +13,8 @@ on:
       - 'sidebars.js'
       - 'package.json'
       - 'package-lock.json'
+      - 'CNAME'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 jobs:
