@@ -63,11 +63,15 @@ The deploy workflow will automatically use the configured host.
 - Limited to `eco-balance-docs` index only
 - No admin permissions
 
-⚠️ **For production:**
-- Use Cloudflare Proxy to hide server IP
-- Enable rate limiting
-- Consider using Cloudflare Workers for extra security
-- See `MEILISEARCH_SECURITY.md` for details
+✅ **Production Security (ACTIVE):**
+- ✅ Cloudflare Proxy enabled (hides server IP, DDoS protection)
+- ✅ Rate limiting configured: **10 calls per 10 seconds per IP**
+- ✅ HTTPS enabled via Cloudflare
+- ✅ Subdomain via Nginx Proxy Manager
+
+**Current Security Level:** ⭐⭐⭐⭐ (Very Good)
+
+See `MEILISEARCH_SECURITY.md` for full security details.
 
 ---
 
