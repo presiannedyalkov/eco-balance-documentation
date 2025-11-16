@@ -57,7 +57,7 @@ Exports are automatically generated when documentation changes and attached to G
 
 **Versioning:**
 - **Daily versions** (`v2025-11-16`) - Used for exports, created automatically on each export
-- **Monthly versions** (`v2025.11`) - Used for releases, updated when `VERSION` file changes
+- **Monthly versions** (`v2025-11`) - Used for releases, updated when `VERSION` file changes
 
 **File naming (daily version):**
 - `eco-balance-documentation-v2025-11-16.epub`

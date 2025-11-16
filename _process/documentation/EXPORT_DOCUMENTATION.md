@@ -69,7 +69,7 @@ Example:
 
 **Versioning:**
 - Exports use **daily versions** (`v2025-11-16`) - date-based, created on each export
-- Releases use **monthly versions** (`v2025.11`) - from `VERSION` file, for project milestones
+- Releases use **monthly versions** (`v2025-11`) - from `VERSION` file, for project milestones
 - See [Versioning Concepts](VERSIONING_CONCEPTS.md) for details
 
 ---

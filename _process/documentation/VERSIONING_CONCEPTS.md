@@ -10,7 +10,7 @@
 
 This project uses **two types of versions** for different purposes:
 
-1. **Monthly Version** (`v2025.11`) - For releases and project milestones
+1. **Monthly Version** (`v2025-11`) - For releases and project milestones
 2. **Daily Version** (`v2025-11-16`) - For exports and documentation snapshots
 
 ---
@@ -24,8 +24,8 @@ This project uses **two types of versions** for different purposes:
 - **Stable reference points** for the project state
 
 ### Format
-- Pattern: `vYYYY.MM`
-- Example: `v2025.11` (November 2025)
+- Pattern: `vYYYY-MM`
+- Example: `v2025-11` (November 2025)
 - Stored in: `VERSION` file
 
 ### When It Changes
@@ -42,11 +42,11 @@ This project uses **two types of versions** for different purposes:
 ### Example
 ```bash
 # VERSION file contains:
-2025.11
+2025-11
 
 # Creates release:
-Tag: v2025.11
-Name: Release v2025.11 (Monthly)
+Tag: v2025-11
+Name: Release v2025-11 (Monthly)
 ```
 
 ---
@@ -89,7 +89,7 @@ Name: Documentation Export v2025-11-16 (Daily)
 
 | Aspect | Monthly Version | Daily Version |
 |--------|----------------|---------------|
-| **Format** | `v2025.11` | `v2025-11-16` |
+| **Format** | `v2025-11` | `v2025-11-16` |
 | **Source** | `VERSION` file | Current date |
 | **Frequency** | Monthly or milestone-based | Every export |
 | **Purpose** | Project releases | Documentation exports |
@@ -156,8 +156,8 @@ Name: Documentation Export v2025-11-16 (Daily)
 ## Version History
 
 ### Monthly Versions
-- `v2025.11` - November 2025 release
-- `v2025.12` - December 2025 release (future)
+- `v2025-11` - November 2025 release
+- `v2025-12` - December 2025 release (future)
 
 ### Daily Versions
 - `v2025-11-16` - Export from November 16, 2025
@@ -170,7 +170,7 @@ Name: Documentation Export v2025-11-16 (Daily)
 
 Both version types create GitHub Releases:
 
-1. **Monthly Releases** (`v2025.11`)
+1. **Monthly Releases** (`v2025-11`)
    - Full releases
    - Include release notes
    - Marked as stable
