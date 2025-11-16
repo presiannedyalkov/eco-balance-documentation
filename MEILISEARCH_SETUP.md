@@ -3,6 +3,8 @@
 **Purpose:** Integrate self-hosted Meilisearch for documentation search  
 **Status:** Ready to configure
 
+> **⚠️ Security Note:** If exposing Meilisearch via public subdomain, see `MEILISEARCH_SECURITY.md` for security best practices.
+
 ---
 
 ## Why Meilisearch is Great for Your Project
