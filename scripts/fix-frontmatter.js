@@ -46,51 +46,16 @@ function fixFrontmatter(content) {
       continue;
     }
     
-    // Always quote title values (they often have special characters)
-    // Check if value needs quoting
-    const isTitle = key.trim() === 'title';
-    const hasSpaces = trimmedValue.includes(' ');
-    const isVersionNumber = /^\d+\.\d+(\.\d+)?$/.test(trimmedValue); // e.g., 1.0, 2.0.0
-    const isNumber = /^\d+$/.test(trimmedValue); // e.g., 1, 42
+    // Always quote all values to prevent parsing errors
+    // This is the safest approach - YAML parsers can be finicky
+    // Only exception: simple numbers and booleans that are already valid YAML
+    const isSimpleNumber = /^-?\d+$/.test(trimmedValue); // e.g., 1, 42, -5
+    const isSimpleFloat = /^-?\d+\.\d+$/.test(trimmedValue); // e.g., 1.0, 3.14
     const isBoolean = trimmedValue === 'true' || trimmedValue === 'false' || trimmedValue === 'null';
     const isEmpty = trimmedValue === '' || trimmedValue.length === 0;
     
-    // Check for special characters
-    const hasSpecialChars = 
-      trimmedValue.includes(':') ||
-      trimmedValue.includes("'") ||
-      trimmedValue.includes('"') ||
-      trimmedValue.includes('&') ||
-      trimmedValue.includes('[') ||
-      trimmedValue.includes(']') ||
-      trimmedValue.includes('{') ||
-      trimmedValue.includes('}') ||
-      trimmedValue.includes('|') ||
-      trimmedValue.includes('*') ||
-      trimmedValue.includes('#') ||
-      trimmedValue.includes('!') ||
-      trimmedValue.includes('@') ||
-      trimmedValue.includes('/') ||
-      trimmedValue.includes('\\') ||
-      trimmedValue.includes('`') ||
-      trimmedValue.includes('$') ||
-      trimmedValue.includes('%') ||
-      trimmedValue.includes('^') ||
-      trimmedValue.includes('+') ||
-      trimmedValue.includes('=') ||
-      trimmedValue.includes('?') ||
-      trimmedValue.includes('<') ||
-      trimmedValue.includes('>') ||
-      trimmedValue.includes(',') ||
-      (trimmedValue.includes('.') && !isVersionNumber);
-    
-    // Quote if: title, has spaces (unless it's a number), has special chars, is boolean/null, or is empty
-    const needsQuoting = 
-      isTitle ||
-      isEmpty ||
-      isBoolean ||
-      (hasSpaces && !isNumber && !isVersionNumber) ||
-      (hasSpecialChars && !isNumber && !isVersionNumber);
+    // Quote everything except simple numbers, floats, and booleans
+    const needsQuoting = !isSimpleNumber && !isSimpleFloat && !isBoolean && !isEmpty;
     
     if (needsQuoting) {
       // Escape quotes and wrap in double quotes
