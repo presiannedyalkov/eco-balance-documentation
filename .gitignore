@@ -30,3 +30,10 @@ yarn-error.log*
 *.swp
 *.swo
 *~
+*.code-workspace
+
+# Generated exports
+exports/
+
+# Backup files
+*.backup
