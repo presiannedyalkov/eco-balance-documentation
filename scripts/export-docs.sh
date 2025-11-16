@@ -217,7 +217,7 @@ echo ""
 
 # Export to EPUB
 echo -e "${YELLOW}📱 Exporting to EPUB...${NC}"
-EPUB_FILE="$EXPORT_DIR/eco-balance-documentation-v${VERSION}-${EXPORT_DATE}.epub"
+EPUB_FILE="$EXPORT_DIR/eco-balance-documentation-v${EXPORT_DATE}.epub"
 
 # Build EPUB with styling and page breaks
 EPUB_OPTS=(
@@ -263,7 +263,7 @@ echo ""
 
 # Export to PDF
 echo -e "${YELLOW}📄 Exporting to PDF...${NC}"
-PDF_FILE="$EXPORT_DIR/eco-balance-documentation-v${VERSION}-${EXPORT_DATE}.pdf"
+PDF_FILE="$EXPORT_DIR/eco-balance-documentation-v${EXPORT_DATE}.pdf"
 
 # Check for required LaTeX packages and tools
 MISSING_DEPS=()

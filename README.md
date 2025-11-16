@@ -60,8 +60,8 @@ Exports are automatically generated when documentation changes. To download:
 5. Artifacts are retained for 30 days
 
 **File naming:**
-- `eco-balance-documentation-v2025.11-[DATE].epub`
-- `eco-balance-documentation-v2025.11-[DATE].pdf`
+- `eco-balance-documentation-v2025-11-16.epub`
+- `eco-balance-documentation-v2025-11-16.pdf`
 
 **Note:** Exports are also attached to [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases) when a new version is released.
 
