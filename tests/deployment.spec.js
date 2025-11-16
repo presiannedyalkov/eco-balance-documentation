@@ -187,7 +187,8 @@ test.describe('Deployment Verification', () => {
               await firstBackLink.click({ timeout: 5000 });
               await page.waitForLoadState('networkidle', { timeout: 10000 });
               const newUrl = page.url();
-              if (!newUrl.includes('eco-balance-documentation') || newUrl.includes('404')) {
+              // Use the validation helper to check if URL is valid (supports both custom domain and GitHub Pages)
+              if (!isValidDeploymentUrl(newUrl) || newUrl.includes('404')) {
                 brokenLinks.push(`${testPath}: "Back to Project Hub" link leads to invalid page`);
               }
               // Go back to test page for next iteration

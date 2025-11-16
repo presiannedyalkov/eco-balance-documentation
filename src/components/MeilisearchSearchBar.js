@@ -145,9 +145,31 @@ function MeilisearchSearchBar() {
     setQuery('');
   };
 
+  // Always render the search bar (even if Meilisearch isn't configured, show a placeholder)
+  // This helps debug if the component is mounting at all
   if (!meilisearchHost || !searchKey) {
-    // Fallback to local search if Meilisearch not configured
-    return null;
+    console.warn('Meilisearch not configured:', { meilisearchHost, searchKey });
+    // Still render a placeholder so we can see if the component is mounting
+    return (
+      <div className="meilisearch-search-container" style={{ position: 'relative' }}>
+        <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
+          <input
+            type="search"
+            placeholder="Search (Meilisearch not configured)"
+            disabled
+            className="navbar__search-input"
+            style={{
+              padding: '8px 12px',
+              border: '1px solid var(--ifm-color-emphasis-300)',
+              borderRadius: '4px',
+              fontSize: '14px',
+              width: '200px',
+              opacity: 0.5,
+            }}
+          />
+        </div>
+      </div>
+    );
   }
 
   return (
