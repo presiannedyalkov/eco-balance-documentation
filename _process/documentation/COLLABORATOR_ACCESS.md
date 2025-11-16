@@ -27,7 +27,7 @@
    - You'll see all files, issues, pull requests, etc.
 
 2. **View the live documentation site:**
-   - Go to: https://presiannedyalkov.github.io/eco-balance-documentation/
+   - Go to: https://docs.eco-balance.cc/
    - This is the public documentation website
 
 ---

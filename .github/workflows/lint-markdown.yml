@@ -45,6 +45,6 @@ jobs:
       - name: Check for broken links
         uses: peter-evans/link-checker@v1
         with:
-          args: -r -v -x "https://presiannedyalkov.github.io" "https://github.com/presiannedyalkov/eco-balance-documentation"
+          args: -r -v -x "https://docs.eco-balance.cc" "https://github.com/presiannedyalkov/eco-balance-documentation"
         continue-on-error: true
 

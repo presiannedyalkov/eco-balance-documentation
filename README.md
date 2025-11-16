@@ -8,6 +8,44 @@
 
 ---
 
+## 📊 Quality Dashboard
+
+> **Note:** Click on any badge to view detailed results and reports. Lighthouse scores are updated after each audit run and displayed in the workflow summary.
+
+### Performance & Accessibility
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **Lighthouse Performance** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+| **Lighthouse Accessibility** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+| **Lighthouse Best Practices** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+| **Lighthouse SEO** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) |
+
+### Security & Code Quality
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **CodeQL Security** | [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml) | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) |
+| **Dependabot** | [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) | [View Updates](https://github.com/presiannedyalkov/eco-balance-documentation/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies) |
+
+### Documentation Quality
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **Link Checking** | [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) |
+| **Spell Check** | [![Spell Check](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) |
+| **Markdown Linting** | [![Lint Markdown](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) |
+
+### Build & Deployment
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| **Deployment** | [![Deploy](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) | [View Workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) |
+| **Deployment Verification** | [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) | [View Tests](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) |
+| **Documentation Export** | [![Export Docs](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) | [View Exports](https://github.com/presiannedyalkov/eco-balance-documentation/releases) |
+
+---
+
 ## 📖 About This Repository
 
 This repository contains the complete documentation for the **Eco Balance** project - an initiative to restore degraded ecosystems in Europe through evidence-based, community-engaged, financially sustainable environmental restoration.
@@ -25,7 +63,7 @@ Create a **habitat for wildlife** and **restore land to become a shelter and san
 ### Viewing the Documentation
 
 **Option 1: View Online**
-- **🌐 Live Site:** [https://presiannedyalkov.github.io/eco-balance-documentation/](https://presiannedyalkov.github.io/eco-balance-documentation/)
+- **🌐 Live Site:** [https://docs.eco-balance.cc/](https://docs.eco-balance.cc/)
 - Automatically updated on every push to `main`
 
 **Option 2: Run Locally**
@@ -49,15 +87,21 @@ The documentation will be available at `http://localhost:3023`
 - **📱 EPUB** - For e-readers (Kindle, Kobo, etc.)
 - **📄 PDF** - For printing and universal document sharing
 
-**Latest Version (v2025.11):**
-- Download from [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases/latest)
-- Or get from [GitHub Actions artifacts](https://github.com/presiannedyalkov/eco-balance-documentation/actions) (30-day retention)
+**Download Latest Exports:**
 
-**Files:**
-- `eco-balance-documentation-v2025.11-[DATE].epub`
-- `eco-balance-documentation-v2025.11-[DATE].pdf`
+Exports are automatically generated when documentation changes and attached to GitHub Releases:
 
-Exports are automatically generated on documentation updates and attached to releases.
+- **[View all exports on GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)** - All PDF and EPUB files are listed here with direct download links
+
+**Versioning:**
+- **Daily versions** (`v2025-11-16`) - Used for exports, created automatically on each export
+- **Monthly versions** (`v2025-11`) - Used for releases, updated when `VERSION` file changes
+
+**File naming (daily version):**
+- `eco-balance-documentation-v2025-11-16.epub`
+- `eco-balance-documentation-v2025-11-16.pdf`
+
+See [Versioning Concepts](_process/documentation/VERSIONING_CONCEPTS.md) for details on monthly vs daily versions.
 
 ### Building for Production
 
@@ -306,14 +350,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **🌐 Live Documentation:** [View on GitHub Pages](https://presiannedyalkov.github.io/eco-balance-documentation/) - Public documentation website
+- **🌐 Live Documentation:** [View Documentation](https://docs.eco-balance.cc/) - Public documentation website
 - **📦 Repository:** [GitHub Repository](https://github.com/presiannedyalkov/eco-balance-documentation)
 - **📚 Restoration Playbook:** [Restoration Playbook Template](/restoration-playbook/README) - Template for ecological restoration projects
-
-## 🚀 Build Status
-
-- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml)
-- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml)
 
 ---
 

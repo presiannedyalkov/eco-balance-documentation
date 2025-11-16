@@ -71,7 +71,7 @@ jobs:
           # Otherwise use project pages baseUrl
           # Try environment variables first (github-pages), then repository variables, then default
           BASE_URL: ${{ env.CUSTOM_DOMAIN_BASE_URL || vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
-          SITE_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io' }}
+          SITE_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

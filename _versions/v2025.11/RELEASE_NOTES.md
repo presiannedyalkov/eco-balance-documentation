@@ -24,7 +24,7 @@ This release marks the migration from Semantic Versioning (SemVer) to Calendar V
 - ✅ Automatic deployment on every push to `main`
 - ✅ Post-deployment verification tests with Playwright
 - ✅ Automatic rollback mechanism if tests fail
-- ✅ Site live at: https://presiannedyalkov.github.io/eco-balance-documentation/
+- ✅ Site live at: https://docs.eco-balance.cc/
 
 ### Workflow Improvements
 

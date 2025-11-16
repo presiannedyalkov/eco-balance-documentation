@@ -12,7 +12,7 @@
 - ✅ Updated `docusaurus.config.js` with correct repository information
   - Organization: `presiannedyalkov`
   - Project: `eco-balance-documentation`
-  - Production URL: `https://presiannedyalkov.github.io`
+  - Production URL: `https://docs.eco-balance.cc`
   - Base URL: `/eco-balance-documentation/`
 - ✅ All GitHub links updated throughout the config
 - ✅ Build tested locally - compiles successfully
@@ -61,7 +61,7 @@ git push origin main
 ## 📍 Your Site URL
 
 Once deployed, your documentation will be available at:
-**https://presiannedyalkov.github.io/eco-balance-documentation/**
+**https://docs.eco-balance.cc/**
 
 ---
 

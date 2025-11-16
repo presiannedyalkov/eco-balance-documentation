@@ -57,16 +57,20 @@ The script will:
 ### Output Files
 
 Exported files are saved to the `exports/` directory:
-- `eco-balance-documentation-v[VERSION]-[DATE].epub`
-- `eco-balance-documentation-v[VERSION]-[DATE].pdf`
+- `eco-balance-documentation-v[DATE].epub`
+- `eco-balance-documentation-v[DATE].pdf`
 
 Example:
-- `eco-balance-documentation-v2025.11-2025-11-16.epub`
-- `eco-balance-documentation-v2025.11-2025-11-16.pdf`
+- `eco-balance-documentation-v2025-11-16.epub`
+- `eco-balance-documentation-v2025-11-16.pdf`
 
 **Download Links:**
-- Exported files are available from the [README Downloads section](https://github.com/presiannedyalkov/eco-balance-documentation#download-offline-versions)
-- Latest version downloads: [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases/latest)
+- **[GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)** - All PDF and EPUB exports are listed here with direct download links
+
+**Versioning:**
+- Exports use **daily versions** (`v2025-11-16`) - date-based, created on each export
+- Releases use **monthly versions** (`v2025-11`) - from `VERSION` file, for project milestones
+- See [Versioning Concepts](VERSIONING_CONCEPTS.md) for details
 
 ---
 
@@ -88,13 +92,14 @@ You can manually trigger the export workflow:
 4. Choose export format (both, epub, or pdf)
 5. Click **Run workflow**
 
-### Artifacts
+### Downloading Exports
 
-Exported files are available as GitHub Actions artifacts:
-1. Go to the workflow run
-2. Scroll to **Artifacts** section
-3. Download `documentation-epub` or `documentation-pdf`
-4. Artifacts are retained for 30 days
+Exported files are automatically attached to GitHub Releases:
+
+- **[View all exports on GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)**
+- Each export creates a new release with the date (e.g., `export-2025-11-16`)
+- Files are listed directly on the releases page with download buttons
+- Releases are permanent (unlike artifacts which expire after 30 days)
 
 ---
 

@@ -39,7 +39,7 @@ jobs:
             !.docusaurus/**/*.md
             !_versions/**/*.md
             !archive/**/*.md
-          base: 'https://presiannedyalkov.github.io/eco-balance-documentation'
+          base: 'https://docs.eco-balance.cc'
         continue-on-error: true
       
       - name: Upload link check results
