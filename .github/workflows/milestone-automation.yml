@@ -1,0 +1,150 @@
+name: Milestone Automation
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed, reopened]
+  issues:
+    types: [opened, closed, reopened]
+  milestone:
+    types: [created, closed, reopened]
+
+jobs:
+  auto-link-pr-to-milestone:
+    name: Auto-link PR to Milestone
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Extract milestone from branch name
+        id: extract_milestone
+        run: |
+          BRANCH="${{ github.head_ref }}"
+          echo "Branch: $BRANCH"
+          
+          # Try to extract milestone from branch name patterns
+          # Pattern: feature/2025.12-something or feature/2026.Q1-something
+          if [[ "$BRANCH" =~ (202[0-9]\.[0-9]{1,2}|202[0-9]\.Q[1-4]) ]]; then
+            MILESTONE_PATTERN="${BASH_REMATCH[1]}"
+            echo "milestone_pattern=$MILESTONE_PATTERN" >> $GITHUB_OUTPUT
+            echo "Found milestone pattern: $MILESTONE_PATTERN"
+          else
+            echo "milestone_pattern=" >> $GITHUB_OUTPUT
+            echo "No milestone pattern found in branch name"
+          fi
+      
+      - name: Find and link milestone
+        if: steps.extract_milestone.outputs.milestone_pattern != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const milestonePattern = '${{ steps.extract_milestone.outputs.milestone_pattern }}';
+            const prNumber = context.payload.pull_request.number;
+            
+            // Get all milestones
+            const { data: milestones } = await github.rest.issues.listMilestones({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open'
+            });
+            
+            // Find milestone matching the pattern
+            const matchingMilestone = milestones.find(m => 
+              m.title.includes(milestonePattern)
+            );
+            
+            if (matchingMilestone) {
+              console.log(`Found milestone: ${matchingMilestone.title} (#${matchingMilestone.number})`);
+              
+              // Update PR with milestone
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                milestone: matchingMilestone.number
+              });
+              
+              console.log(`✅ Linked PR #${prNumber} to milestone: ${matchingMilestone.title}`);
+            } else {
+              console.log(`⚠️  No milestone found matching pattern: ${milestonePattern}`);
+            }
+
+  update-milestone-progress:
+    name: Update Milestone Progress
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    permissions:
+      contents: read
+      issues: read
+      pull-requests: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Update milestone progress
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const milestoneNumber = pr.milestone?.number;
+            
+            if (!milestoneNumber) {
+              console.log('PR has no milestone, skipping progress update');
+              return;
+            }
+            
+            // Get milestone details
+            const { data: milestone } = await github.rest.issues.getMilestone({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              milestone_number: milestoneNumber
+            });
+            
+            // Get all issues in milestone
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              milestone: milestoneNumber.toString(),
+              state: 'all'
+            });
+            
+            // Calculate progress
+            const totalIssues = issues.length;
+            const closedIssues = issues.filter(i => i.state === 'closed').length;
+            const progress = totalIssues > 0 ? Math.round((closedIssues / totalIssues) * 100) : 0;
+            
+            console.log(`Milestone: ${milestone.title}`);
+            console.log(`Progress: ${closedIssues}/${totalIssues} issues closed (${progress}%)`);
+            
+            // Update milestone description with progress (if needed)
+            // Note: GitHub API doesn't support updating milestone description directly
+            // This is informational only
+
+  sync-milestone-on-issue-change:
+    name: Sync Milestone on Issue Change
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issues'
+    permissions:
+      contents: read
+      issues: write
+    
+    steps:
+      - name: Log milestone changes
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const action = context.payload.action;
+            
+            console.log(`Issue #${issue.number}: ${action}`);
+            if (issue.milestone) {
+              console.log(`Milestone: ${issue.milestone.title} (#${issue.milestone.number})`);
+            }
+
