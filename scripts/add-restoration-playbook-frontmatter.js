@@ -29,8 +29,9 @@ function generateFrontmatter(filename, relativePath) {
   }
   
   // Escape title for YAML (quote if contains special characters)
+  // Must escape backslashes first, then quotes, to prevent injection
   const escapedTitle = title.includes(':') || title.includes("'") || title.includes('"') || title.includes('&')
-    ? `"${title.replace(/"/g, '\\"')}"`
+    ? `"${title.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`
     : title;
   
   return `---
