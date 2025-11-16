@@ -11,10 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://presiannedyalkov.github.io',
+  url: process.env.SITE_URL || 'https://presiannedyalkov.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For local development, use '/' for easier access
-  // For GitHub Pages deployment, this should be '/eco-balance-documentation/'
+  // For custom domain (docs.eco-balance.cc): use '/'
+  // For GitHub Pages project site: use '/eco-balance-documentation/'
   baseUrl: process.env.BASE_URL || (process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/'),
 
   // GitHub pages deployment config.

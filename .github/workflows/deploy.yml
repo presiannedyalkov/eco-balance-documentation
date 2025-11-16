@@ -62,7 +62,10 @@ jobs:
         env:
           NODE_ENV: production
           NODE_OPTIONS: '--max-old-space-size=4096'
-          BASE_URL: '/eco-balance-documentation/'
+          # Use custom domain baseUrl if custom domain is configured
+          # Otherwise use project pages baseUrl
+          BASE_URL: ${{ vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
+          SITE_URL: ${{ vars.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io' }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
