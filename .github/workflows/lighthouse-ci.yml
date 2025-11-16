@@ -28,15 +28,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'npm'
+          # Only enable cache if package-lock.json exists
+          cache: ${{ hashFiles('package-lock.json') != '' && 'npm' || '' }}
       
       - name: Install dependencies
         run: |
           if [ -f package-lock.json ]; then
             npm ci --ignore-scripts
           else
+            echo "⚠️  package-lock.json not found, generating..."
             npm install --ignore-scripts
-            npm install --package-lock-only
           fi
       
       - name: Build website
