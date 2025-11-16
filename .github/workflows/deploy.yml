@@ -48,22 +48,47 @@ jobs:
       - name: Fix frontmatter issues
         run: |
           if [ -d "docs" ]; then
+            echo "📁 Checking docs directory..."
+            echo "📊 Total markdown files: $(find docs -name '*.md' | wc -l)"
             node scripts/fix-frontmatter.js || echo "⚠️  Frontmatter fix script completed with warnings"
           else
             echo "⚠️  docs directory not found, skipping frontmatter fix"
           fi
       
+      - name: Clear Docusaurus cache
+        run: |
+          echo "🧹 Clearing Docusaurus cache..."
+          rm -rf .docusaurus || true
+          npm run clear || true
+          echo "✅ Cache cleared"
+      
       - name: Build website
         timeout-minutes: 15
         run: |
           set -e
-          echo "Building Docusaurus site..."
+          echo "🏗️  Building Docusaurus site..."
           echo "NODE_ENV: $NODE_ENV"
           echo "NODE_OPTIONS: $NODE_OPTIONS"
           echo "BASE_URL: $BASE_URL"
           echo "Node version: $(node --version)"
           echo "NPM version: $(npm --version)"
-          npm run build 2>&1
+          echo "📝 Capturing build output for error analysis..."
+          npm run build 2>&1 | tee build-output.log || {
+            echo ""
+            echo "❌ Build failed. Analyzing errors..."
+            echo ""
+            echo "=== Frontmatter Errors ==="
+            grep -i "error while parsing markdown front matter" build-output.log | head -20 || echo "No frontmatter errors found in grep"
+            echo ""
+            echo "=== Files with frontmatter issues ==="
+            grep -B 5 "Error while parsing Markdown front matter" build-output.log | grep -E "\.md|docs/" | head -20 || echo "No file paths found"
+            echo ""
+            echo "=== All Build Errors (first 30) ==="
+            grep -i "error" build-output.log | head -30 || echo "No errors found"
+            echo ""
+            echo "=== Full build output saved to build-output.log ==="
+            exit 1
+          }
           echo "Build command completed"
           if [ -d "build" ]; then
             echo "✅ Build directory exists"
@@ -87,6 +112,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output-log
+          path: build-output.log
+          retention-days: 7
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
