@@ -4,14 +4,15 @@ on:
   push:
     branches:
       - main
-    # Review deployment on PRs?
-    # Uncomment the next line to enable
-    # paths:
-    #   - 'docs/**'
-    #   - 'website/**'
-    #   - 'docusaurus.config.js'
-    #   - 'package.json'
-    #   - 'sidebars.js'
+    paths:
+      # Only deploy when documentation or config changes
+      - 'docs/**'
+      - 'strategic/**'
+      - 'website/**'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
+      - 'package.json'
+      - 'package-lock.json'
   workflow_dispatch:
 
 jobs:
@@ -33,6 +34,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
         run: |

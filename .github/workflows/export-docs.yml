@@ -31,6 +31,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
+      - name: Cache system packages
+        uses: actions/cache@v4
+        with:
+          path: /var/cache/apt
+          key: ${{ runner.os }}-apt-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-apt-
+      
       - name: Install Pandoc
         run: |
           sudo apt-get update
