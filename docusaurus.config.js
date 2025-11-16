@@ -66,9 +66,8 @@ const config = {
     ],
   ],
 
-  // Client modules for Sentry integration
-  // This file runs in the browser to initialize Sentry
-  clientModules: [require.resolve('./src/clientModules.js')],
+  // Sentry integration removed - to be added later
+  // See SENTRY_SETUP.md for future integration
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

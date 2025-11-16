@@ -62,50 +62,30 @@
 
 ---
 
-## 🐛 Sentry Error Tracking ✅
+## 🐛 Sentry Error Tracking ⏳
 
-### Setup (You Already Have Account)
+### Status: Future Addition
 
-Since you already have Sentry for another project, setup is easy:
+**Removed temporarily** due to build issues. Will be added back later.
 
-**What you need:**
-- DSN (Data Source Name) from your Sentry project
-- Organization slug
-- Project slug
-- Auth token (for source maps)
+**Why it's useful:**
+- Track JavaScript errors in production
+- Monitor performance
+- Get error notifications
+- Debug issues faster
 
-**How to get DSN:**
-1. Go to your Sentry project (or create new one)
-2. Settings → Client Keys (DSN)
-3. Copy the DSN
+**When to add:**
+- After resolving build configuration issues
+- When ready to monitor production errors
+- When you have Sentry DSN configured
 
-**How to get Auth Token:**
-1. Sentry → Settings → Auth Tokens
-2. Create New Token
-3. Scopes: `project:read`, `project:releases`, `org:read`
-4. Copy the token
+**Setup (for future):**
+1. Install: `npm install @sentry/react`
+2. Add client module for initialization
+3. Configure DSN via environment variables
+4. Add release workflow for source maps
 
-**What's already added:**
-- ✅ Sentry SDK (`@sentry/react`) in `package.json`
-- ✅ Error initialization in `src/components/SentryInit.js`
-- ✅ Client module in `website/clientModules.js`
-- ✅ Release workflow in `.github/workflows/sentry-release.yml`
-- ✅ Docusaurus plugin configuration
-
-**Setup Steps:**
-1. Add GitHub Secrets:
-   - `SENTRY_DSN` - Your DSN
-   - `SENTRY_ORG` - Organization slug
-   - `SENTRY_PROJECT` - Project slug
-   - `SENTRY_AUTH_TOKEN` - Auth token
-
-2. That's it! Sentry will automatically:
-   - Track errors in production
-   - Upload source maps
-   - Create releases on deployment
-   - Monitor performance (10% sample rate)
-
-**See:** `SENTRY_SETUP.md` for detailed instructions
+**See:** `SENTRY_SETUP.md` for detailed instructions (future reference)
 
 ---
 

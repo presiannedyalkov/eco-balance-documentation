@@ -1,7 +1,9 @@
 # Sentry Setup Guide
 
 **Purpose:** Error tracking for Docusaurus documentation site  
-**Status:** Ready to configure
+**Status:** ⏳ **Future Addition** - Removed temporarily due to build issues
+
+> **Note:** Sentry integration has been removed from the current build. This guide is for future reference when we add it back.
 
 ---
 
