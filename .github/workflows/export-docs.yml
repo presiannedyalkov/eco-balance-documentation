@@ -47,12 +47,15 @@ jobs:
             fonts-dejavu-core \
             fonts-dejavu-extra
       
-      - name: Get version
+      - name: Get version and date
         id: version
         run: |
           VERSION=$(cat VERSION 2>/dev/null || echo "unknown")
+          EXPORT_DATE=$(date +"%Y-%m-%d")
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "export_date=$EXPORT_DATE" >> $GITHUB_OUTPUT
           echo "Version: $VERSION"
+          echo "Export Date: $EXPORT_DATE"
       
       - name: Export to EPUB
         if: github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'both' || github.event_name == 'push'
