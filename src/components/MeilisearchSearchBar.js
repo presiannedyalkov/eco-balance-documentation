@@ -17,14 +17,15 @@ function MeilisearchSearchBar() {
   const location = useLocation();
 
   // Get config from environment or window (set at build time)
+  // Defaults to local network Meilisearch for development
   const meilisearchHost = 
     typeof window !== 'undefined' 
-      ? (window.MEILISEARCH_HOST || process.env.MEILISEARCH_HOST)
-      : process.env.MEILISEARCH_HOST;
+      ? (window.MEILISEARCH_HOST || process.env.MEILISEARCH_HOST || 'http://192.168.178.35:7777')
+      : (process.env.MEILISEARCH_HOST || 'http://192.168.178.35:7777');
   const searchKey = 
     typeof window !== 'undefined'
-      ? (window.MEILISEARCH_SEARCH_KEY || process.env.MEILISEARCH_SEARCH_KEY)
-      : process.env.MEILISEARCH_SEARCH_KEY;
+      ? (window.MEILISEARCH_SEARCH_KEY || process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489')
+      : (process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489');
   const indexName = 'eco-balance-docs';
 
   useEffect(() => {
