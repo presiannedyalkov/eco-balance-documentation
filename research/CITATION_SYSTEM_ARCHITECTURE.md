@@ -943,6 +943,314 @@ node scripts/process-document.js document.md --import --cleanup
 
 ---
 
+## 🏗️ Architecture Option 3.6: Zotero API-First with Custom IDs → Numbered Export 🎯
+
+**Best for:** Zotero as single source of truth, custom IDs in markdown, numbered citations on export
+
+**What this approach means:** You use Zotero as your citation database (managed via API, not GUI). In your markdown files, you use custom IDs like `[rest-001]` for readability. When you export to PDF/EPUB, a script converts these custom IDs to numbered citations `[1]`, `[2]` and generates a numbered reference list at the bottom. Zotero is the single source of truth - no linking to bookmarks folder needed.
+
+**Key advantages:**
+- ✅ Zotero manages all citations (via API)
+- ✅ Custom IDs in markdown (`[rest-001]`) - easy to read and remember
+- ✅ Numbered citations on export (`[1]`, `[2]`) - clean final output
+- ✅ No dependency on bookmarks folder structure
+- ✅ Zotero is the single source of truth
+
+**Workflow:**
+1. Add sources to Zotero via API (from any tool)
+2. Map Zotero items to custom IDs (`rest-001`, `fund-001`, etc.)
+3. Use custom IDs in markdown: `[rest-001]`
+4. On export: Convert `[rest-001]` → `[1]` and generate numbered references
+
+### Process Flow
+
+**What this diagram shows:** The workflow from adding sources to Zotero via API, using custom IDs in markdown, to exporting with numbered citations.
+
+**Top section - Source management:**
+1. **Add Sources to Zotero** → Via API (from any tool - Perplexity, Raindrop, manual, etc.)
+   - `POST /users/{userID}/items` - Create Zotero item
+   - Zotero stores: title, author, URL, date, etc.
+2. **Map to Custom IDs** → Script creates mapping:
+   - Zotero item key → Custom ID (`rest-001`, `fund-001`, etc.)
+   - Stored in `zotero-id-mapping.json`
+3. **Zotero Database** → Single source of truth for all citations
+
+**Middle section - Writing documents:**
+1. **User Writes Document** → You write markdown files
+2. **Use Custom IDs** → You cite using custom IDs: `[rest-001]`, `[fund-001]`
+   - Easy to remember and type
+   - No need to know Zotero keys
+3. **Markdown with Custom IDs** → Document contains: `Forest restoration [rest-001] increases biodiversity [fund-001]`
+
+**Bottom section - Export processing:**
+1. **Export Script** → When exporting to PDF/EPUB:
+   - Scans document for all custom IDs `[rest-001]`, `[fund-001]`, etc.
+   - Looks up Zotero items via API using mapping
+   - Converts custom IDs to sequential numbers: `[1]`, `[2]`, `[3]`
+   - Generates numbered reference list at bottom
+2. **Final Document** → PDF/EPUB with:
+   - Numbered citations in text: `[1]`, `[2]`
+   - Numbered references at bottom: `[1] Source details...`
+
+```mermaid
+flowchart TD
+    A[Add Sources to Zotero<br/>Via API<br/>From any tool] --> B[Zotero Database<br/>Single source of truth]
+    B --> C[Map to Custom IDs<br/>rest-001, fund-001<br/>zotero-id-mapping.json]
+    C --> D[User Writes Document<br/>Markdown files]
+    D --> E["Use Custom IDs<br/>(rest-001), (fund-001)"]
+    E --> F[Markdown with Custom IDs<br/>Forest restoration (rest-001)]
+    
+    F --> G[Export Script<br/>convert-to-numbered.js]
+    G --> H[Scan for Custom IDs<br/>Find all (rest-001), etc.]
+    H --> I[Lookup Zotero Items<br/>Via API + mapping]
+    I --> J[Convert to Numbers<br/>(rest-001) → (1)]
+    J --> K[Generate Reference List<br/>Numbered at bottom]
+    K --> L[Final Document<br/>PDF/EPUB<br/>With (1), (2) citations]
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#e8f5e9
+    style D fill:#f3e5f5
+    style E fill:#fce4ec
+    style F fill:#e0f2f1
+    style G fill:#fff9c4
+    style H fill:#f1f8e9
+    style I fill:#e3f2fd
+    style J fill:#fff4e1
+    style K fill:#e8f5e9
+    style L fill:#fce4ec
+```
+
+**Example workflow:**
+1. Add source to Zotero via API: `POST /items` with article details
+2. Script maps: Zotero key `ABC123` → Custom ID `rest-001`
+3. Write document: "Forest restoration [rest-001] increases biodiversity"
+4. Export: Run `node scripts/export-with-numbered-citations.js document.md`
+5. Script converts: `[rest-001]` → `[1]`
+6. Script generates references:
+   ```
+   ## References
+   
+   [1] Mediterranean Forest Restoration. Smith, J. 2023. https://...
+   ```
+7. Pandoc exports → PDF with numbered citations
+
+### System Architecture
+
+**What this diagram shows:** The components of the Zotero API-first system with custom ID mapping and numbered export.
+
+**Zotero Management (top-left):**
+- **Zotero API** → REST API for adding/getting items
+- **Zotero Database** → Stores all citation data (single source of truth)
+- **No GUI needed** → Everything via API
+
+**ID Mapping (top-center):**
+- **zotero-id-mapping.json** → Maps Zotero item keys to custom IDs:
+  ```json
+  {
+    "rest-001": "ABC123XYZ",
+    "fund-001": "DEF456UVW"
+  }
+  ```
+- **Custom IDs** → Human-readable: `rest-001`, `fund-001`, etc.
+
+**Document Writing (center):**
+- **Markdown Documents** → Your documentation files
+- **Custom ID Citations** → You use `[rest-001]` in text
+- **Easy to type** → No need to know Zotero keys
+
+**Export Processing (bottom):**
+- **convert-to-numbered.js** → Export script that:
+  - Finds all custom IDs in document
+  - Looks up Zotero items via API
+  - Converts to sequential numbers `[1]`, `[2]`
+  - Generates numbered reference list
+- **Pandoc** → Converts markdown to PDF/EPUB
+- **Final Output** → PDF with numbered citations and references
+
+```mermaid
+graph TB
+    subgraph "Zotero Management"
+        A[Zotero REST API<br/>Add/get items<br/>No GUI needed]
+        B[Zotero Database<br/>Single source of truth<br/>All citation data]
+    end
+    
+    subgraph "ID Mapping"
+        C[zotero-id-mapping.json<br/>Zotero key → Custom ID<br/>rest-001, fund-001]
+        D[Custom IDs<br/>Human-readable<br/>Easy to remember]
+    end
+    
+    subgraph "Document Writing"
+        E[Markdown Documents<br/>Your docs]
+        F["Custom ID Citations<br/>(rest-001), (fund-001)"]
+    end
+    
+    subgraph "Export Processing"
+        G[convert-to-numbered.js<br/>Find custom IDs<br/>Lookup Zotero items]
+        H[Generate Numbered Refs<br/>(1), (2) at bottom]
+        I[Pandoc<br/>PDF/EPUB export]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> F
+    E --> F
+    F --> G
+    G --> B
+    G --> C
+    G --> H
+    H --> I
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style C fill:#e8f5e9
+    style D fill:#e8f5e9
+    style E fill:#f3e5f5
+    style F fill:#fce4ec
+    style G fill:#fff9c4
+    style H fill:#f1f8e9
+    style I fill:#e3f2fd
+```
+
+### Implementation Details
+
+**1. Add Sources to Zotero via API**
+
+**Script:** `scripts/add-to-zotero.js`
+
+**What it does:**
+- Takes source details (title, author, URL, year, etc.)
+- Creates Zotero item via API: `POST /users/{userID}/items`
+- Returns Zotero item key
+- Optionally creates custom ID mapping
+
+**Example:**
+```javascript
+// Add source to Zotero
+const zoteroKey = await addToZotero({
+  title: "Mediterranean Forest Restoration",
+  author: "Smith, J.",
+  year: 2023,
+  url: "https://example.com/restoration"
+});
+
+// Create custom ID mapping
+await mapToCustomId(zoteroKey, "rest-001");
+```
+
+**2. Custom ID Mapping**
+
+**File:** `zotero-id-mapping.json`
+
+**Structure:**
+```json
+{
+  "rest-001": {
+    "zoteroKey": "ABC123XYZ",
+    "zoteroUserID": "12345",
+    "created": "2025-01-15"
+  },
+  "fund-001": {
+    "zoteroKey": "DEF456UVW",
+    "zoteroUserID": "12345",
+    "created": "2025-01-15"
+  }
+}
+```
+
+**3. Export with Numbered Citations**
+
+**Script:** `scripts/export-with-numbered-citations.js`
+
+**What it does:**
+1. Scans markdown for custom IDs: `[rest-001]`, `[fund-001]`, etc.
+2. Looks up Zotero items via API using mapping
+3. Converts to sequential numbers: first citation → `[1]`, second → `[2]`, etc.
+4. Generates numbered reference list at bottom
+5. Updates document with numbered citations
+6. Exports via Pandoc
+
+**Example transformation:**
+```markdown
+# Before export
+Forest restoration [rest-001] increases biodiversity [fund-001].
+
+# After export script
+Forest restoration [1] increases biodiversity [2].
+
+## References
+
+[1] Mediterranean Forest Restoration. Smith, J. 2023. https://example.com/restoration
+
+[2] Funding Opportunities for Restoration. Doe, J. 2024. https://example.com/funding
+```
+
+**4. Reference Formatting**
+
+**Options:**
+- **Simple format:** `[1] Title. Author. Year. URL`
+- **Academic format:** `[1] Author, A. (Year). Title. Journal, Volume, Pages.`
+- **Custom format:** Define your own template
+
+**Script:** `scripts/format-reference.js`
+
+### Zotero API Setup
+
+**1. Get API Key:**
+- Go to zotero.org → Settings → Feeds/API
+- Create new private key
+- Save: `ZOTERO_API_KEY` and `ZOTERO_USER_ID`
+
+**2. API Endpoints Used:**
+- `POST /users/{userID}/items` - Add new item
+- `GET /users/{userID}/items/{itemKey}` - Get item details
+- `GET /users/{userID}/items` - List/search items
+
+**3. Environment Variables:**
+```bash
+ZOTERO_API_KEY=your_api_key_here
+ZOTERO_USER_ID=your_user_id_here
+```
+
+### What Each Component Does
+
+| Component | Purpose | Input | Output |
+|-----------|---------|-------|--------|
+| **add-to-zotero.js** | Add source to Zotero via API | Source details | Zotero item key |
+| **map-to-custom-id.js** | Create custom ID mapping | Zotero key + custom ID | Mapping file updated |
+| **zotero-id-mapping.json** | Store custom ID mappings | - | Mapping data |
+| **export-with-numbered-citations.js** | Convert custom IDs to numbered | Markdown with custom IDs | Markdown with numbered citations |
+| **format-reference.js** | Format reference entry | Zotero item data | Formatted reference string |
+| **Pandoc** | Export to PDF/EPUB | Markdown | PDF/EPUB |
+
+### Example Commands
+
+```bash
+# Add source to Zotero and create mapping
+node scripts/add-to-zotero.js \
+  --title "Mediterranean Forest Restoration" \
+  --author "Smith, J." \
+  --year 2023 \
+  --url "https://example.com/restoration" \
+  --custom-id "rest-001"
+
+# Export document with numbered citations
+node scripts/export-with-numbered-citations.js \
+  --input document.md \
+  --output document-numbered.md \
+  --format simple
+
+# Export to PDF with numbered citations
+node scripts/export-with-numbered-citations.js \
+  --input document.md \
+  --output document.pdf \
+  --format academic \
+  --pandoc
+```
+
+---
+
 ## 🏗️ Architecture Option 4: Hybrid (Zotero → BibTeX → Custom Scripts) ⭐
 
 **Best for:** Best of all worlds - recommended approach
