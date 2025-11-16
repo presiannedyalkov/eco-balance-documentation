@@ -5,9 +5,12 @@ on:
     # Run daily at 3 AM UTC
     - cron: '0 3 * * *'
   workflow_dispatch:
-  # Also run when security alerts change
-  repository_vulnerability_alert:
-    types: [create, resolve]
+  # Also run when code scanning alerts change (CodeQL)
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/codeql-analysis.yml'
 
 jobs:
   update-status:
