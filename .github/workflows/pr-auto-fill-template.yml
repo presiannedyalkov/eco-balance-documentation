@@ -204,38 +204,65 @@ jobs:
               console.log(`✅ Auto-filled description: ${description.substring(0, 50)}...`);
             }
             
-            // 4. Auto-check Testing checklist items
+            // 4. Auto-check Testing checklist items (simplified - always check applicable ones)
+            // Use regex to handle variations in spacing and ensure reliable replacement
             const testingCheckboxes = [
-              { pattern: '- [ ] Tested locally', shouldCheck: true }, // Always check if files changed
-              { pattern: '- [ ] Documentation preview checked (`npm start`)', shouldCheck: hasMarkdown },
-              { pattern: '- [ ] Build passes (`npm run build`)', shouldCheck: true }, // Always runs in CI
-              { pattern: '- [ ] Link checks pass (`npm run test:links`)', shouldCheck: hasMarkdown } // Docs need link checks
+              { 
+                unchecked: /- \[ \] Tested locally/g, 
+                checked: '- [x] Tested locally',
+                shouldCheck: true // Always applicable
+              },
+              { 
+                unchecked: /- \[ \] Build passes \(`npm run build`\)/g, 
+                checked: '- [x] Build passes (`npm run build`)',
+                shouldCheck: true // Always runs in CI
+              },
+              { 
+                unchecked: /- \[ \] Documentation preview checked \(`npm start`\)/g, 
+                checked: '- [x] Documentation preview checked (`npm start`)',
+                shouldCheck: hasMarkdown // Only if markdown files changed
+              },
+              { 
+                unchecked: /- \[ \] Link checks pass \(`npm run test:links`\)/g, 
+                checked: '- [x] Link checks pass (`npm run test:links`)',
+                shouldCheck: hasMarkdown // Only if markdown files changed
+              }
             ];
             
             for (const item of testingCheckboxes) {
-              if (item.shouldCheck && body.includes(item.pattern)) {
-                const checked = item.pattern.replace('[ ]', '[x]');
-                if (!body.includes(checked)) {
-                  body = body.replace(item.pattern, checked);
+              if (item.shouldCheck) {
+                // Check if unchecked version exists
+                if (item.unchecked.test(body)) {
+                  // Replace all occurrences
+                  body = body.replace(item.unchecked, item.checked);
                   updated = true;
-                  console.log(`✅ Auto-checked: ${item.pattern.substring(0, 40)}...`);
+                  console.log(`✅ Auto-checked testing: ${item.checked.substring(0, 50)}...`);
                 }
               }
             }
             
-            // 5. Auto-check Checklist items
+            // 5. Auto-check Checklist items (simplified)
             const checklistItems = [
-              { pattern: '- [ ] Changes tested locally', shouldCheck: true },
-              { pattern: '- [ ] Commit messages are clear and descriptive', shouldCheck: conventionalCommits }
+              { 
+                unchecked: /- \[ \] Changes tested locally/g, 
+                checked: '- [x] Changes tested locally',
+                shouldCheck: true // Always applicable
+              },
+              { 
+                unchecked: /- \[ \] Commit messages are clear and descriptive/g, 
+                checked: '- [x] Commit messages are clear and descriptive',
+                shouldCheck: conventionalCommits // Only if using conventional commits
+              }
             ];
             
             for (const item of checklistItems) {
-              if (item.shouldCheck && body.includes(item.pattern)) {
-                const checked = item.pattern.replace('[ ]', '[x]');
-                if (!body.includes(checked)) {
-                  body = body.replace(item.pattern, checked);
+              if (item.shouldCheck) {
+                // Check if unchecked version exists
+                if (item.unchecked.test(body)) {
+                  // Replace all occurrences
+                  body = body.replace(item.unchecked, item.checked);
                   updated = true;
-                  console.log(`✅ Auto-checked checklist: ${item.pattern.substring(0, 40)}...`);
+                  console.log(`✅ Auto-checked checklist: ${item.checked.substring(0, 50)}...`);
                 }
               }
             }
