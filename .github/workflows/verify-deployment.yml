@@ -47,17 +47,17 @@ jobs:
         id: url
         run: |
           # Use custom domain if configured, otherwise use GitHub Pages URL
-          CUSTOM_URL="${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL }}"
-          if [ -n "$CUSTOM_URL" ]; then
-            DEPLOY_URL="$CUSTOM_URL"
+          # GitHub Actions variables are passed via env, check if they exist
+          if [ -n "$CUSTOM_DOMAIN_URL" ] && [ "$CUSTOM_DOMAIN_URL" != "" ]; then
+            DEPLOY_URL="$CUSTOM_DOMAIN_URL"
             echo "Using custom domain: $DEPLOY_URL"
           else
             DEPLOY_URL="https://docs.eco-balance.cc"
-            echo "Using GitHub Pages URL: $DEPLOY_URL"
+            echo "Using default URL: $DEPLOY_URL"
           fi
           echo "deploy_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
         env:
-          CUSTOM_DOMAIN_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL }}
+          CUSTOM_DOMAIN_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
 
       - name: Wait for deployment to be available
         run: |
@@ -84,7 +84,7 @@ jobs:
         continue-on-error: true
         env:
           BASE_URL: ${{ steps.url.outputs.deploy_url }}
-          CUSTOM_DOMAIN_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL }}
+          CUSTOM_DOMAIN_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
 
       - name: Check test results
         id: check_results
