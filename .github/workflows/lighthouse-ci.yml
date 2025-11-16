@@ -31,13 +31,20 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm ci --ignore-scripts || npm install --ignore-scripts
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --ignore-scripts
+          else
+            npm install --ignore-scripts
+            npm install --package-lock-only
+          fi
       
       - name: Build website
         run: npm run build
         env:
           NODE_ENV: production
-          BASE_URL: '/eco-balance-documentation/'
+          BASE_URL: ${{ vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
+          SITE_URL: ${{ vars.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io' }}
       
       - name: Run Lighthouse CI
         uses: treosh/lighthouse-ci-action@v11
