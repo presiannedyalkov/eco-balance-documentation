@@ -52,6 +52,20 @@ const config = {
     ],
   ],
 
+  // Meilisearch plugin for search
+  // Configure with your self-hosted Meilisearch instance
+  plugins: [
+    [
+      require.resolve('./src/plugins/meilisearch-plugin.js'),
+      {
+        host: process.env.MEILISEARCH_HOST || 'http://localhost:7700',
+        searchKey: process.env.MEILISEARCH_SEARCH_KEY || '',
+        indexName: 'eco-balance-docs',
+        batchSize: 100,
+      },
+    ],
+  ],
+
   // Client modules for Sentry integration
   // This file runs in the browser to initialize Sentry
   clientModules: [require.resolve('./src/clientModules.js')],
@@ -63,18 +77,22 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       
       // Search configuration
-      // Using local search (no approval needed, works immediately)
-      // Alternative: Algolia DocSearch (requires approval, faster for large sites)
-      
-      // Option 1: Local Search (ACTIVE - No approval needed)
-      // Docusaurus will automatically use local search if Algolia is not configured
-      // Local search works offline, no external dependencies, perfect for GitHub Pages
-      
-      // Option 2: Algolia DocSearch (COMMENTED - Requires approval)
-      // Uncomment and configure after Algolia approval:
-      // 1. Apply at: https://docsearch.algolia.com/apply/
-      // 2. Add credentials below or via environment variables
-      // 3. Uncomment the algolia config below
+      // Using Meilisearch (self-hosted, no approval needed, better than local search)
+      // 
+      // Option 1: Meilisearch (ACTIVE - Recommended)
+      // - Typo tolerance
+      // - Faster than local search
+      // - Better relevancy
+      // - Self-hosted (full control)
+      // Configure via environment variables:
+      //   MEILISEARCH_HOST - Your Meilisearch URL
+      //   MEILISEARCH_SEARCH_KEY - Search-only API key
+      //
+      // Option 2: Local Search (Fallback)
+      // Docusaurus will use local search if Meilisearch is not configured
+      //
+      // Option 3: Algolia DocSearch (Requires approval)
+      // Uncomment and configure after Algolia approval
       /*
       algolia: {
         appId: process.env.ALGOLIA_APP_ID || 'YOUR_APP_ID',
