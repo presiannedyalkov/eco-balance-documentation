@@ -13,12 +13,17 @@ on:
       - 'sidebars.js'
       - 'package.json'
       - 'package-lock.json'
+      - 'CNAME'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 jobs:
   deploy:
     name: Deploy Docusaurus site to GitHub Pages
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     permissions:
       contents: read
       pages: write
@@ -64,8 +69,9 @@ jobs:
           NODE_OPTIONS: '--max-old-space-size=4096'
           # Use custom domain baseUrl if custom domain is configured
           # Otherwise use project pages baseUrl
-          BASE_URL: ${{ vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
-          SITE_URL: ${{ vars.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io' }}
+          # Try environment variables first (github-pages), then repository variables, then default
+          BASE_URL: ${{ env.CUSTOM_DOMAIN_BASE_URL || vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
+          SITE_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io' }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
