@@ -5,7 +5,7 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { useHistory, useLocation } from '@docusaurus/router';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function MeilisearchSearchBar() {
   const [query, setQuery] = useState('');
@@ -13,8 +13,6 @@ function MeilisearchSearchBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const searchRef = useRef(null);
-  const history = useHistory();
-  const location = useLocation();
 
   // Get config from environment or window (set at build time)
   // Production: https://search.eco-balance.cc (via Cloudflare)
@@ -31,9 +29,30 @@ function MeilisearchSearchBar() {
 
   useEffect(() => {
     // Close on route change
-    setIsOpen(false);
-    setQuery('');
-  }, [location.pathname]);
+    const handleRouteChange = () => {
+      setIsOpen(false);
+      setQuery('');
+    };
+    
+    // Listen for navigation events
+    if (ExecutionEnvironment.canUseDOM) {
+      window.addEventListener('popstate', handleRouteChange);
+      // Also listen for Docusaurus navigation by intercepting pushState
+      const originalPushState = window.history.pushState;
+      if (originalPushState) {
+        window.history.pushState = function(...args) {
+          originalPushState.apply(window.history, args);
+          handleRouteChange();
+        };
+      }
+    }
+    
+    return () => {
+      if (ExecutionEnvironment.canUseDOM) {
+        window.removeEventListener('popstate', handleRouteChange);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     // Close on outside click
@@ -114,7 +133,14 @@ function MeilisearchSearchBar() {
   }, [query]);
 
   const handleResultClick = (url) => {
-    history.push(url);
+    if (ExecutionEnvironment.canUseDOM) {
+      // Use Docusaurus navigation if available, otherwise use window.location
+      if (window.docusaurus && window.docusaurus.navigate) {
+        window.docusaurus.navigate(url);
+      } else {
+        window.location.href = url;
+      }
+    }
     setIsOpen(false);
     setQuery('');
   };
