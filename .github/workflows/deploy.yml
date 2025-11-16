@@ -64,6 +64,30 @@ jobs:
           npm run clear || true
           echo "✅ Cache cleared"
       
+      - name: Determine BASE_URL
+        id: base_url
+        run: |
+          # Check if custom domain is configured
+          CUSTOM_DOMAIN_URL="${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL }}"
+          CUSTOM_DOMAIN_BASE_URL="${{ env.CUSTOM_DOMAIN_BASE_URL || vars.CUSTOM_DOMAIN_BASE_URL }}"
+          
+          if [ -n "$CUSTOM_DOMAIN_BASE_URL" ]; then
+            # Use explicitly set BASE_URL
+            BASE_URL="$CUSTOM_DOMAIN_BASE_URL"
+            echo "Using explicit BASE_URL: $BASE_URL"
+          elif [ -n "$CUSTOM_DOMAIN_URL" ]; then
+            # Custom domain is configured, use root path
+            BASE_URL="/"
+            echo "Custom domain detected, using BASE_URL: $BASE_URL"
+          else
+            # No custom domain, use project pages path
+            BASE_URL="/eco-balance-documentation/"
+            echo "No custom domain, using BASE_URL: $BASE_URL"
+          fi
+          
+          echo "base_url=$BASE_URL" >> $GITHUB_OUTPUT
+          echo "BASE_URL will be: $BASE_URL"
+      
       - name: Build website
         timeout-minutes: 15
         run: |
@@ -102,10 +126,8 @@ jobs:
         env:
           NODE_ENV: production
           NODE_OPTIONS: '--max-old-space-size=4096'
-          # Use custom domain baseUrl if custom domain is configured
-          # Otherwise use project pages baseUrl
-          # Try environment variables first (github-pages), then repository variables, then default
-          BASE_URL: ${{ env.CUSTOM_DOMAIN_BASE_URL || vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
+          # BASE_URL is determined by the "Determine BASE_URL" step above
+          BASE_URL: ${{ steps.base_url.outputs.base_url }}
           SITE_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
           # Meilisearch configuration (optional - defaults are in docusaurus.config.js)
           MEILISEARCH_HOST: ${{ vars.MEILISEARCH_HOST || env.MEILISEARCH_HOST || 'https://search.eco-balance.cc' }}
