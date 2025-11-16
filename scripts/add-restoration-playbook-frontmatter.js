@@ -30,8 +30,13 @@ function generateFrontmatter(filename, relativePath) {
     sidebarPosition = parseInt(numMatch[1]);
   }
   
+  // Escape title for YAML (quote if contains special characters)
+  const escapedTitle = title.includes(':') || title.includes("'") || title.includes('"') || title.includes('&')
+    ? `"${title.replace(/"/g, '\\"')}"`
+    : title;
+  
   return `---
-title: ${title}
+title: ${escapedTitle}
 sidebar_position: ${sidebarPosition}
 ---
 `;
