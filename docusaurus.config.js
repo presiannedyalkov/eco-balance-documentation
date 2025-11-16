@@ -15,7 +15,12 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For custom domain (docs.eco-balance.cc): use '/'
   // For GitHub Pages project site: use '/eco-balance-documentation/'
-  baseUrl: process.env.BASE_URL || (process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/'),
+  // If SITE_URL contains custom domain, use '/', otherwise use project pages path
+  baseUrl: process.env.BASE_URL || (
+    (process.env.SITE_URL && process.env.SITE_URL.includes('docs.eco-balance.cc')) 
+      ? '/' 
+      : (process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/')
+  ),
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
