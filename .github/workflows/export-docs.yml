@@ -83,15 +83,27 @@ jobs:
           path: exports/*.pdf
           retention-days: 30
       
-      - name: Create Release (on version change)
-        if: github.event_name == 'push' && contains(github.event.head_commit.message, 'version') || contains(github.event.head_commit.message, 'VERSION')
+      - name: Create Release with Exports
+        if: always() && (github.event.inputs.export_format == 'both' || github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'pdf' || github.event_name == 'push')
         uses: softprops/action-gh-release@v1
         with:
+          tag_name: "export-${{ steps.version.outputs.export_date }}"
+          name: "Documentation Export ${{ steps.version.outputs.export_date }}"
+          body: |
+            ## Documentation Export - ${{ steps.version.outputs.export_date }}
+            
+            Automated export of documentation files.
+            
+            **Files:**
+            - EPUB: For e-readers (Kindle, Kobo, etc.)
+            - PDF: For printing and universal document sharing
+            
+            **Full documentation:** https://docs.eco-balance.cc/
           files: |
             exports/*.epub
             exports/*.pdf
           draft: false
-          prerelease: false
+          prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -65,9 +65,7 @@ Example:
 - `eco-balance-documentation-v2025-11-16.pdf`
 
 **Download Links:**
-- **Primary:** [Export Documentation workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) - Download artifacts from the latest successful run
-- **Releases:** [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases) - Exports are attached when new versions are released
-- **README:** [Downloads section in README](https://github.com/presiannedyalkov/eco-balance-documentation#download-offline-versions) - Instructions for downloading
+- **[GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)** - All PDF and EPUB exports are listed here with direct download links
 
 ---
 
@@ -89,17 +87,14 @@ You can manually trigger the export workflow:
 4. Choose export format (both, epub, or pdf)
 5. Click **Run workflow**
 
-### Downloading Artifacts
+### Downloading Exports
 
-Exported files are available as GitHub Actions artifacts:
+Exported files are automatically attached to GitHub Releases:
 
-1. Go to [Export Documentation workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml)
-2. Click on the latest successful workflow run (green checkmark)
-3. Scroll down to the **Artifacts** section at the bottom
-4. Download `documentation-epub` or `documentation-pdf`
-5. Artifacts are retained for 30 days
-
-**Note:** If no artifacts are visible, the workflow may still be running or may have failed. Check the workflow status.
+- **[View all exports on GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)**
+- Each export creates a new release with the date (e.g., `export-2025-11-16`)
+- Files are listed directly on the releases page with download buttons
+- Releases are permanent (unlike artifacts which expire after 30 days)
 
 ---
 

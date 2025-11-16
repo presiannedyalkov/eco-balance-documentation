@@ -51,19 +51,13 @@ The documentation will be available at `http://localhost:3023`
 
 **Download Latest Exports:**
 
-Exports are automatically generated when documentation changes. To download:
+Exports are automatically generated when documentation changes and attached to GitHub Releases:
 
-1. Go to [Export Documentation workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml)
-2. Click on the latest successful workflow run
-3. Scroll down to the **Artifacts** section
-4. Download `documentation-epub` or `documentation-pdf`
-5. Artifacts are retained for 30 days
+- **[View all exports on GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)** - All PDF and EPUB files are listed here with direct download links
 
 **File naming:**
 - `eco-balance-documentation-v2025-11-16.epub`
 - `eco-balance-documentation-v2025-11-16.pdf`
-
-**Note:** Exports are also attached to [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases) when a new version is released.
 
 ### Building for Production
 
