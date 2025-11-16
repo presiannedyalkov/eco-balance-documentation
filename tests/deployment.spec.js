@@ -111,9 +111,9 @@ test.describe('Deployment Verification', () => {
           await page.waitForLoadState('networkidle', { timeout: 30000 });
         }
         
-        // Verify final URL contains the correct path
+        // Verify final URL contains the correct path (custom domain or GitHub Pages)
         const finalUrl = page.url();
-        expect(finalUrl).toContain('eco-balance-documentation');
+        expect(isValidDeploymentUrl(finalUrl)).toBeTruthy();
         
         // Status should be 200 after redirect
         if (status !== 200 && status !== 301 && status !== 302) {
