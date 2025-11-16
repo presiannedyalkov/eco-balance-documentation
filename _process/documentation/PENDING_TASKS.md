@@ -78,13 +78,15 @@
 - [x] Authenticate GitHub CLI ✅
 - [x] Execute `./scripts/setup_github_milestones.sh` to create milestones ✅
 - [x] Execute `./scripts/create_github_issues.sh` to create initial issues ✅
-- [ ] Create GitHub Issues for remaining features in wishlist
 - [x] Link issues to milestones (done via scripts) ✅
 - [x] Set up PR templates (✅ done)
-- [ ] Create GitHub Actions workflows for automation
-- [ ] Set up release automation
-- [ ] Create roadmap sync script
-- [ ] Test automation
+- [x] Document remaining optional tasks ✅ (see `GITHUB_MILESTONES_REMAINING_TASKS.md`)
+
+**Note:** Remaining optional tasks documented for later implementation:
+- Create GitHub Issues for remaining features in wishlist
+- Create GitHub Actions workflows for automation
+- Set up release automation
+- Create roadmap sync script
 
 **Files:**
 - `_process/documentation/GITHUB_MILESTONES_ROADMAP_PLAN.md` (detailed plan)
@@ -166,8 +168,33 @@
 
 ---
 
-### 5. Research Bookmarks Integration (Submodule) ⏳
-**Status:** Feature request added, not implemented  
+### 5. Documentation Export Formats (EPUB & PDF) 🚧
+**Status:** In Progress  
+**Priority:** Medium  
+**Estimated Effort:** 6-10 hours
+
+**What needs to be done:**
+- [x] Create export script (`scripts/export-docs.sh`) ✅
+- [x] Create GitHub Actions workflow (`.github/workflows/export-docs.yml`) ✅
+- [x] Create export documentation (`_process/documentation/EXPORT_DOCUMENTATION.md`) ✅
+- [ ] Test EPUB export locally
+- [ ] Test PDF export locally
+- [ ] Test GitHub Actions workflow
+- [ ] Verify exported files open correctly
+- [ ] Add to README or documentation site
+
+**Files:**
+- `scripts/export-docs.sh` ✅ NEW
+- `.github/workflows/export-docs.yml` ✅ NEW
+- `_process/documentation/EXPORT_DOCUMENTATION.md` ✅ NEW
+- `docs/resources/feature-wishlist.md` (feature description)
+
+**Next Step:** Test the export script locally, then test GitHub Actions workflow
+
+---
+
+### 6. Research Bookmarks Integration (Submodule) ⏳
+**Status:** User working on this in parallel  
 **Priority:** High (from wishlist)  
 **Estimated Effort:** 10-14 hours
 
@@ -184,7 +211,29 @@
 - `_process/documentation/FEATURE_WISHLIST.md` (feature description)
 - `_process/documentation/RESEARCH_BOOKMARKS_SETUP.md` (setup guide) ✅ NEW
 
-**Next Step:** Get access to research repository, then add as submodule (see setup guide for detailed steps)
+**Note:** User is working on this in parallel. Will be set up next.
+
+---
+
+### 7. Visual Enhancements for Documents 📝
+**Status:** Documented for later  
+**Priority:** Low (last in priority)  
+**Estimated Effort:** TBD
+
+**Description:** Go through each document and decide what visual elements can be added (Mermaid diagrams, images, charts, etc.)
+
+**Note:** This is last in priority. Will be implemented after other tasks are complete.
+
+---
+
+### 8. Timeline & Milestone Visualization 📊
+**Status:** Documented for later  
+**Priority:** Low  
+**Estimated Effort:** TBD
+
+**Description:** Create timeline/milestone visualization using Mermaid or similar tool to show done tasks on timeline.
+
+**Note:** Will be implemented later when there are 10+ tasks/milestones to show.
 
 ---
 
