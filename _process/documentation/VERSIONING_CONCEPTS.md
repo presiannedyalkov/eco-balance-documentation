@@ -15,7 +15,7 @@ This project uses **two types of versions** for different purposes:
 
 ---
 
-## Monthly Version (vYYYY.MM)
+## Monthly Version (vYYYY-MM)
 
 ### Purpose
 - **Project milestones** and major releases
@@ -34,8 +34,8 @@ This project uses **two types of versions** for different purposes:
 - Triggers the **Release Automation** workflow
 
 ### Usage
-- **Release tags:** `v2025.11`
-- **Release names:** "Release v2025.11 (Monthly)"
+- **Release tags:** `v2025-11`
+- **Release names:** "Release v2025-11 (Monthly)"
 - **GitHub Releases:** Created by `.github/workflows/release-automation.yml`
 - **Documentation:** Referenced in release notes and changelogs
 
@@ -113,7 +113,7 @@ Name: Documentation Export v2025-11-16 (Daily)
 ### Release Automation (Monthly Version)
 ```yaml
 # .github/workflows/release-automation.yml
-- Creates release with tag: v2025.11
+- Creates release with tag: v2025-11
 - File names: Uses exports from latest daily version
 - Release type: Full release
 - Trigger: When VERSION file changes
@@ -130,7 +130,7 @@ Name: Documentation Export v2025-11-16 (Daily)
 
 ### Release Files
 - **Pattern:** Same as export files (attached from latest exports)
-- **Tagged with:** Monthly version (`v2025.11`)
+- **Tagged with:** Monthly version (`v2025-11`)
 - **Contains:** Latest export files available at release time
 
 ---
