@@ -112,8 +112,6 @@ async function checkWorkflows() {
                 if (step.conclusion === 'failure') {
                   console.log(`      - ${step.name}: ${step.conclusion}`);
                   if (step.number) {
-                    // Try to get logs URL
-                    const logsPath = `/repos/${REPO_OWNER}/${REPO_NAME}/actions/jobs/${job.id}/logs`;
                     console.log(`         Logs: https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/runs/${latestRun.id}/job/${job.id}`);
                   }
                 }
@@ -137,8 +135,10 @@ async function checkWorkflows() {
     }
 
   } catch (error) {
-    console.error('❌ Error checking workflows:', error.message);
-    if (error.message.includes('401') || error.message.includes('403')) {
+    // Sanitize error message to prevent log injection
+    const sanitizedError = String(error.message || 'Unknown error').replace(/[\r\n]/g, ' ').substring(0, 200);
+    console.error('❌ Error checking workflows:', sanitizedError);
+    if (sanitizedError.includes('401') || sanitizedError.includes('403')) {
       console.error('\n💡 Token may be invalid or missing required permissions');
       console.error('   Classic Token: Need "repo" scope');
       console.error('   Fine-grained Token: Need "Actions: Read-only" permission');

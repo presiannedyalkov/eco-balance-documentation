@@ -304,18 +304,27 @@ test.describe('Deployment Verification', () => {
       try {
         const link = allLinks.nth(index);
         
-        // Get current URL before clicking
-        const beforeUrl = page.url();
-        
         await link.click({ timeout: 10000 });
         await page.waitForLoadState('networkidle', { timeout: 15000 });
         
         // Check page loaded and stayed on correct domain
         const afterUrl = page.url();
-        if (afterUrl.includes('eco-balance-documentation') || afterUrl.includes('presiannedyalkov.github.io')) {
-          successfulLinks++;
-        } else {
-          console.warn(`Link ${href} navigated to wrong domain: ${afterUrl}`);
+        try {
+          const urlObj = new URL(afterUrl);
+          const hostname = urlObj.hostname;
+          if (hostname === 'docs.eco-balance.cc' || 
+              hostname.includes('eco-balance-documentation') || 
+              hostname === 'presiannedyalkov.github.io') {
+            successfulLinks++;
+          } else {
+            console.warn(`Link ${href} navigated to wrong domain: ${hostname}`);
+          }
+        } catch (urlError) {
+          // If URL parsing fails, fall back to string check but log the error
+          console.warn(`Could not parse URL: ${afterUrl}`, urlError);
+          if (afterUrl.includes('eco-balance-documentation') || afterUrl.includes('presiannedyalkov.github.io')) {
+            successfulLinks++;
+          }
         }
         
         // Go back
