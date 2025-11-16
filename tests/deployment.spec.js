@@ -138,7 +138,7 @@ test.describe('Deployment Verification', () => {
           console.warn('Content not immediately visible on', String(sanitizedPath), 'but page loaded');
         }
       } catch (error) {
-        // Sanitize error message to prevent log injection
+        // Sanitize error message and path to prevent log injection
         const rawMessage = String(error?.message || 'Unknown error');
         const sanitizedError = rawMessage
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
