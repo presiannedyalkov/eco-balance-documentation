@@ -86,12 +86,59 @@ jobs:
           path: exports/*.pdf
           retention-days: 30
       
+      - name: Check for exported files
+        id: check_files
+        if: always()
+        run: |
+          # Find all exported files
+          EPUB_FILES=$(find exports -name "*.epub" -type f 2>/dev/null | sort || echo "")
+          PDF_FILES=$(find exports -name "*.pdf" -type f 2>/dev/null | sort || echo "")
+          
+          # Create a file list for the release action
+          FILE_LIST=""
+          
+          if [ -n "$EPUB_FILES" ]; then
+            echo "epub_exists=true" >> $GITHUB_OUTPUT
+            while IFS= read -r file; do
+              if [ -f "$file" ]; then
+                FILE_LIST="${FILE_LIST}${file}"$'\n'
+                echo "Found EPUB: $file"
+              fi
+            done <<< "$EPUB_FILES"
+          else
+            echo "epub_exists=false" >> $GITHUB_OUTPUT
+            echo "No EPUB files found"
+          fi
+          
+          if [ -n "$PDF_FILES" ]; then
+            echo "pdf_exists=true" >> $GITHUB_OUTPUT
+            while IFS= read -r file; do
+              if [ -f "$file" ]; then
+                FILE_LIST="${FILE_LIST}${file}"$'\n'
+                echo "Found PDF: $file"
+              fi
+            done <<< "$PDF_FILES"
+          else
+            echo "pdf_exists=false" >> $GITHUB_OUTPUT
+            echo "No PDF files found"
+          fi
+          
+          # Save file list to output (trim trailing newline)
+          if [ -n "$FILE_LIST" ]; then
+            echo "file_list<<EOF" >> $GITHUB_OUTPUT
+            printf "%s" "$FILE_LIST" | sed '$ s/\\n$//' >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          fi
+      
       - name: Create Release with Exports (Daily Version)
-        if: always() && (github.event.inputs.export_format == 'both' || github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'pdf' || github.event_name == 'push')
+        if: always() && steps.check_files.outputs.has_files == 'true'
         uses: softprops/action-gh-release@v1
         with:
-          # Daily version: v2025-11-16 (date-based, for exports)
-          tag_name: "v${{ steps.version.outputs.export_date }}"
+          # Daily version: export-v2025-11-16 (date-based, for exports)
+          tag_name: "export-v${{ steps.version.outputs.export_date }}"
           name: "Documentation Export v${{ steps.version.outputs.export_date }} (Daily)"
           body: |
             ## Documentation Export - Daily Version v${{ steps.version.outputs.export_date }}
@@ -102,13 +149,11 @@ jobs:
             **Monthly Version:** ${{ steps.version.outputs.version }}
             
             **Files:**
-            - EPUB: For e-readers (Kindle, Kobo, etc.)
-            - PDF: For printing and universal document sharing
+            ${{ steps.check_files.outputs.epub_exists == 'true' && '- EPUB: For e-readers (Kindle, Kobo, etc.)' || '' }}
+            ${{ steps.check_files.outputs.pdf_exists == 'true' && '- PDF: For printing and universal document sharing' || '' }}
             
             **Full documentation:** https://docs.eco-balance.cc/
-          files: |
-            exports/*.epub
-            exports/*.pdf
+          files: ${{ steps.check_files.outputs.file_list }}
           draft: false
           prerelease: true
         env:
