@@ -1,0 +1,49 @@
+name: Update Security Status
+
+on:
+  schedule:
+    # Run daily at 3 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+  # Also run when security alerts change
+  repository_vulnerability_alert:
+    types: [create, resolve]
+
+jobs:
+  update-status:
+    name: Update Security Status in README
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      security-events: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      
+      - name: Update security status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/update-security-status.js
+      
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if git diff --quiet README.md; then
+            echo "No changes to commit"
+          else
+            git add README.md
+            git commit -m "chore: update security alerts status [skip ci]"
+            git push
+          fi
+

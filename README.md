@@ -16,6 +16,9 @@
 
 ### 🔒 Security Alerts Status
 
+<!-- This section is automatically updated by scripts/update-security-status.js -->
+<!-- Last manual update: 2025-11-16 -->
+
 **Quick Check:**
 - **[CodeQL Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)** - Static analysis security issues in code
 - **[Dependabot Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)** - Known vulnerabilities in dependencies

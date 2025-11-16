@@ -1,0 +1,215 @@
+#!/usr/bin/env node
+
+/**
+ * Update security status in README.md with current CodeQL and Dependabot alert counts
+ * 
+ * Usage:
+ *   GITHUB_TOKEN=your_token node scripts/update-security-status.js
+ * 
+ * Or run via GitHub Actions (token provided automatically)
+ */
+
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
+
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const REPO_OWNER = 'presiannedyalkov';
+const REPO_NAME = 'eco-balance-documentation';
+const README_PATH = path.join(__dirname, '..', 'README.md');
+
+if (!GITHUB_TOKEN) {
+  console.error('❌ Error: GITHUB_TOKEN environment variable is required');
+  console.error('Usage: GITHUB_TOKEN=your_token node scripts/update-security-status.js');
+  process.exit(1);
+}
+
+function makeRequest(endpoint) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'api.github.com',
+      path: endpoint,
+      method: 'GET',
+      headers: {
+        'Authorization': `token ${GITHUB_TOKEN}`,
+        'User-Agent': 'Node.js',
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    };
+
+    https.get(options, (res) => {
+      let data = '';
+
+      res.on('data', (chunk) => {
+        data += chunk;
+      });
+
+      res.on('end', () => {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
+          try {
+            resolve(JSON.parse(data));
+          } catch (e) {
+            resolve(data);
+          }
+        } else if (res.statusCode === 404) {
+          // Some endpoints return 404 if no alerts exist
+          resolve([]);
+        } else {
+          reject(new Error(`HTTP ${res.statusCode}: ${data}`));
+        }
+      });
+    }).on('error', (err) => {
+      reject(err);
+    });
+  });
+}
+
+async function getCodeQLAlerts() {
+  try {
+    const alerts = await makeRequest(`/repos/${REPO_OWNER}/${REPO_NAME}/code-scanning/alerts?state=open&per_page=100`);
+    
+    const counts = {
+      critical: 0,
+      high: 0,
+      medium: 0,
+      low: 0,
+      note: 0,
+      total: alerts.length || 0
+    };
+
+    if (Array.isArray(alerts)) {
+      alerts.forEach(alert => {
+        const severity = (alert.rule?.security_severity_level || alert.rule?.severity || 'note').toLowerCase();
+        if (severity === 'critical' || severity === 'error') counts.critical++;
+        else if (severity === 'high') counts.high++;
+        else if (severity === 'medium' || severity === 'warning') counts.medium++;
+        else if (severity === 'low') counts.low++;
+        else counts.note++;
+      });
+    }
+
+    return counts;
+  } catch (error) {
+    console.warn('⚠️  Could not fetch CodeQL alerts:', error.message);
+    return { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
+  }
+}
+
+async function getDependabotAlerts() {
+  try {
+    const alerts = await makeRequest(`/repos/${REPO_OWNER}/${REPO_NAME}/dependabot/alerts?state=open&per_page=100`);
+    
+    const counts = {
+      critical: 0,
+      high: 0,
+      moderate: 0,
+      low: 0,
+      total: alerts.length || 0
+    };
+
+    if (Array.isArray(alerts)) {
+      alerts.forEach(alert => {
+        const severity = (alert.security_vulnerability?.severity || 'low').toLowerCase();
+        if (severity === 'critical') counts.critical++;
+        else if (severity === 'high') counts.high++;
+        else if (severity === 'moderate') counts.moderate++;
+        else counts.low++;
+      });
+    }
+
+    return counts;
+  } catch (error) {
+    console.warn('⚠️  Could not fetch Dependabot alerts:', error.message);
+    return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
+  }
+}
+
+function formatSeverityBadge(count, severity, label) {
+  if (count === 0) {
+    return `✅ **${label}:** 0`;
+  } else if (count <= 5) {
+    return `🟡 **${label}:** ${count}`;
+  } else {
+    return `🔴 **${label}:** ${count}`;
+  }
+}
+
+function updateREADME(codeQL, dependabot) {
+  const readmeContent = fs.readFileSync(README_PATH, 'utf8');
+  
+  // Generate status section
+  const statusSection = `### 🔒 Security Alerts Status
+
+**Last Updated:** ${new Date().toISOString().split('T')[0]}
+
+**CodeQL Alerts** ([View All](https://github.com/${REPO_OWNER}/${REPO_NAME}/security/code-scanning)):
+${codeQL.error ? '⚠️ Unable to fetch CodeQL alerts' : `
+- ${formatSeverityBadge(codeQL.critical, 'critical', 'Critical')}
+- ${formatSeverityBadge(codeQL.high, 'high', 'High')}
+- ${formatSeverityBadge(codeQL.medium, 'medium', 'Medium')}
+- ${formatSeverityBadge(codeQL.low, 'low', 'Low')}
+- ${formatSeverityBadge(codeQL.note, 'note', 'Note')}
+- **Total Open:** ${codeQL.total}
+`}
+
+**Dependabot Alerts** ([View All](https://github.com/${REPO_OWNER}/${REPO_NAME}/security/dependabot)):
+${dependabot.error ? '⚠️ Unable to fetch Dependabot alerts' : `
+- ${formatSeverityBadge(dependabot.critical, 'critical', 'Critical')}
+- ${formatSeverityBadge(dependabot.high, 'high', 'High')}
+- ${formatSeverityBadge(dependabot.moderate, 'moderate', 'Moderate')}
+- ${formatSeverityBadge(dependabot.low, 'low', 'Low')}
+- **Total Open:** ${dependabot.total}
+`}
+
+> **💡 Tip:** Check these regularly! Security alerts can appear at any time when new vulnerabilities are discovered. Click the links above to view detailed information about each alert.`;
+
+  // Replace the Security Alerts Status section
+  const statusRegex = /### 🔒 Security Alerts Status[\s\S]*?(?=###|##|$)/;
+  
+  if (statusRegex.test(readmeContent)) {
+    const updatedContent = readmeContent.replace(statusRegex, statusSection + '\n\n');
+    fs.writeFileSync(README_PATH, updatedContent, 'utf8');
+    console.log('✅ Updated Security Alerts Status section in README.md');
+  } else {
+    // If section doesn't exist, add it after the Quality Dashboard note
+    const insertPoint = readmeContent.indexOf('### Performance & Accessibility');
+    if (insertPoint !== -1) {
+      const updatedContent = 
+        readmeContent.slice(0, insertPoint) + 
+        statusSection + '\n\n' + 
+        readmeContent.slice(insertPoint);
+      fs.writeFileSync(README_PATH, updatedContent, 'utf8');
+      console.log('✅ Added Security Alerts Status section to README.md');
+    } else {
+      console.error('❌ Could not find insertion point in README.md');
+      process.exit(1);
+    }
+  }
+}
+
+async function main() {
+  console.log('🔍 Fetching security alert statuses...\n');
+  
+  const [codeQL, dependabot] = await Promise.all([
+    getCodeQLAlerts(),
+    getDependabotAlerts()
+  ]);
+  
+  console.log('📊 CodeQL Alerts:');
+  console.log(`   Critical: ${codeQL.critical}, High: ${codeQL.high}, Medium: ${codeQL.medium}, Low: ${codeQL.low}, Note: ${codeQL.note}`);
+  console.log(`   Total: ${codeQL.total}\n`);
+  
+  console.log('📦 Dependabot Alerts:');
+  console.log(`   Critical: ${dependabot.critical}, High: ${dependabot.high}, Moderate: ${dependabot.moderate}, Low: ${dependabot.low}`);
+  console.log(`   Total: ${dependabot.total}\n`);
+  
+  updateREADME(codeQL, dependabot);
+  
+  console.log('\n✅ README.md updated successfully!');
+}
+
+main().catch((error) => {
+  console.error('❌ Error:', error.message);
+  process.exit(1);
+});
+
