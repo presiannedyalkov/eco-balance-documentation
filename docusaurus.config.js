@@ -11,10 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://presiannedyalkov.github.io',
+  url: process.env.SITE_URL || 'https://presiannedyalkov.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For local development, use '/' for easier access
-  // For GitHub Pages deployment, this should be '/eco-balance-documentation/'
+  // For custom domain (docs.eco-balance.cc): use '/'
+  // For GitHub Pages project site: use '/eco-balance-documentation/'
   baseUrl: process.env.BASE_URL || (process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/'),
 
   // GitHub pages deployment config.
@@ -52,11 +52,61 @@ const config = {
     ],
   ],
 
+  // Meilisearch plugin for search
+  // Configure with your self-hosted Meilisearch instance
+  plugins: [
+    [
+      require.resolve('./src/plugins/meilisearch-plugin.js'),
+      {
+        // Production: https://search.eco-balance.cc (via Cloudflare)
+        // Local development: Set MEILISEARCH_HOST to local network address
+        host: process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc',
+        // Search-only key (safe to use in frontend)
+        // Set via environment variable: MEILISEARCH_SEARCH_KEY
+        searchKey: process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489',
+        indexName: 'eco-balance-docs',
+        batchSize: 100,
+      },
+    ],
+  ],
+
+  // Sentry integration removed - to be added later
+  // See SENTRY_SETUP.md for future integration
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      
+      // Search configuration
+      // Using Meilisearch (self-hosted, no approval needed, better than local search)
+      // 
+      // Option 1: Meilisearch (ACTIVE - Recommended)
+      // - Typo tolerance
+      // - Faster than local search
+      // - Better relevancy
+      // - Self-hosted (full control)
+      // Configure via environment variables:
+      //   MEILISEARCH_HOST - Your Meilisearch URL
+      //   MEILISEARCH_SEARCH_KEY - Search-only API key
+      //
+      // Option 2: Local Search (Fallback)
+      // Docusaurus will use local search if Meilisearch is not configured
+      //
+      // Option 3: Algolia DocSearch (Requires approval)
+      // Uncomment and configure after Algolia approval
+      /*
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID || 'YOUR_APP_ID',
+        apiKey: process.env.ALGOLIA_API_KEY || 'YOUR_SEARCH_API_KEY',
+        indexName: process.env.ALGOLIA_INDEX_NAME || 'YOUR_INDEX_NAME',
+        contextualSearch: true,
+        searchParameters: {},
+        searchPagePath: 'search',
+      },
+      */
+      
       navbar: {
         title: 'Eco Balance',
         logo: {
@@ -70,6 +120,11 @@ const config = {
             sidebarId: 'docsSidebar',
             position: 'left',
             label: 'Documentation',
+          },
+          {
+            type: 'html',
+            position: 'right',
+            value: '<div id="meilisearch-search-wrapper"></div>',
           },
           {
             href: 'https://github.com/presiannedyalkov/eco-balance-documentation',

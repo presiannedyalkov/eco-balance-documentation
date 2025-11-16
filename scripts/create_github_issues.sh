@@ -160,6 +160,91 @@ Add research repository as git submodule, organize bookmarks by topic/category, 
     "enhancement,documentation,high-priority"
 
 echo ""
+echo "📋 Creating Issues for 2026.Q1 - Interactive Features..."
+echo ""
+
+# Visual Enhancements for Documents
+create_issue \
+    "Visual Enhancements for Documents" \
+    "## Feature: Visual Enhancements for Documents
+
+**Source:** Feature Wishlist
+**Priority:** Medium
+**Estimated Effort:** 30-50 hours
+
+### Description
+Systematically review each document and identify opportunities to add visual elements (diagrams, charts, illustrations, infographics) that enhance understanding and engagement. Visuals will be created using markdown-compatible tools like Mermaid diagrams, or embedded images.
+
+### Implementation Checklist
+- [ ] Review each strategic document (00-70 series) for visual opportunities
+- [ ] Identify appropriate visuals (flowcharts, process diagrams, organizational charts, timelines)
+- [ ] Create Mermaid diagrams for markdown-native visualizations
+- [ ] Organize and manage visual assets (diagrams, charts, illustrations)
+- [ ] Ensure accessibility with alt text and descriptions
+- [ ] Maintain consistent visual style across documents
+
+### Related
+- Feature Wishlist: \`docs/resources/feature-wishlist.md\`" \
+    "2026.Q1 - Interactive Features" \
+    "enhancement,documentation"
+
+# Timeline & Milestone Visualization
+create_issue \
+    "Timeline & Milestone Visualization" \
+    "## Feature: Timeline & Milestone Visualization
+
+**Source:** Feature Wishlist
+**Priority:** Medium
+**Estimated Effort:** 10-15 hours
+
+### Description
+Create visual timeline and milestone representations using markdown-based tools like Mermaid to show completed tasks, current progress, and future milestones. The visualization will integrate with GitHub Milestones and the project roadmap.
+
+### Implementation Checklist
+- [ ] Create timeline design and structure
+- [ ] Create Mermaid timeline/Gantt diagrams
+- [ ] Integrate with GitHub API for milestone data
+- [ ] Create automated script to generate timeline from GitHub Milestones
+- [ ] Add multiple timeline views (by phase, by priority, by category)
+- [ ] Document timeline updates process
+
+### Related
+- Feature Wishlist: \`docs/resources/feature-wishlist.md\`
+- GitHub Milestones: \`_process/documentation/GITHUB_MILESTONES_SETUP.md\`" \
+    "2026.Q1 - Interactive Features" \
+    "enhancement,documentation"
+
+echo ""
+echo "📋 Creating Issues for 2026.Q2 - Advanced Features..."
+echo ""
+
+# Team Role AI Personas
+create_issue \
+    "Team Role AI Personas" \
+    "## Feature: Team Role AI Personas
+
+**Source:** Feature Wishlist
+**Priority:** Medium
+**Estimated Effort:** TBD
+
+### Description
+Create AI personas based on team roles defined in the documentation, similar to the maintenance personas framework. These personas would help with role-specific tasks and decision-making.
+
+### Implementation Checklist
+- [ ] Review team roles documentation
+- [ ] Design persona framework for team roles
+- [ ] Create persona definitions and prompts
+- [ ] Implement persona system
+- [ ] Test persona functionality
+- [ ] Document persona usage
+
+### Related
+- Feature Wishlist: \`docs/resources/feature-wishlist.md\`
+- Team Roles: \`strategic/12_Team_Roles.md\`" \
+    "2026.Q2 - Advanced Features" \
+    "enhancement,ai-personas"
+
+echo ""
 echo "✅ Issues created"
 echo ""
 echo "📝 Next steps:"

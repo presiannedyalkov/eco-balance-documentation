@@ -1,0 +1,112 @@
+/**
+ * Docusaurus plugin for Meilisearch integration
+ * 
+ * This plugin:
+ * 1. Indexes documentation pages at build time
+ * 2. Provides search functionality via Meilisearch
+ */
+
+const { JSDOM } = require('jsdom');
+
+function pluginMeilisearch(context, options) {
+  const {
+    host,
+    searchKey,
+    indexName = 'docs',
+    batchSize = 100,
+  } = options;
+
+  if (!host || !searchKey) {
+    console.warn('⚠️  Meilisearch plugin: host and searchKey are required');
+    return {};
+  }
+
+  return {
+    name: 'docusaurus-plugin-meilisearch',
+    
+    async contentLoaded({ actions, allContent }) {
+      // Plugin loaded - indexing happens in postBuild
+    },
+
+    async postBuild({ outDir }) {
+      // Index content after build
+      console.log('🔍 Meilisearch: Starting indexing...');
+      
+      try {
+        const { MeiliSearch } = require('meilisearch');
+        const client = new MeiliSearch({
+          host: host,
+          apiKey: searchKey,
+        });
+
+        const index = client.index(indexName);
+
+        // Configure index settings
+        await index.updateSettings({
+          searchableAttributes: ['title', 'content', 'headings'],
+          displayedAttributes: ['title', 'content', 'url', 'headings'],
+          filterableAttributes: [],
+          sortableAttributes: ['title'],
+        });
+
+        // Read and index HTML files
+        const fs = require('fs');
+        const path = require('path');
+        const { glob } = require('glob');
+
+        const htmlFiles = await glob(`${outDir}/**/*.html`, {
+          ignore: ['**/404.html', '**/search.html'],
+        });
+
+        const documents = [];
+
+        for (const filePath of htmlFiles) {
+          try {
+            const html = fs.readFileSync(filePath, 'utf-8');
+            const dom = new JSDOM(html);
+            const document = dom.window.document;
+
+            // Extract content
+            const title = document.querySelector('title')?.textContent || '';
+            const mainContent = document.querySelector('main') || document.body;
+            const content = mainContent.textContent || '';
+            
+            // Extract headings
+            const headings = Array.from(mainContent.querySelectorAll('h1, h2, h3'))
+              .map(h => h.textContent)
+              .join(' ');
+
+            // Get URL (relative to baseUrl)
+            const relativePath = path.relative(outDir, filePath);
+            const url = '/' + relativePath.replace(/\\/g, '/');
+
+            documents.push({
+              id: url,
+              title: title.replace(' | Eco Balance Documentation', '').trim(),
+              content: content.substring(0, 10000), // Limit content size
+              headings: headings.substring(0, 1000),
+              url: url,
+            });
+          } catch (error) {
+            console.warn(`⚠️  Error processing ${filePath}:`, error.message);
+          }
+        }
+
+        // Index in batches
+        for (let i = 0; i < documents.length; i += batchSize) {
+          const batch = documents.slice(i, i + batchSize);
+          await index.addDocuments(batch);
+          console.log(`✅ Indexed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(documents.length / batchSize)}`);
+        }
+
+        console.log(`✅ Meilisearch: Indexed ${documents.length} documents`);
+      } catch (error) {
+        console.error('❌ Meilisearch indexing error:', error);
+        // Don't fail the build if indexing fails
+      }
+    },
+  };
+}
+
+module.exports = pluginMeilisearch;
+

@@ -1,0 +1,105 @@
+name: Release Automation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'VERSION'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (YYYY.MM format)'
+        required: false
+        type: string
+
+jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+      pull-requests: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Get version
+        id: version
+        run: |
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+          else
+            VERSION=$(cat VERSION 2>/dev/null || echo "")
+          fi
+          
+          if [ -z "$VERSION" ]; then
+            echo "❌ No version found in VERSION file or input"
+            exit 1
+          fi
+          
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+      
+      - name: Get release notes
+        id: release_notes
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          
+          # Get merged PRs since last release
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          
+          if [ -z "$LAST_TAG" ]; then
+            echo "No previous release found, including all commits"
+            COMMITS=$(git log --pretty=format:"- %s (%h)" --no-merges)
+          else
+            echo "Last release: $LAST_TAG"
+            COMMITS=$(git log ${LAST_TAG}..HEAD --pretty=format:"- %s (%h)" --no-merges)
+          fi
+          
+          # Get closed issues for this version
+          # Note: This requires issues to be linked to milestones or tagged
+          
+          RELEASE_NOTES="## Release $VERSION
+          
+          ### Changes
+          $COMMITS
+          
+          ### Documentation
+          - Full documentation available at: https://presiannedyalkov.github.io/eco-balance-documentation/
+          - Download PDF/EPUB: See [Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)
+          "
+          
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          echo "$RELEASE_NOTES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      
+      - name: Check for exported files
+        id: exports
+        run: |
+          if [ -d "exports" ] && [ -n "$(ls -A exports/*.{pdf,epub} 2>/dev/null)" ]; then
+            echo "has_exports=true" >> $GITHUB_OUTPUT
+            echo "Found export files"
+          else
+            echo "has_exports=false" >> $GITHUB_OUTPUT
+            echo "No export files found"
+          fi
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: "v${{ steps.version.outputs.version }}"
+          name: "Release v${{ steps.version.outputs.version }}"
+          body: ${{ steps.release_notes.outputs.notes }}
+          draft: false
+          prerelease: false
+          files: |
+            exports/*.pdf
+            exports/*.epub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
