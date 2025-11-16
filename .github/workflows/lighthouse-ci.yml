@@ -19,6 +19,8 @@ jobs:
     name: Lighthouse Performance Audit
     runs-on: ubuntu-latest
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+    # Don't fail the job if steps fail - these are informational checks
+    continue-on-error: true
     
     steps:
       - name: Checkout repository

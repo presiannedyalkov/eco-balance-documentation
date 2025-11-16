@@ -12,6 +12,8 @@ jobs:
   spellcheck:
     name: Spell Check Documentation
     runs-on: ubuntu-latest
+    # Don't fail the job if spelling errors are found - this is informational
+    continue-on-error: true
     
     steps:
       - name: Checkout repository

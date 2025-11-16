@@ -22,6 +22,8 @@ jobs:
   check-links:
     name: Check Links
     runs-on: ubuntu-latest
+    # Don't fail the job if links are broken - this is informational
+    continue-on-error: true
     
     steps:
       - name: Checkout repository

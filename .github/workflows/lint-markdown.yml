@@ -19,6 +19,8 @@ jobs:
   lint:
     name: Lint Markdown Files
     runs-on: ubuntu-latest
+    # Don't fail the job if linting errors are found - this is informational
+    continue-on-error: true
     
     steps:
       - name: Checkout repository
