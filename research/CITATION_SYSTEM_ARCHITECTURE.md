@@ -14,7 +14,7 @@ flowchart TD
     A[Research Articles<br/>399 markdown files] --> B[Citation Index<br/>JSON/BibTeX]
     B --> C[Citation IDs<br/>rest-001, fund-001]
     C --> D[Markdown Documents<br/>strategic/*.md]
-    D --> E[Citation References<br/>[rest-001] in text]
+    D --> E["Citation References<br/>(rest-001) in text"]
     E --> F[Reference Sections<br/>Auto-generated]
     F --> G[Final Output<br/>PDF/EPUB/Web]
     
@@ -51,7 +51,7 @@ flowchart LR
     B --> C[Citation Index<br/>citation_index.json]
     C --> D[Citation IDs<br/>rest-001, fund-001]
     
-    E[User Writes Document] --> F[Add Citation<br/>[rest-001]]
+    E[User Writes Document] --> F["Add Citation<br/>(rest-001)"]
     F --> G[Script: generate-references.js]
     G --> H[Reference Section<br/>Auto-added to doc]
     
@@ -88,7 +88,7 @@ graph TB
     
     subgraph "Documentation"
         E[Strategic Docs<br/>strategic/*.md]
-        F[Citation References<br/>[rest-001]]
+        F["Citation References<br/>(rest-001)"]
         G[Reference Sections<br/>Auto-generated]
     end
     
@@ -153,7 +153,7 @@ flowchart TD
     C --> D[Export to BibTeX<br/>references.bib]
     D --> E[Citation Keys<br/>@rest2023mediterranean]
     
-    F[User Writes Document] --> G[Add Citation<br/>[@rest2023mediterranean]]
+    F[User Writes Document] --> G["Add Citation<br/>(@rest2023mediterranean)"]
     G --> H[Pandoc with --citeproc<br/>Process citations]
     H --> I[Formatted References<br/>Auto-generated]
     
@@ -190,7 +190,7 @@ graph TB
     
     subgraph "Documentation"
         F[Markdown Files<br/>strategic/*.md]
-        G[Pandoc Citations<br/>[@key]]
+        G["Pandoc Citations<br/>(@key)"]
     end
     
     subgraph "Processing"
@@ -251,7 +251,7 @@ flowchart LR
     B --> C[BibTeX File<br/>references.bib]
     C --> D[Citation Keys<br/>@rest2023mediterranean]
     
-    E[Markdown Document] --> F[Add Citation<br/>[@rest2023mediterranean]]
+    E[Markdown Document] --> F["Add Citation<br/>(@rest2023mediterranean)"]
     F --> G[Pandoc<br/>--citeproc<br/>--bibliography]
     C --> G
     G --> H[Formatted Citations<br/>Auto-generated]
@@ -282,7 +282,7 @@ graph TB
     end
     
     subgraph "Documentation"
-        D[Markdown Files<br/>[@key] syntax]
+        D["Markdown Files<br/>(@key) syntax"]
     end
     
     subgraph "Processing"
@@ -333,8 +333,8 @@ flowchart TD
     F --> G[Citation IDs<br/>rest-001, @rest2023med]
     
     H[User Writes Document] --> I{Citation Method}
-    I -->|Simple| J[Custom ID<br/>[rest-001]]
-    I -->|Pandoc| K[BibTeX Key<br/>[@rest2023med]]
+    I -->|Simple| J["Custom ID<br/>(rest-001)"]
+    I -->|Pandoc| K["BibTeX Key<br/>(@rest2023med)"]
     
     J --> L[generate-references.js<br/>Custom formatting]
     K --> M[Pandoc --citeproc<br/>Auto formatting]
@@ -383,8 +383,8 @@ graph TB
     
     subgraph "Documentation"
         G[Markdown Files<br/>strategic/*.md]
-        H[Custom Citations<br/>[rest-001]]
-        I[Pandoc Citations<br/>[@rest2023med]]
+        H["Custom Citations<br/>(rest-001)"]
+        I["Pandoc Citations<br/>(@rest2023med)"]
     end
     
     subgraph "Processing"
@@ -459,7 +459,7 @@ sequenceDiagram
     S->>A: Parse article frontmatter
     S->>I: Create citation_index.json
     I->>U: Citation IDs (rest-001, fund-001)
-    U->>D: Add [rest-001] to document
+    U->>D: Add (rest-001) to document
     U->>S: Run generate-references.js
     S->>D: Scan for citations
     S->>I: Lookup citation details
@@ -482,7 +482,7 @@ sequenceDiagram
     Z->>U: Organize & tag articles
     U->>Z: Export to BibTeX
     Z->>B: Generate references.bib
-    U->>D: Add [@rest2023med] to document
+    U->>D: Add (@rest2023med) to document
     D->>P: Run Pandoc with --citeproc
     P->>B: Load bibliography
     P->>D: Process citations
@@ -505,7 +505,7 @@ sequenceDiagram
     Z->>B: Export to BibTeX
     B->>S: Run sync-bibtex-json.js
     S->>J: Create citation_index.json
-    U->>D: Add [rest-001] OR [@rest2023med]
+    U->>D: Add (rest-001) OR (@rest2023med)
     D->>S: Option 1: generate-references.js
     D->>P: Option 2: Pandoc --citeproc
     S->>J: Lookup citation
