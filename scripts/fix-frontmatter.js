@@ -137,10 +137,12 @@ console.log('');
 const fixed = processDirectory(DOCS_DIR, verbose || isCI);
 console.log(`\n✅ Fixed ${fixed || 0} file(s)`);
 
-// Verification: Check for any unquoted titles
+// Verification: Check for any unquoted values in all frontmatter fields
 if (fixed === 0) {
-  console.log('\n🔍 Verifying files are properly fixed...');
+  console.log('\n🔍 Verifying all frontmatter fields are properly quoted...');
   let unquotedCount = 0;
+  const unquotedFields = [];
+  
   function verifyDirectory(dir) {
     if (!fs.existsSync(dir)) return;
     const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -154,15 +156,32 @@ if (fixed === 0) {
           const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
           if (frontmatterMatch) {
             const frontmatter = frontmatterMatch[1];
-            // Check for unquoted title values
-            const titleMatch = frontmatter.match(/^title:\s*(.+)$/m);
-            if (titleMatch) {
-              const titleValue = titleMatch[1].trim();
-              if (!titleValue.startsWith('"') && !titleValue.startsWith("'") && 
-                  !/^-?\d+$/.test(titleValue) && !/^-?\d+\.\d+$/.test(titleValue) &&
-                  titleValue !== 'true' && titleValue !== 'false' && titleValue !== 'null') {
-                console.log(`⚠️  Unquoted title found: ${path.relative(process.cwd(), fullPath)} - "${titleValue}"`);
-                unquotedCount++;
+            const lines = frontmatter.split('\n');
+            
+            for (const line of lines) {
+              if (!line.trim() || line.startsWith('#')) continue;
+              
+              const keyValueMatch = line.match(/^(\s*)([^:]+):\s*(.+)$/);
+              if (keyValueMatch) {
+                const [, indent, key, value] = keyValueMatch;
+                const trimmedValue = value.trim();
+                
+                // Skip if already quoted
+                if ((trimmedValue.startsWith('"') && trimmedValue.endsWith('"')) ||
+                    (trimmedValue.startsWith("'") && trimmedValue.endsWith("'"))) {
+                  continue;
+                }
+                
+                // Check if it's a simple integer (the only unquoted value we allow)
+                const isSimpleInteger = /^-?\d+$/.test(trimmedValue);
+                const isEmpty = trimmedValue === '' || trimmedValue.length === 0;
+                
+                if (!isSimpleInteger && !isEmpty) {
+                  const relativePath = path.relative(process.cwd(), fullPath);
+                  console.log(`⚠️  Unquoted value: ${relativePath} - ${key.trim()}: "${trimmedValue}"`);
+                  unquotedFields.push({ file: relativePath, key: key.trim(), value: trimmedValue });
+                  unquotedCount++;
+                }
               }
             }
           }
@@ -172,11 +191,15 @@ if (fixed === 0) {
       }
     }
   }
+  
   verifyDirectory(DOCS_DIR);
   if (unquotedCount > 0) {
-    console.log(`\n⚠️  Found ${unquotedCount} file(s) with unquoted titles`);
+    console.log(`\n⚠️  Found ${unquotedCount} unquoted field(s) in frontmatter:`);
+    unquotedFields.forEach(f => {
+      console.log(`   - ${f.file}: ${f.key} = ${f.value}`);
+    });
   } else {
-    console.log('✅ All titles are properly quoted');
+    console.log('✅ All frontmatter fields are properly quoted (or are simple integers)');
   }
 }
 
