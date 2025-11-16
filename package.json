@@ -36,8 +36,8 @@
     "@docusaurus/module-type-aliases": "^3.5.0",
     "@docusaurus/types": "^3.5.0",
     "@playwright/test": "^1.56.1",
-    "glob": "^10.3.10",
-    "jsdom": "^23.0.1",
+    "glob": "^11.0.3",
+    "jsdom": "^27.2.0",
     "playwright": "^1.56.1"
   },
   "browserslist": {
