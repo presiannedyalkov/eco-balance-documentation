@@ -138,7 +138,14 @@ test.describe('Deployment Verification', () => {
           console.warn('Content not immediately visible on', String(sanitizedPath), 'but page loaded');
         }
       } catch (error) {
-        console.error(`Failed to load ${path}:`, error.message);
+        // Sanitize error message and path to prevent log injection
+        const rawMessage = String(error?.message || 'Unknown error');
+        const sanitizedError = rawMessage
+          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+          .substring(0, 200); // Limit length
+        const sanitizedPath = String(path || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+        console.error('Failed to load', String(sanitizedPath) + ':', String(sanitizedError));
         // Don't fail immediately, continue with other pages
       }
     }
