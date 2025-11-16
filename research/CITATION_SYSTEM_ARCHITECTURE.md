@@ -640,22 +640,22 @@ graph TB
 
 ```mermaid
 flowchart TD
-    A["AI Tool<br/>(Perplexity/Claude)<br/>Generates markdown with [1], [2]"] --> B[Source Extraction Script<br/>parse-sources.js]
+    A["AI Tool<br/>(Perplexity/Claude)<br/>Generates markdown with (1), (2)"] --> B[Source Extraction Script<br/>parse-sources.js]
     B --> C[Extract Sources<br/>Title, Author, URL, Year]
     C --> D[Zotero API<br/>Check if exists]
     D --> E{Source exists?}
     E -->|No| F[Create Zotero Item<br/>via API]
     E -->|Yes| G[Get Zotero Key]
     F --> G
-    G --> H[Map Citations<br/>[1] → @zotero-key-1]
+    G --> H["Map Citations<br/>(1) → @zotero-key-1"]
     
     I[User Edits Document<br/>Add/remove paragraphs] --> J[Reference Cleanup Script<br/>cleanup-references.js]
-    J --> K[Scan for Citations<br/>Find all [1], [2], etc.]
+    J --> K["Scan for Citations<br/>Find all (1), (2), etc."]
     K --> L[Check Sources<br/>Which are still used?]
     L --> M[Remove Unused Sources<br/>Renumber remaining]
     M --> N[Update Citation Numbers<br/>In text and references]
     
-    H --> O[Convert to BibTeX Keys<br/>[@zotero-key-1]"]
+    H --> O["Convert to BibTeX Keys<br/>(@zotero-key-1)"]
     N --> O
     O --> P[Pandoc --citeproc<br/>Format citations]
     P --> Q[Final Document<br/>PDF/EPUB with citations]
@@ -733,7 +733,7 @@ flowchart TD
 ```mermaid
 graph TB
     subgraph "AI Content Input"
-        A["AI-Generated Markdown<br/>[1], [2] citations<br/>Sources at bottom"]
+        A["AI-Generated Markdown<br/>(1), (2) citations<br/>Sources at bottom"]
     end
     
     subgraph "Source Processing"
@@ -749,7 +749,7 @@ graph TB
     subgraph "Document Processing"
         F[Markdown Documents<br/>With numbered citations]
         G[cleanup-references.js<br/>Remove unused<br/>Renumber]
-        H[convert-to-bibtex.js<br/>[1] → @key]
+        H["convert-to-bibtex.js<br/>(1) → @key"]
     end
     
     subgraph "Export"
