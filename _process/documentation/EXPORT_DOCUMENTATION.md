@@ -57,8 +57,8 @@ The script will:
 ### Output Files
 
 Exported files are saved to the `exports/` directory:
-- `eco-balance-documentation-v[VERSION]-[DATE].epub`
-- `eco-balance-documentation-v[VERSION]-[DATE].pdf`
+- `eco-balance-documentation-v[DATE].epub`
+- `eco-balance-documentation-v[DATE].pdf`
 
 Example:
 - `eco-balance-documentation-v2025-11-16.epub`
