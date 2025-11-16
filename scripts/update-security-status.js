@@ -54,8 +54,11 @@ function makeRequest(endpoint) {
         } else if (res.statusCode === 404) {
           // Some endpoints return 404 if no alerts exist
           resolve([]);
+        } else if (res.statusCode === 403) {
+          // Permission denied - might need different token scopes
+          reject(new Error(`HTTP ${res.statusCode}: Permission denied. Token may need 'security-events:read' scope. Response: ${data.substring(0, 200)}`));
         } else {
-          reject(new Error(`HTTP ${res.statusCode}: ${data}`));
+          reject(new Error(`HTTP ${res.statusCode}: ${data.substring(0, 500)}`));
         }
       });
     }).on('error', (err) => {
