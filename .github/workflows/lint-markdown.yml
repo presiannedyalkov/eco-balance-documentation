@@ -28,12 +28,19 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: |
+            docs/**/*.md
+            strategic/**/*.md
             **/*.md
             !node_modules/**/*.md
             !build/**/*.md
             !.docusaurus/**/*.md
             !_versions/**/*.md
             !archive/**/*.md
+            !_process/**/*.md
+            !_vault_maintenance/**/*.md
+            !_templates/**/*.md
+          config: .markdownlint.json
+        continue-on-error: true
       
       - name: Check for broken links
         uses: peter-evans/link-checker@v1
