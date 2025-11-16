@@ -87,7 +87,14 @@ function processFile(filePath, verbose = false) {
     }
     return false;
   } catch (error) {
-    console.error(`❌ Error processing ${filePath}:`, error.message);
+    // Sanitize error message and file path to prevent log injection
+    const rawMessage = String(error?.message || 'Unknown error');
+    const sanitizedError = rawMessage
+      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+      .substring(0, 200); // Limit length
+    const sanitizedPath = String(filePath || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+    console.error('❌ Error processing', String(sanitizedPath) + ':', String(sanitizedError));
     return false;
   }
 }
