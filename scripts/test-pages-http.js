@@ -138,7 +138,10 @@ async function runTests() {
       console.log(`❌ Failed: ${failed}/${results.length}`);
       console.log('\nFailed pages:');
       results.filter(r => r.status === 'failed').forEach(r => {
-        console.log(`  - ${r.url}: ${r.error}`);
+        // Sanitize error message to prevent log injection
+        const sanitizedError = String(r.error || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+        const sanitizedUrl = String(r.url || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+        console.log(`  - ${sanitizedUrl}: ${sanitizedError}`);
       });
       console.log('\n💡 Make sure the server is running: npm start');
       process.exit(1);

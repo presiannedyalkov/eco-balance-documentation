@@ -12,10 +12,6 @@ function generateFrontmatter(filename, relativePath) {
   const category = parts[0] || '';
   const basename = path.basename(filename, '.md');
   
-  // Don't set custom ID - let Docusaurus generate it from file path
-  // This ensures IDs match what Docusaurus expects
-  const id = null;
-  
   // Generate title from filename
   let title = basename
     .replace(/^[0-9]+_/, '') // Remove leading numbers
@@ -25,8 +21,6 @@ function generateFrontmatter(filename, relativePath) {
   // Special cases
   if (basename === 'README') {
     title = 'Restoration Playbook';
-  } else if (basename.startsWith('00_')) {
-    title = title.replace(/Overview$/, 'Overview');
   }
   
   // Determine sidebar position from filename
@@ -36,21 +30,11 @@ function generateFrontmatter(filename, relativePath) {
     sidebarPosition = parseInt(numMatch[1]);
   }
   
-  // Only include id if it's not null (for README)
-  if (id) {
-    return `---
-id: ${id}
+  return `---
 title: ${title}
 sidebar_position: ${sidebarPosition}
 ---
 `;
-  } else {
-    return `---
-title: ${title}
-sidebar_position: ${sidebarPosition}
----
-`;
-  }
 }
 
 /**

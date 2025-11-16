@@ -7,9 +7,6 @@
  */
 
 const { execSync } = require('child_process');
-const path = require('path');
-
-const scriptsDir = path.join(__dirname);
 
 console.log('🧪 Running all documentation tests...\n');
 

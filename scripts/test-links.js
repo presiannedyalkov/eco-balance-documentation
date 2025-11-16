@@ -9,7 +9,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 
 const BUILD_DIR = path.join(__dirname, '..', 'build');
 const BASE_URL = '/eco-balance-documentation';
