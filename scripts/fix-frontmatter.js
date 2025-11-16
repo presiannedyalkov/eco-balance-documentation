@@ -163,7 +163,7 @@ if (fixed === 0) {
               
               const keyValueMatch = line.match(/^(\s*)([^:]+):\s*(.+)$/);
               if (keyValueMatch) {
-                const [, indent, key, value] = keyValueMatch;
+                const [, , key, value] = keyValueMatch; // indent not needed in verification
                 const trimmedValue = value.trim();
                 
                 // Skip if already quoted
