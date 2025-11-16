@@ -82,30 +82,24 @@ jobs:
         id: exports
         run: |
           # Check if export files exist locally (they won't for monthly releases)
-          EPUB_FILES=$(find exports -name "*.epub" -type f 2>/dev/null | head -1 || echo "")
-          PDF_FILES=$(find exports -name "*.pdf" -type f 2>/dev/null | head -1 || echo "")
+          EPUB_FILES=$(find exports -name "*.epub" -type f 2>/dev/null | head -1 || true)
+          PDF_FILES=$(find exports -name "*.pdf" -type f 2>/dev/null | head -1 || true)
           
-          FILE_LIST=""
           if [ -n "$EPUB_FILES" ] && [ -f "$EPUB_FILES" ]; then
-            FILE_LIST="${FILE_LIST}${EPUB_FILES}"$'\n'
-            echo "Found EPUB: $EPUB_FILES"
             echo "has_epub=true" >> $GITHUB_OUTPUT
+            echo "Found EPUB: $EPUB_FILES"
           else
             echo "has_epub=false" >> $GITHUB_OUTPUT
           fi
           
           if [ -n "$PDF_FILES" ] && [ -f "$PDF_FILES" ]; then
-            FILE_LIST="${FILE_LIST}${PDF_FILES}"$'\n'
-            echo "Found PDF: $PDF_FILES"
             echo "has_pdf=true" >> $GITHUB_OUTPUT
+            echo "Found PDF: $PDF_FILES"
           else
             echo "has_pdf=false" >> $GITHUB_OUTPUT
           fi
           
-          if [ -n "$FILE_LIST" ]; then
-            echo "file_list<<EOF" >> $GITHUB_OUTPUT
-            printf "%s" "$FILE_LIST" | sed '$ s/\\n$//' >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
+          if ([ -n "$EPUB_FILES" ] && [ -f "$EPUB_FILES" ]) || ([ -n "$PDF_FILES" ] && [ -f "$PDF_FILES" ]); then
             echo "has_exports=true" >> $GITHUB_OUTPUT
           else
             echo "has_exports=false" >> $GITHUB_OUTPUT
@@ -124,7 +118,6 @@ jobs:
             **📥 Download PDF/EPUB:** PDF and EPUB exports are created in separate daily export releases. Look for releases tagged `export-vYYYY-MM-DD` in the [releases page](https://github.com/${{ github.repository }}/releases) for the latest exports.
           draft: false
           prerelease: false
-          files: ${{ steps.exports.outputs.file_list }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

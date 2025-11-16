@@ -91,43 +91,48 @@ jobs:
         if: always()
         run: |
           # Find all exported files
-          EPUB_FILES=$(find exports -name "*.epub" -type f 2>/dev/null | sort || echo "")
-          PDF_FILES=$(find exports -name "*.pdf" -type f 2>/dev/null | sort || echo "")
+          EPUB_FILES=$(find exports -name "*.epub" -type f 2>/dev/null | sort || true)
+          PDF_FILES=$(find exports -name "*.pdf" -type f 2>/dev/null | sort || true)
           
-          # Create a file list for the release action
-          FILE_LIST=""
+          EPUB_COUNT=0
+          PDF_COUNT=0
           
+          # Count and list EPUB files
           if [ -n "$EPUB_FILES" ]; then
-            echo "epub_exists=true" >> $GITHUB_OUTPUT
             while IFS= read -r file; do
-              if [ -f "$file" ]; then
-                FILE_LIST="${FILE_LIST}${file}"$'\n'
+              if [ -f "$file" ] && [ -n "$file" ]; then
+                EPUB_COUNT=$((EPUB_COUNT + 1))
                 echo "Found EPUB: $file"
               fi
             done <<< "$EPUB_FILES"
+          fi
+          
+          # Count and list PDF files
+          if [ -n "$PDF_FILES" ]; then
+            while IFS= read -r file; do
+              if [ -f "$file" ] && [ -n "$file" ]; then
+                PDF_COUNT=$((PDF_COUNT + 1))
+                echo "Found PDF: $file"
+              fi
+            done <<< "$PDF_FILES"
+          fi
+          
+          # Set outputs
+          if [ $EPUB_COUNT -gt 0 ]; then
+            echo "epub_exists=true" >> $GITHUB_OUTPUT
           else
             echo "epub_exists=false" >> $GITHUB_OUTPUT
             echo "No EPUB files found"
           fi
           
-          if [ -n "$PDF_FILES" ]; then
+          if [ $PDF_COUNT -gt 0 ]; then
             echo "pdf_exists=true" >> $GITHUB_OUTPUT
-            while IFS= read -r file; do
-              if [ -f "$file" ]; then
-                FILE_LIST="${FILE_LIST}${file}"$'\n'
-                echo "Found PDF: $file"
-              fi
-            done <<< "$PDF_FILES"
           else
             echo "pdf_exists=false" >> $GITHUB_OUTPUT
             echo "No PDF files found"
           fi
           
-          # Save file list to output (trim trailing newline)
-          if [ -n "$FILE_LIST" ]; then
-            echo "file_list<<EOF" >> $GITHUB_OUTPUT
-            printf "%s" "$FILE_LIST" | sed '$ s/\\n$//' >> $GITHUB_OUTPUT
-            echo "EOF" >> $GITHUB_OUTPUT
+          if [ $EPUB_COUNT -gt 0 ] || [ $PDF_COUNT -gt 0 ]; then
             echo "has_files=true" >> $GITHUB_OUTPUT
           else
             echo "has_files=false" >> $GITHUB_OUTPUT
@@ -153,7 +158,9 @@ jobs:
             ${{ steps.check_files.outputs.pdf_exists == 'true' && '- PDF: For printing and universal document sharing' || '' }}
             
             **Full documentation:** https://docs.eco-balance.cc/
-          files: ${{ steps.check_files.outputs.file_list }}
+          files: |
+            exports/*.epub
+            exports/*.pdf
           draft: false
           prerelease: true
         env:
