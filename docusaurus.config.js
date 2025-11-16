@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: process.env.SITE_URL || 'https://presiannedyalkov.github.io',
+  url: process.env.SITE_URL || 'https://docs.eco-balance.cc',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For custom domain (docs.eco-balance.cc): use '/'
   // For GitHub Pages project site: use '/eco-balance-documentation/'

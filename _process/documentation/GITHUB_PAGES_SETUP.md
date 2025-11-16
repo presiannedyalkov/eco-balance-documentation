@@ -10,7 +10,7 @@
 
 1. **Docusaurus Configuration**
    - ✅ Updated `docusaurus.config.js` with correct repository information
-   - ✅ Set production URL: `https://presiannedyalkov.github.io`
+   - ✅ Set production URL: `https://docs.eco-balance.cc`
    - ✅ Configured base URL: `/eco-balance-documentation/`
    - ✅ Updated all GitHub links to point to correct repository
 
@@ -75,7 +75,7 @@ git push origin main
 ## 📍 Deployment URL
 
 Once deployed, your documentation will be available at:
-**https://presiannedyalkov.github.io/eco-balance-documentation/**
+**https://docs.eco-balance.cc/**
 
 ---
 
@@ -94,7 +94,7 @@ Once deployed, your documentation will be available at:
    - **URL:** Your site URL
 
 ### Test the Site
-1. Visit: `https://presiannedyalkov.github.io/eco-balance-documentation/`
+1. Visit: `https://docs.eco-balance.cc/`
 2. Verify all pages load correctly
 3. Test navigation and search functionality
 

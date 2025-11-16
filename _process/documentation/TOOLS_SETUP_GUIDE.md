@@ -97,7 +97,7 @@
 1. Go to: https://docsearch.algolia.com/apply/
 2. Fill out application form:
    - **Repository:** `presiannedyalkov/eco-balance-documentation`
-   - **Site URL:** `https://presiannedyalkov.github.io/eco-balance-documentation/`
+   - **Site URL:** `https://docs.eco-balance.cc/`
    - **Description:** "Open source documentation for ecological restoration project - creating habitat for wildlife through biodiversity restoration"
    - **Contact email:** Your email
    - **Framework:** Docusaurus

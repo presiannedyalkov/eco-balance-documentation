@@ -82,7 +82,7 @@ Transform the documentation repository into a public-facing website using Docusa
 - ✅ GitHub Actions workflow created (`.github/workflows/deploy.yml`)
 - ✅ Docusaurus config updated with repository information
 - ✅ GitHub Pages settings enabled and configured
-- ✅ Site deployed and live at: https://presiannedyalkov.github.io/eco-balance-documentation/
+- ✅ Site deployed and live at: https://docs.eco-balance.cc/
 - ✅ Automatic deployment on every push to main
 - ✅ Post-deployment verification tests with Playwright
 - ✅ Automatic rollback mechanism if tests fail

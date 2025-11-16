@@ -20,7 +20,7 @@ module.exports = defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: process.env.BASE_URL || 'https://presiannedyalkov.github.io/eco-balance-documentation',
+    baseURL: process.env.BASE_URL || process.env.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',

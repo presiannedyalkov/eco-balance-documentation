@@ -52,7 +52,7 @@ jobs:
             DEPLOY_URL="$CUSTOM_URL"
             echo "Using custom domain: $DEPLOY_URL"
           else
-            DEPLOY_URL="https://presiannedyalkov.github.io/eco-balance-documentation"
+            DEPLOY_URL="https://docs.eco-balance.cc"
             echo "Using GitHub Pages URL: $DEPLOY_URL"
           fi
           echo "deploy_url=$DEPLOY_URL" >> $GITHUB_OUTPUT

@@ -25,7 +25,7 @@ Create a **habitat for wildlife** and **restore land to become a shelter and san
 ### Viewing the Documentation
 
 **Option 1: View Online**
-- **🌐 Live Site:** [https://presiannedyalkov.github.io/eco-balance-documentation/](https://presiannedyalkov.github.io/eco-balance-documentation/)
+- **🌐 Live Site:** [https://docs.eco-balance.cc/](https://docs.eco-balance.cc/)
 - Automatically updated on every push to `main`
 
 **Option 2: Run Locally**
@@ -306,7 +306,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **🌐 Live Documentation:** [View on GitHub Pages](https://presiannedyalkov.github.io/eco-balance-documentation/) - Public documentation website
+- **🌐 Live Documentation:** [View Documentation](https://docs.eco-balance.cc/) - Public documentation website
 - **📦 Repository:** [GitHub Repository](https://github.com/presiannedyalkov/eco-balance-documentation)
 - **📚 Restoration Playbook:** [Restoration Playbook Template](/restoration-playbook/README) - Template for ecological restoration projects
 

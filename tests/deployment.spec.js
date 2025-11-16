@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test');
 
 // Use custom domain if set, otherwise fallback to GitHub Pages URL
-const BASE_URL = process.env.BASE_URL || process.env.CUSTOM_DOMAIN_URL || 'https://presiannedyalkov.github.io/eco-balance-documentation';
+const BASE_URL = process.env.BASE_URL || process.env.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc';
 
 /**
  * Helper function to check if URL is valid (custom domain or GitHub Pages)

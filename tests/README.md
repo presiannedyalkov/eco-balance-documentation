@@ -18,7 +18,7 @@ After each deployment to GitHub Pages, these tests automatically run to ensure:
 To run the tests against the deployed site:
 
 ```bash
-BASE_URL="https://presiannedyalkov.github.io/eco-balance-documentation" npm run test:deployment
+BASE_URL="https://docs.eco-balance.cc" npm run test:deployment
 ```
 
 To run against a local server:

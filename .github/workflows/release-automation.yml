@@ -70,7 +70,7 @@ jobs:
           $COMMITS
           
           ### Documentation
-          - Full documentation available at: https://presiannedyalkov.github.io/eco-balance-documentation/
+          - Full documentation available at: https://docs.eco-balance.cc/
           - Download PDF/EPUB: See [Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)
           "
           
