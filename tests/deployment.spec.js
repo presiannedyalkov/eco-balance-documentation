@@ -117,7 +117,10 @@ test.describe('Deployment Verification', () => {
         
         // Status should be 200 after redirect
         if (status !== 200 && status !== 301 && status !== 302) {
-          console.warn(`Page ${path} returned status ${status}, but continuing...`);
+          // Sanitize path and status to prevent log injection
+          const sanitizedPath = String(path || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+          const sanitizedStatus = String(status || '').replace(/[\r\n]/g, ' ').substring(0, 10);
+          console.warn('Page', String(sanitizedPath), 'returned status', String(sanitizedStatus), 'but continuing...');
         }
         
         // Check page has content (try multiple selectors)
@@ -130,7 +133,9 @@ test.describe('Deployment Verification', () => {
         ]).catch(() => false);
         
         if (!contentVisible) {
-          console.warn(`Content not immediately visible on ${path}, but page loaded`);
+          // Sanitize path to prevent log injection
+          const sanitizedPath = String(path || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+          console.warn('Content not immediately visible on', String(sanitizedPath), 'but page loaded');
         }
       } catch (error) {
         // Sanitize error message to prevent log injection
@@ -215,7 +220,11 @@ test.describe('Deployment Verification', () => {
     }
     
     if (brokenLinks.length > 0) {
-      console.error('Broken links found:', brokenLinks);
+      // Sanitize broken links array to prevent log injection
+      const sanitizedLinks = brokenLinks.map(link => 
+        String(link || '').replace(/[\x00-\x1F\x7F-\x9F]/g, '').replace(/[\r\n]/g, ' ').substring(0, 200)
+      );
+      console.error('Broken links found:', ...sanitizedLinks);
       throw new Error(`Found ${brokenLinks.length} broken "Back to Project Hub" links:\n${brokenLinks.join('\n')}`);
     }
   });
@@ -329,7 +338,10 @@ test.describe('Deployment Verification', () => {
               hostname === 'presiannedyalkov.github.io') {
             successfulLinks++;
           } else {
-            console.warn(`Link ${href} navigated to wrong domain: ${hostname}`);
+            // Sanitize href and hostname to prevent log injection
+            const sanitizedHref = String(href || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+            const sanitizedHostname = String(hostname || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+            console.warn('Link', String(sanitizedHref), 'navigated to wrong domain:', String(sanitizedHostname));
           }
         } catch (urlError) {
           // If URL parsing fails, fall back to string check but log the error
@@ -477,7 +489,9 @@ test.describe('Deployment Verification', () => {
         // Natural width of 0 usually means image failed to load
         if (naturalWidth === 0) {
           const src = await img.getAttribute('src');
-          console.warn(`Potentially broken image: ${src}`);
+          // Sanitize src to prevent log injection
+          const sanitizedSrc = String(src || '').replace(/[\x00-\x1F\x7F-\x9F]/g, '').replace(/[\r\n]/g, ' ').substring(0, 200);
+          console.warn('Potentially broken image:', String(sanitizedSrc));
           brokenImages++;
         }
       }

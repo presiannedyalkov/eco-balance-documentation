@@ -103,7 +103,14 @@ async function testPage(browser, url) {
     console.log(`  ✅ ${url} - OK`);
     return { url, status: 'success' };
   } catch (error) {
-    console.error(`  ❌ ${url} - FAILED: ${error.message}`);
+    // Sanitize error message to prevent log injection
+    const rawMessage = String(error?.message || 'Unknown error');
+    const sanitizedError = rawMessage
+      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+      .substring(0, 200); // Limit length
+    const sanitizedUrl = String(url || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+    console.error('  ❌', String(sanitizedUrl), '- FAILED:', String(sanitizedError));
     return { url, status: 'failed', error: error.message };
   } finally {
     await page.close();
