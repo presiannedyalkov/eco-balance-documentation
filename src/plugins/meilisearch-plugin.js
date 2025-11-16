@@ -6,8 +6,6 @@
  * 2. Provides search functionality via Meilisearch
  */
 
-const { JSDOM } = require('jsdom');
-
 function pluginMeilisearch(context, options) {
   const {
     host,
@@ -33,7 +31,13 @@ function pluginMeilisearch(context, options) {
       console.log('🔍 Meilisearch: Starting indexing...');
       
       try {
+        // Lazy-load dependencies only when needed
         const { MeiliSearch } = require('meilisearch');
+        const { JSDOM } = require('jsdom');
+        const fs = require('fs');
+        const path = require('path');
+        const { glob } = require('glob');
+
         const client = new MeiliSearch({
           host: host,
           apiKey: searchKey,
@@ -41,19 +45,20 @@ function pluginMeilisearch(context, options) {
 
         const index = client.index(indexName);
 
-        // Configure index settings
-        await index.updateSettings({
-          searchableAttributes: ['title', 'content', 'headings'],
-          displayedAttributes: ['title', 'content', 'url', 'headings'],
-          filterableAttributes: [],
-          sortableAttributes: ['title'],
-        });
+        // Configure index settings (only if index doesn't exist or needs update)
+        try {
+          await index.updateSettings({
+            searchableAttributes: ['title', 'content', 'headings'],
+            displayedAttributes: ['title', 'content', 'url', 'headings'],
+            filterableAttributes: [],
+            sortableAttributes: ['title'],
+          });
+        } catch (error) {
+          // Index might not exist yet or settings might already be configured
+          console.warn('⚠️  Could not update index settings:', error.message);
+        }
 
         // Read and index HTML files
-        const fs = require('fs');
-        const path = require('path');
-        const { glob } = require('glob');
-
         const htmlFiles = await glob(`${outDir}/**/*.html`, {
           ignore: ['**/404.html', '**/search.html'],
         });
