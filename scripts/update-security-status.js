@@ -93,8 +93,12 @@ async function getCodeQLAlerts() {
 
     return counts;
   } catch (error) {
-    // Sanitize error message to prevent log injection
-    const sanitizedError = String(error.message || 'Unknown error').replace(/[\r\n]/g, ' ').substring(0, 200);
+    // Sanitize error message to prevent log injection - remove all control characters and limit length
+    const rawMessage = String(error?.message || 'Unknown error');
+    const sanitizedError = rawMessage
+      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+      .substring(0, 200); // Limit length
     console.warn('⚠️  Could not fetch CodeQL alerts:', sanitizedError);
     return { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
   }
@@ -124,8 +128,12 @@ async function getDependabotAlerts() {
 
     return counts;
   } catch (error) {
-    // Sanitize error message to prevent log injection
-    const sanitizedError = String(error.message || 'Unknown error').replace(/[\r\n]/g, ' ').substring(0, 200);
+    // Sanitize error message to prevent log injection - remove all control characters and limit length
+    const rawMessage = String(error?.message || 'Unknown error');
+    const sanitizedError = rawMessage
+      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+      .substring(0, 200); // Limit length
     console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizedError);
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }

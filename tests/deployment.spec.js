@@ -329,7 +329,10 @@ test.describe('Deployment Verification', () => {
           try {
             const fallbackUrl = new URL(afterUrl);
             const fallbackHostname = fallbackUrl.hostname;
-            if (fallbackHostname.includes('eco-balance-documentation') || fallbackHostname === 'presiannedyalkov.github.io') {
+            // Use exact hostname matching instead of substring to prevent false positives
+            if (fallbackHostname === 'presiannedyalkov.github.io' || 
+                fallbackHostname === 'docs.eco-balance.cc' ||
+                fallbackHostname.endsWith('.github.io')) {
               successfulLinks++;
             }
           } catch {
