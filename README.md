@@ -358,7 +358,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📅 Last Updated
 
-**November 2025** - Documentation version 2.0.0
+**November 2025** - Documentation version v2025-11
 
 **Status:** Exploration Phase - Actively exploring pathways forward
 
