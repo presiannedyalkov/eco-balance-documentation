@@ -72,6 +72,9 @@ jobs:
           # Try environment variables first (github-pages), then repository variables, then default
           BASE_URL: ${{ env.CUSTOM_DOMAIN_BASE_URL || vars.CUSTOM_DOMAIN_BASE_URL || '/eco-balance-documentation/' }}
           SITE_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
+          # Meilisearch configuration (optional - defaults are in docusaurus.config.js)
+          MEILISEARCH_HOST: ${{ vars.MEILISEARCH_HOST || env.MEILISEARCH_HOST || 'https://search.eco-balance.cc' }}
+          MEILISEARCH_SEARCH_KEY: ${{ secrets.MEILISEARCH_SEARCH_KEY || vars.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489' }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

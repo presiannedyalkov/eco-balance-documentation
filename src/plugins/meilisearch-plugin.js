@@ -100,13 +100,29 @@ function pluginMeilisearch(context, options) {
         // Index in batches
         for (let i = 0; i < documents.length; i += batchSize) {
           const batch = documents.slice(i, i + batchSize);
-          await index.addDocuments(batch);
-          console.log(`✅ Indexed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(documents.length / batchSize)}`);
+          try {
+            await index.addDocuments(batch);
+            console.log(`✅ Indexed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(documents.length / batchSize)}`);
+          } catch (error) {
+            // If key doesn't have write permissions, skip indexing
+            if (error.message && error.message.includes('API key')) {
+              console.warn(`⚠️  Meilisearch indexing skipped: Key doesn't have write permissions. This is expected if using a search-only key.`);
+              console.warn(`   Indexing requires a key with write permissions. Search functionality will still work with existing index.`);
+              return; // Exit early, don't try to index more
+            }
+            throw error; // Re-throw other errors
+          }
         }
 
         console.log(`✅ Meilisearch: Indexed ${documents.length} documents`);
       } catch (error) {
-        console.error('❌ Meilisearch indexing error:', error);
+        // If it's an API key error, it's expected with search-only keys
+        if (error.message && error.message.includes('API key')) {
+          console.warn('⚠️  Meilisearch indexing skipped: Using search-only key (expected behavior).');
+          console.warn('   To enable indexing, use a key with write permissions or skip indexing during build.');
+        } else {
+          console.error('❌ Meilisearch indexing error:', error);
+        }
         // Don't fail the build if indexing fails
       }
     },
