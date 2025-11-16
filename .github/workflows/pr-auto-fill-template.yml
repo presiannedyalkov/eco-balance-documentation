@@ -161,59 +161,25 @@ jobs:
                                     body.match(new RegExp('-\\s*\\[x\\]\\s*' + targetCheckboxText));
               
               if (!alreadyChecked) {
-                // Find and check the target checkbox - use line-by-line approach for reliability
-                const escapedText = targetCheckboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                const searchPattern = '- [ ] ' + targetCheckboxText;
+                // Find and check the target checkbox using regex (simpler and more reliable)
+                const uncheckedPattern = new RegExp(
+                  '-\\s*\\[\\s*\\]\\s*' + 
+                  targetCheckboxText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + 
+                  '\\s*(<!--[^>]*-->)?',
+                  'g'
+                );
                 
-                console.log(`Looking for pattern: ${searchPattern}`);
-                console.log(`Pattern exists: ${body.includes(searchPattern)}`);
+                const beforeReplace = body;
+                body = body.replace(uncheckedPattern, (match) => {
+                  return match.replace(/\[ ?\]/, '[x]');
+                });
                 
-                if (body.includes(searchPattern)) {
-                  // Split into lines and find the matching line
-                  const beforeReplace = body;
-                  const lines = body.split('\n');
-                  let found = false;
-                  
-                  for (let i = 0; i < lines.length; i++) {
-                    // Check if this line contains the unchecked checkbox pattern
-                    if (lines[i].includes(searchPattern)) {
-                      // Make sure it's not already checked
-                      if (!lines[i].includes('[x] ' + targetCheckboxText) && !lines[i].includes('[x]' + targetCheckboxText)) {
-                        const originalLine = lines[i];
-                        // Replace [ ] with [x] in this line
-                        lines[i] = lines[i].replace(/\[ ?\]/, '[x]');
-                        found = true;
-                        console.log(`Found line ${i}: ${originalLine.substring(0, 60)}...`);
-                        console.log(`Replaced to: ${lines[i].substring(0, 60)}...`);
-                        break;
-                      } else {
-                        console.log(`Line ${i} already has checkbox checked: ${lines[i].substring(0, 60)}...`);
-                      }
-                    }
-                  }
-                  
-                  if (found) {
-                    body = lines.join('\n');
-                    const changed = beforeReplace !== body;
-                    console.log(`Body changed: ${changed}`);
-                    console.log(`Before length: ${beforeReplace.length}, After length: ${body.length}`);
-                    console.log(`Before starts with: ${beforeReplace.substring(0, 50)}`);
-                    console.log(`After starts with: ${body.substring(0, 50)}`);
-                    if (changed) {
-                      updated = true;
-                      console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
-                      console.log(`Updated flag set to: ${updated}`);
-                    } else {
-                      console.log(`⚠️  Line replaced but body didn't change - possible issue`);
-                      // Force update anyway if we found and replaced the line
-                      updated = true;
-                      console.log(`⚠️  Forcing updated=true since line was replaced`);
-                    }
-                  } else {
-                    console.log(`⚠️  Found pattern but couldn't find matching line`);
-                  }
+                const changed = beforeReplace !== body;
+                if (changed) {
+                  updated = true;
+                  console.log(`✅ Auto-checked type checkbox: ${targetCheckboxText}`);
                 } else {
-                  console.log(`⚠️  Could not find unchecked checkbox pattern: ${searchPattern}`);
+                  console.log(`⚠️  Could not find unchecked checkbox pattern for: ${targetCheckboxText}`);
                 }
               } else {
                 console.log(`ℹ️  Target checkbox already checked: ${targetCheckboxText}`);
