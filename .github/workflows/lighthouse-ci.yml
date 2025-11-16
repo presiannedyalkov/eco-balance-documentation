@@ -36,10 +36,19 @@ jobs:
       - name: Fix frontmatter issues
         run: |
           if [ -d "docs" ]; then
+            echo "📁 Checking docs directory..."
+            echo "📊 Total markdown files: $(find docs -name '*.md' | wc -l)"
             node scripts/fix-frontmatter.js || echo "⚠️  Frontmatter fix script completed with warnings"
           else
             echo "⚠️  docs directory not found, skipping frontmatter fix"
           fi
+      
+      - name: Clear Docusaurus cache
+        run: |
+          echo "🧹 Clearing Docusaurus cache..."
+          rm -rf .docusaurus || true
+          npm run clear || true
+          echo "✅ Cache cleared"
       
       - name: Build website
         run: npm run build

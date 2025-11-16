@@ -70,7 +70,7 @@ function fixFrontmatter(content) {
   return content.replace(frontmatterRegex, `---\n${fixedFrontmatter}\n---\n`);
 }
 
-function processFile(filePath) {
+function processFile(filePath, verbose = false) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     const fixed = fixFrontmatter(content);
@@ -78,7 +78,13 @@ function processFile(filePath) {
     if (content !== fixed) {
       fs.writeFileSync(filePath, fixed, 'utf8');
       console.log(`✅ Fixed: ${path.relative(process.cwd(), filePath)}`);
+      if (verbose) {
+        console.log(`   Changed: ${content.substring(0, 100)}... → ${fixed.substring(0, 100)}...`);
+      }
       return true;
+    }
+    if (verbose) {
+      console.log(`✓ OK: ${path.relative(process.cwd(), filePath)}`);
     }
     return false;
   } catch (error) {
@@ -87,31 +93,91 @@ function processFile(filePath) {
   }
 }
 
-function processDirectory(dir) {
+function processDirectory(dir, verbose = false) {
   if (!fs.existsSync(dir)) {
     console.log(`⚠️  Directory not found: ${dir}`);
-    return;
+    return 0;
   }
   
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   let fixedCount = 0;
+  let totalFiles = 0;
   
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
     
     if (entry.isDirectory()) {
-      fixedCount += processDirectory(fullPath);
+      fixedCount += processDirectory(fullPath, verbose);
     } else if (entry.isFile() && entry.name.endsWith('.md')) {
-      if (processFile(fullPath)) {
+      totalFiles++;
+      if (processFile(fullPath, verbose)) {
         fixedCount++;
       }
     }
   }
   
+  if (verbose && totalFiles > 0) {
+    console.log(`📊 Processed ${totalFiles} file(s) in ${path.relative(process.cwd(), dir)}`);
+  }
+  
   return fixedCount;
 }
 
+// Check for verbose flag
+const verbose = process.argv.includes('--verbose') || process.argv.includes('-v');
+const isCI = process.env.CI === 'true' || process.env.GITHUB_ACTIONS === 'true';
+
 console.log('🔧 Fixing frontmatter in markdown files...\n');
-const fixed = processDirectory(DOCS_DIR);
+console.log(`📁 Processing directory: ${DOCS_DIR}`);
+console.log(`📁 Directory exists: ${fs.existsSync(DOCS_DIR)}`);
+if (isCI) {
+  console.log(`🏗️  Running in CI environment`);
+}
+console.log('');
+
+const fixed = processDirectory(DOCS_DIR, verbose || isCI);
 console.log(`\n✅ Fixed ${fixed || 0} file(s)`);
+
+// Verification: Check for any unquoted titles
+if (fixed === 0) {
+  console.log('\n🔍 Verifying files are properly fixed...');
+  let unquotedCount = 0;
+  function verifyDirectory(dir) {
+    if (!fs.existsSync(dir)) return;
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        verifyDirectory(fullPath);
+      } else if (entry.isFile() && entry.name.endsWith('.md')) {
+        try {
+          const content = fs.readFileSync(fullPath, 'utf8');
+          const frontmatterMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
+          if (frontmatterMatch) {
+            const frontmatter = frontmatterMatch[1];
+            // Check for unquoted title values
+            const titleMatch = frontmatter.match(/^title:\s*(.+)$/m);
+            if (titleMatch) {
+              const titleValue = titleMatch[1].trim();
+              if (!titleValue.startsWith('"') && !titleValue.startsWith("'") && 
+                  !/^-?\d+$/.test(titleValue) && !/^-?\d+\.\d+$/.test(titleValue) &&
+                  titleValue !== 'true' && titleValue !== 'false' && titleValue !== 'null') {
+                console.log(`⚠️  Unquoted title found: ${path.relative(process.cwd(), fullPath)} - "${titleValue}"`);
+                unquotedCount++;
+              }
+            }
+          }
+        } catch (error) {
+          // Skip errors during verification
+        }
+      }
+    }
+  }
+  verifyDirectory(DOCS_DIR);
+  if (unquotedCount > 0) {
+    console.log(`\n⚠️  Found ${unquotedCount} file(s) with unquoted titles`);
+  } else {
+    console.log('✅ All titles are properly quoted');
+  }
+}
 
