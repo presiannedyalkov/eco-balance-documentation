@@ -62,33 +62,29 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       
-      // Algolia DocSearch configuration
-      // After approval from Algolia, uncomment and add your credentials
-      // Apply at: https://docsearch.algolia.com/apply/
+      // Search configuration
+      // Using local search (no approval needed, works immediately)
+      // Alternative: Algolia DocSearch (requires approval, faster for large sites)
+      
+      // Option 1: Local Search (ACTIVE - No approval needed)
+      // Docusaurus will automatically use local search if Algolia is not configured
+      // Local search works offline, no external dependencies, perfect for GitHub Pages
+      
+      // Option 2: Algolia DocSearch (COMMENTED - Requires approval)
+      // Uncomment and configure after Algolia approval:
+      // 1. Apply at: https://docsearch.algolia.com/apply/
+      // 2. Add credentials below or via environment variables
+      // 3. Uncomment the algolia config below
+      /*
       algolia: {
-        // The application ID provided by Algolia
         appId: process.env.ALGOLIA_APP_ID || 'YOUR_APP_ID',
-        
-        // Public API key: it is safe to commit it
         apiKey: process.env.ALGOLIA_API_KEY || 'YOUR_SEARCH_API_KEY',
-        
         indexName: process.env.ALGOLIA_INDEX_NAME || 'YOUR_INDEX_NAME',
-        
-        // Optional: see https://docsearch.algolia.com/docs/behavior
         contextualSearch: true,
-        
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        // externalUrlRegex: 'external\\.com|domain\\.com',
-        
-        // Optional: Replace the default search component
-        // ReplaceDocSearchButton: require.resolve('./src/components/CustomSearchButton'),
-        
-        // Optional: Algolia search parameters
         searchParameters: {},
-        
-        // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: 'search',
       },
+      */
       
       navbar: {
         title: 'Eco Balance',
