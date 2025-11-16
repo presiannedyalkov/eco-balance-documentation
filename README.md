@@ -55,9 +55,15 @@ Exports are automatically generated when documentation changes and attached to G
 
 - **[View all exports on GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)** - All PDF and EPUB files are listed here with direct download links
 
-**File naming:**
+**Versioning:**
+- **Daily versions** (`v2025-11-16`) - Used for exports, created automatically on each export
+- **Monthly versions** (`v2025.11`) - Used for releases, updated when `VERSION` file changes
+
+**File naming (daily version):**
 - `eco-balance-documentation-v2025-11-16.epub`
 - `eco-balance-documentation-v2025-11-16.pdf`
+
+See [Versioning Concepts](_process/documentation/VERSIONING_CONCEPTS.md) for details on monthly vs daily versions.
 
 ### Building for Production
 

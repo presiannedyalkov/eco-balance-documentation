@@ -89,11 +89,12 @@ jobs:
             echo "No export files found"
           fi
       
-      - name: Create GitHub Release
+      - name: Create GitHub Release (Monthly Version)
         uses: softprops/action-gh-release@v1
         with:
+          # Monthly version: v2025.11 (from VERSION file, for releases)
           tag_name: "v${{ steps.version.outputs.version }}"
-          name: "Release v${{ steps.version.outputs.version }}"
+          name: "Release v${{ steps.version.outputs.version }} (Monthly)"
           body: ${{ steps.release_notes.outputs.notes }}
           draft: false
           prerelease: false

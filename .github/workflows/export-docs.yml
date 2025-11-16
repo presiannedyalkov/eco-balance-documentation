@@ -86,16 +86,20 @@ jobs:
           path: exports/*.pdf
           retention-days: 30
       
-      - name: Create Release with Exports
+      - name: Create Release with Exports (Daily Version)
         if: always() && (github.event.inputs.export_format == 'both' || github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'pdf' || github.event_name == 'push')
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: "export-${{ steps.version.outputs.export_date }}"
-          name: "Documentation Export ${{ steps.version.outputs.export_date }}"
+          # Daily version: v2025-11-16 (date-based, for exports)
+          tag_name: "v${{ steps.version.outputs.export_date }}"
+          name: "Documentation Export v${{ steps.version.outputs.export_date }} (Daily)"
           body: |
-            ## Documentation Export - ${{ steps.version.outputs.export_date }}
+            ## Documentation Export - Daily Version v${{ steps.version.outputs.export_date }}
             
-            Automated export of documentation files.
+            Automated export of documentation files using **daily versioning**.
+            
+            **Version Type:** Daily (date-based: `vYYYY-MM-DD`)
+            **Monthly Version:** ${{ steps.version.outputs.version }}
             
             **Files:**
             - EPUB: For e-readers (Kindle, Kobo, etc.)

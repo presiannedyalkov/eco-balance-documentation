@@ -67,6 +67,11 @@ Example:
 **Download Links:**
 - **[GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)** - All PDF and EPUB exports are listed here with direct download links
 
+**Versioning:**
+- Exports use **daily versions** (`v2025-11-16`) - date-based, created on each export
+- Releases use **monthly versions** (`v2025.11`) - from `VERSION` file, for project milestones
+- See [Versioning Concepts](VERSIONING_CONCEPTS.md) for details
+
 ---
 
 ## Automated Export (GitHub Actions)
