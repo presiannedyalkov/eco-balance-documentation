@@ -1,5 +1,5 @@
 ---
-id: feature-wishlist
+id: "feature-wishlist"
 title: "Feature Wishlist"
 sidebar_position: 3
 ---

@@ -1,5 +1,5 @@
 ---
-id: executive-summary
+id: "executive-summary"
 title: "Executive Summary"
 sidebar_position: 1
 ---

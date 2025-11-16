@@ -1,5 +1,5 @@
 ---
-id: restoration-playbook-reforestation-05_Monitor_Growth
+id: "restoration-playbook-reforestation-05_Monitor_Growth"
 title: "Monitor Growth"
 sidebar_position: 5
 ---

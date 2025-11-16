@@ -1,5 +1,5 @@
 ---
-id: business-model
+id: "business-model"
 title: "Business Model"
 sidebar_position: 1
 ---

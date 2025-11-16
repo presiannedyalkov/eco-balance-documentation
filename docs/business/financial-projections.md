@@ -1,5 +1,5 @@
 ---
-id: financial-projections
+id: "financial-projections"
 title: "Financial Projections"
 sidebar_position: 2
 ---

@@ -1,5 +1,5 @@
 ---
-id: restoration-playbook-community_engagement-03_Educate_Community
+id: "restoration-playbook-community_engagement-03_Educate_Community"
 title: "Educate Community"
 sidebar_position: 3
 ---

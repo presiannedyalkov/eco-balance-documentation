@@ -1,5 +1,5 @@
 ---
-id: technology-integration
+id: "technology-integration"
 title: "Technology Integration"
 sidebar_position: 2
 ---

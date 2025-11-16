@@ -1,5 +1,5 @@
 ---
-id: funding-strategy
+id: "funding-strategy"
 title: "Funding Strategy"
 sidebar_position: 3
 ---

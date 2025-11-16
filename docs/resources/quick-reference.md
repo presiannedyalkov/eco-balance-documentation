@@ -1,5 +1,5 @@
 ---
-id: quick-reference
+id: "quick-reference"
 title: "Quick Reference Guide"
 sidebar_position: 1
 ---

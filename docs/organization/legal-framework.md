@@ -1,5 +1,5 @@
 ---
-id: legal-framework
+id: "legal-framework"
 title: "Legal Framework"
 sidebar_position: 4
 ---
