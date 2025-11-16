@@ -52,6 +52,10 @@ const config = {
     ],
   ],
 
+  // Client modules for Sentry integration
+  // This file runs in the browser to initialize Sentry
+  clientModules: [require.resolve('./src/clientModules.js')],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
