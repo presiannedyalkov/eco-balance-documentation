@@ -1,0 +1,250 @@
+/* EPUB Styling for Eco Balance Documentation */
+
+/* Base Typography */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 1em;
+    max-width: 100%;
+}
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    page-break-before: always;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 0.3em;
+}
+
+h1:first-child {
+    page-break-before: auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    page-break-before: always;
+    color: #2c5aa0;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    color: #3a6ba5;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 0.8em;
+    margin-bottom: 0.3em;
+}
+
+/* Paragraphs */
+p {
+    margin: 0.8em 0;
+    text-align: justify;
+    orphans: 3;
+    widows: 3;
+}
+
+/* Lists */
+ul, ol {
+    margin: 0.8em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin: 0.4em 0;
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Code blocks */
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1em;
+    overflow-x: auto;
+    page-break-inside: avoid;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+code {
+    background-color: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #4a90e2;
+    margin: 1em 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-style: italic;
+    color: #555;
+    page-break-inside: avoid;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    page-break-inside: avoid;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 2em 0;
+    page-break-after: avoid;
+}
+
+/* Section breaks */
+.section-break {
+    page-break-before: always;
+}
+
+/* Title page */
+.title-page {
+    text-align: center;
+    page-break-after: always;
+    margin-top: 30%;
+}
+
+.title-page h1 {
+    font-size: 2.5em;
+    border: none;
+    margin-bottom: 0.5em;
+}
+
+.title-page .subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 1em;
+}
+
+.title-page .metadata {
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Table of Contents */
+.toc {
+    page-break-after: always;
+}
+
+.toc h1 {
+    page-break-before: auto;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin: 0.5em 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.toc a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Source attribution */
+.source-attribution {
+    font-size: 0.85em;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+/* Page breaks for major sections */
+.chapter {
+    page-break-before: always;
+}
+
+/* Avoid breaking inside important elements */
+.keep-together {
+    page-break-inside: avoid;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+    page-break-inside: avoid;
+}
+
+/* Strong emphasis */
+strong {
+    font-weight: bold;
+    color: #2c5aa0;
+}
+
+/* Emphasis */
+em {
+    font-style: italic;
+}
+
+/* Print/EPUB specific */
+@media print {
+    body {
+        padding: 0.5em;
+    }
+    
+    h1, h2 {
+        page-break-after: avoid;
+    }
+    
+    p, li {
+        orphans: 3;
+        widows: 3;
+    }
+}
+

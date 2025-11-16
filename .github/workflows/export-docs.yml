@@ -1,0 +1,97 @@
+name: Export Documentation
+
+on:
+  workflow_dispatch:
+    inputs:
+      export_format:
+        description: 'Export format'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - both
+          - epub
+          - pdf
+  push:
+    branches:
+      - main
+    paths:
+      - 'strategic/**'
+      - 'docs/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'VERSION'
+
+jobs:
+  export:
+    name: Export Documentation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+      
+      - name: Install LaTeX for PDF
+        run: |
+          sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            texlive-xetex \
+            librsvg2-bin \
+            fonts-dejavu-core \
+            fonts-dejavu-extra
+      
+      - name: Get version
+        id: version
+        run: |
+          VERSION=$(cat VERSION 2>/dev/null || echo "unknown")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+      
+      - name: Export to EPUB
+        if: github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'both' || github.event_name == 'push'
+        run: |
+          chmod +x scripts/export-docs.sh
+          scripts/export-docs.sh || echo "EPUB export completed with warnings"
+      
+      - name: Export to PDF
+        if: github.event.inputs.export_format == 'pdf' || github.event.inputs.export_format == 'both' || github.event_name == 'push'
+        run: |
+          chmod +x scripts/export-docs.sh
+          # Run export script, continue even if PDF fails (EPUB may succeed)
+          scripts/export-docs.sh || true
+      
+      - name: Upload EPUB artifact
+        if: always() && (github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'both' || github.event_name == 'push')
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-epub
+          path: exports/*.epub
+          retention-days: 30
+      
+      - name: Upload PDF artifact
+        if: always() && (github.event.inputs.export_format == 'pdf' || github.event.inputs.export_format == 'both' || github.event_name == 'push')
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-pdf
+          path: exports/*.pdf
+          retention-days: 30
+      
+      - name: Create Release (on version change)
+        if: github.event_name == 'push' && contains(github.event.head_commit.message, 'version') || contains(github.event.head_commit.message, 'VERSION')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            exports/*.epub
+            exports/*.pdf
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
