@@ -193,26 +193,47 @@ ${dependabot.error ? '⚠️ Unable to fetch Dependabot alerts' : `
 async function main() {
   console.log('🔍 Fetching security alert statuses...\n');
   
-  const [codeQL, dependabot] = await Promise.all([
-    getCodeQLAlerts(),
-    getDependabotAlerts()
-  ]);
+  let codeQL, dependabot;
+  
+  try {
+    [codeQL, dependabot] = await Promise.all([
+      getCodeQLAlerts(),
+      getDependabotAlerts()
+    ]);
+  } catch (error) {
+    console.error('❌ Error fetching alerts:', error.message);
+    // Use empty counts if fetch fails
+    codeQL = { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
+    dependabot = { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
+  }
   
   console.log('📊 CodeQL Alerts:');
-  console.log(`   Critical: ${codeQL.critical}, High: ${codeQL.high}, Medium: ${codeQL.medium}, Low: ${codeQL.low}, Note: ${codeQL.note}`);
-  console.log(`   Total: ${codeQL.total}\n`);
+  if (codeQL.error) {
+    console.log('   ⚠️  Could not fetch CodeQL alerts');
+  } else {
+    console.log(`   Critical: ${codeQL.critical}, High: ${codeQL.high}, Medium: ${codeQL.medium}, Low: ${codeQL.low}, Note: ${codeQL.note}`);
+    console.log(`   Total: ${codeQL.total}`);
+  }
+  console.log('');
   
   console.log('📦 Dependabot Alerts:');
-  console.log(`   Critical: ${dependabot.critical}, High: ${dependabot.high}, Moderate: ${dependabot.moderate}, Low: ${dependabot.low}`);
-  console.log(`   Total: ${dependabot.total}\n`);
+  if (dependabot.error) {
+    console.log('   ⚠️  Could not fetch Dependabot alerts');
+  } else {
+    console.log(`   Critical: ${dependabot.critical}, High: ${dependabot.high}, Moderate: ${dependabot.moderate}, Low: ${dependabot.low}`);
+    console.log(`   Total: ${dependabot.total}`);
+  }
+  console.log('');
   
-  updateREADME(codeQL, dependabot);
-  
-  console.log('\n✅ README.md updated successfully!');
+  try {
+    updateREADME(codeQL, dependabot);
+    console.log('✅ README.md updated successfully!');
+    process.exit(0);
+  } catch (error) {
+    console.error('❌ Error updating README:', error.message);
+    process.exit(1);
+  }
 }
 
-main().catch((error) => {
-  console.error('❌ Error:', error.message);
-  process.exit(1);
-});
+main();
 
