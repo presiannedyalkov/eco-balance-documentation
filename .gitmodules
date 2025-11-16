@@ -1,0 +1,3 @@
+[submodule "research/bookmarks"]
+	path = research/bookmarks
+	url = https://github.com/presiannedyalkov/climate-change-bookmarks.git
