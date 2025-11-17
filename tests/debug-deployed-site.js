@@ -101,12 +101,12 @@ async function debugDeployedSite() {
       length: htmlContent.length,
       hasClientModules: htmlContent.includes('clientModules') || htmlContent.includes('client-modules'),
       hasMeilisearch: htmlContent.includes('Meilisearch') || htmlContent.includes('meilisearch'),
-      scriptTags: (htmlContent.match(/<script[^>]*>/g) || []).length,
+      scriptTags: (htmlContent.match(/<script[^>]*>/gi) || []).length,
       scriptSources: [],
     };
     
-    // Extract script sources
-    const scriptMatches = htmlContent.match(/<script[^>]*src=["']([^"']+)["'][^>]*>/g) || [];
+    // Extract script sources (case-insensitive to match <SCRIPT> tags)
+    const scriptMatches = htmlContent.match(/<script[^>]*src=["']([^"']+)["'][^>]*>/gi) || [];
     htmlInfo.scriptSources = scriptMatches.map(match => {
       const srcMatch = match.match(/src=["']([^"']+)["']/);
       return srcMatch ? srcMatch[1] : null;
