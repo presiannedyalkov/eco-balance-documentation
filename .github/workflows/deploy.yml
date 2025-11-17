@@ -9,6 +9,7 @@ on:
       - 'docs/**'
       - 'strategic/**'
       - 'website/**'
+      - 'src/**'
       - 'docusaurus.config.js'
       - 'sidebars.js'
       - 'package.json'
