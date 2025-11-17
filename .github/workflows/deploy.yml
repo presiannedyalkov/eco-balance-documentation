@@ -132,7 +132,11 @@ jobs:
           SITE_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
           # Meilisearch configuration (optional - defaults are in docusaurus.config.js)
           MEILISEARCH_HOST: ${{ vars.MEILISEARCH_HOST || env.MEILISEARCH_HOST || 'https://search.eco-balance.cc' }}
+          # Search key for frontend (read-only, safe to expose)
           MEILISEARCH_SEARCH_KEY: ${{ secrets.MEILISEARCH_SEARCH_KEY || vars.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489' }}
+          # Master key for indexing during build (write permissions, keep secret!)
+          # This is only used during build to index content, not exposed to frontend
+          MEILISEARCH_MASTER_KEY: ${{ secrets.MEILISEARCH_MASTER_KEY }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

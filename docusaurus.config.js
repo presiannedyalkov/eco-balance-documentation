@@ -71,6 +71,10 @@ const config = {
         // Search-only key (safe to use in frontend)
         // Set via environment variable: MEILISEARCH_SEARCH_KEY
         searchKey: process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489',
+        // Master key for indexing (write permissions) - only used during build
+        // Set via environment variable: MEILISEARCH_MASTER_KEY
+        // This should be kept secret and only used in CI/CD, not in frontend
+        masterKey: process.env.MEILISEARCH_MASTER_KEY,
         indexName: 'eco-balance-docs',
         batchSize: 100,
       },
