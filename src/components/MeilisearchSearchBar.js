@@ -17,14 +17,21 @@ function MeilisearchSearchBar() {
   // Get config from environment or window (set at build time)
   // Production: https://search.eco-balance.cc (via Cloudflare)
   // Local development: Set MEILISEARCH_HOST to local network address
-  const meilisearchHost = 
-    typeof window !== 'undefined' 
-      ? (window.MEILISEARCH_HOST || process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc')
-      : (process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc');
-  const searchKey = 
-    typeof window !== 'undefined'
-      ? (window.MEILISEARCH_SEARCH_KEY || process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489')
-      : (process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489');
+  // Note: process.env is only available at build time via webpack DefinePlugin
+  // In browser, we use window variables or fallback to defaults
+  const getEnvVar = (name, defaultValue) => {
+    if (typeof window !== 'undefined' && window[name]) {
+      return window[name];
+    }
+    // process.env is replaced by webpack at build time, but we need to check if it exists
+    if (typeof process !== 'undefined' && process.env && process.env[name]) {
+      return process.env[name];
+    }
+    return defaultValue;
+  };
+  
+  const meilisearchHost = getEnvVar('MEILISEARCH_HOST', 'https://search.eco-balance.cc');
+  const searchKey = getEnvVar('MEILISEARCH_SEARCH_KEY', 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489');
   const indexName = 'eco-balance-docs';
 
   useEffect(() => {
