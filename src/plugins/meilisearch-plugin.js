@@ -59,6 +59,21 @@ function pluginMeilisearch(context, options) {
 
         // Configure index settings (only if index doesn't exist or needs update)
         try {
+          // First, set the primary key if not already set
+          try {
+            const indexInfo = await index.getRawInfo();
+            if (!indexInfo.primaryKey) {
+              console.log('🔍 Setting primary key to "id"...');
+              await index.update({
+                primaryKey: 'id',
+              });
+            }
+          } catch (error) {
+            // Index might not exist, will be created with first document
+            console.log('🔍 Index will be created with first document');
+          }
+
+          // Then update settings
           await index.updateSettings({
             searchableAttributes: ['title', 'content', 'headings'],
             displayedAttributes: ['title', 'content', 'url', 'headings'],
@@ -97,8 +112,18 @@ function pluginMeilisearch(context, options) {
             const relativePath = path.relative(outDir, filePath);
             const url = '/' + relativePath.replace(/\\/g, '/');
 
+            // Generate a valid Meilisearch document ID
+            // IDs can only contain alphanumeric, hyphens, and underscores
+            // Replace slashes and dots with hyphens, remove leading/trailing hyphens
+            const documentId = url
+              .replace(/\//g, '-')
+              .replace(/\./g, '-')
+              .replace(/^-+|-+$/g, '')
+              .replace(/-+/g, '-')
+              .substring(0, 511); // Max 511 bytes
+
             documents.push({
-              id: url,
+              id: documentId,
               title: title.replace(' | Eco Balance Documentation', '').trim(),
               content: content.substring(0, 10000), // Limit content size
               headings: headings.substring(0, 1000),
@@ -113,8 +138,12 @@ function pluginMeilisearch(context, options) {
         for (let i = 0; i < documents.length; i += batchSize) {
           const batch = documents.slice(i, i + batchSize);
           try {
-            await index.addDocuments(batch);
-            console.log(`✅ Indexed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(documents.length / batchSize)}`);
+            const task = await index.addDocuments(batch);
+            console.log(`✅ Indexed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(documents.length / batchSize)} (task ${task.taskUid})`);
+            
+            // Wait for task to complete
+            await client.waitForTask(task.taskUid);
+            console.log(`✅ Batch ${Math.floor(i / batchSize) + 1} processing completed`);
           } catch (error) {
             // If key doesn't have write permissions, skip indexing
             if (error.message && error.message.includes('API key')) {
@@ -122,11 +151,20 @@ function pluginMeilisearch(context, options) {
               console.warn(`   Indexing requires a key with write permissions. Search functionality will still work with existing index.`);
               return; // Exit early, don't try to index more
             }
+            console.error(`❌ Error indexing batch ${Math.floor(i / batchSize) + 1}:`, error.message);
             throw error; // Re-throw other errors
           }
         }
 
         console.log(`✅ Meilisearch: Indexed ${documents.length} documents`);
+        
+        // Verify indexing completed
+        try {
+          const stats = await index.getStats();
+          console.log(`✅ Index verification: ${stats.numberOfDocuments} documents in index`);
+        } catch (error) {
+          console.warn('⚠️  Could not verify index stats:', error.message);
+        }
       } catch (error) {
         // If it's an API key error, it's expected with search-only keys
         if (error.message && error.message.includes('API key')) {
