@@ -53,6 +53,8 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        // Load clientModules for Meilisearch search bar
+        // Docusaurus 3.x automatically loads src/clientModules.js if it exists
       }),
     ],
   ],
