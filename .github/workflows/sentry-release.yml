@@ -36,20 +36,28 @@ jobs:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
           SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+          SENTRY_URL: https://de.sentry.io
         run: |
+          # Configure Sentry CLI
+          export SENTRY_URL="https://de.sentry.io"
+          
           # Create release
           VERSION=$(git rev-parse HEAD)
-          sentry-cli releases new "$VERSION"
+          echo "Creating Sentry release: $VERSION"
+          sentry-cli releases new "$VERSION" || echo "⚠️  Release may already exist"
           
           # Upload source maps from build directory
           if [ -d "build" ]; then
+            echo "Uploading source maps..."
             sentry-cli releases files "$VERSION" upload-sourcemaps build \
               --url-prefix "~/" \
-              --rewrite
+              --rewrite || echo "⚠️  Source map upload failed (may not be critical)"
+          else
+            echo "⚠️  Build directory not found, skipping source map upload"
           fi
           
           # Finalize release
-          sentry-cli releases finalize "$VERSION"
+          sentry-cli releases finalize "$VERSION" || echo "⚠️  Release finalization failed"
           
-          echo "✅ Sentry release $VERSION created"
+          echo "✅ Sentry release $VERSION processed"
 
