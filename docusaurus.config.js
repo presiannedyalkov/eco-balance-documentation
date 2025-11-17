@@ -82,8 +82,9 @@ const config = {
 
   // Client-side modules - explicitly configure clientModules.js
   // Docusaurus 3.x requires explicit configuration (does NOT auto-load src/clientModules.js)
+  // Use relative path - require.resolve() may cause issues in production builds
   clientModules: [
-    require.resolve('./src/clientModules.js'),
+    './src/clientModules.js',
   ],
 
   themeConfig:

@@ -6,7 +6,8 @@
  * - Add event listeners
  * - Initialize third-party libraries
  * 
- * Docusaurus automatically loads this file if it exists in src/clientModules.js
+ * Docusaurus 3.x requires explicit configuration in docusaurus.config.js:
+ *   clientModules: [require.resolve('./src/clientModules.js')]
  */
 
 import React from 'react';
@@ -15,10 +16,10 @@ import MeilisearchSearchBar from './components/MeilisearchSearchBar';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 // Client-side module for Docusaurus 3.x
-// Docusaurus automatically loads this file from src/clientModules.js
-// In Docusaurus 3.x, this should export a function that runs on client-side
+// This module is imported as a side effect by '@generated/client-modules'
+// Top-level code executes when the module is imported in the browser
 
-export default function clientModule() {
+function clientModule() {
   console.log('🔍 [clientModules] ============================================');
   console.log('🔍 [clientModules] Loading Meilisearch search bar module...');
   console.log('🔍 [clientModules] ExecutionEnvironment.canUseDOM:', ExecutionEnvironment.canUseDOM);
@@ -121,6 +122,8 @@ export default function clientModule() {
         const root = ReactDOM.createRoot(searchWrapper);
         console.log('🔍 [clientModules] React root created:', root);
         
+        // Mount the component directly
+        // Note: React error boundaries are class components, but we'll catch errors in try/catch
         root.render(React.createElement(MeilisearchSearchBar));
         console.log('✅ [clientModules] Search bar mounted successfully!');
         
@@ -130,19 +133,26 @@ export default function clientModule() {
           console.log('🔍 [clientModules] Post-mount verification:');
           console.log('  - Input element found:', !!input);
           console.log('  - Wrapper has children:', searchWrapper.children.length);
+          console.log('  - Wrapper innerHTML length:', searchWrapper.innerHTML.length);
           if (input) {
             console.log('  - Input element details:', {
               type: input.type,
               placeholder: input.placeholder,
               visible: input.offsetWidth > 0 && input.offsetHeight > 0,
             });
+          } else {
+            console.warn('  - No input found, checking wrapper content:', searchWrapper.innerHTML.substring(0, 200));
           }
-        }, 100);
+        }, 500); // Increased delay to allow React to render
         
         return true;
       } catch (error) {
         console.error('❌ [clientModules] Error mounting search bar:', error);
+        console.error('  - Error message:', error.message);
+        console.error('  - Error name:', error.name);
         console.error('  - Error stack:', error.stack);
+        // Render error message as fallback
+        searchWrapper.innerHTML = `<div style="padding: 8px; border: 2px solid red; background: #ffcccc;">Search Error: ${error.message}</div>`;
         return false;
       }
     }
@@ -221,3 +231,53 @@ export default function clientModule() {
   }
 }
 
+// CRITICAL: Execute immediately when module is imported
+// This code runs in the browser when '@generated/client-modules' imports this file
+// We MUST check for browser environment to avoid SSR errors
+
+// Mark that module was imported (for debugging)
+if (typeof window !== 'undefined') {
+  window.__clientModulesModuleImported = true;
+  console.log('🚀 [clientModules] MODULE IMPORTED in browser - window exists');
+  
+  // Execute immediately - the function handles DOM readiness internally
+  // Use multiple strategies to ensure execution
+  if (typeof document !== 'undefined') {
+    console.log('🚀 [clientModules] document exists, readyState:', document.readyState);
+    
+    // Execute immediately if DOM is ready
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      console.log('🚀 [clientModules] Executing immediately (DOM ready)');
+      clientModule();
+    } else {
+      console.log('🚀 [clientModules] DOM not ready, will wait for DOMContentLoaded');
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('🚀 [clientModules] DOMContentLoaded - executing now');
+        clientModule();
+      });
+    }
+    
+    // Also try on window load as backup
+    window.addEventListener('load', () => {
+      console.log('🚀 [clientModules] Window load - executing as backup');
+      clientModule();
+    });
+    
+    // And try with a small delay
+    setTimeout(() => {
+      console.log('🚀 [clientModules] setTimeout execution');
+      clientModule();
+    }, 0);
+  } else {
+    console.warn('⚠️ [clientModules] document not available');
+  }
+} else {
+  // This is SSR/build time - don't execute
+  // The warning will only appear during build, not in browser
+  if (typeof process !== 'undefined' && process.env.NODE_ENV !== 'production') {
+    console.log('ℹ️ [clientModules] Module loaded during build (SSR) - will execute in browser');
+  }
+}
+
+// Export the function (for potential lifecycle hooks)
+export default clientModule;
