@@ -152,7 +152,7 @@ function clientModule() {
         console.error('  - Error name:', error.name);
         console.error('  - Error stack:', error.stack);
         // Render error message as fallback
-        searchWrapper.innerHTML = `<div style="padding: 8px; border: 2px solid red; background: #ffcccc;">Search Error: ${error.message}</div>`;
+        searchWrapper.innerHTML = `<div style="padding: 8px; color: var(--ifm-color-danger);">Search Error: ${error.message}</div>`;
         return false;
       }
     }

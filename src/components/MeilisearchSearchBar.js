@@ -277,10 +277,7 @@ function MeilisearchSearchBar() {
           position: 'relative', 
           display: 'flex', 
           alignItems: 'center',
-          border: '2px solid red', // Debug border
-          padding: '4px',
         }}
-        data-debug="placeholder-rendered"
       >
         <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
           <input
@@ -296,7 +293,6 @@ function MeilisearchSearchBar() {
               width: '200px',
               opacity: 0.5,
               display: 'block',
-              backgroundColor: '#ffcccc', // Debug background
             }}
           />
         </div>
@@ -314,10 +310,7 @@ function MeilisearchSearchBar() {
         position: 'relative', 
         display: 'flex', 
         alignItems: 'center',
-        border: '2px solid green', // Debug border - remove after fixing
-        padding: '4px',
       }}
-      data-debug="search-bar-rendered"
     >
       <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
         <input
@@ -336,15 +329,6 @@ function MeilisearchSearchBar() {
             console.log('🔍 [MeilisearchSearchBar] Input blurred');
           }}
           className="navbar__search-input"
-          style={{
-            padding: '8px 12px',
-            border: '1px solid var(--ifm-color-emphasis-300)',
-            borderRadius: '4px',
-            fontSize: '14px',
-            width: '200px',
-            display: 'block',
-            backgroundColor: '#ccffcc', // Debug background - remove after fixing
-          }}
         />
       </div>
 
