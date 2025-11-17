@@ -80,6 +80,12 @@ const config = {
   // Sentry integration removed - to be added later
   // See SENTRY_SETUP.md for future integration
 
+  // Client-side modules - explicitly configure clientModules.js
+  // Docusaurus 3.x requires explicit configuration (does NOT auto-load src/clientModules.js)
+  clientModules: [
+    require.resolve('./src/clientModules.js'),
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
