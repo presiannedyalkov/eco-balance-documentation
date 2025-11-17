@@ -15,9 +15,13 @@ import MeilisearchSearchBar from './components/MeilisearchSearchBar';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 // Export function for Docusaurus 3.x clientModules pattern
+// Docusaurus 3.x automatically loads this file from src/clientModules.js
 export default function clientModule() {
+  console.log('[clientModules] Loading Meilisearch search bar module...');
+  
   // Mount Meilisearch search bar when DOM is ready
   if (ExecutionEnvironment.canUseDOM) {
+    console.log('[clientModules] DOM available, setting up search bar mounting...');
     function mountSearchBar() {
       const searchWrapper = document.getElementById('meilisearch-search-wrapper');
       if (searchWrapper && !searchWrapper.hasAttribute('data-mounted')) {

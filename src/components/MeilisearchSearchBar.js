@@ -145,13 +145,24 @@ function MeilisearchSearchBar() {
     setQuery('');
   };
 
-  // Debug logging
+  // Debug logging - always log when component renders
   useEffect(() => {
-    console.log('[MeilisearchSearchBar] Component mounted', {
+    console.log('[MeilisearchSearchBar] Component mounted/rendered', {
       meilisearchHost: meilisearchHost ? 'configured' : 'missing',
       searchKey: searchKey ? 'configured' : 'missing',
       indexName,
+      wrapperExists: typeof document !== 'undefined' && !!document.getElementById('meilisearch-search-wrapper'),
     });
+    
+    // Also log to page for debugging
+    if (typeof window !== 'undefined') {
+      window.meilisearchDebug = {
+        mounted: true,
+        host: meilisearchHost,
+        hasKey: !!searchKey,
+        indexName,
+      };
+    }
   }, []);
 
   // Always render the search bar (even if Meilisearch isn't configured, show a placeholder)
