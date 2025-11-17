@@ -112,8 +112,18 @@ function pluginMeilisearch(context, options) {
             const relativePath = path.relative(outDir, filePath);
             const url = '/' + relativePath.replace(/\\/g, '/');
 
+            // Generate a valid Meilisearch document ID
+            // IDs can only contain alphanumeric, hyphens, and underscores
+            // Replace slashes and dots with hyphens, remove leading/trailing hyphens
+            const documentId = url
+              .replace(/\//g, '-')
+              .replace(/\./g, '-')
+              .replace(/^-+|-+$/g, '')
+              .replace(/-+/g, '-')
+              .substring(0, 511); // Max 511 bytes
+
             documents.push({
-              id: url,
+              id: documentId,
               title: title.replace(' | Eco Balance Documentation', '').trim(),
               content: content.substring(0, 10000), // Limit content size
               headings: headings.substring(0, 1000),
