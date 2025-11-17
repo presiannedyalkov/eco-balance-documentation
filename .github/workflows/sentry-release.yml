@@ -1,0 +1,63 @@
+name: Sentry Release
+
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  sentry-release:
+    name: Create Sentry Release
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Sentry CLI
+        run: npm install -g @sentry/cli
+
+      - name: Create Sentry release
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+          SENTRY_URL: https://de.sentry.io
+        run: |
+          # Configure Sentry CLI
+          export SENTRY_URL="https://de.sentry.io"
+          
+          # Create release
+          VERSION=$(git rev-parse HEAD)
+          echo "Creating Sentry release: $VERSION"
+          sentry-cli releases new "$VERSION" || echo "⚠️  Release may already exist"
+          
+          # Upload source maps from build directory
+          if [ -d "build" ]; then
+            echo "Uploading source maps..."
+            sentry-cli releases files "$VERSION" upload-sourcemaps build \
+              --url-prefix "~/" \
+              --rewrite || echo "⚠️  Source map upload failed (may not be critical)"
+          else
+            echo "⚠️  Build directory not found, skipping source map upload"
+          fi
+          
+          # Finalize release
+          sentry-cli releases finalize "$VERSION" || echo "⚠️  Release finalization failed"
+          
+          echo "✅ Sentry release $VERSION processed"
+

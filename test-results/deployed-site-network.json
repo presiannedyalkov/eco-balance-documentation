@@ -1,0 +1,912 @@
+{
+  "requests": [
+    {
+      "url": "https://docs.eco-balance.cc/",
+      "method": "GET",
+      "resourceType": "document",
+      "headers": {
+        "upgrade-insecure-requests": "1",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Linux\""
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/css/styles.b12fc150.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/runtime~main.184fe9a5.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/main.b11ed7db.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/img/logo.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/5e95c892.afabab8a.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/aba21aa0.e04f0144.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a7bd4aaa.c57d6255.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/22dd74f7.b8920c46.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a94703ab.eeeead78.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/17896441.0e5e97a6.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/0e384e19.10215d99.js",
+      "method": "GET",
+      "resourceType": "script",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/5e95c892.afabab8a.js",
+      "method": "GET",
+      "resourceType": "other",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-purpose": "prefetch",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/aba21aa0.e04f0144.js",
+      "method": "GET",
+      "resourceType": "other",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-purpose": "prefetch",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a7bd4aaa.c57d6255.js",
+      "method": "GET",
+      "resourceType": "other",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-purpose": "prefetch",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/22dd74f7.b8920c46.js",
+      "method": "GET",
+      "resourceType": "other",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-purpose": "prefetch",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a94703ab.eeeead78.js",
+      "method": "GET",
+      "resourceType": "other",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-purpose": "prefetch",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/17896441.0e5e97a6.js",
+      "method": "GET",
+      "resourceType": "other",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-purpose": "prefetch",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/0e384e19.10215d99.js",
+      "method": "GET",
+      "resourceType": "other",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-purpose": "prefetch",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/main.js",
+      "method": "HEAD",
+      "resourceType": "fetch",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/runtime.js",
+      "method": "HEAD",
+      "resourceType": "fetch",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/app.js",
+      "method": "HEAD",
+      "resourceType": "fetch",
+      "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://docs.eco-balance.cc/",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"141\", \"Not?A_Brand\";v=\"8\"",
+        "sec-ch-ua-mobile": "?0"
+      }
+    }
+  ],
+  "responses": [
+    {
+      "url": "https://docs.eco-balance.cc/",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "age": "364",
+        "cache-control": "max-age=600",
+        "content-encoding": "gzip",
+        "content-length": "8806",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "etag": "W/\"691b7829-7fdd\"",
+        "expires": "Mon, 17 Nov 2025 19:45:55 GMT",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "server": "GitHub.com",
+        "vary": "Accept-Encoding",
+        "via": "1.1 varnish",
+        "x-cache": "HIT",
+        "x-cache-hits": "0",
+        "x-fastly-request-id": "16037338306d30705a3ae1b57790a38ba1b0b7f4",
+        "x-github-request-id": "173E:96F4C:ABAB3F:AD3F40:691B791B",
+        "x-proxy-cache": "MISS",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-timer": "S1763408572.391280,VS0,VE6"
+      },
+      "resourceType": "document"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/css/styles.b12fc150.css",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "31634fbc7639820f6c6c75d5fcaf6a83b753fa34",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-111ad\"",
+        "age": "148",
+        "x-github-request-id": "8E2F:43C02:C7619:C971F:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:01 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "text/css; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408572.427044,VS0,VE2",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "14827",
+        "server": "GitHub.com"
+      },
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/img/logo.svg",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "fcca6b8604232e419d9a4cb01c13ddeef42c35bb",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-137\"",
+        "age": "148",
+        "x-github-request-id": "4D1A:A1529:ADC43A:AF5C89:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:01 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "image/svg+xml",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408572.428210,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "209",
+        "server": "GitHub.com"
+      },
+      "resourceType": "image"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/runtime~main.184fe9a5.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "716df6754902557ef63e99577c587d48720fb946",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-1c18\"",
+        "age": "148",
+        "x-github-request-id": "0C94:573A7:AAB4D4:AC4C19:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:01 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408572.428083,VS0,VE9",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "3606",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/main.b11ed7db.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "79048a07b2fce4c671d095a46693700a60251515",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-6c37a\"",
+        "age": "0",
+        "x-github-request-id": "A683:13FA:51C39:52C01:691B7ABC",
+        "expires": "Mon, 17 Nov 2025 19:52:52 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408572.428004,VS0,VE116",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "136936",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/0e384e19.10215d99.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "d2ab973d32a958197cff44a4b767b640d0c84d1f",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-3fa2\"",
+        "age": "148",
+        "x-github-request-id": "AC44:43C02:C76CB:C97BC:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703525,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "4758",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a94703ab.eeeead78.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "1d83b803404087d11aeb1b23f5ba79e755603371",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-2e64\"",
+        "age": "148",
+        "x-github-request-id": "A096:1FF61A:AE7310:B0073C:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703461,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "4201",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a7bd4aaa.c57d6255.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "7624d28d98973c51d70b0791d5835095c5ec0ab5",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-302\"",
+        "age": "148",
+        "x-github-request-id": "A092:C4FA1:A71681:A8AD0D:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703918,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "419",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/22dd74f7.b8920c46.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "2c26a94d702488f710ad8ea11a9b4ed938189e2a",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-9280\"",
+        "age": "148",
+        "x-github-request-id": "1A26:B2798:AE4BB4:AFDF9E:691B7920",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703636,VS0,VE4",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "3822",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/5e95c892.afabab8a.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "9f35f4f69beec6dbe5e7560805ab6e594d2461c3",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-187\"",
+        "age": "148",
+        "x-github-request-id": "4346:96F4C:ABB287:AD469A:691B7922",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.704368,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "283",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/aba21aa0.e04f0144.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "fd0efa4173214ec6d149b04727106c10702d5d82",
+        "etag": "\"691b7829-e1\"",
+        "age": "148",
+        "x-github-request-id": "B5FA:573A7:AAB567:AC4C9D:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-cache-hits": "0",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.704196,VS0,VE4",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "225",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/17896441.0e5e97a6.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "6edbff0745eea6fe2839b631f83c8fc8e4c6fdb7",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-94bd\"",
+        "age": "148",
+        "x-github-request-id": "37C1:2CE07:A9615B:AAF8C8:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703212,VS0,VE5",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "12335",
+        "server": "GitHub.com"
+      },
+      "resourceType": "script"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/5e95c892.afabab8a.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "9f35f4f69beec6dbe5e7560805ab6e594d2461c3",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-187\"",
+        "age": "148",
+        "x-github-request-id": "4346:96F4C:ABB287:AD469A:691B7922",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.704368,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "283",
+        "server": "GitHub.com"
+      },
+      "resourceType": "other"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/aba21aa0.e04f0144.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "fd0efa4173214ec6d149b04727106c10702d5d82",
+        "etag": "\"691b7829-e1\"",
+        "age": "148",
+        "x-github-request-id": "B5FA:573A7:AAB567:AC4C9D:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-cache-hits": "0",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.704196,VS0,VE4",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "225",
+        "server": "GitHub.com"
+      },
+      "resourceType": "other"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a7bd4aaa.c57d6255.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "7624d28d98973c51d70b0791d5835095c5ec0ab5",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-302\"",
+        "age": "148",
+        "x-github-request-id": "A092:C4FA1:A71681:A8AD0D:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703918,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "419",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "other"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/22dd74f7.b8920c46.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "2c26a94d702488f710ad8ea11a9b4ed938189e2a",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-9280\"",
+        "age": "148",
+        "x-github-request-id": "1A26:B2798:AE4BB4:AFDF9E:691B7920",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703636,VS0,VE4",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "3822",
+        "server": "GitHub.com"
+      },
+      "resourceType": "other"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/a94703ab.eeeead78.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "1d83b803404087d11aeb1b23f5ba79e755603371",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-2e64\"",
+        "age": "148",
+        "x-github-request-id": "A096:1FF61A:AE7310:B0073C:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703461,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "4201",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "other"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/17896441.0e5e97a6.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "6edbff0745eea6fe2839b631f83c8fc8e4c6fdb7",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-94bd\"",
+        "age": "148",
+        "x-github-request-id": "37C1:2CE07:A9615B:AAF8C8:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703212,VS0,VE5",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "12335",
+        "server": "GitHub.com"
+      },
+      "resourceType": "other"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/0e384e19.10215d99.js",
+      "status": 200,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "d2ab973d32a958197cff44a4b767b640d0c84d1f",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-3fa2\"",
+        "age": "148",
+        "x-github-request-id": "AC44:43C02:C76CB:C97BC:691B7921",
+        "expires": "Mon, 17 Nov 2025 19:46:02 GMT",
+        "x-proxy-cache": "MISS",
+        "x-cache": "HIT",
+        "date": "Mon, 17 Nov 2025 19:42:52 GMT",
+        "content-type": "application/javascript; charset=utf-8",
+        "last-modified": "Mon, 17 Nov 2025 19:31:53 GMT",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "cache-control": "max-age=600",
+        "x-timer": "S1763408573.703525,VS0,VE3",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "4758",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "other"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/main.js",
+      "status": 404,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "630a063536a7fddedf48d4563c9baa4fc7697fb1",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-2329\"",
+        "age": "0",
+        "x-github-request-id": "4E42:131627:A94E74:AAEA67:691B7AC1",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Mon, 17 Nov 2025 19:42:58 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "x-timer": "S1763408578.036880,VS0,VE105",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "2927",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "fetch"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/runtime.js",
+      "status": 404,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "178201dfc9ee8ffbd89868a7f8e055bbbe6b3d11",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-2329\"",
+        "age": "0",
+        "x-github-request-id": "2D91:13FA:5230F:532E1:691B7AC2",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Mon, 17 Nov 2025 19:42:58 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "x-timer": "S1763408578.162252,VS0,VE99",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "2927",
+        "server": "GitHub.com"
+      },
+      "resourceType": "fetch"
+    },
+    {
+      "url": "https://docs.eco-balance.cc/assets/js/app.js",
+      "status": 404,
+      "statusText": "",
+      "headers": {
+        "x-fastly-request-id": "56863632da8190a355bd205911f7dc4b7983c414",
+        "content-encoding": "gzip",
+        "etag": "W/\"691b7829-2329\"",
+        "age": "0",
+        "x-github-request-id": "C962:19B1FC:AC49BB:ADE6B8:691B7AC1",
+        "x-proxy-cache": "MISS",
+        "x-cache": "MISS",
+        "date": "Mon, 17 Nov 2025 19:42:58 GMT",
+        "content-type": "text/html; charset=utf-8",
+        "x-served-by": "cache-fra-etou8220091-FRA",
+        "x-cache-hits": "0",
+        "vary": "Accept-Encoding",
+        "x-timer": "S1763408578.302141,VS0,VE103",
+        "via": "1.1 varnish",
+        "accept-ranges": "bytes",
+        "access-control-allow-origin": "*",
+        "content-length": "2927",
+        "x-origin-cache": "HIT",
+        "server": "GitHub.com"
+      },
+      "resourceType": "fetch"
+    }
+  ]
+}

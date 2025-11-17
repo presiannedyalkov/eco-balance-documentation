@@ -137,6 +137,9 @@ jobs:
           # Master key for indexing during build (write permissions, keep secret!)
           # This is only used during build to index content, not exposed to frontend
           MEILISEARCH_MASTER_KEY: ${{ secrets.MEILISEARCH_MASTER_KEY }}
+          # Sentry configuration for error tracking
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_RELEASE: ${{ github.sha }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -15,6 +15,9 @@ import ReactDOM from 'react-dom/client';
 import MeilisearchSearchBar from './components/MeilisearchSearchBar';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
+// Initialize Sentry for error tracking
+import './components/SentryInit';
+
 // Client-side module for Docusaurus 3.x
 // This module is imported as a side effect by '@generated/client-modules'
 // Top-level code executes when the module is imported in the browser
