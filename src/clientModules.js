@@ -16,15 +16,15 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 // Client-side module for Docusaurus 3.x
 // Docusaurus automatically loads this file from src/clientModules.js
-// Can export a function or execute code directly
+// In Docusaurus 3.x, this should export a function that runs on client-side
 
-console.log('[clientModules] Loading Meilisearch search bar module...');
-
-// Mount Meilisearch search bar when DOM is ready
-if (ExecutionEnvironment.canUseDOM) {
-  console.log('[clientModules] DOM available, setting up search bar mounting...');
+export default function clientModule() {
+  console.log('[clientModules] Loading Meilisearch search bar module...');
   
-  function initSearchBar() {
+  // Mount Meilisearch search bar when DOM is ready
+  if (ExecutionEnvironment.canUseDOM) {
+    console.log('[clientModules] DOM available, setting up search bar mounting...');
+    
     function mountSearchBar() {
       const searchWrapper = document.getElementById('meilisearch-search-wrapper');
       if (searchWrapper && !searchWrapper.hasAttribute('data-mounted')) {
@@ -87,9 +87,7 @@ if (ExecutionEnvironment.canUseDOM) {
     setTimeout(attemptMount, 1000);
     setTimeout(attemptMount, 2000);
     setTimeout(attemptMount, 3000);
+    setTimeout(attemptMount, 5000);
   }
-  
-  // Start initialization
-  initSearchBar();
 }
 
