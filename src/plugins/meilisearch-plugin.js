@@ -139,10 +139,11 @@ function pluginMeilisearch(context, options) {
           const batch = documents.slice(i, i + batchSize);
           try {
             const task = await index.addDocuments(batch);
-            console.log(`✅ Indexed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(documents.length / batchSize)} (task ${task.taskUid})`);
+            const taskUid = task.taskUid || task;
+            console.log(`✅ Indexed batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(documents.length / batchSize)} (task ${taskUid})`);
             
-            // Wait for task to complete
-            await client.waitForTask(task.taskUid);
+            // Wait for task to complete (method is on index, not client)
+            await index.waitForTask(taskUid);
             console.log(`✅ Batch ${Math.floor(i / batchSize) + 1} processing completed`);
           } catch (error) {
             // If key doesn't have write permissions, skip indexing
