@@ -10,12 +10,22 @@ function pluginMeilisearch(context, options) {
   const {
     host,
     searchKey,
+    masterKey, // Optional: for indexing (write permissions)
     indexName = 'docs',
     batchSize = 100,
   } = options;
 
-  if (!host || !searchKey) {
-    console.warn('⚠️  Meilisearch plugin: host and searchKey are required');
+  if (!host) {
+    console.warn('⚠️  Meilisearch plugin: host is required');
+    return {};
+  }
+
+  // For indexing, use masterKey if available, otherwise searchKey
+  // masterKey has write permissions needed for indexing
+  const indexingKey = masterKey || searchKey;
+  
+  if (!indexingKey) {
+    console.warn('⚠️  Meilisearch plugin: searchKey or masterKey is required');
     return {};
   }
 
@@ -38,9 +48,11 @@ function pluginMeilisearch(context, options) {
         const path = require('path');
         const { glob } = require('glob');
 
+        // Use masterKey for indexing (has write permissions)
+        // If masterKey not provided, try searchKey (may fail if read-only)
         const client = new MeiliSearch({
           host: host,
-          apiKey: searchKey,
+          apiKey: indexingKey,
         });
 
         const index = client.index(indexName);
