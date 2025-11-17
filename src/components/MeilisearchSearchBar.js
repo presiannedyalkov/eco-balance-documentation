@@ -145,13 +145,33 @@ function MeilisearchSearchBar() {
     setQuery('');
   };
 
+  // Debug logging - always log when component renders
+  useEffect(() => {
+    console.log('[MeilisearchSearchBar] Component mounted/rendered', {
+      meilisearchHost: meilisearchHost ? 'configured' : 'missing',
+      searchKey: searchKey ? 'configured' : 'missing',
+      indexName,
+      wrapperExists: typeof document !== 'undefined' && !!document.getElementById('meilisearch-search-wrapper'),
+    });
+    
+    // Also log to page for debugging
+    if (typeof window !== 'undefined') {
+      window.meilisearchDebug = {
+        mounted: true,
+        host: meilisearchHost,
+        hasKey: !!searchKey,
+        indexName,
+      };
+    }
+  }, []);
+
   // Always render the search bar (even if Meilisearch isn't configured, show a placeholder)
   // This helps debug if the component is mounting at all
   if (!meilisearchHost || !searchKey) {
-    console.warn('Meilisearch not configured:', { meilisearchHost, searchKey });
+    console.warn('[MeilisearchSearchBar] Meilisearch not configured:', { meilisearchHost, searchKey });
     // Still render a placeholder so we can see if the component is mounting
     return (
-      <div className="meilisearch-search-container" style={{ position: 'relative' }}>
+      <div className="meilisearch-search-container" style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
         <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="search"
@@ -165,6 +185,7 @@ function MeilisearchSearchBar() {
               fontSize: '14px',
               width: '200px',
               opacity: 0.5,
+              display: 'block',
             }}
           />
         </div>
@@ -173,7 +194,7 @@ function MeilisearchSearchBar() {
   }
 
   return (
-    <div ref={searchRef} className="meilisearch-search-container" style={{ position: 'relative' }}>
+    <div ref={searchRef} className="meilisearch-search-container" style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
       <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
         <input
           type="search"
@@ -188,6 +209,7 @@ function MeilisearchSearchBar() {
             borderRadius: '4px',
             fontSize: '14px',
             width: '200px',
+            display: 'block',
           }}
         />
       </div>

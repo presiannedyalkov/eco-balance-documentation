@@ -265,6 +265,59 @@ See detailed plan: `_process/documentation/GITHUB_MILESTONES_ROADMAP_PLAN.md`
 
 ---
 
+### Zotero API-First Citation System
+**Status:** Future
+**Priority:** Medium
+**Related:** Research Bookmarks Integration
+
+**Description:**
+Implement a citation management system using Zotero as the single source of truth, managed entirely via API. Use custom IDs in markdown files (`[rest-001]`, `[fund-001]`) for readability, and automatically convert to numbered citations (`[1]`, `[2]`) with reference lists on export.
+
+**Key Features:**
+- Zotero API integration for adding/managing citations
+- Custom ID mapping system (`rest-001` → Zotero item key)
+- Custom IDs in markdown for easy writing (`[rest-001]`)
+- Automatic conversion to numbered citations on export (`[1]`, `[2]`)
+- Numbered reference list generation at document bottom
+- No dependency on bookmarks folder structure
+- Zotero as single source of truth for all citations
+
+**Workflow:**
+1. Add sources to Zotero via API (from any tool - Perplexity, Raindrop, etc.)
+2. Map Zotero items to custom IDs (`rest-001`, `fund-001`, etc.)
+3. Use custom IDs in markdown: `[rest-001]`
+4. On export: Convert `[rest-001]` → `[1]` and generate numbered references
+
+**Technical Implementation:**
+- `scripts/add-to-zotero.js` - Add sources via Zotero API
+- `scripts/map-to-custom-id.js` - Create custom ID mappings
+- `zotero-id-mapping.json` - Store Zotero key → custom ID mappings
+- `scripts/export-with-numbered-citations.js` - Convert custom IDs to numbered citations
+- `scripts/format-reference.js` - Format reference entries
+
+**Benefits:**
+- **Easy Writing**: Use memorable custom IDs in markdown
+- **Clean Export**: Numbered citations in final documents
+- **Single Source**: Zotero manages all citation data
+- **API-First**: No GUI needed, fully automated
+- **Flexible**: Works with any source capture tool
+
+**Dependencies:**
+- Zotero account with API key
+- Zotero REST API access
+- Node.js scripts for automation
+
+**Estimated Effort:**
+- Zotero API setup: 1 hour
+- Script development: 4-6 hours
+- Testing and refinement: 2-3 hours
+- Total: 7-10 hours
+
+**Related Documents:**
+- `research/CITATION_SYSTEM_ARCHITECTURE.md` - Detailed architecture (Option 3.6)
+
+---
+
 ## 🤖 AI & Automation
 
 ### AI Skills Framework Implementation
@@ -568,6 +621,7 @@ Real-time public dashboard showing project impact metrics and progress toward go
 ---
 
 **Version History:**
+- 2025.11 (2025.11.16): Added Zotero API-First Citation System feature
 - 2025.11 (2025.11.13 19:12): Added Research Bookmarks Integration, Visual Enhancements for Documents, and Timeline & Milestone Visualization features
 - 2025.11 (2025.11.12 14:30): Updated Public Documentation Website status to "In Development" - deployment workflow created
 - 2025.11 (2025.11.10 10:00): Added Documentation Export Formats (EPUB & PDF) feature
