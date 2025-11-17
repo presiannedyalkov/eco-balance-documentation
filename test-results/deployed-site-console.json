@@ -1,0 +1,45 @@
+{
+  "logs": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://docs.eco-balance.cc/img/favicon.ico",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "timestamp": "2025-11-17T19:42:54.612Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://docs.eco-balance.cc/assets/js/main.js",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "timestamp": "2025-11-17T19:43:00.332Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://docs.eco-balance.cc/assets/js/runtime.js",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "timestamp": "2025-11-17T19:43:00.483Z"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 ()",
+      "location": {
+        "url": "https://docs.eco-balance.cc/assets/js/app.js",
+        "lineNumber": 0,
+        "columnNumber": 0
+      },
+      "timestamp": "2025-11-17T19:43:00.704Z"
+    }
+  ],
+  "errors": []
+}

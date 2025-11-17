@@ -81,8 +81,9 @@ const config = {
     ],
   ],
 
-  // Sentry integration removed - to be added later
-  // See SENTRY_SETUP.md for future integration
+  // Sentry integration
+  // Configured via environment variables: SENTRY_DSN, SENTRY_RELEASE
+  // See SENTRY_SETUP_COMPLETE.md for setup instructions
 
   // Client-side modules - explicitly configure clientModules.js
   // Docusaurus 3.x requires explicit configuration (does NOT auto-load src/clientModules.js)
@@ -213,6 +214,41 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  // Webpack configuration to inject Sentry DSN at build time
+  // This makes process.env.SENTRY_DSN available in the browser bundle
+  webpack: {
+    jsLoader: (isServer) => ({
+      loader: require.resolve('esbuild-loader'),
+      options: {
+        loader: 'tsx',
+        target: isServer ? 'node12' : 'es2017',
+      },
+    }),
+  },
+  
+  // Configure webpack to inject environment variables
+  plugins: [
+    function(context, options) {
+      return {
+        name: 'sentry-env-injector',
+        configureWebpack(config, isServer, utils) {
+          if (isServer) {
+            return {};
+          }
+          const {getJSLoader} = utils;
+          return {
+            plugins: [
+              new (require('webpack')).DefinePlugin({
+                'process.env.SENTRY_DSN': JSON.stringify(process.env.SENTRY_DSN || ''),
+                'process.env.SENTRY_RELEASE': JSON.stringify(process.env.SENTRY_RELEASE || ''),
+              }),
+            ],
+          };
+        },
+      };
+    },
+  ],
 };
 
 module.exports = config;

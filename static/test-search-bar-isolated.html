@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meilisearch Search Bar - Isolated Test</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .test-section {
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .test-section h3 {
+      margin-top: 0;
+    }
+    .pass { color: green; }
+    .fail { color: red; }
+    .warn { color: orange; }
+    #meilisearch-search-wrapper {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      padding: 10px;
+      border: 2px dashed #ccc;
+      min-height: 50px;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background: #f5f5f5;
+      margin-bottom: 20px;
+    }
+    .navbar__items {
+      display: flex;
+      gap: 20px;
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meilisearch Search Bar - Isolated Test</h1>
+  <p>This page tests the search bar component in isolation, without Docusaurus.</p>
+  
+  <div class="navbar">
+    <div class="navbar__brand">Eco Balance</div>
+    <div class="navbar__items">
+      <div id="meilisearch-search-wrapper"></div>
+    </div>
+  </div>
+
+  <div class="test-section">
+    <h3>Test Results</h3>
+    <div id="test-results"></div>
+  </div>
+
+  <div class="test-section">
+    <h3>Console Logs</h3>
+    <pre id="console-logs" style="background: #f5f5f5; padding: 10px; max-height: 400px; overflow-y: auto;"></pre>
+  </div>
+
+  <script type="module">
+    const testResults = document.getElementById('test-results');
+    const consoleLogs = document.getElementById('console-logs');
+    
+    // Capture console logs
+    const originalLog = console.log;
+    const originalError = console.error;
+    const originalWarn = console.warn;
+    
+    function addLog(type, ...args) {
+      const logEntry = `[${new Date().toLocaleTimeString()}] [${type}] ${args.join(' ')}\n`;
+      consoleLogs.textContent += logEntry;
+      consoleLogs.scrollTop = consoleLogs.scrollHeight;
+    }
+    
+    console.log = (...args) => {
+      originalLog(...args);
+      addLog('LOG', ...args);
+    };
+    
+    console.error = (...args) => {
+      originalError(...args);
+      addLog('ERROR', ...args);
+    };
+    
+    console.warn = (...args) => {
+      originalWarn(...args);
+      addLog('WARN', ...args);
+    };
+    
+    // Test results
+    const results = [];
+    
+    function addResult(name, passed, message) {
+      results.push({ name, passed, message });
+      const div = document.createElement('div');
+      div.className = passed ? 'pass' : 'fail';
+      div.textContent = `${passed ? '✅' : '❌'} ${name}: ${message}`;
+      testResults.appendChild(div);
+    }
+    
+    // Test 1: Check if React is available (from CDN)
+    async function runTests() {
+      console.log('🔍 Starting isolated tests...');
+      
+      // Load React from CDN
+      console.log('Loading React from CDN...');
+      await Promise.all([
+        new Promise((resolve) => {
+          const script = document.createElement('script');
+          script.src = 'https://unpkg.com/react@18/umd/react.development.js';
+          script.crossOrigin = 'anonymous';
+          script.onload = resolve;
+          document.head.appendChild(script);
+        }),
+        new Promise((resolve) => {
+          const script = document.createElement('script');
+          script.src = 'https://unpkg.com/react-dom@18/umd/react-dom.development.js';
+          script.crossOrigin = 'anonymous';
+          script.onload = resolve;
+          document.head.appendChild(script);
+        }),
+      ]);
+      
+      addResult('React loaded', typeof React !== 'undefined', 
+        typeof React !== 'undefined' ? 'React is available' : 'React failed to load');
+      addResult('ReactDOM loaded', typeof ReactDOM !== 'undefined',
+        typeof ReactDOM !== 'undefined' ? 'ReactDOM is available' : 'ReactDOM failed to load');
+      
+      // Test 2: Check if wrapper exists
+      const wrapper = document.getElementById('meilisearch-search-wrapper');
+      addResult('Wrapper div exists', !!wrapper, 
+        wrapper ? 'Wrapper div found in DOM' : 'Wrapper div not found');
+      
+      if (wrapper) {
+        const styles = window.getComputedStyle(wrapper);
+        addResult('Wrapper is visible', 
+          styles.display !== 'none' && styles.visibility !== 'hidden',
+          `Display: ${styles.display}, Visibility: ${styles.visibility}`);
+      }
+      
+      // Test 3: Try to mount a simple React component
+      if (typeof React !== 'undefined' && typeof ReactDOM !== 'undefined' && wrapper) {
+        try {
+          const root = ReactDOM.createRoot(wrapper);
+          root.render(React.createElement('div', { 
+            style: { padding: '10px', border: '2px solid green' },
+            'data-test': 'mounted'
+          }, '✅ React component mounted successfully!'));
+          
+          addResult('React mounting', true, 'Component mounted without errors');
+          
+          // Verify it rendered
+          setTimeout(() => {
+            const mounted = wrapper.querySelector('[data-test="mounted"]');
+            addResult('Component rendered', !!mounted, 
+              mounted ? 'Component is visible in DOM' : 'Component not found after mount');
+          }, 100);
+        } catch (error) {
+          addResult('React mounting', false, `Error: ${error.message}`);
+        }
+      }
+      
+      // Test 4: Check Meilisearch connection (if configured)
+      const meilisearchHost = 'https://search.eco-balance.cc';
+      console.log('Testing Meilisearch connection...');
+      
+      fetch(`${meilisearchHost}/health`)
+        .then(response => {
+          addResult('Meilisearch health check', response.ok, 
+            `Status: ${response.status}`);
+          return response.json();
+        })
+        .then(data => {
+          console.log('Meilisearch health:', data);
+        })
+        .catch(error => {
+          addResult('Meilisearch health check', false, 
+            `Error: ${error.message} (may be CORS or network issue)`);
+        });
+      
+      console.log('✅ Tests completed');
+    }
+    
+    // Run tests after page loads
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', runTests);
+    } else {
+      runTests();
+    }
+  </script>
+</body>
+</html>
+
