@@ -76,8 +76,8 @@
 .meilisearch-search-results {
   position: absolute;
   top: 100%;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 8px;
   background-color: var(--ifm-background-color);
   border: 1px solid var(--ifm-color-emphasis-300);
@@ -87,5 +87,28 @@
   overflow-y: auto;
   z-index: 1000;
   min-width: 400px;
+  width: 500px;
+}
+
+/* Ensure navbar has relative positioning for absolute centering */
+.navbar__inner {
+  position: relative;
+}
+
+/* Responsive: on smaller screens, keep search bar on right */
+@media (max-width: 996px) {
+  #meilisearch-search-wrapper {
+    position: static;
+    transform: none;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  
+  .meilisearch-search-results {
+    left: 0;
+    transform: none;
+    width: 100%;
+    min-width: auto;
+  }
 }
 
