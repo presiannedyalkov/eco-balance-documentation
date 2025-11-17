@@ -39,7 +39,11 @@
 #meilisearch-search-wrapper {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .meilisearch-search-container {
@@ -58,7 +62,7 @@
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
   font-size: 14px;
-  width: 200px;
+  width: 300px;
   background: var(--ifm-background-color);
   color: var(--ifm-font-color-base);
 }
