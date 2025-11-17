@@ -59,9 +59,9 @@ const config = {
     ],
   ],
 
-  // Meilisearch plugin for search
-  // Configure with your self-hosted Meilisearch instance
+  // Plugins configuration
   plugins: [
+    // Meilisearch plugin for search
     [
       require.resolve('./src/plugins/meilisearch-plugin.js'),
       {
@@ -79,6 +79,26 @@ const config = {
         batchSize: 100,
       },
     ],
+    // Sentry webpack plugin to inject environment variables
+    function(context, options) {
+      return {
+        name: 'sentry-env-injector',
+        configureWebpack(config, isServer, utils) {
+          if (isServer) {
+            return {};
+          }
+          const {getJSLoader} = utils;
+          return {
+            plugins: [
+              new (require('webpack')).DefinePlugin({
+                'process.env.SENTRY_DSN': JSON.stringify(process.env.SENTRY_DSN || ''),
+                'process.env.SENTRY_RELEASE': JSON.stringify(process.env.SENTRY_RELEASE || ''),
+              }),
+            ],
+          };
+        },
+      };
+    },
   ],
 
   // Sentry integration
@@ -226,29 +246,6 @@ const config = {
       },
     }),
   },
-  
-  // Configure webpack to inject environment variables
-  plugins: [
-    function(context, options) {
-      return {
-        name: 'sentry-env-injector',
-        configureWebpack(config, isServer, utils) {
-          if (isServer) {
-            return {};
-          }
-          const {getJSLoader} = utils;
-          return {
-            plugins: [
-              new (require('webpack')).DefinePlugin({
-                'process.env.SENTRY_DSN': JSON.stringify(process.env.SENTRY_DSN || ''),
-                'process.env.SENTRY_RELEASE': JSON.stringify(process.env.SENTRY_RELEASE || ''),
-              }),
-            ],
-          };
-        },
-      };
-    },
-  ],
 };
 
 module.exports = config;
