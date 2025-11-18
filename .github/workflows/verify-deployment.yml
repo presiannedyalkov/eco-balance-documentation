@@ -91,7 +91,7 @@ jobs:
         run: |
           DEPLOY_URL="${{ steps.url.outputs.deploy_url }}"
           set +e  # Don't exit on error
-          BASE_URL="$DEPLOY_URL" npx playwright test tests/deployment.spec.js --reporter=html,list
+          BASE_URL="$DEPLOY_URL" npx playwright test tests/deployment.spec.js tests/module-verification.spec.js --reporter=html,list
           TEST_EXIT_CODE=$?
           echo "test_exit_code=$TEST_EXIT_CODE" >> $GITHUB_OUTPUT
           # Don't exit here - let continue-on-error handle it
