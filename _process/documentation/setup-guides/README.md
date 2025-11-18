@@ -10,7 +10,6 @@ This directory contains setup and configuration guides for various services and 
 - **MEILISEARCH_INDEXING.md** - Meilisearch indexing guide
 - **MEILISEARCH_SECURITY.md** - Meilisearch security configuration
 - **MEILISEARCH_CORS_FIX.md** - CORS configuration troubleshooting
-- **SEARCH_OPTIONS.md** - Search solution comparison (reference)
 
 ### Error Tracking
 - **SENTRY_SETUP.md** - Sentry error tracking setup
