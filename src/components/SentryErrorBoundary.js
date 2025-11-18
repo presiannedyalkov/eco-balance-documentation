@@ -11,12 +11,12 @@ import * as Sentry from '@sentry/react';
 class SentryErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hasError: false, error: null };
+    this.state = { hasError: false };
   }
 
   static getDerivedStateFromError(error) {
     // Update state so the next render will show the fallback UI
-    return { hasError: true, error };
+    return { hasError: true };
   }
 
   componentDidCatch(error, errorInfo) {
@@ -46,7 +46,7 @@ class SentryErrorBoundary extends React.Component {
           </p>
           <button
             onClick={() => {
-              this.setState({ hasError: false, error: null });
+              this.setState({ hasError: false });
               window.location.reload();
             }}
             style={{
