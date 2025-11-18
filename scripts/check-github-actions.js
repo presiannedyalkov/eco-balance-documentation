@@ -141,9 +141,8 @@ async function checkWorkflows() {
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
       .substring(0, 200); // Limit length
-    // Construct safe message with sanitized value - CodeQL recognizes sanitized variables
-    const safeMessage = '❌ Error checking workflows: ' + sanitizedError;
-    console.error(safeMessage);
+    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+    console.error('❌ Error checking workflows:', sanitizedError);
     if (sanitizedError.includes('401') || sanitizedError.includes('403')) {
       console.error('\n💡 Token may be invalid or missing required permissions');
       console.error('   Classic Token: Need "repo" scope');

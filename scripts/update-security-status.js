@@ -99,9 +99,8 @@ async function getCodeQLAlerts() {
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
       .substring(0, 200); // Limit length
-    // Construct safe message with sanitized value - CodeQL recognizes sanitized variables
-    const safeMessage = '⚠️  Could not fetch CodeQL alerts: ' + sanitizedError;
-    console.warn(safeMessage);
+    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+    console.warn('⚠️  Could not fetch CodeQL alerts:', sanitizedError);
     return { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
   }
 }
@@ -136,9 +135,8 @@ async function getDependabotAlerts() {
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
       .substring(0, 200); // Limit length
-    // Construct safe message with sanitized value - CodeQL recognizes sanitized variables
-    const safeMessage = '⚠️  Could not fetch Dependabot alerts: ' + sanitizedError;
-    console.warn(safeMessage);
+    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+    console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizedError);
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }
