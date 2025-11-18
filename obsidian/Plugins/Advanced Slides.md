@@ -1,0 +1,6 @@
+- Description: Creates beautiful presentations directly from your Obsidian Markdown notes.
+- Setup: Install the plugin, create a new note with YAML frontmatter for slides, and use the plugin's syntax for slide creation.
+- Demo: [[Advanced Slides Demo]]
+- Documentation: https://mszturc.github.io/obsidian-advanced-slides/
+- [x] create demo ✅ 2024-11-03 #task
+- [x] review settings ✅ 2024-11-03 #task

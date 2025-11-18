@@ -36,18 +36,19 @@ test.describe('Module Verification', () => {
       msg.text.includes('[Sentry]') && msg.text.includes('Initialized')
     );
 
-    // Check if Sentry object exists in window
+    // Check if Sentry object exists in window (Sentry v10+ compatible)
     const sentryInfo = await page.evaluate(() => {
       return {
         hasSentry: typeof window.Sentry !== 'undefined',
-        sentryInit: window.Sentry?.getCurrentHub?.()?.getClient?.()?.getDsn?.() || null,
+        canCapture: typeof window.Sentry?.captureException === 'function',
+        isInitialized: window.Sentry?.isInitialized?.() || false,
         consoleLogs: [], // Will be populated by console listener
       };
     });
 
     // In production, Sentry should be initialized
-    // Check console for initialization message OR check if Sentry object exists
-    if (sentryInitMessage || sentryInfo.hasSentry) {
+    // Check console for initialization message OR check if Sentry object exists and can capture
+    if (sentryInitMessage || (sentryInfo.hasSentry && sentryInfo.canCapture)) {
       console.log('✅ Sentry is initialized');
       expect(sentryInfo.hasSentry || sentryInitMessage).toBeTruthy();
     } else {
