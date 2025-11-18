@@ -1,0 +1,2 @@
+- Description: Tracks and notifies you of available updates for your installed plugins.
+- Setup: Install the plugin, and it will automatically track and notify you of updates. Configure notification preferences in the settings.

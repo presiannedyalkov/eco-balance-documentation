@@ -1,0 +1,2 @@
+- Description: Enhances table editing capabilities in Obsidian with features like formatting and cell navigation.
+- Setup: Install the plugin, then use the enhanced table editing features when working with Markdown tables in your notes.

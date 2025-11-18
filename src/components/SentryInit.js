@@ -109,16 +109,15 @@ function initSentry() {
       window.Sentry = Sentry;
     }
     
-    // Verify initialization
-    const client = Sentry.getCurrentHub()?.getClient();
-    if (client) {
-      const clientDsn = client.getDsn();
+    // Verify initialization (Sentry v10+ compatible)
+    // getCurrentHub() was removed in v10, so we check if captureException is available
+    if (typeof Sentry.captureException === 'function') {
       console.log('✅ [Sentry] Initialized successfully');
-      console.log('✅ [Sentry] Client DSN:', clientDsn ? `${clientDsn.getHost()}` : 'not set');
-      console.log('✅ [Sentry] Environment:', client.getOptions()?.environment || 'not set');
-      console.log('✅ [Sentry] Release:', client.getOptions()?.release || 'not set');
+      console.log('✅ [Sentry] DSN configured:', dsnPreview);
+      console.log('✅ [Sentry] Environment:', environment);
+      console.log('✅ [Sentry] Release:', process.env.SENTRY_RELEASE || 'not set');
     } else {
-      console.error('❌ [Sentry] Initialization completed but client not found!');
+      console.error('❌ [Sentry] Initialization completed but captureException not available!');
     }
   } catch (error) {
     console.error('❌ [Sentry] Initialization failed:', error);

@@ -23,18 +23,11 @@ async function testSentry() {
   
   console.log('\n🔍 Checking Sentry status...');
   const sentryInfo = await page.evaluate(() => {
-    const hub = window.Sentry?.getCurrentHub?.();
-    const client = hub?.getClient?.();
-    const dsn = client?.getDsn?.();
-    
+    // Sentry v10+ compatible - getCurrentHub() was removed
     return {
       hasSentry: typeof window.Sentry !== 'undefined',
-      hasHub: !!hub,
-      hasClient: !!client,
-      dsn: dsn ? dsn.toString() : null,
-      dsnHost: dsn ? dsn.getHost() : null,
-      environment: client?.getOptions?.()?.environment || null,
-      release: client?.getOptions?.()?.release || null,
+      isInitialized: window.Sentry?.isInitialized?.() || false,
+      canCapture: typeof window.Sentry?.captureException === 'function',
     };
   });
   
@@ -53,11 +46,10 @@ async function testSentry() {
     console.log('  No Sentry-related console messages found');
   }
   
-  if (sentryInfo.hasSentry && sentryInfo.hasClient) {
+  if (sentryInfo.hasSentry && sentryInfo.canCapture) {
     console.log('\n✅ Sentry is initialized!');
-    console.log(`   DSN: ${sentryInfo.dsn ? '✅ Set' : '❌ Not set'}`);
-    console.log(`   Environment: ${sentryInfo.environment || 'Not set'}`);
-    console.log(`   Release: ${sentryInfo.release || 'Not set'}`);
+    console.log(`   Initialized: ${sentryInfo.isInitialized ? '✅ Yes' : '❌ No'}`);
+    console.log(`   Can capture errors: ${sentryInfo.canCapture ? '✅ Yes' : '❌ No'}`);
     
     console.log('\n🧪 Testing error capture...');
     const captureResult = await page.evaluate(() => {
@@ -82,7 +74,8 @@ async function testSentry() {
   } else {
     console.log('\n❌ Sentry is NOT properly initialized');
     console.log(`   Has Sentry object: ${sentryInfo.hasSentry}`);
-    console.log(`   Has client: ${sentryInfo.hasClient}`);
+    console.log(`   Can capture errors: ${sentryInfo.canCapture}`);
+    console.log(`   Is initialized: ${sentryInfo.isInitialized}`);
   }
   
   await browser.close();

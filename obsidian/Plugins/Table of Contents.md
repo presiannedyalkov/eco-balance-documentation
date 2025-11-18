@@ -1,0 +1,2 @@
+- Description: Generates a table of contents for your notes based on headings.
+- Setup: After installation, use the [TOC] tag in your notes where you want the table of contents to appear.

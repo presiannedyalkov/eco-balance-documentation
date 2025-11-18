@@ -1,0 +1,2 @@
+- Description: Allows you to quickly turn selected text into a hyperlink by pasting a URL.
+- Setup: Install the plugin, then select text and paste a URL to automatically create a Markdown link.

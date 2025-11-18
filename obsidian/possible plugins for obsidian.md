@@ -1,0 +1,36 @@
+---
+tags:
+  - obsidian
+---
+- [x] advanced tables
+- [x] anuppuccin theme (style settings + theme)
+- [x] calendar or fantasy calendar
+- [x] dataview
+- [ ] ~~db folder?~~
+- [ ] editor syntax highlight
+- [ ] ~~footnotes~~
+- [x] hider
+- [x] homepage
+- [x] banners
+- [x] janitor
+- [x] kanban
+- [x] kindle highlights
+- [x] natural language dates
+- [x] obsidian api plugin
+- [ ] obsidian publish
+- [ ] obsidian sync
+- [ ] omnivore or readwise for article reading and storing
+- [x] outliner
+- [x] paste image rename
+- [x] paste url into selection
+- [x] periodic notes
+- [x] plugin update tracker
+- [x] projects
+- [ ] quick add
+- [ ] quick switcher++
+- [x] remember cursor position
+- [x] tag wrangler
+- [x] table of contents
+- [x] templater
+- [x] settings search
+- [x] style settings + theme (anuppuccin)
