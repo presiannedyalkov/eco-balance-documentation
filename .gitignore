@@ -11,6 +11,7 @@
 # yarn.lock
 *.backup
 *.code-workspace
+*.local.js
 *.pem
 *.swo
 *.swp
