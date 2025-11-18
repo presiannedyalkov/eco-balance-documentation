@@ -62,7 +62,7 @@
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
   font-size: 14px;
-  width: 300px;
+  width: 300px; /* Increased width */
   background: var(--ifm-background-color);
   color: var(--ifm-font-color-base);
 }
@@ -79,15 +79,21 @@
   left: 50%;
   transform: translateX(-50%);
   margin-top: 8px;
-  background-color: var(--ifm-background-color);
+  background-color: #ffffff !important; /* White background for light mode */
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-height: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-height: 500px; /* Increased height */
   overflow-y: auto;
   z-index: 1000;
-  min-width: 400px;
-  width: 500px;
+  min-width: 600px; /* Increased width */
+  width: 600px;
+}
+
+/* Dark mode styling for dropdown */
+[data-theme='dark'] .meilisearch-search-results {
+  background-color: #1e1e1e !important; /* Dark background for dark mode */
+  border-color: var(--ifm-color-emphasis-400);
 }
 
 /* Ensure navbar has relative positioning for absolute centering */

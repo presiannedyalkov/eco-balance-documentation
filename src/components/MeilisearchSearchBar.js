@@ -335,21 +335,6 @@ function MeilisearchSearchBar() {
       {isOpen && (query || results.length > 0) && (
         <div
           className="meilisearch-search-results"
-          style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            right: 0,
-            marginTop: '8px',
-            backgroundColor: 'var(--ifm-background-color)',
-            border: '1px solid var(--ifm-color-emphasis-300)',
-            borderRadius: '8px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-            maxHeight: '400px',
-            overflowY: 'auto',
-            zIndex: 1000,
-            minWidth: '400px',
-          }}
         >
           {isLoading && (
             <div style={{ padding: '16px', textAlign: 'center' }}>Searching...</div>
