@@ -32,6 +32,17 @@ function initSentry() {
   }
 
   try {
+    // Log DSN status (without exposing the full DSN)
+    const dsnPreview = dsn ? `${dsn.substring(0, 20)}...` : 'NOT SET';
+    console.log('🔍 [Sentry] Initializing with DSN:', dsnPreview);
+    console.log('🔍 [Sentry] Environment:', environment);
+    console.log('🔍 [Sentry] Release:', process.env.SENTRY_RELEASE || 'not set');
+    
+    if (!dsn) {
+      console.error('❌ [Sentry] DSN is empty - Sentry will not work!');
+      return;
+    }
+    
     Sentry.init({
       dsn: dsn,
       environment: environment,
@@ -93,9 +104,25 @@ function initSentry() {
       },
     });
 
-    console.log('✅ [Sentry] Initialized successfully');
+    // Expose Sentry on window for debugging (only in production)
+    if (typeof window !== 'undefined') {
+      window.Sentry = Sentry;
+    }
+    
+    // Verify initialization
+    const client = Sentry.getCurrentHub()?.getClient();
+    if (client) {
+      const clientDsn = client.getDsn();
+      console.log('✅ [Sentry] Initialized successfully');
+      console.log('✅ [Sentry] Client DSN:', clientDsn ? `${clientDsn.getHost()}` : 'not set');
+      console.log('✅ [Sentry] Environment:', client.getOptions()?.environment || 'not set');
+      console.log('✅ [Sentry] Release:', client.getOptions()?.release || 'not set');
+    } else {
+      console.error('❌ [Sentry] Initialization completed but client not found!');
+    }
   } catch (error) {
     console.error('❌ [Sentry] Initialization failed:', error);
+    console.error('❌ [Sentry] Error details:', error.message, error.stack);
   }
 }
 
