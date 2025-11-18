@@ -93,8 +93,9 @@ test.describe('Module Verification', () => {
         await page.waitForTimeout(1000);
         
         // Check if search results dropdown appears (optional - may not have results)
+        // Note: hasResults variable is intentionally unused - it's for future use
         const resultsDropdown = page.locator('.meilisearch-search-results');
-        const hasResults = await resultsDropdown.count() > 0;
+        await resultsDropdown.count(); // Check if dropdown exists (for future validation)
         
         // Search input should be functional (we can type in it)
         const inputValue = await searchInput.first().inputValue();
