@@ -87,7 +87,6 @@ const config = {
           if (isServer) {
             return {};
           }
-          const {getJSLoader} = utils;
           return {
             plugins: [
               new (require('webpack')).DefinePlugin({

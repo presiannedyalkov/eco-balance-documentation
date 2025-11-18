@@ -11,8 +11,6 @@
 
 const { chromium } = require('playwright');
 const { spawn } = require('child_process');
-const fs = require('fs');
-const path = require('path');
 
 let serveProcess = null;
 

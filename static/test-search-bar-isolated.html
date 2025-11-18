@@ -75,8 +75,19 @@
     const originalError = console.error;
     const originalWarn = console.warn;
     
+    function sanitizeLogArg(arg) {
+      // Sanitize log arguments to prevent log injection
+      const str = String(arg || '');
+      return str
+        .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+        .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+        .substring(0, 200); // Limit length
+    }
+    
     function addLog(type, ...args) {
-      const logEntry = `[${new Date().toLocaleTimeString()}] [${type}] ${args.join(' ')}\n`;
+      // Sanitize all arguments before joining
+      const sanitizedArgs = args.map(sanitizeLogArg);
+      const logEntry = `[${new Date().toLocaleTimeString()}] [${type}] ${sanitizedArgs.join(' ')}\n`;
       consoleLogs.textContent += logEntry;
       consoleLogs.scrollTop = consoleLogs.scrollHeight;
     }

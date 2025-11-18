@@ -38,7 +38,7 @@ jobs:
         run: |
           node scripts/update-security-status.js
       
-      - name: Commit and push changes
+      - name: Commit and create PR
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -50,20 +50,18 @@ jobs:
             exit 0
           fi
           
+          # Create branch and commit
+          BRANCH_NAME="chore/update-security-status-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH_NAME"
           git add README.md
           git commit -m "chore: update security alerts status [skip ci]" || exit 0
+          git push origin "$BRANCH_NAME"
           
-          # Push with retries
-          for i in 1 2 3; do
-            if git push origin HEAD:main; then
-              echo "✅ Successfully pushed changes"
-              exit 0
-            else
-              echo "⚠️ Push attempt $i failed, retrying..."
-              sleep 2
-            fi
-          done
-          
-          echo "❌ Failed to push after 3 attempts"
-          exit 1
+          # Create PR using GitHub CLI
+          gh pr create \
+            --title "chore: update security alerts status" \
+            --body "Automated update of security alerts status in README.md" \
+            --base main \
+            --head "$BRANCH_NAME" \
+            || echo "⚠️ PR may already exist or failed to create"
 

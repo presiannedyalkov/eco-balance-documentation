@@ -150,7 +150,8 @@ async function runTests() {
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
           .substring(0, 100); // Limit length
         // Use separate arguments instead of template literal to help CodeQL recognize sanitization
-        console.log('  -', String(sanitizedUrl) + ':', String(sanitizedError));
+        // Pass sanitized values directly (already strings) to avoid CodeQL false positive
+        console.log('  -', sanitizedUrl + ':', sanitizedError);
       });
       console.log('\n💡 Make sure the server is running: npm start');
       process.exit(1);
