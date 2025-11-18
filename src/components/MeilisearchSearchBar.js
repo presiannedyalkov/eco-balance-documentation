@@ -12,6 +12,7 @@ function MeilisearchSearchBar() {
   const [results, setResults] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
   const searchRef = useRef(null);
 
   // Get config from environment or window (set at build time)
@@ -126,9 +127,23 @@ function MeilisearchSearchBar() {
       if (!response.ok) {
         const errorText = await response.text();
         console.error('❌ [MeilisearchSearchBar] Search failed:', response.status, errorText);
+        
+        // Set error message based on status code
+        if (response.status === 500) {
+          setError('Search server error. Please check if Meilisearch is running.');
+        } else if (response.status === 404) {
+          setError('Search index not found. The index may need to be recreated.');
+        } else if (response.status === 401 || response.status === 403) {
+          setError('Search authentication failed. Please check API key configuration.');
+        } else {
+          setError(`Search failed (${response.status}). Please try again later.`);
+        }
         setResults([]);
         return;
       }
+      
+      // Clear any previous errors on successful response
+      setError(null);
 
       const data = await response.json();
       console.log('✅ [MeilisearchSearchBar] Search results:', {
@@ -142,6 +157,15 @@ function MeilisearchSearchBar() {
       console.error('  - Error name:', error.name);
       console.error('  - Error message:', error.message);
       console.error('  - Error stack:', error.stack);
+      
+      // Set user-friendly error message
+      if (error.message && error.message.includes('CORS')) {
+        setError('CORS error: Search server is not allowing requests from this domain.');
+      } else if (error.message && error.message.includes('fetch')) {
+        setError('Cannot connect to search server. Please check if Meilisearch is running.');
+      } else {
+        setError('Search error occurred. Please try again later.');
+      }
       setResults([]);
     } finally {
       setIsLoading(false);
@@ -340,7 +364,21 @@ function MeilisearchSearchBar() {
             <div style={{ padding: '16px', textAlign: 'center' }}>Searching...</div>
           )}
 
-          {!isLoading && results.length === 0 && query && (
+          {!isLoading && error && (
+            <div style={{ 
+              padding: '16px', 
+              textAlign: 'center', 
+              color: 'var(--ifm-color-danger)',
+              backgroundColor: 'var(--ifm-color-danger-darkest)',
+              borderRadius: '4px',
+              margin: '8px',
+            }}>
+              <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>⚠️ Search Error</div>
+              <div style={{ fontSize: '13px' }}>{error}</div>
+            </div>
+          )}
+
+          {!isLoading && !error && results.length === 0 && query && (
             <div style={{ padding: '16px', textAlign: 'center', color: 'var(--ifm-color-emphasis-600)' }}>
               No results found
             </div>
