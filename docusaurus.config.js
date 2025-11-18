@@ -234,18 +234,6 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-
-  // Webpack configuration to inject Sentry DSN at build time
-  // This makes process.env.SENTRY_DSN available in the browser bundle
-  webpack: {
-    jsLoader: (isServer) => ({
-      loader: require.resolve('esbuild-loader'),
-      options: {
-        loader: 'tsx',
-        target: isServer ? 'node12' : 'es2017',
-      },
-    }),
-  },
 };
 
 module.exports = config;
