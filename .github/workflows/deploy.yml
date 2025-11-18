@@ -65,6 +65,48 @@ jobs:
           npm run clear || true
           echo "✅ Cache cleared"
       
+      - name: Check Meilisearch service health
+        id: meilisearch_health
+        run: |
+          MEILISEARCH_HOST="${{ vars.MEILISEARCH_HOST || env.MEILISEARCH_HOST || 'https://search.eco-balance.cc' }}"
+          echo "🔍 Checking Meilisearch service at: $MEILISEARCH_HOST"
+          
+          # Try health endpoint
+          HEALTH_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "$MEILISEARCH_HOST/health" || echo "000")
+          
+          if [ "$HEALTH_STATUS" = "200" ]; then
+            echo "✅ Meilisearch service is healthy (HTTP $HEALTH_STATUS)"
+            echo "health_status=healthy" >> $GITHUB_OUTPUT
+          elif [ "$HEALTH_STATUS" = "000" ]; then
+            echo "⚠️  Meilisearch service is unreachable (timeout or connection error)"
+            echo "💡 This might indicate Cloudflare issues or the service is down"
+            echo "💡 Check https://search.eco-balance.cc/ manually"
+            echo "health_status=unreachable" >> $GITHUB_OUTPUT
+          elif [ "$HEALTH_STATUS" = "500" ]; then
+            echo "⚠️  Meilisearch service returned 500 error"
+            echo "💡 This might indicate Cloudflare issues or server problems"
+            echo "💡 Check https://search.eco-balance.cc/ manually"
+            echo "health_status=error_500" >> $GITHUB_OUTPUT
+          else
+            echo "⚠️  Meilisearch service returned HTTP $HEALTH_STATUS"
+            echo "💡 Service might be experiencing issues"
+            echo "health_status=error_$HEALTH_STATUS" >> $GITHUB_OUTPUT
+          fi
+          
+          # Try to get more details
+          echo ""
+          echo "📊 Detailed health check response:"
+          curl -s --max-time 10 "$MEILISEARCH_HOST/health" || echo "  (Could not fetch health endpoint)"
+          echo ""
+          
+          # Don't fail the build, but warn if service is down
+          if [ "$HEALTH_STATUS" != "200" ]; then
+            echo "⚠️  WARNING: Meilisearch service is not healthy"
+            echo "⚠️  Search functionality may not work after deployment"
+            echo "⚠️  Continuing with build, but search will be unavailable"
+          fi
+        continue-on-error: true
+      
       - name: Determine BASE_URL
         id: base_url
         run: |
