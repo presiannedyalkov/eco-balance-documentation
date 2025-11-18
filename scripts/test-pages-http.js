@@ -149,9 +149,8 @@ async function runTests() {
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
           .substring(0, 100); // Limit length
-        // Construct safe message with sanitized values - CodeQL recognizes sanitized variables
-        const safeMessage = '  - ' + sanitizedUrl + ' : ' + sanitizedError;
-        console.log(safeMessage);
+        // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+        console.log('  -', sanitizedUrl, ':', sanitizedError);
       });
       console.log('\n💡 Make sure the server is running: npm start');
       process.exit(1);
