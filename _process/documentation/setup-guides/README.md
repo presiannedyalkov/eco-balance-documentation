@@ -10,20 +10,16 @@ This directory contains setup and configuration guides for various services and 
 - **MEILISEARCH_INDEXING.md** - Meilisearch indexing guide
 - **MEILISEARCH_SECURITY.md** - Meilisearch security configuration
 - **MEILISEARCH_CORS_FIX.md** - CORS configuration troubleshooting
-- **SEARCH_OPTIONS.md** - Search solution comparison
-- **ALGOLIA_SETUP.md** - Algolia DocSearch setup (alternative, not currently used)
+- **SEARCH_OPTIONS.md** - Search solution comparison (reference)
 
 ### Error Tracking
 - **SENTRY_SETUP.md** - Sentry error tracking setup
 - **SENTRY_SETUP_COMPLETE.md** - Sentry setup completion guide
-- **SENTRY_SETUP_STATUS.md** - Sentry integration status
 
 ### Domain & Deployment
 - **CUSTOM_DOMAIN_SETUP.md** - Custom domain configuration
 - **CUSTOM_DOMAIN_TROUBLESHOOTING.md** - Domain setup troubleshooting
 
-### Other
-- **REPOSITORY_DESCRIPTION.md** - Repository description suggestions for GitHub
 
 ---
 
