@@ -13,7 +13,6 @@ This directory contains setup and configuration guides for various services and 
 
 ### Error Tracking
 - **SENTRY_SETUP.md** - Sentry error tracking setup
-- **SENTRY_SETUP_COMPLETE.md** - Sentry setup completion guide
 
 ### Domain & Deployment
 - **CUSTOM_DOMAIN_SETUP.md** - Custom domain configuration
