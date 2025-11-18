@@ -1,0 +1,2 @@
+- Description: Automatically renames pasted images based on customizable patterns.
+- Setup: Install the plugin, then configure the renaming pattern in the plugin settings.

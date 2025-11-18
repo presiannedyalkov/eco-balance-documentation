@@ -1,0 +1,2 @@
+- Description: Helps you split notes into multiple files or merge them based on headings.
+- Setup: Install the plugin, then use the command palette to access note refactoring options.

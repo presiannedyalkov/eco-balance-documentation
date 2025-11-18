@@ -1,0 +1,2 @@
+- Description: Sets reminders for tasks and notes within Obsidian.
+- Setup: Install the plugin, then use the specified syntax in your notes to set reminders. Configure notification settings in the plugin options.

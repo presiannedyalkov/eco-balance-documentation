@@ -32,7 +32,9 @@ function testPage(url) {
     const cleanUrl = url === '/' ? url : url.replace(/\/$/, '');
     const path = `${BASE_PATH}${cleanUrl}`;
     
-    console.log(`  Testing: http://${BASE_URL}:${PORT}${path}`);
+    // Sanitize path for logging
+    const sanitizedPath = String(path || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+    console.log('  Testing:', `http://${BASE_URL}:${PORT}${sanitizedPath}`);
 
     const options = {
       hostname: BASE_URL,
@@ -89,7 +91,10 @@ function testPage(url) {
         const titleMatch = data.match(/<title[^>]*>([^<]+)<\/title>/i);
         const title = titleMatch ? titleMatch[1].trim() : 'No title';
 
-        console.log(`  ✅ ${url} - OK (${status}, "${title.substring(0, 50)}...")`);
+        // Sanitize title for logging
+        const sanitizedTitle = String(title || '').replace(/[\r\n]/g, ' ').substring(0, 50);
+        const sanitizedUrl = String(url || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+        console.log('  ✅', sanitizedUrl, '- OK', `(${status}, "${sanitizedTitle}...")`);
         resolve({ url, status: 'success', httpStatus: status, title });
       });
     });
@@ -112,7 +117,8 @@ function testPage(url) {
 async function runTests() {
   console.log('🧪 Testing Docusaurus pages with HTTP requests...\n');
   console.log(`⚠️  Make sure server is running: npm start\n`);
-  console.log(`Testing: http://${BASE_URL}:${PORT}${BASE_PATH}\n`);
+  const sanitizedBasePath = String(BASE_PATH || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+  console.log('Testing:', `http://${BASE_URL}:${PORT}${sanitizedBasePath}\n`);
 
   const results = [];
 
@@ -133,9 +139,9 @@ async function runTests() {
     const passed = results.filter(r => r.status === 'success').length;
     const failed = results.filter(r => r.status === 'failed').length;
     
-    console.log(`✅ Passed: ${passed}/${results.length}`);
+    console.log('✅ Passed:', `${passed}/${results.length}`);
     if (failed > 0) {
-      console.log(`❌ Failed: ${failed}/${results.length}`);
+      console.log('❌ Failed:', `${failed}/${results.length}`);
       console.log('\nFailed pages:');
       results.filter(r => r.status === 'failed').forEach(r => {
         // Sanitize error message and URL to prevent log injection - remove all control characters and limit length
@@ -149,8 +155,8 @@ async function runTests() {
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
           .substring(0, 100); // Limit length
-        // Use separate arguments instead of template literal to help CodeQL recognize sanitization
-        console.log('  -', String(sanitizedUrl) + ':', String(sanitizedError));
+        // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+        console.log('  -', sanitizedUrl, ':', sanitizedError);
       });
       console.log('\n💡 Make sure the server is running: npm start');
       process.exit(1);
@@ -159,8 +165,14 @@ async function runTests() {
       process.exit(0);
     }
   } catch (error) {
-    console.error('❌ Test error:', error.message);
-    if (error.message.includes('ECONNREFUSED') || error.message.includes('Connection refused')) {
+    // Sanitize error message to prevent log injection
+    const rawMessage = String(error?.message || 'Unknown error');
+    const sanitizedError = rawMessage
+      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+      .substring(0, 200); // Limit length
+    console.error('❌ Test error:', sanitizedError);
+    if (sanitizedError.includes('ECONNREFUSED') || sanitizedError.includes('Connection refused')) {
       console.error('\n💡 Server is not running. Start it with:');
       console.error('   npm start');
     }

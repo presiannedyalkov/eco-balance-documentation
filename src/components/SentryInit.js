@@ -1,0 +1,132 @@
+/**
+ * Sentry initialization for Docusaurus
+ * 
+ * This module initializes Sentry error tracking for the documentation site.
+ * It runs in the browser and tracks JavaScript errors, performance, and user sessions.
+ */
+
+import * as Sentry from '@sentry/react';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+
+function initSentry() {
+  // Only initialize in browser (not during SSR)
+  if (!ExecutionEnvironment.canUseDOM) {
+    return;
+  }
+
+  // Get DSN from environment (injected at build time via webpack DefinePlugin)
+  const dsn = process.env.SENTRY_DSN;
+
+  if (!dsn) {
+    console.log('ℹ️ [Sentry] DSN not configured, Sentry disabled');
+    return;
+  }
+
+  // Get environment
+  const environment = process.env.NODE_ENV || 'development';
+  
+  // Only track in production
+  if (environment !== 'production') {
+    console.log('ℹ️ [Sentry] Not in production mode, Sentry disabled');
+    return;
+  }
+
+  try {
+    // Log DSN status (without exposing the full DSN)
+    const dsnPreview = dsn ? `${dsn.substring(0, 20)}...` : 'NOT SET';
+    console.log('🔍 [Sentry] Initializing with DSN:', dsnPreview);
+    console.log('🔍 [Sentry] Environment:', environment);
+    console.log('🔍 [Sentry] Release:', process.env.SENTRY_RELEASE || 'not set');
+    
+    if (!dsn) {
+      console.error('❌ [Sentry] DSN is empty - Sentry will not work!');
+      return;
+    }
+    
+    Sentry.init({
+      dsn: dsn,
+      environment: environment,
+      
+      // Performance monitoring
+      tracesSampleRate: 0.1, // 10% of transactions
+      
+      // Session replay (optional - helps debug issues)
+      replaysSessionSampleRate: 0.1, // 10% of sessions
+      replaysOnErrorSampleRate: 1.0, // 100% of error sessions
+      
+      // Release tracking (set during build)
+      release: process.env.SENTRY_RELEASE || undefined,
+      
+      // Integrations
+      integrations: [
+        Sentry.replayIntegration({
+          maskAllText: true,
+          blockAllMedia: true,
+        }),
+        Sentry.browserTracingIntegration(),
+      ],
+      
+      // Filter out known non-critical errors
+      ignoreErrors: [
+        // Browser extensions
+        'top.GLOBALS',
+        'originalCreateNotification',
+        'canvas.contentDocument',
+        'MyApp_RemoveAllHighlights',
+        'atomicFindClose',
+        'fb_xd_fragment',
+        'bmi_SafeAddOnload',
+        'EBCallBackMessageReceived',
+        // Network errors that are not actionable
+        'NetworkError',
+        'Network request failed',
+        // Known browser issues
+        'ResizeObserver loop limit exceeded',
+      ],
+      
+      // Filter out URLs from browser extensions
+      denyUrls: [
+        /extensions\//i,
+        /^chrome:\/\//i,
+        /^chrome-extension:\/\//i,
+        /^moz-extension:\/\//i,
+      ],
+      
+      // Set user context if available
+      beforeSend(event, hint) {
+        // Add custom context
+        event.tags = {
+          ...event.tags,
+          component: 'docusaurus-docs',
+        };
+        
+        return event;
+      },
+    });
+
+    // Expose Sentry on window for debugging (only in production)
+    if (typeof window !== 'undefined') {
+      window.Sentry = Sentry;
+    }
+    
+    // Verify initialization (Sentry v10+ compatible)
+    // getCurrentHub() was removed in v10, so we check if captureException is available
+    if (typeof Sentry.captureException === 'function') {
+      console.log('✅ [Sentry] Initialized successfully');
+      console.log('✅ [Sentry] DSN configured:', dsnPreview);
+      console.log('✅ [Sentry] Environment:', environment);
+      console.log('✅ [Sentry] Release:', process.env.SENTRY_RELEASE || 'not set');
+    } else {
+      console.error('❌ [Sentry] Initialization completed but captureException not available!');
+    }
+  } catch (error) {
+    console.error('❌ [Sentry] Initialization failed:', error);
+    console.error('❌ [Sentry] Error details:', error.message, error.stack);
+  }
+}
+
+// Initialize when module loads
+initSentry();
+
+export default initSentry;
+

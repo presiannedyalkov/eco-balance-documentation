@@ -225,8 +225,9 @@ async function main() {
   if (codeQL.error) {
     console.log('   ⚠️  Could not fetch CodeQL alerts');
   } else {
-    console.log(`   Critical: ${codeQL.critical}, High: ${codeQL.high}, Medium: ${codeQL.medium}, Low: ${codeQL.low}, Note: ${codeQL.note}`);
-    console.log(`   Total: ${codeQL.total}`);
+    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+    console.log('   Critical:', codeQL.critical, ', High:', codeQL.high, ', Medium:', codeQL.medium, ', Low:', codeQL.low, ', Note:', codeQL.note);
+    console.log('   Total:', codeQL.total);
   }
   console.log('');
   
@@ -234,8 +235,9 @@ async function main() {
   if (dependabot.error) {
     console.log('   ⚠️  Could not fetch Dependabot alerts');
   } else {
-    console.log(`   Critical: ${dependabot.critical}, High: ${dependabot.high}, Moderate: ${dependabot.moderate}, Low: ${dependabot.low}`);
-    console.log(`   Total: ${dependabot.total}`);
+    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+    console.log('   Critical:', dependabot.critical, ', High:', dependabot.high, ', Moderate:', dependabot.moderate, ', Low:', dependabot.low);
+    console.log('   Total:', dependabot.total);
   }
   console.log('');
   

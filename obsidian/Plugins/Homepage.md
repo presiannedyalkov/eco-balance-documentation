@@ -1,0 +1,2 @@
+- Description: Sets a specific note as your Obsidian homepage, which opens automatically when you start the app.
+- Setup: Install the plugin, then specify your desired homepage note in the plugin settings. Currently the daily note is displayed on start and if all notes are closed.
