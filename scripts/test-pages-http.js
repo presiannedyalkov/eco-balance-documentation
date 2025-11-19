@@ -147,16 +147,17 @@ async function runTests() {
         // Sanitize error message and URL to prevent log injection - remove all control characters and limit length
         const rawError = String(r?.error || '');
         const rawUrl = String(r?.url || '');
-        const sanitizedError = rawError
+        // Sanitize inline to ensure CodeQL recognizes it
+        const sanitizedError = String(rawError
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-          .substring(0, 200); // Limit length
-        const sanitizedUrl = rawUrl
+          .substring(0, 200)); // Limit length
+        const sanitizedUrl = String(rawUrl
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-          .substring(0, 100); // Limit length
+          .substring(0, 100)); // Limit length
         // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
-        console.log('  -', sanitizedUrl, ':', String(sanitizedError));
+        console.log('  -', sanitizedUrl, ':', sanitizedError);
       });
       console.log('\n💡 Make sure the server is running: npm start');
       process.exit(1);
