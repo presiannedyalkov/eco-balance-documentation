@@ -94,13 +94,12 @@ async function getCodeQLAlerts() {
 
     return counts;
   } catch (error) {
-    // Sanitize error message to prevent log injection - remove all control characters and limit length
-    const rawMessage = String(error?.message || 'Unknown error');
-    // Sanitize inline to ensure CodeQL recognizes it, then wrap in String() for CodeQL
-    const sanitizedError = String(String(rawMessage
+    // Sanitize error message to prevent log injection
+    // Inline sanitization so CodeQL can trace it: remove newlines and control characters
+    const sanitizedError = String(error?.message || 'Unknown error')
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200))); // Limit length
+      .substring(0, 200); // Limit length
     // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
     console.warn('⚠️  Could not fetch CodeQL alerts:', sanitizedError);
     return { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
@@ -132,9 +131,11 @@ async function getDependabotAlerts() {
     return counts;
   } catch (error) {
     // Sanitize error message to prevent log injection
-    // CodeQL needs to see sanitization happen - sanitize inline and wrap in String()
-    const errorMessage = error?.message || 'Unknown error';
-    const sanitizedMessage = String(sanitizeForLog(errorMessage));
+    // Inline sanitization so CodeQL can trace it: remove newlines and control characters
+    const sanitizedMessage = String(error?.message || 'Unknown error')
+      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+      .substring(0, 200); // Limit length
     console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizedMessage);
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
