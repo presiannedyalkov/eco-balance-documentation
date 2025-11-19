@@ -130,12 +130,13 @@ async function getDependabotAlerts() {
     return counts;
   } catch (error) {
     // Sanitize error message to prevent log injection
-    // Inline sanitization so CodeQL can trace it: remove newlines and control characters
-    // Sanitize directly in console.warn argument so CodeQL can see the sanitization
-    console.warn('⚠️  Could not fetch Dependabot alerts:', String(error?.message || 'Unknown error')
+    // Remove newlines and control characters, limit length
+    const sanitizedMessage = String(error?.message || 'Unknown error')
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200)); // Limit length
+      .substring(0, 200); // Limit length
+    // Use prefix to clearly mark user input in logs
+    console.warn('⚠️  Could not fetch Dependabot alerts: [User Input]:', sanitizedMessage);
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }
