@@ -145,13 +145,11 @@ async function runTests() {
       console.log('\nFailed pages:');
       results.filter(r => r.status === 'failed').forEach(r => {
         // Sanitize error message and URL to prevent log injection - remove all control characters and limit length
-        // Sanitize directly in console call to ensure CodeQL recognizes it
-        const rawError = String(r?.error || '');
-        const rawUrl = String(r?.url || '');
-        console.log('  -', String(rawUrl
+        // Sanitize directly from source in console call to ensure CodeQL recognizes it
+        console.log('  -', String(String(r?.url || '')
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-          .substring(0, 100)), ':', String(rawError // Limit length
+          .substring(0, 100)), ':', String(String(r?.error || '') // Limit length
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
           .substring(0, 200))); // Limit length
