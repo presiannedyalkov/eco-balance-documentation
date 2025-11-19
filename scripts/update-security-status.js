@@ -132,7 +132,10 @@ async function getDependabotAlerts() {
     return counts;
   } catch (error) {
     // Sanitize error message to prevent log injection
-    console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizeForLog(error?.message || 'Unknown error'));
+    // CodeQL needs to see sanitization happen - sanitize inline before passing to helper
+    const errorMessage = error?.message || 'Unknown error';
+    const sanitizedMessage = sanitizeForLog(errorMessage);
+    console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizedMessage);
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }
