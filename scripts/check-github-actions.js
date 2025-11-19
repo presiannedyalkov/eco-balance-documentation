@@ -147,12 +147,12 @@ async function checkWorkflows() {
 
   } catch (error) {
     // Sanitize error message to prevent log injection - remove all control characters and limit length
-    const rawMessage = String(error?.message || 'Unknown error');
-    // Sanitize inline to ensure CodeQL recognizes it
-    const sanitizedError = String(rawMessage
+    // Sanitize error message to prevent log injection
+    // Inline sanitization so CodeQL can trace it: remove newlines and control characters
+    const sanitizedError = String(error?.message || 'Unknown error')
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200)); // Limit length
+      .substring(0, 200); // Limit length
     // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
     console.error('❌ Error checking workflows:', sanitizedError);
     if (sanitizedError.includes('401') || sanitizedError.includes('403')) {
