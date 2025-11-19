@@ -18,6 +18,14 @@ const REPO_OWNER = 'presiannedyalkov';
 const REPO_NAME = 'eco-balance-documentation';
 const README_PATH = path.join(__dirname, '..', 'README.md');
 
+// Sanitize user input for logging to prevent log injection
+function sanitizeForLog(input) {
+  return String(input || '')
+    .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+    .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+    .substring(0, 200); // Limit length
+}
+
 if (!GITHUB_TOKEN) {
   console.error('❌ Error: GITHUB_TOKEN environment variable is required');
   console.error('Usage: GITHUB_TOKEN=your_token node scripts/update-security-status.js');
@@ -130,12 +138,8 @@ async function getDependabotAlerts() {
 
     return counts;
   } catch (error) {
-    // Sanitize error message to prevent log injection - remove all control characters and limit length
-    // Sanitize directly from source in console call to ensure CodeQL recognizes it
-    console.warn('⚠️  Could not fetch Dependabot alerts:', String(String(error?.message || 'Unknown error')
-      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200))); // Limit length
+    // Sanitize error message to prevent log injection
+    console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizeForLog(error?.message || 'Unknown error'));
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }
