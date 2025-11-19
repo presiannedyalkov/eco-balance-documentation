@@ -96,23 +96,23 @@
     }
     
     console.log = (...args) => {
-      originalLog(...args);
-      // Sanitize args inline - CodeQL recognizes sanitization when done before use
+      // Sanitize args before passing to original console function to prevent log injection
       const sanitizedArgs = args.map(sanitizeForLog);
+      originalLog(...sanitizedArgs);
       addLog('LOG', ...sanitizedArgs);
     };
     
     console.error = (...args) => {
-      originalError(...args);
-      // Sanitize args inline - CodeQL recognizes sanitization when done before use
+      // Sanitize args before passing to original console function to prevent log injection
       const sanitizedArgs = args.map(sanitizeForLog);
+      originalError(...sanitizedArgs);
       addLog('ERROR', ...sanitizedArgs);
     };
     
     console.warn = (...args) => {
-      originalWarn(...args);
-      // Sanitize args inline - CodeQL recognizes sanitization when done before use
+      // Sanitize args before passing to original console function to prevent log injection
       const sanitizedArgs = args.map(sanitizeForLog);
+      originalWarn(...sanitizedArgs);
       addLog('WARN', ...sanitizedArgs);
     };
     
