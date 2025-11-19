@@ -143,12 +143,24 @@ async function runTests() {
     const passed = results.filter(r => r.status === 'success').length;
     const failed = results.filter(r => r.status === 'failed').length;
     
-    console.log(`✅ Passed: ${passed}/${results.length}`);
+    console.log('✅ Passed:', `${passed}/${results.length}`);
     if (failed > 0) {
-      console.log(`❌ Failed: ${failed}/${results.length}`);
+      console.log('❌ Failed:', `${failed}/${results.length}`);
       console.log('\nFailed pages:');
       results.filter(r => r.status === 'failed').forEach(r => {
-        console.log(`  - ${r.url}: ${r.error}`);
+        // Sanitize error message and URL to prevent log injection
+        const rawError = String(r?.error || '');
+        const rawUrl = String(r?.url || '');
+        const sanitizedError = rawError
+          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+          .substring(0, 200); // Limit length
+        const sanitizedUrl = rawUrl
+          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+          .substring(0, 200); // Limit length
+        // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+        console.log('  -', sanitizedUrl + ':', sanitizedError);
       });
       process.exit(1);
     } else {

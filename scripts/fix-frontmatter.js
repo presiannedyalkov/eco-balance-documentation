@@ -76,14 +76,21 @@ function processFile(filePath, verbose = false) {
     
     if (content !== fixed) {
       fs.writeFileSync(filePath, fixed, 'utf8');
-      console.log(`✅ Fixed: ${path.relative(process.cwd(), filePath)}`);
+      // Sanitize file path for logging
+      const relativePath = path.relative(process.cwd(), filePath);
+      const sanitizedPath = String(relativePath || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+      console.log('✅ Fixed:', sanitizedPath);
       if (verbose) {
-        console.log(`   Changed: ${content.substring(0, 100)}... → ${fixed.substring(0, 100)}...`);
+        const sanitizedContent = String(content || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+        const sanitizedFixed = String(fixed || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+        console.log('   Changed:', sanitizedContent + '... →', sanitizedFixed + '...');
       }
       return true;
     }
     if (verbose) {
-      console.log(`✓ OK: ${path.relative(process.cwd(), filePath)}`);
+      const relativePath = path.relative(process.cwd(), filePath);
+      const sanitizedPath = String(relativePath || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+      console.log('✓ OK:', sanitizedPath);
     }
     return false;
   } catch (error) {

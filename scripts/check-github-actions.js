@@ -85,11 +85,16 @@ async function checkWorkflows() {
     }
 
     const latestRun = deployRuns[0];
-    console.log(`📋 Latest workflow run: ${latestRun.name}`);
-    console.log(`   Status: ${latestRun.status}`);
-    console.log(`   Conclusion: ${latestRun.conclusion || 'pending'}`);
-    console.log(`   Created: ${new Date(latestRun.created_at).toLocaleString()}`);
-    console.log(`   URL: ${latestRun.html_url}\n`);
+    // Sanitize workflow run data for logging
+    const sanitizedName = String(latestRun.name || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+    const sanitizedStatus = String(latestRun.status || '').replace(/[\r\n]/g, ' ').substring(0, 50);
+    const sanitizedConclusion = String(latestRun.conclusion || 'pending').replace(/[\r\n]/g, ' ').substring(0, 50);
+    const sanitizedUrl = String(latestRun.html_url || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+    console.log('📋 Latest workflow run:', sanitizedName);
+    console.log('   Status:', sanitizedStatus);
+    console.log('   Conclusion:', sanitizedConclusion);
+    console.log('   Created:', new Date(latestRun.created_at).toLocaleString());
+    console.log('   URL:', sanitizedUrl + '\n');
 
       if (latestRun.conclusion === 'failure') {
       console.log('❌ Workflow failed! Fetching job details...\n');
@@ -99,20 +104,26 @@ async function checkWorkflows() {
       
       if (jobs.jobs && jobs.jobs.length > 0) {
         for (const job of jobs.jobs) {
-          console.log(`\n📦 Job: ${job.name}`);
-          console.log(`   Status: ${job.status}`);
-          console.log(`   Conclusion: ${job.conclusion || 'pending'}`);
+          // Sanitize job data for logging
+          const sanitizedJobName = String(job.name || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+          const sanitizedJobStatus = String(job.status || '').replace(/[\r\n]/g, ' ').substring(0, 50);
+          const sanitizedJobConclusion = String(job.conclusion || 'pending').replace(/[\r\n]/g, ' ').substring(0, 50);
+          console.log('\n📦 Job:', sanitizedJobName);
+          console.log('   Status:', sanitizedJobStatus);
+          console.log('   Conclusion:', sanitizedJobConclusion);
           
           if (job.conclusion === 'failure') {
-            console.log(`   ❌ Failed steps:`);
+            console.log('   ❌ Failed steps:');
             
             // Get steps
             if (job.steps) {
               for (const step of job.steps) {
                 if (step.conclusion === 'failure') {
-                  console.log(`      - ${step.name}: ${step.conclusion}`);
+                  const sanitizedStepName = String(step.name || '').replace(/[\r\n]/g, ' ').substring(0, 100);
+                  const sanitizedStepConclusion = String(step.conclusion || '').replace(/[\r\n]/g, ' ').substring(0, 50);
+                  console.log('      -', sanitizedStepName + ':', sanitizedStepConclusion);
                   if (step.number) {
-                    console.log(`         Logs: https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/runs/${latestRun.id}/job/${job.id}`);
+                    console.log('         Logs:', `https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/runs/${latestRun.id}/job/${job.id}`);
                   }
                 }
               }
@@ -121,7 +132,7 @@ async function checkWorkflows() {
         }
       }
 
-      console.log(`\n🔗 View full logs: ${latestRun.html_url}`);
+      console.log('\n🔗 View full logs:', sanitizedUrl);
       console.log(`\n💡 Common fixes:`);
       console.log(`   1. Check if GitHub Pages is enabled in repository settings`);
       console.log(`   2. Verify workflow permissions in Settings → Actions → General`);
@@ -129,7 +140,7 @@ async function checkWorkflows() {
       console.log(`   4. Ensure package.json and dependencies are correct`);
     } else if (latestRun.conclusion === 'success') {
       console.log('✅ Workflow completed successfully!');
-      console.log(`   Site should be available at: https://${REPO_OWNER}.github.io/${REPO_NAME}/`);
+      console.log('   Site should be available at:', `https://${REPO_OWNER}.github.io/${REPO_NAME}/`);
     } else {
       console.log('⏳ Workflow is still running...');
     }
