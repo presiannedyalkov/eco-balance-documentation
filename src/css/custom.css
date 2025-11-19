@@ -35,3 +35,86 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Meilisearch search bar styling */
+#meilisearch-search-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.meilisearch-search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__search-input {
+  padding: 8px 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  font-size: 14px;
+  width: 300px; /* Increased width */
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.navbar__search-input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-alpha-20);
+}
+
+.meilisearch-search-results {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  background-color: #ffffff !important; /* White background for light mode */
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-height: 500px; /* Increased height */
+  overflow-y: auto;
+  z-index: 1000;
+  min-width: 600px; /* Increased width */
+  width: 600px;
+}
+
+/* Dark mode styling for dropdown */
+[data-theme='dark'] .meilisearch-search-results {
+  background-color: #1e1e1e !important; /* Dark background for dark mode */
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+/* Ensure navbar has relative positioning for absolute centering */
+.navbar__inner {
+  position: relative;
+}
+
+/* Responsive: on smaller screens, keep search bar on right */
+@media (max-width: 996px) {
+  #meilisearch-search-wrapper {
+    position: static;
+    transform: none;
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  
+  .meilisearch-search-results {
+    left: 0;
+    transform: none;
+    width: 100%;
+    min-width: auto;
+  }
+}
+

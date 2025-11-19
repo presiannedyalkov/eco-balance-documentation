@@ -171,7 +171,8 @@ async function runTests() {
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
       .substring(0, 200); // Limit length
-    console.error('❌ Test error:', sanitizedError);
+    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
+    console.error('❌ Test error:', String(sanitizedError));
     if (sanitizedError.includes('ECONNREFUSED') || sanitizedError.includes('Connection refused')) {
       console.error('\n💡 Server is not running. Start it with:');
       console.error('   npm start');

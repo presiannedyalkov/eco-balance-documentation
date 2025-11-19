@@ -12,19 +12,27 @@ function MeilisearchSearchBar() {
   const [results, setResults] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
   const searchRef = useRef(null);
 
   // Get config from environment or window (set at build time)
   // Production: https://search.eco-balance.cc (via Cloudflare)
   // Local development: Set MEILISEARCH_HOST to local network address
-  const meilisearchHost = 
-    typeof window !== 'undefined' 
-      ? (window.MEILISEARCH_HOST || process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc')
-      : (process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc');
-  const searchKey = 
-    typeof window !== 'undefined'
-      ? (window.MEILISEARCH_SEARCH_KEY || process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489')
-      : (process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489');
+  // Note: process.env is only available at build time via webpack DefinePlugin
+  // In browser, we use window variables or fallback to defaults
+  const getEnvVar = (name, defaultValue) => {
+    if (typeof window !== 'undefined' && window[name]) {
+      return window[name];
+    }
+    // process.env is replaced by webpack at build time, but we need to check if it exists
+    if (typeof process !== 'undefined' && process.env && process.env[name]) {
+      return process.env[name];
+    }
+    return defaultValue;
+  };
+  
+  const meilisearchHost = getEnvVar('MEILISEARCH_HOST', 'https://search.eco-balance.cc');
+  const searchKey = getEnvVar('MEILISEARCH_SEARCH_KEY', 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489');
   const indexName = 'eco-balance-docs';
 
   useEffect(() => {
@@ -86,32 +94,78 @@ function MeilisearchSearchBar() {
 
   const search = async (searchQuery) => {
     if (!searchQuery.trim() || !meilisearchHost || !searchKey) {
+      console.log('🔍 [MeilisearchSearchBar] Search skipped:', {
+        hasQuery: !!searchQuery.trim(),
+        hasHost: !!meilisearchHost,
+        hasKey: !!searchKey,
+      });
       setResults([]);
       return;
     }
 
+    console.log('🔍 [MeilisearchSearchBar] Starting search:', searchQuery);
     setIsLoading(true);
     try {
-      const response = await fetch(
-        `${meilisearchHost}/indexes/${indexName}/search`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${searchKey}`,
-          },
-          body: JSON.stringify({
-            q: searchQuery,
-            limit: 10,
-            attributesToHighlight: ['title', 'content', 'headings'],
-          }),
+      const url = `${meilisearchHost}/indexes/${indexName}/search`;
+      console.log('🔍 [MeilisearchSearchBar] Fetching:', url);
+      
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${searchKey}`,
+        },
+        body: JSON.stringify({
+          q: searchQuery,
+          limit: 10,
+          attributesToHighlight: ['title', 'content', 'headings'],
+        }),
+      });
+
+      console.log('🔍 [MeilisearchSearchBar] Response status:', response.status, response.statusText);
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('❌ [MeilisearchSearchBar] Search failed:', response.status, errorText);
+        
+        // Set error message based on status code
+        if (response.status === 500) {
+          setError('Search server error. Please check if Meilisearch is running.');
+        } else if (response.status === 404) {
+          setError('Search index not found. The index may need to be recreated.');
+        } else if (response.status === 401 || response.status === 403) {
+          setError('Search authentication failed. Please check API key configuration.');
+        } else {
+          setError(`Search failed (${response.status}). Please try again later.`);
         }
-      );
+        setResults([]);
+        return;
+      }
+      
+      // Clear any previous errors on successful response
+      setError(null);
 
       const data = await response.json();
+      console.log('✅ [MeilisearchSearchBar] Search results:', {
+        hits: data.hits?.length || 0,
+        estimatedTotal: data.estimatedTotalHits || 0,
+        processingTimeMs: data.processingTimeMs || 'N/A',
+      });
       setResults(data.hits || []);
     } catch (error) {
-      console.error('Meilisearch error:', error);
+      console.error('❌ [MeilisearchSearchBar] Search error:', error);
+      console.error('  - Error name:', error.name);
+      console.error('  - Error message:', error.message);
+      console.error('  - Error stack:', error.stack);
+      
+      // Set user-friendly error message
+      if (error.message && error.message.includes('CORS')) {
+        setError('CORS error: Search server is not allowing requests from this domain.');
+      } else if (error.message && error.message.includes('fetch')) {
+        setError('Cannot connect to search server. Please check if Meilisearch is running.');
+      } else {
+        setError('Search error occurred. Please try again later.');
+      }
       setResults([]);
     } finally {
       setIsLoading(false);
@@ -145,13 +199,110 @@ function MeilisearchSearchBar() {
     setQuery('');
   };
 
+  // Debug logging - always log when component renders
+  useEffect(() => {
+    console.log('🔍 [MeilisearchSearchBar] ============================================');
+    console.log('🔍 [MeilisearchSearchBar] Component mounted/rendered');
+    console.log('  - meilisearchHost:', meilisearchHost ? `✅ ${meilisearchHost}` : '❌ missing');
+    console.log('  - searchKey:', searchKey ? `✅ configured (${searchKey.substring(0, 10)}...)` : '❌ missing');
+    console.log('  - indexName:', indexName);
+    console.log('  - wrapperExists:', typeof document !== 'undefined' && !!document.getElementById('meilisearch-search-wrapper'));
+    console.log('  - window.location:', typeof window !== 'undefined' ? window.location.href : 'N/A');
+    console.log('  - React version:', React.version);
+    
+    // Check if component is actually visible
+    if (typeof document !== 'undefined') {
+      const container = document.querySelector('.meilisearch-search-container');
+      if (container) {
+        const styles = window.getComputedStyle(container);
+        console.log('  - Container visibility:', {
+          display: styles.display,
+          visibility: styles.visibility,
+          opacity: styles.opacity,
+          width: container.offsetWidth,
+          height: container.offsetHeight,
+          position: styles.position,
+          zIndex: styles.zIndex,
+        });
+      }
+    }
+    
+    // Test Meilisearch connection
+    if (meilisearchHost && searchKey) {
+      console.log('🔍 [MeilisearchSearchBar] Testing Meilisearch connection...');
+      fetch(`${meilisearchHost}/health`, { method: 'GET' })
+        .then(response => {
+          console.log('✅ [MeilisearchSearchBar] Health check response:', response.status, response.statusText);
+          return response.json();
+        })
+        .then(data => {
+          console.log('✅ [MeilisearchSearchBar] Health check data:', data);
+        })
+        .catch(error => {
+          console.error('❌ [MeilisearchSearchBar] Health check failed:', error);
+          console.error('  - Error message:', error.message);
+          console.error('  - Error stack:', error.stack);
+        });
+      
+      // Test search endpoint
+      fetch(`${meilisearchHost}/indexes/${indexName}/search`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${searchKey}`,
+        },
+        body: JSON.stringify({ q: '', limit: 0 }),
+      })
+        .then(response => {
+          console.log('🔍 [MeilisearchSearchBar] Search endpoint test:', response.status, response.statusText);
+          if (!response.ok) {
+            return response.text().then(text => {
+              console.error('❌ [MeilisearchSearchBar] Search endpoint error:', text);
+            });
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log('✅ [MeilisearchSearchBar] Search endpoint accessible, estimated documents:', data.estimatedTotalHits || 'N/A');
+        })
+        .catch(error => {
+          console.error('❌ [MeilisearchSearchBar] Search endpoint test failed:', error);
+          console.error('  - Error message:', error.message);
+          console.error('  - This might be a CORS issue or network problem');
+        });
+    }
+    
+    // Also log to page for debugging
+    if (typeof window !== 'undefined') {
+      window.meilisearchDebug = {
+        mounted: true,
+        timestamp: new Date().toISOString(),
+        host: meilisearchHost,
+        hasKey: !!searchKey,
+        indexName,
+        componentRendered: true,
+      };
+      console.log('🔍 [MeilisearchSearchBar] Debug info available at window.meilisearchDebug');
+    }
+    
+    console.log('🔍 [MeilisearchSearchBar] ============================================');
+  }, []);
+
   // Always render the search bar (even if Meilisearch isn't configured, show a placeholder)
   // This helps debug if the component is mounting at all
   if (!meilisearchHost || !searchKey) {
-    console.warn('Meilisearch not configured:', { meilisearchHost, searchKey });
+    console.warn('⚠️ [MeilisearchSearchBar] Meilisearch not configured:', { meilisearchHost, searchKey });
+    console.warn('⚠️ [MeilisearchSearchBar] Rendering placeholder to verify component mounting');
     // Still render a placeholder so we can see if the component is mounting
     return (
-      <div className="meilisearch-search-container" style={{ position: 'relative' }}>
+      <div 
+        className="meilisearch-search-container" 
+        style={{ 
+          position: 'relative', 
+          display: 'flex', 
+          alignItems: 'center',
+        }}
+      >
         <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="search"
@@ -165,6 +316,7 @@ function MeilisearchSearchBar() {
               fontSize: '14px',
               width: '200px',
               opacity: 0.5,
+              display: 'block',
             }}
           />
         </div>
@@ -172,50 +324,61 @@ function MeilisearchSearchBar() {
     );
   }
 
+  console.log('🔍 [MeilisearchSearchBar] Rendering search bar component');
+  
   return (
-    <div ref={searchRef} className="meilisearch-search-container" style={{ position: 'relative' }}>
+    <div 
+      ref={searchRef} 
+      className="meilisearch-search-container" 
+      style={{ 
+        position: 'relative', 
+        display: 'flex', 
+        alignItems: 'center',
+      }}
+    >
       <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
         <input
           type="search"
           placeholder="Search docs (Press '/' to focus)"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onFocus={() => setIsOpen(true)}
-          className="navbar__search-input"
-          style={{
-            padding: '8px 12px',
-            border: '1px solid var(--ifm-color-emphasis-300)',
-            borderRadius: '4px',
-            fontSize: '14px',
-            width: '200px',
+          onChange={(e) => {
+            console.log('🔍 [MeilisearchSearchBar] Input changed:', e.target.value);
+            setQuery(e.target.value);
           }}
+          onFocus={() => {
+            console.log('🔍 [MeilisearchSearchBar] Input focused');
+            setIsOpen(true);
+          }}
+          onBlur={() => {
+            console.log('🔍 [MeilisearchSearchBar] Input blurred');
+          }}
+          className="navbar__search-input"
         />
       </div>
 
       {isOpen && (query || results.length > 0) && (
         <div
           className="meilisearch-search-results"
-          style={{
-            position: 'absolute',
-            top: '100%',
-            left: 0,
-            right: 0,
-            marginTop: '8px',
-            backgroundColor: 'var(--ifm-background-color)',
-            border: '1px solid var(--ifm-color-emphasis-300)',
-            borderRadius: '8px',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-            maxHeight: '400px',
-            overflowY: 'auto',
-            zIndex: 1000,
-            minWidth: '400px',
-          }}
         >
           {isLoading && (
             <div style={{ padding: '16px', textAlign: 'center' }}>Searching...</div>
           )}
 
-          {!isLoading && results.length === 0 && query && (
+          {!isLoading && error && (
+            <div style={{ 
+              padding: '16px', 
+              textAlign: 'center', 
+              color: 'var(--ifm-color-danger)',
+              backgroundColor: 'var(--ifm-color-danger-darkest)',
+              borderRadius: '4px',
+              margin: '8px',
+            }}>
+              <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>⚠️ Search Error</div>
+              <div style={{ fontSize: '13px' }}>{error}</div>
+            </div>
+          )}
+
+          {!isLoading && !error && results.length === 0 && query && (
             <div style={{ padding: '16px', textAlign: 'center', color: 'var(--ifm-color-emphasis-600)' }}>
               No results found
             </div>

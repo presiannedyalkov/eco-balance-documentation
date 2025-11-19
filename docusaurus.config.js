@@ -15,7 +15,12 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For custom domain (docs.eco-balance.cc): use '/'
   // For GitHub Pages project site: use '/eco-balance-documentation/'
-  baseUrl: process.env.BASE_URL || (process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/'),
+  // If SITE_URL contains custom domain, use '/', otherwise use project pages path
+  baseUrl: process.env.BASE_URL || (
+    (process.env.SITE_URL && process.env.SITE_URL.includes('docs.eco-balance.cc')) 
+      ? '/' 
+      : (process.env.NODE_ENV === 'production' ? '/eco-balance-documentation/' : '/')
+  ),
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -48,13 +53,15 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        // Load clientModules for Meilisearch search bar
+        // Docusaurus 3.x automatically loads src/clientModules.js if it exists
       }),
     ],
   ],
 
-  // Meilisearch plugin for search
-  // Configure with your self-hosted Meilisearch instance
+  // Plugins configuration
   plugins: [
+    // Meilisearch plugin for search
     [
       require.resolve('./src/plugins/meilisearch-plugin.js'),
       {
@@ -64,14 +71,45 @@ const config = {
         // Search-only key (safe to use in frontend)
         // Set via environment variable: MEILISEARCH_SEARCH_KEY
         searchKey: process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489',
+        // Master key for indexing (write permissions) - only used during build
+        // Set via environment variable: MEILISEARCH_MASTER_KEY
+        // This should be kept secret and only used in CI/CD, not in frontend
+        masterKey: process.env.MEILISEARCH_MASTER_KEY,
         indexName: 'eco-balance-docs',
         batchSize: 100,
       },
     ],
+    // Sentry webpack plugin to inject environment variables
+    function(context, options) {
+      return {
+        name: 'sentry-env-injector',
+        configureWebpack(config, isServer, utils) {
+          if (isServer) {
+            return {};
+          }
+          return {
+            plugins: [
+              new (require('webpack')).DefinePlugin({
+                'process.env.SENTRY_DSN': JSON.stringify(process.env.SENTRY_DSN || ''),
+                'process.env.SENTRY_RELEASE': JSON.stringify(process.env.SENTRY_RELEASE || ''),
+              }),
+            ],
+          };
+        },
+      };
+    },
   ],
 
-  // Sentry integration removed - to be added later
-  // See SENTRY_SETUP.md for future integration
+  // Sentry integration
+  // Configured via environment variables: SENTRY_DSN, SENTRY_RELEASE
+  // See SENTRY_SETUP_COMPLETE.md for setup instructions
+
+  // Client-side modules - explicitly configure clientModules.js
+  // Docusaurus 3.x requires explicit configuration (does NOT auto-load src/clientModules.js)
+  // Use relative path - require.resolve() may cause issues in production builds
+  clientModules: [
+    './src/clientModules.js',
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

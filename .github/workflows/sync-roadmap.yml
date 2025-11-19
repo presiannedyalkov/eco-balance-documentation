@@ -40,16 +40,30 @@ jobs:
           chmod +x scripts/sync-roadmap-from-github.sh
           scripts/sync-roadmap-from-github.sh
       
-      - name: Commit and push changes
+      - name: Commit and create PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
           if git diff --quiet; then
             echo "No changes to commit"
-          else
-            git add _process/documentation/ROADMAP.md
-            git commit -m "docs: Auto-sync roadmap from GitHub Milestones [skip ci]" || exit 0
-            git push
+            exit 0
           fi
+          
+          # Create branch and commit
+          BRANCH_NAME="docs/sync-roadmap-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH_NAME"
+          git add _process/documentation/ROADMAP.md
+          git commit -m "docs: Auto-sync roadmap from GitHub Milestones [skip ci]" || exit 0
+          git push origin "$BRANCH_NAME"
+          
+          # Create PR using GitHub CLI
+          gh pr create \
+            --title "docs: Auto-sync roadmap from GitHub Milestones" \
+            --body "Automated sync of roadmap from GitHub Milestones" \
+            --base main \
+            --head "$BRANCH_NAME" \
+            || echo "⚠️ PR may already exist or failed to create"
 

@@ -5,13 +5,21 @@ on:
     workflows: ["Deploy to GitHub Pages"]
     types:
       - completed
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'strategic/**'
+      - 'docusaurus.config.js'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 jobs:
   verify:
     name: Verify Deployment
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' || github.event_name == 'push' }}
     environment:
       name: github-pages
       url: ${{ steps.url.outputs.deploy_url }}
@@ -82,7 +90,11 @@ jobs:
         id: test
         run: |
           DEPLOY_URL="${{ steps.url.outputs.deploy_url }}"
-          BASE_URL="$DEPLOY_URL" npx playwright test tests/deployment.spec.js --reporter=html,list
+          set +e  # Don't exit on error
+          BASE_URL="$DEPLOY_URL" npx playwright test tests/deployment.spec.js tests/module-verification.spec.js --reporter=html,list
+          TEST_EXIT_CODE=$?
+          echo "test_exit_code=$TEST_EXIT_CODE" >> $GITHUB_OUTPUT
+          # Don't exit here - let continue-on-error handle it
         continue-on-error: true
         env:
           BASE_URL: ${{ steps.url.outputs.deploy_url }}
@@ -91,9 +103,13 @@ jobs:
       - name: Check test results
         id: check_results
         run: |
-          if [ "${{ steps.test.outcome }}" != "success" ]; then
+          # Get the exit code from the test step
+          TEST_EXIT_CODE="${{ steps.test.outputs.test_exit_code }}"
+          
+          # Check if tests actually failed (exit code != 0)
+          if [ "$TEST_EXIT_CODE" != "0" ] && [ -n "$TEST_EXIT_CODE" ]; then
             echo "tests_failed=true" >> $GITHUB_OUTPUT
-            echo "❌ Deployment verification tests failed!"
+            echo "❌ Deployment verification tests failed! (Exit code: $TEST_EXIT_CODE)"
             exit 1
           else
             echo "tests_failed=false" >> $GITHUB_OUTPUT
