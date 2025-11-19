@@ -11,7 +11,6 @@ const BASE_URL = 'localhost';
 const PORT = 3023;
 // For local development, baseUrl is '/', for production it's '/eco-balance-documentation/'
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/eco-balance-documentation' : '';
-const { sanitizeForLog } = require('./sanitize-for-log');
 
 // Pages to test
 const PAGES_TO_TEST = [
@@ -147,15 +146,14 @@ async function runTests() {
       results.filter(r => r.status === 'failed').forEach(r => {
         // Sanitize error message and URL to prevent log injection
         // Inline sanitization so CodeQL can trace it: remove newlines and control characters
-        const url = String(r?.url || '')
+        // Sanitize directly in console.log arguments so CodeQL can see the sanitization
+        console.log('  -', String(r?.url || '')
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-          .substring(0, 100); // Limit length
-        const error = String(r?.error || '')
+          .substring(0, 100), ':', String(r?.error || '') // Limit length
           .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
           .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-          .substring(0, 200); // Limit length
-        console.log('  -', url, ':', error);
+          .substring(0, 200)); // Limit length
       });
       console.log('\n💡 Make sure the server is running: npm start');
       process.exit(1);

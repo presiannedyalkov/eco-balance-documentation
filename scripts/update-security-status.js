@@ -17,7 +17,6 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = 'presiannedyalkov';
 const REPO_NAME = 'eco-balance-documentation';
 const README_PATH = path.join(__dirname, '..', 'README.md');
-const { sanitizeForLog } = require('./sanitize-for-log');
 
 if (!GITHUB_TOKEN) {
   console.error('❌ Error: GITHUB_TOKEN environment variable is required');
@@ -132,11 +131,11 @@ async function getDependabotAlerts() {
   } catch (error) {
     // Sanitize error message to prevent log injection
     // Inline sanitization so CodeQL can trace it: remove newlines and control characters
-    const sanitizedMessage = String(error?.message || 'Unknown error')
+    // Sanitize directly in console.warn argument so CodeQL can see the sanitization
+    console.warn('⚠️  Could not fetch Dependabot alerts:', String(error?.message || 'Unknown error')
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200); // Limit length
-    console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizedMessage);
+      .substring(0, 200)); // Limit length
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }
