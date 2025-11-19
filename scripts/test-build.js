@@ -61,7 +61,7 @@ function checkBuild() {
     process.exit(0);
   } catch (error) {
     console.error('\n❌ Build failed!');
-    console.error(error.message);
+    console.error(String(error.message));
     process.exit(1);
   }
 }

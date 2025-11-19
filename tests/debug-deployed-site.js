@@ -42,7 +42,7 @@ async function debugDeployedSite() {
       name: error.name,
     };
     allErrors.push(entry);
-    console.error('❌ Page Error:', error.message);
+    console.error('❌ Page Error:', String(error.message));
   });
   
   // Capture ALL network requests

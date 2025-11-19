@@ -75,7 +75,7 @@ async function testLocal() {
   
   page.on('pageerror', error => {
     errors.push(error);
-    console.error('  ❌ Error:', error.message);
+    console.error('  ❌ Error:', String(error.message));
   });
   
   const url = `http://localhost:${port}/`;
@@ -135,7 +135,7 @@ async function testLocal() {
     await browser.close();
     
   } catch (error) {
-    console.error('❌ Test failed:', error.message);
+    console.error('❌ Test failed:', String(error.message));
     await browser.close();
   } finally {
     // Cleanup: Kill server
