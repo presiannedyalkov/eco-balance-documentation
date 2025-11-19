@@ -8,23 +8,10 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 
 const ISSUES = [];
 
-// Patterns to check for log injection
-const LOG_INJECTION_PATTERNS = [
-  {
-    pattern: /console\.(log|error|warn|info)\([^)]*\$\{/g,
-    message: 'Template literal in console call may allow log injection',
-    severity: 'error'
-  },
-  {
-    pattern: /console\.(log|error|warn|info)\([^)]*\+[^)]*\)/g,
-    message: 'String concatenation in console call may allow log injection',
-    severity: 'warning'
-  }
-];
+// Note: execSync and LOG_INJECTION_PATTERNS were removed as they were unused
 
 // Check for unsanitized user input in console calls
 function checkLogInjection(filePath, content) {
