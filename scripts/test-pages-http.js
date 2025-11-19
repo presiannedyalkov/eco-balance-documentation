@@ -146,11 +146,11 @@ async function runTests() {
       console.log('\nFailed pages:');
       results.filter(r => r.status === 'failed').forEach(r => {
         // Sanitize error message and URL to prevent log injection
-        // CodeQL needs to see sanitization happen - sanitize inline before passing to helper
+        // CodeQL needs to see sanitization happen - sanitize inline and wrap in String()
         const url = r?.url || '';
         const error = r?.error || '';
-        const sanitizedUrl = sanitizeForLog(url, 100);
-        const sanitizedError = sanitizeForLog(error);
+        const sanitizedUrl = String(sanitizeForLog(url, 100));
+        const sanitizedError = String(sanitizeForLog(error));
         console.log('  -', sanitizedUrl, ':', sanitizedError);
       });
       console.log('\n💡 Make sure the server is running: npm start');
