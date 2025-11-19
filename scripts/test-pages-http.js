@@ -11,14 +11,7 @@ const BASE_URL = 'localhost';
 const PORT = 3023;
 // For local development, baseUrl is '/', for production it's '/eco-balance-documentation/'
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/eco-balance-documentation' : '';
-
-// Sanitize user input for logging to prevent log injection
-function sanitizeForLog(input, maxLength = 200) {
-  return String(input || '')
-    .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-    .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-    .substring(0, maxLength); // Limit length
-}
+const { sanitizeForLog } = require('./sanitize-for-log');
 
 // Pages to test
 const PAGES_TO_TEST = [

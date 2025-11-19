@@ -17,14 +17,7 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = 'presiannedyalkov';
 const REPO_NAME = 'eco-balance-documentation';
 const README_PATH = path.join(__dirname, '..', 'README.md');
-
-// Sanitize user input for logging to prevent log injection
-function sanitizeForLog(input) {
-  return String(input || '')
-    .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-    .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-    .substring(0, 200); // Limit length
-}
+const { sanitizeForLog } = require('./sanitize-for-log');
 
 if (!GITHUB_TOKEN) {
   console.error('❌ Error: GITHUB_TOKEN environment variable is required');
