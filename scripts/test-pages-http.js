@@ -12,6 +12,14 @@ const PORT = 3023;
 // For local development, baseUrl is '/', for production it's '/eco-balance-documentation/'
 const BASE_PATH = process.env.NODE_ENV === 'production' ? '/eco-balance-documentation' : '';
 
+// Sanitize user input for logging to prevent log injection
+function sanitizeForLog(input, maxLength = 200) {
+  return String(input || '')
+    .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
+    .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
+    .substring(0, maxLength); // Limit length
+}
+
 // Pages to test
 const PAGES_TO_TEST = [
   '/', // Homepage
@@ -144,15 +152,8 @@ async function runTests() {
       console.log('❌ Failed:', `${failed}/${results.length}`);
       console.log('\nFailed pages:');
       results.filter(r => r.status === 'failed').forEach(r => {
-        // Sanitize error message and URL to prevent log injection - remove all control characters and limit length
-        // Sanitize directly from source in console call to ensure CodeQL recognizes it
-        console.log('  -', String(String(r?.url || '')
-          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-          .substring(0, 100)), ':', String(String(r?.error || '') // Limit length
-          .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-          .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-          .substring(0, 200))); // Limit length
+        // Sanitize error message and URL to prevent log injection
+        console.log('  -', sanitizeForLog(r?.url, 100), ':', sanitizeForLog(r?.error));
       });
       console.log('\n💡 Make sure the server is running: npm start');
       process.exit(1);
