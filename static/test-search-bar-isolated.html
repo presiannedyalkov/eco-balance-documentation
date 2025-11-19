@@ -70,11 +70,7 @@
     const testResults = document.getElementById('test-results');
     const consoleLogs = document.getElementById('console-logs');
     
-    // Capture console logs
-    const originalLog = console.log;
-    const originalError = console.error;
-    const originalWarn = console.warn;
-    
+    // Capture console logs (no original console calls to prevent log injection)
     function sanitizeForLog(arg) {
       // Sanitize log arguments to prevent log injection
       const str = String(arg || '');
@@ -96,23 +92,20 @@
     }
     
     console.log = (...args) => {
-      // Sanitize args before passing to original console function to prevent log injection
+      // Sanitize and log only to custom display (no original console call to prevent log injection)
       const sanitizedArgs = args.map(sanitizeForLog);
-      originalLog(...sanitizedArgs);
       addLog('LOG', ...sanitizedArgs);
     };
     
     console.error = (...args) => {
-      // Sanitize args before passing to original console function to prevent log injection
+      // Sanitize and log only to custom display (no original console call to prevent log injection)
       const sanitizedArgs = args.map(sanitizeForLog);
-      originalError(...sanitizedArgs);
       addLog('ERROR', ...sanitizedArgs);
     };
     
     console.warn = (...args) => {
-      // Sanitize args before passing to original console function to prevent log injection
+      // Sanitize and log only to custom display (no original console call to prevent log injection)
       const sanitizedArgs = args.map(sanitizeForLog);
-      originalWarn(...sanitizedArgs);
       addLog('WARN', ...sanitizedArgs);
     };
     
