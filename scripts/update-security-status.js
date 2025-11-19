@@ -131,14 +131,12 @@ async function getDependabotAlerts() {
     return counts;
   } catch (error) {
     // Sanitize error message to prevent log injection - remove all control characters and limit length
+    // Sanitize directly in console call to ensure CodeQL recognizes it
     const rawMessage = String(error?.message || 'Unknown error');
-    // Sanitize inline to ensure CodeQL recognizes it
-    const sanitizedError = String(rawMessage
+    console.warn('⚠️  Could not fetch Dependabot alerts:', String(rawMessage
       .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
       .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200)); // Limit length
-    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
-    console.warn('⚠️  Could not fetch Dependabot alerts:', sanitizedError);
+      .substring(0, 200))); // Limit length
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }
