@@ -70,11 +70,7 @@
     const testResults = document.getElementById('test-results');
     const consoleLogs = document.getElementById('console-logs');
     
-    // Capture console logs
-    const originalLog = console.log;
-    const originalError = console.error;
-    const originalWarn = console.warn;
-    
+    // Capture console logs (no original console calls to prevent log injection)
     function sanitizeForLog(arg) {
       // Sanitize log arguments to prevent log injection
       const str = String(arg || '');
@@ -96,22 +92,19 @@
     }
     
     console.log = (...args) => {
-      originalLog(...args);
-      // Sanitize args inline - CodeQL recognizes sanitization when done before use
+      // Sanitize and log only to custom display (no original console call to prevent log injection)
       const sanitizedArgs = args.map(sanitizeForLog);
       addLog('LOG', ...sanitizedArgs);
     };
     
     console.error = (...args) => {
-      originalError(...args);
-      // Sanitize args inline - CodeQL recognizes sanitization when done before use
+      // Sanitize and log only to custom display (no original console call to prevent log injection)
       const sanitizedArgs = args.map(sanitizeForLog);
       addLog('ERROR', ...sanitizedArgs);
     };
     
     console.warn = (...args) => {
-      originalWarn(...args);
-      // Sanitize args inline - CodeQL recognizes sanitization when done before use
+      // Sanitize and log only to custom display (no original console call to prevent log injection)
       const sanitizedArgs = args.map(sanitizeForLog);
       addLog('WARN', ...sanitizedArgs);
     };
