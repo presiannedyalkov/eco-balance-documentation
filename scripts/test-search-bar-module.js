@@ -49,7 +49,7 @@ try {
   }
   
 } catch (error) {
-  console.error('❌ Error reading file:', error.message);
+  console.error('❌ Error reading file:', String(error.message));
   process.exit(1);
 }
 

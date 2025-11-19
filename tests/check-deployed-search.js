@@ -28,7 +28,7 @@ async function checkDeployedSite() {
       message: error.message,
       stack: error.stack,
     });
-    console.error('Page error:', error.message);
+    console.error('Page error:', String(error.message));
   });
   
   console.log('🔍 Navigating to https://docs.eco-balance.cc/...');

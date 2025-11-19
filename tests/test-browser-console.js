@@ -70,7 +70,7 @@ async function testBrowserConsole() {
     }
     
   } catch (error) {
-    console.error('❌ Error:', error.message);
+    console.error('❌ Error:', String(error.message));
   }
   
   console.log('\n⏸️  Browser will stay open for 5 more seconds...');
