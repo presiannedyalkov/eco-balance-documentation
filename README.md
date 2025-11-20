@@ -10,109 +10,20 @@
 
 ## 📊 Quality Dashboard
 
-> **Note:** Click on any badge to view detailed results and reports. Lighthouse scores are updated after each audit run and displayed in the workflow summary.
-> 
-> **⚠️ Badge Status:** Some checks are configured as **non-blocking** (they won't fail the build even if issues are found). A red badge may indicate warnings or issues found, but doesn't necessarily mean the build failed. Check the workflow details for specific information.
-
-### 🔒 Security Alerts Status
-
-<!-- This section is automatically updated by scripts/update-security-status.js -->
-<!-- Last manual update: 2025-11-16 -->
-
-**Quick Check:**
-- **[CodeQL Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)** - Static analysis security issues in code
-- **[Dependabot Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)** - Known vulnerabilities in dependencies
-
-> **💡 Tip:** Check these regularly! Security alerts can appear at any time when new vulnerabilities are discovered. The badges above show workflow status, but actual alert counts are in the Security tab.
-
-### Performance & Accessibility
-
-| Metric | Status | Details | What It Checks |
-|--------|--------|---------|---------------|
-| **Lighthouse Performance** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Measures page load speed, time to interactive, and resource optimization. Target: ≥80% ⚠️ Non-blocking |
-| **Lighthouse Accessibility** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Checks for accessibility issues (ARIA labels, keyboard navigation, color contrast). Target: ≥90% ⚠️ Non-blocking |
-| **Lighthouse Best Practices** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Validates modern web best practices (HTTPS, image optimization, console errors). Target: ≥80% ⚠️ Non-blocking |
-| **Lighthouse SEO** | [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | [View Latest Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) | Evaluates SEO optimization (meta tags, structured data, mobile-friendly). Target: ≥80% ⚠️ Non-blocking |
-
 ### Security & Code Quality
+- [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) **CodeQL** - Static code analysis for security vulnerabilities | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)
+- [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) **Dependabot** - Dependency vulnerability scanning | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)
 
-| Metric | Status | Details | What It Checks |
-|--------|--------|---------|---------------|
-| **CodeQL Security Scanning** | [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml) | [🔍 View All Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) | **Static code analysis** that scans JavaScript/TypeScript for security vulnerabilities, coding errors, and best practices. **What it finds:** SQL injection risks, XSS vulnerabilities, insecure URL handling, log injection, unused code, and more. **Runs:** Weekly on `main` branch. **How to read:** Green = no issues, Yellow/Red = alerts found (check details). |
-| **Dependabot Security** | [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) | [🔍 View Security Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) • [📦 View Update PRs](https://github.com/presiannedyalkov/eco-balance-documentation/pulls?q=is%3Apr+is%3Aopen+label%3Adependencies) | **Dependency vulnerability scanning** that automatically checks npm packages for known security vulnerabilities. **What it does:** Scans `package.json` and `package-lock.json`, creates PRs for security updates, alerts on new vulnerabilities. **Runs:** Weekly checks + on dependency changes. **How to read:** Check the Security tab for open alerts, or review Dependabot PRs for available updates. |
-
-### Documentation Quality
-
-| Metric | Status | Details | What It Checks |
-|--------|--------|---------|---------------|
-| **Link Checking** | [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) | Verifies all external links are valid and accessible. Checks on PRs and weekly. ⚠️ Non-blocking |
-| **Spell Check** | [![Spell Check](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) | Scans all markdown files for spelling errors using custom dictionary. Checks on PRs. ⚠️ Non-blocking |
-| **Markdown Linting** | [![Lint Markdown](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) | Validates markdown formatting consistency and style. Checks on PRs and pushes. ⚠️ Non-blocking |
+### Performance & Quality
+- [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) **Lighthouse** - Performance, accessibility, best practices, SEO | [View Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml)
+- [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) **Link Check** - Validates external links | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml)
+- [![Spell Check](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) **Spell Check** - Scans markdown for spelling errors | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml)
+- [![Lint Markdown](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) **Markdown Lint** - Validates formatting consistency | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml)
 
 ### Build & Deployment
-
-| Metric | Status | Details | What It Checks |
-|--------|--------|---------|---------------|
-| **Deployment** | [![Deploy](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) | [View Workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) | Builds and deploys the Docusaurus site to GitHub Pages. Runs on documentation changes. |
-| **Deployment Verification** | [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) | [View Tests](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) | Runs automated tests to verify the deployed site works correctly. Includes link checks and page load tests. |
-| **Documentation Export** | [![Export Docs](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) | [View Exports](https://github.com/presiannedyalkov/eco-balance-documentation/releases) | Generates PDF and EPUB versions of the documentation for offline reading. Runs on documentation changes. |
-
----
-
-### 📋 Understanding the Checks
-
-#### Security Checks Explained
-
-**CodeQL Security Scanning:**
-- **What it does:** Analyzes your code statically (without running it) to find security vulnerabilities and coding errors
-- **What it finds:**
-  - **High severity:** SQL injection, XSS vulnerabilities, insecure URL handling, command injection
-  - **Medium severity:** Log injection, incomplete sanitization, path traversal risks
-  - **Low/Note:** Unused code, code quality issues, best practice violations
-- **How to read results:**
-  - Click the badge or "View All Alerts" link to see the Security tab
-  - Alerts are organized by severity (High → Medium → Low → Note)
-  - Each alert shows: file location, issue type, and recommended fix
-  - **Green badge** = workflow ran successfully (may still have alerts)
-  - **Check the Security tab** for actual alert counts
-- **When to act:** Review High/Medium alerts immediately, Low/Note can be addressed over time
-
-**Dependabot Security:**
-- **What it does:** Scans your `package.json` and `package-lock.json` against GitHub's vulnerability database
-- **What it finds:** Known security vulnerabilities in npm packages (CVEs)
-- **How it works:**
-  - Automatically creates PRs for security updates when available
-  - Alerts you when new vulnerabilities are discovered in existing packages
-  - Can be configured to auto-merge minor/patch updates
-- **How to read results:**
-  - **Security tab** shows all open vulnerability alerts
-  - **Dependabot PRs** show available updates (filter by `label:dependencies`)
-  - Severity levels: Critical, High, Moderate, Low
-- **When to act:** Critical/High should be addressed ASAP, Moderate/Low within a reasonable timeframe
-
-#### Quality Checks Explained
-
-**Lighthouse CI:**
-- **Performance:** Measures how fast your site loads and becomes interactive
-- **Accessibility:** Checks if your site is usable by people with disabilities
-- **Best Practices:** Validates modern web standards (HTTPS, no console errors, etc.)
-- **SEO:** Evaluates search engine optimization
-- **Scores:** 0-100, with color coding (🟢 90+, 🟡 75-89, 🟠 50-74, 🔴 <50)
-
-**Link Checking:**
-- Verifies all external links in markdown files are accessible
-- Reports broken links, timeouts, and redirects
-- Non-blocking: won't fail the build, but alerts you to fix broken links
-
-**Spell Check:**
-- Scans all markdown files for spelling errors
-- Uses custom dictionary (`.cspell.json`) for project-specific terms
-- Non-blocking: alerts you to typos but doesn't block deployment
-
-**Markdown Linting:**
-- Validates markdown formatting consistency
-- Checks for style issues (line length, heading spacing, etc.)
-- Non-blocking: helps maintain consistent documentation style
+- [![Deploy](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) **Deployment** - Builds and deploys to GitHub Pages | [View Workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml)
+- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) **Deployment Verification** - Automated site tests | [View Tests](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml)
+- [![Export Docs](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) **Documentation Export** - Generates PDF/EPUB versions | [View Exports](https://github.com/presiannedyalkov/eco-balance-documentation/releases)
 
 ---
 
