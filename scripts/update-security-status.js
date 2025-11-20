@@ -93,14 +93,9 @@ async function getCodeQLAlerts() {
 
     return counts;
   } catch (error) {
-    // Sanitize error message to prevent log injection
-    // Inline sanitization so CodeQL can trace it: remove newlines and control characters
-    const sanitizedError = String(error?.message || 'Unknown error')
-      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200); // Limit length
-    // Use separate arguments - CodeQL recognizes sanitization when values are passed separately
-    console.warn('⚠️  Could not fetch CodeQL alerts:', sanitizedError);
+    // Log generic message instead of error details to avoid CodeQL log injection alerts
+    // The error message is from GitHub API, not user input
+    console.warn('⚠️  Could not fetch CodeQL alerts (check network/GitHub API status)');
     return { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
   }
 }
