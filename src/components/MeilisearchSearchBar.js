@@ -109,6 +109,10 @@ function MeilisearchSearchBar() {
       const url = `${meilisearchHost}/indexes/${indexName}/search`;
       console.log('🔍 [MeilisearchSearchBar] Fetching:', url);
       
+      // Create abort controller for timeout (10 seconds)
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
+      
       const response = await fetch(url, {
         method: 'POST',
         headers: {
@@ -120,7 +124,10 @@ function MeilisearchSearchBar() {
           limit: 10,
           attributesToHighlight: ['title', 'content', 'headings'],
         }),
+        signal: controller.signal,
       });
+      
+      clearTimeout(timeoutId);
 
       console.log('🔍 [MeilisearchSearchBar] Response status:', response.status, response.statusText);
       
@@ -157,14 +164,20 @@ function MeilisearchSearchBar() {
       console.error('  - Error name:', error.name);
       console.error('  - Error message:', error.message);
       console.error('  - Error stack:', error.stack);
+      console.error('  - Error type:', error.constructor.name);
       
-      // Set user-friendly error message
-      if (error.message && error.message.includes('CORS')) {
-        setError('CORS error: Search server is not allowing requests from this domain.');
+      // Set user-friendly error message based on error type
+      if (error.name === 'AbortError') {
+        setError('Search request timed out. The server may be slow or unreachable. Please try again.');
+      } else if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+        // Network error - could be CORS, connection refused, or network issue
+        setError('Cannot connect to search server. This may be a CORS or network issue. Please check if Meilisearch is running and accessible.');
+      } else if (error.message && (error.message.includes('CORS') || error.message.includes('cross-origin'))) {
+        setError('CORS error: Search server is not allowing requests from this domain. Please check CORS configuration.');
       } else if (error.message && error.message.includes('fetch')) {
         setError('Cannot connect to search server. Please check if Meilisearch is running.');
       } else {
-        setError('Search error occurred. Please try again later.');
+        setError(`Search error: ${error.message || 'Unknown error occurred. Please try again later.'}`);
       }
       setResults([]);
     } finally {
