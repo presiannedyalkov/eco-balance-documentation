@@ -16,14 +16,22 @@
 
 ### 🔒 Security Alerts Status
 
-<!-- This section is automatically updated by scripts/update-security-status.js -->
-<!-- Last manual update: 2025-11-16 -->
+**Last Updated:** 2025-11-20
 
-**Quick Check:**
-- **[CodeQL Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)** - Static analysis security issues in code
-- **[Dependabot Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)** - Known vulnerabilities in dependencies
+**CodeQL Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)):
 
-> **💡 Tip:** Check these regularly! Security alerts can appear at any time when new vulnerabilities are discovered. The badges above show workflow status, but actual alert counts are in the Security tab.
+- ✅ **Critical:** 0
+- ✅ **High:** 0
+- ✅ **Medium:** 0
+- ✅ **Low:** 0
+- ✅ **Note:** 0
+- **Total Open:** 0
+
+
+**Dependabot Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)):
+⚠️ Unable to fetch Dependabot alerts
+
+> **💡 Tip:** Check these regularly! Security alerts can appear at any time when new vulnerabilities are discovered. Click the links above to view detailed information about each alert.
 
 ### Performance & Accessibility
 
