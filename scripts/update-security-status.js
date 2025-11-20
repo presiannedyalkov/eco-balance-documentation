@@ -129,14 +129,9 @@ async function getDependabotAlerts() {
 
     return counts;
   } catch (error) {
-    // Sanitize error message to prevent log injection
-    // Remove newlines and control characters, limit length
-    const sanitizedMessage = String(error?.message || 'Unknown error')
-      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200); // Limit length
-    // Use prefix to clearly mark user input in logs
-    console.warn('⚠️  Could not fetch Dependabot alerts: [User Input]:', sanitizedMessage);
+    // Log generic message instead of error details to avoid CodeQL log injection alerts
+    // The error message is from GitHub API, not user input
+    console.warn('⚠️  Could not fetch Dependabot alerts (check network/GitHub API status)');
     return { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
   }
 }
