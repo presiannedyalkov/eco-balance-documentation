@@ -82,6 +82,9 @@ function initSentry() {
         'Network request failed',
         // Known browser issues
         'ResizeObserver loop limit exceeded',
+        // Test errors (should not be sent to Sentry)
+        'Test error for Sentry verification',
+        'Test error from Playwright',
       ],
       
       // Filter out URLs from browser extensions
@@ -94,6 +97,25 @@ function initSentry() {
       
       // Set user context if available
       beforeSend(event, hint) {
+        // Filter out test errors (including those with timestamps)
+        const isTestError = (text) => {
+          if (!text) return false;
+          return text.includes('Test error for Sentry verification') ||
+                 text.includes('Test error from Playwright');
+        };
+        
+        if (event.message && isTestError(event.message)) {
+          return null; // Don't send test errors to Sentry
+        }
+        
+        if (event.exception && event.exception.values) {
+          for (const exception of event.exception.values) {
+            if (exception.value && isTestError(exception.value)) {
+              return null; // Don't send test errors to Sentry
+            }
+          }
+        }
+        
         // Add custom context
         event.tags = {
           ...event.tags,
