@@ -131,6 +131,34 @@ jobs:
           echo "base_url=$BASE_URL" >> $GITHUB_OUTPUT
           echo "BASE_URL will be: $BASE_URL"
       
+      - name: Validate BASE_URL configuration
+        run: |
+          BASE_URL="${{ steps.base_url.outputs.base_url }}"
+          CUSTOM_DOMAIN_URL="${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL }}"
+          
+          echo "🔍 Validating BASE_URL configuration..."
+          echo "BASE_URL: $BASE_URL"
+          echo "CUSTOM_DOMAIN_URL: $CUSTOM_DOMAIN_URL"
+          
+          # If custom domain is configured, BASE_URL should be '/'
+          if [ -n "$CUSTOM_DOMAIN_URL" ] && [ "$CUSTOM_DOMAIN_URL" != "" ]; then
+            if [ "$BASE_URL" != "/" ]; then
+              echo "❌ ERROR: Custom domain is configured ($CUSTOM_DOMAIN_URL) but BASE_URL is '$BASE_URL' (expected '/')"
+              echo "💡 Fix: Set CUSTOM_DOMAIN_BASE_URL to '/' in GitHub repository variables"
+              exit 1
+            else
+              echo "✅ Custom domain configuration is correct: BASE_URL='/' for $CUSTOM_DOMAIN_URL"
+            fi
+          else
+            # No custom domain, should use project pages path
+            if [ "$BASE_URL" != "/eco-balance-documentation/" ]; then
+              echo "⚠️  WARNING: No custom domain configured, but BASE_URL is '$BASE_URL' (expected '/eco-balance-documentation/')"
+              echo "💡 This is OK if you're testing, but ensure GitHub Pages is configured correctly"
+            else
+              echo "✅ Project pages configuration is correct: BASE_URL='/eco-balance-documentation/'"
+            fi
+          fi
+      
       - name: Build website
         timeout-minutes: 15
         run: |

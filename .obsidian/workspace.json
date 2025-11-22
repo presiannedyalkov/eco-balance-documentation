@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "c5703a4d49fb5560",
+    "type": "split",
+    "children": [
+      {
+        "id": "7cf5bbdc011aaa1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "745bd1b130901ab0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b70950c6a075dbf6",
+    "type": "split",
+    "children": [
+      {
+        "id": "20a8e0bb958ba7e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b1fd1a008c837040",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "eef4a1a1913769b8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "167462671efcdc87",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d73372a18290a1e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "3dd3abdb0a94e111",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd3e864b0c2cc87c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "cabdf7f3ed1a8c19",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "12c716c1e701ea2d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b6be502c84af9306",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "181207107155e2c7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "486324c8748629cb",
+            "type": "leaf",
+            "state": {
+              "type": "graph-analysis",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "graph-analysis"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "745bd1b130901ab0",
+  "lastOpenFiles": [
+    "docs/restoration-playbook/soil_restoration/02_Add_Organic_Matter.md",
+    "strategic/restoration_playbook/reforestation/02_Source_Seedlings.md",
+    "node_modules/webpack-virtual-modules/src/virtual-stats.ts",
+    "node_modules/webpack-virtual-modules/src/index.ts",
+    "node_modules/webpack-virtual-modules/lib/virtual-stats.js.map",
+    "node_modules/webpack-virtual-modules/lib/virtual-stats.js",
+    "node_modules/webpack-virtual-modules/lib/virtual-stats.d.ts",
+    "node_modules/webpack-virtual-modules/lib/index.js.map",
+    "node_modules/webpack-virtual-modules/lib/index.js",
+    "node_modules/webpack-virtual-modules/lib/index.d.ts",
+    "node_modules/webpack-virtual-modules/package.json",
+    "node_modules/webpack-virtual-modules/README.md",
+    "node_modules/webpack-virtual-modules/LICENSE",
+    "node_modules/unplugin/README.md",
+    "node_modules/proxy-from-env/README.md",
+    "node_modules/progress/Readme.md",
+    "node_modules/progress/CHANGELOG.md",
+    "node_modules/node-fetch/node_modules/whatwg-url/README.md",
+    "node_modules/node-fetch/node_modules/webidl-conversions/README.md",
+    "node_modules/node-fetch/node_modules/webidl-conversions/LICENSE.md",
+    "node_modules/node-fetch/README.md",
+    "node_modules/node-fetch/LICENSE.md",
+    "node_modules/magic-string/README.md",
+    "node_modules/fs.realpath/README.md",
+    "node_modules/dotenv/SECURITY.md",
+    "node_modules/dotenv/README.md",
+    "node_modules/dotenv/README-es.md",
+    "node_modules/dotenv/CHANGELOG.md",
+    "node_modules/@sentry/webpack-plugin/node_modules/uuid/README.md",
+    "node_modules/@sentry/webpack-plugin/node_modules/uuid/LICENSE.md",
+    "node_modules/@sentry/webpack-plugin/node_modules/uuid/CONTRIBUTING.md",
+    "node_modules/@sentry/webpack-plugin/node_modules/uuid/CHANGELOG.md",
+    "node_modules/@sentry/webpack-plugin/README.md",
+    "node_modules/@sentry/react/README.md",
+    "node_modules/@sentry/core/README.md",
+    "node_modules/@sentry/cli/node_modules/https-proxy-agent/README.md",
+    "build/img/logo.svg"
+  ]
+}

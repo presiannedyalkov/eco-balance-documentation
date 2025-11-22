@@ -135,4 +135,3 @@ The actual structure chosen will depend on:
 **Category**: Plan
 **Type**: Organizational Document
 **Status**: Active
-**Last Updated**: 2025-11-13

@@ -880,4 +880,3 @@ These assumptions underpin our planning. If they prove wrong, we must adapt.
 **Category**: Vision
 **Type**: Vision Document
 **Status**: Active
-**Last Updated**: 2025-11-13

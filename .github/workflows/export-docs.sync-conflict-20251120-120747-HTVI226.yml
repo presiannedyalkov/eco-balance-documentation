@@ -1,0 +1,171 @@
+name: Export Documentation
+
+on:
+  workflow_dispatch:
+    inputs:
+      export_format:
+        description: 'Export format'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - both
+          - epub
+          - pdf
+  push:
+    branches:
+      - main
+    paths:
+      - 'strategic/**'
+      - 'docs/**'
+      - 'README.md'
+      - 'CONTRIBUTING.md'
+      - 'VERSION'
+
+jobs:
+  export:
+    name: Export Documentation
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+      
+      - name: Install LaTeX for PDF
+        run: |
+          sudo apt-get install -y \
+            texlive-latex-base \
+            texlive-fonts-recommended \
+            texlive-latex-extra \
+            texlive-xetex \
+            librsvg2-bin \
+            fonts-dejavu-core \
+            fonts-dejavu-extra
+      
+      - name: Get version and date
+        id: version
+        run: |
+          VERSION=$(cat VERSION 2>/dev/null || echo "unknown")
+          EXPORT_DATE=$(date +"%Y-%m-%d")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "export_date=$EXPORT_DATE" >> $GITHUB_OUTPUT
+          echo "Version: $VERSION"
+          echo "Export Date: $EXPORT_DATE"
+      
+      - name: Export to EPUB
+        if: github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'both' || github.event_name == 'push'
+        run: |
+          chmod +x scripts/export-docs.sh
+          scripts/export-docs.sh || echo "EPUB export completed with warnings"
+      
+      - name: Export to PDF
+        if: github.event.inputs.export_format == 'pdf' || github.event.inputs.export_format == 'both' || github.event_name == 'push'
+        run: |
+          chmod +x scripts/export-docs.sh
+          # Run export script, continue even if PDF fails (EPUB may succeed)
+          scripts/export-docs.sh || true
+      
+      - name: Upload EPUB artifact
+        if: always() && (github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'both' || github.event_name == 'push')
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-epub
+          path: exports/*.epub
+          retention-days: 30
+      
+      - name: Upload PDF artifact
+        if: always() && (github.event.inputs.export_format == 'pdf' || github.event.inputs.export_format == 'both' || github.event_name == 'push')
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-pdf
+          path: exports/*.pdf
+          retention-days: 30
+      
+      - name: Check for exported files
+        id: check_files
+        if: always()
+        run: |
+          # Find all exported files
+          EPUB_FILES=$(find exports -name "*.epub" -type f 2>/dev/null | sort || true)
+          PDF_FILES=$(find exports -name "*.pdf" -type f 2>/dev/null | sort || true)
+          
+          EPUB_COUNT=0
+          PDF_COUNT=0
+          
+          # Count and list EPUB files
+          if [ -n "$EPUB_FILES" ]; then
+            while IFS= read -r file; do
+              if [ -f "$file" ] && [ -n "$file" ]; then
+                EPUB_COUNT=$((EPUB_COUNT + 1))
+                echo "Found EPUB: $file"
+              fi
+            done <<< "$EPUB_FILES"
+          fi
+          
+          # Count and list PDF files
+          if [ -n "$PDF_FILES" ]; then
+            while IFS= read -r file; do
+              if [ -f "$file" ] && [ -n "$file" ]; then
+                PDF_COUNT=$((PDF_COUNT + 1))
+                echo "Found PDF: $file"
+              fi
+            done <<< "$PDF_FILES"
+          fi
+          
+          # Set outputs
+          if [ $EPUB_COUNT -gt 0 ]; then
+            echo "epub_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "epub_exists=false" >> $GITHUB_OUTPUT
+            echo "No EPUB files found"
+          fi
+          
+          if [ $PDF_COUNT -gt 0 ]; then
+            echo "pdf_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "pdf_exists=false" >> $GITHUB_OUTPUT
+            echo "No PDF files found"
+          fi
+          
+          if [ $EPUB_COUNT -gt 0 ] || [ $PDF_COUNT -gt 0 ]; then
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create Release with Exports (Daily Version)
+        if: always() && steps.check_files.outputs.has_files == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          # Daily version: export-v2025-11-16 (date-based, for exports)
+          tag_name: "export-v${{ steps.version.outputs.export_date }}"
+          name: "Documentation Export v${{ steps.version.outputs.export_date }} (Daily)"
+          body: |
+            ## Documentation Export - Daily Version v${{ steps.version.outputs.export_date }}
+            
+            Automated export of documentation files using **daily versioning**.
+            
+            **Version Type:** Daily (date-based: `vYYYY-MM-DD`)
+            **Monthly Version:** ${{ steps.version.outputs.version }}
+            
+            **Files:**
+            ${{ steps.check_files.outputs.epub_exists == 'true' && '- EPUB: For e-readers (Kindle, Kobo, etc.)' || '' }}
+            ${{ steps.check_files.outputs.pdf_exists == 'true' && '- PDF: For printing and universal document sharing' || '' }}
+            
+            **Full documentation:** https://docs.eco-balance.cc/
+          files: |
+            exports/*.epub
+            exports/*.pdf
+          draft: false
+          prerelease: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

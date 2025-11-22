@@ -93,4 +93,3 @@ This framework presents viable legal pathways across Europe. The actual structur
 **Category**: Plan
 **Type**: Organizational Document
 **Status**: Active
-**Last Updated**: 2025-11-13
