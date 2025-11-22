@@ -178,8 +178,23 @@ ${dependabot.error ? '⚠️ Unable to fetch Dependabot alerts' : `
     fs.writeFileSync(README_PATH, updatedContent, 'utf8');
     console.log('✅ Updated Security Alerts Status section in README.md');
   } else {
-    // If section doesn't exist, add it after the Quality Dashboard note
-    const insertPoint = readmeContent.indexOf('### Performance & Accessibility');
+    // If section doesn't exist, add it after the Security & Code Quality section
+    // Try multiple possible insertion points
+    let insertPoint = readmeContent.indexOf('### Performance & Quality');
+    if (insertPoint === -1) {
+      insertPoint = readmeContent.indexOf('### Performance & Accessibility');
+    }
+    if (insertPoint === -1) {
+      insertPoint = readmeContent.indexOf('## 📊 Quality Dashboard');
+      if (insertPoint !== -1) {
+        // Find the end of the Quality Dashboard section
+        const nextSection = readmeContent.indexOf('##', insertPoint + 1);
+        if (nextSection !== -1) {
+          insertPoint = nextSection;
+        }
+      }
+    }
+    
     if (insertPoint !== -1) {
       const updatedContent = 
         readmeContent.slice(0, insertPoint) + 
@@ -189,6 +204,7 @@ ${dependabot.error ? '⚠️ Unable to fetch Dependabot alerts' : `
       console.log('✅ Added Security Alerts Status section to README.md');
     } else {
       console.error('❌ Could not find insertion point in README.md');
+      console.error('   Tried: "### Performance & Quality", "### Performance & Accessibility", "## 📊 Quality Dashboard"');
       process.exit(1);
     }
   }
