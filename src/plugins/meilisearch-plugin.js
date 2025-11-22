@@ -82,7 +82,7 @@ function pluginMeilisearch(context, options) {
           });
         } catch (error) {
           // Index might not exist yet or settings might already be configured
-          console.warn('⚠️  Could not update index settings:', error.message);
+          console.warn('⚠️  Could not update index settings:', error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error');
         }
 
         // Read and index HTML files
@@ -130,7 +130,9 @@ function pluginMeilisearch(context, options) {
               url: url,
             });
           } catch (error) {
-            console.warn(`⚠️  Error processing ${filePath}:`, error.message);
+            const sanitizedPath = String(filePath).replace(/[\r\n]/g, ' ').substring(0, 200);
+            const sanitizedError = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+            console.warn(`⚠️  Error processing ${sanitizedPath}:`, sanitizedError);
           }
         }
 
@@ -152,7 +154,8 @@ function pluginMeilisearch(context, options) {
               console.warn(`   Indexing requires a key with write permissions. Search functionality will still work with existing index.`);
               return; // Exit early, don't try to index more
             }
-            console.error(`❌ Error indexing batch ${Math.floor(i / batchSize) + 1}:`, error.message);
+            const sanitizedError = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+            console.error(`❌ Error indexing batch ${Math.floor(i / batchSize) + 1}:`, sanitizedError);
             throw error; // Re-throw other errors
           }
         }
@@ -164,7 +167,7 @@ function pluginMeilisearch(context, options) {
           const stats = await index.getStats();
           console.log(`✅ Index verification: ${stats.numberOfDocuments} documents in index`);
         } catch (error) {
-          console.warn('⚠️  Could not verify index stats:', error.message);
+          console.warn('⚠️  Could not verify index stats:', error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error');
         }
       } catch (error) {
         // If it's an API key error, it's expected with search-only keys
@@ -172,7 +175,8 @@ function pluginMeilisearch(context, options) {
           console.warn('⚠️  Meilisearch indexing skipped: Using search-only key (expected behavior).');
           console.warn('   To enable indexing, use a key with write permissions or skip indexing during build.');
         } else {
-          console.error('❌ Meilisearch indexing error:', error);
+          const sanitizedError = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : (error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error');
+          console.error('❌ Meilisearch indexing error:', sanitizedError);
         }
         // Don't fail the build if indexing fails
       }
