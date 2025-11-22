@@ -3,7 +3,7 @@
 # Usage: ./scripts/update-last-updated.sh [file1.md] [file2.md] ...
 # If no files specified, updates all .md files in docs/
 
-set -e
+# Don't use set -e here - we want to continue processing even if some files fail
 
 # Color output
 GREEN='\033[0;32m'
@@ -105,8 +105,8 @@ update_file() {
     else
         # No Last Updated field found, restore backup
         mv "${file}.bak" "$file"
-        echo -e "${YELLOW}⚠️  No 'Last Updated' field found in: $file${NC}"
-        return 1
+        echo -e "${YELLOW}⚠️  No 'Last Updated' field found in: $file (skipping)${NC}"
+        return 0  # Return 0 to continue processing other files
     fi
 }
 
@@ -141,6 +141,10 @@ done
 echo ""
 echo -e "${GREEN}✅ Updated: $UPDATED files${NC}"
 if [ $SKIPPED -gt 0 ]; then
-    echo -e "${YELLOW}⚠️  Skipped: $SKIPPED files${NC}"
+    echo -e "${YELLOW}⚠️  Skipped: $SKIPPED files (no 'Last Updated' field found)${NC}"
 fi
+
+# Exit with success even if some files were skipped
+# This allows the workflow to continue
+exit 0
 
