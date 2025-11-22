@@ -757,4 +757,3 @@ Eco Balance combines the best elements:
 **Category**: Plan
 **Type**: Reference Document
 **Status**: Active
-**Last Updated**: 2025-11-13

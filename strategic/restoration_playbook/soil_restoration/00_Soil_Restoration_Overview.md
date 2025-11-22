@@ -194,4 +194,3 @@ These are the constraints based on scientific consensus that cannot be compromis
 **Category**: Plan
 **Type**: Overview Document
 **Status**: Template - Customize for Your Project
-**Last Updated**: 2025-11-13

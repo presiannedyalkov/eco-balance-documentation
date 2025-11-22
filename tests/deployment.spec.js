@@ -546,5 +546,100 @@ test.describe('Deployment Verification', () => {
       console.log('Footer not found (may not be configured)');
     }
   });
+
+  test('Docusaurus baseUrl is correctly configured', async ({ page }) => {
+    const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
+    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    expect(isValidDeploymentUrl(page.url())).toBeTruthy();
+    
+    // Wait for Docusaurus to initialize
+    await page.waitForTimeout(3000);
+    
+    // Check for Docusaurus baseUrl error banner
+    // This banner appears when baseUrl doesn't match the actual URL
+    const errorBanner = page.locator('[class*="docusaurus-mount-node"], [class*="baseUrl"], [id*="docusaurus"]');
+    const errorBannerText = await page.locator('body').textContent();
+    
+    // Check if the error banner text is present (Docusaurus shows a warning when baseUrl is wrong)
+    const hasBaseUrlError = errorBannerText?.includes('baseUrl') && 
+                           (errorBannerText.includes('mismatch') || 
+                            errorBannerText.includes('incorrect') ||
+                            errorBannerText.includes('does not match'));
+    
+    if (hasBaseUrlError) {
+      throw new Error('Docusaurus baseUrl error detected! The baseUrl in the build does not match the deployment URL. Check GitHub Actions variables: CUSTOM_DOMAIN_URL and CUSTOM_DOMAIN_BASE_URL');
+    }
+    
+    // Check if window.docusaurus is initialized
+    const docusaurusInfo = await page.evaluate(() => {
+      return {
+        hasDocusaurus: typeof window.docusaurus !== 'undefined',
+        docusaurusKeys: typeof window.docusaurus !== 'undefined' ? Object.keys(window.docusaurus || {}) : [],
+        canNavigate: typeof window.docusaurus?.navigate === 'function',
+        hasRoot: typeof window.docusaurusRoot !== 'undefined',
+      };
+    });
+    
+    // Docusaurus should be initialized
+    if (!docusaurusInfo.hasDocusaurus) {
+      throw new Error('window.docusaurus is not initialized! This usually means baseUrl is incorrect or JavaScript failed to load. Check deployment logs and GitHub Actions variables.');
+    }
+    
+    // Check if navigation function exists (critical for SPA functionality)
+    if (!docusaurusInfo.canNavigate) {
+      console.warn('window.docusaurus.navigate is not available, but window.docusaurus exists. This may indicate a partial initialization issue.');
+    }
+    
+    // Verify that JavaScript files loaded correctly
+    const jsErrors = [];
+    page.on('console', msg => {
+      if (msg.type() === 'error') {
+        const text = msg.text();
+        // Filter out known non-critical errors
+        if (!text.includes('favicon') && 
+            !text.includes('analytics') && 
+            !text.includes('Failed to load resource') &&
+            !text.includes('404')) {
+          jsErrors.push(text);
+        }
+      }
+    });
+    
+    // Re-navigate to trigger any initialization errors
+    await page.reload({ waitUntil: 'networkidle', timeout: 30000 });
+    await page.waitForTimeout(2000);
+    
+    // Check for critical JavaScript errors that would prevent Docusaurus from working
+    const criticalErrors = jsErrors.filter(err => 
+      err.includes('docusaurus') || 
+      err.includes('baseUrl') ||
+      err.includes('Cannot read') ||
+      err.includes('is not defined')
+    );
+    
+    if (criticalErrors.length > 0) {
+      // Sanitize error messages to prevent log injection
+      const sanitizedErrors = criticalErrors.map(err => 
+        String(err || '').replace(/[\x00-\x1F\x7F-\x9F]/g, '').replace(/[\r\n]/g, ' ').substring(0, 200)
+      );
+      throw new Error(`Critical JavaScript errors detected that may prevent Docusaurus from working: ${sanitizedErrors.join('; ')}`);
+    }
+    
+    // Final check: Try to use Docusaurus navigation (if available)
+    if (docusaurusInfo.canNavigate) {
+      try {
+        // This should not throw if baseUrl is correct
+        await page.evaluate(() => {
+          if (window.docusaurus?.navigate) {
+            // Just check if it exists and is callable, don't actually navigate
+            return typeof window.docusaurus.navigate === 'function';
+          }
+          return false;
+        });
+      } catch (error) {
+        throw new Error(`Docusaurus navigation check failed: ${error.message}. This may indicate a baseUrl mismatch.`);
+      }
+    }
+  });
 });
 

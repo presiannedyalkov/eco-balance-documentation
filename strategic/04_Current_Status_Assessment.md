@@ -185,4 +185,3 @@ Now you need to choose **when to start and at what pace**:
 **Category**: Reality
 **Type**: Status Document
 **Status**: Active
-**Last Updated**: 2025-11-13

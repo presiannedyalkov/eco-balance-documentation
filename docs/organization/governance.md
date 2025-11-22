@@ -1018,4 +1018,3 @@ sidebar_position: 2
 **Category**: Plan
 **Type**: Organizational Document
 **Status**: Active
-**Last Updated**: 2025-11-13

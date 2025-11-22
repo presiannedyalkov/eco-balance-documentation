@@ -115,4 +115,3 @@ Holistic environmental restoration goes beyond restoring specific ecosystems or 
 **Category**: Plan
 **Type**: Methodology Document
 **Status**: Active
-**Last Updated**: 2025-11-13
