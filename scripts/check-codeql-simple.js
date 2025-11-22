@@ -216,16 +216,56 @@ console.log('⚠️  This checker is stricter and more aligned with GitHub CodeQ
 console.log('   It tracks data flow from sources (error.message, r?.url) to sinks (console.log)');
 console.log('   and only flags actual user-controlled data.\n');
 
-// Scan scripts directory
-const scriptFiles = scanDirectory('scripts');
-const testFiles = scanDirectory('tests').filter(f => f.endsWith('.js'));
-const srcFiles = scanDirectory('src');
+// In CI (GitHub Actions), only check files changed in the PR
+// Otherwise, check all files
+let filesToCheck = [];
+const isCI = process.env.CI === 'true';
+const baseRef = process.env.GITHUB_BASE_REF || 'main';
+const headRef = process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF?.replace('refs/heads/', '') || 'HEAD';
 
-const allFiles = [...scriptFiles, ...testFiles, ...srcFiles];
+if (isCI && process.env.GITHUB_EVENT_NAME === 'pull_request') {
+  // Get changed files from git diff
+  try {
+    const { execSync } = require('child_process');
+    const changedFiles = execSync(`git diff --name-only origin/${baseRef}...HEAD 2>/dev/null || git diff --name-only HEAD~1...HEAD 2>/dev/null || echo ""`, { encoding: 'utf8' }).trim();
+    
+    if (changedFiles) {
+      filesToCheck = changedFiles.split('\n')
+        .filter(file => file.endsWith('.js') && !file.endsWith('.min.js'))
+        .filter(file => file.startsWith('scripts/') || file.startsWith('tests/') || file.startsWith('src/'))
+        .map(file => path.resolve(file));
+      
+      console.log(`📁 CI mode: Checking ${filesToCheck.length} changed JavaScript file(s) in PR...\n`);
+      if (filesToCheck.length === 0) {
+        console.log('✅ No JavaScript files changed in this PR. Skipping check.\n');
+        process.exit(0);
+      }
+    } else {
+      // Fallback: check all files if we can't determine changed files
+      console.log('⚠️  Could not determine changed files. Checking all files...\n');
+      const scriptFiles = scanDirectory('scripts');
+      const testFiles = scanDirectory('tests').filter(f => f.endsWith('.js'));
+      const srcFiles = scanDirectory('src');
+      filesToCheck = [...scriptFiles, ...testFiles, ...srcFiles];
+    }
+  } catch (error) {
+    // Fallback: check all files if git command fails
+    console.log('⚠️  Could not determine changed files. Checking all files...\n');
+    const scriptFiles = scanDirectory('scripts');
+    const testFiles = scanDirectory('tests').filter(f => f.endsWith('.js'));
+    const srcFiles = scanDirectory('src');
+    filesToCheck = [...scriptFiles, ...testFiles, ...srcFiles];
+  }
+} else {
+  // Local mode: check all files
+  const scriptFiles = scanDirectory('scripts');
+  const testFiles = scanDirectory('tests').filter(f => f.endsWith('.js'));
+  const srcFiles = scanDirectory('src');
+  filesToCheck = [...scriptFiles, ...testFiles, ...srcFiles];
+  console.log(`📁 Local mode: Scanning ${filesToCheck.length} JavaScript files...\n`);
+}
 
-console.log(`📁 Scanning ${allFiles.length} JavaScript files...\n`);
-
-allFiles.forEach(filePath => {
+filesToCheck.forEach(filePath => {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     checkLogInjection(filePath, content);
