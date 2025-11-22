@@ -27,6 +27,8 @@
 
 ---
 
+<!-- Test PR to verify branch creation works without conflicts -->
+
 ## 📖 About This Repository
 
 This repository contains the complete documentation for the **Eco Balance** project - an initiative to restore degraded ecosystems in Europe through evidence-based, community-engaged, financially sustainable environmental restoration.
