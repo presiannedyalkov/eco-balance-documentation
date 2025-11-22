@@ -58,15 +58,14 @@ ROADMAP_CONTENT="# Roadmap
 "
 
 # Process each milestone
-echo "$MILESTONES" | jq -r '. | @base64' | while IFS= read -r milestone_b64; do
-    MILESTONE=$(echo "$milestone_b64" | base64 -d)
-    
-    TITLE=$(echo "$MILESTONE" | jq -r '.title')
-    NUMBER=$(echo "$MILESTONE" | jq -r '.number')
-    DESCRIPTION=$(echo "$MILESTONE" | jq -r '.description // "No description"')
-    DUE_ON=$(echo "$MILESTONE" | jq -r '.due_on // "No due date"')
-    OPEN_ISSUES=$(echo "$MILESTONE" | jq -r '.open_issues')
-    CLOSED_ISSUES=$(echo "$MILESTONE" | jq -r '.closed_issues')
+# Use process substitution to avoid subshell issues
+while IFS= read -r milestone_json; do
+    TITLE=$(echo "$milestone_json" | jq -r '.title')
+    NUMBER=$(echo "$milestone_json" | jq -r '.number')
+    DESCRIPTION=$(echo "$milestone_json" | jq -r '.description // "No description"')
+    DUE_ON=$(echo "$milestone_json" | jq -r '.due_on // empty')
+    OPEN_ISSUES=$(echo "$milestone_json" | jq -r '.open_issues')
+    CLOSED_ISSUES=$(echo "$milestone_json" | jq -r '.closed_issues')
     TOTAL_ISSUES=$((OPEN_ISSUES + CLOSED_ISSUES))
     
     if [ "$TOTAL_ISSUES" -gt 0 ]; then
@@ -76,8 +75,9 @@ echo "$MILESTONES" | jq -r '. | @base64' | while IFS= read -r milestone_b64; do
     fi
     
     # Format due date
-    if [ "$DUE_ON" != "null" ] && [ -n "$DUE_ON" ]; then
-        DUE_DATE=$(date -d "$DUE_ON" +"%Y-%m-%d" 2>/dev/null || echo "$DUE_ON")
+    if [ -n "$DUE_ON" ] && [ "$DUE_ON" != "null" ]; then
+        # Try GNU date first, then BSD date, then just use the ISO string
+        DUE_DATE=$(date -d "$DUE_ON" +"%Y-%m-%d" 2>/dev/null || date -j -f "%Y-%m-%dT%H:%M:%SZ" "$DUE_ON" +"%Y-%m-%d" 2>/dev/null || echo "${DUE_ON%%T*}")
     else
         DUE_DATE="No due date"
     fi
@@ -96,7 +96,7 @@ $DESCRIPTION
 ---
 
 "
-done
+done < <(echo "$MILESTONES" | jq -c '.')
 
 # Add footer
 ROADMAP_CONTENT+="## How to Update
