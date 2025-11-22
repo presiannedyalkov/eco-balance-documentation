@@ -1,0 +1,61 @@
+name: Update Last Updated Dates
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**/*.md'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-dates:
+    name: Update Last Updated Dates
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Need full history for Git dates
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Update Last Updated dates
+        run: |
+          echo "🔄 Updating Last Updated dates from Git commit history..."
+          ./scripts/update-last-updated.sh
+      
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected, will commit"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No changes needed"
+          fi
+      
+      - name: Commit changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git add docs/
+          git commit -m "chore: Update Last Updated dates from Git commit history [skip ci]"
+          git push
+      
+      - name: Summary
+        run: |
+          if [ "${{ steps.check-changes.outputs.has_changes }}" == "true" ]; then
+            echo "✅ Last Updated dates have been updated and committed"
+          else
+            echo "ℹ️  All dates are already up to date"
+          fi
+

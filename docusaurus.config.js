@@ -48,6 +48,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/presiannedyalkov/eco-balance-documentation/tree/main/',
           routeBasePath: '/', // Serve docs at root instead of /docs
+          showLastUpdateTime: true, // Show last updated time from Git commit history
+          showLastUpdateAuthor: false, // Don't show author (can enable if desired)
         },
         blog: false, // Disable blog
         theme: {

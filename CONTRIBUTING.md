@@ -26,6 +26,13 @@
 
 **ALWAYS create a branch before making changes:**
 
+**Option A: Use the helper script (Recommended - prevents conflicts):**
+```bash
+# Automatically syncs main and creates branch
+./scripts/create-branch.sh fix/your-fix-name
+```
+
+**Option B: Manual steps:**
 ```bash
 # Make sure you're on main and up to date
 git checkout main
@@ -38,6 +45,8 @@ git checkout -b fix/your-fix-name
 # or
 git checkout -b docs/your-doc-update
 ```
+
+**⚠️ Important:** Always sync `main` before creating branches to avoid conflicts. See `_process/git/BRANCH_CREATION_BEST_PRACTICES.md` for details.
 
 **Branch naming convention:**
 - `feature/YYYY.MM-short-description` (e.g., `feature/2025.12-versioning-system`)
