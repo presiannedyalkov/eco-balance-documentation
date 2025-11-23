@@ -18,6 +18,11 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 // Initialize Sentry for error tracking
 import './components/SentryInit';
 
+// Helper to sanitize log messages and prevent log injection
+function sanitizeLogMessage(value) {
+  return String(value).replace(/[\r\n]/g, ' ').substring(0, 200);
+}
+
 // Client-side module for Docusaurus 3.x
 // This module is imported as a side effect by '@generated/client-modules'
 // Top-level code executes when the module is imported in the browser
@@ -144,16 +149,22 @@ function clientModule() {
               visible: input.offsetWidth > 0 && input.offsetHeight > 0,
             });
           } else {
-            console.warn('  - No input found, checking wrapper content:', searchWrapper.innerHTML.substring(0, 200));
+            // Sanitize innerHTML before logging (may contain user-controlled content)
+            console.warn('  - No input found, checking wrapper content:', sanitizeLogMessage(searchWrapper.innerHTML));
           }
         }, 500); // Increased delay to allow React to render
         
         return true;
       } catch (error) {
-        console.error('❌ [clientModules] Error mounting search bar:', error);
-        console.error('  - Error message:', error.message);
-        console.error('  - Error name:', error.name);
-        console.error('  - Error stack:', error.stack);
+        // Sanitize error messages to prevent log injection
+        const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
+        const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
+        const sanitizedName = error?.name ? sanitizeLogMessage(error.name) : 'Unknown';
+        const sanitizedStack = error?.stack ? sanitizeLogMessage(error.stack) : 'No stack';
+        console.error('❌ [clientModules] Error mounting search bar:', sanitizedError);
+        console.error('  - Error message:', sanitizedMessage);
+        console.error('  - Error name:', sanitizedName);
+        console.error('  - Error stack:', sanitizedStack);
         // Render error message as fallback
         searchWrapper.innerHTML = `<div style="padding: 8px; color: var(--ifm-color-danger);">Search Error: ${error.message}</div>`;
         return false;

@@ -7,6 +7,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
+// Helper to sanitize log messages and prevent log injection
+function sanitizeLogMessage(value) {
+  return String(value).replace(/[\r\n]/g, ' ').substring(0, 200);
+}
+
 function MeilisearchSearchBar() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
@@ -103,11 +108,13 @@ function MeilisearchSearchBar() {
       return;
     }
 
-    console.log('🔍 [MeilisearchSearchBar] Starting search:', searchQuery);
+    // Sanitize user input before logging
+    console.log('🔍 [MeilisearchSearchBar] Starting search:', sanitizeLogMessage(searchQuery));
     setIsLoading(true);
     try {
       const url = `${meilisearchHost}/indexes/${indexName}/search`;
-      console.log('🔍 [MeilisearchSearchBar] Fetching:', url);
+      // Sanitize URL before logging
+      console.log('🔍 [MeilisearchSearchBar] Fetching:', sanitizeLogMessage(url));
       
       // Create abort controller for timeout (10 seconds)
       const controller = new AbortController();
@@ -133,7 +140,8 @@ function MeilisearchSearchBar() {
       
       if (!response.ok) {
         const errorText = await response.text();
-        console.error('❌ [MeilisearchSearchBar] Search failed:', response.status, errorText);
+        // Sanitize error text before logging
+        console.error('❌ [MeilisearchSearchBar] Search failed:', response.status, sanitizeLogMessage(errorText));
         
         // Set error message based on status code
         if (response.status === 500) {
@@ -160,11 +168,17 @@ function MeilisearchSearchBar() {
       });
       setResults(data.hits || []);
     } catch (error) {
-      console.error('❌ [MeilisearchSearchBar] Search error:', error);
-      console.error('  - Error name:', error.name);
-      console.error('  - Error message:', error.message);
-      console.error('  - Error stack:', error.stack);
-      console.error('  - Error type:', error.constructor.name);
+      // Sanitize error messages to prevent log injection
+      const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
+      const sanitizedName = error?.name ? sanitizeLogMessage(error.name) : 'Unknown';
+      const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
+      const sanitizedStack = error?.stack ? sanitizeLogMessage(error.stack) : 'No stack';
+      const sanitizedType = error?.constructor?.name ? sanitizeLogMessage(error.constructor.name) : 'Unknown';
+      console.error('❌ [MeilisearchSearchBar] Search error:', sanitizedError);
+      console.error('  - Error name:', sanitizedName);
+      console.error('  - Error message:', sanitizedMessage);
+      console.error('  - Error stack:', sanitizedStack);
+      console.error('  - Error type:', sanitizedType);
       
       // Set user-friendly error message based on error type
       if (error.name === 'AbortError') {
@@ -252,9 +266,13 @@ function MeilisearchSearchBar() {
           console.log('✅ [MeilisearchSearchBar] Health check data:', data);
         })
         .catch(error => {
-          console.error('❌ [MeilisearchSearchBar] Health check failed:', error);
-          console.error('  - Error message:', error.message);
-          console.error('  - Error stack:', error.stack);
+          // Sanitize error messages to prevent log injection
+          const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
+          const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
+          const sanitizedStack = error?.stack ? sanitizeLogMessage(error.stack) : 'No stack';
+          console.error('❌ [MeilisearchSearchBar] Health check failed:', sanitizedError);
+          console.error('  - Error message:', sanitizedMessage);
+          console.error('  - Error stack:', sanitizedStack);
         });
       
       // Test search endpoint
@@ -270,7 +288,8 @@ function MeilisearchSearchBar() {
           console.log('🔍 [MeilisearchSearchBar] Search endpoint test:', response.status, response.statusText);
           if (!response.ok) {
             return response.text().then(text => {
-              console.error('❌ [MeilisearchSearchBar] Search endpoint error:', text);
+              // Sanitize error text before logging
+              console.error('❌ [MeilisearchSearchBar] Search endpoint error:', sanitizeLogMessage(text));
             });
           }
           return response.json();
@@ -279,8 +298,11 @@ function MeilisearchSearchBar() {
           console.log('✅ [MeilisearchSearchBar] Search endpoint accessible, estimated documents:', data.estimatedTotalHits || 'N/A');
         })
         .catch(error => {
-          console.error('❌ [MeilisearchSearchBar] Search endpoint test failed:', error);
-          console.error('  - Error message:', error.message);
+          // Sanitize error messages to prevent log injection
+          const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
+          const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
+          console.error('❌ [MeilisearchSearchBar] Search endpoint test failed:', sanitizedError);
+          console.error('  - Error message:', sanitizedMessage);
           console.error('  - This might be a CORS issue or network problem');
         });
     }
@@ -355,7 +377,8 @@ function MeilisearchSearchBar() {
           placeholder="Search docs (Press '/' to focus)"
           value={query}
           onChange={(e) => {
-            console.log('🔍 [MeilisearchSearchBar] Input changed:', e.target.value);
+            // Sanitize user input before logging
+            console.log('🔍 [MeilisearchSearchBar] Input changed:', sanitizeLogMessage(e.target.value));
             setQuery(e.target.value);
           }}
           onFocus={() => {
