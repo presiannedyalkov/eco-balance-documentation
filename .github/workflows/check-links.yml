@@ -28,9 +28,10 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Check links with lychee
+        id: linkcheck
         uses: lycheeverse/lychee-action@v2.0.2
         with:
-          args: '--accept 200,201,202,301,302,303,307,308 --exclude-all-private --exclude-mail --timeout 20 --max-concurrency 10'
+          args: '--accept 200,201,202,301,302,303,307,308 --exclude-all-private --exclude-mail --timeout 20 --max-concurrency 10 --format json'
           fail: false
           files: |
             **/*.md
@@ -41,6 +42,67 @@ jobs:
             !archive/**/*.md
           base: 'https://docs.eco-balance.cc'
         continue-on-error: true
+      
+      - name: Generate Link Check Summary
+        if: always()
+        run: |
+          echo "# 🔗 Link Check Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Try to find lychee output file
+          if [ -f "lychee-out.md" ]; then
+            BROKEN_COUNT=$(grep -c "❌" lychee-out.md 2>/dev/null || echo "0")
+            TOTAL_COUNT=$(grep -c "http" lychee-out.md 2>/dev/null || echo "0")
+            
+            if [ "$BROKEN_COUNT" != "0" ]; then
+              echo "## ❌ Broken Links Found: $BROKEN_COUNT" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "Found **$BROKEN_COUNT** broken link(s) out of **$TOTAL_COUNT** total links checked." >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "### How to Fix" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "1. Review broken links in the 'Check links with lychee' step above" >> $GITHUB_STEP_SUMMARY
+              echo "2. Check links locally: \`npx lychee '**/*.md'\`" >> $GITHUB_STEP_SUMMARY
+              echo "3. Update or remove broken links in the markdown files" >> $GITHUB_STEP_SUMMARY
+              echo "4. Check if links are temporarily down (may be false positives)" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "### Broken Links" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              grep "❌" lychee-out.md | head -20 | while read line; do
+                echo "- $line" >> $GITHUB_STEP_SUMMARY
+              done
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "> **Note**: These are non-blocking. Fix broken links incrementally when convenient." >> $GITHUB_STEP_SUMMARY
+            else
+              echo "## ✅ All Links Working" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "All **$TOTAL_COUNT** links checked are working correctly!" >> $GITHUB_STEP_SUMMARY
+            fi
+          elif [ -f "lychee-out.json" ]; then
+            # Parse JSON output if available
+            BROKEN_COUNT=$(jq '[.[] | select(.status != 200 and .status != 301 and .status != 302)] | length' lychee-out.json 2>/dev/null || echo "0")
+            TOTAL_COUNT=$(jq 'length' lychee-out.json 2>/dev/null || echo "0")
+            
+            if [ "$BROKEN_COUNT" != "0" ] && [ "$BROKEN_COUNT" != "null" ]; then
+              echo "## ❌ Broken Links Found: $BROKEN_COUNT" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "Found **$BROKEN_COUNT** broken link(s) out of **$TOTAL_COUNT** total links checked." >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "### Broken Links" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              jq -r '.[] | select(.status != 200 and .status != 301 and .status != 302) | "- \(.url) (Status: \(.status)) in \(.source)"' lychee-out.json 2>/dev/null | head -20 >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "> **Note**: These are non-blocking. Fix broken links incrementally when convenient." >> $GITHUB_STEP_SUMMARY
+            else
+              echo "## ✅ All Links Working" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "All **$TOTAL_COUNT** links checked are working correctly!" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "## ⚠️ Could not generate summary" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Check the 'Check links with lychee' step above for details." >> $GITHUB_STEP_SUMMARY
+          fi
       
       - name: Upload link check results
         if: always()

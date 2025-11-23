@@ -25,6 +25,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Lint Markdown
+        id: lint
         uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: |
@@ -41,6 +42,90 @@ jobs:
             !_templates/**/*.md
           config: .markdownlint.json
         continue-on-error: true
+      
+      - name: Generate Error Report Summary
+        if: always()
+        run: |
+          echo "# 📋 Markdown Linting Error Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Run markdownlint again to capture output for summary
+          npx markdownlint-cli2 \
+            "docs/**/*.md" \
+            "strategic/**/*.md" \
+            "**/*.md" \
+            "!node_modules/**/*.md" \
+            "!build/**/*.md" \
+            "!.docusaurus/**/*.md" \
+            "!_versions/**/*.md" \
+            "!archive/**/*.md" \
+            "!_process/**/*.md" \
+            "!_vault_maintenance/**/*.md" \
+            "!_templates/**/*.md" \
+            --config .markdownlint.json \
+            --format json \
+            > lint-errors.json 2>&1 || true
+          
+          # Parse errors if file exists and has content
+          if [ -f lint-errors.json ] && [ -s lint-errors.json ]; then
+            # Count total errors
+            TOTAL_ERRORS=$(jq -r '[.[] | .errors | length] | add' lint-errors.json 2>/dev/null || echo "0")
+            
+            if [ "$TOTAL_ERRORS" != "0" ] && [ "$TOTAL_ERRORS" != "null" ]; then
+              echo "## ❌ Linting Errors Found: $TOTAL_ERRORS total" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "The markdown linter found **$TOTAL_ERRORS** issues in the documentation. These are **non-blocking** (styling issues only)." >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              
+              # Count errors by type
+              echo "### Error Breakdown by Type" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo '| Rule | Description | Count |' >> $GITHUB_STEP_SUMMARY
+              echo '|------|-------------|-------|' >> $GITHUB_STEP_SUMMARY
+              
+              # Extract unique error types and count them
+              jq -r '.[] | .errors[] | .ruleNames[0]' lint-errors.json 2>/dev/null | sort | uniq -c | sort -rn | while read count rule; do
+                case "$rule" in
+                  "MD012") desc="Multiple consecutive blank lines" ;;
+                  "MD025") desc="Multiple top-level headings (H1)" ;;
+                  "MD029") desc="Ordered list item prefix issues" ;;
+                  "MD041") desc="First line should be a top-level heading" ;;
+                  "MD024") desc="Duplicate headings" ;;
+                  "MD034") desc="Bare URLs (should be in markdown links)" ;;
+                  "MD004") desc="Unordered list style consistency" ;;
+                  *) desc="See [markdownlint rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)" ;;
+                esac
+                echo "| **$rule** | $desc | $count |" >> $GITHUB_STEP_SUMMARY
+              done
+              
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "### Top Files with Errors" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              jq -r '.[] | "\(.fileName): \(.errors | length) error(s)"' lint-errors.json 2>/dev/null | sort -t: -k2 -rn | head -10 | while read line; do
+                file=$(echo "$line" | cut -d: -f1)
+                count=$(echo "$line" | cut -d: -f2)
+                echo "- \`$file\`: $count error(s)" >> $GITHUB_STEP_SUMMARY
+              done
+              
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "### How to Fix" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "1. Review detailed errors in the 'Lint Markdown' step above" >> $GITHUB_STEP_SUMMARY
+              echo "2. Auto-fix many issues: \`npx markdownlint-cli2-fix '**/*.md'\`" >> $GITHUB_STEP_SUMMARY
+              echo "3. Check errors locally: \`npx markdownlint-cli2 '**/*.md'\`" >> $GITHUB_STEP_SUMMARY
+              echo "4. See [markdownlint rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md) for details" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "> **Note**: These are styling issues and do not block PRs. Fix them incrementally when convenient." >> $GITHUB_STEP_SUMMARY
+            else
+              echo "## ✅ No Linting Errors" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "All markdown files passed linting checks!" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "## ⚠️ Could not generate error summary" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Check the 'Lint Markdown' step above for detailed error messages." >> $GITHUB_STEP_SUMMARY
+          fi
       
       - name: Check for broken links
         uses: peter-evans/link-checker@v1

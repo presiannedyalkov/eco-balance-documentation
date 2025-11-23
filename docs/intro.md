@@ -14,7 +14,7 @@ slug: "/"
 
 ## 🎯 Vision
 
-Create a **habitat for wildlife** and **restore land to become a shelter and sanctuary for wildlife**. Through diverse tree and plant communities, soil restoration that enhances fungal populations and mycorrhizal networks, and the creation of varied microhabitats, we build ecological resilience and increase biodiversity. This is our primary purpose - to provide sanctuary and shelter for wildlife in the face of climate change and mass extinction.
+Create **shelter and sanctuary for wildlife** by restoring damaged habitats and degraded ecosystems. Through diverse tree and plant communities, soil restoration that enhances fungal populations and mycorrhizal networks, and the creation of varied microhabitats, we build ecological resilience and increase biodiversity. This is our primary purpose - to provide sanctuary and shelter for wildlife in the face of climate change and mass extinction.
 
 **Why this matters:** We believe in a better world and strive to create it. We want to combat the effects of climate change and bring the anthropocenic system in balance with nature. Creating space for wildlife and restoring land and habitats is how we operationalize these values.
 

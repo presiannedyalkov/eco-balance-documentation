@@ -33,6 +33,7 @@ jobs:
       run: npm ci
     
     - name: Run local CodeQL checker
+      id: codeql_check
       continue-on-error: true
       run: |
         echo "Running local CodeQL checker..."
@@ -40,7 +41,52 @@ jobs:
         echo "It may flag issues that GitHub CodeQL doesn't flag."
         echo "GitHub CodeQL is the authoritative source for security alerts."
         echo ""
-        npm run check:codeql:simple
+        npm run check:codeql:simple 2>&1 | tee codeql-output.log || CODEQL_EXIT=$?
         echo ""
         echo "✅ Check complete. Check GitHub CodeQL scanning page for actual alerts."
+        echo "codeql_exit=${CODEQL_EXIT:-0}" >> $GITHUB_OUTPUT
+    
+    - name: Generate CodeQL Check Summary
+      if: always()
+      run: |
+        echo "# 🔒 CodeQL Security Check Report" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ -f codeql-output.log ]; then
+          ERROR_COUNT=$(grep -c "potential security issue" codeql-output.log 2>/dev/null || echo "0")
+          
+          if [ "$ERROR_COUNT" != "0" ] && [ "${{ steps.codeql_check.outcome }}" == "failure" ]; then
+            echo "## ⚠️ Security Issues Found: $ERROR_COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The local CodeQL checker found **$ERROR_COUNT** potential security issue(s)." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "> **Note**: This checker is stricter than GitHub CodeQL. GitHub CodeQL is the authoritative source." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Common Issues" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "- **Log Injection**: User input logged without sanitization" >> $GITHUB_STEP_SUMMARY
+            echo "- **Path Traversal**: Unsanitized file paths" >> $GITHUB_STEP_SUMMARY
+            echo "- **SQL Injection**: Unsanitized database queries" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### How to Fix" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review detailed errors in the 'Run local CodeQL checker' step above" >> $GITHUB_STEP_SUMMARY
+            echo "2. Sanitize user input before logging: \`String(value).replace(/[\\r\\n]/g, ' ').substring(0, 200)\`" >> $GITHUB_STEP_SUMMARY
+            echo "3. Check GitHub CodeQL scanning page for official alerts" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Top Issues" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            grep -E "^[0-9]+\." codeql-output.log | head -10 | while read line; do
+              echo "- $line" >> $GITHUB_STEP_SUMMARY
+            done
+          else
+            echo "## ✅ No Security Issues Found" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "No security issues detected by the local CodeQL checker." >> $GITHUB_STEP_SUMMARY
+          fi
+        else
+          echo "## ⚠️ Could not generate summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check the 'Run local CodeQL checker' step above for details." >> $GITHUB_STEP_SUMMARY
+        fi
 

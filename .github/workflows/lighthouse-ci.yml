@@ -87,6 +87,7 @@ jobs:
           retention-days: 7
       
       - name: Run Lighthouse CI
+        id: lighthouse
         uses: treosh/lighthouse-ci-action@v12
         with:
           urls: |
@@ -160,6 +161,18 @@ jobs:
       - name: Format Lighthouse scores
         if: always()
         run: |
+          echo "# 📊 Lighthouse Performance Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.lighthouse.outcome }}" == "failure" ]; then
+            echo "## ⚠️ Lighthouse Audit Failed" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The Lighthouse audit did not meet the configured thresholds. This is **non-blocking**." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Check the 'Run Lighthouse CI' step above for detailed performance issues." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+          
           echo "## 📊 Lighthouse Scores" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Category | Score | Status |" >> $GITHUB_STEP_SUMMARY

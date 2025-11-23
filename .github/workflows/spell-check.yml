@@ -18,12 +18,38 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Check spelling
+        id: spellcheck
         uses: streetsidesoftware/cspell-action@v8
         with:
           files: "**/*.md"
           config: ".cspell.json"
           inline: "error"
         continue-on-error: true
+      
+      - name: Generate Spell Check Summary
+        if: always()
+        run: |
+          echo "# 📝 Spell Check Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.spellcheck.outcome }}" == "failure" ]; then
+            echo "## ❌ Spelling Errors Found" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The spell checker found issues in the documentation. These are **non-blocking**." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### How to Fix" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review the detailed errors in the 'Check spelling' step above" >> $GITHUB_STEP_SUMMARY
+            echo "2. Check errors locally: \`npx cspell '**/*.md'\`" >> $GITHUB_STEP_SUMMARY
+            echo "3. Add words to dictionary: Edit \`.cspell.json\` to add words to \`words\` array" >> $GITHUB_STEP_SUMMARY
+            echo "4. Ignore specific files: Add to \`ignorePaths\` in \`.cspell.json\`" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "> **Note**: These are non-blocking. Fix spelling errors incrementally when convenient." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ✅ No Spelling Errors" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "All markdown files passed spell checking!" >> $GITHUB_STEP_SUMMARY
+          fi
       
       - name: Upload spell check results
         if: always()
