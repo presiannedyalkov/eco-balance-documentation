@@ -10,7 +10,7 @@
 
 > **Our Core Vision**:
 > 
-> Create a **habitat for wildlife** and **restore land to become a shelter and sanctuary for wildlife**. Through diverse tree and plant communities, soil restoration that enhances fungal populations and mycorrhizal networks, and the creation of varied microhabitats, we build ecological resilience and increase biodiversity. This is our primary purpose - to provide sanctuary and shelter for wildlife in the face of climate change and mass extinction.
+> Create **shelter and sanctuary for wildlife** by restoring damaged habitats and degraded ecosystems. Through diverse tree and plant communities, soil restoration that enhances fungal populations and mycorrhizal networks, and the creation of varied microhabitats, we build ecological resilience and increase biodiversity. This is our primary purpose - to provide sanctuary and shelter for wildlife in the face of climate change and mass extinction.
 
 **This is the immutable core of Eco Balance.** All other documents, plans, and operational details can and will change as we learn and adapt. But this vision - creating a habitat and sanctuary for wildlife through biodiversity restoration - is the anchor that remains constant.
 
