@@ -25,6 +25,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Lint Markdown
+        id: lint
         uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: |
@@ -41,6 +42,48 @@ jobs:
             !_templates/**/*.md
           config: .markdownlint.json
         continue-on-error: true
+      
+      - name: Generate Error Report Summary
+        if: always()
+        run: |
+          echo "# 📋 Markdown Linting Error Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Capture linting output
+          if [ "${{ steps.lint.outcome }}" == "failure" ] || [ "${{ steps.lint.conclusion }}" == "failure" ]; then
+            echo "## ❌ Linting Errors Found" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The markdown linter found issues in the documentation. These are **non-blocking** (styling issues only)." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            # Try to get error count and summary from the linting step
+            echo "### Error Summary" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Check the 'Lint Markdown' step above for detailed error messages." >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Common Error Types" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "- **MD012**: Multiple consecutive blank lines" >> $GITHUB_STEP_SUMMARY
+            echo "- **MD025**: Multiple top-level headings (H1)" >> $GITHUB_STEP_SUMMARY
+            echo "- **MD029**: Ordered list item prefix issues" >> $GITHUB_STEP_SUMMARY
+            echo "- **MD041**: First line should be a top-level heading" >> $GITHUB_STEP_SUMMARY
+            echo "- **MD024**: Duplicate headings" >> $GITHUB_STEP_SUMMARY
+            echo "- **MD034**: Bare URLs (should be in markdown links)" >> $GITHUB_STEP_SUMMARY
+            echo "- **MD004**: Unordered list style consistency" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### How to Fix" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "1. Review the detailed errors in the 'Lint Markdown' step above" >> $GITHUB_STEP_SUMMARY
+            echo "2. Fix errors locally using: \`npx markdownlint-cli2 '**/*.md'\`" >> $GITHUB_STEP_SUMMARY
+            echo "3. Auto-fix some issues: \`npx markdownlint-cli2-fix '**/*.md'\`" >> $GITHUB_STEP_SUMMARY
+            echo "4. See [markdownlint rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md) for details" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "> **Note**: These are styling issues and do not block PRs. Fix them incrementally when convenient." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ✅ No Linting Errors" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "All markdown files passed linting checks!" >> $GITHUB_STEP_SUMMARY
+          fi
       
       - name: Check for broken links
         uses: peter-evans/link-checker@v1
