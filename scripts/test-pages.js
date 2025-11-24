@@ -165,7 +165,9 @@ async function runTests() {
       process.exit(0);
     }
   } catch (error) {
-    console.error('❌ Test error:', error);
+    // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedError = error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    console.error('❌ Test error:', sanitizedError);
     process.exit(1);
   } finally {
     if (browser) {
