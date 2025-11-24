@@ -1,0 +1,38 @@
+#!/bin/bash
+# Git hook: post-checkout
+# Warns if a branch was created without using create-branch.sh
+# This helps enforce using the script to prevent conflicts
+
+# Only run when switching branches (not when checking out files)
+if [ "$3" = "1" ]; then
+  NEW_BRANCH=$(git branch --show-current)
+  
+  # Skip for main branch
+  if [ "$NEW_BRANCH" = "main" ]; then
+    exit 0
+  fi
+  
+  # Check if this is a new branch (just created)
+  # We can't perfectly detect this, but we can check if it's based on outdated main
+  if git show-ref --verify --quiet refs/heads/main; then
+    # Check if local main is behind origin/main
+    git fetch origin --quiet 2>/dev/null || true
+    BEHIND=$(git rev-list --count main..origin/main 2>/dev/null || echo "0")
+    
+    if [ "$BEHIND" -gt "0" ]; then
+      echo ""
+      echo "⚠️  WARNING: Local 'main' is $BEHIND commit(s) behind origin/main"
+      echo "   This branch may have conflicts when opening a PR"
+      echo ""
+      echo "💡 To fix:"
+      echo "   1. git checkout main"
+      echo "   2. git pull origin main"
+      echo "   3. git checkout $NEW_BRANCH"
+      echo "   4. git rebase main"
+      echo ""
+      echo "   Or use: ./scripts/fix-pr-conflicts.sh $NEW_BRANCH"
+      echo ""
+    fi
+  fi
+fi
+

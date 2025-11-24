@@ -140,8 +140,22 @@ git push --force-with-lease origin fix/my-branch
 1. **Never commit directly to `main`** - Always create a branch first
 2. **Always sync `main` before creating branches** - `git pull origin main`
 3. **Use the helper script** - `./scripts/create-branch.sh fix/name`
-4. **Check divergence regularly** - `git log main..origin/main`
-5. **Reset local main if needed** - `git reset --hard origin/main` (only if you're sure!)
+4. **AI Assistant: Use `./scripts/ai-create-branch.sh`** - Wrapper that enforces proper workflow
+5. **Check divergence regularly** - `git log main..origin/main`
+6. **Reset local main if needed** - `git reset --hard origin/main` (only if you're sure!)
+
+## For AI Assistants
+
+**IMPORTANT:** When creating branches programmatically, always use:
+```bash
+./scripts/ai-create-branch.sh fix/name
+```
+
+This wrapper script:
+- ✅ Enforces using the proper branch creation workflow
+- ✅ Prevents creating branches from outdated main
+- ✅ Ensures branches are always based on latest origin/main
+- ✅ Reduces PR conflicts significantly
 
 ## Why This Matters
 
