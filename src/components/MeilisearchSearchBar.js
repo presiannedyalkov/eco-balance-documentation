@@ -7,11 +7,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
-// Helper to sanitize log messages and prevent log injection
-function sanitizeLogMessage(value) {
-  return String(value).replace(/[\r\n]/g, ' ').substring(0, 200);
-}
-
 function MeilisearchSearchBar() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
@@ -108,13 +103,15 @@ function MeilisearchSearchBar() {
       return;
     }
 
-    // Sanitize user input before logging
-    console.log('🔍 [MeilisearchSearchBar] Starting search:', sanitizeLogMessage(searchQuery));
+    // Sanitize user input before logging (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedQuery = String(searchQuery).replace(/[\r\n]/g, ' ').substring(0, 200);
+    console.log('🔍 [MeilisearchSearchBar] Starting search:', sanitizedQuery);
     setIsLoading(true);
     try {
       const url = `${meilisearchHost}/indexes/${indexName}/search`;
-      // Sanitize URL before logging
-      console.log('🔍 [MeilisearchSearchBar] Fetching:', sanitizeLogMessage(url));
+      // Sanitize URL before logging (inline sanitization like in meilisearch-plugin.js)
+      const sanitizedUrl = String(url).replace(/[\r\n]/g, ' ').substring(0, 200);
+      console.log('🔍 [MeilisearchSearchBar] Fetching:', sanitizedUrl);
       
       // Create abort controller for timeout (10 seconds)
       const controller = new AbortController();
@@ -140,8 +137,9 @@ function MeilisearchSearchBar() {
       
       if (!response.ok) {
         const errorText = await response.text();
-        // Sanitize error text before logging
-        console.error('❌ [MeilisearchSearchBar] Search failed:', response.status, sanitizeLogMessage(errorText));
+        // Sanitize error text before logging (inline sanitization like in meilisearch-plugin.js)
+        const sanitizedErrorText = errorText ? String(errorText).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+        console.error('❌ [MeilisearchSearchBar] Search failed:', response.status, sanitizedErrorText);
         
         // Set error message based on status code
         if (response.status === 500) {
@@ -168,12 +166,12 @@ function MeilisearchSearchBar() {
       });
       setResults(data.hits || []);
     } catch (error) {
-      // Sanitize error messages to prevent log injection
-      const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
-      const sanitizedName = error?.name ? sanitizeLogMessage(error.name) : 'Unknown';
-      const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
-      const sanitizedStack = error?.stack ? sanitizeLogMessage(error.stack) : 'No stack';
-      const sanitizedType = error?.constructor?.name ? sanitizeLogMessage(error.constructor.name) : 'Unknown';
+      // Sanitize error messages to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+      const sanitizedError = error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+      const sanitizedName = error?.name ? String(error.name).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown';
+      const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No message';
+      const sanitizedStack = error?.stack ? String(error.stack).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No stack';
+      const sanitizedType = error?.constructor?.name ? String(error.constructor.name).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown';
       console.error('❌ [MeilisearchSearchBar] Search error:', sanitizedError);
       console.error('  - Error name:', sanitizedName);
       console.error('  - Error message:', sanitizedMessage);
@@ -266,10 +264,10 @@ function MeilisearchSearchBar() {
           console.log('✅ [MeilisearchSearchBar] Health check data:', data);
         })
         .catch(error => {
-          // Sanitize error messages to prevent log injection
-          const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
-          const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
-          const sanitizedStack = error?.stack ? sanitizeLogMessage(error.stack) : 'No stack';
+          // Sanitize error messages to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+          const sanitizedError = error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+          const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No message';
+          const sanitizedStack = error?.stack ? String(error.stack).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No stack';
           console.error('❌ [MeilisearchSearchBar] Health check failed:', sanitizedError);
           console.error('  - Error message:', sanitizedMessage);
           console.error('  - Error stack:', sanitizedStack);
@@ -288,8 +286,9 @@ function MeilisearchSearchBar() {
           console.log('🔍 [MeilisearchSearchBar] Search endpoint test:', response.status, response.statusText);
           if (!response.ok) {
             return response.text().then(text => {
-              // Sanitize error text before logging
-              console.error('❌ [MeilisearchSearchBar] Search endpoint error:', sanitizeLogMessage(text));
+              // Sanitize error text before logging (inline sanitization like in meilisearch-plugin.js)
+              const sanitizedText = text ? String(text).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+              console.error('❌ [MeilisearchSearchBar] Search endpoint error:', sanitizedText);
             });
           }
           return response.json();
@@ -298,9 +297,9 @@ function MeilisearchSearchBar() {
           console.log('✅ [MeilisearchSearchBar] Search endpoint accessible, estimated documents:', data.estimatedTotalHits || 'N/A');
         })
         .catch(error => {
-          // Sanitize error messages to prevent log injection
-          const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
-          const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
+          // Sanitize error messages to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+          const sanitizedError = error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+          const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No message';
           console.error('❌ [MeilisearchSearchBar] Search endpoint test failed:', sanitizedError);
           console.error('  - Error message:', sanitizedMessage);
           console.error('  - This might be a CORS issue or network problem');
@@ -377,8 +376,9 @@ function MeilisearchSearchBar() {
           placeholder="Search docs (Press '/' to focus)"
           value={query}
           onChange={(e) => {
-            // Sanitize user input before logging
-            console.log('🔍 [MeilisearchSearchBar] Input changed:', sanitizeLogMessage(e.target.value));
+            // Sanitize user input before logging (inline sanitization like in meilisearch-plugin.js)
+            const sanitizedValue = String(e.target.value).replace(/[\r\n]/g, ' ').substring(0, 200);
+            console.log('🔍 [MeilisearchSearchBar] Input changed:', sanitizedValue);
             setQuery(e.target.value);
           }}
           onFocus={() => {

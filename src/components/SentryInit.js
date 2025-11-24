@@ -8,11 +8,6 @@
 import * as Sentry from '@sentry/react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
-// Helper to sanitize log messages and prevent log injection
-function sanitizeLogMessage(value) {
-  return String(value).replace(/[\r\n]/g, ' ').substring(0, 200);
-}
-
 function initSentry() {
   // Only initialize in browser (not during SSR)
   if (!ExecutionEnvironment.canUseDOM) {
@@ -152,10 +147,10 @@ function initSentry() {
       console.error('❌ [Sentry] Initialization completed but captureException not available!');
     }
   } catch (error) {
-    // Sanitize error messages to prevent log injection
-    const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
-    const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
-    const sanitizedStack = error?.stack ? sanitizeLogMessage(error.stack) : 'No stack';
+    // Sanitize error messages to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedError = error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No message';
+    const sanitizedStack = error?.stack ? String(error.stack).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No stack';
     console.error('❌ [Sentry] Initialization failed:', sanitizedError);
     console.error('❌ [Sentry] Error details:', sanitizedMessage, sanitizedStack);
   }

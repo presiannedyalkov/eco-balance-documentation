@@ -18,11 +18,6 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 // Initialize Sentry for error tracking
 import './components/SentryInit';
 
-// Helper to sanitize log messages and prevent log injection
-function sanitizeLogMessage(value) {
-  return String(value).replace(/[\r\n]/g, ' ').substring(0, 200);
-}
-
 // Client-side module for Docusaurus 3.x
 // This module is imported as a side effect by '@generated/client-modules'
 // Top-level code executes when the module is imported in the browser
@@ -149,18 +144,19 @@ function clientModule() {
               visible: input.offsetWidth > 0 && input.offsetHeight > 0,
             });
           } else {
-            // Sanitize innerHTML before logging (may contain user-controlled content)
-            console.warn('  - No input found, checking wrapper content:', sanitizeLogMessage(searchWrapper.innerHTML));
+            // Sanitize innerHTML before logging (may contain user-controlled content) (inline sanitization like in meilisearch-plugin.js)
+            const sanitizedHTML = String(searchWrapper.innerHTML).replace(/[\r\n]/g, ' ').substring(0, 200);
+            console.warn('  - No input found, checking wrapper content:', sanitizedHTML);
           }
         }, 500); // Increased delay to allow React to render
         
         return true;
       } catch (error) {
-        // Sanitize error messages to prevent log injection
-        const sanitizedError = error ? sanitizeLogMessage(error) : 'Unknown error';
-        const sanitizedMessage = error?.message ? sanitizeLogMessage(error.message) : 'No message';
-        const sanitizedName = error?.name ? sanitizeLogMessage(error.name) : 'Unknown';
-        const sanitizedStack = error?.stack ? sanitizeLogMessage(error.stack) : 'No stack';
+        // Sanitize error messages to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+        const sanitizedError = error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+        const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No message';
+        const sanitizedName = error?.name ? String(error.name).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown';
+        const sanitizedStack = error?.stack ? String(error.stack).replace(/[\r\n]/g, ' ').substring(0, 200) : 'No stack';
         console.error('❌ [clientModules] Error mounting search bar:', sanitizedError);
         console.error('  - Error message:', sanitizedMessage);
         console.error('  - Error name:', sanitizedName);
