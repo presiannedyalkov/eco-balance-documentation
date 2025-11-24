@@ -557,7 +557,6 @@ test.describe('Deployment Verification', () => {
     
     // Check for Docusaurus baseUrl error banner
     // This banner appears when baseUrl doesn't match the actual URL
-    const errorBanner = page.locator('[class*="docusaurus-mount-node"], [class*="baseUrl"], [id*="docusaurus"]');
     const errorBannerText = await page.locator('body').textContent();
     
     // Check if the error banner text is present (Docusaurus shows a warning when baseUrl is wrong)
