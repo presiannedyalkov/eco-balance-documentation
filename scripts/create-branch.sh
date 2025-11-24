@@ -32,6 +32,10 @@ else
   STASHED=false
 fi
 
+# Always fetch latest from origin first
+echo "📥 Fetching latest from origin..."
+git fetch origin
+
 # Switch to main
 echo "🔄 Switching to main..."
 git checkout main
@@ -49,17 +53,17 @@ fi
 
 if [ "$LOCAL_COMMITS" -gt 0 ]; then
   echo "⚠️  Warning: Local main has $LOCAL_COMMITS commit(s) not in origin/main"
-  echo "   These commits will be included in your new branch"
-  echo "   Consider: git reset --hard origin/main (if you want to discard them)"
-  read -p "   Continue anyway? (y/N) " -n 1 -r
+  echo "   This usually means commits were made directly to local main"
+  echo "   These should be moved to a branch instead"
+  read -p "   Reset local main to match origin/main? (y/N) " -n 1 -r
   echo
-  if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    echo "❌ Aborted"
-    if [ "$STASHED" = true ]; then
-      git stash pop
-    fi
-    git checkout "$CURRENT_BRANCH" 2>/dev/null || true
-    exit 1
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "🔄 Resetting local main to origin/main..."
+    git reset --hard origin/main
+    echo "✅ Local main reset to match origin/main"
+  else
+    echo "⚠️  Keeping local commits - they will be included in your new branch"
+    echo "   This may cause conflicts in PRs"
   fi
 fi
 

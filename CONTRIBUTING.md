@@ -214,6 +214,45 @@ When opening a PR, use this template:
 4. **❌ Skipping PR**
    - ✅ All changes must go through PR
 
+## 🔧 Fixing PR Conflicts
+
+If your PR has conflicts with `main`, use the helper script:
+
+```bash
+# Automatically fixes conflicts by:
+# 1. Finding your unique commits
+# 2. Resetting branch to origin/main
+# 3. Cherry-picking your commits back
+# 4. Force pushing (safe with --force-with-lease)
+
+./scripts/fix-pr-conflicts.sh [branch-name]
+```
+
+**Manual method:**
+```bash
+# 1. Fetch latest
+git fetch origin
+
+# 2. Switch to your branch
+git checkout your-branch-name
+
+# 3. Reset to origin/main and cherry-pick your commits
+git reset --hard origin/main
+git cherry-pick <commit-sha-1> <commit-sha-2> ...
+
+# 4. Force push (safe)
+git push origin your-branch-name --force-with-lease
+```
+
+**Why conflicts happen:**
+- Branch was created from outdated `main`
+- Other PRs were merged while you were working
+- Local `main` wasn't synced before creating branch
+
+**Prevention:**
+- Always use `./scripts/create-branch.sh` to create branches
+- This automatically syncs `main` first
+
 ---
 
 ## 🔄 Sync Your Fork (If Using Fork Workflow)
