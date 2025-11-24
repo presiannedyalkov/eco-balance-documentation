@@ -221,7 +221,6 @@ console.log('   and only flags actual user-controlled data.\n');
 let filesToCheck = [];
 const isCI = process.env.CI === 'true';
 const baseRef = process.env.GITHUB_BASE_REF || 'main';
-const headRef = process.env.GITHUB_HEAD_REF || process.env.GITHUB_REF?.replace('refs/heads/', '') || 'HEAD';
 
 if (isCI && process.env.GITHUB_EVENT_NAME === 'pull_request') {
   // Get changed files from git diff
