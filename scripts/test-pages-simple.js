@@ -134,8 +134,10 @@ async function runTests() {
       process.exit(0);
     }
   } catch (error) {
-    console.error('❌ Test error:', String(error.message));
-    if (error.message.includes('ECONNREFUSED') || error.message.includes('connect')) {
+    // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    console.error('❌ Test error:', sanitizedMessage);
+    if (error?.message && (error.message.includes('ECONNREFUSED') || error.message.includes('connect'))) {
       console.error('\n💡 Make sure the server is running:');
       console.error('   npm start');
     }
