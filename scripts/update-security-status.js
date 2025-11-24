@@ -221,13 +221,9 @@ async function main() {
       getDependabotAlerts()
     ]);
   } catch (error) {
-    // Sanitize error message to prevent log injection
-    const rawMessage = String(error?.message || 'Unknown error');
-    const sanitizedError = rawMessage
-      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200); // Limit length
-    console.error('❌ Error fetching alerts:', String(sanitizedError));
+    // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedError = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    console.error('❌ Error fetching alerts:', sanitizedError);
     // Use empty counts if fetch fails
     codeQL = { critical: 0, high: 0, medium: 0, low: 0, note: 0, total: 0, error: true };
     dependabot = { critical: 0, high: 0, moderate: 0, low: 0, total: 0, error: true };
@@ -258,13 +254,9 @@ async function main() {
     console.log('✅ README.md updated successfully!');
     process.exit(0);
   } catch (error) {
-    // Sanitize error message to prevent log injection
-    const rawMessage = String(error?.message || 'Unknown error');
-    const sanitizedError = rawMessage
-      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200); // Limit length
-    console.error('❌ Error updating README:', String(sanitizedError));
+    // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedError = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    console.error('❌ Error updating README:', sanitizedError);
     process.exit(1);
   }
 }

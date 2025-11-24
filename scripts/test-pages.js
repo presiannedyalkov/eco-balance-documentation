@@ -104,13 +104,10 @@ async function testPage(browser, url) {
     return { url, status: 'success' };
   } catch (error) {
     // Sanitize error message to prevent log injection
-    const rawMessage = String(error?.message || 'Unknown error');
-    const sanitizedError = rawMessage
-      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200); // Limit length
-    const sanitizedUrl = String(url || '').replace(/[\r\n]/g, ' ').substring(0, 100);
-    console.error('  ❌', String(sanitizedUrl), '- FAILED:', String(sanitizedError));
+    // Sanitize error message and URL to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedError = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    const sanitizedUrl = url ? String(url).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown URL';
+    console.error('  ❌', sanitizedUrl, '- FAILED:', sanitizedError);
     return { url, status: 'failed', error: error.message };
   } finally {
     await page.close();
@@ -168,7 +165,9 @@ async function runTests() {
       process.exit(0);
     }
   } catch (error) {
-    console.error('❌ Test error:', error);
+    // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedError = error ? String(error).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    console.error('❌ Test error:', sanitizedError);
     process.exit(1);
   } finally {
     if (browser) {

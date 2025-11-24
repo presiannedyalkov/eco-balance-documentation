@@ -75,12 +75,9 @@ async function testPage(browser, url) {
     return { url, status: 'success', httpStatus: status, title };
   } catch (error) {
     // Sanitize error message and URL to prevent log injection
-    const rawMessage = String(error?.message || 'Unknown error');
-    const sanitizedError = rawMessage
-      .replace(/[\x00-\x1F\x7F-\x9F]/g, '') // Remove control characters
-      .replace(/[\r\n]/g, ' ') // Replace newlines with spaces
-      .substring(0, 200); // Limit length
-    const sanitizedUrl = String(url || '').replace(/[\r\n]/g, ' ').substring(0, 200);
+    // Sanitize error message and URL to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedError = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    const sanitizedUrl = url ? String(url).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown URL';
     console.error('  ❌', sanitizedUrl, '- FAILED:', sanitizedError);
     return { url, status: 'failed', error: error.message };
   } finally {
@@ -137,8 +134,10 @@ async function runTests() {
       process.exit(0);
     }
   } catch (error) {
-    console.error('❌ Test error:', String(error.message));
-    if (error.message.includes('ECONNREFUSED') || error.message.includes('connect')) {
+    // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+    console.error('❌ Test error:', sanitizedMessage);
+    if (error?.message && (error.message.includes('ECONNREFUSED') || error.message.includes('connect'))) {
       console.error('\n💡 Make sure the server is running:');
       console.error('   npm start');
     }

@@ -49,7 +49,9 @@ try {
   }
   
 } catch (error) {
-  console.error('❌ Error reading file:', String(error.message));
+  // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+  const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
+  console.error('❌ Error reading file:', sanitizedMessage);
   process.exit(1);
 }
 
