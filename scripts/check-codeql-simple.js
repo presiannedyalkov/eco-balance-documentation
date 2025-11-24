@@ -279,9 +279,11 @@ if (isCI && process.env.GITHUB_EVENT_NAME === 'pull_request') {
     }
   } catch (error) {
     // In CI, if git command fails, skip the check
+    // Sanitize error message to prevent log injection (inline sanitization like in meilisearch-plugin.js)
+    const sanitizedMessage = error?.message ? String(error.message).replace(/[\r\n]/g, ' ').substring(0, 200) : 'Unknown error';
     console.log('⚠️  Could not determine changed files in CI (git command failed).');
     console.log('   Skipping check to avoid false positives from pre-existing issues.\n');
-    console.log('   Error:', error.message);
+    console.log('   Error:', sanitizedMessage);
     process.exit(0);
   }
 } else {
