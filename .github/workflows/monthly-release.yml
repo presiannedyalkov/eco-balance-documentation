@@ -342,7 +342,9 @@ jobs:
         if: steps.changes.outputs.has_changes == 'true'
         run: |
           VERSION="${{ steps.version.outputs.version }}"
-          VERSION_DIR="${{ steps.changelog.outputs.version_dir || '_versions/v'${VERSION//-/.} }}"
+          # Convert version format from YYYY-MM to YYYY.MM for directory name
+          VERSION_DOT="${VERSION//-/.}"
+          VERSION_DIR="_versions/v${VERSION_DOT}"
           if [ -f "release-notes-temp.md" ]; then
             cp release-notes-temp.md "${VERSION_DIR}/RELEASE_NOTES.md"
             echo "✅ Release notes saved to ${VERSION_DIR}/RELEASE_NOTES.md"
