@@ -1,21 +1,15 @@
 name: Deploy to GitHub Pages
 
 on:
+  # Triggered when VERSION file changes (monthly releases)
   push:
     branches:
       - main
     paths:
-      # Only deploy when documentation or config changes
-      - 'docs/**'
-      - 'strategic/**'
-      - 'website/**'
-      - 'src/**'
-      - 'docusaurus.config.js'
-      - 'sidebars.js'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'CNAME'
-      - '.github/workflows/deploy.yml'
+      - 'VERSION'
+  # Can be called by other workflows (e.g., monthly-release)
+  workflow_call:
+  # Manual trigger for urgent deployments
   workflow_dispatch:
 
 jobs:

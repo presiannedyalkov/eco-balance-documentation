@@ -49,33 +49,98 @@ jobs:
         id: release_notes
         run: |
           VERSION="${{ steps.version.outputs.version }}"
+          REPO_URL="${{ github.repository }}"
           
-          # Get merged PRs since last release
+          # Get last release tag
           LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
           
+          # Get commit information
           if [ -z "$LAST_TAG" ]; then
             echo "No previous release found, including all commits"
             COMMITS=$(git log --pretty=format:"- %s (%h)" --no-merges)
+            COMMIT_COUNT=$(git rev-list --count HEAD 2>/dev/null || echo "0")
+            COMMIT_RANGE="HEAD"
           else
             echo "Last release: $LAST_TAG"
             COMMITS=$(git log ${LAST_TAG}..HEAD --pretty=format:"- %s (%h)" --no-merges)
+            COMMIT_COUNT=$(git rev-list --count ${LAST_TAG}..HEAD 2>/dev/null || echo "0")
+            COMMIT_RANGE="${LAST_TAG}..HEAD"
           fi
           
-          # Get closed issues for this version
-          # Note: This requires issues to be linked to milestones or tagged
+          # Get file statistics
+          if [ -z "$LAST_TAG" ]; then
+            FILES_ADDED=$(git diff --name-status --diff-filter=A HEAD~1 HEAD 2>/dev/null | wc -l || echo "0")
+            FILES_MODIFIED=$(git diff --name-status --diff-filter=M HEAD~1 HEAD 2>/dev/null | wc -l || echo "0")
+            FILES_DELETED=$(git diff --name-status --diff-filter=D HEAD~1 HEAD 2>/dev/null | wc -l || echo "0")
+            LINES_STAT=$(git diff --shortstat HEAD~1 HEAD 2>/dev/null || echo "N/A")
+            DIFF_URL="https://github.com/${REPO_URL}/compare/HEAD~1...HEAD"
+          else
+            FILES_ADDED=$(git diff --name-status --diff-filter=A ${LAST_TAG}..HEAD 2>/dev/null | wc -l || echo "0")
+            FILES_MODIFIED=$(git diff --name-status --diff-filter=M ${LAST_TAG}..HEAD 2>/dev/null | wc -l || echo "0")
+            FILES_DELETED=$(git diff --name-status --diff-filter=D ${LAST_TAG}..HEAD 2>/dev/null | wc -l || echo "0")
+            LINES_STAT=$(git diff --shortstat ${LAST_TAG}..HEAD 2>/dev/null || echo "N/A")
+            DIFF_URL="https://github.com/${REPO_URL}/compare/${LAST_TAG}...HEAD"
+          fi
           
-          RELEASE_NOTES="## Release $VERSION
+          TOTAL_FILES=$((FILES_ADDED + FILES_MODIFIED + FILES_DELETED))
           
-          ### Changes
-          $COMMITS
+          # Get release date
+          RELEASE_DATE=$(date -u +"%B %d, %Y")
           
-          ### Documentation
-          - Full documentation available at: https://docs.eco-balance.cc/
-          - Download PDF/EPUB: See [Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)
-          "
-          
+          # Build release notes - match exact pattern from pr-auto-fill-template.yml
           echo "notes<<EOF" >> $GITHUB_OUTPUT
-          echo "$RELEASE_NOTES" >> $GITHUB_OUTPUT
+          echo "## Release ${VERSION//-/.}" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "**Release Date:** ${RELEASE_DATE}" >> $GITHUB_OUTPUT
+          echo "**Version:** ${VERSION//-/.}" >> $GITHUB_OUTPUT
+          echo "**Previous Version:** ${LAST_TAG:-'N/A'}" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 📈 Statistics" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "- **Commits:** ${COMMIT_COUNT} commits since ${LAST_TAG:-'beginning'}" >> $GITHUB_OUTPUT
+          echo "- **Files Changed:** ${TOTAL_FILES} files" >> $GITHUB_OUTPUT
+          echo "  - Added: ${FILES_ADDED} files" >> $GITHUB_OUTPUT
+          echo "  - Modified: ${FILES_MODIFIED} files" >> $GITHUB_OUTPUT
+          echo "  - Deleted: ${FILES_DELETED} files" >> $GITHUB_OUTPUT
+          echo "- **Lines Changed:** ${LINES_STAT}" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 🔄 Changes Since Last Release" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Commits" >> $GITHUB_OUTPUT
+          if [ -n "$COMMITS" ]; then
+            echo "$COMMITS" >> $GITHUB_OUTPUT
+          else
+            echo "No commits found" >> $GITHUB_OUTPUT
+          fi
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Diff Summary" >> $GITHUB_OUTPUT
+          echo "[View full diff](${DIFF_URL})" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 📝 Detailed Changelog" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Added" >> $GITHUB_OUTPUT
+          if [ -n "$COMMITS" ]; then
+            echo "$COMMITS" >> $GITHUB_OUTPUT
+          else
+            echo "No commits found" >> $GITHUB_OUTPUT
+          fi
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Changed" >> $GITHUB_OUTPUT
+          echo "See diff for detailed changes." >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 🔗 Related" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "- [Full Diff](${DIFF_URL})" >> $GITHUB_OUTPUT
+          echo "- [Documentation](https://docs.eco-balance.cc/)" >> $GITHUB_OUTPUT
+          echo "- [Download PDF/EPUB](https://github.com/${REPO_URL}/releases)" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
       
       - name: Check for exported files
