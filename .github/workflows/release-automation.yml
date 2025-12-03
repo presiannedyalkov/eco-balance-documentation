@@ -87,51 +87,63 @@ jobs:
           # Get release date
           RELEASE_DATE=$(date -u +"%B %d, %Y")
           
-          # Build comprehensive release notes - build line by line to avoid YAML parser issues
+          # Build release notes directly to GITHUB_OUTPUT to avoid YAML parser issues
           {
-            printf '## Release %s\n\n' "${VERSION//-/.}"
-            printf '**Release Date:** %s\n' "${RELEASE_DATE}"
-            printf '**Version:** %s\n' "${VERSION//-/.}"
-            printf '**Previous Version:** %s\n\n' "${LAST_TAG:-'N/A'}"
-            printf '---\n\n'
-            printf '## 📈 Statistics\n\n'
-            printf '- **Commits:** %s commits since %s\n' "${COMMIT_COUNT}" "${LAST_TAG:-'beginning'}"
-            printf '- **Files Changed:** %s files\n' "${TOTAL_FILES}"
-            printf '  - Added: %s files\n' "${FILES_ADDED}"
-            printf '  - Modified: %s files\n' "${FILES_MODIFIED}"
-            printf '  - Deleted: %s files\n' "${FILES_DELETED}"
-            printf '- **Lines Changed:** %s\n\n' "${LINES_STAT}"
-            printf '---\n\n'
-            printf '## 🔄 Changes Since Last Release\n\n'
-            printf '### Commits\n'
+            echo "notes<<RELEASE_NOTES_EOF"
+            echo "## Release ${VERSION//-/.}"
+            echo ""
+            echo "**Release Date:** ${RELEASE_DATE}"
+            echo "**Version:** ${VERSION//-/.}"
+            echo "**Previous Version:** ${LAST_TAG:-'N/A'}"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 📈 Statistics"
+            echo ""
+            echo "- **Commits:** ${COMMIT_COUNT} commits since ${LAST_TAG:-'beginning'}"
+            echo "- **Files Changed:** ${TOTAL_FILES} files"
+            echo "  - Added: ${FILES_ADDED} files"
+            echo "  - Modified: ${FILES_MODIFIED} files"
+            echo "  - Deleted: ${FILES_DELETED} files"
+            echo "- **Lines Changed:** ${LINES_STAT}"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 🔄 Changes Since Last Release"
+            echo ""
+            echo "### Commits"
             if [ -n "$COMMITS" ]; then
-              printf '%s\n' "$COMMITS"
+              echo "$COMMITS"
             else
-              printf 'No commits found\n'
+              echo "No commits found"
             fi
-            printf '\n### Diff Summary\n'
-            printf '[View full diff](%s)\n\n' "${DIFF_URL}"
-            printf '---\n\n'
-            printf '## 📝 Detailed Changelog\n\n'
-            printf '### Added\n'
+            echo ""
+            echo "### Diff Summary"
+            echo "[View full diff](${DIFF_URL})"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 📝 Detailed Changelog"
+            echo ""
+            echo "### Added"
             if [ -n "$COMMITS" ]; then
-              printf '%s\n' "$COMMITS"
+              echo "$COMMITS"
             else
-              printf 'No commits found\n'
+              echo "No commits found"
             fi
-            printf '\n### Changed\n'
-            printf 'See diff for detailed changes.\n\n'
-            printf '---\n\n'
-            printf '## 🔗 Related\n\n'
-            printf '- [Full Diff](%s)\n' "${DIFF_URL}"
-            printf '- [Documentation](https://docs.eco-balance.cc/)\n'
-            printf '- [Download PDF/EPUB](https://github.com/%s/releases)\n' "${REPO_URL}"
-          } > /tmp/release_notes.txt
-          
-          # Output to GITHUB_OUTPUT using heredoc pattern
-          echo "notes<<EOF" >> $GITHUB_OUTPUT
-          cat /tmp/release_notes.txt >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+            echo ""
+            echo "### Changed"
+            echo "See diff for detailed changes."
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 🔗 Related"
+            echo ""
+            echo "- [Full Diff](${DIFF_URL})"
+            echo "- [Documentation](https://docs.eco-balance.cc/)"
+            echo "- [Download PDF/EPUB](https://github.com/${REPO_URL}/releases)"
+            echo "RELEASE_NOTES_EOF"
+          } >> $GITHUB_OUTPUT
       
       - name: Check for exported files
         id: exports
