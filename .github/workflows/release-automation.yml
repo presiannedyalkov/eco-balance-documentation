@@ -87,60 +87,50 @@ jobs:
           # Get release date
           RELEASE_DATE=$(date -u +"%B %d, %Y")
           
-          # Build comprehensive release notes
+          # Build comprehensive release notes - build line by line to avoid YAML parser issues
+          {
+            printf '## Release %s\n\n' "${VERSION//-/.}"
+            printf '**Release Date:** %s\n' "${RELEASE_DATE}"
+            printf '**Version:** %s\n' "${VERSION//-/.}"
+            printf '**Previous Version:** %s\n\n' "${LAST_TAG:-'N/A'}"
+            printf '---\n\n'
+            printf '## 📈 Statistics\n\n'
+            printf '- **Commits:** %s commits since %s\n' "${COMMIT_COUNT}" "${LAST_TAG:-'beginning'}"
+            printf '- **Files Changed:** %s files\n' "${TOTAL_FILES}"
+            printf '  - Added: %s files\n' "${FILES_ADDED}"
+            printf '  - Modified: %s files\n' "${FILES_MODIFIED}"
+            printf '  - Deleted: %s files\n' "${FILES_DELETED}"
+            printf '- **Lines Changed:** %s\n\n' "${LINES_STAT}"
+            printf '---\n\n'
+            printf '## 🔄 Changes Since Last Release\n\n'
+            printf '### Commits\n'
+            if [ -n "$COMMITS" ]; then
+              printf '%s\n' "$COMMITS"
+            else
+              printf 'No commits found\n'
+            fi
+            printf '\n### Diff Summary\n'
+            printf '[View full diff](%s)\n\n' "${DIFF_URL}"
+            printf '---\n\n'
+            printf '## 📝 Detailed Changelog\n\n'
+            printf '### Added\n'
+            if [ -n "$COMMITS" ]; then
+              printf '%s\n' "$COMMITS"
+            else
+              printf 'No commits found\n'
+            fi
+            printf '\n### Changed\n'
+            printf 'See diff for detailed changes.\n\n'
+            printf '---\n\n'
+            printf '## 🔗 Related\n\n'
+            printf '- [Full Diff](%s)\n' "${DIFF_URL}"
+            printf '- [Documentation](https://docs.eco-balance.cc/)\n'
+            printf '- [Download PDF/EPUB](https://github.com/%s/releases)\n' "${REPO_URL}"
+          } > /tmp/release_notes.txt
+          
+          # Output to GITHUB_OUTPUT using heredoc pattern
           echo "notes<<EOF" >> $GITHUB_OUTPUT
-          echo "## Release ${VERSION//-/.}" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "**Release Date:** ${RELEASE_DATE}" >> $GITHUB_OUTPUT
-          echo "**Version:** ${VERSION//-/.}" >> $GITHUB_OUTPUT
-          echo "**Previous Version:** ${LAST_TAG:-'N/A'}" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "---" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "## 📈 Statistics" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "- **Commits:** ${COMMIT_COUNT} commits since ${LAST_TAG:-'beginning'}" >> $GITHUB_OUTPUT
-          echo "- **Files Changed:** ${TOTAL_FILES} files" >> $GITHUB_OUTPUT
-          echo "  - Added: ${FILES_ADDED} files" >> $GITHUB_OUTPUT
-          echo "  - Modified: ${FILES_MODIFIED} files" >> $GITHUB_OUTPUT
-          echo "  - Deleted: ${FILES_DELETED} files" >> $GITHUB_OUTPUT
-          echo "- **Lines Changed:** ${LINES_STAT}" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "---" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "## 🔄 Changes Since Last Release" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "### Commits" >> $GITHUB_OUTPUT
-          if [ -n "$COMMITS" ]; then
-            echo "$COMMITS" >> $GITHUB_OUTPUT
-          else
-            echo "No commits found" >> $GITHUB_OUTPUT
-          fi
-          echo "" >> $GITHUB_OUTPUT
-          echo "### Diff Summary" >> $GITHUB_OUTPUT
-          echo "[View full diff](${DIFF_URL})" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "---" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "## 📝 Detailed Changelog" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "### Added" >> $GITHUB_OUTPUT
-          if [ -n "$COMMITS" ]; then
-            echo "$COMMITS" >> $GITHUB_OUTPUT
-          else
-            echo "No commits found" >> $GITHUB_OUTPUT
-          fi
-          echo "" >> $GITHUB_OUTPUT
-          echo "### Changed" >> $GITHUB_OUTPUT
-          echo "See diff for detailed changes." >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "---" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "## 🔗 Related" >> $GITHUB_OUTPUT
-          echo "" >> $GITHUB_OUTPUT
-          echo "- [Full Diff](${DIFF_URL})" >> $GITHUB_OUTPUT
-          echo "- [Documentation](https://docs.eco-balance.cc/)" >> $GITHUB_OUTPUT
-          echo "- [Download PDF/EPUB](https://github.com/${REPO_URL}/releases)" >> $GITHUB_OUTPUT
+          cat /tmp/release_notes.txt >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
       
       - name: Check for exported files
