@@ -215,13 +215,19 @@ jobs:
           # Get release date
           RELEASE_DATE=$(date -u +"%B %d, %Y")
           
+          # Get previous version
+          PREVIOUS_VERSION="${{ steps.current_version.outputs.current_version }}"
+          if [ -z "$PREVIOUS_VERSION" ]; then
+            PREVIOUS_VERSION="N/A"
+          fi
+          
           # Create changelog - write directly to GITHUB_OUTPUT to avoid YAML parser issues
           echo "changelog<<EOF" >> $GITHUB_OUTPUT
           echo "## Release Notes - ${VERSION//-/.}" >> $GITHUB_OUTPUT
           echo "" >> $GITHUB_OUTPUT
           echo "**Release Date:** ${RELEASE_DATE}" >> $GITHUB_OUTPUT
           echo "**Version:** ${VERSION//-/.}" >> $GITHUB_OUTPUT
-          echo "**Previous Version:** ${{ steps.current_version.outputs.current_version || 'N/A' }}" >> $GITHUB_OUTPUT
+          echo "**Previous Version:** ${PREVIOUS_VERSION}" >> $GITHUB_OUTPUT
           echo "" >> $GITHUB_OUTPUT
           echo "---" >> $GITHUB_OUTPUT
           echo "" >> $GITHUB_OUTPUT
@@ -278,7 +284,7 @@ jobs:
             echo ""
             echo "**Release Date:** ${RELEASE_DATE}"
             echo "**Version:** ${VERSION//-/.}"
-            echo "**Previous Version:** ${{ steps.current_version.outputs.current_version || 'N/A' }}"
+            echo "**Previous Version:** ${PREVIOUS_VERSION}"
             echo ""
             echo "---"
             echo ""
