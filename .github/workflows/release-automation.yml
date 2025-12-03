@@ -87,56 +87,63 @@ jobs:
           # Get release date
           RELEASE_DATE=$(date -u +"%B %d, %Y")
           
-          # Build comprehensive release notes
-          RELEASE_NOTES="## Release ${VERSION//-/.}
-
-**Release Date:** ${RELEASE_DATE}  
-**Version:** ${VERSION//-/.}  
-**Previous Version:** ${LAST_TAG:-'N/A'}
-
----
-
-## 📈 Statistics
-
-- **Commits:** ${COMMIT_COUNT} commits since ${LAST_TAG:-'beginning'}
-- **Files Changed:** ${TOTAL_FILES} files
-  - Added: ${FILES_ADDED} files
-  - Modified: ${FILES_MODIFIED} files
-  - Deleted: ${FILES_DELETED} files
-- **Lines Changed:** ${LINES_STAT}
-
----
-
-## 🔄 Changes Since Last Release
-
-### Commits
-${COMMITS:-'No commits found'}
-
-### Diff Summary
-[View full diff](${DIFF_URL})
-
----
-
-## 📝 Detailed Changelog
-
-### Added
-${COMMITS}
-
-### Changed
-See diff for detailed changes.
-
----
-
-## 🔗 Related
-
-- [Full Diff](${DIFF_URL})
-- [Documentation](https://docs.eco-balance.cc/)
-- [Download PDF/EPUB](https://github.com/${REPO_URL}/releases)
-"
-          
-          echo "notes<<EOF" >> $GITHUB_OUTPUT
-          echo "$RELEASE_NOTES" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          # Build comprehensive release notes using heredoc
+          {
+            echo "notes<<RELEASE_NOTES_EOF"
+            echo "## Release ${VERSION//-/.}"
+            echo ""
+            echo "**Release Date:** ${RELEASE_DATE}"
+            echo "**Version:** ${VERSION//-/.}"
+            echo "**Previous Version:** ${LAST_TAG:-'N/A'}"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 📈 Statistics"
+            echo ""
+            echo "- **Commits:** ${COMMIT_COUNT} commits since ${LAST_TAG:-'beginning'}"
+            echo "- **Files Changed:** ${TOTAL_FILES} files"
+            echo "  - Added: ${FILES_ADDED} files"
+            echo "  - Modified: ${FILES_MODIFIED} files"
+            echo "  - Deleted: ${FILES_DELETED} files"
+            echo "- **Lines Changed:** ${LINES_STAT}"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 🔄 Changes Since Last Release"
+            echo ""
+            echo "### Commits"
+            if [ -n "$COMMITS" ]; then
+              echo "$COMMITS"
+            else
+              echo "No commits found"
+            fi
+            echo ""
+            echo "### Diff Summary"
+            echo "[View full diff](${DIFF_URL})"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 📝 Detailed Changelog"
+            echo ""
+            echo "### Added"
+            if [ -n "$COMMITS" ]; then
+              echo "$COMMITS"
+            else
+              echo "No commits found"
+            fi
+            echo ""
+            echo "### Changed"
+            echo "See diff for detailed changes."
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 🔗 Related"
+            echo ""
+            echo "- [Full Diff](${DIFF_URL})"
+            echo "- [Documentation](https://docs.eco-balance.cc/)"
+            echo "- [Download PDF/EPUB](https://github.com/${REPO_URL}/releases)"
+            echo "RELEASE_NOTES_EOF"
+          } >> $GITHUB_OUTPUT
       
       - name: Check for exported files
         id: exports
