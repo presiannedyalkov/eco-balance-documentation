@@ -20,7 +20,7 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       
       - name: Extract milestone from branch name
         id: extract_milestone
@@ -86,7 +86,7 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       
       - name: Update milestone progress
         uses: actions/github-script@v8

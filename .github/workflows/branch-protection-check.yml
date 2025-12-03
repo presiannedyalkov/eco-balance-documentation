@@ -16,7 +16,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 2  # Need at least 2 commits to check merge commits
       
@@ -71,7 +71,7 @@ jobs:
     
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       
       - name: Validate PR
         run: |
