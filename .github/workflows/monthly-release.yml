@@ -212,60 +212,122 @@ jobs:
             DIFF_URL="https://github.com/${REPO_URL}/compare/${LAST_TAG}...HEAD"
           fi
           
-          # Create changelog
-          CHANGELOG="## Release Notes - ${VERSION//-/.}
-
-**Release Date:** $(date -u +"%B %d, %Y")  
-**Version:** ${VERSION//-/.}  
-**Previous Version:** ${{ steps.current_version.outputs.current_version || 'N/A' }}
-
----
-
-## 📈 Statistics
-
-- **Commits:** ${{ steps.changes.outputs.commit_count }} commits since ${LAST_TAG:-'beginning'}
-- **Files Changed:** 
-  - Added: ${FILES_ADDED} files
-  - Modified: ${FILES_MODIFIED} files
-  - Deleted: ${FILES_DELETED} files
-- **Lines Changed:** ${LINES_STAT:-'N/A'}
-- **Contributors:** 1
-
----
-
-## 🔄 Changes Since Last Release
-
-### Commits
-${COMMITS:-'No commits found'}
-
-### Diff Summary
-[View full diff](${DIFF_URL})
-
----
-
-## 📝 Detailed Changelog
-
-### Added
-${COMMITS}
-
-### Changed
-See diff for detailed changes.
-
----
-
-## 🔗 Related
-
-- [Full Diff](${DIFF_URL})
-- [Documentation](https://docs.eco-balance.cc/)
-- [GitHub Release](https://github.com/${REPO_URL}/releases/tag/v${VERSION})
-"
+          # Get release date
+          RELEASE_DATE=$(date -u +"%B %d, %Y")
           
+          # Create changelog - write directly to GITHUB_OUTPUT to avoid YAML parser issues
           echo "changelog<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "## Release Notes - ${VERSION//-/.}" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "**Release Date:** ${RELEASE_DATE}" >> $GITHUB_OUTPUT
+          echo "**Version:** ${VERSION//-/.}" >> $GITHUB_OUTPUT
+          echo "**Previous Version:** ${{ steps.current_version.outputs.current_version || 'N/A' }}" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 📈 Statistics" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "- **Commits:** ${{ steps.changes.outputs.commit_count }} commits since ${LAST_TAG:-'beginning'}" >> $GITHUB_OUTPUT
+          echo "- **Files Changed:**" >> $GITHUB_OUTPUT
+          echo "  - Added: ${FILES_ADDED} files" >> $GITHUB_OUTPUT
+          echo "  - Modified: ${FILES_MODIFIED} files" >> $GITHUB_OUTPUT
+          echo "  - Deleted: ${FILES_DELETED} files" >> $GITHUB_OUTPUT
+          echo "- **Lines Changed:** ${LINES_STAT:-'N/A'}" >> $GITHUB_OUTPUT
+          echo "- **Contributors:** 1" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 🔄 Changes Since Last Release" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Commits" >> $GITHUB_OUTPUT
+          if [ -n "$COMMITS" ]; then
+            echo "$COMMITS" >> $GITHUB_OUTPUT
+          else
+            echo "No commits found" >> $GITHUB_OUTPUT
+          fi
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Diff Summary" >> $GITHUB_OUTPUT
+          echo "[View full diff](${DIFF_URL})" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 📝 Detailed Changelog" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Added" >> $GITHUB_OUTPUT
+          if [ -n "$COMMITS" ]; then
+            echo "$COMMITS" >> $GITHUB_OUTPUT
+          else
+            echo "No commits found" >> $GITHUB_OUTPUT
+          fi
+          echo "" >> $GITHUB_OUTPUT
+          echo "### Changed" >> $GITHUB_OUTPUT
+          echo "See diff for detailed changes." >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "---" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "## 🔗 Related" >> $GITHUB_OUTPUT
+          echo "" >> $GITHUB_OUTPUT
+          echo "- [Full Diff](${DIFF_URL})" >> $GITHUB_OUTPUT
+          echo "- [Documentation](https://docs.eco-balance.cc/)" >> $GITHUB_OUTPUT
+          echo "- [GitHub Release](https://github.com/${REPO_URL}/releases/tag/v${VERSION})" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
           
-          # Also save to file for release notes
-          echo "$CHANGELOG" > release-notes-temp.md
+          # Also save to file for release notes (build the content for the file)
+          {
+            echo "## Release Notes - ${VERSION//-/.}"
+            echo ""
+            echo "**Release Date:** ${RELEASE_DATE}"
+            echo "**Version:** ${VERSION//-/.}"
+            echo "**Previous Version:** ${{ steps.current_version.outputs.current_version || 'N/A' }}"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 📈 Statistics"
+            echo ""
+            echo "- **Commits:** ${{ steps.changes.outputs.commit_count }} commits since ${LAST_TAG:-'beginning'}"
+            echo "- **Files Changed:**"
+            echo "  - Added: ${FILES_ADDED} files"
+            echo "  - Modified: ${FILES_MODIFIED} files"
+            echo "  - Deleted: ${FILES_DELETED} files"
+            echo "- **Lines Changed:** ${LINES_STAT:-'N/A'}"
+            echo "- **Contributors:** 1"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 🔄 Changes Since Last Release"
+            echo ""
+            echo "### Commits"
+            if [ -n "$COMMITS" ]; then
+              echo "$COMMITS"
+            else
+              echo "No commits found"
+            fi
+            echo ""
+            echo "### Diff Summary"
+            echo "[View full diff](${DIFF_URL})"
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 📝 Detailed Changelog"
+            echo ""
+            echo "### Added"
+            if [ -n "$COMMITS" ]; then
+              echo "$COMMITS"
+            else
+              echo "No commits found"
+            fi
+            echo ""
+            echo "### Changed"
+            echo "See diff for detailed changes."
+            echo ""
+            echo "---"
+            echo ""
+            echo "## 🔗 Related"
+            echo ""
+            echo "- [Full Diff](${DIFF_URL})"
+            echo "- [Documentation](https://docs.eco-balance.cc/)"
+            echo "- [GitHub Release](https://github.com/${REPO_URL}/releases/tag/v${VERSION})"
+          } > release-notes-temp.md
       
       - name: Create release notes directory
         if: steps.changes.outputs.has_changes == 'true'
