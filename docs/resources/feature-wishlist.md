@@ -110,9 +110,10 @@ Transform the documentation repository into a public-facing website using Docusa
 ---
 
 ### Documentation Export Formats (EPUB & PDF)
-**Status:** Planned
+**Status:** ✅ Completed
 **Priority:** Medium
 **Related:** Public Documentation Website
+**Completed:** November 2025
 
 **Description:**
 Enable exporting the entire documentation repository into portable formats for offline reading and distribution. Support EPUB format for Kindle and e-reader devices, and PDF format for universal document sharing and printing.
@@ -151,25 +152,31 @@ Enable exporting the entire documentation repository into portable formats for o
 - Archiving documentation in standard formats
 - Distributing documentation to team members without internet access
 
-**Dependencies:**
-- Documentation structure and markdown files
-- Conversion tools (Pandoc, mdbook, or similar)
-- Optional: GitHub Actions for automated generation
+**Implementation Status:**
+- ✅ Export workflow created (`.github/workflows/export-docs.yml`)
+- ✅ Automatic exports on push to main (when docs/strategic files change)
+- ✅ Manual trigger available via GitHub Actions UI
+- ✅ EPUB export working with Pandoc
+- ✅ PDF export working with LaTeX/XeTeX
+- ✅ Daily export releases created automatically (tags: `export-vYYYY-MM-DD`)
+- ✅ Export script (`scripts/export-docs.sh`) handles both formats
+- ✅ Artifacts uploaded to GitHub Actions
+- ✅ GitHub Releases created for each export
+- ✅ Integration with monthly release system (exports referenced in monthly releases)
 
-**Estimated Effort:**
-- EPUB export setup: 2-3 hours
-- PDF export setup: 2-3 hours
-- Automation (GitHub Actions): 1-2 hours
-- Testing and refinement: 1-2 hours
-- Total: 6-10 hours
+**How It Works:**
+- **Automatic:** Runs on push to `main` when documentation files change
+- **Manual:** Can be triggered via GitHub Actions UI with format selection (epub/pdf/both)
+- **Daily Releases:** Creates pre-release with tag `export-vYYYY-MM-DD` containing EPUB and PDF files
+- **Integration:** Monthly releases reference export releases for downloads
 
-**Success Metrics:**
-- EPUB file generates successfully with all documentation
-- PDF file generates successfully with all documentation
-- Exported files open correctly in target applications (Kindle, PDF readers)
-- Table of contents and navigation work in exported formats
-- Formatting is preserved and readable
-- Export process can be automated or run on-demand
+**Download Exports:**
+- **GitHub Releases:** https://github.com/presiannedyalkov/eco-balance-documentation/releases
+- Look for releases tagged `export-vYYYY-MM-DD` (daily exports)
+- Latest export: `export-v2025-12-03` (most recent)
+
+**Documentation:**
+- See: `_process/documentation/EXPORT_DOCUMENTATION.md` for usage guide
 
 ---
 
