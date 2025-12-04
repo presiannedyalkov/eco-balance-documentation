@@ -29,24 +29,37 @@ This project uses **two types of versions** for different purposes:
 - Stored in: `VERSION` file
 
 ### When It Changes
-- Monthly or when significant project milestones are reached
-- Updated manually in the `VERSION` file
-- Triggers the **Release Automation** workflow
+- **Automatically:** On the last day of each month at 23:59 UTC via monthly-release workflow
+- **Manually:** Can be triggered manually via GitHub Actions UI
+- **Updated by:** Monthly release workflow (automatically updates `VERSION` file)
+- **Triggers:** 
+  - Deployment workflow (when `VERSION` file changes)
+  - Release automation workflow (creates GitHub release)
 
 ### Usage
 - **Release tags:** `v2025-11`
 - **Release names:** "Release v2025-11 (Monthly)"
 - **GitHub Releases:** Created by `.github/workflows/release-automation.yml`
+- **Release Notes:** Stored in `_versions/v2025.11/RELEASE_NOTES.md`
 - **Documentation:** Referenced in release notes and changelogs
+- **Deployment:** Triggers automatic deployment when `VERSION` file changes
 
 ### Example
 ```bash
-# VERSION file contains:
-2025-11
+# Monthly release workflow runs on last day of month:
+1. Calculates version: 2025-12
+2. Updates VERSION file: 2025-12
+3. Creates release notes: _versions/v2025.12/RELEASE_NOTES.md
+4. Commits changes to repository
+
+# VERSION file change triggers:
+- Deployment workflow (deploys site)
+- Release automation workflow (creates GitHub release)
 
 # Creates release:
-Tag: v2025-11
-Name: Release v2025-11 (Monthly)
+Tag: v2025-12
+Name: Release v2025-12 (Monthly)
+Release Notes: Comprehensive changelog with statistics
 ```
 
 ---
@@ -110,13 +123,27 @@ Name: Documentation Export v2025-11-16 (Daily)
 - Trigger: On documentation changes or manual trigger
 ```
 
+### Monthly Release Workflow
+```yaml
+# .github/workflows/monthly-release.yml
+- Schedule: Last day of month at 23:59 UTC
+- Calculates next version (YYYY-MM format)
+- Checks for changes since last release
+- Generates comprehensive changelog
+- Creates release notes in _versions/vYYYY.MM/
+- Updates VERSION file automatically
+- Commits and pushes changes
+- Trigger: Scheduled or manual (workflow_dispatch)
+```
+
 ### Release Automation (Monthly Version)
 ```yaml
 # .github/workflows/release-automation.yml
 - Creates release with tag: v2025-11
 - File names: Uses exports from latest daily version
 - Release type: Full release
-- Trigger: When VERSION file changes
+- Trigger: When VERSION file changes (from monthly-release workflow)
+- Includes: Comprehensive changelog with statistics, file changes, diff links
 ```
 
 ---
@@ -184,5 +211,46 @@ Both version types create GitHub Releases:
 
 ---
 
-**Last Updated:** November 16, 2025
+---
+
+## 📚 Monthly Release Process
+
+The monthly version is now automatically managed by the **Monthly Release Workflow**:
+
+### Automatic Process
+
+1. **Scheduled Trigger:** Last day of each month at 23:59 UTC
+2. **Version Calculation:** Automatically determines next version (YYYY-MM)
+3. **Change Detection:** Checks if there are changes since last release
+4. **Changelog Generation:** Creates comprehensive changelog with:
+   - Commit list since last release
+   - File statistics (added/modified/deleted)
+   - Lines changed statistics
+   - Diff URLs for comparison
+5. **Release Notes:** Saves to `_versions/vYYYY.MM/RELEASE_NOTES.md`
+6. **VERSION Update:** Updates `VERSION` file automatically
+7. **Deployment:** VERSION file change triggers deployment
+8. **GitHub Release:** Release automation creates GitHub release
+
+### Manual Triggers
+
+You can also trigger a monthly release manually:
+- Via GitHub Actions UI: **Actions** → **Monthly Release** → **Run workflow**
+- Options available:
+  - Specify custom version (optional)
+  - Force release even if no changes detected
+
+### Release Artifacts
+
+Each monthly release creates:
+- **Release Notes:** `_versions/vYYYY.MM/RELEASE_NOTES.md` (in repository)
+- **GitHub Release:** With tag `vYYYY-MM` and comprehensive changelog
+- **Git Tag:** `vYYYY-MM` format
+- **Deployed Site:** Updated documentation site
+
+For complete details, see: [Monthly Release Process Guide](MONTHLY_RELEASE_PROCESS.md)
+
+---
+
+**Last Updated:** December 2025 (Updated to include monthly release process)
 

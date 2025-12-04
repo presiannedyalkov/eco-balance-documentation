@@ -7,8 +7,7 @@ slug: "/"
 
 # 🌍 ECO BALANCE PROJECT HUB
 
-**Current Status:** Exploration Phase  
-**Last Updated:** November 2025
+**Current Status:** Exploration Phase
 
 ---
 

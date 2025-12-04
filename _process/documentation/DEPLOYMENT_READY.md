@@ -1,8 +1,8 @@
 # GitHub Pages Deployment - Ready to Deploy
 
-**Status:** ✅ Configuration Complete - Ready for GitHub Setup  
-**Date:** November 2025  
-**Next Step:** Enable GitHub Pages in repository settings
+**Status:** ✅ Configuration Complete - Monthly Release System Active  
+**Date:** December 2025 (Updated)  
+**Deployment Model:** Monthly scheduled releases
 
 ---
 
@@ -17,12 +17,19 @@
 - ✅ All GitHub links updated throughout the config
 - ✅ Build tested locally - compiles successfully
 
-### 2. GitHub Actions Workflow
+### 2. GitHub Actions Workflows
 - ✅ Created `.github/workflows/deploy.yml`
-- ✅ Configured to deploy on push to `main` branch
-- ✅ Includes manual trigger option (`workflow_dispatch`)
+  - **Deployment Model:** Monthly releases (deploys only when `VERSION` file changes)
+  - ✅ Includes manual trigger option (`workflow_dispatch`)
+  - ✅ Supports `workflow_call` for integration with monthly-release workflow
+- ✅ Created `.github/workflows/monthly-release.yml`
+  - **Schedule:** Runs automatically on last day of each month at 23:59 UTC
+  - **Features:** Automatic version calculation, changelog generation, release notes creation
+- ✅ Enhanced `.github/workflows/release-automation.yml`
+  - **Trigger:** When `VERSION` file changes
+  - **Features:** Comprehensive changelogs with statistics, file change tracking
 - ✅ Proper permissions configured (contents: read, pages: write, id-token: write)
-- ✅ Uses latest GitHub Actions (v4)
+- ✅ Uses latest GitHub Actions (v6 for checkout, v5 for upload-artifact)
 - ✅ Node.js 18 with NPM caching
 
 ### 3. Documentation Updates
@@ -40,15 +47,16 @@
 2. Under **Source**, select: **GitHub Actions**
 3. Save the settings
 
-### Step 2: Push Changes (if not already done)
+### Step 2: Understanding Monthly Releases
 
-The workflow will automatically trigger on push to `main`:
+**Important:** The deployment system now uses **monthly scheduled releases** instead of continuous deployment.
 
-```bash
-git add .
-git commit -m "Set up GitHub Pages deployment with GitHub Actions"
-git push origin main
-```
+- **Automatic Releases:** Happen on the last day of each month at 23:59 UTC
+- **Manual Triggers:** You can manually trigger a release via GitHub Actions UI
+- **Deployment:** Only occurs when the `VERSION` file changes (which happens during monthly releases)
+- **Changes During Month:** All changes accumulate and deploy together at month end
+
+For more details, see: [Monthly Release Process Guide](MONTHLY_RELEASE_PROCESS.md)
 
 ### Step 3: Monitor Deployment
 
@@ -115,19 +123,37 @@ If deployment fails:
 
 Once deployed:
 
-1. **Automatic Updates:** Every push to `main` will automatically deploy
+1. **Monthly Releases:** Releases happen automatically at the end of each month
+   - Changes accumulate during the month
+   - Comprehensive changelog generated automatically
+   - Release notes created in `_versions/vYYYY.MM/RELEASE_NOTES.md`
+   - Deployment triggered automatically when `VERSION` file updates
 2. **Public Access:** Documentation becomes publicly accessible
-3. **Foundation for Phase 3:** Ready for interactive features (chatbot, commenting)
+3. **Manual Triggers:** You can manually trigger releases for urgent updates
+4. **Foundation for Phase 3:** Ready for interactive features (chatbot, commenting)
+
+### Monthly Release Schedule
+
+- **First Release:** End of December 2025 (automatically scheduled)
+- **Subsequent Releases:** Last day of each month at 23:59 UTC
+- **Release Notes:** Available in `_versions/vYYYY.MM/RELEASE_NOTES.md`
+- **GitHub Releases:** Created automatically with changelogs and statistics
 
 ---
 
 ## 📚 Related Documents
 
+- [Monthly Release Process Guide](MONTHLY_RELEASE_PROCESS.md) - **NEW:** Complete guide to monthly releases
 - [GitHub Pages Setup Guide](GITHUB_PAGES_SETUP.md) - Detailed setup instructions
+- [Versioning Concepts](VERSIONING_CONCEPTS.md) - Understanding monthly vs daily versions
+- [Monthly Release Strategy](MONTHLY_RELEASE_STRATEGY.md) - Strategy document
+- [Monthly Release Implementation](MONTHLY_RELEASE_IMPLEMENTATION.md) - Implementation details
 - [Wishlist Review](WISHLIST_REVIEW_2025-11.md) - Feature review findings
 - [Feature Wishlist](FEATURE_WISHLIST.md) - Updated wishlist with deployment status
 
 ---
 
-**Ready to deploy!** Just enable GitHub Pages in repository settings and push to trigger the first deployment.
+**Ready to deploy!** The monthly release system is active. The first automatic release will happen at the end of December 2025. You can also manually trigger a release at any time via GitHub Actions.
+
+**Last Updated:** December 2025 (Updated to reflect monthly release system)
 
