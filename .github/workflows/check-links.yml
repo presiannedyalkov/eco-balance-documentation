@@ -25,11 +25,11 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       
       - name: Check links with lychee
         id: linkcheck
-        uses: lycheeverse/lychee-action@v2.0.2
+        uses: lycheeverse/lychee-action@v2.7.0
         with:
           args: '--accept 200,201,202,301,302,303,307,308 --exclude-all-private --exclude-mail --timeout 20 --max-concurrency 10 --format json'
           fail: false
@@ -106,7 +106,7 @@ jobs:
       
       - name: Upload link check results
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: link-check-results
           path: lychee-out.md
