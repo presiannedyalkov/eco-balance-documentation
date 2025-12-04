@@ -1,8 +1,9 @@
 # GitHub Pages Deployment Setup Guide
 
-**Status:** Ready for Configuration  
+**Status:** ✅ Active - Monthly Release System  
 **Created:** November 2025  
-**Purpose:** Guide for completing GitHub Pages deployment setup
+**Updated:** December 2025  
+**Purpose:** Guide for GitHub Pages deployment with monthly release system
 
 ---
 
@@ -14,10 +15,18 @@
    - ✅ Configured base URL: `/eco-balance-documentation/`
    - ✅ Updated all GitHub links to point to correct repository
 
-2. **GitHub Actions Workflow**
+2. **GitHub Actions Workflows**
    - ✅ Created `.github/workflows/deploy.yml`
-   - ✅ Configured to deploy on push to `main` branch
-   - ✅ Uses GitHub Pages deployment action (v4)
+     - **Deployment Model:** Monthly releases (triggers only when `VERSION` file changes)
+     - ✅ Supports manual trigger (`workflow_dispatch`)
+     - ✅ Supports `workflow_call` for integration
+   - ✅ Created `.github/workflows/monthly-release.yml`
+     - **Schedule:** Automatic releases on last day of each month at 23:59 UTC
+     - **Features:** Version calculation, changelog generation, release notes
+   - ✅ Enhanced `.github/workflows/release-automation.yml`
+     - **Trigger:** When `VERSION` file changes
+     - **Features:** Comprehensive changelogs with statistics
+   - ✅ Uses latest GitHub Actions (v6 for checkout, v5 for upload-artifact)
    - ✅ Includes proper permissions for Pages deployment
 
 3. **Build Configuration**
@@ -54,21 +63,33 @@ If you encounter permission issues:
    - ✅ "Read and write permissions" is selected
    - ✅ "Allow GitHub Actions to create and approve pull requests" is checked (if needed)
 
-### Step 3: Trigger First Deployment
+### Step 3: Understanding Monthly Releases
 
-Once GitHub Pages is enabled, you can trigger deployment in one of two ways:
+**Important:** The deployment system uses **monthly scheduled releases**:
 
-**Option A: Push to main branch (automatic)**
-```bash
-git add .
-git commit -m "Set up GitHub Pages deployment"
-git push origin main
-```
+- **Automatic Releases:** Happen on the last day of each month at 23:59 UTC
+- **Manual Triggers:** Available via GitHub Actions UI for urgent updates
+- **Deployment:** Only occurs when `VERSION` file changes (during monthly releases)
+- **Changes During Month:** All changes accumulate and deploy together at month end
 
-**Option B: Manual trigger via GitHub UI**
+**Triggering Deployment:**
+
+**Option A: Wait for automatic monthly release**
+- First release: End of December 2025
+- Subsequent releases: Last day of each month
+
+**Option B: Manual monthly release trigger**
+1. Go to **Actions** tab in your repository
+2. Select **Monthly Release** workflow
+3. Click **Run workflow** → **Run workflow**
+4. Optionally specify version or force flag
+
+**Option C: Manual deployment trigger (for urgent updates)**
 1. Go to **Actions** tab in your repository
 2. Select **Deploy to GitHub Pages** workflow
 3. Click **Run workflow** → **Run workflow**
+
+For detailed information, see: [Monthly Release Process Guide](MONTHLY_RELEASE_PROCESS.md)
 
 ---
 
@@ -140,19 +161,41 @@ Once deployed, your documentation will be available at:
 
 ---
 
-## 🔄 Automatic Updates
+## 🔄 Monthly Release Process
 
-Once set up, the site will automatically update whenever you:
-- Push changes to the `main` branch
-- Merge a pull request to `main`
+The site now updates through **monthly scheduled releases**:
 
-The workflow will:
-1. Checkout the code
-2. Install dependencies
-3. Build the Docusaurus site
-4. Deploy to GitHub Pages
+### Automatic Monthly Release Flow
 
-**Typical deployment time:** 2-5 minutes
+1. **Last Day of Month (23:59 UTC):**
+   - Monthly release workflow runs automatically
+   - Calculates next version (YYYY-MM format)
+   - Checks for changes since last release
+   - Generates comprehensive changelog
+   - Creates release notes in `_versions/vYYYY.MM/RELEASE_NOTES.md`
+   - Updates `VERSION` file
+
+2. **VERSION File Change:**
+   - Triggers deployment workflow automatically
+   - Builds Docusaurus site
+   - Deploys to GitHub Pages
+
+3. **Release Creation:**
+   - Release automation workflow creates GitHub release
+   - Includes changelog, statistics, and diff links
+   - Creates git tag (vYYYY-MM format)
+
+**Typical deployment time:** 2-5 minutes  
+**Release frequency:** Once per month (end of month)
+
+### Changes During the Month
+
+- All changes to `main` branch accumulate during the month
+- No deployment happens until the monthly release
+- Monthly release batches all changes together
+- Comprehensive changelog shows all changes since last release
+
+For more details, see: [Monthly Release Process Guide](MONTHLY_RELEASE_PROCESS.md)
 
 ---
 
@@ -169,6 +212,10 @@ The workflow will:
 
 ## 🔗 Related Documents
 
+- [Monthly Release Process Guide](MONTHLY_RELEASE_PROCESS.md) - **NEW:** Complete guide to monthly releases
+- [Versioning Concepts](VERSIONING_CONCEPTS.md) - Understanding monthly vs daily versions
+- [Monthly Release Strategy](MONTHLY_RELEASE_STRATEGY.md) - Strategy document
+- [Monthly Release Implementation](MONTHLY_RELEASE_IMPLEMENTATION.md) - Implementation details
 - [Feature Wishlist](FEATURE_WISHLIST.md) - Original feature request
 - [Documentation Site Plan](../planning/DOCUMENTATION_SITE_PLAN.md) - Implementation plan
 - [Wishlist Review](WISHLIST_REVIEW_2025-11.md) - Status review findings
@@ -182,8 +229,9 @@ If you encounter issues:
 2. Review this troubleshooting section
 3. Test build locally: `npm run build`
 4. Check Docusaurus documentation: https://docusaurus.io/docs/deployment
+5. Review monthly release logs if deployment doesn't trigger
 
 ---
 
-**Last Updated:** November 2025
+**Last Updated:** December 2025 (Updated to reflect monthly release system)
 
