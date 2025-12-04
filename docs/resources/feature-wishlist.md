@@ -8,7 +8,6 @@ sidebar_position: 3
 
 **Purpose:** Track desired features and enhancements without concrete timelines
 **Status:** Living document - priorities may shift based on project needs
-**Last Updated:** 2025.11 (2025.11.13 19:12)
 
 ---
 
