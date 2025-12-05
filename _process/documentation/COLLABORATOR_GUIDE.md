@@ -136,7 +136,7 @@
 
 **Recommended format:**
 - `feature/YYYY.MM-short-description` (e.g., `feature/2025.12-versioning-system`)
-- `fix/YYYY.MM-short-description` (e.g., `fix/2025.12-milestone-sync`)
+- `fix/YYYY.MM-short-description` (e.g., `fix/2025.12-release-fix`)
 - `docs/YYYY.MM-short-description` (e.g., `docs/2025.12-roadmap-update`)
 
 **Or simpler:**

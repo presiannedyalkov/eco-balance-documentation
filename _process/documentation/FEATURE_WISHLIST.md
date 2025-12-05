@@ -175,12 +175,14 @@ Enable exporting the entire documentation repository into portable formats for o
 ---
 
 ### GitHub Milestones & Roadmap Integration
-**Status:** Planned
-**Priority:** High
+**Status:** ❌ Not Needed
+**Priority:** Low
 **Related:** Roadmap, Versioning Strategy, Project Management
 
 **Description:**
-Integrate GitHub Milestones, Issues, and Releases with the project roadmap and versioning system to create a visual, timeline-based roadmap that tracks feature progress, links branches to milestones, and automates release management.
+~~Integrate GitHub Milestones, Issues, and Releases with the project roadmap and versioning system~~ 
+
+**Decision:** Milestones are not needed for automatic monthly releases. GitHub Releases already provide comprehensive tracking of what's in each release. Milestones would add maintenance overhead without significant value.
 
 **Goals:**
 - Create visual roadmap using GitHub Milestones
