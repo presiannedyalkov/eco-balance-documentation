@@ -1,98 +1,98 @@
 # Roadmap
 
-**Last Synced:** 2025-11-23 00:51:35
-**Source:** GitHub Milestones
-**Repository:** https://github.com/presiannedyalkov/eco-balance-documentation
+**Last Updated:** December 2025  
+**Purpose:** High-level project roadmap and phases
 
-> **Note:** This file is auto-generated from GitHub Milestones. To update milestones, use GitHub UI or GitHub CLI.
-
----
-
-## Active Milestones
-
-### 2025.11 - Documentation Platform Launch
-
-**Milestone:** [#1](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/1)
-**Due Date:** 2025-11-30
-**Progress:** 0/0 issues closed (0%)
-
-Public Documentation Website deployment and automation. ✅ COMPLETED
-
-**Issues:**
-- [View all issues](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/1)
+> **Note:** This roadmap shows planned phases and features. For actual release history, see [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases).
 
 ---
 
-### 2025.12 - Versioning & Roadmap System
+## Project Phases
 
-**Milestone:** [#2](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/2)
-**Due Date:** 2025-12-31
-**Progress:** 0/0 issues closed (0%)
+### Phase 1: Documentation Platform (2025.11) ✅ COMPLETED
 
-Calendar Versioning implementation, GitHub Milestones integration, Release management, Roadmap documentation sync
+**Status:** ✅ Complete  
+**Completed:** November 2025
 
-**Issues:**
-- [View all issues](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/2)
+- Public Documentation Website deployment
+- Deployment automation
+- Verification & rollback system
+- GitHub Pages integration
 
----
-
-### 2026.01 - Content & Quality
-
-**Milestone:** [#3](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/3)
-**Due Date:** 2026-01-31
-**Progress:** 0/0 issues closed (0%)
-
-Language audit completion, Document length management, Research bookmarks integration, Documentation export formats (EPUB & PDF)
-
-**Issues:**
-- [View all issues](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/3)
+**Release:** [v2025-11](https://github.com/presiannedyalkov/eco-balance-documentation/releases/tag/v2025-11)
 
 ---
 
-### 2026.Q1 - Interactive Features
+### Phase 2: Versioning & Release System (2025.12) ✅ COMPLETED
 
-**Milestone:** [#4](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/4)
-**Due Date:** 2026-03-31
-**Progress:** 0/0 issues closed (0%)
+**Status:** ✅ Complete  
+**Completed:** December 2025
 
-AI Chatbot Interface, Community Feedback System, SSO Authentication, Multi-language Support
+- Calendar Versioning implementation
+- Monthly release system
+- Release management automation
+- Comprehensive changelog generation
 
-**Issues:**
-- [View all issues](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/4)
-
----
-
-### 2026.Q2 - Advanced Features
-
-**Milestone:** [#5](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/5)
-**Due Date:** 2026-06-30
-**Progress:** 0/0 issues closed (0%)
-
-Inline Commenting System, Task Tracking Visibility, Advanced Search, Notification System
-
-**Issues:**
-- [View all issues](https://github.com/presiannedyalkov/eco-balance-documentation/milestone/5)
+**Release:** [v2025-12](https://github.com/presiannedyalkov/eco-balance-documentation/releases/tag/v2025-12)
 
 ---
 
-## How to Update
+### Phase 3: Content & Quality (2026.01)
 
-This roadmap is automatically synced from GitHub Milestones. To update:
+**Status:** Planned  
+**Target:** January 2026
 
-1. **Via GitHub UI:**
-   - Go to: https://github.com/presiannedyalkov/eco-balance-documentation/milestones
-   - Create or edit milestones
-   - Run this script to sync: `./scripts/sync-roadmap-from-github.sh`
-
-2. **Via GitHub CLI:**
-   - Create milestone: `gh api repos/presiannedyalkov/eco-balance-documentation/milestones -X POST -f title="..."`
-   - Run this script to sync: `./scripts/sync-roadmap-from-github.sh`
-
-3. **Automated:**
-   - This script can be run via GitHub Actions on a schedule
-   - See: `.github/workflows/sync-roadmap.yml` (if configured)
+- Language audit completion
+- Document length management
+- Research bookmarks integration
+- Documentation export formats (EPUB & PDF) ✅ Already implemented
 
 ---
 
-**Last Updated:** 2025-11-23 00:51:36
+### Phase 4: Interactive Features (2026.Q1)
 
+**Status:** Planned  
+**Target:** Q1 2026
+
+- AI Chatbot Interface
+- Community Feedback System
+- SSO Authentication
+- Multi-language Support
+
+---
+
+### Phase 5: Advanced Features (2026.Q2)
+
+**Status:** Planned  
+**Target:** Q2 2026
+
+- Inline Commenting System
+- Task Tracking Visibility
+- Advanced Search
+- Notification System
+
+---
+
+## Release History
+
+For detailed release history with changelogs, see:
+- [GitHub Releases](https://github.com/presiannedyalkov/eco-balance-documentation/releases)
+- Release notes: `_versions/vYYYY.MM/RELEASE_NOTES.md`
+
+---
+
+## How to Track Progress
+
+### Releases
+- **GitHub Releases**: Shows what's in each release
+- **Release Notes**: Comprehensive changelogs in `_versions/` directory
+- **Git Tags**: Mark exact release points (`v2025-12`, etc.)
+
+### Planning
+- **Feature Wishlist**: See `docs/resources/feature-wishlist.md`
+- **Issues**: Create GitHub issues for features (optional)
+- **Labels**: Use labels to categorize work (optional)
+
+---
+
+**Last Updated:** December 2025

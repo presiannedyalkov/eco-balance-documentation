@@ -10,7 +10,7 @@
 
 This project uses **two types of versions** for different purposes:
 
-1. **Monthly Version** (`v2025-11`) - For releases and project milestones
+1. **Monthly Version** (`v2025-11`) - For releases and major releases
 2. **Daily Version** (`v2025-11-16`) - For exports and documentation snapshots
 
 ---
@@ -18,7 +18,7 @@ This project uses **two types of versions** for different purposes:
 ## Monthly Version (vYYYY-MM)
 
 ### Purpose
-- **Project milestones** and major releases
+- **Major releases** and stable release points
 - **Version tracking** in the `VERSION` file
 - **Release automation** when `VERSION` file changes
 - **Stable reference points** for the project state
@@ -104,7 +104,7 @@ Name: Documentation Export v2025-11-16 (Daily)
 |--------|----------------|---------------|
 | **Format** | `v2025-11` | `v2025-11-16` |
 | **Source** | `VERSION` file | Current date |
-| **Frequency** | Monthly or milestone-based | Every export |
+| **Frequency** | Monthly (automatic) | Every export |
 | **Purpose** | Project releases | Documentation exports |
 | **Workflow** | `release-automation.yml` | `export-docs.yml` |
 | **Release Type** | Full release | Pre-release |
@@ -165,7 +165,7 @@ Name: Documentation Export v2025-11-16 (Daily)
 ## Best Practices
 
 ### When to Use Monthly Version
-- ✅ Creating a project milestone
+- ✅ Creating a major release
 - ✅ Major documentation updates
 - ✅ Significant feature additions
 - ✅ Breaking changes
