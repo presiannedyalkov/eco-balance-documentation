@@ -16,6 +16,7 @@
 *.swo
 *.swp
 *~
+*.sync-conflict-*
 .DS_Store
 .cache-loader/
 .docusaurus/
