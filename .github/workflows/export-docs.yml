@@ -75,7 +75,7 @@ jobs:
       
       - name: Upload EPUB artifact
         if: always() && (github.event.inputs.export_format == 'epub' || github.event.inputs.export_format == 'both' || github.event_name == 'push')
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: documentation-epub
           path: exports/*.epub
@@ -83,7 +83,7 @@ jobs:
       
       - name: Upload PDF artifact
         if: always() && (github.event.inputs.export_format == 'pdf' || github.event.inputs.export_format == 'both' || github.event_name == 'push')
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: documentation-pdf
           path: exports/*.pdf
