@@ -34,7 +34,7 @@
     "@docusaurus/preset-classic": "^3.5.0",
     "@mdx-js/react": "^3.0.0",
     "@sentry/react": "^10.26.0",
-    "@sentry/webpack-plugin": "^4.6.1",
+    "@sentry/webpack-plugin": "^4.6.2",
     "clsx": "^2.1.0",
     "meilisearch": "^0.54.0",
     "prism-react-renderer": "^2.3.1",
