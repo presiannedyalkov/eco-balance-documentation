@@ -66,9 +66,9 @@ Each monthly release creates:
    ↓
 8. Update VERSION file automatically
    ↓
-9. Commit and push changes to repository
+9. Push to release branch (e.g. release/YYYY-MM) and open PR to main
    ↓
-10. VERSION file change triggers deployment workflow
+10. You merge the PR → VERSION file change on main triggers deployment workflow
     ↓
 11. Deployment happens automatically
     ↓
@@ -230,9 +230,9 @@ Each monthly release includes:
 ### Workflow Run Status
 
 Each monthly release workflow run shows:
-- ✅ **Success:** All steps completed, release created
-- ⚠️ **Skipped:** No changes detected (unless forced)
-- ❌ **Failed:** Error occurred (check logs)
+- ✅ **Success:** Release branch pushed and PR opened. **Merge the PR** to update `main` and trigger deployment (required when `main` is protected).
+- ⚠️ **Skipped:** No changes detected, or version already exists (use `force` to override).
+- ❌ **Failed:** Error occurred (check logs).
 
 ---
 
@@ -253,13 +253,25 @@ Each monthly release workflow run shows:
 
 **Check:**
 1. Did the monthly release workflow complete successfully?
-2. Was the `VERSION` file updated?
-3. Check deployment workflow logs
+2. Did you **merge the release PR** into `main`? (Required when `main` is protected.)
+3. Was the `VERSION` file updated on `main`?
+4. Check deployment workflow logs
 
 **Solution:**
-- Monthly release must complete first
-- Deployment triggers automatically when `VERSION` changes
-- Can manually trigger deployment if needed
+- When `main` is protected, the workflow opens a PR instead of pushing. **Merge the release PR** (e.g. `release/2026-01` → `main`) to update `VERSION` on `main` and trigger deployment.
+- Deployment runs automatically when `VERSION` changes on `main`.
+- You can manually trigger deployment from the Actions tab if needed.
+
+### Workflow Failed: "Protected branch" / "Changes must be made through a pull request"
+
+**Cause:** The `main` branch has branch protection that blocks direct pushes. The workflow is designed for this: it pushes to a **release branch** (e.g. `release/2026-01`) and opens a **Pull Request** to `main`.
+
+**What to do:**
+1. After the workflow runs, open the **Actions** run and check the summary for the PR link.
+2. Open the PR (e.g. "chore: release v2026-01") and merge it into `main`.
+3. Merging updates `VERSION` on `main` and triggers deploy + release creation.
+
+**Optional:** If you prefer the workflow to push directly to `main`, add the GitHub Actions bot to the branch protection bypass list: **Settings → Branches → Edit rule for main → Allow specified actors to bypass required pull requests** and add `github-actions[bot]`. Then you can change the workflow back to pushing to `main` if desired.
 
 ### Release Notes Missing
 
