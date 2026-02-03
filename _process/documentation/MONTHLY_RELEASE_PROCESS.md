@@ -273,6 +273,15 @@ Each monthly release workflow run shows:
 
 **Optional:** If you prefer the workflow to push directly to `main`, add the GitHub Actions bot to the branch protection bypass list: **Settings → Branches → Edit rule for main → Allow specified actors to bypass required pull requests** and add `github-actions[bot]`. Then you can change the workflow back to pushing to `main` if desired.
 
+### Release PR not created automatically
+
+**Cause:** The workflow tries to open the release PR via GitHub CLI and, if that fails, via the GitHub API. If you had to open the PR yourself, the token may not have permission to create pull requests.
+
+**What to do:**
+1. Go to **Settings** → **Actions** → **General**.
+2. Under **Workflow permissions**, ensure **"Allow GitHub Actions to create and approve pull requests"** is enabled.
+3. Save. The next monthly release run should create the PR automatically. If it still doesn’t, check the "Create release PR" step logs for the reported error.
+
 ### Release Notes Missing
 
 **Check:**
