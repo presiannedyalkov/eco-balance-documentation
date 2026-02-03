@@ -1,5 +1,10 @@
 name: Check Links
 
+# Avoid many concurrent runs; re-run failed jobs if you see "job was not acquired by Runner" or "Internal server error" (transient GitHub issues)
+concurrency:
+  group: check-links
+  cancel-in-progress: true
+
 on:
   pull_request:
     paths:

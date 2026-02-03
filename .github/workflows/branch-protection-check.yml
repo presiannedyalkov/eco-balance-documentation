@@ -1,5 +1,9 @@
 name: Branch Protection Check
 
+concurrency:
+  group: branch-protection-check
+  cancel-in-progress: true
+
 on:
   push:
     branches:

@@ -1,5 +1,9 @@
 name: Verify Deployment
 
+concurrency:
+  group: verify-deployment
+  cancel-in-progress: true
+
 on:
   workflow_run:
     workflows: ["Deploy to GitHub Pages"]
