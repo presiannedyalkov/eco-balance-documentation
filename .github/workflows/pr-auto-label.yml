@@ -1,5 +1,9 @@
 name: Auto-label PR by Branch Name
 
+concurrency:
+  group: pr-auto-label
+  cancel-in-progress: true
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]

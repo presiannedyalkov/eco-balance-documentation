@@ -1,5 +1,9 @@
 name: Branch Protection Check
 
+concurrency:
+  group: branch-protection-check
+  cancel-in-progress: true
+
 on:
   push:
     branches:
@@ -9,77 +13,51 @@ on:
       - main
 
 jobs:
-  check-branch-protection:
-    name: Verify Branch Protection
+  branch-protection:
+    # Single job for both events; name kept for branch protection rules that require "Validate Pull Request"
+    name: Validate Pull Request
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          fetch-depth: 2  # Need at least 2 commits to check merge commits
+          fetch-depth: 2
       
+      # On push to main: verify the push is from a PR merge (not a direct push)
       - name: Check if push is from PR merge
         id: check_merge
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: |
-          # Check if the latest commit is a merge commit from a PR
-          # GitHub creates merge commits with message "Merge pull request #X from..."
           COMMIT_MSG=$(git log -1 --pretty=%B)
-          COMMIT_AUTHOR=$(git log -1 --pretty=%an)
-          
           if echo "$COMMIT_MSG" | grep -qE "^Merge pull request #[0-9]+"; then
             echo "✅ This is a PR merge commit, allowing push"
             echo "is_pr_merge=true" >> $GITHUB_OUTPUT
             exit 0
           fi
-          
-          # Also check if it's a merge commit (has 2+ parents)
           PARENT_COUNT=$(git log -1 --pretty=%P | wc -w)
           if [ "$PARENT_COUNT" -ge 2 ]; then
             echo "✅ This is a merge commit, allowing push"
             echo "is_pr_merge=true" >> $GITHUB_OUTPUT
             exit 0
           fi
-          
-          # Check if committer is GitHub (for squash merges)
           COMMITTER=$(git log -1 --pretty=%cn)
           if [ "$COMMITTER" = "GitHub" ]; then
             echo "✅ This is a GitHub merge (likely from PR), allowing push"
             echo "is_pr_merge=true" >> $GITHUB_OUTPUT
             exit 0
           fi
-          
           echo "is_pr_merge=false" >> $GITHUB_OUTPUT
       
-      - name: Block direct push
-        if: steps.check_merge.outputs.is_pr_merge != 'true'
+      - name: Block direct push to main
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push' && steps.check_merge.outputs.is_pr_merge != 'true'
         run: |
           echo "⚠️ Direct push to main branch detected!"
           echo "❌ All changes must go through Pull Requests."
-          echo "Please create a branch and open a PR instead."
-          echo ""
-          echo "Commit message: $(git log -1 --pretty=%B)"
-          echo "Author: $(git log -1 --pretty=%an)"
-          echo "Committer: $(git log -1 --pretty=%cn)"
           exit 1
-
-  validate-pr:
-    name: Validate Pull Request
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
       
-      - name: Validate PR
+      # On pull_request: simple validation (required so branch protection sees a passing check)
+      - name: Validate pull request
+        if: github.event_name == 'pull_request'
         run: |
-          echo "✅ PR validation passed"
-          echo "Branch: ${{ github.head_ref }}"
-          echo "Base: ${{ github.base_ref }}"
-          
-          if [ "${{ github.base_ref }}" != "main" ]; then
-            echo "⚠️ Warning: PR is not targeting main branch"
-          fi
+          echo "✅ PR validation passed (branch ${{ github.head_ref }} → ${{ github.base_ref }})"
 

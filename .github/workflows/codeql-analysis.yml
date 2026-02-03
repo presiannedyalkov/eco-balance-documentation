@@ -1,5 +1,9 @@
 name: CodeQL Analysis
 
+concurrency:
+  group: codeql-analysis
+  cancel-in-progress: true
+
 on:
   push:
     branches: [ "main" ]
