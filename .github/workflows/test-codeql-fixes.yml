@@ -1,5 +1,9 @@
 name: Test CodeQL Fixes
 
+concurrency:
+  group: test-codeql-fixes
+  cancel-in-progress: true
+
 on:
   pull_request:
     branches: [ "main" ]

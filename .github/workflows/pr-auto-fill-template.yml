@@ -1,5 +1,9 @@
 name: Auto-fill PR Template
 
+concurrency:
+  group: pr-auto-fill-template
+  cancel-in-progress: true
+
 on:
   pull_request:
     types: [opened, synchronize, reopened, edited]

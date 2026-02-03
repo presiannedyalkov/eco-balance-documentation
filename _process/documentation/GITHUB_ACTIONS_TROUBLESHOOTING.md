@@ -79,6 +79,24 @@ GITHUB_TOKEN=your_token node scripts/check-github-actions.js
 3. Expand each step to see error details
 4. Look for red X marks indicating failed steps
 
+### 6. "The job was not acquired by Runner of type hosted even after multiple attempts"
+
+**Cause:** GitHub’s hosted runner pool was temporarily unavailable or at capacity (infrastructure/transient).
+
+**Fix:**
+1. **Re-run the failed jobs:** Actions → open the failed run → **Re-run failed jobs** (or **Re-run all jobs**).
+2. Check [GitHub Status](https://www.githubstatus.com/) for incidents.
+3. If it happens often, reduce concurrent runs (e.g. use `concurrency:` in workflows so only one run per workflow is active).
+
+### 7. "Internal server error" (Check Links or other jobs)
+
+**Cause:** Transient GitHub Actions service error ([GitHub’s troubleshooting](https://docs.github.com/en/actions/how-tos/troubleshoot-workflows)).
+
+**Fix:**
+1. **Re-run the workflow or failed jobs** (same as above).
+2. Check [GitHub Status](https://www.githubstatus.com/).
+3. If it keeps failing, enable debug: Settings → Actions → add secrets `ACTIONS_STEP_DEBUG` and `ACTIONS_RUNNER_DEBUG` = `true`, then re-run and inspect logs.
+
 ---
 
 ## Workflow File Checks
@@ -159,5 +177,5 @@ npm run serve
 
 ---
 
-**Last Updated:** November 2025
+**Last Updated:** February 2026
 
