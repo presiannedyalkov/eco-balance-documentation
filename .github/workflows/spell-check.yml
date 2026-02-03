@@ -1,5 +1,9 @@
 name: Spell Check
 
+concurrency:
+  group: spell-check
+  cancel-in-progress: true
+
 on:
   pull_request:
     paths:
@@ -53,7 +57,7 @@ jobs:
       
       - name: Upload spell check results
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: spell-check-results
           path: .cspell/cache
