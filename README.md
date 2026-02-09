@@ -14,6 +14,25 @@
 - [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) **CodeQL** - Static code analysis for security vulnerabilities | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)
 - [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) **Dependabot** - Dependency vulnerability scanning | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)
 
+### 🔒 Security Alerts Status
+
+**Last Updated:** 2026-02-09
+
+**CodeQL Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)):
+
+- ✅ **Critical:** 0
+- ✅ **High:** 0
+- ✅ **Medium:** 0
+- ✅ **Low:** 0
+- ✅ **Note:** 0
+- **Total Open:** 0
+
+
+**Dependabot Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)):
+⚠️ Unable to fetch Dependabot alerts
+
+> **💡 Tip:** Check these regularly! Security alerts can appear at any time when new vulnerabilities are discovered. Click the links above to view detailed information about each alert.
+
 ### Performance & Quality
 - [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) **Lighthouse** - Performance, accessibility, best practices, SEO | [View Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml)
 - [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) **Link Check** - Validates external links | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml)
