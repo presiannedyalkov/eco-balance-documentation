@@ -44,9 +44,9 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.5.0",
     "@docusaurus/types": "^3.5.0",
-    "@playwright/test": "^1.57.0",
-    "glob": "^13.0.0",
-    "jsdom": "^27.3.0",
+    "@playwright/test": "^1.58.2",
+    "glob": "^13.0.1",
+    "jsdom": "^28.0.0",
     "patch-package": "^8.0.1",
     "playwright": "^1.57.0"
   },
