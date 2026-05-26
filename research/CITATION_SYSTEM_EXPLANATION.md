@@ -15,7 +15,7 @@ Right now, your documentation makes claims like:
 - "Crowdfunding campaigns average €15,000" (no source)
 - "Mediterranean restoration requires 3-5 years" (no source)
 
-**Problem:** These claims can't be verified. You have 399 research articles, but they're not connected to your documentation.
+**Problem:** These claims can't be verified. You have 475+ Climate Change research articles, but they're not connected to your documentation.
 
 ## What a Citation Index Would Do
 
@@ -52,7 +52,7 @@ ecosystems [rest-001, rest-003]. The selection criteria should prioritize...
     {
       "id": "rest-001",
       "title": "Mediterranean Restoration Best Practices",
-      "article_file": "research/bookmarks/articles/1014978855.md",
+      "article_file": "research/bookmarks/Climate Change/1014978855.md",
       "url": "https://example.com/article",
       "tags": ["restoration", "mediterranean", "success-rate"],
       "key_claims": [
@@ -69,7 +69,7 @@ ecosystems [rest-001, rest-003]. The selection criteria should prioritize...
     {
       "id": "fund-001",
       "title": "50+ Calls for Applications: Climate Change Funding",
-      "article_file": "research/bookmarks/articles/1014978855.md",
+      "article_file": "research/bookmarks/Climate Change/1014978855.md",
       "url": "https://www2.fundsforngos.org/...",
       "tags": ["funding", "grants", "climate-change"],
       "key_claims": [
@@ -99,13 +99,13 @@ ecosystems [rest-001, rest-003]. The selection criteria should prioritize...
 - [rest-001] Mediterranean Restoration Best Practices (2023)
   - Used in: `strategic/20_Restoration_Methodology.md`
   - Key claim: 85% success rate for native species
-  - File: `research/bookmarks/articles/1014978855.md`
+  - File: `research/bookmarks/Climate Change/1014978855.md`
 
 ### Funding & Grants
 - [fund-001] 50+ Calls for Applications: Climate Change Funding (2025)
   - Used in: `strategic/32_Funding_Strategy.md`
   - Key claim: 50+ grant opportunities available
-  - File: `research/bookmarks/articles/1014978855.md`
+  - File: `research/bookmarks/Climate Change/1014978855.md`
 
 ## By Document
 
@@ -151,7 +151,7 @@ ecosystems [rest-001, rest-003]. The selection criteria should prioritize...
    ```
 
 2. **Search research articles:**
-   - Look in `research/bookmarks/articles/` for articles about restoration success rates
+   - Look in `research/bookmarks/Climate Change/` for articles about restoration success rates
    - Find article: `1014978855.md` mentions "85% success rate"
 
 3. **Add citation:**

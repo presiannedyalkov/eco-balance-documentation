@@ -1,120 +1,92 @@
 # Research Bookmarks
 
-This directory contains research articles and bookmarks related to climate change, environmental restoration, biodiversity, and related topics.
+Curated, AI-enriched markdown articles from Raindrop.io, maintained in the unified bookmarks repository on Gitea.
 
 ## Structure
 
 ```
 research/
-├── bookmarks/          # Git submodule: climate-change-bookmarks repository
-│   └── articles/       # 399+ markdown articles with YAML frontmatter
-└── README.md           # This file
+├── bookmarks/                    # Git submodule: pres/bookmarks on Gitea
+│   ├── Climate Change/           # ~475 articles (primary corpus for Eco Balance)
+│   ├── Activism/
+│   ├── Business/
+│   └── ...                       # Other collections (14 total)
+└── README.md                     # This file
 ```
 
 ## Source Repository
 
-The bookmarks are maintained in a separate repository:
-- **Repository:** [climate-change-bookmarks](https://github.com/presiannedyalkov/climate-change-bookmarks)
-- **Articles:** 399+ markdown files
-- **Format:** Each article has YAML frontmatter with metadata (title, URL, tags, dates)
-- **Naming:** Files are named by `raindrop_id` (e.g., `1014978855.md`)
+- **Repository:** [pres/bookmarks](https://gitea.nexus-home.cc/pres/bookmarks) on Gitea (`https://gitea.nexus-home.cc/pres/bookmarks.git`)
+- **Climate Change articles:** ~475 markdown files in `Climate Change/`
+- **Format:** Each article has YAML frontmatter (`raindrop_id`, `title`, `url`, `tags`, `ai_summary`, etc.)
+- **Naming:** Files are named by `raindrop_id` (e.g. `1620242155000.md`)
+
+For search and similarity across all collections, use [bookmarks-mcp](https://gitea.nexus-home.cc/pres/bookmarks-mcp) (Meilisearch + Qdrant on your LAN).
 
 ## Auto-Sync
 
-The research bookmarks are automatically synced via GitHub Actions:
+GitHub Actions syncs the submodule when the bookmarks repo changes:
+
 - **Schedule:** Every 6 hours
 - **Workflow:** `.github/workflows/sync-research-bookmarks.yml`
-- **Manual Trigger:** Available via `workflow_dispatch`
+- **Manual trigger:** `workflow_dispatch`
+- **Requires:** `GITEA_READ_TOKEN` secret (read-only Gitea token)
 
 ## Usage
 
-### Accessing Articles
+### Accessing Climate Change Articles
 
-Articles are located in `research/bookmarks/articles/`. Each article is a markdown file with:
+Articles are in `research/bookmarks/Climate Change/`. Example frontmatter:
 
 ```yaml
 ---
 raindrop_id: 1014978855
 title: Article Title
 url: https://example.com/article
-domain: example.com
-created: 2025-04-14T17:26:56.372Z
-downloaded: 2025-11-14T17:00:07.259604
+collection: Climate Change
+content_type: reference
 tags:
-  - Climate_Change
-  - Biodiversity
-cleaned: true
+  - climate_change
+  - biodiversity
+ai_summary: ...
 ---
-
-# Article Title
-
-**Source:** [example.com](https://example.com/article)
-**Tags:** #Climate_Change #Biodiversity
-
-[Article content...]
 ```
-
-### Searching Articles
-
-You can search articles by:
-- **Tags:** Look for specific tags in frontmatter
-- **Domain:** Filter by source domain
-- **Title:** Search article titles
-- **Content:** Full-text search in article bodies
 
 ### Citing Articles
 
-When referencing research in documentation, use the article's `raindrop_id` or URL:
-
 ```markdown
-According to research [^1], native species restoration has a 85% success rate.
+According to research [^1], native species restoration shows strong outcomes in comparable climates.
 
-[^1]: [Article Title](research/bookmarks/articles/1014978855.md) - Source: example.com
+[^1]: [Article Title](research/bookmarks/Climate%20Change/1014978855.md) — example.com
 ```
 
 ## Manual Update
 
-To manually update the submodule:
-
 ```bash
-# Update to latest version
-git submodule update --remote research/bookmarks
-
-# Commit the update
+git submodule sync research/bookmarks
+git submodule update --init --remote research/bookmarks
 git add research/bookmarks .gitmodules
 git commit -m "chore: update research bookmarks submodule"
 ```
 
 ## Cloning with Submodule
 
-When cloning this repository, include the submodule:
-
 ```bash
 git clone --recurse-submodules https://github.com/presiannedyalkov/eco-balance-documentation.git
 ```
 
-Or if already cloned:
+Or after clone:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-## Integration with AI Personas
-
-The research bookmarks are available to AI personas (Knowledge Synthesizer, etc.) for:
-- Extracting insights from research
-- Adding citations to documentation
-- Validating claims against research sources
-- Generating research-backed content
-
 ## Statistics
 
-- **Total Articles:** 399+ (growing)
-- **Format:** Markdown with YAML frontmatter
-- **Last Updated:** Auto-synced every 6 hours
-- **Location:** `research/bookmarks/articles/`
+- **Climate Change articles:** ~475 (in submodule)
+- **All collections:** ~1600+ (full bookmarks repo; searchable via bookmarks-mcp)
+- **Last updated:** Auto-synced via GitHub Actions when `GITEA_READ_TOKEN` is configured
 
 ---
 
-**Note:** The bookmarks repository is maintained separately. Changes to articles should be made in the [climate-change-bookmarks](https://github.com/presiannedyalkov/climate-change-bookmarks) repository, not directly in this submodule.
-
+**Note:** Edit articles in the [bookmarks](https://gitea.nexus-home.cc/pres/bookmarks) repository, not inside this submodule checkout.

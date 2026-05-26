@@ -27,7 +27,7 @@ Create **shelter and sanctuary for wildlife** by restoring damaged habitats and 
 
 **What exists now:**
 - ✅ Clear vision and values
-- ✅ Research foundation (400+ bookmarks)
+- ✅ Research foundation (475+ Climate Change articles; [research/README](research/README))
 - ✅ Planning framework documented
 - ✅ Skills: Web development, biology, NGO experience
 - ❌ No funding secured
@@ -40,6 +40,18 @@ Create **shelter and sanctuary for wildlife** by restoring damaged habitats and 
 **What we need:** Support to find the right ways, ask the right questions, and organize properly. We need help exploring options, not prescriptive plans with concrete dates and costs.
 
 → See [[strategic/04_Current_Status_Assessment|Current Status]] for detailed assessment
+
+---
+
+## From our research
+
+Curated Climate Change bookmarks (Gitea `pres/bookmarks`, searchable via bookmarks-mcp) ground exploration in real projects and policy—not generic templates:
+
+- **EU land use at scale:** Denmark is converting farmland to forest (1 billion trees, peat rewetting) within the EU 2040 climate framework—useful for comparing national restoration ambition in Europe. [1764077127291](research/bookmarks/Climate%20Change/1764077127291.md)
+- **Community-scale reforestation:** Pucklechurch Wood (UK Western Forest) shows council/trust/volunteer planting of 44,000+ native trees for wildlife, carbon, and flood mitigation. [1764455886518](research/bookmarks/Climate%20Change/1764455886518.md)
+- **Soil and degraded land:** Microbial soil-crust work on desert sand (10–16 months to fertile soil) informs how we think about soil biology and mycorrhizal networks on marginal land—not as a product pitch, but as a research direction. [1771828591690](research/bookmarks/Climate%20Change/1771828591690.md)
+
+More themes (funding calls, rewilding lessons, monitoring tech) live in the bookmark corpus; cite specific `entry_id` files when updating strategic docs.
 
 ---
 

@@ -1,12 +1,12 @@
 ---
-id: "technology-integration"
-title: "Technology Integration"
+id: technology-integration
+title: Technology Integration
 sidebar_position: 2
 ---
 
 # Technology Integration - Adaptive Framework
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 

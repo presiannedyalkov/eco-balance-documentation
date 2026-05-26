@@ -1,12 +1,12 @@
 ---
-id: "restoration-methodology"
-title: "Restoration Methodology"
+id: restoration-methodology
+title: Restoration Methodology
 sidebar_position: 1
 ---
 
 # Restoration Methodology
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 

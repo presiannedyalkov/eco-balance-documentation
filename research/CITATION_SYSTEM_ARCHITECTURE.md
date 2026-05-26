@@ -12,7 +12,7 @@
 **Before you start:** You have 399 research articles (markdown files) that you want to cite in your documentation.
 
 **The main flow (top section):**
-1. **Research Articles** → You start with your 399 markdown files containing research articles
+1. **Research Articles** → You start with your 475+ Climate Change markdown files containing research articles
 2. **Citation Index** → A script or tool processes these articles and creates an index (like a database) in JSON or BibTeX format
 3. **Citation IDs** → Each article gets a unique ID like `rest-001` (for restoration article #1) or `fund-001` (for funding article #1)
 4. **Markdown Documents** → You write your documentation files (like `strategic/20a_Restoration_Methods_Guide.md`)
@@ -30,7 +30,7 @@
 
 ```mermaid
 flowchart TD
-    A[Research Articles<br/>399 markdown files] --> B[Citation Index<br/>JSON/BibTeX]
+    A[Research Articles<br/>475+ Climate Change markdown files] --> B[Citation Index<br/>JSON/BibTeX]
     B --> C[Citation IDs<br/>rest-001, fund-001]
     C --> D[Markdown Documents<br/>strategic/*.md]
     D --> E["Citation References<br/>(rest-001) in text"]
@@ -76,7 +76,7 @@ flowchart TD
 **What this diagram shows:** The step-by-step process of how custom scripts handle citations, from reading articles to generating final documents.
 
 **Left side - Building the citation index:**
-1. **Article Files** → Your 399 markdown files in `research/bookmarks/articles/` folder
+1. **Article Files** → Your 475+ Climate Change markdown files in `research/bookmarks/Climate Change/` folder
 2. **Script: generate-citation-index.js** → You run this script once. It:
    - Reads all article markdown files
    - Extracts title, author, URL, date from YAML frontmatter
@@ -105,7 +105,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A[Article Files<br/>research/bookmarks/articles/*.md] --> B[Script: generate-citation-index.js]
+    A[Article Files<br/>research/bookmarks/Climate Change/*.md] --> B[Script: generate-citation-index.js]
     B --> C[Citation Index<br/>citation_index.json]
     C --> D[Citation IDs<br/>rest-001, fund-001]
     
@@ -142,7 +142,7 @@ flowchart LR
 **What this diagram shows:** The file structure and how all the components connect together in the Custom Scripts approach.
 
 **Research Repository (top-left):**
-- **Articles** → Your 399 markdown files, each with YAML frontmatter containing title, author, URL, date, tags
+- **Articles** → Your 475+ Climate Change markdown files, each with YAML frontmatter containing title, author, URL, date, tags
 - These are your source of truth for research
 
 **Citation System (top-center):**

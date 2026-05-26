@@ -83,7 +83,7 @@ Native species restoration has 85% success rate (Mediterranean Restoration, 2023
     "rest-001": {
       "id": "rest-001",
       "title": "Mediterranean Restoration Best Practices",
-      "article_file": "research/bookmarks/articles/1014978855.md",
+      "article_file": "research/bookmarks/Climate Change/1014978855.md",
       "url": "https://example.com/article",
       "year": 2023,
       "authors": ["Author Name"],
@@ -233,7 +233,7 @@ Native species restoration has 85% success rate (Mediterranean Restoration, 2023
 **Script:** `scripts/generate-citation-index.js`
 
 **What it does:**
-- Scans `research/bookmarks/articles/*.md`
+- Scans `research/bookmarks/Climate Change/*.md`
 - Extracts frontmatter (title, url, tags, raindrop_id)
 - Generates citation IDs based on tags + sequential number
 - Creates `citation_index.json`
@@ -246,7 +246,7 @@ Native species restoration has 85% success rate (Mediterranean Restoration, 2023
     "fund-001": {
       "id": "fund-001",
       "title": "50+ Calls for Applications: Addressing Climate Change...",
-      "article_file": "research/bookmarks/articles/1014978855.md",
+      "article_file": "research/bookmarks/Climate Change/1014978855.md",
       "url": "https://www2.fundsforngos.org/...",
       "tags": ["Climate_Change", "funding"],
       "year": 2025,

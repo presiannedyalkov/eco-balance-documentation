@@ -111,7 +111,7 @@
 
 ### 📚 Exceptional Research Foundation
 
-**400+ carefully curated bookmarks** covering:
+**475+ Climate Change articles** in the unified bookmarks repo (`research/bookmarks`, Gitea `pres/bookmarks`), plus ~1600 articles across all collections via bookmarks-mcp search. Covering:
 
 #### Climate & Environmental Science
 - Climate change impacts and urgency
@@ -126,6 +126,12 @@
 - Biodiversity conservation
 - Community-based models
 - Holistic/systems approaches
+
+**Recent themes from the corpus (cited by entry_id):**
+
+- **European afforestation policy:** Denmark’s farmland-to-forest plan (1B trees, EU 2040 context) — [1764077127291](../research/bookmarks/Climate%20Change/1764077127291.md)
+- **UK national forest revival:** Pucklechurch Wood / Western Forest (44k+ native trees, wildlife + carbon) — [1764455886518](../research/bookmarks/Climate%20Change/1764455886518.md)
+- **Soil biology on degraded land:** Microbial soil-crust research for desert sand restoration — [1771828591690](../research/bookmarks/Climate%20Change/1771828591690.md)
 
 → Applied in: [[strategic/20_Restoration_Methodology|Restoration Methodology]]
 
@@ -765,7 +771,7 @@
 **Why this matters:** Maintaining jobs and health means sustainability. Many projects fail when founders burn out or run out of money.
 
 ### 3. Exceptional Research
-**Why this matters:** 400+ bookmarks show deep understanding. We're not naive idealists - we know the science, challenges, and proven methods.
+**Why this matters:** 475+ Climate Change articles (and growing) show deep understanding. We're not naive idealists - we know the science, challenges, and proven methods—and we can cite specific sources as we refine plans.
 
 ### 4. Holistic Thinking
 **Why this matters:** Systems-level restoration is more effective and fundable than simple tree-planting. Our approach stands out.

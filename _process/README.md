@@ -387,7 +387,7 @@ The `_process/` directory separates **HOW** documentation was created from **WHA
 **Core Content:**
 - `../00_Eco_Balance_Hub.md` - Main project hub
 - `../implementation_tasks/` - Implementation guides
-- Strategic documents (../00-70_*.md)
+- Strategic documents (../strategic/01-70_*.md)
 
 **Archive:**
 - `../archive/` - Historical documentation
