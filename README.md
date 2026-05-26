@@ -151,7 +151,7 @@ This documentation distinguishes between three types of content:
 
 **What exists now:**
 - ✅ Clear vision and values
-- ✅ Research foundation (400+ bookmarks)
+- ✅ Research foundation (475+ Climate Change articles; see [research/README](research/README))
 - ✅ Planning framework documented
 - ✅ Skills: Web development, biology, NGO experience
 - ❌ No funding secured

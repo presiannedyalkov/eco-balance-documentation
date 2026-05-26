@@ -1,13 +1,14 @@
 ---
-id: "intro"
-title: "Project Hub"
+id: intro
+title: Project Hub
 sidebar_position: 0
-slug: "/"
+slug: /
 ---
 
 # 🌍 ECO BALANCE PROJECT HUB
 
-**Current Status:** Exploration Phase
+**Current Status:** Exploration Phase  
+**Last Updated:** November 2025
 
 ---
 
@@ -33,7 +34,7 @@ Create **shelter and sanctuary for wildlife** by restoring damaged habitats and 
 
 **What exists now:**
 - ✅ Clear vision and values
-- ✅ Research foundation (400+ bookmarks)
+- ✅ Research foundation (475+ Climate Change articles; [research/README](research/README))
 - ✅ Planning framework documented
 - ✅ Skills: Web development, biology, NGO experience
 - ❌ No funding secured
@@ -49,57 +50,69 @@ Create **shelter and sanctuary for wildlife** by restoring damaged habitats and 
 
 ---
 
+## From our research
+
+Curated Climate Change bookmarks (Gitea `pres/bookmarks`, searchable via bookmarks-mcp) ground exploration in real projects and policy—not generic templates:
+
+- **EU land use at scale:** Denmark is converting farmland to forest (1 billion trees, peat rewetting) within the EU 2040 climate framework—useful for comparing national restoration ambition in Europe. [1764077127291](research/bookmarks/Climate%20Change/1764077127291.md)
+- **Community-scale reforestation:** Pucklechurch Wood (UK Western Forest) shows council/trust/volunteer planting of 44,000+ native trees for wildlife, carbon, and flood mitigation. [1764455886518](research/bookmarks/Climate%20Change/1764455886518.md)
+- **Soil and degraded land:** Microbial soil-crust work on desert sand (10–16 months to fertile soil) informs how we think about soil biology and mycorrhizal networks on marginal land—not as a product pitch, but as a research direction. [1771828591690](research/bookmarks/Climate%20Change/1771828591690.md)
+
+More themes (funding calls, rewilding lessons, monitoring tech) live in the bookmark corpus; cite specific `entry_id` files when updating strategic docs.
+
+---
+
 ## 📋 Quick Navigation
 
 ### Core Strategy
-- [Executive Summary](/vision-strategy/executive-summary) - Vision, mission, investment ask
-- [Project Vision & Context](/vision-strategy/project-vision) - Global challenge, solution, geography
-- [Success Factors & Assumptions](/vision-strategy/success-factors) - What makes or breaks this project
-- [Current Status](/vision-strategy/current-status) - Where we are, what's needed
+- Executive Summary - Vision, mission, investment ask
+- Project Vision & Context - Global challenge, solution, geography
+- Success Factors & Assumptions - What makes or breaks this project
+- Current Status - Where we are, what's needed
 
 ### Organization
-- [Organizational Structure](/organization/organizational-structure) - Legal entity setup and structure
-- [Governance Framework](/organization/governance) - Board, decision-making, accountability
-- [Team & Roles](/organization/team-roles) - Staffing plan, roles, hiring timeline
-- [Legal Framework](/organization/legal-framework) - Regulatory compliance, permits
+- Organizational Structure - Legal entity setup and structure
+- Governance Framework - Board, decision-making, accountability
+- Team & Roles - Staffing plan, roles, hiring timeline
+- Legal Framework - Regulatory compliance, permits
 
 ### Operations
-- [Restoration Methodology](/operations/restoration-methodology) - Location-adaptive restoration methods
-- [Technology Integration](/operations/technology-integration) - Solar, water, and monitoring systems
-- [Restoration Challenges & Solutions](/operations/challenges-solutions) - Common challenges and solutions
+- Restoration Methodology - Location-adaptive restoration methods
+- Technology Integration - Solar, water, and monitoring systems
+- Restoration Challenges & Solutions - Common challenges and solutions
 
 ### Business
-- [Business Model](/business/business-model) - Revenue streams and financial sustainability
-- [Financial Projections](/business/financial-projections) - Financial scenarios and projections
-- [Funding Strategy](/business/funding-strategy) - Bootstrap funding pathways and strategies
+- Business Model - Revenue streams and financial sustainability
+- Financial Projections - Financial scenarios and projections
+- Funding Strategy - Bootstrap funding pathways and strategies
 
 ### Growth
-- [Expansion Strategy](/growth/expansion-strategy) - Scaling approach and growth phases
-- [Adaptive Timeline](/growth/adaptive-timeline) - Phased implementation approach
-- [Operations Action Plan](/growth/operations-action-plan) - Day-to-day operations guide
-- [Site Selection](/growth/site-selection) - Geographic options and land acquisition
-- [Tiny House Infrastructure](/growth/tiny-house-infrastructure) - Off-grid living specifications
+- Expansion Strategy - Scaling approach and growth phases
+- Adaptive Timeline - Phased implementation approach
+- Operations Action Plan - Day-to-day operations guide
+- Site Selection - Geographic options and land acquisition
+- Tiny House Infrastructure - Off-grid living specifications
 
 ### Performance
-- [Risk Assessment](/performance/risk-assessment) - Risk management and mitigation strategies
-- [Key Performance Indicators](/performance/kpis) - Metrics and success measurement
+- Risk Assessment - Risk management and mitigation strategies
+- Key Performance Indicators - Metrics and success measurement
 
 ### Engagement
-- [Marketing & Communications](/engagement/marketing-communications) - Outreach and community engagement
+- Marketing & Communications - Outreach and community engagement
 
 ### Learning
-- [Case Studies & Examples](/learning/case-studies) - Restoration project references
+- Case Studies & Examples - Restoration project references
 
 ### Plans & Templates
-- [Restoration Playbook](/restoration-playbook/) - Complete project template for ecological restoration (44 tasks across 6 phases)
+- Restoration Playbook - Complete project template for ecological restoration (44 tasks across 6 phases)
   - This is the **Plan** part of Vision → Plan → Reality
   - Template/playbook to customize for your specific project
   - When you start your actual project, copy this to your project folder
 
 ### Resources
-- [Quick Reference Guide](/resources/quick-reference) - How to use this documentation
-- [Roadmap](/resources/roadmap) - Multi-year vision, phases, and current blockers
-- [Feature Wishlist](/resources/feature-wishlist) - Desired enhancements and future ideas
+- Quick Reference Guide - How to use this documentation
+- Roadmap - Multi-year vision, phases, and current blockers
+- Feature Wishlist - Desired enhancements and future ideas
 
 ---
 
@@ -177,3 +190,4 @@ If you notice errors, have different perspectives, or want to contribute feedbac
 **Category**: Vision
 **Type**: Vision Document
 **Status**: Active
+**Last Updated**: 2025-11-13

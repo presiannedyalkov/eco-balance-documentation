@@ -1,6 +1,6 @@
 ---
-id: "quick-reference"
-title: "Quick Reference Guide"
+id: quick-reference
+title: Quick Reference Guide
 sidebar_position: 1
 ---
 
@@ -8,6 +8,7 @@ sidebar_position: 1
 
 **Purpose:** Fast navigation and understanding of the documentation structure
 **Version:** 2.0.0 (Bootstrap Model)
+**Last Updated:** 2025-11-08
 **For:** All users - new and experienced
 
 ---
@@ -641,6 +642,7 @@ You now know:
 ---
 
 **Document Version:** 2.0.0
+**Last Updated:** 2025-11-08
 **Status:** Active
 
 **Questions?** Check the Hub or search documentation!

@@ -1,12 +1,12 @@
 ---
-id: "operations-action-plan"
-title: "Operations Action Plan"
+id: operations-action-plan
+title: Operations Action Plan
 sidebar_position: 3
 ---
 
 # Operations & Action Plan - Bootstrap Model
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 
@@ -1089,6 +1089,7 @@ sidebar_position: 3
 - Better to work 5 years part-time than 1 year full-time and burn out
 - Your work model should serve the mission, not the other way around
 
+**Last Updated:** 2025-11-09
 **Status:** Active
 
 ---

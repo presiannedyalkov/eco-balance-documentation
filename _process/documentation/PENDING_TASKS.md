@@ -193,8 +193,9 @@
 - `.github/workflows/sync-research-bookmarks.yml` (auto-sync workflow) ✅ NEW
 
 **Summary:**
-- ✅ **Submodule added:** `research/bookmarks/` pointing to [climate-change-bookmarks](https://github.com/presiannedyalkov/climate-change-bookmarks)
-- ✅ **399 articles** available in `research/bookmarks/articles/`
+- ✅ **Submodule added:** `research/bookmarks/` pointing to [pres/bookmarks](https://gitea.nexus-home.cc/pres/bookmarks) on Gitea
+- ✅ **475+ Climate Change articles** in `research/bookmarks/Climate Change/`
+- ✅ **GitHub Actions:** requires `GITEA_READ_TOKEN` secret for sync workflow
 - ✅ **Auto-sync configured:** GitHub Actions workflow runs every 6 hours
 - ✅ **Manual trigger:** Available via `workflow_dispatch`
 - ✅ **Documentation:** README created with usage instructions

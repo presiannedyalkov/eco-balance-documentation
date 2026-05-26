@@ -1,12 +1,12 @@
 ---
-id: "funding-strategy"
-title: "Funding Strategy"
+id: funding-strategy
+title: Funding Strategy
 sidebar_position: 3
 ---
 
 # Funding Strategy - Bootstrap Approach
 
-**← Back to [Project Hub](/docs/intro)**
+**← Back to [Project Hub](/)**
 
 ---
 
