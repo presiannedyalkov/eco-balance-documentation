@@ -74,8 +74,10 @@ jobs:
             echo "::warning::Climate Change directory not found at $CLIMATE_DIR"
           fi
 
-      - name: Commit and push changes
+      - name: Commit and create PR
         if: steps.update-submodule.outputs.has_changes == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -87,12 +89,20 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore: update research bookmarks submodule
+          BRANCH_NAME="chore/update-bookmarks-submodule-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH_NAME"
+          git commit -m "chore: update research bookmarks submodule [skip ci]
 
           - Updated to latest commit from gitea pres/bookmarks
           - Climate Change article count: ${{ steps.count_articles.outputs.article_count }}"
+          git push origin "$BRANCH_NAME"
 
-          git push origin HEAD:main || echo "Push failed (may need manual merge)"
+          gh pr create \
+            --title "chore: update research bookmarks submodule" \
+            --body "Automated submodule sync from gitea pres/bookmarks. Climate Change articles: ${{ steps.count_articles.outputs.article_count }}" \
+            --base main \
+            --head "$BRANCH_NAME" \
+            || echo "PR may already exist or failed to create"
 
       - name: Create summary
         run: |
