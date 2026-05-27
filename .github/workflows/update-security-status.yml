@@ -5,12 +5,17 @@ on:
     # Run daily at 3 AM UTC
     - cron: '0 3 * * *'
   workflow_dispatch:
-  # Also run when code scanning alerts change (CodeQL)
+  # Also run when CodeQL workflow changes (not on every push to main)
   push:
     branches:
       - main
     paths:
       - '.github/workflows/codeql-analysis.yml'
+
+# One open PR at a time; do not spawn dated branches.
+concurrency:
+  group: update-security-status
+  cancel-in-progress: true
 
 jobs:
   update-status:
@@ -18,50 +23,59 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
       security-events: read
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: '20'
-      
+
       - name: Update security status
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          node scripts/update-security-status.js
-      
-      - name: Commit and create PR
+        run: node scripts/update-security-status.js
+
+      - name: Update single PR branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           if git diff --quiet README.md; then
-            echo "No changes to commit"
+            echo "README security badges already up to date."
             exit 0
           fi
-          
-          # Create branch and commit
-          BRANCH_NAME="chore/update-security-status-$(date +%Y%m%d-%H%M%S)"
-          git checkout -b "$BRANCH_NAME"
-          git add README.md
-          git commit -m "chore: update security alerts status [skip ci]" || exit 0
-          git push origin "$BRANCH_NAME"
-          
-          # Create PR using GitHub CLI
-          gh pr create \
-            --title "chore: update security alerts status" \
-            --body "Automated update of security alerts status in README.md" \
-            --base main \
-            --head "$BRANCH_NAME" \
-            || echo "⚠️ PR may already exist or failed to create"
 
+          BRANCH_NAME="chore/security-status-readme"
+
+          git checkout -B "$BRANCH_NAME"
+          git add README.md
+          git commit -m "chore: update security alerts status [skip ci]"
+          git push origin "$BRANCH_NAME" --force
+
+          EXISTING=$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$BRANCH_NAME" --base main --state open --json number -q '.[0].number' 2>/dev/null || true)
+
+          if [ -n "$EXISTING" ] && [ "$EXISTING" != "null" ]; then
+            echo "Updated open PR #$EXISTING (branch $BRANCH_NAME)."
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "chore: update security alerts status" \
+              --body "Automated README security badge update. Merge when counts look correct; re-runs update this same PR instead of opening new branches." \
+              --base main \
+              --head "$BRANCH_NAME"
+            echo "Created PR for branch $BRANCH_NAME."
+          fi
+
+      - name: Summary
+        run: |
+          echo "Uses fixed branch \`chore/security-status-readme\` (no dated orphan branches)." >> $GITHUB_STEP_SUMMARY
