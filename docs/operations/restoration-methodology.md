@@ -12,6 +12,16 @@ sidebar_position: 1
 
 ## Philosophy: Holistic Environmental Restoration
 
+### Grounding in our reading (not a methodology claim)
+
+These saved articles inform questions we ask when adapting methods to a site—they are not endorsements or commitments:
+
+- **Mixed forests vs monoculture:** Evidence from long-term trials challenges “plant trees, count carbon” as sufficient for biodiversity. [1777404229787](../research/bookmarks/Climate%20Change/1777404229787.md)
+- **Soil and fungi:** Mycorrhizal networks are underrepresented in protected-area planning—relevant to our soil-restoration and microhabitat goals. [1779404381912](../research/bookmarks/Climate%20Change/1779404381912.md)
+- **Germany as reference region:** Near-term land-use examples (forest decline, mixed replanting debates) sit in the same policy landscape we are exploring from Cologne. [1767917557913](../research/bookmarks/Climate%20Change/1767917557913.md)
+
+Search the full corpus via [bookmarks-mcp](https://gitea.nexus-home.cc/pres/bookmarks-mcp) or paths under `research/bookmarks/Climate Change/`.
+
 ### What Makes It Holistic?
 
 **Holistic environmental restoration** goes beyond single-issue interventions. Instead of just planting trees or protecting species, we **will address** the entire ecosystem as an interconnected web:
