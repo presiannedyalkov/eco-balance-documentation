@@ -29,6 +29,16 @@ Complete detailed status assessment. Includes:
 **Date:** November 2025
 **Philosophy:** Adaptive, opportunistic, flexible pathways to execution
 
+### Research grounding (Germany / EU focus)
+
+While we explore options in Germany, Portugal, and the wider EU, saved articles keep plans tied to real constraints—not generic “climate action” language:
+
+- **German forest context:** Spruce monocultures under stress (bark beetle, carbon sink loss) argue for mixed-species restoration, not plantation optics alone. [1767917557913](../research/bookmarks/Climate%20Change/1767917557913.md)
+- **Restoration design:** Long-running experiments favour mixed forest structure over simplistic trillion-tree framing. [1777404229787](../research/bookmarks/Climate%20Change/1777404229787.md)
+- **Funding realism:** Grant lists exist, but conservation money often skews toward charismatic species—worth checking fit for habitat-focused work. [1744644416372](../research/bookmarks/Climate%20Change/1744644416372.md), [1773479762088](../research/bookmarks/Climate%20Change/1773479762088.md)
+
+→ Deeper themes: [[strategic/04a_Detailed_Status_Assessment|Detailed Status Assessment]] · corpus: [research/README](../research/README.md)
+
 ---
 
 ## 🎬 What Happens Next

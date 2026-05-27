@@ -30,6 +30,12 @@
 - ✅ Founder sweat equity + modest investment
 - ✅ Early research partnerships (€1-3k)
 
+### What our bookmarks suggest about funding search
+
+- **Opportunity lists:** Curated grant round-ups (climate, energy, environment) are a starting point for small-team screening—not a commitment to apply. [1744644416372](../research/bookmarks/Climate%20Change/1744644416372.md)
+- **Alignment risk:** Global conservation spend skews toward large vertebrates; habitat and “neglected” species work may need extra justification in proposals. [1773479762088](../research/bookmarks/Climate%20Change/1773479762088.md)
+- **EU policy context:** National afforestation debates (e.g. Denmark, Germany forest carbon sinks) help frame where public money and scrutiny concentrate—not where our niche must be. [1764077127291](../research/bookmarks/Climate%20Change/1764077127291.md), [1767917557913](../research/bookmarks/Climate%20Change/1767917557913.md)
+
 ---
 
 ## Year 1 Funding Need: Approximately €20-30k (varies by funding pathway and location)

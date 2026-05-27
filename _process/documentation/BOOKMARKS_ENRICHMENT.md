@@ -38,7 +38,21 @@ Filter MCP searches with `collections=["Climate Change"]` unless a topic clearly
 
 - `00_Eco_Balance_Hub.md` — “From our research” section
 - `strategic/04a_Detailed_Status_Assessment.md` — research foundation themes
+- `strategic/04_Current_Status_Assessment.md` — Germany/EU exploration grounding
+- `strategic/20_Restoration_Methodology.md` — reading notes (mixed forest, fungi, DE context)
+- `strategic/32_Funding_Strategy.md` — grant-search realism
+
+## Cursor setup
+
+→ [CURSOR_BOOKMARKS_MCP.md](CURSOR_BOOKMARKS_MCP.md)
+
+## Next candidates
+
+- `strategic/01_Executive_Summary.md` — trim repeated vision; 2–3 citations max
+- `strategic/44_Site_Selection_Land_Acquisition.md` — EU land-use / policy bookmarks
+- `strategic/50_Risk_Assessment.md` — rewilding caution stories (e.g. Dutch project post-mortems)
+- Build `research/citation_index.json` (optional; see CITATION_SYSTEM_EXPLANATION.md)
 
 ---
 
-**Last updated:** 2026-02
+**Last updated:** 2026-05
