@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "bookmarks": {
+      "url": "http://192.168.178.35:7100/sse",
+      "envFile": "${workspaceFolder}/.env",
+      "headers": {
+        "Authorization": "Bearer ${env:BOOKMARKS_MCP_AUTH_TOKEN}"
+      }
+    }
+  }
+}

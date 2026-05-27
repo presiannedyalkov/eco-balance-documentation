@@ -8,9 +8,28 @@ Use this when enriching Eco Balance docs with semantic search over the full book
 - Bearer token set in Unraid (`MCP_AUTH_TOKEN` in compose env)
 - VPN/LAN access from the machine running Cursor
 
-## Cursor MCP config
+## Cursor MCP config (this repo)
 
-Add to Cursor **Settings → MCP** (or project `.cursor/mcp.json` if you use one):
+Project config is already at [.cursor/mcp.json](../../.cursor/mcp.json). It reads the token from an environment variable so secrets stay out of git.
+
+### One-time setup
+
+1. On Unraid, open the **bookmarks-mcp** container → Environment → copy **`MCP_AUTH_TOKEN`** (not the Gitea read token).
+2. In this repo root:
+   ```bash
+   cp .env.example .env
+   # Edit .env and paste: BOOKMARKS_MCP_AUTH_TOKEN=<paste from Unraid>
+   ```
+3. Verify from WSL (must be on your LAN):
+   ```bash
+   ./scripts/verify-bookmarks-mcp.sh
+   ```
+4. **Fully quit and restart Cursor** so it picks up `.env` / MCP config.
+5. **Settings → MCP** → confirm **bookmarks** is connected (green). Open **Output** → **MCP** if it fails.
+
+### Optional: global config
+
+Same block in `~/.cursor/mcp.json` if you want bookmarks-mcp in every project. Prefer the project `.cursor/mcp.json` here so Eco Balance docs and token scope stay together.
 
 ```json
 {
@@ -18,14 +37,18 @@ Add to Cursor **Settings → MCP** (or project `.cursor/mcp.json` if you use one
     "bookmarks": {
       "url": "http://192.168.178.35:7100/sse",
       "headers": {
-        "Authorization": "Bearer YOUR_MCP_AUTH_TOKEN"
+        "Authorization": "Bearer ${env:BOOKMARKS_MCP_AUTH_TOKEN}"
       }
     }
   }
 }
 ```
 
-Replace `YOUR_MCP_AUTH_TOKEN` with the value from your Unraid `bookmarks-mcp` stack (not the Gitea token).
+Export the variable in your shell profile if Cursor does not load `.env` automatically:
+
+```bash
+export BOOKMARKS_MCP_AUTH_TOKEN='paste-from-unraid'
+```
 
 ## Tools to use for Eco Balance work
 
