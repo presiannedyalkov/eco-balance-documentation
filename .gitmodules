@@ -1,3 +1,4 @@
 [submodule "research/bookmarks"]
 	path = research/bookmarks
-	url = https://github.com/presiannedyalkov/climate-change-bookmarks.git
+	url = https://gitea.nexus-home.cc/pres/bookmarks.git
+	branch = main

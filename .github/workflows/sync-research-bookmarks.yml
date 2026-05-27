@@ -17,89 +17,103 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    
+
     steps:
+      - name: Configure Gitea submodule auth
+        env:
+          GITEA_USER: ${{ secrets.GITEA_USER }}
+          GITEA_READ_TOKEN: ${{ secrets.GITEA_READ_TOKEN }}
+        run: |
+          if [ -z "$GITEA_READ_TOKEN" ]; then
+            echo "::error::GITEA_READ_TOKEN secret is not set. Add a read-only Gitea token in repo Settings → Secrets → Actions."
+            exit 1
+          fi
+          USER="${GITEA_USER:-pres}"
+          git config --global url."https://${USER}:${GITEA_READ_TOKEN}@gitea.nexus-home.cc/".insteadOf "https://gitea.nexus-home.cc/"
+
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
-      
+
       - name: Update submodule
         id: update-submodule
         run: |
-          echo "🔄 Updating research bookmarks submodule..."
-          
-          # Check current submodule commit
+          echo "Updating research bookmarks submodule..."
+
           SUBMODULE_OLD=$(git submodule status research/bookmarks 2>/dev/null | awk '{print $1}' || echo "none")
           echo "Current submodule commit: $SUBMODULE_OLD"
-          
-          # Update submodule to latest
+
+          git submodule sync --recursive research/bookmarks
           git submodule update --init --recursive research/bookmarks
           git submodule update --remote --merge research/bookmarks
-          
-          # Check new submodule commit
+
           SUBMODULE_NEW=$(git submodule status research/bookmarks | awk '{print $1}')
           echo "New submodule commit: $SUBMODULE_NEW"
-          
+
           if [ "$SUBMODULE_OLD" != "$SUBMODULE_NEW" ] && [ "$SUBMODULE_OLD" != "none" ]; then
-            echo "✅ Submodule updated: $SUBMODULE_OLD → $SUBMODULE_NEW"
+            echo "Submodule updated: $SUBMODULE_OLD -> $SUBMODULE_NEW"
             echo "has_changes=true" >> $GITHUB_OUTPUT
           else
-            echo "ℹ️  No changes in submodule"
+            echo "No changes in submodule"
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
-      
-      - name: Count articles
+
+      - name: Count Climate Change articles
         id: count_articles
         run: |
-          if [ -d "research/bookmarks/articles" ]; then
-            ARTICLE_COUNT=$(find research/bookmarks/articles -name "*.md" -type f | wc -l)
+          CLIMATE_DIR="research/bookmarks/Climate Change"
+          if [ -d "$CLIMATE_DIR" ]; then
+            ARTICLE_COUNT=$(find "$CLIMATE_DIR" -maxdepth 1 -name "*.md" -type f | wc -l)
             echo "article_count=$ARTICLE_COUNT" >> $GITHUB_OUTPUT
-            echo "📚 Found $ARTICLE_COUNT articles in research bookmarks"
+            echo "Found $ARTICLE_COUNT Climate Change articles"
           else
             echo "article_count=0" >> $GITHUB_OUTPUT
-            echo "⚠️  Articles directory not found"
+            echo "::warning::Climate Change directory not found at $CLIMATE_DIR"
           fi
-      
-      - name: Commit and push changes
+
+      - name: Commit and create PR
         if: steps.update-submodule.outputs.has_changes == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           git add research/bookmarks .gitmodules
-          
+
           if git diff --staged --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-          
-          git commit -m "chore: update research bookmarks submodule
 
-          - Updated to latest commit from climate-change-bookmarks
-          - Article count: ${{ steps.count_articles.outputs.article_count }}"
-          
-          git push origin HEAD:main || echo "Push failed (may need manual merge)"
-      
+          BRANCH_NAME="chore/update-bookmarks-submodule-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH_NAME"
+          git commit -m "chore: update research bookmarks submodule [skip ci]
+
+          - Updated to latest commit from gitea pres/bookmarks
+          - Climate Change article count: ${{ steps.count_articles.outputs.article_count }}"
+          git push origin "$BRANCH_NAME"
+
+          gh pr create \
+            --title "chore: update research bookmarks submodule" \
+            --body "Automated submodule sync from gitea pres/bookmarks. Climate Change articles: ${{ steps.count_articles.outputs.article_count }}" \
+            --base main \
+            --head "$BRANCH_NAME" \
+            || echo "PR may already exist or failed to create"
+
       - name: Create summary
         run: |
-          echo "## 📚 Research Bookmarks Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## Research Bookmarks Sync Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.update-submodule.outputs.has_changes }}" == "true" ]; then
-            echo "**Status:** ✅ Updated" >> $GITHUB_STEP_SUMMARY
+            echo "**Status:** Updated" >> $GITHUB_STEP_SUMMARY
           else
-            echo "**Status:** ℹ️  No changes" >> $GITHUB_STEP_SUMMARY
+            echo "**Status:** No changes" >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Article Count:** ${{ steps.count_articles.outputs.article_count }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Climate Change articles:** ${{ steps.count_articles.outputs.article_count }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Submodule Location:** \`research/bookmarks\`" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.update-submodule.outputs.has_changes }}" == "true" ]; then
-            echo "✅ Submodule has been updated and changes have been committed." >> $GITHUB_STEP_SUMMARY
-          else
-            echo "ℹ️  No new changes in the research bookmarks repository." >> $GITHUB_STEP_SUMMARY
-          fi
-
+          echo "**Submodule:** \`research/bookmarks\` (https://gitea.nexus-home.cc/pres/bookmarks)" >> $GITHUB_STEP_SUMMARY
