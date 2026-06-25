@@ -39,11 +39,8 @@
 #meilisearch-search-wrapper {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin: 0 0.5rem;
 }
 
 .meilisearch-search-container {
@@ -62,7 +59,7 @@
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
   font-size: 14px;
-  width: 300px; /* Increased width */
+  width: 220px;
   background: var(--ifm-background-color);
   color: var(--ifm-font-color-base);
 }
@@ -76,8 +73,7 @@
 .meilisearch-search-results {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
   margin-top: 8px;
   background-color: #ffffff !important; /* White background for light mode */
   border: 1px solid var(--ifm-color-emphasis-300);
@@ -86,8 +82,9 @@
   max-height: 500px; /* Increased height */
   overflow-y: auto;
   z-index: 1000;
-  min-width: 600px; /* Increased width */
-  width: 600px;
+  min-width: 340px;
+  width: 460px;
+  max-width: 90vw;
 }
 
 /* Dark mode styling for dropdown */
