@@ -1,0 +1,123 @@
+[
+  {
+    "id": "germany",
+    "kind": "parameter-profile",
+    "country": "Germany",
+    "climate_zone": "temperate",
+    "rainfall_mm": [
+      500,
+      800
+    ],
+    "seasons": "four distinct seasons; cold winters, increasingly dry summers",
+    "hazards": [
+      "summer_drought",
+      "bark_beetle",
+      "storms"
+    ],
+    "target_ecosystem": "oak–beech–hornbeam mixed temperate broadleaf forest",
+    "native_palette": [
+      "Quercus robur",
+      "Quercus petraea",
+      "Fagus sylvatica",
+      "Carpinus betulus",
+      "Tilia cordata",
+      "Betula pendula",
+      "Corylus avellana",
+      "Sorbus aucuparia",
+      "Prunus avium"
+    ],
+    "plausible_hectares": [
+      1,
+      2
+    ],
+    "land_cost_band_eur_per_ha": [
+      6000,
+      20000
+    ],
+    "planting_window": "Oct–Nov (dormant) and Mar–Apr",
+    "legal_options": [
+      "eV",
+      "gGmbH"
+    ],
+    "funding_landscape": [
+      "DBU",
+      "Bundesprogramm_biologische_Vielfalt",
+      "EU_LIFE",
+      "Landes_programs"
+    ],
+    "key_risks": [
+      "high_land_cost",
+      "summer_drought",
+      "bureaucracy",
+      "bark_beetle"
+    ],
+    "sources": [
+      1767917557913,
+      1748757905382,
+      1764077127291,
+      1716453947000,
+      1755367861289
+    ],
+    "status": "draft"
+  },
+  {
+    "id": "portugal",
+    "kind": "parameter-profile",
+    "country": "Portugal",
+    "climate_zone": "mediterranean",
+    "rainfall_mm": [
+      400,
+      700
+    ],
+    "seasons": "hot dry summers, mild wet winters; wetter north, drier south",
+    "hazards": [
+      "summer_drought",
+      "wildfire",
+      "water_scarcity",
+      "rural_depopulation"
+    ],
+    "target_ecosystem": "cork oak / holm oak / pine montado and dryland forest",
+    "native_palette": [
+      "Quercus suber",
+      "Quercus rotundifolia",
+      "Quercus faginea",
+      "Pinus pinea",
+      "Arbutus unedo",
+      "Cistus",
+      "Rosmarinus",
+      "Myrtus communis"
+    ],
+    "plausible_hectares": [
+      3,
+      5
+    ],
+    "land_cost_band_eur_per_ha": [
+      2000,
+      8000
+    ],
+    "planting_window": "Oct–Feb (after summer drought, before spring)",
+    "legal_options": [
+      "Associacao",
+      "IPSS"
+    ],
+    "funding_landscape": [
+      "Fundo_Ambiental",
+      "EU_LIFE"
+    ],
+    "key_risks": [
+      "wildfire",
+      "drought",
+      "water_scarcity",
+      "soil_degradation"
+    ],
+    "sources": [
+      1714282453000,
+      1754888118250,
+      1717359364000,
+      1742557875262,
+      1716535611000,
+      1742557869615
+    ],
+    "status": "draft"
+  }
+]

@@ -1,0 +1,44 @@
+# Project execution state — the single source of truth for status and reports.
+# Hand-edited: update this whenever something real changes.
+# The land/ecosystem is deliberately NOT tracked here. It gets its own field
+# module once we are on the ground, because a living system is not a dashboard.
+
+updated: 2026-06-23
+phase: exploration            # exploration | establish | expand | steward
+
+people:
+  founders: 2
+  location: Cologne, Germany
+  capacity: part-time
+
+land:
+  status: comparing           # none | comparing | identified | secured
+  candidates: [Germany, Portugal]
+  hectares_target: "1-4"
+  secured: false
+
+entity:
+  status: none                # none | planned | registered
+  form: null                  # e.g. eV, Associacao, gGmbH
+
+funding:
+  target_eur: null
+  raised_eur: 0
+  pipeline_eur: 0
+  started: false
+  approach: "Crowdfunding and friends & family first; small grants in parallel; major grants once an entity and site exist."
+
+budget:
+  spent_eur: 0
+
+restoration:
+  on_land: false
+
+milestones:
+  - date: 2026-06
+    note: "Refactored the documentation into a forkable model and our case; built the first engines."
+
+next:
+  - "Firm up the Germany vs Portugal comparison with real parcel data."
+  - "Settle how willing we are to relocate."
+  - "Decide when to begin fundraising."

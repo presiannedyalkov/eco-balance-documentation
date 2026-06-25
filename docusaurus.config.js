@@ -48,7 +48,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/presiannedyalkov/eco-balance-documentation/tree/main/',
           routeBasePath: '/', // Serve docs at root instead of /docs
-          showLastUpdateTime: true, // Show last updated time from Git commit history
+          showLastUpdateTime: false, // Show last updated time from Git commit history
           showLastUpdateAuthor: false, // Don't show author (can enable if desired)
         },
         blog: false, // Disable blog
@@ -155,12 +155,11 @@ const config = {
           href: '/',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'docsSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
+          { to: '/model/foundation/why-restore-degraded-land', label: 'The Model', position: 'left' },
+          { to: '/our-case/vision', label: 'Our Case', position: 'left' },
+          { to: '/our-case/status', label: 'Status', position: 'left' },
+          { to: '/evidence', label: 'Evidence', position: 'left' },
+          { to: '/explorer', label: 'Explorer', position: 'left' },
           {
             type: 'html',
             position: 'right',
@@ -177,54 +176,25 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Documentation',
+            title: 'The Model',
             items: [
-              {
-                label: 'Quick Reference',
-                to: '/resources/quick-reference',
-              },
-              {
-                label: 'Roadmap',
-                to: '/resources/roadmap',
-              },
-              {
-                label: 'Feature Wishlist',
-                to: '/resources/feature-wishlist',
-              },
+              { label: 'Why restore degraded land', to: '/model/foundation/why-restore-degraded-land' },
+              { label: 'Method', to: '/model/method/00-overview' },
+              { label: 'Bioregion parameters', to: '/model/parameters/germany' },
             ],
           },
           {
-            title: 'Project',
+            title: 'Our Case',
             items: [
-              {
-                label: 'Executive Summary',
-                to: '/vision-strategy/executive-summary',
-              },
-              {
-                label: 'Project Vision',
-                to: '/vision-strategy/project-vision',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/presiannedyalkov/eco-balance-documentation',
-              },
+              { label: 'Vision', to: '/our-case/vision' },
+              { label: 'Site comparison', to: '/our-case/site-candidates/germany-vs-portugal' },
+              { label: 'Status', to: '/our-case/status' },
             ],
           },
           {
-            title: 'Resources',
+            title: 'More',
             items: [
-              {
-                label: 'Restoration Methodology',
-                to: '/operations/restoration-methodology',
-              },
-              {
-                label: 'Business Model',
-                to: '/business/business-model',
-              },
-              {
-                label: 'Case Studies',
-                to: '/learning/case-studies',
-              },
+              { label: 'GitHub', href: 'https://github.com/presiannedyalkov/eco-balance-documentation' },
             ],
           },
         ],

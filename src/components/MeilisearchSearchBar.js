@@ -340,7 +340,7 @@ function MeilisearchSearchBar() {
         <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
           <input
             type="search"
-            placeholder="Search (Meilisearch not configured)"
+            placeholder="Search"
             disabled
             className="navbar__search-input"
             style={{
@@ -373,7 +373,7 @@ function MeilisearchSearchBar() {
       <div className="navbar__search" style={{ display: 'flex', alignItems: 'center' }}>
         <input
           type="search"
-          placeholder="Search docs (Press '/' to focus)"
+          placeholder="Search docs (/)"
           value={query}
           onChange={(e) => {
             // Sanitize user input before logging (inline sanitization like in meilisearch-plugin.js)

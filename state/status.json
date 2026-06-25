@@ -1,0 +1,46 @@
+{
+  "updated": "2026-06-23T00:00:00.000Z",
+  "phase": "exploration",
+  "people": {
+    "founders": 2,
+    "location": "Cologne, Germany",
+    "capacity": "part-time"
+  },
+  "land": {
+    "status": "comparing",
+    "candidates": [
+      "Germany",
+      "Portugal"
+    ],
+    "hectares_target": "1-4",
+    "secured": false
+  },
+  "entity": {
+    "status": "none",
+    "form": null
+  },
+  "funding": {
+    "target_eur": null,
+    "raised_eur": 0,
+    "pipeline_eur": 0,
+    "started": false,
+    "approach": "Crowdfunding and friends & family first; small grants in parallel; major grants once an entity and site exist."
+  },
+  "budget": {
+    "spent_eur": 0
+  },
+  "restoration": {
+    "on_land": false
+  },
+  "milestones": [
+    {
+      "date": "2026-06",
+      "note": "Refactored the documentation into a forkable model and our case; built the first engines."
+    }
+  ],
+  "next": [
+    "Firm up the Germany vs Portugal comparison with real parcel data.",
+    "Settle how willing we are to relocate.",
+    "Decide when to begin fundraising."
+  ]
+}

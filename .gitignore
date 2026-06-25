@@ -35,3 +35,6 @@ npm-debug.log*
 test-results/
 yarn-debug.log*
 yarn-error.log*
+
+# Local Claude/Cowork settings
+.claude/settings.local.json

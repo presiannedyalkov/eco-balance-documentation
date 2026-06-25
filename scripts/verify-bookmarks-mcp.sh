@@ -22,22 +22,33 @@ if [ -z "$TOKEN" ]; then
   exit 1
 fi
 
-echo "GET $URL/sse (expect 200 or SSE handshake, not 401)..."
-CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+echo "Probing $URL/sse (SSE stays open — using a 3s cap)..."
+# /sse is a long-lived stream; curl would hang without --max-time.
+HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Accept: text/event-stream" \
   --connect-timeout 5 \
-  "$URL/sse" || echo "000")
+  --max-time 3 \
+  "$URL/sse" 2>/dev/null || true)
+CURL_EXIT=$?
 
-if [ "$CODE" = "401" ]; then
+if [ "$HTTP_CODE" = "401" ]; then
   echo "FAIL: 401 unauthorized — token does not match Unraid MCP_AUTH_TOKEN."
   exit 1
 fi
 
-if [ "$CODE" = "000" ]; then
-  echo "FAIL: could not reach $URL (not on LAN or server down)."
+if [ -z "$HTTP_CODE" ] || [ "$HTTP_CODE" = "000" ]; then
+  echo "FAIL: could not reach $URL (not on LAN, server down, or timeout before headers)."
+  echo "       curl exit code: $CURL_EXIT"
   exit 1
 fi
 
-echo "OK: HTTP $CODE — bookmarks-mcp auth looks good."
-echo "Restart Cursor (full quit), then check Settings → MCP → bookmarks."
+if [ "$HTTP_CODE" = "200" ]; then
+  echo "OK: HTTP 200 — auth accepted (stream opened; curl stopped after 3s as expected)."
+  echo "Restart Cursor fully, then check Settings → MCP → bookmarks."
+  exit 0
+fi
+
+echo "Unexpected HTTP $HTTP_CODE (curl exit $CURL_EXIT)."
+echo "If the server is up, check URL and token; 200 is expected for valid auth."
+exit 1

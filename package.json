@@ -25,9 +25,20 @@
     "check:codeql": "bash scripts/check-codeql-local.sh",
     "check:codeql:simple": "node scripts/check-codeql-simple.js",
     "predeploy": "npm run check:codeql:simple",
-    "sync:docs": "node scripts/sync-docs.js",
-    "sync": "node scripts/sync-docs.js",
-    "postinstall": "patch-package"
+    "sync:docs": "node scripts/sync-vnext.js",
+    "sync": "node scripts/sync-vnext.js",
+    "sync:legacy": "node scripts/sync-docs.js",
+    "postinstall": "patch-package",
+    "engine:feed": "node _engines/feed/scan.js",
+    "engine:check": "node _engines/consistency/check.js",
+    "engine:all": "npm run engine:feed && npm run engine:enrich && npm run engine:ecology && npm run engine:state && npm run engine:synthesize && npm run engine:check",
+    "engine:enrich": "node _engines/enrichment/route.js",
+    "engine:ecology": "node _engines/ecology/palette.js",
+    "engine:state": "node _engines/state/report.js",
+    "engine:synthesize": "node _engines/synthesis/build.js",
+    "engine:publish": "node _engines/publish/build.js",
+    "site:prepare": "npm run engine:check && npm run engine:synthesize && npm run sync && npm run engine:publish && npm run engine:state && npm run engine:widgets",
+    "engine:widgets": "node _engines/publish/widgets.js"
   },
   "dependencies": {
     "@docusaurus/core": "3.5.2",
