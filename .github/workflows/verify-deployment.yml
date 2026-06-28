@@ -228,7 +228,7 @@ jobs:
           echo "✅ Rollback commit pushed successfully"
 
       - name: Create rollback issue
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const rollbackMethod = '${{ steps.rollback.outputs.rollback_method }}';
@@ -277,7 +277,7 @@ jobs:
             console.log(`Created issue #${issue.data.number}`);
 
       - name: Comment on commit
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const commitSha = '${{ steps.rollback_info.outputs.deployed_commit }}';

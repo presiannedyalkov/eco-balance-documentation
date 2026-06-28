@@ -102,7 +102,7 @@ jobs:
           echo "branch_description=$BRANCH_DESC" >> $GITHUB_OUTPUT
       
       - name: Auto-fill PR template
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
