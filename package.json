@@ -44,7 +44,7 @@
     "@docusaurus/core": "3.5.2",
     "@docusaurus/preset-classic": "3.5.2",
     "@mdx-js/react": "^3.0.0",
-    "@sentry/react": "^10.34.0",
+    "@sentry/react": "^10.56.0",
     "@sentry/webpack-plugin": "^4.6.2",
     "clsx": "^2.1.0",
     "meilisearch": "^0.55.0",
