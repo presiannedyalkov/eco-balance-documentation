@@ -53,11 +53,11 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.5.2",
-    "@docusaurus/types": "3.5.2",
-    "@playwright/test": "^1.57.0",
+    "@docusaurus/module-type-aliases": "3.10.1",
+    "@docusaurus/types": "3.10.1",
+    "@playwright/test": "^1.61.0",
     "glob": "^13.0.0",
-    "jsdom": "^27.3.0",
+    "jsdom": "^29.1.1",
     "patch-package": "^8.0.1",
     "playwright": "^1.57.0"
   },
