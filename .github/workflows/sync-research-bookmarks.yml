@@ -89,20 +89,30 @@ jobs:
             exit 0
           fi
 
-          BRANCH_NAME="chore/update-bookmarks-submodule-$(date +%Y%m%d-%H%M%S)"
-          git checkout -b "$BRANCH_NAME"
-          git commit -m "chore: update research bookmarks submodule [skip ci]
+          # Reuse a single stable branch so repeated runs update one PR
+          # instead of opening a brand-new PR every 6 hours.
+          BRANCH_NAME="chore/auto-bookmarks-sync"
+          git checkout -B "$BRANCH_NAME"
+          git commit -m "chore: update research bookmarks submodule
 
           - Updated to latest commit from gitea pres/bookmarks
           - Climate Change article count: ${{ steps.count_articles.outputs.article_count }}"
-          git push origin "$BRANCH_NAME"
+          git push --force origin "$BRANCH_NAME"
 
-          gh pr create \
-            --title "chore: update research bookmarks submodule" \
-            --body "Automated submodule sync from gitea pres/bookmarks. Climate Change articles: ${{ steps.count_articles.outputs.article_count }}" \
-            --base main \
-            --head "$BRANCH_NAME" \
-            || echo "PR may already exist or failed to create"
+          # Create the PR only if one isn't already open for this branch.
+          if gh pr view "$BRANCH_NAME" --json state -q '.state' 2>/dev/null | grep -q OPEN; then
+            echo "PR for $BRANCH_NAME already open; force-push updated it."
+          else
+            gh pr create \
+              --title "chore: update research bookmarks submodule" \
+              --body "Automated submodule sync from gitea pres/bookmarks. Climate Change articles: ${{ steps.count_articles.outputs.article_count }}" \
+              --base main \
+              --head "$BRANCH_NAME"
+          fi
+
+          # Auto-merge once required checks pass (no-op if already enabled).
+          gh pr merge "$BRANCH_NAME" --auto --squash --delete-branch \
+            || echo "Could not enable auto-merge (check branch-protection / auto-merge settings)."
 
       - name: Create summary
         run: |
