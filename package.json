@@ -41,8 +41,8 @@
     "engine:widgets": "node _engines/publish/widgets.js"
   },
   "dependencies": {
-    "@docusaurus/core": "3.5.2",
-    "@docusaurus/preset-classic": "3.5.2",
+    "@docusaurus/core": "3.10.1",
+    "@docusaurus/preset-classic": "3.10.1",
     "@mdx-js/react": "^3.0.0",
     "@sentry/react": "^10.56.0",
     "@sentry/webpack-plugin": "^4.6.2",
