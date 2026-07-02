@@ -71,7 +71,10 @@ jobs:
 
           retry git submodule sync --recursive research/bookmarks
           retry git submodule update --init --depth 1 --recursive research/bookmarks
-          retry git submodule update --remote --depth 1 --merge research/bookmarks
+          # Checkout (not --merge): the tracked branch tip is authoritative, and
+          # a plain checkout survives history rewrites (e.g. a squash) that would
+          # otherwise fail with "refusing to merge unrelated histories".
+          retry git submodule update --remote --depth 1 research/bookmarks
 
           SUBMODULE_NEW=$(sub_sha)
           echo "New submodule commit: $SUBMODULE_NEW"
