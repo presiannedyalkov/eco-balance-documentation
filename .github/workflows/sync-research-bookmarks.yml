@@ -32,7 +32,7 @@ jobs:
           git config --global url."https://${USER}:${GITEA_READ_TOKEN}@gitea.nexus-home.cc/".insteadOf "https://gitea.nexus-home.cc/"
 
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # Don't clone the submodule here — actions/checkout can't retry a
