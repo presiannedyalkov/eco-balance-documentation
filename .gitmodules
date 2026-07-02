@@ -2,3 +2,4 @@
 	path = research/bookmarks
 	url = https://gitea.nexus-home.cc/pres/bookmarks.git
 	branch = main
+	shallow = true

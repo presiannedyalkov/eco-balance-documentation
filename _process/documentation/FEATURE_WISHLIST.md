@@ -494,6 +494,22 @@ Embedded crowdfunding functionality within the documentation site, allowing visi
 
 ---
 
+### Grants / Opportunities Tool
+**Status:** Deferred (build last)
+**Priority:** Low for now
+**Related:** v-next blueprint §6.5 (module suite), Funding & Grants domain (D7)
+
+**Description:**
+An AI tool that hunts funding and income opportunities — grants, carbon credits, energy/solar sales, payments for ecosystem services — and keeps a live, filterable table of them with deadlines and eligibility. Its public face is an "opportunities feed" useful to every project in the space, not just ours. Likely breaks out into its own app under `projects/` when built.
+
+**Why it's deferred:**
+No need yet. It depends on a grant-calls inflow that doesn't exist, and the sequencing principle is core-and-publishing first, modules later — the grants tool explicitly comes last, once the core is polished and there's a real funding push to serve. Captured here so it isn't lost; not scheduled.
+
+**When to revisit:**
+Once we are actively fundraising and the rest of the platform is stable and collaborative. Until then it stays a named backlog item.
+
+---
+
 ## 🔧 Technical Enhancements
 
 ### API for External Integrations
