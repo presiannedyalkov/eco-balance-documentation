@@ -80,12 +80,12 @@ test.describe('Deployment Verification', () => {
   test('key pages load without errors', async ({ page }) => {
     const keyPages = [
       '/',
-      '/vision-strategy/executive-summary',
-      '/vision-strategy/project-vision',
-      '/operations/restoration-methodology',
-      '/business/business-model',
-      '/resources/quick-reference',
-      '/resources/roadmap',
+      '/our-case/vision',
+      '/our-case/status',
+      '/model/method/reforestation',
+      '/model/economics/revenue',
+      '/evidence',
+      '/research',
     ];
 
     const errors = [];
@@ -171,9 +171,9 @@ test.describe('Deployment Verification', () => {
   test('internal links work', async ({ page }) => {
     // Test specific pages that should have working "Back to Project Hub" links
     const testPages = [
-      '/vision-strategy/project-vision',
-      '/vision-strategy/executive-summary',
-      '/operations/restoration-methodology',
+      '/our-case/vision',
+      '/our-case/status',
+      '/model/method/reforestation',
     ];
     
     const brokenLinks = [];
@@ -231,8 +231,8 @@ test.describe('Deployment Verification', () => {
 
   test('no double horizontal rules', async ({ page }) => {
     const testPages = [
-      '/vision-strategy/project-vision',
-      '/vision-strategy/executive-summary',
+      '/our-case/vision',
+      '/model/method/reforestation',
     ];
     
     const issues = [];
@@ -442,28 +442,28 @@ test.describe('Deployment Verification', () => {
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
     expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
-    // Try to find and click Executive Summary link
-    const execSummaryLink = page.locator('a[href*="executive-summary"]').first();
-    const linkExists = await execSummaryLink.count() > 0;
-    
+    // Try to find and click the Vision link
+    const visionLink = page.locator('a[href*="our-case/vision"]').first();
+    const linkExists = await visionLink.count() > 0;
+
     if (linkExists) {
-      await execSummaryLink.click({ timeout: 10000 });
+      await visionLink.click({ timeout: 10000 });
       await page.waitForLoadState('networkidle', { timeout: 15000 });
       const url = page.url();
-      expect(url).toMatch(/executive-summary|eco-balance-documentation/);
+      expect(url).toMatch(/our-case\/vision|eco-balance-documentation/);
     } else {
       // If link not found, just verify we can navigate directly
-      const execUrl = BASE_URL + '/vision-strategy/executive-summary';
-      await page.goto(execUrl, { waitUntil: 'networkidle', timeout: 30000 });
+      const visionUrl = BASE_URL + '/our-case/vision';
+      await page.goto(visionUrl, { waitUntil: 'networkidle', timeout: 30000 });
       const url = page.url();
-      expect(url).toMatch(/executive-summary|eco-balance-documentation/);
+      expect(url).toMatch(/our-case\/vision|eco-balance-documentation/);
     }
-    
-    // Flow 2: Navigate to resources
+
+    // Flow 2: Navigate to research / model section
     await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
-    const resourcesLink = page.locator('a[href*="resources"], a[href*="roadmap"]').first();
-    if (await resourcesLink.count() > 0) {
-      await resourcesLink.click({ timeout: 10000 });
+    const researchLink = page.locator('a[href*="research"], a[href*="model"]').first();
+    if (await researchLink.count() > 0) {
+      await researchLink.click({ timeout: 10000 });
       await page.waitForLoadState('networkidle', { timeout: 15000 });
       expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     }
