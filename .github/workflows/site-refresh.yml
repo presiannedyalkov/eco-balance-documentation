@@ -1,0 +1,163 @@
+name: Site Refresh (Engines)
+
+# Weekly regeneration of the engine-derived site content (feed queue, enrichment
+# worklist, synthesis briefs, citation index, widgets, status) straight from the
+# bookmark corpus. Runs server-side where deletes/commits/pushes actually work,
+# and opens ONE standing PR so publishing stays a single-click review.
+#
+# This replaces the git/publish work that used to run in the desktop scheduled
+# task (that sandbox cannot delete files, so it could never commit and kept
+# leaving stale index.lock files behind). The desktop task now only produces a
+# read-only digest.
+
+on:
+  schedule:
+    # Every Monday 05:00 UTC
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+    # Manual trigger (Actions -> Site Refresh (Engines) -> Run workflow)
+
+# Prevent overlapping runs from fighting over the same branch.
+concurrency:
+  group: site-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Regenerate engine outputs and open PR
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Configure Gitea submodule auth
+        env:
+          GITEA_USER: ${{ secrets.GITEA_USER }}
+          GITEA_READ_TOKEN: ${{ secrets.GITEA_READ_TOKEN }}
+        run: |
+          if [ -n "$GITEA_READ_TOKEN" ]; then
+            USER="${GITEA_USER:-pres}"
+            git config --global \
+              url."https://${USER}:${GITEA_READ_TOKEN}@gitea.nexus-home.cc/".insteadOf \
+              "https://gitea.nexus-home.cc/"
+          else
+            echo "::warning::GITEA_READ_TOKEN not set - using the bookmark submodule commit already pinned on main."
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Don't clone the submodule here — actions/checkout can't retry a
+          # transient Gitea 502. It's initialised in the retried step below.
+          submodules: false
+          fetch-depth: 0
+
+      - name: Ensure submodule is present (with retry)
+        run: |
+          # Use the pinned bookmark commit. The dedicated "Sync Research Bookmarks"
+          # workflow advances the pointer; we just build on it. Retry + shallow so a
+          # transient Gitea 502 through the Cloudflare tunnel doesn't fail the run.
+          retry() {
+            local max=5 delay=5 attempt=1 status=0
+            until "$@"; do
+              status=$?
+              if [ "$attempt" -ge "$max" ]; then
+                echo "::warning::'$*' failed after $attempt attempts (exit $status); engines will run on whatever is checked out."
+                return 0
+              fi
+              echo "::warning::Attempt $attempt of '$*' failed (exit $status); retrying in ${delay}s..."
+              sleep "$delay"; attempt=$((attempt + 1)); delay=$((delay * 2))
+            done
+          }
+          retry git submodule sync --recursive research/bookmarks
+          retry git submodule update --init --depth 1 --recursive research/bookmarks
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm ci || npm install
+          npm run postinstall || npx patch-package || true
+
+      - name: Run engines and prepare site
+        run: |
+          set -e
+          echo "::group::engine:feed";      npm run engine:feed;      echo "::endgroup::"
+          echo "::group::engine:enrich";    npm run engine:enrich;    echo "::endgroup::"
+          echo "::group::engine:ecology";   npm run engine:ecology;   echo "::endgroup::"
+          echo "::group::site:prepare";     npm run site:prepare;     echo "::endgroup::"
+
+      - name: Detect changes
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain -- docs research/citation_index.json src/data state/status.json _engines/_reports)" ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "No regenerated changes this run."
+          fi
+
+      - name: Build digest
+        if: steps.changes.outputs.has_changes == 'true'
+        id: digest
+        run: |
+          {
+            echo "## Weekly site refresh"
+            echo ""
+            if [ -f _engines/_reports/feed-queue.md ]; then
+              sed -n '3p' _engines/_reports/feed-queue.md
+              echo ""
+              echo "### Newest unused (routed domain)"
+              # First ~8 routed candidates from the enrichment worklist
+              grep -E '^### |Suggested domain' _engines/_reports/enrichment-worklist.md | head -16
+            fi
+            echo ""
+            if [ -f research/briefs/_assumptions.md ]; then
+              echo "### Assumption checks / evidence gaps"
+              sed -n '/## Evidence gaps/,/## Articles/p' research/briefs/_assumptions.md | head -12
+            fi
+          } > digest.md
+          cat digest.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit and open/update single PR
+        if: steps.changes.outputs.has_changes == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH_NAME="chore/site-refresh"
+          git checkout -B "$BRANCH_NAME"
+
+          # Stage only the engine-generated areas so unrelated files never sneak in.
+          git add docs research/citation_index.json src/data state/status.json _engines/_reports 2>/dev/null || true
+
+          if git diff --staged --quiet; then
+            echo "Nothing staged after filtering; skipping."
+            exit 0
+          fi
+
+          git commit -m "chore: weekly site refresh (engines)"
+          git push --force origin "$BRANCH_NAME"
+
+          if gh pr view "$BRANCH_NAME" --json state -q '.state' 2>/dev/null | grep -q OPEN; then
+            echo "PR already open for $BRANCH_NAME; force-push updated it."
+            gh pr edit "$BRANCH_NAME" --body-file digest.md || true
+          else
+            gh pr create \
+              --title "chore: weekly site refresh (engines)" \
+              --body-file digest.md \
+              --base main \
+              --head "$BRANCH_NAME"
+          fi
+
+          # Fully zero-touch: auto-merge once required checks pass. Deploy then
+          # fires on the docs/** push (see deploy.yml paths).
+          gh pr merge "$BRANCH_NAME" --auto --squash --delete-branch || true

@@ -1,12 +1,19 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Triggered when VERSION file changes (monthly releases)
+  # Triggered by a monthly VERSION bump, or whenever built site content lands on
+  # main (e.g. an auto-merged "Site Refresh (Engines)" PR) so publishing is automatic.
   push:
     branches:
       - main
     paths:
       - 'VERSION'
+      - 'docs/**'
+      - 'src/**'
+      - 'static/**'
+      - 'state/**'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
   # Can be called by other workflows (e.g., monthly-release)
   workflow_call:
   # Manual trigger for urgent deployments
