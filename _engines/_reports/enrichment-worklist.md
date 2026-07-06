@@ -2,213 +2,213 @@
 
 Top 30 unused articles, routed to a suggested domain. Review, place the one-line insight in the doc, and paste the citation. The consistency engine checks the result.
 
-### The Sir Attenborough blueprint: How storytelling became conservation’s most powerful tool
+### Agrivoltaics Works When Solar Panels Do Farm Work
 
 - **Suggested domain:** `template/infrastructure` (match 2)
-- **Topic:** Environmental Storytelling
-- **Summary:** Sir David Attenborough's career has documented the environmental changes over decades, emphasizing climate change and biodiversity loss. His storytelling approach, grounded in integrity and context, has influenced how factual content is pre
-- **Citation:** `[Environmental Storytelling](research/bookmarks/Climate%20Change/1779188940328.md)`
+- **Topic:** Agrivoltaics
+- **Summary:** Agrivoltaics involves placing solar panels on farmland to generate electricity while also supporting agricultural activities. The effectiveness of agrivoltaics depends on the specific farm function it serves, such as providing shade, protec
+- **Citation:** `[Agrivoltaics](research/bookmarks/Climate%20Change/1783255090320.md)`
 
-### Scientists find hidden rainfall pattern that could reshape farming
+### Agrivoltaics Works When Solar Panels Do Farm Work
 
-- **Suggested domain:** `template/method/water` (match 3)
-- **Topic:** Rainfall Origin
-- **Summary:** A new study shows that crops are more vulnerable to drought when too much rainfall originates from land rather than the ocean, highlighting the importance of protecting forests and improving land management to stabilize rainfall and crop yi
-- **Citation:** `[Rainfall Origin](research/bookmarks/Climate%20Change/1779143385167.md)`
+- **Suggested domain:** `template/site-and-land` (match 1)
+- **Topic:** Agrivoltaics
+- **Summary:** Agrivoltaics involves placing solar panels on farmland to produce both electricity and crops, but its effectiveness depends on the specific agricultural needs and the type of crops. The systems that provide clear farm value, such as grazing
+- **Citation:** `[Agrivoltaics](research/bookmarks/Climate%20Change/1783255090319.md)`
 
-### What you need to know as pine martens are reintroduced
+### Visualizing Every El Niño and La Niña Since 1979
 
-- **Suggested domain:** `template/method/biodiversity` (match 3)
-- **Topic:** Reintroduction Projects
-- **Summary:** Pine martens are being reintroduced into Somerset to restore balance in local woodlands, addressing concerns about their impact on small mammals and birds. The project aims to help spread seeds and support red squirrels while minimizing ris
-- **Citation:** `[Reintroduction Projects](research/bookmarks/Climate%20Change/1779128990528.md)`
+- **Suggested domain:** `template/foundation` (match 0)
+- **Topic:** El Niño and La Niña
+- **Summary:** The article visualizes every El Niño and La Niña event since 1979, highlighting the intensity and global impacts of these climate patterns. It also forecasts a new El Niño developing in 2026, which could influence global temperatures and we
+- **Citation:** `[El Niño and La Niña](research/bookmarks/Climate%20Change/1783254716158.md)`
 
-### Biodiversity continues to decline, 2025 data shows
+### Visualizing Every El Niño and La Niña Since 1979
 
-- **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** biodiversity
-- **Summary:** UK ecosystems continue to deteriorate or show no change, according to the latest biodiversity indicators, which track progress towards national and international targets. Despite some long-term declines, there are signs that the rate of dec
-- **Citation:** `[biodiversity](research/bookmarks/Climate%20Change/1779128775688.md)`
+- **Suggested domain:** `template/method/water` (match 1)
+- **Topic:** El Niño and La Niña
+- **Summary:** The article visualizes every El Niño and La Niña event since 1979, highlighting the development of a new El Niño in 2026 and its potential impacts. Strong El Niño events have coincided with significant global climate impacts, including drou
+- **Citation:** `[El Niño and La Niña](research/bookmarks/Climate%20Change/1783254716157.md)`
 
-### This 32-Year-Old Is Rebuilding a Lost Forest in the Western Ghats With Thousands of Native Saplings
-
-- **Suggested domain:** `template/method/reforestation` (match 2)
-- **Topic:** Forest Restoration
-- **Summary:** Milind Patil, a forester, is restoring native evergreen forests in the Western Ghats by planting thousands of saplings and focusing on seed dispersal and ecological principles. His work has resulted in a 87% survival rate of 3,316 native sa
-- **Citation:** `[Forest Restoration](research/bookmarks/Climate%20Change/1779125742565.md)`
-
-### Volunteer tree planters aiming to prevent flooding
-
-- **Suggested domain:** `template/method/reforestation` (match 4)
-- **Topic:** Tree Planting
-- **Summary:** An environmental group in Somerset, Reimagining the Levels, plants trees and hedgerows to reduce flooding by slowing water flow and stabilizing soil. Volunteers are encouraged to offer their land for tree planting to enhance community resil
-- **Citation:** `[Tree Planting](research/bookmarks/Climate%20Change/1779125518612.md)`
-
-### Congo’s communities are creating a 1-million-hectare biodiversity corridor
-
-- **Suggested domain:** `template/method/biodiversity` (match 3)
-- **Topic:** Biodiversity Corridor
-- **Summary:** Strong Roots Congo is creating a 1-million-hectare biodiversity corridor between Kahuzi-Biega National Park and Itombwe Nature Reserve in the Democratic Republic of Congo, engaging local communities in conservation efforts and aiming to res
-- **Citation:** `[Biodiversity Corridor](research/bookmarks/Climate%20Change/1779122710688.md)`
-
-### Today more than ever, biodiversity needs single-species conservation
-
-- **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** Biodiversity Conservation
-- **Summary:** The article argues that single-species conservation laws are essential for protecting biodiversity, despite their current inefficiencies. It highlights that these laws are necessary to address the specific needs of endangered species and pr
-- **Citation:** `[Biodiversity Conservation](research/bookmarks/Climate%20Change/1778655588518.md)`
-
-### Humber Forest will grow for decades, say bosses
-
-- **Suggested domain:** `template/method/reforestation` (match 5)
-- **Topic:** Tree planting
-- **Summary:** The Humber Forest project in East Yorkshire and North Lincolnshire has planted 292 hectares of trees and hedgerows over 25 years, aiming to continue growing for decades to support local communities and combat climate change.
-- **Citation:** `[Tree planting](research/bookmarks/Climate%20Change/1778655514916.md)`
-
-### Planet’s first catastrophic climate tipping point reached, report says, with coral reefs facing ‘widespread dieback’ | Climate crisis | The Guardian
+### A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests
 
 - **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Tipping Points
-- **Summary:** The Earth has reached its first catastrophic tipping point, with coral reefs facing widespread dieback due to global heating, and other tipping points like the Amazon rainforest and ice sheets also at risk. The report estimates that coral r
-- **Citation:** `[Tipping Points](research/bookmarks/Climate%20Change/1778590462071.md)`
+- **Topic:** Tropical Forest Carbon Dynamics
+- **Summary:** A large-scale international study quantifies the carbon losses and gains in tropical forests following various disturbances, showing that degraded forests recover faster than those cleared by deforestation, and that forest fires and selecti
+- **Citation:** `[Tropical Forest Carbon Dynamics](research/bookmarks/Climate%20Change/1783233364306.md)`
 
-### A search engine for the planet opens to the public
+### A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests
 
-- **Suggested domain:** `template/infrastructure` (match 2)
-- **Topic:** Public launch of Earth Index satellite imagery search engine
-- **Summary:** Earth Index, developed by nonprofit Earth Genome, is now publicly available as an AI-powered search engine that scans global satellite imagery for visual similarities to user-provided examples like deforestation or mining sites. It leverage
-- **Citation:** `[Public launch of Earth Index satellite imagery search engine](research/bookmarks/Climate%20Change/1777468640473.md)`
+- **Suggested domain:** `template/method/reforestation` (match 1)
+- **Topic:** Tropical Forest Carbon Dynamics
+- **Summary:** The study quantifies the significant carbon losses in tropical forests due to degradation and shows that forests retaining structural integrity recover carbon more quickly than those cleared by deforestation. This research improves carbon m
+- **Citation:** `[Tropical Forest Carbon Dynamics](research/bookmarks/Climate%20Change/1783233364305.md)`
 
-### Don't just plant trees, plant forests to restore biodiversity for the future
-
-- **Suggested domain:** `template/method/reforestation` (match 5)
-- **Topic:** Mixed-species forest restoration for biodiversity
-- **Summary:** The article argues that global tree-planting initiatives, aiming for over 1 trillion trees to combat climate change and biodiversity loss, often fail when relying on monoculture plantations that are fragile and create biological deserts. In
-- **Citation:** `[Mixed-species forest restoration for biodiversity](research/bookmarks/Climate%20Change/1777404229787.md)`
-
-### Don’t just plant trees, plant forests to restore biodiversity for the future
-
-- **Suggested domain:** `template/method/reforestation` (match 5)
-- **Topic:** Forest biodiversity in restoration
-- **Summary:** The article argues that large-scale tree-planting initiatives like the 1 trillion trees movement must focus on creating biodiverse forests rather than simply planting individual trees. Research shows that diverse forest ecosystems are more 
-- **Citation:** `[Forest biodiversity in restoration](research/bookmarks/Climate%20Change/1776774143399.md)`
-
-### China's invention turns desert sand into fertile soil in just 10 months - Earth.com
-
-- **Suggested domain:** `template/method/soil` (match 2)
-- **Topic:** Desert soil restoration using cyanobacteria
-- **Summary:** Chinese scientists have developed a groundbreaking process using lab-grown cyanobacteria to transform desert sand into fertile soil within just 10 months by creating biological soil crusts. These crusts stabilize loose sand, prevent wind er
-- **Citation:** `[Desert soil restoration using cyanobacteria](research/bookmarks/Climate%20Change/1776490682068.md)`
-
-### The case for ground-level agrivoltaics – pv magazine International
-
-- **Suggested domain:** `template/method/soil` (match 1)
-- **Topic:** Ground-level agrivoltaics systems
-- **Summary:** Unable to provide analysis - the article content was not included in the provided data. Only the website navigation structure and header information from pv magazine International were supplied, without the actual article body discussing gr
-- **Citation:** `[Ground-level agrivoltaics systems](research/bookmarks/Climate%20Change/1774249777042.md)`
-
-### Why some regions are winning the fight against groundwater depletion
-
-- **Suggested domain:** `template/method/water` (match 3)
-- **Topic:** Groundwater depletion recovery strategies
-- **Summary:** A UC Santa Barbara study analyzing 67 cases of successful aquifer recovery reveals that most effective groundwater restoration efforts employ multiple intervention strategies, with over 80% incorporating alternative water sources. The resea
-- **Citation:** `[Groundwater depletion recovery strategies](research/bookmarks/Climate%20Change/1774249569523.md)`
-
-### A long wait for pollinators: Restored grasslands need 75+ years for full biodiversity recovery, study finds
-
-- **Suggested domain:** `template/method/biodiversity` (match 3)
-- **Topic:** Grassland restoration and pollinator recovery timelines
-- **Summary:** A Kobe University study reveals that restored grasslands require over 75 years of continuous management to achieve plant diversity comparable to ancient grasslands, but pollinator communities lag further, remaining less specialized and effe
-- **Citation:** `[Grassland restoration and pollinator recovery timelines](research/bookmarks/Climate%20Change/1773480618603.md)`
-
-### Biodiversity scheme aims to help give land back to nature
-
-- **Suggested domain:** `template/method/biodiversity` (match 5)
-- **Topic:** Biodiversity habitat restoration scheme
-- **Summary:** The Hare's Corner biodiversity initiative in Clare, Ireland, encourages landowners to create small wildlife habitats on their land to restore nature and boost biodiversity. Farmer Kate Meleady transformed her four acres with the scheme's he
-- **Citation:** `[Biodiversity habitat restoration scheme](research/bookmarks/Climate%20Change/1773480594168.md)`
-
-### Private Entities to Restore Degraded Forests in Madhya Pradesh, Earn Carbon Credits
-
-- **Suggested domain:** `template/method/reforestation` (match 3)
-- **Topic:** Private afforestation of degraded forests for carbon credits
-- **Summary:** Madhya Pradesh's draft policy allows private entities to access state-owned degraded forests for afforestation, restoring 3.7 million hectares amid funding shortages, while earning carbon credits for 60 years. Investors cover costs of Rs 5-
-- **Citation:** `[Private afforestation of degraded forests for carbon credits](research/bookmarks/Climate%20Change/1773480153583.md)`
-
-### Seagrass Conservation Crucial for Global Biodiversity and Climate Goals, Study Reveals
-
-- **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** Seagrass conservation for biodiversity and climate action
-- **Summary:** Recent research published in Nature Reviews Earth & Environment reveals that seagrass meadows are critical ecosystems declining at 1-2% annually due to human activities, yet they capture carbon 35 times faster than tropical rainforests and 
-- **Citation:** `[Seagrass conservation for biodiversity and climate action](research/bookmarks/Climate%20Change/1773480081148.md)`
-
-### Tree planting is still the best way to remove carbon, despite climate and economic risks, say researchers
-
-- **Suggested domain:** `template/method/reforestation` (match 5)
-- **Topic:** Resilient tree-planting for carbon removal
-- **Summary:** Researchers from the University of Exeter argue that tree planting remains the most cost-effective method for carbon removal despite risks from climate change and economic uncertainty, using the UK as a case study. They recommend a 'portfol
-- **Citation:** `[Resilient tree-planting for carbon removal](research/bookmarks/Climate%20Change/1773479980002.md)`
-
-### Mixed-species forests outperform monocultures in carbon storage, even in extreme weather
-
-- **Suggested domain:** `template/method/reforestation` (match 3)
-- **Topic:** Tree diversity enhances carbon sequestration
-- **Summary:** An international study from the world's longest-running tropical tree diversity experiment in Panama shows that mixed-species forests with five tree species store 57% more carbon in aboveground biomass than monocultures after 16 years. This
-- **Citation:** `[Tree diversity enhances carbon sequestration](research/bookmarks/Climate%20Change/1773479867020.md)`
-
-### Most conservation funds go to large vertebrates at expense of ‘neglected’ species | Conservation | The Guardian
-
-- **Suggested domain:** `template/method/biodiversity` (match 4)
-- **Topic:** Conservation funding disparity favoring large vertebrates
-- **Summary:** A Guardian article reports that global conservation funding is disproportionately directed toward large vertebrates like mammals and birds, while smaller and less charismatic species receive minimal support. This funding imbalance leaves ma
-- **Citation:** `[Conservation funding disparity favoring large vertebrates](research/bookmarks/Climate%20Change/1773479762088.md)`
-
-### Conservation in wealthy nations may worsen global biodiversity loss, study finds
-
-- **Suggested domain:** `template/method/biodiversity` (match 5)
-- **Topic:** Conservation leakage and global biodiversity impacts
-- **Summary:** A study warns that conservation efforts like rewilding in wealthy nations such as Europe and North America may exacerbate global biodiversity loss by displacing farming and resource extraction to poorer, more biodiverse regions in the Globa
-- **Citation:** `[Conservation leakage and global biodiversity impacts](research/bookmarks/Climate%20Change/1773479669180.md)`
-
-### In Malawi, farmers rebuild soil and livelihoods through agroecology
-
-- **Suggested domain:** `template/method/soil` (match 1)
-- **Topic:** Agroecology as a solution to food insecurity and soil degradation in Malawi
-- **Summary:** Malawi's farmers are addressing climate-driven food insecurity and soil degradation by adopting agroecological practices, which have reduced fertilizer costs by over 40% while improving yields. Local organizations like SPRODETA are spearhea
-- **Citation:** `[Agroecology as a solution to food insecurity and soil degrad](research/bookmarks/Climate%20Change/1773125496672.md)`
-
-### How an underground fungal map of the world's oldest, slowest-growing rainforest trees can boost Earth's resilience
-
-- **Suggested domain:** `template/method/soil` (match 4)
-- **Topic:** Fungal diversity under ancient alerce trees
-- **Summary:** Research in Chile's ancient alerce rainforests reveals that the largest, oldest trees—some over 2,400 years old—host more than twice the underground fungal diversity of younger trees, including hundreds of potentially new species. These myc
-- **Citation:** `[Fungal diversity under ancient alerce trees](research/bookmarks/Climate%20Change/1772656581439.md)`
-
-### How protecting wilderness could mean purposefully tending it, not just leaving it alone
+### Scientist dubbed The Bogfather is restoring peatland to fight climate change
 
 - **Suggested domain:** `template/risk` (match 3)
-- **Topic:** Active management of wilderness areas
-- **Summary:** Traditional wilderness protection emphasizes leaving areas untouched, but the article argues that active management, such as prescribed burns, is often necessary to maintain healthy ecosystems amid modern threats like climate change and fir
-- **Citation:** `[Active management of wilderness areas](research/bookmarks/Climate%20Change/1772172277057.md)`
+- **Topic:** Peatland Restoration
+- **Summary:** Dr Peter Jones, known as The Bogfather, has dedicated 30 years to restoring peatland in Wales, which can store significant carbon and mitigate climate change impacts like flooding and wildfires. Despite covering only 4% of the surface, peat
+- **Citation:** `[Peatland Restoration](research/bookmarks/Climate%20Change/1783233224646.md)`
 
-### Ten new insights in climate science
+### Scientist dubbed The Bogfather is restoring peatland to fight climate change
+
+- **Suggested domain:** `template/risk` (match 3)
+- **Topic:** Peatland Restoration
+- **Summary:** Dr Peter Jones, known as The Bogfather, has spent decades restoring peatlands in Wales, which store significant carbon and provide natural solutions to climate change, flooding, and wildfires. Despite covering only 4% of the surface, peatla
+- **Citation:** `[Peatland Restoration](research/bookmarks/Climate%20Change/1783233224645.md)`
+
+### Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution
+
+- **Suggested domain:** `template/method/biodiversity` (match 1)
+- **Topic:** Climate Change
+- **Summary:** Human-driven climate change made the June 2026 western European heatwave up to 2.5°C warmer, exposing 327 million people and $15.6 trillion in economic activity to intensified heat. Simultaneously, Asia and the Pacific adopted a regional ro
+- **Citation:** `[Climate Change](research/bookmarks/Climate%20Change/1783232489804.md)`
+
+### Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution
+
+- **Suggested domain:** `template/method/biodiversity` (match 1)
+- **Topic:** Climate Change
+- **Summary:** Human-driven climate change made the June 2026 western European heatwave up to 2.5°C warmer, affecting 327 million people and $15.6 trillion in economic activity. Meanwhile, Asia and the Pacific adopted a regional roadmap to tackle climate 
+- **Citation:** `[Climate Change](research/bookmarks/Climate%20Change/1783232489803.md)`
+
+### Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry
+
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Bio-receptive Architecture
+- **Summary:** Rameshwari Jonnalagedda's Minimal Matter project uses 3D printed terracotta modules designed to host moss, insects, and other organisms, promoting bio-receptivity and ecological integration in architecture. The project leverages minimal sur
+- **Citation:** `[Bio-receptive Architecture](research/bookmarks/Climate%20Change/1783191100102.md)`
+
+### Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry
+
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Sustainable Architecture
+- **Summary:** Rameshwari Jonnalagedda's Minimal Matter project uses 3D printed terracotta modules designed to host moss, insects, and other organisms, promoting bio-receptivity and creating infrastructure for small ecosystems. The project leverages minim
+- **Citation:** `[Sustainable Architecture](research/bookmarks/Climate%20Change/1783191100101.md)`
+
+### The work is already happening. Here’s where to find it.
 
 - **Suggested domain:** `template/infrastructure` (match 1)
-- **Topic:** Latest climate science insights
-- **Summary:** The 2025 edition of 'Ten New Insights in Climate Science,' produced by leading global researchers, synthesizes the latest peer-reviewed findings on accelerating climate change trends, including record-breaking warmth, rapid ocean warming, a
-- **Citation:** `[Latest climate science insights](research/bookmarks/Climate%20Change/1771663159408.md)`
+- **Topic:** Sustainable Living Platform
+- **Summary:** The article introduces a platform called Sustainable Living, which curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the work
+- **Citation:** `[Sustainable Living Platform](research/bookmarks/Climate%20Change/1783099664548.md)`
 
-### Why so many mangrove restoration projects fail
+### The work is already happening. Here’s where to find it.
 
-- **Suggested domain:** `template/method/reforestation` (match 3)
-- **Topic:** Mangrove restoration failures and solutions
-- **Summary:** Many mangrove restoration projects fail due to poor execution despite high enthusiasm and funding, with around 70% struggling in regions like Southeast Asia and Latin America because of issues like incorrect flooding, seedling death, and fa
-- **Citation:** `[Mangrove restoration failures and solutions](research/bookmarks/Climate%20Change/1771590277290.md)`
+- **Suggested domain:** `template/foundation` (match 0)
+- **Topic:** Sustainable Initiatives
+- **Summary:** The article introduces Sustainable Living, a platform that curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the existing wor
+- **Citation:** `[Sustainable Initiatives](research/bookmarks/Climate%20Change/1783099664547.md)`
 
-### Fairness could determine whether climate plans succeed - Earth.com
+### A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats
 
-- **Suggested domain:** `template/organization` (match 2)
-- **Topic:** Equity in climate mitigation modeling
-- **Summary:** A new study from IIASA warns that climate mitigation scenarios, which guide global emissions targets and negotiations, often fail to incorporate equity and justice, risking political failure despite technical soundness. Researchers highligh
-- **Citation:** `[Equity in climate mitigation modeling](research/bookmarks/Climate%20Change/1771182229934.md)`
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Solar Farms
+- **Summary:** A floating solar farm in the Netherlands has created a new underwater ecosystem, attracting over 400 fish and nearly 2,000 invertebrates, and providing shade that conserves water. This project demonstrates that solar farms can benefit local
+- **Citation:** `[Solar Farms](research/bookmarks/Climate%20Change/1782992437626.md)`
+
+### A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats
+
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Solar farms
+- **Summary:** A floating solar farm in the Netherlands has created a thriving underwater ecosystem, attracting over 400 fish and nearly 2,000 invertebrates, and providing shade that conserves water. This project demonstrates that solar farms can benefit 
+- **Citation:** `[Solar farms](research/bookmarks/Climate%20Change/1782992437625.md)`
+
+### Summer’s new normal is a hazard that’s testing Europe’s climate resilience
+
+- **Suggested domain:** `template/method/water` (match 1)
+- **Topic:** Heatwaves
+- **Summary:** Europe is experiencing more frequent and severe heatwaves, with temperatures topping 44 degrees Celsius in parts of the continent. This extreme heat is leading to deaths, strain on infrastructure, and highlighting the need for better climat
+- **Citation:** `[Heatwaves](research/bookmarks/Climate%20Change/1782976072574.md)`
+
+### Summer’s new normal is a hazard that’s testing Europe’s climate resilience
+
+- **Suggested domain:** `template/economics` (match 1)
+- **Topic:** Climate Resilience
+- **Summary:** Europe is experiencing unprecedented heatwaves, with temperatures reaching record highs and causing significant health and economic impacts. Despite warnings from scientists, extreme heat is becoming the new normal, testing Europe's climate
+- **Citation:** `[Climate Resilience](research/bookmarks/Climate%20Change/1782976072573.md)`
+
+### https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/
+
+- **Suggested domain:** `template/infrastructure` (match 2)
+- **Topic:** El Niño
+- **Summary:** A powerful El Niño is building, expected to be one of the strongest in decades, and is arriving at a time when global food security is already under pressure due to climate change and shipping disruptions. New FAO analysis provides precise 
+- **Citation:** `[El Niño](research/bookmarks/Climate%20Change/1782828012911.md)`
+
+### https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/
+
+- **Suggested domain:** `template/infrastructure` (match 2)
+- **Topic:** El Niño
+- **Summary:** A powerful El Niño is building, expected to be one of the strongest in decades, and new FAO analysis predicts where drought will hit hardest, aiding in targeted support for farmers and pastoralists to mitigate impacts on global food securit
+- **Citation:** `[El Niño](research/bookmarks/Climate%20Change/1782828012910.md)`
+
+### ‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive
+
+- **Suggested domain:** `template/method/reforestation` (match 1)
+- **Topic:** Agroforestry
+- **Summary:** Wakelyns, a pioneering agroforestry farm in Suffolk, is seeking community ownership to ensure its survival and continued innovation in sustainable farming practices. The farm, which has become a model for agroforestry, is under threat and r
+- **Citation:** `[Agroforestry](research/bookmarks/Climate%20Change/1782816753002.md)`
+
+### ‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive
+
+- **Suggested domain:** `template/method/reforestation` (match 1)
+- **Topic:** Agroforestry
+- **Summary:** Wakelyns, a pioneering agroforestry farm in Suffolk, is under threat and seeks community ownership to secure its future. The farm, a living laboratory for sustainable farming, showcases diverse crops and micro-enterprises that enhance biodi
+- **Citation:** `[Agroforestry](research/bookmarks/Climate%20Change/1782816753001.md)`
+
+### Pollinator Habitat Turns Unprofitable Acres Into an Asset
+
+- **Suggested domain:** `template/method/biodiversity` (match 4)
+- **Topic:** Pollinator Habitat
+- **Summary:** An Indiana farmer converted nine unproductive acres into pollinator habitat, improving the field's return while supporting wildlife. The project, through the Conservation Reserve Program, reduced input costs and provided annual payments, de
+- **Citation:** `[Pollinator Habitat](research/bookmarks/Climate%20Change/1782658991399.md)`
+
+### Pollinator Habitat Turns Unprofitable Acres Into an Asset
+
+- **Suggested domain:** `template/method/biodiversity` (match 4)
+- **Topic:** Pollinator Habitat
+- **Summary:** Indiana farmer Brian Scott turned nine unprofitable acres into pollinator habitat, improving the field's return and creating space for wildlife. The project, supported by the Conservation Reserve Program, reduced input costs and provided an
+- **Citation:** `[Pollinator Habitat](research/bookmarks/Climate%20Change/1782658991398.md)`
+
+### Thirsty desert lizards inspire a new water-harvesting system
+
+- **Suggested domain:** `template/method/water` (match 2)
+- **Topic:** Water Harvesting
+- **Summary:** Scientists have discovered how desert horned lizards efficiently extract water from their skin using capillary action and asymmetric jaw movements. This inspired the development of a water-harvesting system that can collect and clean water 
+- **Citation:** `[Water Harvesting](research/bookmarks/Climate%20Change/1782457491385.md)`
+
+### Thirsty desert lizards inspire a new water-harvesting system
+
+- **Suggested domain:** `template/method/water` (match 2)
+- **Topic:** Water harvesting
+- **Summary:** Scientists have discovered how desert horned lizards efficiently extract water from their skin using capillary action and asymmetric jaw movements, which inspired a new water-harvesting system that can clean and collect water from damp soil
+- **Citation:** `[Water harvesting](research/bookmarks/Climate%20Change/1782457491384.md)`
+
+### Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture
+
+- **Suggested domain:** `template/method/water` (match 3)
+- **Topic:** Irrigation Systems
+- **Summary:** This study found that integrating circular buffer strips of native perennial grasses within center pivot irrigation systems significantly improved rainwater conservation and maize growth, leading to increased biomass water productivity.
+- **Citation:** `[Irrigation Systems](research/bookmarks/Climate%20Change/1782317798682.md)`
+
+### Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture
+
+- **Suggested domain:** `template/method/water` (match 3)
+- **Topic:** Irrigation Systems
+- **Summary:** This study found that integrating circular buffer strips of native perennial grasses within center pivot irrigation systems significantly improved rainwater conservation and maize growth, reducing water stress and increasing biomass water p
+- **Citation:** `[Irrigation Systems](research/bookmarks/Climate%20Change/1782317798681.md)`
+
+### The case for field stations
+
+- **Suggested domain:** `template/indicators` (match 2)
+- **Topic:** Conservation Stations
+- **Summary:** A new BioScience paper argues that tropical field stations are crucial for turning global conservation commitments into local action by providing long-term monitoring, training, and local employment. These stations are essential for validat
+- **Citation:** `[Conservation Stations](research/bookmarks/Climate%20Change/1782317720086.md)`
+
+### The case for field stations
+
+- **Suggested domain:** `template/indicators` (match 2)
+- **Topic:** field stations
+- **Summary:** A new BioScience paper argues that tropical field stations are crucial for turning global conservation commitments into local action by providing long-term monitoring, training, and local employment. These stations are essential for validat
+- **Citation:** `[field stations](research/bookmarks/Climate%20Change/1782317720085.md)`
 

@@ -1,15 +1,487 @@
 {
-  "generated": "2026-06-24T18:25:08.545Z",
-  "corpus": 475,
-  "used": 28,
-  "unused": 447,
+  "generated": "2026-07-06T17:44:15.056Z",
+  "corpus": 528,
+  "used": 44,
+  "unused": 487,
   "candidates": [
+    {
+      "id": "1783255090320",
+      "title": "Agrivoltaics Works When Solar Panels Do Farm Work",
+      "domain": "cleantechnica.com",
+      "downloaded": "2026-07-05T12:41:21.560573",
+      "article_type": "news",
+      "url": "https://cleantechnica.com/2026/07/04/agrivoltaics-works-where-shade-does-farm-work/"
+    },
+    {
+      "id": "1783255090319",
+      "title": "Agrivoltaics Works When Solar Panels Do Farm Work",
+      "domain": "cleantechnica.com",
+      "downloaded": "2026-07-05T12:41:20.651824",
+      "article_type": "",
+      "url": "https://cleantechnica.com/2026/07/04/agrivoltaics-works-where-shade-does-farm-work/"
+    },
+    {
+      "id": "1783254716158",
+      "title": "Visualizing Every El Niño and La Niña Since 1979",
+      "domain": "www.visualcapitalist.com",
+      "downloaded": "2026-07-05T12:41:13.407638",
+      "article_type": "news",
+      "url": "https://www.visualcapitalist.com/cp/visualizing-every-el-nino-and-la-nina-since-1979/"
+    },
+    {
+      "id": "1783254716157",
+      "title": "Visualizing Every El Niño and La Niña Since 1979",
+      "domain": "www.visualcapitalist.com",
+      "downloaded": "2026-07-05T12:41:12.891903",
+      "article_type": "",
+      "url": "https://www.visualcapitalist.com/cp/visualizing-every-el-nino-and-la-nina-since-1979/"
+    },
+    {
+      "id": "1783233364306",
+      "title": "A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests",
+      "domain": "phys.org",
+      "downloaded": "2026-07-05T06:38:20.573835",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-07-benchmark-disturbances-loss-recovery-carbon.html"
+    },
+    {
+      "id": "1783233364305",
+      "title": "A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests",
+      "domain": "phys.org",
+      "downloaded": "2026-07-05T06:38:20.130839",
+      "article_type": "",
+      "url": "https://phys.org/news/2026-07-benchmark-disturbances-loss-recovery-carbon.html"
+    },
+    {
+      "id": "1783233224646",
+      "title": "Scientist dubbed The Bogfather is restoring peatland to fight climate change",
+      "domain": "www.bbc.com",
+      "downloaded": "2026-07-05T06:38:19.561407",
+      "article_type": "news",
+      "url": "https://www.bbc.com/news/articles/cy498d400pro"
+    },
+    {
+      "id": "1783233224645",
+      "title": "Scientist dubbed The Bogfather is restoring peatland to fight climate change",
+      "domain": "www.bbc.com",
+      "downloaded": "2026-07-05T06:38:18.921001",
+      "article_type": "",
+      "url": "https://www.bbc.com/news/articles/cy498d400pro"
+    },
+    {
+      "id": "1783232489804",
+      "title": "Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution",
+      "domain": "www.downtoearth.org.in",
+      "downloaded": "2026-07-05T06:27:48.995335",
+      "article_type": "news",
+      "url": "https://www.downtoearth.org.in/climate-change/climate-change-makes-western-europe-heatwave-up-to-25c-hotter-in-june-asia-pacific-adopts-roadmap-to-tackle-climate-biodiversity-and-pollution"
+    },
+    {
+      "id": "1783232489803",
+      "title": "Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution",
+      "domain": "www.downtoearth.org.in",
+      "downloaded": "2026-07-05T06:27:48.469296",
+      "article_type": "",
+      "url": "https://www.downtoearth.org.in/climate-change/climate-change-makes-western-europe-heatwave-up-to-25c-hotter-in-june-asia-pacific-adopts-roadmap-to-tackle-climate-biodiversity-and-pollution"
+    },
+    {
+      "id": "1783191100102",
+      "title": "Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry",
+      "domain": "3dprintingindustry.com",
+      "downloaded": "2026-07-04T19:02:11.377486",
+      "article_type": "news",
+      "url": "https://3dprintingindustry.com/news/rameshwari-jonnalagedda-builds-3d-printed-terracotta-modules-designed-to-be-colonized-by-nature-252711/"
+    },
+    {
+      "id": "1783191100101",
+      "title": "Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry",
+      "domain": "3dprintingindustry.com",
+      "downloaded": "2026-07-04T18:51:56.662083",
+      "article_type": "",
+      "url": "https://3dprintingindustry.com/news/rameshwari-jonnalagedda-builds-3d-printed-terracotta-modules-designed-to-be-colonized-by-nature-252711/"
+    },
+    {
+      "id": "1783099664548",
+      "title": "The work is already happening. Here’s where to find it.",
+      "domain": "www.theportugalnews.com",
+      "downloaded": "2026-07-03T17:31:16.895287",
+      "article_type": "platform",
+      "url": "https://www.theportugalnews.com/news/2026-07-03/the-work-is-already-happening-heres-where-to-find-it/1049366"
+    },
+    {
+      "id": "1783099664547",
+      "title": "The work is already happening. Here’s where to find it.",
+      "domain": "www.theportugalnews.com",
+      "downloaded": "2026-07-03T17:31:16.417594",
+      "article_type": "",
+      "url": "https://www.theportugalnews.com/news/2026-07-03/the-work-is-already-happening-heres-where-to-find-it/1049366"
+    },
+    {
+      "id": "1782992437626",
+      "title": "A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats",
+      "domain": "www.bgr.com",
+      "downloaded": "2026-07-02T11:50:34.783468",
+      "article_type": "news",
+      "url": "https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/"
+    },
+    {
+      "id": "1782992437625",
+      "title": "A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats",
+      "domain": "www.bgr.com",
+      "downloaded": "2026-07-02T11:50:34.188217",
+      "article_type": "",
+      "url": "https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/"
+    },
+    {
+      "id": "1782976072574",
+      "title": "Summer’s new normal is a hazard that’s testing Europe’s climate resilience",
+      "domain": "www.downtoearth.org.in",
+      "downloaded": "2026-07-02T07:18:36.195080",
+      "article_type": "news",
+      "url": "https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience"
+    },
+    {
+      "id": "1782976072573",
+      "title": "Summer’s new normal is a hazard that’s testing Europe’s climate resilience",
+      "domain": "www.downtoearth.org.in",
+      "downloaded": "2026-07-02T07:08:25.374228",
+      "article_type": "",
+      "url": "https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience"
+    },
+    {
+      "id": "1782828012911",
+      "title": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/",
+      "domain": "www.reuters.com",
+      "downloaded": "2026-06-30T14:08:47.589682",
+      "article_type": "news",
+      "url": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/"
+    },
+    {
+      "id": "1782828012910",
+      "title": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/",
+      "domain": "www.reuters.com",
+      "downloaded": "2026-06-30T14:08:47.020260",
+      "article_type": "",
+      "url": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/"
+    },
+    {
+      "id": "1782816753002",
+      "title": "‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive",
+      "domain": "www.theguardian.com",
+      "downloaded": "2026-06-30T11:13:04.170218",
+      "article_type": "news",
+      "url": "https://www.theguardian.com/environment/2026/jun/30/suffolk-agroforestry-farm-wakelyns-community-ownership-survive"
+    },
+    {
+      "id": "1782816753001",
+      "title": "‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive",
+      "domain": "www.theguardian.com",
+      "downloaded": "2026-06-30T11:02:00.789093",
+      "article_type": "",
+      "url": "https://www.theguardian.com/environment/2026/jun/30/suffolk-agroforestry-farm-wakelyns-community-ownership-survive"
+    },
+    {
+      "id": "1782658991399",
+      "title": "Pollinator Habitat Turns Unprofitable Acres Into an Asset",
+      "domain": "www.agriculture.com",
+      "downloaded": "2026-06-28T15:10:37.925125",
+      "article_type": "news",
+      "url": "https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222"
+    },
+    {
+      "id": "1782658991398",
+      "title": "Pollinator Habitat Turns Unprofitable Acres Into an Asset",
+      "domain": "www.agriculture.com",
+      "downloaded": "2026-06-28T15:10:37.315108",
+      "article_type": "",
+      "url": "https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222"
+    },
+    {
+      "id": "1782457491385",
+      "title": "Thirsty desert lizards inspire a new water-harvesting system",
+      "domain": "phys.org",
+      "downloaded": "2026-06-26T07:15:29.085927",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-06-thirsty-lizards-harvesting.html"
+    },
+    {
+      "id": "1782457491384",
+      "title": "Thirsty desert lizards inspire a new water-harvesting system",
+      "domain": "phys.org",
+      "downloaded": "2026-06-26T07:05:13.864264",
+      "article_type": "",
+      "url": "https://phys.org/news/2026-06-thirsty-lizards-harvesting.html"
+    },
+    {
+      "id": "1782317798682",
+      "title": "Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture",
+      "domain": "www.nature.com",
+      "downloaded": "2026-06-24T16:25:59.812548",
+      "article_type": "study",
+      "url": "https://www.nature.com/articles/s44264-026-00167-4"
+    },
+    {
+      "id": "1782317798681",
+      "title": "Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture",
+      "domain": "www.nature.com",
+      "downloaded": "2026-06-24T16:25:51.730010",
+      "article_type": "",
+      "url": "https://www.nature.com/articles/s44264-026-00167-4"
+    },
+    {
+      "id": "1782317720086",
+      "title": "The case for field stations",
+      "domain": "news.mongabay.com",
+      "downloaded": "2026-06-24T16:25:51.122730",
+      "article_type": "news",
+      "url": "https://news.mongabay.com/2026/06/the-case-for-field-stations/"
+    },
+    {
+      "id": "1782317720085",
+      "title": "The case for field stations",
+      "domain": "news.mongabay.com",
+      "downloaded": "2026-06-24T16:25:50.354315",
+      "article_type": "",
+      "url": "https://news.mongabay.com/2026/06/the-case-for-field-stations/"
+    },
+    {
+      "id": "1782317661868",
+      "title": "The Ecological Intelligence of Sacred Landscapes",
+      "domain": "www.archdaily.com",
+      "downloaded": "2026-06-24T16:15:22.290549",
+      "article_type": "news",
+      "url": "https://www.archdaily.com/1042553/the-ecological-intelligence-of-sacred-landscapes"
+    },
+    {
+      "id": "1782317661867",
+      "title": "The Ecological Intelligence of Sacred Landscapes",
+      "domain": "www.archdaily.com",
+      "downloaded": "2026-06-24T16:15:21.708240",
+      "article_type": "",
+      "url": "https://www.archdaily.com/1042553/the-ecological-intelligence-of-sacred-landscapes"
+    },
+    {
+      "id": "1782154194931",
+      "title": "REGENERATING THE BIOREGIONAL COMMONS",
+      "domain": "ernestopvanpeborgh.substack.com",
+      "downloaded": "2026-06-22T18:51:34.943667",
+      "article_type": "opinion",
+      "url": "https://ernestopvanpeborgh.substack.com/p/regenerating-the-bioregional-commons"
+    },
+    {
+      "id": "1782154194930",
+      "title": "REGENERATING THE BIOREGIONAL COMMONS",
+      "domain": "ernestopvanpeborgh.substack.com",
+      "downloaded": "2026-06-22T18:51:27.001879",
+      "article_type": "",
+      "url": "https://ernestopvanpeborgh.substack.com/p/regenerating-the-bioregional-commons"
+    },
+    {
+      "id": "1781795484680",
+      "title": "'Everything has its own order and purpose': The rainforest 'farms' defying modern agriculture",
+      "domain": "www.bbc.com",
+      "downloaded": "2026-06-18T15:14:15.203507",
+      "article_type": "",
+      "url": "https://www.bbc.com/future/article/20260617-chagras-the-ancient-farming-system-thriving-deep-in-the-amazon"
+    },
+    {
+      "id": "1781795186142",
+      "title": "150 Years Ago, a Super El Niño Killed 50 Million People. The Next One Is Right Around the Corner.",
+      "domain": "www.popularmechanics.com",
+      "downloaded": "2026-06-18T15:14:13.948341",
+      "article_type": "",
+      "url": "https://www.popularmechanics.com/science/environment/a71573365/super-el-nino-1877/"
+    },
+    {
+      "id": "1781769407957",
+      "title": "A bonanza for fans of the natural world: the digital library sharing 64m pages of scientific knowledge with everyone",
+      "domain": "www.theguardian.com",
+      "downloaded": "2026-06-18T08:01:22.432843",
+      "article_type": "",
+      "url": "https://www.theguardian.com/environment/2026/jun/18/natural-world-digital-biodiversity-heritage-library-scientific-knowledge-free-access-aoe"
+    },
+    {
+      "id": "1781523122870",
+      "title": "How directing water flows in the landscape could support groundwater and surface water streams",
+      "domain": "phys.org",
+      "downloaded": "2026-06-15T11:40:44.977539",
+      "article_type": "",
+      "url": "https://phys.org/news/2026-06-landscape-groundwater-surface-streams.html"
+    },
+    {
+      "id": "1781167169857",
+      "title": "What happens when the world’s breadbaskets start failing simultaneously?",
+      "domain": "theconversation.com",
+      "downloaded": "2026-06-11T08:41:27.947817",
+      "article_type": "",
+      "url": "https://theconversation.com/what-happens-when-the-worlds-breadbaskets-start-failing-simultaneously-279052"
+    },
+    {
+      "id": "1780866621182",
+      "title": "Priority questions for the next decade of blue carbon science - Nature Ecology & Evolution",
+      "domain": "www.nature.com",
+      "downloaded": "2026-06-07T21:11:15.914345",
+      "article_type": "",
+      "url": "https://www.nature.com/articles/s41559-026-03020-6"
+    },
+    {
+      "id": "1780865618072",
+      "title": "Greater trophic diversity of soil animal communities under agricultural land use and tropical climate - Nature Ecology & Evolution",
+      "domain": "www.nature.com",
+      "downloaded": "2026-06-07T20:58:38.737147",
+      "article_type": "",
+      "url": "https://www.nature.com/articles/s41559-026-03014-4"
+    },
+    {
+      "id": "1780841077224",
+      "title": "15 forces that could reshape conservation in the next 10 years",
+      "domain": "news.mongabay.com",
+      "downloaded": "2026-06-07T14:05:15.472081",
+      "article_type": "",
+      "url": "https://news.mongabay.com/2025/12/15-forces-that-could-reshape-conservation-in-the-next-10-years/"
+    },
+    {
+      "id": "1780837414415",
+      "title": "Combining remote sensing with local knowledge is vital for understanding forest change in West Africa - Scientific Reports",
+      "domain": "www.nature.com",
+      "downloaded": "2026-06-07T13:13:55.792690",
+      "article_type": "",
+      "url": "https://www.nature.com/articles/s41598-025-23133-5"
+    },
+    {
+      "id": "1780836342179",
+      "title": "Longer growing seasons will not offset growth loss in drought-prone temperate forests of Central-Southeast Europe - Nature Communications",
+      "domain": "www.nature.com",
+      "downloaded": "2026-06-07T12:51:26.520350",
+      "article_type": "",
+      "url": "https://www.nature.com/articles/s41467-025-64568-8"
+    },
+    {
+      "id": "1780823041759",
+      "title": "What Afghanistan’s rotten apples tell us about its non-profit sector",
+      "domain": "www.aljazeera.com",
+      "downloaded": "2026-06-07T09:09:16.252525",
+      "article_type": "",
+      "url": "https://www.aljazeera.com/opinions/2026/6/6/what-afghanistans-rotten-apples-tell-us-about-its-non-profit-sector"
+    },
+    {
+      "id": "1780744282976",
+      "title": "AI-powered conservation project ends",
+      "domain": "www.bbc.com",
+      "downloaded": "2026-06-06T11:14:35.517130",
+      "article_type": "news",
+      "url": "https://www.bbc.com/news/articles/c1e2w496jdqo"
+    },
+    {
+      "id": "1780670499180",
+      "title": "‘An equal and habitable world is possible’: academics set out sweeping vision for planetary survival",
+      "domain": "www.theguardian.com",
+      "downloaded": "2026-06-05T14:44:01.632883",
+      "article_type": "",
+      "url": "https://www.theguardian.com/environment/2026/jun/04/world-inequality-lab-equality-academics-planetary-survival"
+    },
+    {
+      "id": "1765531706791",
+      "title": "Encyclopedia of Life",
+      "domain": "eol.org",
+      "downloaded": "2026-06-04T06:59:14.726873",
+      "article_type": "reference",
+      "url": "https://eol.org/"
+    },
+    {
+      "id": "1763280214419",
+      "title": "WOODY MEADOW GUIDELINES - Woody Meadow",
+      "domain": "woodymeadow.unimelb.edu.au",
+      "downloaded": "2026-06-04T06:59:12.766751",
+      "article_type": "guide",
+      "url": "https://woodymeadow.unimelb.edu.au/fact-sheets/guidelines/"
+    },
+    {
+      "id": "1756291430212",
+      "title": "Banking on Climate Chaos 2025: Global Bank Fossil Fuel Financing Report",
+      "domain": "bankingonclimatechaos.org",
+      "downloaded": "2026-06-04T06:59:06.898640",
+      "article_type": "news",
+      "url": "https://www.bankingonclimatechaos.org/#fulldata-panel"
+    },
+    {
+      "id": "1715778390000",
+      "title": "Causes, Effects & Solutions To Climate Change",
+      "domain": "climatescience.org",
+      "downloaded": "2026-06-04T06:58:57.626664",
+      "article_type": "reference",
+      "url": "https://climatescience.org/courses"
+    },
+    {
+      "id": "1780485783376",
+      "title": "How drought rewires roots, cutting iron uptake across major food crops",
+      "domain": "phys.org",
+      "downloaded": "2026-06-03T11:33:37.695255",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-06-drought-rewires-roots-iron-uptake.html"
+    },
+    {
+      "id": "1780425212427",
+      "title": "In Brazil, a project paying farmers for forests is looking to scale up",
+      "domain": "news.mongabay.com",
+      "downloaded": "2026-06-02T18:41:41.800667",
+      "article_type": "news",
+      "url": "https://news.mongabay.com/2026/06/in-brazil-a-project-paying-farmers-for-forests-is-looking-to-scale-up/"
+    },
+    {
+      "id": "1780303191714",
+      "title": "Trees and greenery can cool cities by as much as 18°C – but only if they’re the right type",
+      "domain": "theconversation.com",
+      "downloaded": "2026-06-01T08:49:04.787475",
+      "article_type": "news",
+      "url": "https://theconversation.com/trees-and-greenery-can-cool-cities-by-as-much-as-18-c-but-only-if-theyre-the-right-type-283071"
+    },
+    {
+      "id": "1780268834416",
+      "title": "A global food crisis is nearing – and the warning signs are buried beneath your feet | BBC Science Focus Magazine",
+      "domain": "www.sciencefocus.com",
+      "downloaded": "2026-05-31T23:12:58.165779",
+      "article_type": "study",
+      "url": "https://www.sciencefocus.com/planet-earth/race-to-save-soil-seismology"
+    },
+    {
+      "id": "1780098862313",
+      "title": "An empirically based dynamic approach to sustainable climate policy design",
+      "domain": "www.nature.com",
+      "downloaded": "2026-05-30T01:14:39.588449",
+      "article_type": "study",
+      "url": "https://www.nature.com/articles/s41893-025-01715-5"
+    },
+    {
+      "id": "1765529625389",
+      "title": "Ecosystem health shapes viral ecology in peatland soils | Nature Microbiology",
+      "domain": "nature.com",
+      "downloaded": "2026-05-30T01:14:38.962376",
+      "article_type": "study",
+      "url": "https://www.nature.com/articles/s41564-025-02199-x"
+    },
+    {
+      "id": "1765015201756",
+      "title": "A place-based assessment of biodiversity intactness in sub-Saharan Africa |",
+      "domain": "nature.com",
+      "downloaded": "2026-05-30T01:14:38.136270",
+      "article_type": "study",
+      "url": "https://www.nature.com/articles/s41586-025-09781-7"
+    },
+    {
+      "id": "1779757241938",
+      "title": "They Kept Planting Trees in the Sahara and Kept Failing. Then They Released 500 Tortoises, and the Desert Looked Alive From Space",
+      "domain": "indiandefencereview.com",
+      "downloaded": "2026-05-26T18:50:09.863587",
+      "article_type": "news",
+      "url": "https://indiandefencereview.com/african-spurred-tortoise-sahel-desert-vegetation-recovery/"
+    },
     {
       "id": "1779188940328",
       "title": "The Sir Attenborough blueprint: How storytelling became conservation’s most powerful tool",
       "domain": "www.afaqs.com",
       "downloaded": "2026-05-21T13:54:21.319606",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.afaqs.com/news/guest-article/the-sir-attenborough-blueprint-how-storytelling-became-conservations-most-powerful-tool-11849236"
     },
     {
@@ -17,7 +489,7 @@
       "title": "Scientists find hidden rainfall pattern that could reshape farming",
       "domain": "www.sciencedaily.com",
       "downloaded": "2026-05-21T13:54:20.710834",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.sciencedaily.com/releases/2025/12/251211100633.htm"
     },
     {
@@ -25,7 +497,7 @@
       "title": "What you need to know as pine martens are reintroduced",
       "domain": "www.bbc.com",
       "downloaded": "2026-05-21T13:54:20.127240",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cy8vn11w827o"
     },
     {
@@ -33,7 +505,7 @@
       "title": "Biodiversity continues to decline, 2025 data shows",
       "domain": "www.bbc.com",
       "downloaded": "2026-05-21T13:54:19.551755",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c24gpl0l545o"
     },
     {
@@ -41,7 +513,7 @@
       "title": "This 32-Year-Old Is Rebuilding a Lost Forest in the Western Ghats With Thousands of Native Saplings",
       "domain": "thebetterindia.com",
       "downloaded": "2026-05-21T13:54:19.011104",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://thebetterindia.com/environment/restoring-western-ghats-evergreen-forest-native-species-10916926"
     },
     {
@@ -49,7 +521,7 @@
       "title": "Volunteer tree planters aiming to prevent flooding",
       "domain": "www.bbc.com",
       "downloaded": "2026-05-21T13:54:18.369646",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c24l1dr23gro"
     },
     {
@@ -57,7 +529,7 @@
       "title": "Congo’s communities are creating a 1-million-hectare biodiversity corridor",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-21T13:54:17.571647",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/12/congos-communities-are-creating-a-1-million-hectare-biodiversity-corridor/"
     },
     {
@@ -65,7 +537,7 @@
       "title": "Today more than ever, biodiversity needs single-species conservation",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:07:27.849021",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/today-more-than-ever-biodiversity-needs-single-species-conservation-263023"
     },
     {
@@ -73,7 +545,7 @@
       "title": "Humber Forest will grow for decades, say bosses",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:07:25.639035",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cjd02kg8d8vo"
     },
     {
@@ -81,7 +553,7 @@
       "title": "Planet’s first catastrophic climate tipping point reached, report says, with coral reefs facing ‘widespread dieback’ | Climate crisis | The Guardian",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:07:23.444643",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/oct/13/coral-reefs-ice-sheets-amazon-rainforest-tipping-point-global-heating-scientists-report"
     },
     {
@@ -89,7 +561,7 @@
       "title": "A search engine for the planet opens to the public",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:07:20.709372",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/a-search-engine-for-the-planet-opens-to-the-public/"
     },
     {
@@ -97,7 +569,7 @@
       "title": "Don't just plant trees, plant forests to restore biodiversity for the future",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:07:19.743561",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2026-04-dont-trees-forests-biodiversity-future.html#google_vignette"
     },
     {
@@ -105,7 +577,7 @@
       "title": "Don’t just plant trees, plant forests to restore biodiversity for the future",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:07:19.139481",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/dont-just-plant-trees-plant-forests-to-restore-biodiversity-for-the-future-275803"
     },
     {
@@ -113,7 +585,7 @@
       "title": "China's invention turns desert sand into fertile soil in just 10 months - Earth.com",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:07:18.556514",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/lab-grown-cyanobacteria-microbes-turn-desert-sand-into-fertile-soil-in-just-10-months/"
     },
     {
@@ -121,7 +593,7 @@
       "title": "The case for ground-level agrivoltaics – pv magazine International",
       "domain": "pv-magazine.com",
       "downloaded": "2026-05-18T23:07:17.863606",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.pv-magazine.com/2026/03/20/the-case-for-ground-level-agrivoltaics/"
     },
     {
@@ -129,23 +601,15 @@
       "title": "Why some regions are winning the fight against groundwater depletion",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:07:17.256889",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2026-03-regions-groundwater-depletion.html"
-    },
-    {
-      "id": "1773480618603",
-      "title": "A long wait for pollinators: Restored grasslands need 75+ years for full biodiversity recovery, study finds",
-      "domain": "phys.org",
-      "downloaded": "2026-05-18T23:07:16.512103",
-      "article_type": "",
-      "url": "https://phys.org/news/2025-03-pollinators-grasslands-years-full-biodiversity.html"
     },
     {
       "id": "1773480594168",
       "title": "Biodiversity scheme aims to help give land back to nature",
       "domain": "rte.ie",
       "downloaded": "2026-05-18T23:07:15.943898",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.rte.ie/news/munster/2025/0315/1502280-hares-corner-clare/"
     },
     {
@@ -153,7 +617,7 @@
       "title": "Private Entities to Restore Degraded Forests in Madhya Pradesh, Earn Carbon Credits",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:07:15.462330",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/forests/private-entities-to-gain-access-to-state-owned-degraded-forests-for-afforestation"
     },
     {
@@ -161,7 +625,7 @@
       "title": "Seagrass Conservation Crucial for Global Biodiversity and Climate Goals, Study Reveals",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:07:14.884859",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/wildlife-biodiversity/seagrass-conservation-key-to-global-biodiversity-and-climate-targets-studies-show"
     },
     {
@@ -169,23 +633,15 @@
       "title": "Tree planting is still the best way to remove carbon, despite climate and economic risks, say researchers",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:07:14.207875",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-03-tree-carbon-climate-economic.html"
-    },
-    {
-      "id": "1773479867020",
-      "title": "Mixed-species forests outperform monocultures in carbon storage, even in extreme weather",
-      "domain": "phys.org",
-      "downloaded": "2026-05-18T23:07:13.513482",
-      "article_type": "",
-      "url": "https://phys.org/news/2025-02-species-forests-outperform-monocultures-carbon.html"
     },
     {
       "id": "1773479762088",
       "title": "Most conservation funds go to large vertebrates at expense of ‘neglected’ species | Conservation | The Guardian",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:07:12.933770",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/feb/24/most-conservation-funds-go-to-large-vertebrates-at-expense-of-neglected-species"
     },
     {
@@ -193,7 +649,7 @@
       "title": "Conservation in wealthy nations may worsen global biodiversity loss, study finds",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:07:12.280617",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/conservation-in-wealthy-nations-may-worsen-global-biodiversity-loss-study-finds/"
     },
     {
@@ -201,7 +657,7 @@
       "title": "In Malawi, farmers rebuild soil and livelihoods through agroecology",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:07:11.447885",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2026/03/in-malawi-farmers-rebuild-soil-and-livelihoods-through-agroecology/"
     },
     {
@@ -209,7 +665,7 @@
       "title": "How an underground fungal map of the world's oldest, slowest-growing rainforest trees can boost Earth's resilience",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:07:10.594570",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2026-03-underground-fungal-world-oldest-slowest.html"
     },
     {
@@ -217,7 +673,7 @@
       "title": "How protecting wilderness could mean purposefully tending it, not just leaving it alone",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:07:09.890567",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/how-protecting-wilderness-could-mean-purposefully-tending-it-not-just-leaving-it-alone-272412"
     },
     {
@@ -225,7 +681,7 @@
       "title": "Ten new insights in climate science",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:07:08.272286",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2026-02-ten-insights-climate-science.html"
     },
     {
@@ -233,7 +689,7 @@
       "title": "Why so many mangrove restoration projects fail",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:07:07.429749",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/why-so-many-mangrove-restoration-projects-fail/"
     },
     {
@@ -241,7 +697,7 @@
       "title": "Fairness could determine whether climate plans succeed - Earth.com",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:07:06.691570",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/fairness-could-determine-whether-climate-plans-succeed-or-collapse/"
     },
     {
@@ -249,7 +705,7 @@
       "title": "Why some people feel responsible for nature - and others don’t - Earth.com",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:07:05.906264",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/why-some-people-feel-responsible-for-nature-and-others-dont/"
     },
     {
@@ -257,7 +713,7 @@
       "title": "Replanted rainforests struggle to recover after logging - Earth.com",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:07:05.046777",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/video/replanted-rainforests-struggle-to-recover-after-logging/"
     },
     {
@@ -265,7 +721,7 @@
       "title": "UK and EU tree planting pledges face reality check as scientists warn the climate window is closing | Euronews",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:07:04.504545",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2026/01/14/uk-and-eu-tree-planting-pledges-face-reality-check-as-scientists-warn-the-climate-window-i"
     },
     {
@@ -273,7 +729,7 @@
       "title": "Superorganism raises $25M to back biodiversity startups | TechCrunch",
       "domain": "techcrunch.com",
       "downloaded": "2026-05-18T23:07:03.798923",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://techcrunch.com/2026/01/13/superorganism-raises-25m-to-back-biodiversity-startups/"
     },
     {
@@ -281,7 +737,7 @@
       "title": "Massive Amazon conservation program pledges to put communities first",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:07:02.361618",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2026/01/massive-amazon-conservation-program-pledges-to-put-communities-first/"
     },
     {
@@ -289,7 +745,7 @@
       "title": "Rhizocore’s £4.5m funding fuels expansion of fungal tech for tree growth",
       "domain": "agtechnavigator.com",
       "downloaded": "2026-05-18T23:07:01.843344",
-      "article_type": "",
+      "article_type": "tool",
       "url": "https://www.agtechnavigator.com/Article/2025/11/19/rhizocores-45m-funding-fuels-expansion-of-fungal-tech-for-tree-growth/"
     },
     {
@@ -297,7 +753,7 @@
       "title": "Beyond deforestation: redesigning how we protect and value tropical forests (analysis)",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:07:01.214802",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/11/beyond-deforestation-redesigning-how-we-protect-and-value-tropical-forests-analysis/"
     },
     {
@@ -305,7 +761,7 @@
       "title": "Climate policies can backfire by eroding 'green' values, study finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:07:00.510161",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-12-climate-policies-backfire-eroding-green.html"
     },
     {
@@ -313,7 +769,7 @@
       "title": "‘I never imagined we could buy an island’: how a community saved Mexico’s Galápagos | Endangered habitats | The Guardian",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:06:59.641406",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/global-development/2025/dec/30/conservation-saved-espiritu-santo-mexico-galpagos-developers-community"
     },
     {
@@ -321,7 +777,7 @@
       "title": "IUCN Red List of Threatened Species",
       "domain": "iucnredlist.org",
       "downloaded": "2026-05-18T23:06:57.021272",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://www.iucnredlist.org/"
     },
     {
@@ -329,7 +785,7 @@
       "title": "Ecological myopia: the blind spot holding back climate action",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:56.318117",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/ecological-myopia-the-blind-spot-holding-back-climate-action-270912"
     },
     {
@@ -337,7 +793,7 @@
       "title": "Kenyan wildlife census reveals conservation wins and losses",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:55.702711",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/kenyan-wildlife-census-reveals-conservation-wins-and-losses/"
     },
     {
@@ -345,7 +801,7 @@
       "title": "Where the wild things thrive: Finding and protecting nature's climate change safe havens",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:54.970505",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-12-wild-nature-climate-safe-havens.html"
     },
     {
@@ -353,7 +809,7 @@
       "title": "Tree mortality from insects is rising across Europe",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:54.383426",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-11-tree-mortality-insects-europe.html"
     },
     {
@@ -361,7 +817,7 @@
       "title": "Current protected areas provide limited benefits for European river biodiversity | Nature Communications",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:06:53.755440",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-025-67125-5"
     },
     {
@@ -369,7 +825,7 @@
       "title": "RSPB Otmoor wetlands reserve to expand with new habitat bank",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:53.152165",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c07mx7v0551o"
     },
     {
@@ -377,7 +833,7 @@
       "title": "Sea level doesn’t rise at the same rate everywhere – we mapped where Antarctica’s ice melt would have the biggest impact",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:52.615378",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/sea-level-doesnt-rise-at-the-same-rate-everywhere-we-mapped-where-antarcticas-ice-melt-would-have-the-biggest-impact-269788"
     },
     {
@@ -385,7 +841,7 @@
       "title": "Bison Ranchers Return Thousands of Animals to Native Lands and Witness Total Rejuvenation of Ecosystem",
       "domain": "goodnewsnetwork.org",
       "downloaded": "2026-05-18T23:06:51.767767",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.goodnewsnetwork.org/tribal-bison-ranchers-return-thousands-of-animals-to-native-lands-and-witness-an-ecosystem-rejuvinate/"
     },
     {
@@ -393,7 +849,7 @@
       "title": "Restoring wildlife habitats in wealthy nations could drive extinctions in species-rich regions",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:51.121231",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-02-wildlife-habitats-wealthy-nations-extinctions.html"
     },
     {
@@ -401,7 +857,7 @@
       "title": "Chestnut Carbon gets $160M to turn old farms into forests | TechCrunch",
       "domain": "techcrunch.com",
       "downloaded": "2026-05-18T23:06:50.327263",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://techcrunch.com/2025/02/12/chestnut-carbon-gets-160m-to-turn-old-farms-into-forests/"
     },
     {
@@ -409,7 +865,7 @@
       "title": "140 hectares of Welsh land purchased to restore woodland and nature habitat",
       "domain": "nation.cymru",
       "downloaded": "2026-05-18T23:06:49.730280",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://nation.cymru/news/140-hectares-of-welsh-land-purchased-to-restore-woodland-and-nature-habitat/"
     },
     {
@@ -417,23 +873,15 @@
       "title": "Interspace single-axis agrivoltaics has lowest environmental impact in Europe – pv magazine International",
       "domain": "pv-magazine.com",
       "downloaded": "2026-05-18T23:06:49.268462",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.pv-magazine.com/2025/12/12/interspace-single-axis-agrivoltaics-has-lowest-environmental-impact-in-europe/"
-    },
-    {
-      "id": "1765529625389",
-      "title": "Ecosystem health shapes viral ecology in peatland soils | Nature Microbiology",
-      "domain": "nature.com",
-      "downloaded": "2026-05-18T23:06:48.725409",
-      "article_type": "",
-      "url": "https://www.nature.com/articles/s41564-025-02199-x"
     },
     {
       "id": "1765463628363",
       "title": "'She was standing in the way of certain individuals': The mysterious murder of gorilla researcher Dian Fossey",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:48.094216",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/culture/article/20251205-the-mysterious-murder-of-gorilla-researcher-dian-fossey"
     },
     {
@@ -441,7 +889,7 @@
       "title": "‘Food and fossil fuel production causing $5bn of environmental damage an hour’ | Climate crisis | The Guardian",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:06:47.435784",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/dec/09/food-fossil-fuel-production-5bn-environmental-damage-an-hour-un-geo-report-"
     },
     {
@@ -449,23 +897,15 @@
       "title": "Collapse of key Atlantic current could bring extreme drought to Europe for hundreds of years, study finds | Live Science",
       "domain": "livescience.com",
       "downloaded": "2026-05-18T23:06:46.836079",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.livescience.com/planet-earth/rivers-oceans/collapse-of-key-atlantic-current-could-bring-extreme-drought-to-europe-for-hundreds-of-years-study-finds"
-    },
-    {
-      "id": "1765015201756",
-      "title": "A place-based assessment of biodiversity intactness in sub-Saharan Africa | Nature",
-      "domain": "nature.com",
-      "downloaded": "2026-05-18T23:06:46.111610",
-      "article_type": "",
-      "url": "https://www.nature.com/articles/s41586-025-09781-7"
     },
     {
       "id": "1765015108363",
       "title": "Farmers stunned after unexpected impacts of new solar farm project: 'It's exciting'",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:06:45.382310",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/green-tech/puerto-rico-farm-agrivoltaics-coffee-solar/"
     },
     {
@@ -473,7 +913,7 @@
       "title": "France launches its largest rewilding project in the Dauphiné Alps - BirdGuides",
       "domain": "birdguides.com",
       "downloaded": "2026-05-18T23:06:44.695353",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.birdguides.com/news/france-launches-its-largest-rewilding-project-in-the-dauphine-alps/"
     },
     {
@@ -481,7 +921,7 @@
       "title": "Physical soil health indicators farmers should know",
       "domain": "farmprogress.com",
       "downloaded": "2026-05-18T23:06:44.083692",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.farmprogress.com/soil-health/unlock-physical-attributes-of-healthy-soil"
     },
     {
@@ -489,7 +929,7 @@
       "title": "Planting of first new national forest in decades starts",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:43.467561",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cm287er0ndzo"
     },
     {
@@ -497,7 +937,7 @@
       "title": "What do we know about climate change? How do we know it? And where are we headed?",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:42.827850",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/what-do-we-know-about-climate-change-how-do-we-know-it-and-where-are-we-headed-270070"
     },
     {
@@ -505,15 +945,15 @@
       "title": "Earth system models overstate carbon removal: New findings suggest nitrogen fixation is 50% lower than thought",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:41.834978",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-11-earth-overstate-carbon-nitrogen-fixation.html"
     },
     {
       "id": "1764060989427",
-      "title": "\\\\\\\"Edible neighbourhood\\\\\\\" surrounded by fruit trees in the Netherlands",
+      "title": "\\\"Edible neighbourhood\\\" surrounded by fruit trees in the Netherlands",
       "domain": "dezeen.com",
       "downloaded": "2026-05-18T23:06:40.520134",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://www.dezeen.com/2025/11/20/edible-neighbourhood-rijnvliet-utrech-felixx-de-zwarte-hond-netherlands/"
     },
     {
@@ -521,7 +961,7 @@
       "title": "Soil carbon decomposition varies vastly, holding implications for climate models",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:39.902048",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-11-soil-carbon-decomposition-varies-vastly.html"
     },
     {
@@ -529,7 +969,7 @@
       "title": "Seeing the hidden microbial world beneath our feet—from the sky",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:39.353061",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-11-hidden-microbial-world-beneath-feet.html"
     },
     {
@@ -537,7 +977,7 @@
       "title": "New directory helps donors navigate the complex world of global reforestation",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:38.529953",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/11/new-directory-helps-donors-navigate-the-complex-world-of-global-reforestation/"
     },
     {
@@ -545,7 +985,7 @@
       "title": "The 'blue forest' in figures: First global inventory of carbon stored by seagrass meadows",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:37.970707",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-11-blue-forest-figures-global-carbon.html"
     },
     {
@@ -553,7 +993,7 @@
       "title": "Regenerative Doubts",
       "domain": "climatetrackerlatam.org",
       "downloaded": "2026-05-18T23:06:37.214154",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://climatetrackerlatam.org/reportajes-ct/the-methane-wars-2/"
     },
     {
@@ -561,7 +1001,7 @@
       "title": "We planted two woody meadows a decade ago to see what would thrive. Now the concept is popular across Australia.",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:36.635393",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/we-planted-two-woody-meadows-a-decade-ago-to-see-what-would-thrive-now-the-concept-is-popular-across-australia-269611"
     },
     {
@@ -569,7 +1009,7 @@
       "title": "Removing CO2 from atmosphere vital to avoid catastrophic tipping points, leading scientist says",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:06:35.920676",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/nov/11/leading-scientist-says"
     },
     {
@@ -577,7 +1017,7 @@
       "title": "Earth observations for climate adaptation: tracking progress towards the Global Goal on Adaptation through satellite-derived indicators",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:06:35.043058",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41612-025-01251-1"
     },
     {
@@ -585,7 +1025,7 @@
       "title": "We need to rewild the world. But who’s going to foot the bill?",
       "domain": "discoverwildlife.com",
       "downloaded": "2026-05-18T23:06:34.293774",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.discoverwildlife.com/environment/we-need-to-rewild-the-world-but-who-going-to-foot-the-bill"
     },
     {
@@ -593,7 +1033,7 @@
       "title": "COP30 in Brazil: The Amazon nears the “point of no return”",
       "domain": "vaticannews.va",
       "downloaded": "2026-05-18T23:06:33.686674",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.vaticannews.va/en/world/news/2025-11/cop30-in-brazil-the-amazon-nears-the-point-of-no-return.html"
     },
     {
@@ -601,7 +1041,7 @@
       "title": "Why national parks and nature reserves don’t always safeguard ecosystems as expected",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:32.676561",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/why-national-parks-and-nature-reserves-dont-always-safeguard-ecosystems-as-expected-266623"
     },
     {
@@ -609,7 +1049,7 @@
       "title": "Beyond the buzz: analyzing actors promoting regenerative agriculture in Europe",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:06:32.030309",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s44264-025-00100-1"
     },
     {
@@ -617,7 +1057,7 @@
       "title": "Exxon funded thinktanks to spread climate denial in Latin America, documents reveal",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:06:31.448254",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/nov/03/exxon-funded-thinktanks-to-spread-climate-denial-in-latin-america-documents-reveal"
     },
     {
@@ -625,7 +1065,7 @@
       "title": "Visualizing the Top 10 Global Risks (2020-2025)",
       "domain": "visualcapitalist.com",
       "downloaded": "2026-05-18T23:06:30.499687",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://www.visualcapitalist.com/visualizing-the-top-10-global-risks-2020-2025/"
     },
     {
@@ -633,7 +1073,7 @@
       "title": "Conversion from coniferous to broadleaved trees can make European forests more climate-effective",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:06:29.797287",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-025-64580-y"
     },
     {
@@ -641,7 +1081,7 @@
       "title": "Sir David Attenborough backs bid to buy Rothbury Estate",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:29.277044",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c1d0x39x270o"
     },
     {
@@ -649,7 +1089,7 @@
       "title": "Indigenous guardians successfully keep extractives out of Ecuador’s Amazon forests",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:28.733146",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/10/indigenous-guardians-successfully-keep-extractives-out-of-ecuadors-amazon-forests/"
     },
     {
@@ -657,7 +1097,7 @@
       "title": "Kent Wildlife Trust purchases Hoathly Farm for rewilding project",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:28.017886",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c62n64d2nv9o"
     },
     {
@@ -665,7 +1105,7 @@
       "title": "Researchers challenge claim of a strong Yellowstone trophic cascade after wolf reintroduction",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:27.247644",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-10-strong-yellowstone-trophic-cascade-wolf.html"
     },
     {
@@ -673,7 +1113,7 @@
       "title": "It was the start of a new movement': The Dutch rewilding project that took a dark turn",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:26.675674",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/future/article/20251016-the-dutch-rewilding-project-that-took-a-dark-turn"
     },
     {
@@ -681,7 +1121,7 @@
       "title": "The Plural Mind: Jane Goodall's Legacy for the AI Age",
       "domain": "psychologytoday.com",
       "downloaded": "2026-05-18T23:06:26.003814",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.psychologytoday.com/us/blog/harnessing-hybrid-intelligence/202510/the-plural-mind-jane-goodalls-legacy-for-the-ai-age"
     },
     {
@@ -689,7 +1129,7 @@
       "title": "Restored watering holes bring life to South Downs National Park",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:25.288468",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c8eyryx048jo"
     },
     {
@@ -697,7 +1137,7 @@
       "title": "Tadnoll nature reserve wetlands are to be restored to help wildlife",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:24.653698",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cvgm4l0xkzro"
     },
     {
@@ -705,7 +1145,7 @@
       "title": "Record leap in CO2 fuels fears of accelerating global heating",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:06:24.030330",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/oct/15/record-leap-in-co2-fuels-fears-of-accelerating-global-heating"
     },
     {
@@ -713,7 +1153,7 @@
       "title": "Rising temperatures threaten UK trees – but these resilient species could help save our forests",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:23.477813",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/weather/articles/c0jdp9wynn7o"
     },
     {
@@ -721,7 +1161,7 @@
       "title": "Criminal psychologists are profiling a different kind of killer – environmental offenders",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:22.840940",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/criminal-psychologists-are-profiling-a-different-kind-of-killer-environmental-offenders-262633"
     },
     {
@@ -729,7 +1169,7 @@
       "title": "What are climate tipping points? They sound scary, especially for ice sheets and oceans, but there’s still room for optimism",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:22.247169",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/what-are-climate-tipping-points-they-sound-scary-especially-for-ice-sheets-and-oceans-but-theres-still-room-for-optimism-265183"
     },
     {
@@ -737,7 +1177,7 @@
       "title": "Five crucial Earth systems near a tipping point: Report",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:21.510625",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/five-crucial-earth-systems-near-a-tipping-point-report/"
     },
     {
@@ -745,7 +1185,7 @@
       "title": "Environmental defenders are being killed for protecting our future – the law needs to catch up",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:06:20.723242",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/environmental-defenders-are-being-killed-for-protecting-our-future-the-law-needs-to-catch-up-266396"
     },
     {
@@ -753,7 +1193,7 @@
       "title": "Rewetting the Oder Delta: a step forward for Europe’s wetlands",
       "domain": "rewildingeurope.com",
       "downloaded": "2026-05-18T23:06:20.150161",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://rewildingeurope.com/news/rewetting-the-oder-delta-a-step-forward-for-europes-wetlands/"
     },
     {
@@ -761,7 +1201,7 @@
       "title": "Reverse the Red: Together we can save species from extinction",
       "domain": "rspb.org.uk",
       "downloaded": "2026-05-18T23:06:19.661658",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.rspb.org.uk/whats-happening/news/reverse-the-red"
     },
     {
@@ -769,7 +1209,7 @@
       "title": "Modern farming is draining the life from our soils, threatening the global food supply chain",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:06:18.914852",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/modern-farming-is-draining-the-life-from-our-soils-threatening-the-global-food-supply-chain/"
     },
     {
@@ -777,7 +1217,7 @@
       "title": "There's far less land available for reforestation than we think, study finds",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:18.407423",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/10/theres-far-less-land-available-for-reforestation-than-we-think-study-finds/"
     },
     {
@@ -785,7 +1225,7 @@
       "title": "In marine forests in Northern Portugal, kelp emerges as powerful carbon storage solution",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:17.820433",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-09-marine-forests-northern-portugal-kelp.html"
     },
     {
@@ -793,7 +1233,7 @@
       "title": "River ecosystem is reborn and life is thriving just three years after a dam is demolished",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:06:16.944002",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/river-ecosystem-is-reborn-and-life-is-thriving-just-three-years-after-dam-removal/"
     },
     {
@@ -801,7 +1241,7 @@
       "title": "New metrics indicate habitat fragmentation has increased in over half the world's forests over the last 20 years",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:16.268546",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-09-metrics-habitat-fragmentation-world-forests.html"
     },
     {
@@ -809,7 +1249,7 @@
       "title": "Surprisingly small animals are powerful grassland engineers",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:06:15.628371",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/surprisingly-small-animals-are-powerful-grassland-engineers/"
     },
     {
@@ -817,7 +1257,7 @@
       "title": "The ocean’s most abundant microbe is near its breaking point",
       "domain": "sciencedaily.com",
       "downloaded": "2026-05-18T23:06:15.072726",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.sciencedaily.com/releases/2025/09/250909031505.htm"
     },
     {
@@ -825,7 +1265,7 @@
       "title": "New study pinpoints tree-planting hotspots for climate and biodiversity gains",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:14.366821",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/09/new-study-pinpoints-tree-planting-hotspots-for-climate-and-biodiversity-gains/"
     },
     {
@@ -833,7 +1273,7 @@
       "title": "Two years in the soil: Lessons from real-life regenerative agriculture trials",
       "domain": "thespinoff.co.nz",
       "downloaded": "2026-05-18T23:06:13.729514",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://thespinoff.co.nz/partner/02-09-2025/two-years-in-the-soil-lessons-from-real-life-regenerative-agriculture-trials?itm_source=spinoff-homepage-layouts&itm_medium=sponsored-1"
     },
     {
@@ -841,7 +1281,7 @@
       "title": "Scientific, Strategic, and Sustainable: How Dr Arulrajan is Transforming Puducherry's Ecology",
       "domain": "indianmasterminds.com",
       "downloaded": "2026-05-18T23:06:13.091107",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://indianmasterminds.com/feature-stories-on-bureaucrats-changemakers/puducherry-green-cover-expansion-139373/"
     },
     {
@@ -849,7 +1289,7 @@
       "title": "Habitat restoration is a long-haul job. Here are three groups that have endured",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:12.272214",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-02-habitat-haul-job-groups.html"
     },
     {
@@ -857,7 +1297,7 @@
       "title": "New agroforestry maps plot environmental, social, and economic benefits of trees",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:11.524443",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-02-agroforestry-plot-environmental-social-economic.html"
     },
     {
@@ -865,7 +1305,7 @@
       "title": "Hedgerows increase soil carbon storage by 40%, study finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:10.889533",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-02-hedgerows-soil-carbon-storage.html"
     },
     {
@@ -873,7 +1313,7 @@
       "title": "Peatland Rewilding: Finnish Community Turns Abandoned Mine into Vibrant Bird Sanctuary",
       "domain": "happyeconews.com",
       "downloaded": "2026-05-18T23:06:10.329720",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://happyeconews.com/peatland-rewilding/"
     },
     {
@@ -881,23 +1321,15 @@
       "title": "Global wetlands conference results in resolutions for protection & restoration",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:09.760196",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/08/global-wetlands-conference-results-in-resolutions-for-restoration-protection/"
-    },
-    {
-      "id": "1755056273767",
-      "title": "Restoring predators, restoring ecosystems: Yellowstone wolves and other carnivores drive strong trophic cascade",
-      "domain": "phys.org",
-      "downloaded": "2026-05-18T23:06:08.409695",
-      "article_type": "",
-      "url": "https://phys.org/news/2025-02-predators-ecosystems-yellowstone-wolves-carnivores.html"
     },
     {
       "id": "1755056133139",
       "title": "From deforestation to renewal: Why reforestation isn't just about trees",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:07.731285",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/07/from-deforestation-to-renewal-why-reforestation-isnt-just-about-trees/"
     },
     {
@@ -905,7 +1337,7 @@
       "title": "Researchers identify five steps to successful nature restoration",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:07.057500",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-07-successful-nature.html"
     },
     {
@@ -913,7 +1345,7 @@
       "title": "Extreme weather event attribution predicts climate policy support across the world",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:06:06.527751",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41558-025-02372-4"
     },
     {
@@ -921,7 +1353,7 @@
       "title": "An integrated vision of Earth's natural 'CO₂ vacuum cleaners",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:06:05.145011",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-08-vision-earth-natural-co8322-vacuum.html"
     },
     {
@@ -929,7 +1361,7 @@
       "title": "I Created a Forest for Free – Tips & Tricks for Free Trees",
       "domain": "gardeningknowhow.com",
       "downloaded": "2026-05-18T23:06:04.508200",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://www.gardeningknowhow.com/ornamental/trees/tips-to-create-a-forest-for-free"
     },
     {
@@ -937,7 +1369,7 @@
       "title": "Contrarian climate assessment from U.S. government draws swift pushback",
       "domain": "science.org",
       "downloaded": "2026-05-18T23:06:04.006821",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.science.org/content/article/contrarian-climate-assessment-u-s-government-draws-swift-pushback"
     },
     {
@@ -945,7 +1377,7 @@
       "title": "Global maps reveal where mycorrhizal fungi thrive — and where they’re unprotected",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:03.310489",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/08/global-maps-reveal-where-mycorrhizal-fungi-thrive-and-where-theyre-unprotected/"
     },
     {
@@ -953,7 +1385,7 @@
       "title": "We need a revolution in environmental communications (commentary)",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:02.818477",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/08/we-need-a-revolution-in-environmental-communications-commentary/"
     },
     {
@@ -961,7 +1393,7 @@
       "title": "All you need to know about planting a small native woodland on your land",
       "domain": "rte.ie",
       "downloaded": "2026-05-18T23:06:02.308498",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://www.rte.ie/brainstorm/2025/0725/1510052-planting-small-native-woodland-on-land-ireland-native-trees/"
     },
     {
@@ -969,7 +1401,7 @@
       "title": "A Forest Garden Project Attempts to Expand Into the Sahel",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:01.784436",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2025/07/a-forest-garden-project-attempts-to-expand-into-the-sahel/"
     },
     {
@@ -977,7 +1409,7 @@
       "title": "Peak District ravine woodlands restored with 84,000 trees",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:06:01.320734",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c6282lz1kr2o"
     },
     {
@@ -985,7 +1417,7 @@
       "title": "China unveils groundbreaking technology that could revolutionize how nations approach their policies: 'It's a necessity",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:06:00.771020",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/green-tech/china-environmental-monitoring-system-cnemc/"
     },
     {
@@ -993,7 +1425,7 @@
       "title": "How much does it cost to restore a mangrove forest?",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:06:00.179152",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/how-much-does-it-cost-to-restore-a-mangrove-forest/"
     },
     {
@@ -1001,7 +1433,7 @@
       "title": "Gurukula Sanctuary: Kerala Women Restore 2000 Plants, Wildlife Returns",
       "domain": "thebetterindia.com",
       "downloaded": "2026-05-18T23:05:59.513731",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://thebetterindia.com/472446/gurukula-botanical-sanctuary-kerala-women-restore-forest-2000-plants/"
     },
     {
@@ -1009,7 +1441,7 @@
       "title": "Earth's underground networks of fungi need urgent protection, say researchers",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:58.866607",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/science/2025/jul/23/underground-network-of-fungi-on-earth-needs-urgent-protection-say-researchers"
     },
     {
@@ -1017,7 +1449,7 @@
       "title": "The rise of green tech is feeding another environmental crisis",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:05:58.339350",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c30741j351go"
     },
     {
@@ -1025,7 +1457,7 @@
       "title": "Only 3 years left – new study warns the world is running out of time to avoid the worst impacts of climate change",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:57.515797",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/only-3-years-left-new-study-warns-the-world-is-running-out-of-time-to-avoid-the-worst-impacts-of-climate-change-261229"
     },
     {
@@ -1033,7 +1465,7 @@
       "title": "‘Keeping us hooked on fossil fuels’: how can we negotiate with autocracies on the climate crisis?",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:56.799258",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/jul/18/climate-crisis-fossil-fuels-autocracies-authoritorian-countries"
     },
     {
@@ -1041,7 +1473,7 @@
       "title": "In some UK woodlands, every young tree has died. What’s going wrong?",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:56.108154",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/jul/10/britain-ancient-woodlands-failing-regenerate-forests-climate-drought-heat-disease-deer-hope-aoe"
     },
     {
@@ -1049,23 +1481,15 @@
       "title": "The Emotional Lives of Wild Neighbors and Why They Matter",
       "domain": "psychologytoday.com",
       "downloaded": "2026-05-18T23:05:55.477765",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.psychologytoday.com/us/blog/animal-emotions/202507/the-emotional-lives-of-wild-neighbors-and-why-they-matter"
-    },
-    {
-      "id": "1752266433427",
-      "title": "Young secondary forests may be the planet’s most overlooked carbon sink",
-      "domain": "news.mongabay.com",
-      "downloaded": "2026-05-18T23:05:54.794253",
-      "article_type": "",
-      "url": "https://news.mongabay.com/short-article/young-secondary-forests-may-be-the-planets-most-overlooked-carbon-sink/"
     },
     {
       "id": "1752128749104",
       "title": "Can you trust climate information? How and why powerful players are misleading the public",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:53.754352",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/can-you-trust-climate-information-how-and-why-powerful-players-are-misleading-the-public-260251"
     },
     {
@@ -1073,7 +1497,7 @@
       "title": "Low-cost carbon capture? Bury wood debris in managed forests",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:53.288013",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-06-carbon-capture-wood-debris-forests.html"
     },
     {
@@ -1081,7 +1505,7 @@
       "title": "Targeted Conservation Efforts Save Hundreds of Species from Extinction, Study Reveals",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:05:52.450215",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/wildlife-biodiversity/targeted-conservation-efforts-pulled-hundreds-of-species-back-from-the-brink-study-finds"
     },
     {
@@ -1089,7 +1513,7 @@
       "title": "Make a noise or work with the system? New research reveals 4 ways to create real change for nature",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:51.938431",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/make-a-noise-or-work-with-the-system-new-research-reveals-4-ways-to-create-real-change-for-nature-248226"
     },
     {
@@ -1097,7 +1521,7 @@
       "title": "Global report calls for urgent action to reverse biodiversity loss",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:51.426477",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-01-global-urgent-action-reverse-biodiversity.html"
     },
     {
@@ -1105,7 +1529,7 @@
       "title": "Reforestation stands out among plant-based climate-mitigation strategies as most beneficial for wildlife biodiversity",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:50.787267",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-01-reforestation-based-climate-mitigation-strategies.html"
     },
     {
@@ -1113,7 +1537,7 @@
       "title": "Protect young secondary forests for optimum carbon removal",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:50.111933",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41558-025-02355-5"
     },
     {
@@ -1121,7 +1545,7 @@
       "title": "Global Reforestation Opportunities for Climate Change Mitigation",
       "domain": "reforestationhub.org",
       "downloaded": "2026-05-18T23:05:49.535467",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://www.reforestationhub.org/global"
     },
     {
@@ -1129,7 +1553,7 @@
       "title": "How to create a thriving forest, not box-checking ‘tree cover’",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:48.902609",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/how-to-create-a-thriving-forest-not-box-checking-tree-cover-254160"
     },
     {
@@ -1137,7 +1561,7 @@
       "title": "The global human impact on biodiversity",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:48.283751",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41586-025-08752-2"
     },
     {
@@ -1145,7 +1569,7 @@
       "title": "Large Live Biomass Carbon Losses from Droughts in the Northern Temperate Ecosystems during 2016-2022",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:47.116743",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-025-59999-2"
     },
     {
@@ -1153,23 +1577,15 @@
       "title": "When farmers and scientists collaborate, biodiversity and agriculture can thrive – here's how",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:46.588363",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/when-farmers-and-scientists-collaborate-biodiversity-and-agriculture-can-thrive-heres-how-250333"
-    },
-    {
-      "id": "1749615742564",
-      "title": "Multiple targeted grassland restoration interventions enhance ecosystem service multifunctionality",
-      "domain": "nature.com",
-      "downloaded": "2026-05-18T23:05:45.834014",
-      "article_type": "",
-      "url": "https://www.nature.com/articles/s41467-025-59157-8"
     },
     {
       "id": "1749586812908",
       "title": "How to conserve species in a much hotter world",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:05:44.945747",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/how-to-conserve-species-in-a-much-hotter-world/"
     },
     {
@@ -1177,7 +1593,7 @@
       "title": "Conservation Biology",
       "domain": "conbio.onlinelibrary.wiley.com",
       "downloaded": "2026-05-18T23:05:44.021436",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/cobi.13730"
     },
     {
@@ -1185,7 +1601,7 @@
       "title": "Rewilding: A meaningful response to tackling the biodiversity crisis",
       "domain": "irishtimes.com",
       "downloaded": "2026-05-18T23:05:43.293284",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.irishtimes.com/environment/climate-crisis/2025/01/16/rewilding-a-meaningful-response-to-tackling-the-biodiversity-crisis/"
     },
     {
@@ -1193,23 +1609,15 @@
       "title": "A new way to determine whether a species will successfully invade an ecosystem, including the human GI tract",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:42.670264",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-01-species-successfully-invade-ecosystem-human.html"
-    },
-    {
-      "id": "1749581131803",
-      "title": "Mixed cover crops may be the future of sustainable farming",
-      "domain": "earth.com",
-      "downloaded": "2026-05-18T23:05:42.014708",
-      "article_type": "",
-      "url": "https://www.earth.com/news/mixed-cover-crops-may-be-the-future-of-sustainable-farming/"
     },
     {
       "id": "1749530811968",
       "title": "Report: The state of soils in Europe",
       "domain": "agriland.ie",
       "downloaded": "2026-05-18T23:05:41.388532",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.agriland.ie/farming-news/report-the-state-of-soils-in-europe/"
     },
     {
@@ -1217,7 +1625,7 @@
       "title": "Seven quiet breakthroughs for climate and nature in 2024 you might have missed",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:05:40.739793",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/future/article/20241216-seven-quiet-breakthroughs-for-climate-and-nature-in-2024-you-might-have-missed"
     },
     {
@@ -1225,7 +1633,7 @@
       "title": "‘It absolutely took off’: five UK biodiversity success stories",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:40.168185",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/dec/15/it-absolutely-took-off-five-uk-biodiversity-success-stories"
     },
     {
@@ -1233,7 +1641,7 @@
       "title": "Arctic tundra now emits planet-warming pollution, federal report finds",
       "domain": "npr.org",
       "downloaded": "2026-05-18T23:05:39.626429",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.npr.org/2024/12/10/nx-s1-5215967/arctic-tundra-contributes-climate-warming-pollution-report-finds"
     },
     {
@@ -1241,7 +1649,7 @@
       "title": "Scientists Find How Soil, a Sink for GHGs, Also Contributes to Climate Change",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:05:38.930066",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/climate-change/scientists-find-how-soil-a-sink-for-ghgs-also-contributes-to-climate-change"
     },
     {
@@ -1249,7 +1657,7 @@
       "title": "Digital twin model enables precise simulation of forest landscapes, depicting a forest in 100 years",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:38.274652",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-12-digital-twin-enables-precise-simulation.html"
     },
     {
@@ -1257,7 +1665,7 @@
       "title": "Hybrid Model Links Micro and Macro Scales in Complex Systems",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:37.557191",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-12-hybrid-links-micro-macro-scales.html"
     },
     {
@@ -1265,7 +1673,7 @@
       "title": "Saudi Arabia is turning arid desert sand into lush blooming soil",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:05:36.912781",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/saudi-arabia-is-turning-degraded-desert-sand-into-blooming-soil/"
     },
     {
@@ -1273,7 +1681,7 @@
       "title": "A nature conservation paradox: Invasive species are often threatened in their native habitat",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:36.188767",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-12-nature-paradox-invasive-species-threatened.html"
     },
     {
@@ -1281,7 +1689,7 @@
       "title": "Scientists Studying Earth's Trees Issued a Stark Warning to Humanity",
       "domain": "sciencealert.com",
       "downloaded": "2026-05-18T23:05:35.688509",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.sciencealert.com/scientists-studying-earths-trees-issued-a-stark-warning-to-humanity"
     },
     {
@@ -1289,7 +1697,7 @@
       "title": "‘Half the tree of life’: ecologists’ horror as nature reserves are emptied of insects",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:35.185917",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/jun/03/climate-species-collapse-ecology-insects-nature-reserves-aoe"
     },
     {
@@ -1297,7 +1705,7 @@
       "title": "Japan converts construction waste into high-strength cement alternative",
       "domain": "interestingengineering.com",
       "downloaded": "2026-05-18T23:05:34.531696",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://interestingengineering.com/innovation/japan-converts-construction-waste-into-cement"
     },
     {
@@ -1305,7 +1713,7 @@
       "title": "New EU Map of Soil Health to Revolutionise Soil Management",
       "domain": "agriland.ie",
       "downloaded": "2026-05-18T23:05:33.165610",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.agriland.ie/farming-news/new-eu-map-of-soil-health-to-revolutionise-soil-management/"
     },
     {
@@ -1313,7 +1721,7 @@
       "title": "Wilding: How a failing farm became a rewilding success story",
       "domain": "abc.net.au",
       "downloaded": "2026-05-18T23:05:32.579685",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.abc.net.au/news/2025-05-28/wilding-documentary-rewilding-isabella-tree/105330664"
     },
     {
@@ -1321,7 +1729,7 @@
       "title": "Streams near farms emit high levels of greenhouse gas, studies find",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:32.007932",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-12-streams-farms-emit-high-greenhouse.html"
     },
     {
@@ -1329,7 +1737,7 @@
       "title": "Plant ecosystems study questions common assumption about biodiversity",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:31.510310",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-12-ecosystems-common-assumption-biodiversity.html"
     },
     {
@@ -1337,7 +1745,7 @@
       "title": "Miyawaki in Nezahualcóyotl: The Japanese method of creating forests comes to Mexico",
       "domain": "english.elpais.com",
       "downloaded": "2026-05-18T23:05:30.577826",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://english.elpais.com/climate/2025-05-17/miyawaki-in-nezahualcoyotl-the-japanese-method-of-creating-forests-comes-to-mexico.html"
     },
     {
@@ -1345,7 +1753,7 @@
       "title": "U.S. off-grid specialist launches PV-powered EV charging station",
       "domain": "pv-magazine.com",
       "downloaded": "2026-05-18T23:05:29.939144",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.pv-magazine.com/2025/05/14/u-s-off-grid-specialist-launches-launches-pv-powered-ev-charging-station/"
     },
     {
@@ -1353,7 +1761,7 @@
       "title": "All Agrivoltaic System Designs at a Glance",
       "domain": "pv-magazine.com",
       "downloaded": "2026-05-18T23:05:29.421568",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.pv-magazine.com/2025/05/15/all-agrivoltaic-system-designs-at-a-glance/"
     },
     {
@@ -1361,7 +1769,7 @@
       "title": "Europe's forest plants thrive best in light-rich, semi-open woodlands kept open by large herbivores",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:28.745594",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-05-europe-forest-rich-semi-woodlands.html"
     },
     {
@@ -1369,7 +1777,7 @@
       "title": "Renewable power reversing China’s emissions growth",
       "domain": "arstechnica.com",
       "downloaded": "2026-05-18T23:05:28.148177",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://arstechnica.com/science/2025/05/analysis-shows-that-chinas-emissions-are-dropping-due-to-renewables/"
     },
     {
@@ -1377,7 +1785,7 @@
       "title": "European firms ramping up lobbying for climate action, report finds",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:27.647498",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/may/14/european-firms-ramping-up-lobbying-for-climate-action-report-finds"
     },
     {
@@ -1385,7 +1793,7 @@
       "title": "Meet ONOX: The all-electric tractor with swappable battery packs",
       "domain": "electrek.co",
       "downloaded": "2026-05-18T23:05:26.958945",
-      "article_type": "",
+      "article_type": "tool",
       "url": "https://electrek.co/2025/05/13/meet-onox-the-all-electric-tractor-with-swappable-battery-packs/"
     },
     {
@@ -1393,7 +1801,7 @@
       "title": "Exploring pathways for world development within planetary boundaries",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:26.398747",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41586-025-08928-w"
     },
     {
@@ -1401,7 +1809,7 @@
       "title": "Innovative farmer grows fresh produce all winter without using soil or sunlight: 'Food is a right for people",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:05:25.711258",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/green-business/village-hydroponics-shipping-container-garden-farm/"
     },
     {
@@ -1409,7 +1817,7 @@
       "title": "Meet the Google for Startups Accelerator: AI for Nature Cohort",
       "domain": "blog.google",
       "downloaded": "2026-05-18T23:05:25.020921",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://blog.google/outreach-initiatives/entrepreneurs/google-for-startups-ai-for-nature-cohort/"
     },
     {
@@ -1417,7 +1825,7 @@
       "title": "Five ways to make cities more resilient to climate change",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:24.351298",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/five-ways-to-make-cities-more-resilient-to-climate-change-252853"
     },
     {
@@ -1425,7 +1833,7 @@
       "title": "How AI is reshaping wildlife conservation — for better or worse",
       "domain": "theverge.com",
       "downloaded": "2026-05-18T23:05:22.342154",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.theverge.com/ai-artificial-intelligence/653322/ai-wildlife-conservation"
     },
     {
@@ -1433,7 +1841,7 @@
       "title": "Soil organic carbon is at risk in a large part of European agricultural land",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:21.607015",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-04-soil-carbon-large-european-agricultural.html"
     },
     {
@@ -1441,7 +1849,7 @@
       "title": "Deep Change Theory' Could Pull Us Out of a Global Climate and Pollution Crisis, Scientists Say - Inside Climate News",
       "domain": "insideclimatenews.org",
       "downloaded": "2026-05-18T23:05:21.073961",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://insideclimatenews.org/news/10042025/deep-change-theory-could-lead-to-sustainable-future/"
     },
     {
@@ -1449,7 +1857,7 @@
       "title": "50+ Calls for Applications: Addressing Climate Change, Energy & Environmental Issues",
       "domain": "www2.fundsforngos.org",
       "downloaded": "2026-05-18T23:05:20.209853",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://www2.fundsforngos.org/listing/50-calls-for-applications-addressing-climate-change-energy-environmental-issues/"
     },
     {
@@ -1457,7 +1865,7 @@
       "title": "Without farmers, Sicily as we know would not exist': Drought takes its toll on crops and livestock",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:05:19.594968",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/06/10/without-farmers-sicily-as-we-know-would-not-exist-drought-takes-its-toll-on-crops-and-live"
     },
     {
@@ -1465,7 +1873,7 @@
       "title": "Only 10% of native plants can be bought as seed – a big problem for nature repair. Here's how we can make plantings more diverse",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:18.858947",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/only-10-of-native-plants-can-be-bought-as-seed-a-big-problem-for-nature-repair-heres-how-we-can-make-plantings-more-diverse-228899"
     },
     {
@@ -1473,7 +1881,7 @@
       "title": "App developed with Indigenous trackers helps almost anyone monitor wildlife",
       "domain": "science.org",
       "downloaded": "2026-05-18T23:05:18.207141",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.science.org/content/article/app-developed-indigenous-trackers-helps-almost-anyone-monitor-wildlife"
     },
     {
@@ -1481,7 +1889,7 @@
       "title": "Marine CO₂ removal technologies could depend on the appetite of the ocean's tiniest animals",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:17.739365",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/marine-co-removal-technologies-could-depend-on-the-appetite-of-the-oceans-tiniest-animals-227156"
     },
     {
@@ -1489,7 +1897,7 @@
       "title": "Extending the Sustainable Development Goals to 2050 — a road map",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:17.024765",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/d41586-024-01754-6"
     },
     {
@@ -1497,7 +1905,7 @@
       "title": "How DNA analysis of our rivers and lakes can reveal new secrets about their biodiversity",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:16.342299",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/how-dna-analysis-of-our-rivers-and-lakes-can-reveal-new-secrets-about-their-biodiversity-230688"
     },
     {
@@ -1505,7 +1913,7 @@
       "title": "From turtle protection to citizen science projects: How to give back to the ocean on holiday",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:05:15.646323",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/travel/2024/06/08/from-turtle-protection-to-citizen-science-projects-how-to-give-back-to-the-ocean-on-holida"
     },
     {
@@ -1513,7 +1921,7 @@
       "title": "How real action on environmental justice comes from Latin America's community alliances",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:05:15.008014",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/06/how-real-action-on-environmental-justice-comes-from-latin-americas-community-alliances-commentary/"
     },
     {
@@ -1521,7 +1929,7 @@
       "title": "How We Solved Renewables’ BIGGEST Problem",
       "domain": "undecidedmf.com",
       "downloaded": "2026-05-18T23:05:14.295547",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://undecidedmf.com/renewable-energy/7524/"
     },
     {
@@ -1529,7 +1937,7 @@
       "title": "Bill Gates-backed startup creates Lego-like brick that can store air pollution for centuries",
       "domain": "yahoo.com",
       "downloaded": "2026-05-18T23:05:13.541646",
-      "article_type": "",
+      "article_type": "tool",
       "url": "https://www.yahoo.com/tech/bill-gates-backed-startup-creates-020000741.html"
     },
     {
@@ -1537,7 +1945,7 @@
       "title": "Vanishing Waters: The Stark Transformation From Aral Sea to Aralkum Desert",
       "domain": "scitechdaily.com",
       "downloaded": "2026-05-18T23:05:12.991672",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://scitechdaily.com/vanishing-waters-the-stark-transformation-from-aral-sea-to-aralkum-desert/"
     },
     {
@@ -1545,7 +1953,7 @@
       "title": "Full Archive - International Journal of Wilderness",
       "domain": "ijw.org",
       "downloaded": "2026-05-18T23:05:12.261279",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://ijw.org/archive/"
     },
     {
@@ -1553,7 +1961,7 @@
       "title": "Scientists say Earth is heating at a record rate, but there’s still time to stop crisis accelerating",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:05:11.613219",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/06/05/scientists-say-earth-is-heating-at-a-record-rate-but-theres-still-time-to-stop-crisis-acce"
     },
     {
@@ -1561,7 +1969,7 @@
       "title": "Sustainable wastewater reuse for agriculture",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:11.040377",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s43017-024-00560-y"
     },
     {
@@ -1569,7 +1977,7 @@
       "title": "Oceans face ‘triple threat’ of extreme heat, oxygen loss and acidification",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:10.387703",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/jun/04/extreme-heat-oceans-acidification"
     },
     {
@@ -1577,7 +1985,7 @@
       "title": "Research needs on the biodiversity–ecosystem functioning relationship in drylands",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:09.357988",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s44185-024-00046-6"
     },
     {
@@ -1585,7 +1993,7 @@
       "title": "Nature groups launch legal challenge over England's wildlife loss",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:05:08.586403",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c4nn54ge0rmo"
     },
     {
@@ -1593,7 +2001,7 @@
       "title": "Emissions from loss of plant diversity spells massive climate trouble: Study",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:05:08.132315",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/06/emissions-from-loss-of-plant-diversity-spells-massive-climate-trouble-study/"
     },
     {
@@ -1601,7 +2009,7 @@
       "title": "Diversity in farm landscapes helps wildlife, global study finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:05:07.365156",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-06-diversity-farm-landscapes-wildlife-global.html"
     },
     {
@@ -1609,7 +2017,7 @@
       "title": "‘An intergenerational crime against humanity’: what will it take for political leaders to start taking climate change seriously?",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:06.830227",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/an-intergenerational-crime-against-humanity-what-will-it-take-for-political-leaders-to-start-taking-climate-change-seriously-231383"
     },
     {
@@ -1617,7 +2025,7 @@
       "title": "Carbon dioxide levels in the atmosphere are surging 'faster than ever' to beyond anything humans ever experienced, officials say",
       "domain": "cbsnews.com",
       "downloaded": "2026-05-18T23:05:06.161994",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.cbsnews.com/news/carbon-dioxide-levels-surging-faster-than-ever-noaa-scientists/"
     },
     {
@@ -1625,7 +2033,7 @@
       "title": "Changes in planned and unplanned canopy openings are linked in Europe’s forests",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:05.428650",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-024-49116-0"
     },
     {
@@ -1633,7 +2041,7 @@
       "title": "‘We sold everything off, even the semen flasks’: the film about the farming couple who struck gold by rewilding",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:05:04.860788",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/artanddesign/article/2024/jun/06/semen-flasks-farming-couple-rewilding-knepp-isabella-tree"
     },
     {
@@ -1641,7 +2049,7 @@
       "title": "South Africa: new Drakensberg nature reserve will protect ancient rock art, wildlife, livelihoods, grasslands and water",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:04.247173",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/south-africa-new-drakensberg-nature-reserve-will-protect-ancient-rock-art-wildlife-livelihoods-grasslands-and-water-230492"
     },
     {
@@ -1649,7 +2057,7 @@
       "title": "Newly protected Edgbaston Reserve in Queensland home to 37 species found nowhere else in the world",
       "domain": "abc.net.au",
       "downloaded": "2026-05-18T23:05:03.506955",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.abc.net.au/news/2024-06-03/edgbaston-reserve-western-queensland-37-endemic-species/103897926"
     },
     {
@@ -1657,7 +2065,7 @@
       "title": "Four photos that show the potential of rewilding nature",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:05:02.935940",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/four-photos-that-show-the-potential-of-rewilding-nature-225695"
     },
     {
@@ -1665,7 +2073,7 @@
       "title": "Global shortfalls in documented actions to conserve biodiversity",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:05:02.344363",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41586-024-07498-7"
     },
     {
@@ -1673,7 +2081,7 @@
       "title": "Driving On Electricity Is Now Much Cleaner Than Using A Gasoline Car",
       "domain": "cleantechnica.com",
       "downloaded": "2026-05-18T23:05:01.596727",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://cleantechnica.com/2024/06/02/driving-on-electricity-is-now-much-cleaner-than-using-a-gasoline-car/"
     },
     {
@@ -1681,7 +2089,7 @@
       "title": "South Australia Turns to Solar Energy for Economic Survival",
       "domain": "oilprice.com",
       "downloaded": "2026-05-18T23:05:00.926030",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://oilprice.com/Alternative-Energy/Solar-Energy/South-Australia-Turns-to-Solar-Energy-for-Economic-Survival.html"
     },
     {
@@ -1689,7 +2097,7 @@
       "title": "Why Scotland’s most powerful climate tool is struggling for investment",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:05:00.169052",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c4n11eqzpnqo"
     },
     {
@@ -1697,7 +2105,7 @@
       "title": "Dual Harvest: Agrivoltaics Boost Food & Energy Production In Asia",
       "domain": "cleantechnica.com",
       "downloaded": "2026-05-18T23:04:59.594344",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://cleantechnica.com/2024/06/03/dual-harvest-agrivoltaics-boost-food-energy-production-in-asia/"
     },
     {
@@ -1705,7 +2113,7 @@
       "title": "Arid Deserts Are Devouring Earth's Rangelands, Threatening Billions",
       "domain": "sciencealert.com",
       "downloaded": "2026-05-18T23:04:58.884817",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.sciencealert.com/arid-deserts-are-devouring-earths-rangelands-threatening-billions"
     },
     {
@@ -1713,7 +2121,7 @@
       "title": "One Year Later: Revisiting the Site of the Old Nelson Dam",
       "domain": "yakimaherald.com",
       "downloaded": "2026-05-18T23:04:57.237370",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.yakimaherald.com/news/local/one-year-later-revisiting-the-site-of-the-old-nelson-dam/article_a86e0b92-18a6-11ef-b2bf-f3abce186ae3.html"
     },
     {
@@ -1721,7 +2129,7 @@
       "title": "Valencia's cemeteries to become the country's largest urban solar farm",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:04:56.592417",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/05/31/this-spanish-city-plans-to-turn-its-cemeteries-into-the-countrys-largest-urban-solar-farm"
     },
     {
@@ -1729,7 +2137,7 @@
       "title": "Soil fauna has the potential to fundamentally alter carbon storage in soil, say scientists",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:56.099875",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-06-soil-fauna-potential-fundamentally-carbon.html"
     },
     {
@@ -1737,7 +2145,7 @@
       "title": "Characterizing culture's influence in land systems",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:55.369050",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41893-024-01381-z"
     },
     {
@@ -1745,7 +2153,7 @@
       "title": "Widespread misestimates of greenhouse gas emissions suggest low carbon competence",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:54.763752",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41558-024-02032-z"
     },
     {
@@ -1753,7 +2161,7 @@
       "title": "Protected areas can boost biodiversity and local economies",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:54.007789",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-06-areas-boost-biodiversity-local-economies.html"
     },
     {
@@ -1761,7 +2169,7 @@
       "title": "Citizen testing reveals 75% of Britain’s rivers in poor ecological health",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:53.305039",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/jun/24/citizen-testing-rivers-britain-poor-ecological-health-pollution"
     },
     {
@@ -1769,7 +2177,7 @@
       "title": "Circular food systems found to dramatically reduce greenhouse gas emissions, require much less agricultural land",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:52.803993",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-06-circular-food-greenhouse-gas-emissions.html"
     },
     {
@@ -1777,7 +2185,7 @@
       "title": "Finding the ecological balance while countering invasive species",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:52.137807",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-06-ecological-countering-invasive-species.html"
     },
     {
@@ -1785,7 +2193,7 @@
       "title": "Mathematical biases in the calculation of the Living Planet Index lead to overestimation of vertebrate population decline",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:51.487526",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-024-49070-x"
     },
     {
@@ -1793,7 +2201,7 @@
       "title": "Japan looks to 'blue carbon' to cut emissions — and restore its coasts",
       "domain": "japantimes.co.jp",
       "downloaded": "2026-05-18T23:04:50.724411",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.japantimes.co.jp/environment/2024/06/23/japan-blue-carbon/"
     },
     {
@@ -1801,7 +2209,7 @@
       "title": "How droughts and worsening soil health can increase carbon emissions",
       "domain": "india.mongabay.com",
       "downloaded": "2026-05-18T23:04:50.149539",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://india.mongabay.com/2024/06/how-droughts-and-worsening-soil-health-can-increase-carbon-emissions"
     },
     {
@@ -1809,7 +2217,7 @@
       "title": "To conserve large landscapes like the Florida Wildlife Corridor, payments for ecosystem services could be key",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:04:49.476505",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/06/to-conserve-large-landscapes-like-the-florida-wildlife-corridor-payments-for-ecosystem-services-could-be-key-commentary/"
     },
     {
@@ -1817,7 +2225,7 @@
       "title": "Build a hedgehog highway: 33 ways to welcome more wildlife into your garden",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:48.897663",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/lifeandstyle/article/2024/jun/26/build-a-hedgehog-highway-33-ways-to-welcome-more-wildlife-into-your-garden"
     },
     {
@@ -1825,7 +2233,7 @@
       "title": "Is the future of Italy tropical? Why Sicilian farmers are trading olives for papayas",
       "domain": "nationalgeographic.com",
       "downloaded": "2026-05-18T23:04:48.159653",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.nationalgeographic.com/environment/article/italy-sicily-agriculture-tropical-climate"
     },
     {
@@ -1833,7 +2241,7 @@
       "title": "Protecting just 1.2% of Earth's land could save world's most threatened species, says study",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:47.609997",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/jun/25/protecting-just-12-of-earths-land-could-save-worlds-most-threatened-species-says-study-aoe"
     },
     {
@@ -1841,7 +2249,7 @@
       "title": "Divers turn conservationists as corals bleach worldwide",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:47.082236",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-06-divers-conservationists-corals-worldwide.html"
     },
     {
@@ -1849,7 +2257,7 @@
       "title": "New approach to restore coral reefs on mass scale kicks off in Hawai‘i",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:04:46.472840",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/06/new-approach-to-restore-coral-reefs-on-mass-scale-kicks-off-in-hawaii/"
     },
     {
@@ -1857,7 +2265,7 @@
       "title": "Bringing Prosperity by Transforming the Forests Landscape of Meghalaya",
       "domain": "blogs.worldbank.org",
       "downloaded": "2026-05-18T23:04:45.757093",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://blogs.worldbank.org/en/endpovertyinsouthasia/bringing-prosperity-by-transforming-the-forests-landscape-of-meg"
     },
     {
@@ -1865,7 +2273,7 @@
       "title": "Cape Town’s Plan for Wetland Revitalization: A Comprehensive Overhaul of Zeekoevlei & Rondevlei Weirs",
       "domain": "capetown.today",
       "downloaded": "2026-05-18T23:04:45.169860",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://capetown.today/cape-towns-plan-for-wetland-revitalization-a-comprehensive-overhaul-of-zeekoevlei-rondevlei-weirs/"
     },
     {
@@ -1873,7 +2281,7 @@
       "title": "NGOs call for exclusion of carbon offset credits from corporate climate goals",
       "domain": "businessgreen.com",
       "downloaded": "2026-05-18T23:04:44.493256",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.businessgreen.com/news/4330218/ngos-exclusion-carbon-offset-credits-corporate-climate-goals"
     },
     {
@@ -1881,7 +2289,7 @@
       "title": "Electric farms a difficult ask for some producers as agriculture industry struggles to wean off diesel",
       "domain": "abc.net.au",
       "downloaded": "2026-05-18T23:04:43.972789",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.abc.net.au/news/rural/2024-07-02/electric-farms-a-difficult-ask-australian-conditions-energy/104044442"
     },
     {
@@ -1889,7 +2297,7 @@
       "title": "Will continuous cropping of crops necessarily lead to continuous cropping obstacles?",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:43.403749",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-cropping-crops-necessarily-obstacles.html"
     },
     {
@@ -1897,7 +2305,7 @@
       "title": "UNESCO warns 90% of Earth's land could be degraded by 2050",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:04:42.861966",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/environment/unesco-warns-90-of-earths-land-could-be-degraded-by-2050"
     },
     {
@@ -1905,7 +2313,7 @@
       "title": "Protected areas benefit nature & people, study says — with caveats",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:04:41.663655",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/07/protected-areas-benefit-nature-people-study-says-with-caveats/"
     },
     {
@@ -1913,7 +2321,7 @@
       "title": "A third of land set aside for restoration in worse state than before, Australian offset audit finds",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:41.007852",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/australia-news/article/2024/jul/03/australia-biodiversity-offset-system-land-restoration"
     },
     {
@@ -1921,7 +2329,7 @@
       "title": "Latin American trial heralds methane-free rice",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:40.095973",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-latin-american-trial-heralds-methane.html"
     },
     {
@@ -1929,7 +2337,7 @@
       "title": "Property owners look to large-scale solar to revitalize land",
       "domain": "pv-magazine.com",
       "downloaded": "2026-05-18T23:04:39.447943",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.pv-magazine.com/2024/07/02/property-owners-look-to-large-scale-solar-to-revitalize-land/"
     },
     {
@@ -1937,7 +2345,7 @@
       "title": "Choose where to plant energy crops wisely to minimize loss of biodiversity, says new study",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:38.880203",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-energy-crops-wisely-minimize-loss.html"
     },
     {
@@ -1945,7 +2353,7 @@
       "title": "Average months now feel cold thanks to climate change",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:04:38.430863",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/average-months-now-feel-cold-thanks-to-climate-change-233812"
     },
     {
@@ -1953,7 +2361,7 @@
       "title": "Report finds lack of urgency around climate change",
       "domain": "rte.ie",
       "downloaded": "2026-05-18T23:04:37.876414",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.rte.ie/news/2024/0704/1458067-climate-change-report/"
     },
     {
@@ -1961,7 +2369,7 @@
       "title": "Climate-driven deoxygenation of northern lakes",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:37.325661",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41558-024-02058-3"
     },
     {
@@ -1969,7 +2377,7 @@
       "title": "Protecting Europe’s waterways: the polluted Spanish lagoon that’s fighting back in court",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:04:36.228869",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/07/02/protecting-europes-waterways-the-polluted-spanish-lagoon-thats-fighting-back-in-court"
     },
     {
@@ -1977,7 +2385,7 @@
       "title": "UNESCO designates 11 new biosphere reserves",
       "domain": "unesco.org",
       "downloaded": "2026-05-18T23:04:35.487474",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.unesco.org/en/articles/unesco-designates-11-new-biosphere-reserves-1"
     },
     {
@@ -1985,7 +2393,7 @@
       "title": "Experts stunned by discovery in rainforest 15 years after beavers returned to Knapdale",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:04:34.830362",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/outdoors/beavers-knapdale-rainforest-wetland-restoration-scotland/"
     },
     {
@@ -1993,7 +2401,7 @@
       "title": "40 years of forest dynamics and tree demography in an intact tropical forest at M'Baïki in central Africa",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:34.384759",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41597-024-03577-6"
     },
     {
@@ -2001,7 +2409,7 @@
       "title": "Shropshire meadows' revival sees rare bumblebee numbers on rise",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:04:33.809504",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cm52vrlz133o"
     },
     {
@@ -2009,7 +2417,7 @@
       "title": "Forestry in Northern Ireland Facing Uncertain Future",
       "domain": "agriland.ie",
       "downloaded": "2026-05-18T23:04:33.224168",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.agriland.ie/farming-news/forestry-in-northern-ireland-facing-uncertain-future/"
     },
     {
@@ -2017,7 +2425,7 @@
       "title": "Study shows weaker ocean circulation could enhance CO₂ buildup in the atmosphere",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:32.633971",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-weaker-ocean-circulation-buildup-atmosphere.html"
     },
     {
@@ -2025,7 +2433,7 @@
       "title": "Agroforest trial under way at RSPB's Cambridgeshire farm",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:04:32.026646",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c2v0eq50lzyo"
     },
     {
@@ -2033,7 +2441,7 @@
       "title": "Mixed forests store more soil organic carbon than pure forests, researchers find",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:31.460953",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-forests-soil-carbon-pure.html"
     },
     {
@@ -2041,7 +2449,7 @@
       "title": "Global migratory freshwater fish populations plummet by 81%: Report",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:04:30.898524",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/07/global-migratory-freshwater-fish-populations-plummet-by-81-report/"
     },
     {
@@ -2049,7 +2457,7 @@
       "title": "Study demonstrates how a simple metric could steer global economy towards halting and reversing biodiversity loss",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:30.406556",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-simple-metric-global-economy-halting.html"
     },
     {
@@ -2057,7 +2465,7 @@
       "title": "Efficient water quality management could reduce future water scarcity by half",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:29.732287",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-efficient-quality-future-scarcity.html"
     },
     {
@@ -2065,7 +2473,7 @@
       "title": "Common plant could help reduce food insecurity, researchers find",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:29.226008",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-02-common-food-insecurity.html"
     },
     {
@@ -2073,7 +2481,7 @@
       "title": "Europe forges new bonds between agriculture and biodiversity",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:28.625451",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-01-europe-forges-bonds-agriculture-biodiversity.html"
     },
     {
@@ -2081,7 +2489,7 @@
       "title": "Apex Predators Not a Quick Fix for Restoring Ecosystems, 20-Year CSU Study Finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:28.137997",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-02-apex-predators-quick-ecosystems-year.html"
     },
     {
@@ -2089,7 +2497,7 @@
       "title": "How Bad Are Invasive Plants for Birds? Research Suggests Large-Scale Removal May Not Have Intended Benefits",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:27.474140",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-04-bad-invasive-birds-large-scale.html"
     },
     {
@@ -2097,7 +2505,7 @@
       "title": "From robots and drones to sheep trackers, new tech can help farmers monitor and improve soil health",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:04:26.737073",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/from-robots-and-drones-to-sheep-trackers-new-tech-can-help-farmers-monitor-and-improve-soil-health-227250"
     },
     {
@@ -2105,7 +2513,7 @@
       "title": "Impacts of the global food system on terrestrial biodiversity from land use and climate change",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:26.175994",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-024-49999-z"
     },
     {
@@ -2113,7 +2521,7 @@
       "title": "The choice of land-based climate change mitigation measures influences future global biodiversity loss",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:25.289564",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s43247-024-01433-4"
     },
     {
@@ -2121,7 +2529,7 @@
       "title": "Soil scientist questions agricultural sector's carbon sink capacity in net zero quest",
       "domain": "abc.net.au",
       "downloaded": "2026-05-18T23:04:24.668386",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.abc.net.au/news/2024-07-10/australian-agriculture-to-play-key-role-in-net-zero-emissions/103995436"
     },
     {
@@ -2129,7 +2537,7 @@
       "title": "Covering climate now: lessons from the frontlines of reporting on the crisis",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:23.831039",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/jul/09/covering-climate-now-lessons"
     },
     {
@@ -2137,7 +2545,7 @@
       "title": "From planting seagrass to spotting seals: how to help look after the UK’s coastline",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:23.103205",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/jun/24/from-planting-seagrass-to-spotting-seals-how-to-help-look-after-the-uks-coastline"
     },
     {
@@ -2145,7 +2553,7 @@
       "title": "Climate change may cause lake phytoplankton to become predatory, putting more CO2 into the atmosphere",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:04:22.368837",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/climate-change-may-cause-lake-phytoplankton-to-become-predatory-putting-more-co2-into-the-atmosphere-229542"
     },
     {
@@ -2153,7 +2561,7 @@
       "title": "The last 12 months have broken records like never before: Earth exceeds 1.5°C warming every month for entire year",
       "domain": "space.com",
       "downloaded": "2026-05-18T23:04:21.780970",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.space.com/last-12-months-broke-temperature-records"
     },
     {
@@ -2161,7 +2569,7 @@
       "title": "Beavers in Devon: How nature is helping control floods and droughts",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:04:21.200199",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/outdoors/beavers-in-devon-uk-flood-drought-controlled/"
     },
     {
@@ -2169,7 +2577,7 @@
       "title": "What’s the value of planting trees? Conservation groups say a new formula can tell them.",
       "domain": "texastribune.org",
       "downloaded": "2026-05-18T23:04:20.586338",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.texastribune.org/2024/07/12/texas-conservation-investments-environment-formula-value/"
     },
     {
@@ -2177,7 +2585,7 @@
       "title": "Explainer: How does habitat fragmentation impact India’s biodiversity hotspots?",
       "domain": "india.mongabay.com",
       "downloaded": "2026-05-18T23:04:20.104196",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://india.mongabay.com/2024/07/explainer-how-does-habitat-fragmentation-impact-indias-biodiversity-hotspots/"
     },
     {
@@ -2185,7 +2593,7 @@
       "title": "Harnessing ‘invisible forests in plain view’ to reforest the world",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:04:19.373927",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/07/harnessing-invisible-forests-in-plain-view-to-reforest-the-world/"
     },
     {
@@ -2193,7 +2601,7 @@
       "title": "Evaluating the near- and long-term role of carbon dioxide removal in meeting global climate objectives",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:18.837267",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s43247-024-01527-z"
     },
     {
@@ -2201,23 +2609,15 @@
       "title": "Scientists develop a toolkit to identify high conservation-value areas",
       "domain": "india.mongabay.com",
       "downloaded": "2026-05-18T23:04:18.291319",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://india.mongabay.com/2023/06/a-toolkit-to-identify-high-conservation-value-areas/"
-    },
-    {
-      "id": "1742557871066",
-      "title": "Conservation pays and everyone’s benefitting from it (commentary)",
-      "domain": "news.mongabay.com",
-      "downloaded": "2026-05-18T23:04:17.874565",
-      "article_type": "",
-      "url": "https://news.mongabay.com/2024/07/conservation-pays-and-everyones-benefitting-from-it-commentary/"
     },
     {
       "id": "1742557870957",
       "title": "Work starts to rewild former cattle farm",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:04:17.137553",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c728ze77pw8o"
     },
     {
@@ -2225,7 +2625,7 @@
       "title": "Plans to track farmland biodiversity in National Farm Survey",
       "domain": "agriland.ie",
       "downloaded": "2026-05-18T23:04:16.369531",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.agriland.ie/farming-news/plans-to-track-farmland-biodiversity-in-national-farm-survey/"
     },
     {
@@ -2233,7 +2633,7 @@
       "title": "Sea ice's cooling power is waning faster than its area of extent, new study finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:15.840071",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-sea-ice-cooling-power-waning.html"
     },
     {
@@ -2241,7 +2641,7 @@
       "title": "How an Arctic rock inspired this Texas couple to develop a new way to capture carbon",
       "domain": "fastcompany.com",
       "downloaded": "2026-05-18T23:04:15.275244",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.fastcompany.com/91157306/how-an-arctic-rock-inspired-this-texas-couple-to-develop-a-new-way-to-capture-carbon"
     },
     {
@@ -2249,7 +2649,7 @@
       "title": "Space mission that maps forests in 3D makes an early comeback",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:04:14.798256",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/07/space-mission-that-maps-forests-in-3d-makes-an-early-comeback/"
     },
     {
@@ -2257,7 +2657,7 @@
       "title": "Gene Editing Technology in Crop Plant Breeding",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:04:14.342521",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/green-tech/gene-editing-technology-crop-plant-breeding/"
     },
     {
@@ -2265,7 +2665,7 @@
       "title": "Methane emissions are the low-hanging fruit of the climate transition",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:04:13.384680",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/methane-emissions-are-the-low-hanging-fruit-of-the-climate-transition-230167"
     },
     {
@@ -2273,7 +2673,7 @@
       "title": "Rethinking Forest Conservation Efforts",
       "domain": "drishtiias.com",
       "downloaded": "2026-05-18T23:04:12.803109",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.drishtiias.com/daily-updates/daily-news-editorials/rethinking-forest-conservation-efforts"
     },
     {
@@ -2281,7 +2681,7 @@
       "title": "New research identifies ecosystems that could be threatened by declining groundwater",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:12.165568",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-ecosystems-threatened-declining-groundwater.html"
     },
     {
@@ -2289,7 +2689,7 @@
       "title": "Forests endure as carbon sink despite regional pressures, new research reveals",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:11.089010",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-07-forests-carbon-regional-pressures-reveals.html"
     },
     {
@@ -2297,7 +2697,7 @@
       "title": "Former Hereford dairy farm restored as nature reserve",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:04:10.600482",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cxx2edzrn8xo"
     },
     {
@@ -2305,7 +2705,7 @@
       "title": "Science-based targets miss the mark",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:04:10.032039",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s43247-024-01535-z"
     },
     {
@@ -2313,7 +2713,7 @@
       "title": "Why soil testing is more important than ever",
       "domain": "agriland.ie",
       "downloaded": "2026-05-18T23:04:09.456776",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.agriland.ie/farming-news/why-soil-testing-is-more-important-than-ever/"
     },
     {
@@ -2321,7 +2721,7 @@
       "title": "Farming teacher Nobuntu turns failures into A+ success",
       "domain": "foodformzansi.co.za",
       "downloaded": "2026-05-18T23:04:08.868048",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://www.foodformzansi.co.za/farming-teacher-nobuntu-turns-failures-into-a-success/"
     },
     {
@@ -2329,7 +2729,7 @@
       "title": "How restoring river landscapes can keep flash floods in check",
       "domain": "dw.com",
       "downloaded": "2026-05-18T23:04:08.317333",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.dw.com/en/how-restoring-river-landscapes-can-keep-flash-floods-in-check/a-69744328"
     },
     {
@@ -2337,7 +2737,7 @@
       "title": "Regenerative agriculture: the farms of the future?",
       "domain": "verdict.co.uk",
       "downloaded": "2026-05-18T23:04:07.803988",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://www.verdict.co.uk/regenerative-agriculture-farms-future"
     },
     {
@@ -2345,7 +2745,7 @@
       "title": "Nature Restoration Law officially published in EU journal",
       "domain": "agriland.ie",
       "downloaded": "2026-05-18T23:04:07.268109",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.agriland.ie/farming-news/nature-restoration-law-officially-published-in-eu-journal"
     },
     {
@@ -2353,7 +2753,7 @@
       "title": "National restoration project yields return of rare bumblebee after halting century-long loss of critical habitat",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:04:06.580607",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/outdoors/bilberry-bumblebee-population-project-shropshire-hills"
     },
     {
@@ -2361,7 +2761,7 @@
       "title": "Agroforestry offers Thai rubber farmers a pathway to profit and sustainability",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:04:05.803618",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/07/agroforestry-offers-thai-rubber-farmers-a-pathway-to-profit-and-sustainability/"
     },
     {
@@ -2369,7 +2769,7 @@
       "title": "Coral Restoration Is a Speculative, Feel-Good Science That Won’t Save Our Reefs",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:04:05.051125",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/coral-restoration-is-a-speculative-feel-good-science-that-wont-save-our-reefs-235657"
     },
     {
@@ -2377,7 +2777,7 @@
       "title": "How the Miyawaki method of creating tiny forests could be the solution to Perth's tree canopy issues",
       "domain": "abc.net.au",
       "downloaded": "2026-05-18T23:04:04.393453",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.abc.net.au/news/2024-07-28/tiny-forests-miyawaki-method-solving-perths-tree-canopy-problem/104098600"
     },
     {
@@ -2385,7 +2785,7 @@
       "title": "The First Farmers Often Made Landscapes More Biodiverse – Our Research Could Have Lessons for Rewilding Today",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:04:03.104235",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/the-first-farmers-often-made-landscapes-more-biodiverse-our-research-could-have-lessons-for-rewilding-today-233272"
     },
     {
@@ -2393,7 +2793,7 @@
       "title": "Restoring logged forests doesn't mean locking them up as 'wilderness'—it means actively managing them",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:04:02.481115",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-08-forests-doesnt-wilderness.html"
     },
     {
@@ -2401,7 +2801,7 @@
       "title": "Wildlife Boosted by England's Nature-Friendly Farming Schemes, Study Finds",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:01.851955",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/aug/09/wildlife-boosted-by-englands-nature-friendly-farming-schemes-study-finds"
     },
     {
@@ -2409,7 +2809,7 @@
       "title": "In Portugal's Montesinho, Shepherds Peacefully Coexist with Wolves",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:04:01.222389",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/future/article/20240808-in-portugal-shepherds-coexist-with-wolves"
     },
     {
@@ -2417,7 +2817,7 @@
       "title": "Pantanal waterway project would destroy ‘paradise on Earth’, scientists warn",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:04:00.501965",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/aug/12/pantanal-waterway-project-would-destroy-paradise-on-earth-scientists-warn-aoe"
     },
     {
@@ -2425,7 +2825,7 @@
       "title": "New solar farms can benefit nature – here’s how",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:58.934226",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/new-solar-farms-can-benefit-nature-heres-how-235991"
     },
     {
@@ -2433,7 +2833,7 @@
       "title": "‘This year has been dead’: where have Britain’s insects gone?",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:58.205331",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/aug/15/britain-insects-surveys-butterflies-climate-aoe"
     },
     {
@@ -2441,7 +2841,7 @@
       "title": "Click, crackle and pop: healthy soil makes more noise, scientists find",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:57.641607",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/aug/16/flinders-university-australia-soil-sounds-acoustic-research"
     },
     {
@@ -2449,7 +2849,7 @@
       "title": "After a streak of record-breaking global temperatures, the climate is on a knife-edge",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:56.895095",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/after-a-streak-of-record-breaking-global-temperatures-the-climate-is-on-a-knife-edge-236736"
     },
     {
@@ -2457,7 +2857,7 @@
       "title": "Methane: Our Best Lever for Controlling Global Temperatures",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:56.218549",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/aug/17/methane-climate-crisis-amazon-peat-permafrost-vegan-heat-pumps"
     },
     {
@@ -2465,7 +2865,7 @@
       "title": "Fijian coral reveals new 627-year record of Pacific Ocean climate",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:55.610855",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-08-fijian-coral-reveals-year-pacific.html"
     },
     {
@@ -2473,7 +2873,7 @@
       "title": "As human activities expand in Antarctica, scientists identify crucial conservation sites",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:54.888100",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-08-human-antarctica-scientists-crucial-sites.html"
     },
     {
@@ -2481,7 +2881,7 @@
       "title": "Earth’s oldest, tiniest creatures are poised to be climate change winners – and the repercussions could be huge",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:54.287416",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/earths-oldest-tiniest-creatures-are-poised-to-be-climate-change-winners-and-the-repercussions-could-be-huge-235115"
     },
     {
@@ -2489,7 +2889,7 @@
       "title": "Ocean conservation: Protecting marine ecosystems through artificial reefs",
       "domain": "thestar.com.my",
       "downloaded": "2026-05-18T23:03:53.072324",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://www.thestar.com.my/lifestyle/travel/2024/08/15/ocean-conservation-protecting-marine-ecosystems-through-artificial-reefs"
     },
     {
@@ -2497,7 +2897,7 @@
       "title": "Implementing a new pathway to measure and value biodiversity",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:52.457315",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-08-pathway-biodiversity.html"
     },
     {
@@ -2505,7 +2905,7 @@
       "title": "Redefining the nature-human contract",
       "domain": "newindianexpress.com",
       "downloaded": "2026-05-18T23:03:51.918091",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.newindianexpress.com/amp/story/opinions/2024/Aug/17/redefining-the-nature-human-contract"
     },
     {
@@ -2513,7 +2913,7 @@
       "title": "Pacific nations are calling out Australia’s climate hypocrisy – and they’re right to do so",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:51.338975",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/commentisfree/article/2024/aug/25/pacific-nations-climate-change-policies-australia"
     },
     {
@@ -2521,7 +2921,7 @@
       "title": "Humanity is failing': official report warns our chance to save the Great Barrier Reef is fast closing",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:50.726813",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/humanity-is-failing-official-report-warns-our-chance-to-save-the-great-barrier-reef-is-fast-closing-237441"
     },
     {
@@ -2529,7 +2929,7 @@
       "title": "Tree-planting plans at Wild Haweswater to help protect rainforest",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:03:50.165981",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cwyjw9gzrp1o"
     },
     {
@@ -2537,7 +2937,7 @@
       "title": "Regenerative farming boosts green agriculture",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:49.541273",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-08-regenerative-farming-boost-green-agriculture.html"
     },
     {
@@ -2545,7 +2945,7 @@
       "title": "‘A 100-year vision’: Skiddaw’s barren peak to spring to life in ambitious rewilding",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:48.290306",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/uk-news/article/2024/sep/05/skiddaw-forest-cumbria-rewilding-england-nature-reserve"
     },
     {
@@ -2553,7 +2953,7 @@
       "title": "Profits from community windfarm to fund a million native trees in Hebrides",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:47.560232",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/aug/31/profits-from-community-windfarm-to-fund-a-million-native-trees-in-hebrides"
     },
     {
@@ -2561,7 +2961,7 @@
       "title": "Eureka prize-winning scientists use odours to protect endangered species",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:46.863431",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/australia-news/article/2024/sep/04/eureka-australian-science-prize-endangered-species-odours"
     },
     {
@@ -2569,7 +2969,7 @@
       "title": "Soil treated with organic fertilizers stores more carbon, study finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:46.278888",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-09-soil-fertilizers-carbon.html"
     },
     {
@@ -2577,7 +2977,7 @@
       "title": "Northern Forest: 1.9 million trees planted in 2023",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:03:45.589428",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c4gdnd4je8ko"
     },
     {
@@ -2585,7 +2985,7 @@
       "title": "The risk of global water scarcity is greater when accounting for the origin of rain, study shows",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:44.986542",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-09-global-scarcity-greater-accounting.html"
     },
     {
@@ -2593,7 +2993,7 @@
       "title": "Farmers use 'magic dust' to capture millions of tonnes of carbon",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:03:44.298248",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cvg3legn80xo"
     },
     {
@@ -2601,7 +3001,7 @@
       "title": "Climate claims about soil carbon on farms concern many scientists",
       "domain": "npr.org",
       "downloaded": "2026-05-18T23:03:43.752872",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.npr.org/2024/09/10/g-s1-17179/regenerative-agriculture-climate-change-soil-carbon"
     },
     {
@@ -2609,23 +3009,15 @@
       "title": "Soil pH drives microbial community composition: Study shows how bacteria work together to thrive in difficult conditions",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:43.146020",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-09-soil-ph-microbial-community-composition.html"
-    },
-    {
-      "id": "1742557803155",
-      "title": "National parks and other protected areas often fail to conserve Earth’s forests, research finds",
-      "domain": "theconversation.com",
-      "downloaded": "2026-05-18T23:03:42.519043",
-      "article_type": "",
-      "url": "https://theconversation.com/national-parks-and-other-protected-areas-often-fail-to-conserve-earths-forests-research-finds-237567"
     },
     {
       "id": "1742557803055",
       "title": "Barcelona and Majorca will shift to a desert-like climate by 2050, new drought study warns",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:03:41.831334",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/09/16/barcelona-and-majorca-will-shift-to-a-desert-like-climate-by-2050-new-drought-study-warns"
     },
     {
@@ -2633,7 +3025,7 @@
       "title": "Spending on subsidies is driving deforestation, pollution and fossil fuels, report finds",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:41.260437",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/sep/18/spending-subsidies-environment-deforestation-pollution-fossil-fuels-aoe"
     },
     {
@@ -2641,7 +3033,7 @@
       "title": "UK nature chief sounds alarm over ecosystem collapse as butterfly numbers halve",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:40.637116",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/sep/20/tony-juniper-uk-nature-chief-ecosystem-collapse-as-butterfly-numbers-halve"
     },
     {
@@ -2649,7 +3041,7 @@
       "title": "Kew study reveals 33 ‘dark spots’ where plant species remain unknown, hindering biodiversity efforts",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:39.979481",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/oct/01/kew-botanic-gardens-study-33-dark-spots-plant-species-identification-unknown-biodiversity-"
     },
     {
@@ -2657,7 +3049,7 @@
       "title": "Experts Uncover Incredible Side Effects of Traditional Solar Panels: How They're Becoming Pollinator Havens",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:03:39.434380",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/outdoors/pollinator-friendly-solar-panels-biodiversity/"
     },
     {
@@ -2665,7 +3057,7 @@
       "title": "Chester Zoo plants 19,000 trees to create new wildlife sanctuary",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:03:38.883486",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/czrm6d4ye6do"
     },
     {
@@ -2673,7 +3065,7 @@
       "title": "Field study finds using biodiversity instead of pesticides can reduce crop damage from herbivores",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:38.356388",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-10-field-biodiversity-pesticides-crop-herbivores.html"
     },
     {
@@ -2681,7 +3073,7 @@
       "title": "Yes, nature is complex. But saving our precious environment means finding ways to measure it",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:37.836490",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/yes-nature-is-complex-but-saving-our-precious-environment-means-finding-ways-to-measure-it-240583"
     },
     {
@@ -2689,7 +3081,7 @@
       "title": "Collapsing wildlife populations near 'points of no return', report warns",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:37.280698",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/oct/10/collapsing-wildlife-populations-points-no-return-living-planet-report-wwf-zsl-warns"
     },
     {
@@ -2697,7 +3089,7 @@
       "title": "Restoring Ireland's biodiversity forestry is crucial for nature and wildlife",
       "domain": "thejournal.ie",
       "downloaded": "2026-05-18T23:03:36.557009",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thejournal.ie/forests-nature-biodiversity-coillte-6501444-Oct2024/"
     },
     {
@@ -2705,7 +3097,7 @@
       "title": "Humanity’s future depends on our ability to live in harmony with nature",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:35.910105",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/humanitys-future-depends-on-our-ability-to-live-in-harmony-with-nature-233042"
     },
     {
@@ -2713,7 +3105,7 @@
       "title": "Researchers make stunning discovery after examining farmland soil carbon storage",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:03:35.478781",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/green-tech/organic-farming-soil-carbon-storage-study/"
     },
     {
@@ -2721,7 +3113,7 @@
       "title": "Increasing plant diversity in agriculture can promote soil carbon sequestration",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:34.925099",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-10-diversity-agriculture-soil-carbon-sequestration.html"
     },
     {
@@ -2729,7 +3121,7 @@
       "title": "Trees and land absorbed almost no CO2 last year. Is nature’s carbon sink failing?",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:34.364853",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/oct/14/nature-carbon-sink-collapse-global-heating-models-emissions-targets-evidence-aoe"
     },
     {
@@ -2737,7 +3129,7 @@
       "title": "Scientists Studying Earth's Trees Issue a Bleak Warning to Humanity",
       "domain": "sciencealert.com",
       "downloaded": "2026-05-18T23:03:33.794756",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://sciencealert.com/scientists-studying-earths-trees-issue-a-bleak-warning-to-humanity"
     },
     {
@@ -2745,7 +3137,7 @@
       "title": "Why biodiversity credits cannot work (commentary)",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:03:33.206774",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/10/why-biodiversity-credits-cannot-work-commentary"
     },
     {
@@ -2753,7 +3145,7 @@
       "title": "Finland’s forests and peatlands are absorbing more carbon than the country emits – but for how long?",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:32.721874",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/oct/15/finland-emissions-target-forests-peatlands-sinks-absorbing-carbon-aoe"
     },
     {
@@ -2761,7 +3153,7 @@
       "title": "Tropical forests enter critical phase as two-thirds of key biodiversity areas see temperature rise",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:03:32.133882",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/climate-change/tropical-forests-enter-critical-phase-as-two-thirds-of-key-biodiversity-areas-see-temperature-rise"
     },
     {
@@ -2769,7 +3161,7 @@
       "title": "Fungi to be given new status in global conservation plan after UK and Chile push",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:31.605048",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/oct/16/fungi-status-boost-conservation-cop16-uk-chile-biodiversity-plan"
     },
     {
@@ -2777,7 +3169,7 @@
       "title": "Europe not ready for increasing drought, flooding and forest fires, auditors warn",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:03:31.091041",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/my-europe/2024/10/16/europe-not-ready-for-increasing-drought-flooding-and-forest-fires-auditors-warn"
     },
     {
@@ -2785,7 +3177,7 @@
       "title": "Forest fires are shifting north and intensifying – here's what that means for the planet",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:30.587312",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/forest-fires-are-shifting-north-and-intensifying-heres-what-that-means-for-the-planet-241337"
     },
     {
@@ -2793,7 +3185,7 @@
       "title": "Soil's secret language: Researchers decode plant-to-fungi communication",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:29.936463",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-10-soil-secret-language-decode-fungi.html"
     },
     {
@@ -2801,7 +3193,7 @@
       "title": "The system that moves water around the Earth is off balance for the first time in human history",
       "domain": "edition.cnn.com",
       "downloaded": "2026-05-18T23:03:29.093191",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://edition.cnn.com/2024/10/16/climate/global-water-cycle-off-balance-food-production/index.html"
     },
     {
@@ -2809,7 +3201,7 @@
       "title": "In despair about Earth’s future? Look for green shoots",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:28.313805",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/in-despair-about-earths-future-look-for-green-shoots-232114"
     },
     {
@@ -2817,7 +3209,7 @@
       "title": "Wildlife Loss Is Taking Ecosystems Nearer to Collapse",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:27.643729",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-10-wildlife-loss-ecosystems-nearer-collapse.html"
     },
     {
@@ -2825,7 +3217,7 @@
       "title": "Applying minerals to soil to draw down atmospheric carbon dioxide through synergistic organic and inorganic pathways",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:03:26.474185",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s43247-024-01771-3"
     },
     {
@@ -2833,7 +3225,7 @@
       "title": "Navigating the Biodiversity Crisis: The Vital Role of Planted Forests in Conservation Efforts",
       "domain": "dailymaverick.co.za",
       "downloaded": "2026-05-18T23:03:25.719072",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.dailymaverick.co.za/opinionista/2024-10-17-navigating-the-biodiversity-crisis-the-vital-role-of-planted-forests-in-conservation-efforts/"
     },
     {
@@ -2841,7 +3233,7 @@
       "title": "The waters become corrupt, the air infected': Here's how Ancient Greeks and Romans grappled with environmental damage",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:24.958145",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-10-corrupt-air-infected-ancient-greeks.html"
     },
     {
@@ -2849,7 +3241,7 @@
       "title": "The Psychology of Rewilding Means Getting Over Ourselves",
       "domain": "psychologytoday.com",
       "downloaded": "2026-05-18T23:03:24.172386",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.psychologytoday.com/intl/blog/animal-emotions/202410/the-psychology-of-rewilding-means-getting-over-ourselves"
     },
     {
@@ -2857,7 +3249,7 @@
       "title": "COP16 Biodiversity Summit: They talked about our territories without us",
       "domain": "npr.org",
       "downloaded": "2026-05-18T23:03:23.728393",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.npr.org/2024/10/18/nx-s1-5147426/cop16-biodiversity-summit"
     },
     {
@@ -2865,7 +3257,7 @@
       "title": "Biodiversity loss: why the Global North is failing COP16 and Colombia",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:23.149565",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/commentisfree/2024/oct/21/biodiversity-loss-cop16-global-north-colombia-science"
     },
     {
@@ -2873,7 +3265,7 @@
       "title": "Key Atlantic Current Could Collapse Soon, Impacting the Entire World for Centuries to Come, Leading Climate Scientists Warn",
       "domain": "livescience.com",
       "downloaded": "2026-05-18T23:03:22.582516",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.livescience.com/planet-earth/rivers-oceans/key-atlantic-current-could-collapse-soon-impacting-the-entire-world-for-centuries-to-come-leading-climate-scientists-warn"
     },
     {
@@ -2881,7 +3273,7 @@
       "title": "EU makes leap towards 30x30 with massive ocean protection project",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:03:21.910883",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/10/22/an-achievement-for-the-azoreans-eu-makes-leap-towards-30x30-with-massive-ocean-protection-"
     },
     {
@@ -2889,7 +3281,7 @@
       "title": "World heading for 3.1°C temp rise as nations fail to meet climate goals",
       "domain": "newindianexpress.com",
       "downloaded": "2026-05-18T23:03:21.362836",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.newindianexpress.com/xplore/2024/Oct/26/world-heading-for-31c-temp-rise-as-nations-fail-to-meet-climate-goals"
     },
     {
@@ -2897,7 +3289,7 @@
       "title": "National study reports a 'worrying confluence' of flood risk, social vulnerability and climate change denial",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:20.681727",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-10-national-confluence-social-vulnerability-climate.html"
     },
     {
@@ -2905,7 +3297,7 @@
       "title": "Climate change: World way off target to limit warming says UN",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:03:20.159570",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/ce8yyle2eq2o"
     },
     {
@@ -2913,7 +3305,7 @@
       "title": "Revealed: Biomass firm poised to clear Bornean rainforest for dubious 'green' energy",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:03:19.657496",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/10/revealed-biomass-company-poised-to-clear-bornean-rainforest-for-dubious-green-energy/"
     },
     {
@@ -2921,7 +3313,7 @@
       "title": "Targets to save 30% of the ocean by 2030 aren’t being met, new report reveals",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:18.874292",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/targets-to-save-30-of-the-ocean-by-2030-arent-being-met-new-report-reveals-241584"
     },
     {
@@ -2929,7 +3321,7 @@
       "title": "Two sides of the same coin: governments stress links between climate and nature collapse",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:18.370919",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/nov/04/two-sides-of-the-same-coin-governments-stress-links-between-climate-and-nature-collapse"
     },
     {
@@ -2937,7 +3329,7 @@
       "title": "A New Era for Ecosystem: Global Ecosystem Atlas Launched at COP16",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:03:17.833107",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/wildlife-biodiversity/a-new-era-for-ecosystem-global-ecosystem-atlas-launched-at-cop16"
     },
     {
@@ -2945,7 +3337,7 @@
       "title": "‘We don’t really consider it low probability anymore’: Collapse of key Atlantic current could have catastrophic impacts, says oceanographer Stefan Rahmstorf",
       "domain": "livescience.com",
       "downloaded": "2026-05-18T23:03:17.384522",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.livescience.com/planet-earth/rivers-oceans/we-dont-really-consider-it-low-probability-anymore-collapse-of-key-atlantic-current-could-have-catastrophic-impacts-says-oceanographer-stefan-rahmstorf"
     },
     {
@@ -2953,7 +3345,7 @@
       "title": "Natural fertilizer for tomato plants: The biofertilizer revolution",
       "domain": "thecooldown.com",
       "downloaded": "2026-05-18T23:03:16.730176",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.thecooldown.com/green-tech/natural-fertilizer-tomato-plants-biofertilizer/"
     },
     {
@@ -2961,7 +3353,7 @@
       "title": "More than a third of all tree species at risk of extinction, global assessment finds",
       "domain": "cbsnews.com",
       "downloaded": "2026-05-18T23:03:14.807141",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.cbsnews.com/news/tree-species-extiction-risk-global-assessment-finds/"
     },
     {
@@ -2969,7 +3361,7 @@
       "title": "Spreading crushed rock over farmland can remove CO₂ from the atmosphere if we do it right",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:14.152091",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/spreading-crushed-rock-over-farmland-can-remove-co-from-the-atmosphere-if-we-do-it-right-240303"
     },
     {
@@ -2977,7 +3369,7 @@
       "title": "Plans to plant 30,000 trees for nature reserve approved",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:03:13.388783",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cwy9xxgl3nno"
     },
     {
@@ -2985,7 +3377,7 @@
       "title": "DTE at COP16: Survey shows public awareness of biodiversity at historic high",
       "domain": "downtoearth.org.in",
       "downloaded": "2026-05-18T23:03:12.642734",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.downtoearth.org.in/wildlife-biodiversity/dte-at-cop16-survey-shows-public-awareness-of-biodiversity-at-historic-high"
     },
     {
@@ -2993,7 +3385,7 @@
       "title": "Alarm grows over disturbing lack of progress revealed at biodiversity summit COP16",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:11.879250",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2024/oct/31/alarm-grows-over-disturbing-lack-of-progress-revealed-at-biodiversity-summit-cop16"
     },
     {
@@ -3001,7 +3393,7 @@
       "title": "How to climate-proof crops: scientists say the secret's in the dirt",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:03:09.805932",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/d41586-024-03480-5"
     },
     {
@@ -3009,7 +3401,7 @@
       "title": "COP29: The state of the climate in eight charts",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:03:09.087621",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/11/11/cop29-the-state-of-the-climate-in-eight-charts"
     },
     {
@@ -3017,7 +3409,7 @@
       "title": "Germany’s Klim raises $22M to take its regenerative farming platform international",
       "domain": "techcrunch.com",
       "downloaded": "2026-05-18T23:03:08.284385",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://techcrunch.com/2024/11/12/germanys-klim-raises-22m-to-take-its-regenerative-farming-platform-international/"
     },
     {
@@ -3025,7 +3417,7 @@
       "title": "Countries spend huge sums on fossil fuel subsidies – why they're so hard to eliminate",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:07.673465",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/countries-spend-huge-sums-on-fossil-fuel-subsidies-why-theyre-so-hard-to-eliminate-239346"
     },
     {
@@ -3033,7 +3425,7 @@
       "title": "Scientists yield 789 kg olive oil, 891 MWh solar power per hectare yearly from same land",
       "domain": "interestingengineering.com",
       "downloaded": "2026-05-18T23:03:07.092228",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://interestingengineering.com/energy/oil-solar-power-same-land"
     },
     {
@@ -3041,7 +3433,7 @@
       "title": "Experts welcome Brazil’s revived reforestation plan as much-needed boost",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:03:06.392143",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/2024/11/experts-welcome-brazils-revived-reforestation-plan-as-much-needed-boost/"
     },
     {
@@ -3049,23 +3441,15 @@
       "title": "Scientists counted 49 ways Australia is destroying the ecosystems we hold dear – but there is hope",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:05.816595",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/scientists-counted-49-ways-australia-is-destroying-the-ecosystems-we-hold-dear-but-there-is-hope-240434"
-    },
-    {
-      "id": "1742557795126",
-      "title": "Co-management of protected areas by NGOs and African countries significantly reduces deforestation",
-      "domain": "phys.org",
-      "downloaded": "2026-05-18T23:03:05.185371",
-      "article_type": "",
-      "url": "https://phys.org/news/2025-01-areas-ngos-african-countries-significantly.html"
     },
     {
       "id": "1742557795019",
       "title": "Wales’ largest ecosystem restoration project moves forward with crowdfunder success",
       "domain": "nation.cymru",
       "downloaded": "2026-05-18T23:03:04.549477",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://nation.cymru/news/wales-largest-ecosystem-restoration-project-moves-forward-with-crowdfunder-success/"
     },
     {
@@ -3073,7 +3457,7 @@
       "title": "From cod logs to frog bogs: we catalogued 400 ways to help species survive a warmer world",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:03.855178",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/from-cod-logs-to-frog-bogs-we-catalogued-400-ways-to-help-species-survive-a-warmer-world-247107"
     },
     {
@@ -3081,7 +3465,7 @@
       "title": "64 Sustainability Certifications to Advance Your Career in 2025",
       "domain": "trellis.net",
       "downloaded": "2026-05-18T23:03:03.116902",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://trellis.net/article/64-sustainability-certifications-to-advance-your-career-in-2025/"
     },
     {
@@ -3089,7 +3473,7 @@
       "title": "‘The risk of extinction is accelerating’: world’s botanic gardens raise alarm with space to protect endangered plants running out",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:03:02.201090",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/jan/25/the-risk-of-extinction-is-accelerating-worlds-botanic-gardens-raise-alarm-with-space-to-protect-endangered-plants-running-out"
     },
     {
@@ -3097,7 +3481,7 @@
       "title": "Map-based metric predicts biodiversity loss from agricultural expansion",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:03:01.719309",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2025-01-based-metric-biodiversity-loss-agricultural.html"
     },
     {
@@ -3105,23 +3489,15 @@
       "title": "Carbon capture in Mediterranean soil: how farmland can trap greenhouse gases",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:03:01.128615",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/carbon-capture-in-mediterranean-soil-how-farmland-can-trap-greenhouse-gases-248602"
-    },
-    {
-      "id": "1742557794206",
-      "title": "Africa struggles to balance economic growth & biodiversity conservation: UNCTAD",
-      "domain": "downtoearth.org.in",
-      "downloaded": "2026-05-18T23:03:00.469323",
-      "article_type": "",
-      "url": "https://www.downtoearth.org.in/africa/africa-struggles-to-balance-economic-growth-biodiversity-conservation-unctad"
     },
     {
       "id": "1742557794102",
       "title": "Progress towards sustainable agriculture hampered by siloed scientific discourses",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:02:59.753821",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41893-024-01474-9"
     },
     {
@@ -3129,7 +3505,7 @@
       "title": "Lyrebirds farm their own food — and shape entire forests",
       "domain": "earth.com",
       "downloaded": "2026-05-18T23:02:59.135878",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.earth.com/news/lyrebirds-farm-their-own-food-and-shape-entire-forests/"
     },
     {
@@ -3137,7 +3513,7 @@
       "title": "Ditches and canals are a big, yet overlooked, source of greenhouse gas emissions – new study",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:02:58.498804",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/ditches-and-canals-are-a-big-yet-overlooked-source-of-greenhouse-gas-emissions-new-study-250240"
     },
     {
@@ -3145,7 +3521,7 @@
       "title": "All the birds returned': How a Chinese project led the way in water and soil conservation",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:02:57.805982",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/mar/14/how-china-led-way-water-soil-conservation"
     },
     {
@@ -3153,7 +3529,7 @@
       "title": "World Rewilding Day: Four species bouncing back from the brink of extinction",
       "domain": "news.mongabay.com",
       "downloaded": "2026-05-18T23:02:57.131192",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://news.mongabay.com/short-article/world-rewilding-day-four-species-bouncing-back-from-the-brink-of-extinction/"
     },
     {
@@ -3161,7 +3537,7 @@
       "title": "Pioneering forest garden at risk after landowner serves notice",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:02:56.395322",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/2025/mar/19/forest-garden-dartington-estate-devon-landowner-serves-notice"
     },
     {
@@ -3169,7 +3545,7 @@
       "title": "We’re Not Doomed: Here’s How to Revive Planet Earth",
       "domain": "bigthink.com",
       "downloaded": "2026-05-18T23:02:55.398161",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://bigthink.com/series/explain-it-like-im-smart/the-resilience-of-nature"
     },
     {
@@ -3177,7 +3553,7 @@
       "title": "Future energy demand does not need new fossil fuels, study says",
       "domain": "ft.com",
       "downloaded": "2026-05-18T23:02:54.500811",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.ft.com/content/6af75ed3-7750-4df5-8a82-7982684d4fa3"
     },
     {
@@ -3185,23 +3561,15 @@
       "title": "There's a climate threat lurking in rivers around the world. New research shows where",
       "domain": "cbc.ca",
       "downloaded": "2026-05-18T23:02:53.873098",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.cbc.ca/news/climate/science-journal-climate-rivers-1.7219864"
-    },
-    {
-      "id": "1717247274000",
-      "title": "Carbon credits are useful for stabilizing the climate, but are they used effectively?",
-      "domain": "theconversation.com",
-      "downloaded": "2026-05-18T23:02:53.312047",
-      "article_type": "",
-      "url": "https://theconversation.com/carbon-credits-are-useful-for-stabilizing-the-climate-but-are-they-used-effectively-230608"
     },
     {
       "id": "1717246759000",
       "title": "Videos show 'nature run' of greenhouse gases over a year",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:52.761628",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-videos-nature-greenhouse-gases-year.html"
     },
     {
@@ -3209,7 +3577,7 @@
       "title": "Declining Hydropower in the Middle East Blamed on Climate Crisis",
       "domain": "dw.com",
       "downloaded": "2026-05-18T23:02:52.215001",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.dw.com/en/declining-hydropower-in-the-middle-east-blamed-on-climate-crisis/a-69223366"
     },
     {
@@ -3217,7 +3585,7 @@
       "title": "More profitable than farming': how Ecuador's birding boom is benefiting wildlife",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:02:51.378337",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/jun/01/more-profitable-than-farming-how-ecuadors-birding-boom-is-benefiting-wildlife"
     },
     {
@@ -3225,7 +3593,7 @@
       "title": "Ecuador Is Literally Powerless in the Face of Drought",
       "domain": "wired.com",
       "downloaded": "2026-05-18T23:02:50.595591",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.wired.com/story/ecuador-energy-crisis-water-shortage-hydro"
     },
     {
@@ -3233,7 +3601,7 @@
       "title": "Sevenoaks: Plans to turn 26-acre farm into nature reserve",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:02:50.094150",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/c0xx76gdv66o"
     },
     {
@@ -3241,7 +3609,7 @@
       "title": "Architecture for Glamping: Embracing Nature with Comfort",
       "domain": "archdaily.com",
       "downloaded": "2026-05-18T23:02:49.603220",
-      "article_type": "",
+      "article_type": "guide",
       "url": "https://www.archdaily.com/1017020/architecture-for-glamping-embracing-nature-with-comfort"
     },
     {
@@ -3249,7 +3617,7 @@
       "title": "Scientists map biodiversity changes in the world's forests",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:49.163685",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-scientists-biodiversity-world-forests.html"
     },
     {
@@ -3257,7 +3625,7 @@
       "title": "New method could significantly reduce agricultural greenhouse gas emissions",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:48.658393",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-method-significantly-agricultural-greenhouse-gas.html"
     },
     {
@@ -3265,23 +3633,15 @@
       "title": "BayWa r.e. switches on 54 MW agrivoltaic site in Spain",
       "domain": "pv-magazine.com",
       "downloaded": "2026-05-18T23:02:47.940413",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.pv-magazine.com/2024/05/28/baywa-re-switches-on-54-mw-agrivoltaic-site-in-spain"
-    },
-    {
-      "id": "1717068603000",
-      "title": "Abandoned farmlands could play a role in fighting climate change. A study shows exactly where they are",
-      "domain": "phys.org",
-      "downloaded": "2026-05-18T23:02:47.405352",
-      "article_type": "",
-      "url": "https://phys.org/news/2024-05-abandoned-farmlands-play-role-climate.html"
     },
     {
       "id": "1716958998000",
       "title": "Millions more trees isn't the climate fix New Zealand thought",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:46.816106",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-millions-trees-isnt-climate-zealand.html"
     },
     {
@@ -3289,7 +3649,7 @@
       "title": "For the first time, there's visual evidence warm sea water is pushing under doomsday glacier: Study",
       "domain": "cbc.ca",
       "downloaded": "2026-05-18T23:02:46.244200",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.cbc.ca/news/canada/kitchener-waterloo/thwaites-doomsday-glacier-warm-sea-water-evidence-1.7213835"
     },
     {
@@ -3297,7 +3657,7 @@
       "title": "Climate change caused 26 extra days of extreme heat in last year: report",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:45.480341",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-climate-extra-days-extreme-year.html"
     },
     {
@@ -3305,7 +3665,7 @@
       "title": "A Cocoa Farmer's Call: Why Training and Investment Matter More Than Price",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:02:44.931974",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/05/27/i-am-a-cocoa-farmer-when-i-say-we-need-training-and-investment-to-thrive-take-my-word-for-"
     },
     {
@@ -3313,7 +3673,7 @@
       "title": "South Downs National Park launches biodiversity investment scheme",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:02:44.178137",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cxeel80v6y2o"
     },
     {
@@ -3321,7 +3681,7 @@
       "title": "British Columbia needs a unified response to the biodiversity crisis",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:02:43.517831",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/british-columbia-needs-a-unified-response-to-respond-to-the-biodiversity-crisis-225767"
     },
     {
@@ -3329,7 +3689,7 @@
       "title": "The surge in hydroelectric dams is driving massive biodiversity loss",
       "domain": "theconversation.com",
       "downloaded": "2026-05-18T23:02:42.963858",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://theconversation.com/the-surge-in-hydroelectric-dams-is-driving-massive-biodiversity-loss-230895"
     },
     {
@@ -3337,7 +3697,7 @@
       "title": "Italian scientists create Butterfly Forest in tropical mountain greenhouse",
       "domain": "abc.net.au",
       "downloaded": "2026-05-18T23:02:41.791279",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.abc.net.au/news/2024-05-23/butterfly-forest-created-to-help-biodiversity-awareness-/103884448"
     },
     {
@@ -3345,7 +3705,7 @@
       "title": "Arctic-Focused Climate Change Research Initiative Earns Coveted $15 Million NSF Award",
       "domain": "today.uconn.edu",
       "downloaded": "2026-05-18T23:02:41.349955",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://today.uconn.edu/2024/05/arctic-focused-climate-change-research-initiative-earns-coveted-15-million-nsf-award"
     },
     {
@@ -3353,7 +3713,7 @@
       "title": "Warming climate intensifies flash droughts worldwide—study defines and tracks critical measures of drought severity",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:40.152899",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-climate-droughts-worldwide-tracks-critical.html"
     },
     {
@@ -3361,7 +3721,7 @@
       "title": "Biodiversity loss reduces global terrestrial carbon storage",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:02:39.687217",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-024-47872-7"
     },
     {
@@ -3369,7 +3729,7 @@
       "title": "Climate change: UK breakthrough could slash cement CO2 emissions",
       "domain": "bbc.com",
       "downloaded": "2026-05-18T23:02:39.082377",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.bbc.com/news/articles/cxee01m5yero"
     },
     {
@@ -3377,7 +3737,7 @@
       "title": "Forget Sustainability—Regeneration Is Now Urgently Needed",
       "domain": "psychologytoday.com",
       "downloaded": "2026-05-18T23:02:38.448199",
-      "article_type": "",
+      "article_type": "opinion",
       "url": "https://www.psychologytoday.com/us/blog/community-is-medicine/202405/forget-sustainability-regeneration-is-now-urgently-needed"
     },
     {
@@ -3385,7 +3745,7 @@
       "title": "Migratory freshwater fish populations ‘down by more than 80% since 1970’",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:02:37.894118",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/may/21/living-planet-index-migratory-freshwater-fish-populations-decline-dams-weirs-mining-water-abstraction-pollution-threat-aoe"
     },
     {
@@ -3393,7 +3753,7 @@
       "title": "‘Common ground’ sought as River Road ecosystem restoration heads into design phase",
       "domain": "sanantonioreport.org",
       "downloaded": "2026-05-18T23:02:37.218423",
-      "article_type": "",
+      "article_type": "platform",
       "url": "https://sanantonioreport.org/river-road-ecosystem-restoration-project-public-input-design-phase"
     },
     {
@@ -3401,7 +3761,7 @@
       "title": "New Global Study Confirms: Conservation Actually Works",
       "domain": "scitechdaily.com",
       "downloaded": "2026-05-18T23:02:36.542051",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://scitechdaily.com/new-global-study-confirms-conservation-actually-works"
     },
     {
@@ -3409,7 +3769,7 @@
       "title": "Climate change is most prominent threat to pollinators, study finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:36.011575",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-climate-prominent-threat-pollinators.html"
     },
     {
@@ -3417,7 +3777,7 @@
       "title": "Are humans a 'keystone species'? This captivating new book rethinks our role in rewilding",
       "domain": "euronews.com",
       "downloaded": "2026-05-18T23:02:35.347760",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.euronews.com/green/2024/05/05/are-humans-a-keystone-species-this-captivating-new-book-rethinks-our-role-in-rewilding"
     },
     {
@@ -3425,7 +3785,7 @@
       "title": "Climate & Energy - Crash Course",
       "domain": "thecrashcourse.com",
       "downloaded": "2026-05-18T23:02:34.499900",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://thecrashcourse.com/topic/climate"
     },
     {
@@ -3433,7 +3793,7 @@
       "title": "Biodiversity loss is biggest driver of infectious disease outbreaks, says study",
       "domain": "theguardian.com",
       "downloaded": "2026-05-18T23:02:33.883178",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theguardian.com/environment/article/2024/may/09/biodiversity-loss-is-biggest-driver-of-infectious-disease-outbreaks-says-study"
     },
     {
@@ -3441,7 +3801,7 @@
       "title": "Researchers say nature recovery must be integrated across all sectors to bend the curve of biodiversity loss",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:33.259720",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-05-nature-recovery-sectors-biodiversity-loss.html"
     },
     {
@@ -3449,7 +3809,7 @@
       "title": "Forecasting the ecological footprint of G20 countries in the next 30 years",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:02:32.647149",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41598-024-57994-z"
     },
     {
@@ -3457,7 +3817,7 @@
       "title": "Only four G20 countries set for positive ecological footprint by 2050, study finds",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:31.899474",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-04-g20-countries-positive-ecological-footprint.html"
     },
     {
@@ -3465,7 +3825,7 @@
       "title": "Unveiling nature's custodians: Study highlights crucial role of scavengers in wetlands",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:31.271001",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-04-unveiling-nature-custodians-highlights-crucial.html"
     },
     {
@@ -3473,23 +3833,15 @@
       "title": "Low-intensity grazing is locally better for biodiversity but challenging for land users, study shows",
       "domain": "phys.org",
       "downloaded": "2026-05-18T23:02:30.766734",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://phys.org/news/2024-04-intensity-grazing-locally-biodiversity-users.html"
-    },
-    {
-      "id": "1714540957000",
-      "title": "Reforestation study finds only a few tree species can survive a century of rapid climate change",
-      "domain": "phys.org",
-      "downloaded": "2026-05-18T23:02:30.282435",
-      "article_type": "",
-      "url": "https://phys.org/news/2024-04-reforestation-tree-species-survive-century.html"
     },
     {
       "id": "1714284778000",
       "title": "Beavers are helping fight climate change, satellite data shows",
       "domain": "space.com",
       "downloaded": "2026-05-18T23:02:29.578633",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.space.com/beaver-dam-nasa-satellite-data"
     },
     {
@@ -3497,7 +3849,7 @@
       "title": "How ocean carbon dioxide removal could slow climate change",
       "domain": "sciencenews.org",
       "downloaded": "2026-05-18T23:02:29.069239",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.sciencenews.org/article/ocean-carbon-removal-climate-change"
     },
     {
@@ -3505,7 +3857,7 @@
       "title": "They turned cattle ranches into tropical forest — then climate change hit",
       "domain": "theverge.com",
       "downloaded": "2026-05-18T23:02:28.495947",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.theverge.com/24137380/forest-restoration-costa-rica-guanacaste-conservation-tree"
     },
     {
@@ -3513,7 +3865,7 @@
       "title": "Battling climate change, Japan looks to seagrass for carbon capture",
       "domain": "reuters.com",
       "downloaded": "2026-05-18T23:02:27.370134",
-      "article_type": "",
+      "article_type": "news",
       "url": "https://www.reuters.com/sustainability/battling-climate-change-japan-looks-seagrass-carbon-capture-2024-04-25"
     },
     {
@@ -3521,7 +3873,7 @@
       "title": "The principles of natural climate solutions",
       "domain": "nature.com",
       "downloaded": "2026-05-18T23:02:26.173709",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.nature.com/articles/s41467-023-44425-2"
     },
     {
@@ -3529,7 +3881,7 @@
       "title": "Principles for Responsible Investment | PRI",
       "domain": "unpri.org",
       "downloaded": "2026-05-18T23:02:25.515248",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://www.unpri.org"
     },
     {
@@ -3537,7 +3889,7 @@
       "title": "Financing Climate Futures: Rethinking Infrastructure",
       "domain": "oecd.org",
       "downloaded": "2026-05-18T23:02:24.999887",
-      "article_type": "",
+      "article_type": "study",
       "url": "https://www.oecd.org/environment/cc/climate-futures"
     },
     {
@@ -3545,40 +3897,8 @@
       "title": "The Global Goals: Overcoming the World's Challenges",
       "domain": "globalgoals.org",
       "downloaded": "2026-05-18T23:02:24.282147",
-      "article_type": "",
+      "article_type": "reference",
       "url": "https://www.globalgoals.org"
-    },
-    {
-      "id": "1715778390000",
-      "title": "Causes, Effects & Solutions To Climate Change",
-      "domain": "climatescience.org",
-      "downloaded": "2025-11-14T18:10:47.641844",
-      "article_type": "",
-      "url": "https://climatescience.org/courses"
-    },
-    {
-      "id": "1756291430212",
-      "title": "Banking on Climate Chaos 2025: Global Bank Fossil Fuel Financing Report",
-      "domain": "bankingonclimatechaos.org",
-      "downloaded": "2025-11-14T16:36:47.179278",
-      "article_type": "",
-      "url": "https://www.bankingonclimatechaos.org/#fulldata-panel"
-    },
-    {
-      "id": "1763280214419",
-      "title": "WOODY MEADOW GUIDELINES - Woody Meadow",
-      "domain": "woodymeadow.unimelb.edu.au",
-      "downloaded": "",
-      "article_type": "",
-      "url": "https://woodymeadow.unimelb.edu.au/fact-sheets/guidelines/"
-    },
-    {
-      "id": "1765531706791",
-      "title": "Encyclopedia of Life",
-      "domain": "eol.org",
-      "downloaded": "",
-      "article_type": "",
-      "url": "https://eol.org/"
     }
   ]
 }
