@@ -22,7 +22,7 @@ A forest outlives the people who plant it, and owning land is not the same as pr
 - **Conservation easement or covenant** — a binding restriction carried to future owners; needs a body to hold and enforce it.
 - **Land trust** — a trust or NGO holds the land for its purpose; durable, needs a trustworthy organisation.
 - **Foundation ownership** — very stable, but costly and bureaucratic.
-- **Community or commons ownership** — socially resilient; needs a real community and working governance.
+- **Community or commons ownership** — socially resilient; needs a real community and working governance. One working example: an established agroforestry farm turning to community ownership to outlast its founders ([agroforestry farm seeks community ownership](research/bookmarks/Climate%20Change/1782816753002.md), *news*).
 - **Rights of nature** — give the ecosystem legal standing where the law allows; powerful, rare, largely untested.
 
 Layer these over time: begin with the cheapest that gives some protection, and strengthen it as the project matures and a successor community forms.

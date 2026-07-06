@@ -21,7 +21,7 @@ Income matters less for getting started, which is what fundraising covers, and m
 ### Later, or uncertain
 - **Eco-tourism:** simple stays or volunteer weeks, once there is something to visit.
 - **Carbon credits:** the land genuinely sequesters carbon — young secondary forests fastest of all ([young forests sequester fastest](research/bookmarks/Climate%20Change/1752266433427.md), *study*) — but turning that into credit revenue is a separate, harder problem. Credit markets are slow, costly to verify, and easy to oversell at small scale ([gaps in carbon-credit markets](research/bookmarks/Climate%20Change/1717247274000.md), *news*; [over-reliance on land for carbon removal](research/bookmarks/Climate%20Change/1742557796816.md), *study*).
-- **Energy sales and payments for ecosystem services:** possible where a scheme exists — Costa Rica funded major reforestation through PES ([Costa Rica PES](research/bookmarks/Climate%20Change/1742557871066.md), *news*) — but speculative early on.
+- **Energy sales and payments for ecosystem services:** possible where a scheme exists — Costa Rica funded major reforestation through PES ([Costa Rica PES](research/bookmarks/Climate%20Change/1742557871066.md), *news*) — but speculative early on. On a smaller scale, programs that pay to turn unproductive land into habitat can make a marginal patch a modest asset ([marginal land into pollinator habitat](research/bookmarks/Climate%20Change/1782658991399.md), *news*).
 
 ## What not to count on
 
