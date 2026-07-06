@@ -19,7 +19,7 @@ Getting trees and shrubs back is the visible part, and the easiest to do badly. 
 
 ## Options & pathways
 
-- **Assisted natural regeneration** — let it regrow where seed sources survive and soil isn't wrecked. Cheapest and toughest; slower, less controlled.
+- **Assisted natural regeneration** — let it regrow where seed sources survive and soil isn't wrecked. Cheapest and toughest; slower, less controlled. Where forest structure survives a disturbance, carbon returns faster than on land cleared outright ([disturbance and forest carbon recovery](research/bookmarks/Climate%20Change/1783233364306.md), *study*).
 - **Direct seeding** — for large areas with good seed; low cost, patchy results.
 - **Dense planting (Miyawaki)** — fast layered cover on a small prepared patch; seedling- and labour-heavy.
 - **Standard spaced planting** — control over species and layout at moderate effort; slower to close canopy.
