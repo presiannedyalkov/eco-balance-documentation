@@ -1,6 +1,6 @@
 # Consistency & quality report
 
-Generated 2026-06-25T13:18. Scanned 34 source docs.
+Generated 2026-07-06T17:44. Scanned 34 source docs.
 
 ## Summary
 
