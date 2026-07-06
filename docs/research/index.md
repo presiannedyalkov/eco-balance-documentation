@@ -9,18 +9,18 @@ hide_table_of_contents: true
 
 | Domain | Articles | Cited in docs | Uncited |
 |---|---|---|---|
-| [method/biodiversity](method__biodiversity.md) | 201 | 8 | 193 |
-| [method/reforestation](method__reforestation.md) | 99 | 13 | 86 |
-| [method/water](method__water.md) | 53 | 4 | 49 |
+| [method/biodiversity](method__biodiversity.md) | 201 | 10 | 191 |
+| [method/reforestation](method__reforestation.md) | 99 | 15 | 84 |
+| [method/water](method__water.md) | 53 | 7 | 46 |
 | [method/soil](method__soil.md) | 53 | 7 | 46 |
 | [organization](organization.md) | 43 | 2 | 41 |
 | [economics](economics.md) | 12 | 3 | 9 |
 | [method/community](method__community.md) | 12 | 1 | 11 |
 | [growth-operations](growth-operations.md) | 11 | 1 | 10 |
 | [infrastructure](infrastructure.md) | 11 | 0 | 11 |
-| [risk](risk.md) | 10 | 0 | 10 |
-| [general](general.md) | 8 | 0 | 8 |
+| [risk](risk.md) | 10 | 2 | 8 |
+| [general](general.md) | 8 | 1 | 7 |
 | [site-and-land](site-and-land.md) | 6 | 1 | 5 |
-| [indicators](indicators.md) | 6 | 0 | 6 |
+| [indicators](indicators.md) | 6 | 1 | 5 |
 | [funding](funding.md) | 2 | 1 | 1 |
 | [learning](learning.md) | 1 | 0 | 1 |

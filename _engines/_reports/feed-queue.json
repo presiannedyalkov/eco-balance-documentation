@@ -1,17 +1,9 @@
 {
-  "generated": "2026-07-06T17:44:15.056Z",
+  "generated": "2026-07-06T23:06:23.139Z",
   "corpus": 528,
-  "used": 44,
-  "unused": 487,
+  "used": 55,
+  "unused": 476,
   "candidates": [
-    {
-      "id": "1783255090320",
-      "title": "Agrivoltaics Works When Solar Panels Do Farm Work",
-      "domain": "cleantechnica.com",
-      "downloaded": "2026-07-05T12:41:21.560573",
-      "article_type": "news",
-      "url": "https://cleantechnica.com/2026/07/04/agrivoltaics-works-where-shade-does-farm-work/"
-    },
     {
       "id": "1783255090319",
       "title": "Agrivoltaics Works When Solar Panels Do Farm Work",
@@ -37,28 +29,12 @@
       "url": "https://www.visualcapitalist.com/cp/visualizing-every-el-nino-and-la-nina-since-1979/"
     },
     {
-      "id": "1783233364306",
-      "title": "A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests",
-      "domain": "phys.org",
-      "downloaded": "2026-07-05T06:38:20.573835",
-      "article_type": "news",
-      "url": "https://phys.org/news/2026-07-benchmark-disturbances-loss-recovery-carbon.html"
-    },
-    {
       "id": "1783233364305",
       "title": "A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests",
       "domain": "phys.org",
       "downloaded": "2026-07-05T06:38:20.130839",
       "article_type": "",
       "url": "https://phys.org/news/2026-07-benchmark-disturbances-loss-recovery-carbon.html"
-    },
-    {
-      "id": "1783233224646",
-      "title": "Scientist dubbed The Bogfather is restoring peatland to fight climate change",
-      "domain": "www.bbc.com",
-      "downloaded": "2026-07-05T06:38:19.561407",
-      "article_type": "news",
-      "url": "https://www.bbc.com/news/articles/cy498d400pro"
     },
     {
       "id": "1783233224645",
@@ -101,14 +77,6 @@
       "url": "https://3dprintingindustry.com/news/rameshwari-jonnalagedda-builds-3d-printed-terracotta-modules-designed-to-be-colonized-by-nature-252711/"
     },
     {
-      "id": "1783099664548",
-      "title": "The work is already happening. Here’s where to find it.",
-      "domain": "www.theportugalnews.com",
-      "downloaded": "2026-07-03T17:31:16.895287",
-      "article_type": "platform",
-      "url": "https://www.theportugalnews.com/news/2026-07-03/the-work-is-already-happening-heres-where-to-find-it/1049366"
-    },
-    {
       "id": "1783099664547",
       "title": "The work is already happening. Here’s where to find it.",
       "domain": "www.theportugalnews.com",
@@ -117,28 +85,12 @@
       "url": "https://www.theportugalnews.com/news/2026-07-03/the-work-is-already-happening-heres-where-to-find-it/1049366"
     },
     {
-      "id": "1782992437626",
-      "title": "A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats",
-      "domain": "www.bgr.com",
-      "downloaded": "2026-07-02T11:50:34.783468",
-      "article_type": "news",
-      "url": "https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/"
-    },
-    {
       "id": "1782992437625",
       "title": "A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats",
       "domain": "www.bgr.com",
       "downloaded": "2026-07-02T11:50:34.188217",
       "article_type": "",
       "url": "https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/"
-    },
-    {
-      "id": "1782976072574",
-      "title": "Summer’s new normal is a hazard that’s testing Europe’s climate resilience",
-      "domain": "www.downtoearth.org.in",
-      "downloaded": "2026-07-02T07:18:36.195080",
-      "article_type": "news",
-      "url": "https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience"
     },
     {
       "id": "1782976072573",
@@ -165,28 +117,12 @@
       "url": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/"
     },
     {
-      "id": "1782816753002",
-      "title": "‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive",
-      "domain": "www.theguardian.com",
-      "downloaded": "2026-06-30T11:13:04.170218",
-      "article_type": "news",
-      "url": "https://www.theguardian.com/environment/2026/jun/30/suffolk-agroforestry-farm-wakelyns-community-ownership-survive"
-    },
-    {
       "id": "1782816753001",
       "title": "‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive",
       "domain": "www.theguardian.com",
       "downloaded": "2026-06-30T11:02:00.789093",
       "article_type": "",
       "url": "https://www.theguardian.com/environment/2026/jun/30/suffolk-agroforestry-farm-wakelyns-community-ownership-survive"
-    },
-    {
-      "id": "1782658991399",
-      "title": "Pollinator Habitat Turns Unprofitable Acres Into an Asset",
-      "domain": "www.agriculture.com",
-      "downloaded": "2026-06-28T15:10:37.925125",
-      "article_type": "news",
-      "url": "https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222"
     },
     {
       "id": "1782658991398",
@@ -197,14 +133,6 @@
       "url": "https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222"
     },
     {
-      "id": "1782457491385",
-      "title": "Thirsty desert lizards inspire a new water-harvesting system",
-      "domain": "phys.org",
-      "downloaded": "2026-06-26T07:15:29.085927",
-      "article_type": "news",
-      "url": "https://phys.org/news/2026-06-thirsty-lizards-harvesting.html"
-    },
-    {
       "id": "1782457491384",
       "title": "Thirsty desert lizards inspire a new water-harvesting system",
       "domain": "phys.org",
@@ -213,28 +141,12 @@
       "url": "https://phys.org/news/2026-06-thirsty-lizards-harvesting.html"
     },
     {
-      "id": "1782317798682",
-      "title": "Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture",
-      "domain": "www.nature.com",
-      "downloaded": "2026-06-24T16:25:59.812548",
-      "article_type": "study",
-      "url": "https://www.nature.com/articles/s44264-026-00167-4"
-    },
-    {
       "id": "1782317798681",
       "title": "Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture",
       "domain": "www.nature.com",
       "downloaded": "2026-06-24T16:25:51.730010",
       "article_type": "",
       "url": "https://www.nature.com/articles/s44264-026-00167-4"
-    },
-    {
-      "id": "1782317720086",
-      "title": "The case for field stations",
-      "domain": "news.mongabay.com",
-      "downloaded": "2026-06-24T16:25:51.122730",
-      "article_type": "news",
-      "url": "https://news.mongabay.com/2026/06/the-case-for-field-stations/"
     },
     {
       "id": "1782317720085",
