@@ -28,6 +28,7 @@ To live on the land you restore, you need a few systems in place: somewhere to l
 - **Grid connection:** simplest where it exists and is close; a connection fee otherwise.
 - **Solar, sized in tiers:** from a minimal setup for lights and charging up to a full off-grid system with storage. Match panels and battery to daily use.
 - **Hybrid:** solar with a generator or grid backup for dark spells.
+- **Agrivoltaics:** panels sited so the ground beneath still does useful work, such as grazing or a shaded pond, where the layout genuinely earns its keep ([agrivoltaics that do farm work](/evidence#e1783255090320), *news*).
 
 ### Water
 - **Rainwater harvesting and storage:** the off-grid default; needs roof area and tanks. Integrated micro-homes bundle power, water, and storage ([Ecocapsule](/evidence#e1754568715880)).

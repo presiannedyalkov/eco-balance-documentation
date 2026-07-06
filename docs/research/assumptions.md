@@ -15,8 +15,8 @@ Domains where we hold many articles but cite few — places our claims may be un
 - **method/community** — 12 articles, 1 cited.
 - **growth-operations** — 11 articles, 1 cited.
 - **infrastructure** — 11 articles, 0 cited.
-- **risk** — 10 articles, 0 cited.
-- **general** — 8 articles, 0 cited.
+- **risk** — 10 articles, 2 cited.
+- **general** — 8 articles, 1 cited.
 
 ## Articles that may challenge assumptions (100)
 

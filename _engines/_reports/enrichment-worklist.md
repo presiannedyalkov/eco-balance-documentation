@@ -4,13 +4,6 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 
 ### Agrivoltaics Works When Solar Panels Do Farm Work
 
-- **Suggested domain:** `template/infrastructure` (match 2)
-- **Topic:** Agrivoltaics
-- **Summary:** Agrivoltaics involves placing solar panels on farmland to generate electricity while also supporting agricultural activities. The effectiveness of agrivoltaics depends on the specific farm function it serves, such as providing shade, protec
-- **Citation:** `[Agrivoltaics](research/bookmarks/Climate%20Change/1783255090320.md)`
-
-### Agrivoltaics Works When Solar Panels Do Farm Work
-
 - **Suggested domain:** `template/site-and-land` (match 1)
 - **Topic:** Agrivoltaics
 - **Summary:** Agrivoltaics involves placing solar panels on farmland to produce both electricity and crops, but its effectiveness depends on the specific agricultural needs and the type of crops. The systems that provide clear farm value, such as grazing
@@ -34,22 +27,8 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 
 - **Suggested domain:** `template/method/reforestation` (match 1)
 - **Topic:** Tropical Forest Carbon Dynamics
-- **Summary:** A large-scale international study quantifies the carbon losses and gains in tropical forests following various disturbances, showing that degraded forests recover faster than those cleared by deforestation, and that forest fires and selecti
-- **Citation:** `[Tropical Forest Carbon Dynamics](research/bookmarks/Climate%20Change/1783233364306.md)`
-
-### A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests
-
-- **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Tropical Forest Carbon Dynamics
 - **Summary:** The study quantifies the significant carbon losses in tropical forests due to degradation and shows that forests retaining structural integrity recover carbon more quickly than those cleared by deforestation. This research improves carbon m
 - **Citation:** `[Tropical Forest Carbon Dynamics](research/bookmarks/Climate%20Change/1783233364305.md)`
-
-### Scientist dubbed The Bogfather is restoring peatland to fight climate change
-
-- **Suggested domain:** `template/risk` (match 3)
-- **Topic:** Peatland Restoration
-- **Summary:** Dr Peter Jones, known as The Bogfather, has dedicated 30 years to restoring peatland in Wales, which can store significant carbon and mitigate climate change impacts like flooding and wildfires. Despite covering only 4% of the surface, peat
-- **Citation:** `[Peatland Restoration](research/bookmarks/Climate%20Change/1783233224646.md)`
 
 ### Scientist dubbed The Bogfather is restoring peatland to fight climate change
 
@@ -88,13 +67,6 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 
 ### The work is already happening. Here’s where to find it.
 
-- **Suggested domain:** `template/infrastructure` (match 1)
-- **Topic:** Sustainable Living Platform
-- **Summary:** The article introduces a platform called Sustainable Living, which curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the work
-- **Citation:** `[Sustainable Living Platform](research/bookmarks/Climate%20Change/1783099664548.md)`
-
-### The work is already happening. Here’s where to find it.
-
 - **Suggested domain:** `template/foundation` (match 0)
 - **Topic:** Sustainable Initiatives
 - **Summary:** The article introduces Sustainable Living, a platform that curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the existing wor
@@ -103,23 +75,9 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 ### A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats
 
 - **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** Solar Farms
-- **Summary:** A floating solar farm in the Netherlands has created a new underwater ecosystem, attracting over 400 fish and nearly 2,000 invertebrates, and providing shade that conserves water. This project demonstrates that solar farms can benefit local
-- **Citation:** `[Solar Farms](research/bookmarks/Climate%20Change/1782992437626.md)`
-
-### A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats
-
-- **Suggested domain:** `template/method/biodiversity` (match 2)
 - **Topic:** Solar farms
 - **Summary:** A floating solar farm in the Netherlands has created a thriving underwater ecosystem, attracting over 400 fish and nearly 2,000 invertebrates, and providing shade that conserves water. This project demonstrates that solar farms can benefit 
 - **Citation:** `[Solar farms](research/bookmarks/Climate%20Change/1782992437625.md)`
-
-### Summer’s new normal is a hazard that’s testing Europe’s climate resilience
-
-- **Suggested domain:** `template/method/water` (match 1)
-- **Topic:** Heatwaves
-- **Summary:** Europe is experiencing more frequent and severe heatwaves, with temperatures topping 44 degrees Celsius in parts of the continent. This extreme heat is leading to deaths, strain on infrastructure, and highlighting the need for better climat
-- **Citation:** `[Heatwaves](research/bookmarks/Climate%20Change/1782976072574.md)`
 
 ### Summer’s new normal is a hazard that’s testing Europe’s climate resilience
 
@@ -146,13 +104,6 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 
 - **Suggested domain:** `template/method/reforestation` (match 1)
 - **Topic:** Agroforestry
-- **Summary:** Wakelyns, a pioneering agroforestry farm in Suffolk, is seeking community ownership to ensure its survival and continued innovation in sustainable farming practices. The farm, which has become a model for agroforestry, is under threat and r
-- **Citation:** `[Agroforestry](research/bookmarks/Climate%20Change/1782816753002.md)`
-
-### ‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive
-
-- **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Agroforestry
 - **Summary:** Wakelyns, a pioneering agroforestry farm in Suffolk, is under threat and seeks community ownership to secure its future. The farm, a living laboratory for sustainable farming, showcases diverse crops and micro-enterprises that enhance biodi
 - **Citation:** `[Agroforestry](research/bookmarks/Climate%20Change/1782816753001.md)`
 
@@ -160,22 +111,8 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 
 - **Suggested domain:** `template/method/biodiversity` (match 4)
 - **Topic:** Pollinator Habitat
-- **Summary:** An Indiana farmer converted nine unproductive acres into pollinator habitat, improving the field's return while supporting wildlife. The project, through the Conservation Reserve Program, reduced input costs and provided annual payments, de
-- **Citation:** `[Pollinator Habitat](research/bookmarks/Climate%20Change/1782658991399.md)`
-
-### Pollinator Habitat Turns Unprofitable Acres Into an Asset
-
-- **Suggested domain:** `template/method/biodiversity` (match 4)
-- **Topic:** Pollinator Habitat
 - **Summary:** Indiana farmer Brian Scott turned nine unprofitable acres into pollinator habitat, improving the field's return and creating space for wildlife. The project, supported by the Conservation Reserve Program, reduced input costs and provided an
 - **Citation:** `[Pollinator Habitat](research/bookmarks/Climate%20Change/1782658991398.md)`
-
-### Thirsty desert lizards inspire a new water-harvesting system
-
-- **Suggested domain:** `template/method/water` (match 2)
-- **Topic:** Water Harvesting
-- **Summary:** Scientists have discovered how desert horned lizards efficiently extract water from their skin using capillary action and asymmetric jaw movements. This inspired the development of a water-harvesting system that can collect and clean water 
-- **Citation:** `[Water Harvesting](research/bookmarks/Climate%20Change/1782457491385.md)`
 
 ### Thirsty desert lizards inspire a new water-harvesting system
 
@@ -188,22 +125,8 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 
 - **Suggested domain:** `template/method/water` (match 3)
 - **Topic:** Irrigation Systems
-- **Summary:** This study found that integrating circular buffer strips of native perennial grasses within center pivot irrigation systems significantly improved rainwater conservation and maize growth, leading to increased biomass water productivity.
-- **Citation:** `[Irrigation Systems](research/bookmarks/Climate%20Change/1782317798682.md)`
-
-### Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture
-
-- **Suggested domain:** `template/method/water` (match 3)
-- **Topic:** Irrigation Systems
 - **Summary:** This study found that integrating circular buffer strips of native perennial grasses within center pivot irrigation systems significantly improved rainwater conservation and maize growth, reducing water stress and increasing biomass water p
 - **Citation:** `[Irrigation Systems](research/bookmarks/Climate%20Change/1782317798681.md)`
-
-### The case for field stations
-
-- **Suggested domain:** `template/indicators` (match 2)
-- **Topic:** Conservation Stations
-- **Summary:** A new BioScience paper argues that tropical field stations are crucial for turning global conservation commitments into local action by providing long-term monitoring, training, and local employment. These stations are essential for validat
-- **Citation:** `[Conservation Stations](research/bookmarks/Climate%20Change/1782317720086.md)`
 
 ### The case for field stations
 
@@ -211,4 +134,81 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Topic:** field stations
 - **Summary:** A new BioScience paper argues that tropical field stations are crucial for turning global conservation commitments into local action by providing long-term monitoring, training, and local employment. These stations are essential for validat
 - **Citation:** `[field stations](research/bookmarks/Climate%20Change/1782317720085.md)`
+
+### The Ecological Intelligence of Sacred Landscapes
+
+- **Suggested domain:** `template/method/water` (match 1)
+- **Topic:** Sacred Landscapes
+- **Summary:** The article highlights how sacred landscapes in India and the SWANA region have long integrated ecological practices through religious and cultural traditions, such as temple tanks and sacred groves, which continue to provide environmental 
+- **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661868.md)`
+
+### The Ecological Intelligence of Sacred Landscapes
+
+- **Suggested domain:** `template/method/water` (match 1)
+- **Topic:** Sacred Landscapes
+- **Summary:** The article highlights how sacred landscapes in India and the SWANA region have long integrated ecological practices through religious and cultural traditions, such as temple tanks and sacred groves, which continue to provide environmental 
+- **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661867.md)`
+
+### REGENERATING THE BIOREGIONAL COMMONS
+
+- **Suggested domain:** `template/method/biodiversity` (match 1)
+- **Topic:** Bioregional Approach
+- **Summary:** The article argues that the current approach to addressing climate change, biodiversity loss, and other environmental issues is fragmented and fails to recognize the interconnectedness of these challenges. It proposes a bioregional approach
+- **Citation:** `[Bioregional Approach](research/bookmarks/Climate%20Change/1782154194931.md)`
+
+### REGENERATING THE BIOREGIONAL COMMONS
+
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Bioregional Commons
+- **Summary:** The article argues that the current approach to addressing climate, biodiversity, food, and finance issues is flawed due to a fragmented and technical perspective, which fails to recognize the interconnectedness of these challenges. It prop
+- **Citation:** `[Bioregional Commons](research/bookmarks/Climate%20Change/1782154194930.md)`
+
+### 'Everything has its own order and purpose': The rainforest 'farms' defying modern agriculture
+
+- **Suggested domain:** `template/method/reforestation` (match 1)
+- **Topic:** Indigenous Agriculture
+- **Summary:** Chagras are ancient indigenous farming systems in the Amazon that produce food without pesticides and return plots to the rainforest after five years. These systems are deeply integrated with the forest's ecological cycles and support biodi
+- **Citation:** `[Indigenous Agriculture](research/bookmarks/Climate%20Change/1781795484680.md)`
+
+### 150 Years Ago, a Super El Niño Killed 50 Million People. The Next One Is Right Around the Corner.
+
+- **Suggested domain:** `template/foundation` (match 1)
+- **Topic:** Climate Events
+- **Summary:** In 1876-78, a super El Niño event caused a global famine that led to the deaths of an estimated 50 million people. Recent research suggests that similar conditions could occur again due to climate change, highlighting the need for better pr
+- **Citation:** `[Climate Events](research/bookmarks/Climate%20Change/1781795186142.md)`
+
+### A bonanza for fans of the natural world: the digital library sharing 64m pages of scientific knowledge with everyone
+
+- **Suggested domain:** `template/method/biodiversity` (match 1)
+- **Topic:** Biodiversity Heritage Library
+- **Summary:** The Biodiversity Heritage Library (BHL) has made over 64 million pages of scientific knowledge freely available online, significantly enhancing access to historical biodiversity literature and aiding in climate and biodiversity crisis resea
+- **Citation:** `[Biodiversity Heritage Library](research/bookmarks/Climate%20Change/1781769407957.md)`
+
+### How directing water flows in the landscape could support groundwater and surface water streams
+
+- **Suggested domain:** `template/method/water` (match 2)
+- **Topic:** Water Management
+- **Summary:** Researchers at the Leibniz Centre for Agricultural Landscape Research demonstrated that redirecting excess stream water into small natural basins can significantly increase groundwater levels and stabilize surface water streams, particularl
+- **Citation:** `[Water Management](research/bookmarks/Climate%20Change/1781523122870.md)`
+
+### What happens when the world’s breadbaskets start failing simultaneously?
+
+- **Suggested domain:** `template/risk` (match 1)
+- **Topic:** Food System Resilience
+- **Summary:** The article discusses how climate change is increasing the likelihood of simultaneous crop failures in key agricultural regions, which could lead to global food system instability and higher food prices. It highlights the interconnected nat
+- **Citation:** `[Food System Resilience](research/bookmarks/Climate%20Change/1781167169857.md)`
+
+### Priority questions for the next decade of blue carbon science - Nature Ecology & Evolution
+
+- **Suggested domain:** `template/method/community` (match 1)
+- **Topic:** Blue Carbon Ecosystems
+- **Summary:** The article identifies key research priorities for blue carbon ecosystems, emphasizing the need to manage these ecosystems sustainably while supporting coastal communities and integrating traditional ecological knowledge. It highlights the 
+- **Citation:** `[Blue Carbon Ecosystems](research/bookmarks/Climate%20Change/1780866621182.md)`
+
+### Greater trophic diversity of soil animal communities under agricultural land use and tropical climate - Nature Ecology & Evolution
+
+- **Suggested domain:** `template/method/soil` (match 2)
+- **Topic:** Soil Animal Trophic Diversity
+- **Summary:** The study found that trophic diversity of soil animal communities is higher in agricultural ecosystems and tropical climates, with microbial feeders showing the highest diversity. This diversity is linked to more diverse basal resources and
+- **Citation:** `[Soil Animal Trophic Diversity](research/bookmarks/Climate%20Change/1780865618072.md)`
 
