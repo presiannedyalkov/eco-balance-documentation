@@ -160,6 +160,7 @@ const config = {
           { to: '/our-case/status', label: 'Status', position: 'left' },
           { to: '/evidence', label: 'Evidence', position: 'left' },
           { to: '/explorer', label: 'Explorer', position: 'left' },
+          { to: '/health', label: 'Health', position: 'left' },
           {
             type: 'html',
             position: 'right',
@@ -194,6 +195,7 @@ const config = {
           {
             title: 'More',
             items: [
+              { label: 'System health', to: '/health' },
               { label: 'GitHub', href: 'https://github.com/presiannedyalkov/eco-balance-documentation' },
             ],
           },

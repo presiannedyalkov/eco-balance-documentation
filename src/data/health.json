@@ -1,0 +1,193 @@
+{
+  "generated": "2026-07-08T10:56",
+  "overall": 52,
+  "overall_grade": "D",
+  "domains": [
+    {
+      "name": "engagement",
+      "domain_id": "D10",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 1,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 35,
+      "grade": "F"
+    },
+    {
+      "name": "growth-operations",
+      "domain_id": "D9",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 1,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 35,
+      "grade": "F"
+    },
+    {
+      "name": "indicators",
+      "domain_id": "D10",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 2,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 35,
+      "grade": "F"
+    },
+    {
+      "name": "learning",
+      "domain_id": "D10",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 2,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 35,
+      "grade": "F"
+    },
+    {
+      "name": "risk",
+      "domain_id": "D10",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 2,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 35,
+      "grade": "F"
+    },
+    {
+      "name": "economics",
+      "domain_id": "D8",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 5,
+      "voiceHits": 0,
+      "docs": 3,
+      "health": 48,
+      "grade": "D"
+    },
+    {
+      "name": "foundation",
+      "domain_id": "D0",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 4,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 48,
+      "grade": "D"
+    },
+    {
+      "name": "infrastructure",
+      "domain_id": "D4",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 4,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 48,
+      "grade": "D"
+    },
+    {
+      "name": "method",
+      "domain_id": "D2",
+      "covered": false,
+      "deferred": false,
+      "decisions": [],
+      "citations": 29,
+      "voiceHits": 0,
+      "docs": 6,
+      "health": 60,
+      "grade": "C"
+    },
+    {
+      "name": "organization",
+      "domain_id": "D5",
+      "covered": true,
+      "deferred": true,
+      "decisions": [
+        "0002-legal-form"
+      ],
+      "citations": 0,
+      "voiceHits": 0,
+      "docs": 4,
+      "health": 60,
+      "grade": "C"
+    },
+    {
+      "name": "funding",
+      "domain_id": "D7",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0004-funding-approach"
+      ],
+      "citations": 1,
+      "voiceHits": 0,
+      "docs": 2,
+      "health": 75,
+      "grade": "B"
+    },
+    {
+      "name": "stewardship-handoff",
+      "domain_id": "D6",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0003-handoff-vehicle"
+      ],
+      "citations": 2,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 75,
+      "grade": "B"
+    },
+    {
+      "name": "site-and-land",
+      "domain_id": "D3",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0001-candidate-countries"
+      ],
+      "citations": 3,
+      "voiceHits": 0,
+      "docs": 2,
+      "health": 88,
+      "grade": "A"
+    }
+  ],
+  "issues": {
+    "domain_id_collisions": [
+      "D10 used by: engagement, indicators, learning, risk"
+    ],
+    "orphan_decisions": [],
+    "off_convention_decision_status": [
+      "0002-legal-form: \"deferred\"",
+      "0003-handoff-vehicle: \"open\""
+    ],
+    "parameter_gaps": [],
+    "uncovered_domains": [
+      "engagement",
+      "growth-operations",
+      "indicators",
+      "learning",
+      "risk",
+      "economics",
+      "foundation",
+      "infrastructure",
+      "method"
+    ]
+  }
+}
