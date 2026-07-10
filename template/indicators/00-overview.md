@@ -1,6 +1,6 @@
 ---
 title: Measuring progress
-domain: D10
+domain: D11
 status: draft
 parameters: []
 related: [../method/00-overview, ../method/biodiversity, ../learning/00-overview]

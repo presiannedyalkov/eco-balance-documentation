@@ -1,116 +1,8 @@
 {
-  "generated": "2026-07-08T10:56",
-  "overall": 52,
-  "overall_grade": "D",
+  "generated": "2026-07-10T12:10",
+  "overall": 80,
+  "overall_grade": "B",
   "domains": [
-    {
-      "name": "engagement",
-      "domain_id": "D10",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 1,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 35,
-      "grade": "F"
-    },
-    {
-      "name": "growth-operations",
-      "domain_id": "D9",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 1,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 35,
-      "grade": "F"
-    },
-    {
-      "name": "indicators",
-      "domain_id": "D10",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 2,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 35,
-      "grade": "F"
-    },
-    {
-      "name": "learning",
-      "domain_id": "D10",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 2,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 35,
-      "grade": "F"
-    },
-    {
-      "name": "risk",
-      "domain_id": "D10",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 2,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 35,
-      "grade": "F"
-    },
-    {
-      "name": "economics",
-      "domain_id": "D8",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 5,
-      "voiceHits": 0,
-      "docs": 3,
-      "health": 48,
-      "grade": "D"
-    },
-    {
-      "name": "foundation",
-      "domain_id": "D0",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 4,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 48,
-      "grade": "D"
-    },
-    {
-      "name": "infrastructure",
-      "domain_id": "D4",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 4,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 48,
-      "grade": "D"
-    },
-    {
-      "name": "method",
-      "domain_id": "D2",
-      "covered": false,
-      "deferred": false,
-      "decisions": [],
-      "citations": 29,
-      "voiceHits": 0,
-      "docs": 6,
-      "health": 60,
-      "grade": "C"
-    },
     {
       "name": "organization",
       "domain_id": "D5",
@@ -126,6 +18,20 @@
       "grade": "C"
     },
     {
+      "name": "engagement",
+      "domain_id": "D12",
+      "covered": true,
+      "deferred": true,
+      "decisions": [
+        "0013-engagement"
+      ],
+      "citations": 1,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 75,
+      "grade": "B"
+    },
+    {
       "name": "funding",
       "domain_id": "D7",
       "covered": true,
@@ -136,6 +42,62 @@
       "citations": 1,
       "voiceHits": 0,
       "docs": 2,
+      "health": 75,
+      "grade": "B"
+    },
+    {
+      "name": "growth-operations",
+      "domain_id": "D9",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0009-growth-approach"
+      ],
+      "citations": 1,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 75,
+      "grade": "B"
+    },
+    {
+      "name": "indicators",
+      "domain_id": "D11",
+      "covered": true,
+      "deferred": true,
+      "decisions": [
+        "0011-indicators"
+      ],
+      "citations": 2,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 75,
+      "grade": "B"
+    },
+    {
+      "name": "learning",
+      "domain_id": "D13",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0007-scientific-learning"
+      ],
+      "citations": 2,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 75,
+      "grade": "B"
+    },
+    {
+      "name": "risk",
+      "domain_id": "D10",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0010-risk-posture"
+      ],
+      "citations": 2,
+      "voiceHits": 0,
+      "docs": 1,
       "health": 75,
       "grade": "B"
     },
@@ -154,6 +116,48 @@
       "grade": "B"
     },
     {
+      "name": "economics",
+      "domain_id": "D8",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0008-economics-base-case"
+      ],
+      "citations": 5,
+      "voiceHits": 0,
+      "docs": 3,
+      "health": 88,
+      "grade": "A"
+    },
+    {
+      "name": "foundation",
+      "domain_id": "D1",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0005-foundation-commitment"
+      ],
+      "citations": 4,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 88,
+      "grade": "A"
+    },
+    {
+      "name": "infrastructure",
+      "domain_id": "D4",
+      "covered": true,
+      "deferred": true,
+      "decisions": [
+        "0012-infrastructure"
+      ],
+      "citations": 4,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 88,
+      "grade": "A"
+    },
+    {
       "name": "site-and-land",
       "domain_id": "D3",
       "covered": true,
@@ -166,28 +170,27 @@
       "docs": 2,
       "health": 88,
       "grade": "A"
+    },
+    {
+      "name": "method",
+      "domain_id": "D2",
+      "covered": true,
+      "deferred": false,
+      "decisions": [
+        "0006-restoration-method"
+      ],
+      "citations": 29,
+      "voiceHits": 0,
+      "docs": 6,
+      "health": 100,
+      "grade": "A"
     }
   ],
   "issues": {
-    "domain_id_collisions": [
-      "D10 used by: engagement, indicators, learning, risk"
-    ],
+    "domain_id_collisions": [],
     "orphan_decisions": [],
-    "off_convention_decision_status": [
-      "0002-legal-form: \"deferred\"",
-      "0003-handoff-vehicle: \"open\""
-    ],
+    "off_convention_decision_status": [],
     "parameter_gaps": [],
-    "uncovered_domains": [
-      "engagement",
-      "growth-operations",
-      "indicators",
-      "learning",
-      "risk",
-      "economics",
-      "foundation",
-      "infrastructure",
-      "method"
-    ]
+    "uncovered_domains": []
   }
 }

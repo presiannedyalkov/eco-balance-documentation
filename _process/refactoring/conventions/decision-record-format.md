@@ -20,7 +20,7 @@ Decision records live in `case/decisions/` (`NNNN-slug.md`). They capture **what
 ---
 id: NNNN-slug
 domain: <D0…D10>
-status: proposed | decided | revisit
+status: proposed | decided | revisit | deferred
 date: <YYYY-MM-DD>
 supersedes: <id or none>
 evidence: [<entry_id>, …]

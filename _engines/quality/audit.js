@@ -20,7 +20,7 @@ const VOICE = ['delve', 'seamless', 'robust', 'leverage', 'foster', 'harness',
   'unlock', 'empower', 'embark', 'vibrant', 'tapestry', 'realm', 'testament',
   'utilize', 'groundbreaking', 'transformative', 'game-changing', 'cutting-edge',
   'furthermore', 'moreover', 'it is worth noting', 'it is important to note'];
-const DECISION_STATUSES = ['proposed', 'decided', 'revisit'];
+const DECISION_STATUSES = ['proposed', 'decided', 'revisit', 'deferred'];
 const PARAM_KEYS = ['id', 'kind', 'country', 'climate_zone', 'rainfall_mm', 'seasons',
   'hazards', 'target_ecosystem', 'native_palette', 'plausible_hectares',
   'land_cost_band_eur_per_ha', 'planting_window', 'legal_options',
