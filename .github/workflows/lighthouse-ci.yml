@@ -5,17 +5,9 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/**'
-      - 'strategic/**'
-      - 'website/**'
-      - 'docusaurus.config.js'
-  pull_request:
-    branches:
-      - main
+  # Perf/accessibility audit — weekly + manual, not a full build on every push/PR.
+  schedule:
+    - cron: '0 4 * * 1'
   workflow_dispatch:
 
 jobs:

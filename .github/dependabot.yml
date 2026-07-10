@@ -1,37 +1,20 @@
 version: 2
 updates:
-  # Enable version updates for npm
+  # npm: one grouped PR a week for all non-major updates; review majors by hand.
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
-      time: "09:00"
     open-pull-requests-limit: 3
-    reviewers:
-      - "presiannedyalkov"
-    labels:
-      - "dependencies"
-      - "automated"
+    labels: ["dependencies", "automated"]
     commit-message:
       prefix: "chore"
       include: "scope"
-    # Group updates to reduce PR noise
     groups:
-      docusaurus:
-        patterns:
-          - "@docusaurus/*"
-      playwright:
-        patterns:
-          - "@playwright/*"
-          - "playwright"
-      react:
-        patterns:
-          - "react"
-          - "react-dom"
-      other:
-        dependency-type: "development"
-    # Ignore major version updates (review manually)
+      npm-minor-patch:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
     ignore:
       - dependency-name: "@docusaurus/*"
         update-types: ["version-update:semver-major"]
@@ -40,20 +23,17 @@ updates:
       - dependency-name: "react-dom"
         update-types: ["version-update:semver-major"]
 
-  # Enable version updates for GitHub Actions
+  # GitHub Actions: one grouped PR a month.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
       day: "monday"
-      time: "09:00"
     open-pull-requests-limit: 3
-    reviewers:
-      - "presiannedyalkov"
-    labels:
-      - "github-actions"
-      - "automated"
+    labels: ["github-actions", "automated"]
     commit-message:
       prefix: "ci"
       include: "scope"
-
+    groups:
+      github-actions:
+        patterns: ["*"]
