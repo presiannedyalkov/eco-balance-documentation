@@ -5,12 +5,8 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # Security scan for a small JS surface — weekly is plenty, not every push/PR.
   schedule:
-    # Run weekly on Monday at 2 AM UTC
     - cron: '0 2 * * 1'
   workflow_dispatch:
 

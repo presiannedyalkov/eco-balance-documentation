@@ -12,15 +12,6 @@ on:
           - both
           - epub
           - pdf
-  push:
-    branches:
-      - main
-    paths:
-      - 'strategic/**'
-      - 'docs/**'
-      - 'README.md'
-      - 'CONTRIBUTING.md'
-      - 'VERSION'
 
 jobs:
   export:
