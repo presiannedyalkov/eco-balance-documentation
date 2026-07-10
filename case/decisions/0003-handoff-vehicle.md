@@ -1,7 +1,7 @@
 ---
 id: 0003-handoff-vehicle
 domain: D6
-status: open
+status: proposed
 date: 2026-06-22
 supersedes: none
 evidence: []

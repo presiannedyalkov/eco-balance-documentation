@@ -1,6 +1,6 @@
 ---
 title: Learning
-domain: D10
+domain: D13
 status: draft
 parameters: []
 related: [../method/00-overview, ../indicators/00-overview]
