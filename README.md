@@ -16,7 +16,7 @@
 
 ### 🔒 Security Alerts Status
 
-**Last Updated:** 2026-07-09
+**Last Updated:** 2026-07-10
 
 **CodeQL Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)):
 
@@ -24,8 +24,8 @@
 - ✅ **High:** 0
 - ✅ **Medium:** 0
 - ✅ **Low:** 0
-- ✅ **Note:** 0
-- **Total Open:** 0
+- 🟡 **Note:** 1
+- **Total Open:** 1
 
 
 **Dependabot Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)):
