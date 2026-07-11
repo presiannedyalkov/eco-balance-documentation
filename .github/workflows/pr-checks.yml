@@ -7,6 +7,20 @@ name: PR checks
 on:
   pull_request:
     branches: [main]
+    # Only run when files that affect the build or quality actually change,
+    # so mechanical submodule-bump PRs don't sit on an "Action required" gate.
+    paths:
+      - 'template/**'
+      - 'case/**'
+      - 'parameters/**'
+      - 'docs/**'
+      - 'src/**'
+      - '_engines/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
   workflow_dispatch:
 
 concurrency:

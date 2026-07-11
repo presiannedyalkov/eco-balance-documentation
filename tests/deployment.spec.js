@@ -27,7 +27,7 @@ test.describe('Deployment Verification', () => {
   test('homepage loads successfully', async ({ page }) => {
     // Use full URL to ensure correct path
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    const response = await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    const response = await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Allow redirects (GitHub Pages might redirect)
     const finalUrl = page.url();
@@ -35,7 +35,7 @@ test.describe('Deployment Verification', () => {
     
     // Wait for final page to load if redirected
     if (response?.status() === 301 || response?.status() === 302) {
-      await page.waitForLoadState('networkidle', { timeout: 30000 });
+      await page.waitForLoadState('domcontentloaded', { timeout: 30000 });
     }
     
     // Verify we're on the correct domain (either custom domain or GitHub Pages)
@@ -52,7 +52,7 @@ test.describe('Deployment Verification', () => {
 
   test('navigation works', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Verify we're on the correct page (custom domain or GitHub Pages)
     const currentUrl = page.url();
@@ -103,12 +103,12 @@ test.describe('Deployment Verification', () => {
           ? BASE_URL + fullPath.substring(1) 
           : BASE_URL + fullPath;
         
-        const response = await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+        const response = await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
         
         // Allow redirects
         const status = response?.status() || 0;
         if (status === 301 || status === 302) {
-          await page.waitForLoadState('networkidle', { timeout: 30000 });
+          await page.waitForLoadState('domcontentloaded', { timeout: 30000 });
         }
         
         // Verify final URL contains the correct path (custom domain or GitHub Pages)
@@ -184,7 +184,7 @@ test.describe('Deployment Verification', () => {
         : BASE_URL + testPath;
       
       try {
-        await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+        await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
         
         // Look for "Back to Project Hub" or similar navigation links
         const backLinks = page.locator('a').filter({ hasText: /back to|project hub/i });
@@ -201,14 +201,14 @@ test.describe('Deployment Verification', () => {
             // Try clicking it to see if it works
             try {
               await firstBackLink.click({ timeout: 5000 });
-              await page.waitForLoadState('networkidle', { timeout: 10000 });
+              await page.waitForLoadState('domcontentloaded', { timeout: 10000 });
               const newUrl = page.url();
               // Use the validation helper to check if URL is valid (supports both custom domain and GitHub Pages)
               if (!isValidDeploymentUrl(newUrl) || newUrl.includes('404')) {
                 brokenLinks.push(`${testPath}: "Back to Project Hub" link leads to invalid page`);
               }
               // Go back to test page for next iteration
-              await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+              await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
             } catch (error) {
               brokenLinks.push(`${testPath}: "Back to Project Hub" link click failed: ${error.message}`);
             }
@@ -243,7 +243,7 @@ test.describe('Deployment Verification', () => {
         : BASE_URL + testPath;
       
       try {
-        await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+        await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
         
         // Get page HTML content
         const html = await page.content();
@@ -278,7 +278,7 @@ test.describe('Deployment Verification', () => {
 
   test('internal links work (legacy test)', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Verify we're on the correct page first
     const initialUrl = page.url();
@@ -326,7 +326,7 @@ test.describe('Deployment Verification', () => {
         const link = allLinks.nth(index);
         
         await link.click({ timeout: 10000 });
-        await page.waitForLoadState('networkidle', { timeout: 15000 });
+        await page.waitForLoadState('domcontentloaded', { timeout: 15000 });
         
         // Check page loaded and stayed on correct domain
         const afterUrl = page.url();
@@ -365,7 +365,7 @@ test.describe('Deployment Verification', () => {
         }
         
         // Go back
-        await page.goBack({ waitUntil: 'networkidle', timeout: 15000 });
+        await page.goBack({ waitUntil: 'domcontentloaded', timeout: 15000 });
       } catch (error) {
         // Sanitize error message and href to prevent log injection
         const rawMessage = String(error?.message || 'Unknown error');
@@ -389,7 +389,7 @@ test.describe('Deployment Verification', () => {
 
   test('search functionality is accessible', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Verify we're on the correct page
     expect(isValidDeploymentUrl(page.url())).toBeTruthy();
@@ -412,7 +412,7 @@ test.describe('Deployment Verification', () => {
     await page.setViewportSize({ width: 375, height: 667 });
     
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Verify we're on the correct page
     expect(isValidDeploymentUrl(page.url())).toBeTruthy();
@@ -439,7 +439,7 @@ test.describe('Deployment Verification', () => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
     
     // Flow 1: Navigate from homepage to a key document
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Try to find and click the Vision link
@@ -448,30 +448,30 @@ test.describe('Deployment Verification', () => {
 
     if (linkExists) {
       await visionLink.click({ timeout: 10000 });
-      await page.waitForLoadState('networkidle', { timeout: 15000 });
+      await page.waitForLoadState('domcontentloaded', { timeout: 15000 });
       const url = page.url();
       expect(url).toMatch(/our-case\/vision|eco-balance-documentation/);
     } else {
       // If link not found, just verify we can navigate directly
       const visionUrl = BASE_URL + '/our-case/vision';
-      await page.goto(visionUrl, { waitUntil: 'networkidle', timeout: 30000 });
+      await page.goto(visionUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
       const url = page.url();
       expect(url).toMatch(/our-case\/vision|eco-balance-documentation/);
     }
 
     // Flow 2: Navigate to research / model section
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     const researchLink = page.locator('a[href*="research"], a[href*="model"]').first();
     if (await researchLink.count() > 0) {
       await researchLink.click({ timeout: 10000 });
-      await page.waitForLoadState('networkidle', { timeout: 15000 });
+      await page.waitForLoadState('domcontentloaded', { timeout: 15000 });
       expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     }
   });
 
   test('no broken images', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Wait a bit more for images to load
@@ -504,7 +504,7 @@ test.describe('Deployment Verification', () => {
 
   test('footer links work', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Scroll to footer
@@ -527,7 +527,7 @@ test.describe('Deployment Verification', () => {
         if (href && href.startsWith('/') && !href.startsWith('#')) {
           try {
             await firstLink.click({ timeout: 10000 });
-            await page.waitForLoadState('networkidle', { timeout: 15000 });
+            await page.waitForLoadState('domcontentloaded', { timeout: 15000 });
             expect(isValidDeploymentUrl(page.url())).toBeTruthy();
           } catch (error) {
             // Sanitize error message and href to prevent log injection
@@ -549,7 +549,7 @@ test.describe('Deployment Verification', () => {
 
   test('Docusaurus baseUrl is correctly configured', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     expect(isValidDeploymentUrl(page.url())).toBeTruthy();
     
     // Wait for Docusaurus to initialize
@@ -605,7 +605,7 @@ test.describe('Deployment Verification', () => {
     });
     
     // Re-navigate to trigger any initialization errors
-    await page.reload({ waitUntil: 'networkidle', timeout: 30000 });
+    await page.reload({ waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2000);
     
     // Check for critical JavaScript errors that would prevent Docusaurus from working
