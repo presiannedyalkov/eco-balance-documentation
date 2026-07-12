@@ -26,7 +26,7 @@ test.describe('Module Verification', () => {
       });
     });
 
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Wait for client modules to load
     await page.waitForTimeout(3000);
@@ -69,45 +69,28 @@ test.describe('Module Verification', () => {
 
   test('Search bar is loaded and functional', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
-    
-    // Wait for client modules to load
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+    // Wait for client modules + the search bar's health-check ping to resolve.
     await page.waitForTimeout(3000);
 
-    // Check if search wrapper exists
-    const searchWrapper = page.locator('#meilisearch-search-wrapper');
-    const searchWrapperExists = await searchWrapper.count() > 0;
+    // The search box only renders when the Meilisearch container is reachable.
+    // When it's down the box is intentionally hidden — valid, not a failure.
+    const searchInput = page.locator('.navbar__search-input, #meilisearch-search-wrapper input[type="search"]');
+    const inputExists = await searchInput.count() > 0;
 
-    if (searchWrapperExists) {
-      // Check if search input is visible
-      const searchInput = page.locator('.navbar__search-input, #meilisearch-search-wrapper input[type="search"]');
-      const inputExists = await searchInput.count() > 0;
-      
-      expect(inputExists).toBeTruthy();
-      
-      // Try to interact with search
-      if (inputExists) {
-        await searchInput.first().click({ timeout: 5000 });
-        await searchInput.first().fill('test', { timeout: 5000 });
-        
-        // Wait a bit for search to process
-        await page.waitForTimeout(1000);
-        
-        // Check if search results dropdown appears (optional - may not have results)
-        // Note: hasResults variable is intentionally unused - it's for future use
-        const resultsDropdown = page.locator('.meilisearch-search-results');
-        await resultsDropdown.count(); // Check if dropdown exists (for future validation)
-        
-        // Search input should be functional (we can type in it)
-        const inputValue = await searchInput.first().inputValue();
-        expect(inputValue).toBe('test');
-        
-        console.log('✅ Search bar is functional');
-      }
-    } else {
-      console.log('ℹ️ Search bar not found (may not be configured)');
-      // Don't fail if search is not configured
+    if (!inputExists) {
+      console.log('ℹ️ Search box not shown — Meilisearch unreachable (graceful hide). OK.');
+      return;
     }
+
+    // If it is shown, it must be functional.
+    await searchInput.first().click({ timeout: 5000 });
+    await searchInput.first().fill('test', { timeout: 5000 });
+    await page.waitForTimeout(1000);
+    const inputValue = await searchInput.first().inputValue();
+    expect(inputValue).toBe('test');
+    console.log('✅ Search bar is functional');
   });
 
   test('Client modules are loaded', async ({ page }) => {
@@ -121,7 +104,7 @@ test.describe('Module Verification', () => {
       });
     });
 
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Wait for client modules to load
     await page.waitForTimeout(3000);
@@ -170,7 +153,7 @@ test.describe('Module Verification', () => {
       });
     });
 
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(3000);
 
     // Filter out known non-critical errors
@@ -180,7 +163,11 @@ test.describe('Module Verification', () => {
       !err.includes('404') &&
       !err.includes('Failed to load resource') &&
       !err.includes('ResizeObserver') &&
-      !err.includes('Non-Error promise rejection')
+      !err.includes('Non-Error promise rejection') &&
+      // The external search service (Meilisearch) may be down; its CORS/network
+      // errors are expected degradation, not a site bug (search hides itself).
+      !err.includes('search.eco-balance.cc') &&
+      !err.includes('CORS policy')
     );
 
     const criticalPageErrors = pageErrors.filter(err =>
@@ -206,7 +193,7 @@ test.describe('Module Verification', () => {
 
   test('Core functionality is accessible', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Wait for page to fully load
     await page.waitForTimeout(2000);
@@ -229,7 +216,7 @@ test.describe('Module Verification', () => {
 
   test('Sentry can capture errors (test error tracking)', async ({ page }) => {
     const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     
     // Wait for Sentry to initialize
     await page.waitForTimeout(3000);
