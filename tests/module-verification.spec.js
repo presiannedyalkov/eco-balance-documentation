@@ -163,7 +163,11 @@ test.describe('Module Verification', () => {
       !err.includes('404') &&
       !err.includes('Failed to load resource') &&
       !err.includes('ResizeObserver') &&
-      !err.includes('Non-Error promise rejection')
+      !err.includes('Non-Error promise rejection') &&
+      // The external search service (Meilisearch) may be down; its CORS/network
+      // errors are expected degradation, not a site bug (search hides itself).
+      !err.includes('search.eco-balance.cc') &&
+      !err.includes('CORS policy')
     );
 
     const criticalPageErrors = pageErrors.filter(err =>
