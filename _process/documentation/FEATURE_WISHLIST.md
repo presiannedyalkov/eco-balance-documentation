@@ -2,7 +2,20 @@
 
 **Purpose:** Track desired features and enhancements without concrete timelines
 **Status:** Living document - priorities may shift based on project needs
-**Last Updated:** 2025.11 (2025.11.13 19:12)
+**Last Updated:** 2026.07 (search + AI chat + Cloudflare Access shipped)
+
+---
+
+## ✅ Recently Shipped (2026.07)
+
+Several items previously listed below as "Future / Phase 3" are now live (see `projects/eco-balance-mcp/DEPLOY.md` for the architecture):
+
+- **AI chat assistant over the docs** — a floating "Ask the docs" widget backed by a self-hosted RAG service (`eco-balance-mcp`: hybrid Qdrant + Meilisearch retrieval + rerank + an agentic, source-cited answer), plus highlight-to-quote. Supersedes the "AI chatbot widget for Q&A" Phase 3 enhancement.
+- **Docs search** — hybrid semantic + keyword search through the same service (`/api/v1/search`), replacing the old Meilisearch-direct search.
+- **Community authentication (SSO)** — search + chat sit behind Cloudflare Access (One-time PIN + GitHub login) on a single host, so one sign-in covers both. Supersedes the "Community authentication (SSO)" Phase 3 enhancement.
+- **Self-hosted backend + CI** — `eco-balance-mcp` is its own repo, builds its image on Gitea Actions, and indexes the docs on a schedule.
+
+Still open in the interactive layer: **inline commenting / feedback + moderation** (see Interactive Community Platform below).
 
 ---
 
@@ -405,12 +418,15 @@ These personas are tools to help real people in these roles. AI can assist with 
 ## 🌐 Platform & Community
 
 ### Interactive Community Platform
-**Status:** Planned
+**Status:** In Progress — chatbot ✅ + auth ✅ done; commenting/moderation remaining
 **Priority:** High (Phase 3)
 **Related:** PUBLIC_PLATFORM_PLAN.md
 
 **Description:**
 Full implementation of the public platform with AI chatbot, inline commenting, community feedback system, and moderation pipeline as detailed in the Public Platform Plan.
+
+**Done:** AI chatbot (RAG "Ask the docs" widget) and community authentication (Cloudflare Access: OTP + GitHub) — see Recently Shipped above.
+**Remaining:** inline commenting / feedback capture + a moderation pipeline.
 
 **See:** `_process/planning/PUBLIC_PLATFORM_PLAN.md` for complete specification
 
