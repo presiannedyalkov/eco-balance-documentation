@@ -1,13 +1,17 @@
 /**
  * Meilisearch search bar for Docusaurus.
  *
- * Pings the Meilisearch container once on mount. If it is unreachable (or not
- * configured) the search box is hidden entirely — rather than rendering a
- * broken input and spamming the console. When healthy, it offers a debounced
- * search over the index with a "/" focus shortcut.
+ * The search service is gated behind Cloudflare Access. On mount we probe it
+ * and pick one of three states:
+ *   - ready   : reachable + authenticated  -> show the search box
+ *   - signin  : Access redirect / 401 / 403 -> show a "Sign in to search" link
+ *               (opens the Access login; search appears after signing in)
+ *   - hidden  : unreachable (container down / unconfigured) -> render nothing
+ * We re-probe when the tab regains focus, so signing in another tab upgrades
+ * signin -> ready without a manual reload. No console noise on failure.
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function getEnvVar(name, fallback) {
@@ -18,32 +22,55 @@ function getEnvVar(name, fallback) {
 
 const HOST = getEnvVar('MEILISEARCH_HOST', 'https://search.eco-balance.cc');
 const KEY = getEnvVar('MEILISEARCH_SEARCH_KEY', 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489');
+const LOGIN_URL = getEnvVar('MEILISEARCH_LOGIN_URL', HOST);
 const INDEX = 'eco-balance-docs';
 
 export default function MeilisearchSearchBar() {
-  const [healthy, setHealthy] = useState(null); // null = checking, false = down/off, true = up
+  const [access, setAccess] = useState('checking'); // checking | ready | signin | hidden
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const searchRef = useRef(null);
 
-  // Health check: ping the container once. If it doesn't answer, hide the box.
-  useEffect(() => {
-    if (!HOST || !KEY) { setHealthy(false); return; }
+  // Probe the (Access-gated) search host. credentials:'include' carries the
+  // CF_Authorization cookie; redirect:'manual' turns the Access login redirect
+  // into an opaqueredirect we can detect without needing CORS on that response.
+  const probe = useCallback(() => {
+    if (!HOST || !KEY) { setAccess('hidden'); return () => {}; }
     let active = true;
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 4000);
-    fetch(`${HOST}/health`, { method: 'GET', signal: controller.signal })
-      .then((r) => { if (active) setHealthy(r.ok); })
-      .catch(() => { if (active) setHealthy(false); }) // down/unreachable — hide, no console noise
+    fetch(`${HOST}/health`, {
+      method: 'GET',
+      credentials: 'include',
+      redirect: 'manual',
+      cache: 'no-store',
+      signal: controller.signal,
+    })
+      .then((r) => {
+        if (!active) return;
+        if (r.type === 'opaqueredirect' || r.status === 401 || r.status === 403) setAccess('signin');
+        else if (r.ok) setAccess('ready');
+        else setAccess('hidden');
+      })
+      .catch(() => { if (active) setAccess('hidden'); }) // down/unreachable — hide, no noise
       .finally(() => clearTimeout(timer));
     return () => { active = false; controller.abort(); };
   }, []);
 
-  // Outside-click, Esc, route change, and "/" focus shortcut.
+  // Probe on mount + whenever the tab regains focus (e.g. after signing in).
   useEffect(() => {
-    if (!ExecutionEnvironment.canUseDOM) return undefined;
+    const cancel = probe();
+    if (!ExecutionEnvironment.canUseDOM) return cancel;
+    const onFocus = () => probe();
+    window.addEventListener('focus', onFocus);
+    return () => { cancel(); window.removeEventListener('focus', onFocus); };
+  }, [probe]);
+
+  // Outside-click, Esc, route change, and "/" focus shortcut (only when ready).
+  useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM || access !== 'ready') return undefined;
     const onClickOutside = (e) => { if (searchRef.current && !searchRef.current.contains(e.target)) setIsOpen(false); };
     const onKeyDown = (e) => {
       if (e.key === '/' && e.target.tagName !== 'INPUT' && !e.target.isContentEditable) {
@@ -60,10 +87,11 @@ export default function MeilisearchSearchBar() {
       document.removeEventListener('keydown', onKeyDown);
       window.removeEventListener('popstate', onRoute);
     };
-  }, []);
+  }, [access]);
 
-  // Debounced search.
+  // Debounced search (credentials:'include' so the Access cookie rides along).
   useEffect(() => {
+    if (access !== 'ready') return undefined;
     const id = setTimeout(async () => {
       const q = query.trim();
       if (!q) { setResults([]); setIsOpen(false); return; }
@@ -73,21 +101,25 @@ export default function MeilisearchSearchBar() {
         const timer = setTimeout(() => controller.abort(), 8000);
         const res = await fetch(`${HOST}/indexes/${INDEX}/search`, {
           method: 'POST',
+          credentials: 'include',
           headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${KEY}` },
           body: JSON.stringify({ q, limit: 10, attributesToHighlight: ['title', 'content', 'headings'] }),
           signal: controller.signal,
         });
         clearTimeout(timer);
+        if (res.status === 401 || res.status === 403 || res.type === 'opaqueredirect') {
+          setAccess('signin'); setResults([]); return; // session expired mid-use
+        }
         const data = res.ok ? await res.json() : { hits: [] };
         setResults(data.hits || []);
       } catch {
-        setResults([]); // transient failure — show "no results", not an error dump
+        setResults([]);
       } finally {
         setIsLoading(false);
       }
     }, 300);
     return () => clearTimeout(id);
-  }, [query]);
+  }, [query, access]);
 
   const go = (url) => {
     if (ExecutionEnvironment.canUseDOM) {
@@ -97,8 +129,22 @@ export default function MeilisearchSearchBar() {
     setIsOpen(false); setQuery('');
   };
 
-  // Hide while checking, and whenever the container is down or unconfigured.
-  if (healthy !== true) return null;
+  if (access === 'signin') {
+    return (
+      <a
+        className="meilisearch-signin navbar__item"
+        href={LOGIN_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Search is available to signed-in users"
+        style={{ fontSize: 14, whiteSpace: 'nowrap' }}
+      >
+        Sign in to search
+      </a>
+    );
+  }
+
+  if (access !== 'ready') return null; // checking or hidden
 
   return (
     <div ref={searchRef} className="meilisearch-search-container" style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
