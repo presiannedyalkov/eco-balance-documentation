@@ -2,19 +2,19 @@
 
 Top 30 unused articles, routed to a suggested domain. Review, place the one-line insight in the doc, and paste the citation. The consistency engine checks the result.
 
+### Abandoned farmland restored to wildflower meadow without sowing seeds
+
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Wildflower Meadow Restoration
+- **Summary:** Abandoned farmland can be transformed into wildflower-rich grassland without seeding, as demonstrated by a 10 to 15-year study in Norfolk, UK, which shows that natural recovery is effective and cost-efficient for biodiversity restoration.
+- **Citation:** `[Wildflower Meadow Restoration](research/bookmarks/Climate%20Change/1783427400875.md)`
+
 ### Agrivoltaics Works When Solar Panels Do Farm Work
 
 - **Suggested domain:** `template/site-and-land` (match 1)
 - **Topic:** Agrivoltaics
 - **Summary:** Agrivoltaics involves placing solar panels on farmland to produce both electricity and crops, but its effectiveness depends on the specific agricultural needs and the type of crops. The systems that provide clear farm value, such as grazing
 - **Citation:** `[Agrivoltaics](research/bookmarks/Climate%20Change/1783255090319.md)`
-
-### Visualizing Every El Niño and La Niña Since 1979
-
-- **Suggested domain:** `template/foundation` (match 0)
-- **Topic:** El Niño and La Niña
-- **Summary:** The article visualizes every El Niño and La Niña event since 1979, highlighting the intensity and global impacts of these climate patterns. It also forecasts a new El Niño developing in 2026, which could influence global temperatures and we
-- **Citation:** `[El Niño and La Niña](research/bookmarks/Climate%20Change/1783254716158.md)`
 
 ### Visualizing Every El Niño and La Niña Since 1979
 
@@ -41,22 +41,8 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 
 - **Suggested domain:** `template/method/biodiversity` (match 1)
 - **Topic:** Climate Change
-- **Summary:** Human-driven climate change made the June 2026 western European heatwave up to 2.5°C warmer, exposing 327 million people and $15.6 trillion in economic activity to intensified heat. Simultaneously, Asia and the Pacific adopted a regional ro
-- **Citation:** `[Climate Change](research/bookmarks/Climate%20Change/1783232489804.md)`
-
-### Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution
-
-- **Suggested domain:** `template/method/biodiversity` (match 1)
-- **Topic:** Climate Change
 - **Summary:** Human-driven climate change made the June 2026 western European heatwave up to 2.5°C warmer, affecting 327 million people and $15.6 trillion in economic activity. Meanwhile, Asia and the Pacific adopted a regional roadmap to tackle climate 
 - **Citation:** `[Climate Change](research/bookmarks/Climate%20Change/1783232489803.md)`
-
-### Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry
-
-- **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** Bio-receptive Architecture
-- **Summary:** Rameshwari Jonnalagedda's Minimal Matter project uses 3D printed terracotta modules designed to host moss, insects, and other organisms, promoting bio-receptivity and ecological integration in architecture. The project leverages minimal sur
-- **Citation:** `[Bio-receptive Architecture](research/bookmarks/Climate%20Change/1783191100102.md)`
 
 ### Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry
 
@@ -86,14 +72,7 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Summary:** Europe is experiencing unprecedented heatwaves, with temperatures reaching record highs and causing significant health and economic impacts. Despite warnings from scientists, extreme heat is becoming the new normal, testing Europe's climate
 - **Citation:** `[Climate Resilience](research/bookmarks/Climate%20Change/1782976072573.md)`
 
-### https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/
-
-- **Suggested domain:** `template/infrastructure` (match 2)
-- **Topic:** El Niño
-- **Summary:** A powerful El Niño is building, expected to be one of the strongest in decades, and is arriving at a time when global food security is already under pressure due to climate change and shipping disruptions. New FAO analysis provides precise 
-- **Citation:** `[El Niño](research/bookmarks/Climate%20Change/1782828012911.md)`
-
-### https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/
+### reuters.com
 
 - **Suggested domain:** `template/infrastructure` (match 2)
 - **Topic:** El Niño
@@ -140,21 +119,7 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Suggested domain:** `template/method/water` (match 1)
 - **Topic:** Sacred Landscapes
 - **Summary:** The article highlights how sacred landscapes in India and the SWANA region have long integrated ecological practices through religious and cultural traditions, such as temple tanks and sacred groves, which continue to provide environmental 
-- **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661868.md)`
-
-### The Ecological Intelligence of Sacred Landscapes
-
-- **Suggested domain:** `template/method/water` (match 1)
-- **Topic:** Sacred Landscapes
-- **Summary:** The article highlights how sacred landscapes in India and the SWANA region have long integrated ecological practices through religious and cultural traditions, such as temple tanks and sacred groves, which continue to provide environmental 
 - **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661867.md)`
-
-### REGENERATING THE BIOREGIONAL COMMONS
-
-- **Suggested domain:** `template/method/biodiversity` (match 1)
-- **Topic:** Bioregional Approach
-- **Summary:** The article argues that the current approach to addressing climate change, biodiversity loss, and other environmental issues is fragmented and fails to recognize the interconnectedness of these challenges. It proposes a bioregional approach
-- **Citation:** `[Bioregional Approach](research/bookmarks/Climate%20Change/1782154194931.md)`
 
 ### REGENERATING THE BIOREGIONAL COMMONS
 
@@ -211,4 +176,39 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Topic:** Soil Animal Trophic Diversity
 - **Summary:** The study found that trophic diversity of soil animal communities is higher in agricultural ecosystems and tropical climates, with microbial feeders showing the highest diversity. This diversity is linked to more diverse basal resources and
 - **Citation:** `[Soil Animal Trophic Diversity](research/bookmarks/Climate%20Change/1780865618072.md)`
+
+### 15 forces that could reshape conservation in the next 10 years
+
+- **Suggested domain:** `template/method/biodiversity` (match 1)
+- **Topic:** Emerging Issues in Conservation
+- **Summary:** The article identifies fifteen emerging issues that could significantly impact biodiversity over the next decade, including technological advancements and climate-driven changes, shifting conservation thinking from visible damage to potenti
+- **Citation:** `[Emerging Issues in Conservation](research/bookmarks/Climate%20Change/1780841077224.md)`
+
+### Combining remote sensing with local knowledge is vital for understanding forest change in West Africa - Scientific Reports
+
+- **Suggested domain:** `template/method/reforestation` (match 2)
+- **Topic:** Forest Change
+- **Summary:** The study combines satellite data with local knowledge to assess forest change in West Africa, showing that convergence is strongest for deforestation and divergences are concentrated around degradation, highlighting the diagnostic value of
+- **Citation:** `[Forest Change](research/bookmarks/Climate%20Change/1780837414415.md)`
+
+### Longer growing seasons will not offset growth loss in drought-prone temperate forests of Central-Southeast Europe - Nature Communications
+
+- **Suggested domain:** `template/method/reforestation` (match 1)
+- **Topic:** Forest Growth
+- **Summary:** The study predicts that extended growing seasons will initially offset summer drought stress in temperate forests of Central-Southeast Europe, but this will lead to significant growth reduction by the second half of the 21st century, especi
+- **Citation:** `[Forest Growth](research/bookmarks/Climate%20Change/1780836342179.md)`
+
+### What Afghanistan’s rotten apples tell us about its non-profit sector
+
+- **Suggested domain:** `template/organization` (match 1)
+- **Topic:** Non-profit sector inefficiency
+- **Summary:** The article highlights inefficiencies and corruption in Afghanistan's non-profit sector, where aid projects often fail to address local needs and result in wasted resources. Despite funding shortages, NGOs continue to struggle with poor pro
+- **Citation:** `[Non-profit sector inefficiency](research/bookmarks/Climate%20Change/1780823041759.md)`
+
+### AI-powered conservation project ends
+
+- **Suggested domain:** `template/method/biodiversity` (match 3)
+- **Topic:** Conservation
+- **Summary:** A project called Space4Nature used AI and citizen science to restore over 60 hectares of pollinator habitat and develop predictive models for conservation, combining high-resolution satellite imagery and machine learning.
+- **Citation:** `[Conservation](research/bookmarks/Climate%20Change/1780744282976.md)`
 

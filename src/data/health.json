@@ -1,8 +1,22 @@
 {
-  "generated": "2026-07-10T12:10",
-  "overall": 80,
+  "generated": "2026-07-13T08:14",
+  "overall": 79,
   "overall_grade": "B",
   "domains": [
+    {
+      "name": "engagement",
+      "domain_id": "D12",
+      "covered": true,
+      "deferred": true,
+      "decisions": [
+        "0013-engagement"
+      ],
+      "citations": 0,
+      "voiceHits": 0,
+      "docs": 1,
+      "health": 60,
+      "grade": "C"
+    },
     {
       "name": "organization",
       "domain_id": "D5",
@@ -16,20 +30,6 @@
       "docs": 4,
       "health": 60,
       "grade": "C"
-    },
-    {
-      "name": "engagement",
-      "domain_id": "D12",
-      "covered": true,
-      "deferred": true,
-      "decisions": [
-        "0013-engagement"
-      ],
-      "citations": 1,
-      "voiceHits": 0,
-      "docs": 1,
-      "health": 75,
-      "grade": "B"
     },
     {
       "name": "funding",
@@ -67,7 +67,7 @@
       "decisions": [
         "0011-indicators"
       ],
-      "citations": 2,
+      "citations": 1,
       "voiceHits": 0,
       "docs": 1,
       "health": 75,
@@ -95,7 +95,7 @@
       "decisions": [
         "0010-risk-posture"
       ],
-      "citations": 2,
+      "citations": 1,
       "voiceHits": 0,
       "docs": 1,
       "health": 75,
@@ -109,7 +109,7 @@
       "decisions": [
         "0003-handoff-vehicle"
       ],
-      "citations": 2,
+      "citations": 1,
       "voiceHits": 0,
       "docs": 1,
       "health": 75,
@@ -123,7 +123,7 @@
       "decisions": [
         "0008-economics-base-case"
       ],
-      "citations": 5,
+      "citations": 4,
       "voiceHits": 0,
       "docs": 3,
       "health": 88,
@@ -151,7 +151,7 @@
       "decisions": [
         "0012-infrastructure"
       ],
-      "citations": 4,
+      "citations": 3,
       "voiceHits": 0,
       "docs": 1,
       "health": 88,
@@ -179,7 +179,7 @@
       "decisions": [
         "0006-restoration-method"
       ],
-      "citations": 29,
+      "citations": 24,
       "voiceHits": 0,
       "docs": 6,
       "health": 100,

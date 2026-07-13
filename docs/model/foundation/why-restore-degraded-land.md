@@ -1,6 +1,6 @@
 ---
 title: Why restore degraded land
-domain: D0
+domain: D1
 status: draft
 related: [../method/00-overview, ../site-and-land/choosing-a-site]
 ---
