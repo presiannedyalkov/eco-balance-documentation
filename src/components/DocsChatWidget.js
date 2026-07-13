@@ -170,7 +170,7 @@ export default function DocsChatWidget() {
             {access === 'signin' ? (
               <div style={{ padding: 12, textAlign: 'center' }}>
                 <p style={{ marginBottom: 8 }}>The assistant is available to signed-in users.</p>
-                <a href={LOGIN_URL} target="_blank" rel="noopener noreferrer">Sign in to chat</a>
+                <a href={LOGIN_URL}>Sign in to chat</a>
               </div>
             ) : (
               <>

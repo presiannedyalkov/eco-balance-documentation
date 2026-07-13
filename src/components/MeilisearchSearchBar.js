@@ -134,8 +134,6 @@ export default function MeilisearchSearchBar() {
       <a
         className="meilisearch-signin navbar__item"
         href={LOGIN_URL}
-        target="_blank"
-        rel="noopener noreferrer"
         title="Search is available to signed-in users"
         style={{ fontSize: 14, whiteSpace: 'nowrap' }}
       >
