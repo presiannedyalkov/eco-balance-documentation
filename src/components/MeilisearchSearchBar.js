@@ -1,14 +1,20 @@
 /**
- * Meilisearch search bar for Docusaurus.
+ * Docs search bar for Docusaurus.
  *
- * The search service is gated behind Cloudflare Access. On mount we probe it
- * and pick one of three states:
+ * Queries the eco-balance-mcp service's REST search (GET /api/v1/search) — the
+ * SAME Access-gated host as the chat widget (docs-chat.eco-balance.cc). We used
+ * to hit Meilisearch directly, but Meili answers with `Access-Control-Allow-
+ * Origin: *`, which browsers reject on credentialed (cookie-bearing) requests.
+ * The mcp service sets an origin-specific CORS header, so credentialed reads
+ * work — and because it's the same host as chat, one Cloudflare Access sign-in
+ * covers both. Search itself is the hybrid Qdrant + Meili fusion with rerank.
+ *
+ * On mount we probe /health and pick one of:
  *   - ready   : reachable + authenticated  -> show the search box
  *   - signin  : Access redirect / 401 / 403 -> show a "Sign in to search" link
- *               (opens the Access login; search appears after signing in)
- *   - hidden  : unreachable (container down / unconfigured) -> render nothing
- * We re-probe when the tab regains focus, so signing in another tab upgrades
- * signin -> ready without a manual reload. No console noise on failure.
+ *   - hidden  : unreachable (service down)  -> render nothing
+ * We re-probe when the tab regains focus, so signing in upgrades signin -> ready
+ * without a manual reload. No console noise on failure.
  */
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
@@ -20,10 +26,9 @@ function getEnvVar(name, fallback) {
   return fallback;
 }
 
-const HOST = getEnvVar('MEILISEARCH_HOST', 'https://search.eco-balance.cc');
-const KEY = getEnvVar('MEILISEARCH_SEARCH_KEY', 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489');
-const LOGIN_URL = getEnvVar('MEILISEARCH_LOGIN_URL', HOST);
-const INDEX = 'eco-balance-docs';
+// Same host as the chat widget — one Access app / one cookie covers both.
+const HOST = getEnvVar('DOCS_SEARCH_HOST', 'https://docs-chat.eco-balance.cc');
+const LOGIN_URL = getEnvVar('DOCS_SEARCH_LOGIN_URL', HOST);
 
 export default function MeilisearchSearchBar() {
   const [access, setAccess] = useState('checking'); // checking | ready | signin | hidden
@@ -33,11 +38,11 @@ export default function MeilisearchSearchBar() {
   const [isLoading, setIsLoading] = useState(false);
   const searchRef = useRef(null);
 
-  // Probe the (Access-gated) search host. credentials:'include' carries the
+  // Probe the (Access-gated) mcp host. credentials:'include' carries the
   // CF_Authorization cookie; redirect:'manual' turns the Access login redirect
   // into an opaqueredirect we can detect without needing CORS on that response.
   const probe = useCallback(() => {
-    if (!HOST || !KEY) { setAccess('hidden'); return () => {}; }
+    if (!HOST) { setAccess('hidden'); return () => {}; }
     let active = true;
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 4000);
@@ -89,7 +94,9 @@ export default function MeilisearchSearchBar() {
     };
   }, [access]);
 
-  // Debounced search (credentials:'include' so the Access cookie rides along).
+  // Debounced search against the mcp REST endpoint (GET /api/v1/search).
+  // credentials:'include' so the Access cookie rides along; the response is a
+  // JSON array of DocHit { title, url, domain, snippet, matched_section, ... }.
   useEffect(() => {
     if (access !== 'ready') return undefined;
     const id = setTimeout(async () => {
@@ -99,19 +106,19 @@ export default function MeilisearchSearchBar() {
       try {
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), 8000);
-        const res = await fetch(`${HOST}/indexes/${INDEX}/search`, {
-          method: 'POST',
+        const res = await fetch(`${HOST}/api/v1/search?q=${encodeURIComponent(q)}&limit=10`, {
+          method: 'GET',
           credentials: 'include',
-          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${KEY}` },
-          body: JSON.stringify({ q, limit: 10, attributesToHighlight: ['title', 'content', 'headings'] }),
+          redirect: 'manual',
+          cache: 'no-store',
           signal: controller.signal,
         });
         clearTimeout(timer);
         if (res.status === 401 || res.status === 403 || res.type === 'opaqueredirect') {
           setAccess('signin'); setResults([]); return; // session expired mid-use
         }
-        const data = res.ok ? await res.json() : { hits: [] };
-        setResults(data.hits || []);
+        const data = res.ok ? await res.json() : [];
+        setResults(Array.isArray(data) ? data : []);
       } catch {
         setResults([]);
       } finally {
@@ -169,22 +176,25 @@ export default function MeilisearchSearchBar() {
             <div>
               {results.map((hit, i) => (
                 <div
-                  key={i}
+                  key={hit.doc_id || i}
                   onClick={() => go(hit.url)}
                   style={{ padding: '12px 16px', cursor: 'pointer', borderBottom: '1px solid var(--ifm-color-emphasis-200)', transition: 'background-color 0.2s' }}
                   onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--ifm-color-emphasis-100)'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
                 >
-                  <div
-                    style={{ fontWeight: 'bold', marginBottom: 4, color: 'var(--ifm-color-primary)' }}
-                    dangerouslySetInnerHTML={{ __html: hit._formatted?.title || hit.title }}
-                  />
+                  <div style={{ fontWeight: 'bold', marginBottom: 4, color: 'var(--ifm-color-primary)' }}>
+                    {hit.title}
+                    {hit.matched_section && (
+                      <span style={{ fontWeight: 'normal', fontSize: 12, color: 'var(--ifm-color-emphasis-600)' }}>
+                        {' '}› {hit.matched_section}
+                      </span>
+                    )}
+                  </div>
                   <div style={{ fontSize: 12, color: 'var(--ifm-color-emphasis-600)', marginBottom: 4 }}>{hit.url}</div>
-                  {hit._formatted?.content && (
-                    <div
-                      style={{ fontSize: 13, color: 'var(--ifm-color-emphasis-700)', lineHeight: 1.4 }}
-                      dangerouslySetInnerHTML={{ __html: hit._formatted.content.substring(0, 150) + '…' }}
-                    />
+                  {hit.snippet && (
+                    <div style={{ fontSize: 13, color: 'var(--ifm-color-emphasis-700)', lineHeight: 1.4 }}>
+                      {hit.snippet.length > 160 ? hit.snippet.slice(0, 160) + '…' : hit.snippet}
+                    </div>
                   )}
                 </div>
               ))}
