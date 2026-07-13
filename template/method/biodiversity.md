@@ -19,7 +19,7 @@ The aim is habitat, not tree cover. A patch can hit its planting targets and sta
 ## Options & pathways
 
 - **Habitat features** — ponds, log piles, hedges, nest sites; cheap, fast niches.
-- **Rewilding natural processes** — with enough space and time, including missing species; resilient and low-effort, slower to direct ([rewilding helps forests work with nature](research/bookmarks/Climate%20Change/1742557796063.md), *opinion*; [returning predators drives trophic cascades](research/bookmarks/Climate%20Change/1755056273767.md), *news*).
+- **Rewilding natural processes** — with enough space and time, including missing species; resilient and low-effort, slower to direct ([rewilding helps forests work with nature](research/bookmarks/Climate%20Change/1742557796063.md), *opinion*; [returning predators drives trophic cascades](research/bookmarks/Climate%20Change/1755056273767.md), *news*). On ex-farmland with nearby seed sources and no heavy fertiliser legacy it can also be fast and cheap: a Norfolk field reached rich wildflower-meadow plant diversity in 10–15 years on an annual hay cut alone, no sowing — counter to the seed-stock schemes that dominate farmland conservation ([meadow recovers without sowing](research/bookmarks/Climate%20Change/1783427400875.md), *news*).
 - **Active management** — for specific species or invasives; targeted but ongoing, easy to overdo.
 
 Monitor with simple repeatable counts, citizen-science tools, and fixed-point photos; local and indigenous observers often see what visiting surveys miss ([indigenous data collectors](research/bookmarks/Climate%20Change/1745736339239.md), *news*).
