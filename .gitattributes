@@ -1,0 +1,26 @@
+# Normalize line endings across Windows / WSL / Linux.
+#
+# Text files are stored as LF in the repository and checked out as LF
+# everywhere (eol=lf), regardless of a machine's core.autocrlf setting. This
+# ends the CRLF<->LF "phantom modified files" churn that happens when the repo
+# is touched from both Windows git (autocrlf=true) and WSL/Linux git.
+* text=auto eol=lf
+
+# Shell scripts must stay LF (they run on Linux/Unraid).
+*.sh   text eol=lf
+
+# Binary files git must never convert.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.ico   binary
+*.pdf   binary
+*.epub  binary
+*.zip   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
+*.otf   binary
