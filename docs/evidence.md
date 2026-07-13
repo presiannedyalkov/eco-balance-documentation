@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Evidence
 
-Every source cited across the model and our case, distilled to a line and linked to the original. 55 sources. The full classified library is under Research.
+Every source cited across the model and our case, distilled to a line and linked to the original. 44 sources. The full classified library is under Research.
 
 ## Economics
 
@@ -15,7 +15,7 @@ Source: [theconversation.com](https://theconversation.com/carbon-credits-are-use
 
 Carbon credits are a widely-used climate policy tool that allow companies to offset emissions by funding reduction projects elsewhere, but their effectiveness is increasingly questioned due to poor quality and verification issues. Research shows that less than 16% of evaluated carbon credits…
 
-Cited in: [revenue](/model/economics/revenue)
+Cited in: [revenue](/model/economics/revenue) · [0008 economics base case](/our-case/decisions/0008-economics-base-case)
 
 ### Over-reliance on land for carbon dioxide removal in net-zero climate pledges {#e1742557796816}
 
@@ -39,25 +39,7 @@ Source: [news.mongabay.com](https://news.mongabay.com/short-article/young-second
 
 A recent study reveals that young secondary forests aged 20 to 40 years are the most efficient carbon sinks, removing carbon up to eight times faster per hectare than newly regenerating forests. Protecting these existing young forests, especially in tropical regions, could sequester over 20 billion…
 
-Cited in: [revenue](/model/economics/revenue)
-
-### Pollinator Habitat Turns Unprofitable Acres Into an Asset {#e1782658991399}
-
-Source: [agriculture.com](https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222) · _news_ · _needs verification_
-
-An Indiana farmer converted nine unproductive acres into pollinator habitat, improving the field's return while supporting wildlife. The project, through the Conservation Reserve Program, reduced input costs and provided annual payments, demonstrating that non-productive land can be repurposed for…
-
-Cited in: [revenue](/model/economics/revenue)
-
-## Engagement
-
-### The work is already happening. Here’s where to find it. {#e1783099664548}
-
-Source: [theportugalnews.com](https://www.theportugalnews.com/news/2026-07-03/the-work-is-already-happening-heres-where-to-find-it/1049366) · _platform_
-
-The article introduces a platform called Sustainable Living, which curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the work already happening and foster collaboration among…
-
-Cited in: [00 overview](/model/engagement/00-overview)
+Cited in: [revenue](/model/economics/revenue) · [0008 economics base case](/our-case/decisions/0008-economics-base-case)
 
 ## Foundation
 
@@ -103,7 +85,7 @@ Source: [downtoearth.org.in](https://www.downtoearth.org.in/africa/africa-strugg
 
 The UNCTAD report 'Economic Development in Africa 2024' highlights Africa's critical challenge of balancing economic growth with biodiversity conservation amid increasing climate change impacts. It emphasizes that climate vulnerability, agricultural expansion, and resource extraction threaten…
 
-Cited in: [00 overview](/model/growth-operations/00-overview)
+Cited in: [00 overview](/model/growth-operations/00-overview) · [0009 growth approach](/our-case/decisions/0009-growth-approach)
 
 ## Indicators
 
@@ -112,14 +94,6 @@ Cited in: [00 overview](/model/growth-operations/00-overview)
 Source: [nature.com](https://www.nature.com/articles/s41893-024-01447-y) · _study_
 
 The article evaluates how Indigenous Peoples, local communities, and citizen scientists can significantly contribute to monitoring the Kunming–Montreal Global Biodiversity Framework (GBF) targets. It finds that citizen involvement can enhance data collection, conservation outcomes, and local…
-
-Cited in: [00 overview](/model/indicators/00-overview)
-
-### The case for field stations {#e1782317720086}
-
-Source: [news.mongabay.com](https://news.mongabay.com/2026/06/the-case-for-field-stations/) · _news_
-
-A new BioScience paper argues that tropical field stations are crucial for turning global conservation commitments into local action by providing long-term monitoring, training, and local employment. These stations are essential for validating and interpreting data from remote sensing and other…
 
 Cited in: [00 overview](/model/indicators/00-overview)
 
@@ -143,14 +117,6 @@ Source: [newatlas.com](https://newatlas.com/tiny-houses/cabin-devin-off-grid-ark
 
 Cited in: [00 overview](/model/infrastructure/00-overview)
 
-### Agrivoltaics Works When Solar Panels Do Farm Work {#e1783255090320}
-
-Source: [cleantechnica.com](https://cleantechnica.com/2026/07/04/agrivoltaics-works-where-shade-does-farm-work/) · _news_
-
-Agrivoltaics involves placing solar panels on farmland to generate electricity while also supporting agricultural activities. The effectiveness of agrivoltaics depends on the specific farm function it serves, such as providing shade, protecting crops, or managing water stress, rather than simply…
-
-Cited in: [00 overview](/model/infrastructure/00-overview)
-
 ## Learning
 
 ### Want genuine progress toward restoring nature? Follow these four steps {#e1742557796919}
@@ -159,7 +125,7 @@ Source: [phys.org](https://phys.org/news/2024-10-genuine-nature.html) · _news_
 
 Genuine nature restoration requires moving beyond vague commitments to implement four concrete steps: setting clear, measurable goals with specific timelines; involving local communities and Indigenous peoples in planning; establishing ongoing monitoring and adaptive management systems; and…
 
-Cited in: [00 overview](/model/learning/00-overview)
+Cited in: [00 overview](/model/learning/00-overview) · [0007 scientific learning](/our-case/decisions/0007-scientific-learning)
 
 ### Varied restoring approach needed in Nephin Forest - study {#e1742557867886}
 
@@ -225,7 +191,7 @@ Source: [phys.org](https://phys.org/news/2024-10-natural-regrowth-tropical-fores
 
 A recent study published in Nature Communications demonstrates that natural regrowth of tropical forests holds significant potential for climate change mitigation and biodiversity conservation. The research identifies key global regions with high regrowth potential and provides a detailed digital…
 
-Cited in: [00 overview](/model/method/00-overview)
+Cited in: [00 overview](/model/method/00-overview) · [0006 restoration method](/our-case/decisions/0006-restoration-method)
 
 ### Forest restoration must integrate climate, biodiversity and community needs: study {#e1742557805673}
 
@@ -313,7 +279,7 @@ Source: [phys.org](https://phys.org/news/2025-02-species-forests-outperform-mono
 
 An international study from the world's longest-running tropical tree diversity experiment in Panama shows that mixed-species forests with five tree species store 57% more carbon in aboveground biomass than monocultures after 16 years. This diversity advantage strengthened over time, even enduring…
 
-Cited in: [reforestation](/model/method/reforestation)
+Cited in: [reforestation](/model/method/reforestation) · [0006 restoration method](/our-case/decisions/0006-restoration-method)
 
 ### A long wait for pollinators: Restored grasslands need 75+ years for full biodiversity recovery, study finds {#e1773480618603}
 
@@ -330,46 +296,6 @@ Source: [earth.com](https://www.earth.com/news/most-protected-areas-overlook-the
 A new study reveals that over half of the critical mycorrhizal fungi species, which are essential for plant health and ecosystem resilience, are underrepresented in protected areas. This oversight highlights a significant gap in conservation efforts, particularly in grasslands and savannas, which…
 
 Cited in: [soil](/model/method/soil)
-
-### Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture {#e1782317798682}
-
-Source: [nature.com](https://www.nature.com/articles/s44264-026-00167-4) · _study_
-
-This study found that integrating circular buffer strips of native perennial grasses within center pivot irrigation systems significantly improved rainwater conservation and maize growth, leading to increased biomass water productivity.
-
-Cited in: [water](/model/method/water)
-
-### Thirsty desert lizards inspire a new water-harvesting system {#e1782457491385}
-
-Source: [phys.org](https://phys.org/news/2026-06-thirsty-lizards-harvesting.html) · _news_ · _needs verification_
-
-Scientists have discovered how desert horned lizards efficiently extract water from their skin using capillary action and asymmetric jaw movements. This inspired the development of a water-harvesting system that can collect and clean water from damp soil, potentially providing clean drinking water…
-
-Cited in: [water](/model/method/water)
-
-### A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats {#e1782992437626}
-
-Source: [bgr.com](https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/) · _news_ · _needs verification_
-
-A floating solar farm in the Netherlands has created a new underwater ecosystem, attracting over 400 fish and nearly 2,000 invertebrates, and providing shade that conserves water. This project demonstrates that solar farms can benefit local biodiversity and water quality.
-
-Cited in: [water](/model/method/water)
-
-### Scientist dubbed The Bogfather is restoring peatland to fight climate change {#e1783233224646}
-
-Source: [bbc.com](https://www.bbc.com/news/articles/cy498d400pro) · _news_
-
-Dr Peter Jones, known as The Bogfather, has dedicated 30 years to restoring peatland in Wales, which can store significant carbon and mitigate climate change impacts like flooding and wildfires. Despite covering only 4% of the surface, peatlands store 30% of Wales' land-based carbon but are…
-
-Cited in: [water](/model/method/water)
-
-### A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests {#e1783233364306}
-
-Source: [phys.org](https://phys.org/news/2026-07-benchmark-disturbances-loss-recovery-carbon.html) · _news_
-
-A large-scale international study quantifies the carbon losses and gains in tropical forests following various disturbances, showing that degraded forests recover faster than those cleared by deforestation, and that forest fires and selective logging are the most severe drivers of carbon loss.
-
-Cited in: [reforestation](/model/method/reforestation)
 
 ## Our case
 
@@ -423,15 +349,7 @@ Source: [dw.com](https://www.dw.com/en/firefighters-control-biggest-wildfire-spa
 
 As climate change intensifies wildfires across southern Europe, firefighting alone is insufficient to address the growing threat. Long-term solutions require integrated approaches combining forest management, prescribed burns, fuel reduction, community engagement, and nature-based strategies to…
 
-Cited in: [00 overview](/model/risk/00-overview) · [choosing a site](/model/site-and-land/choosing-a-site) · [0001 candidate countries](/our-case/decisions/0001-candidate-countries) · [portugal](/model/parameters/portugal)
-
-### Summer’s new normal is a hazard that’s testing Europe’s climate resilience {#e1782976072574}
-
-Source: [downtoearth.org.in](https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience) · _news_ · _needs verification_
-
-Europe is experiencing more frequent and severe heatwaves, with temperatures topping 44 degrees Celsius in parts of the continent. This extreme heat is leading to deaths, strain on infrastructure, and highlighting the need for better climate resilience strategies.
-
-Cited in: [00 overview](/model/risk/00-overview)
+Cited in: [00 overview](/model/risk/00-overview) · [choosing a site](/model/site-and-land/choosing-a-site) · [0001 candidate countries](/our-case/decisions/0001-candidate-countries) · [0010 risk posture](/our-case/decisions/0010-risk-posture) · [portugal](/model/parameters/portugal)
 
 ## Site And Land
 
@@ -441,7 +359,7 @@ Source: [phys.org](https://phys.org/news/2024-05-abandoned-farmlands-play-role-c
 
 A new study led by researchers at the University of Wisconsin–Madison used machine learning and satellite imagery to map nearly 30 million acres of abandoned U.S. cropland since the 1980s at field-level resolution. This detailed mapping identifies lands that could be repurposed for climate…
 
-Cited in: [choosing a site](/model/site-and-land/choosing-a-site)
+Cited in: [choosing a site](/model/site-and-land/choosing-a-site) · [0005 foundation commitment](/our-case/decisions/0005-foundation-commitment)
 
 ### Not enough rain: How can Germany cope with drought? {#e1748757905382}
 
@@ -458,14 +376,6 @@ Cited in: [choosing a site](/model/site-and-land/choosing-a-site) · [germany](/
 Source: [theconversation.com](https://theconversation.com/national-parks-and-other-protected-areas-often-fail-to-conserve-earths-forests-research-finds-237567) · _news_
 
 A global study analyzing forest loss from 2001-2022 found that protected areas prevent only about 30% of forest loss that would otherwise occur, meaning 70% of potential deforestation still happens within these zones.[1][2] Effectiveness varies dramatically by country, with protected areas in…
-
-Cited in: [00 overview](/model/stewardship-handoff/00-overview)
-
-### ‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive {#e1782816753002}
-
-Source: [theguardian.com](https://www.theguardian.com/environment/2026/jun/30/suffolk-agroforestry-farm-wakelyns-community-ownership-survive) · _news_
-
-Wakelyns, a pioneering agroforestry farm in Suffolk, is seeking community ownership to ensure its survival and continued innovation in sustainable farming practices. The farm, which has become a model for agroforestry, is under threat and requires £1.2m to transition into a charitable community…
 
 Cited in: [00 overview](/model/stewardship-handoff/00-overview)
 

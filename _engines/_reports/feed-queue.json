@@ -1,9 +1,17 @@
 {
-  "generated": "2026-07-06T23:06:23.139Z",
-  "corpus": 528,
+  "generated": "2026-07-13T08:14:56.966Z",
+  "corpus": 512,
   "used": 55,
-  "unused": 476,
+  "unused": 471,
   "candidates": [
+    {
+      "id": "1783427400875",
+      "title": "Abandoned farmland restored to wildflower meadow without sowing seeds",
+      "domain": "phys.org",
+      "downloaded": "2026-07-07T12:39:47.382294",
+      "article_type": "",
+      "url": "https://phys.org/news/2026-07-abandoned-farmland-wildflower-meadow-seeds.html"
+    },
     {
       "id": "1783255090319",
       "title": "Agrivoltaics Works When Solar Panels Do Farm Work",
@@ -11,14 +19,6 @@
       "downloaded": "2026-07-05T12:41:20.651824",
       "article_type": "",
       "url": "https://cleantechnica.com/2026/07/04/agrivoltaics-works-where-shade-does-farm-work/"
-    },
-    {
-      "id": "1783254716158",
-      "title": "Visualizing Every El Niño and La Niña Since 1979",
-      "domain": "www.visualcapitalist.com",
-      "downloaded": "2026-07-05T12:41:13.407638",
-      "article_type": "news",
-      "url": "https://www.visualcapitalist.com/cp/visualizing-every-el-nino-and-la-nina-since-1979/"
     },
     {
       "id": "1783254716157",
@@ -45,28 +45,12 @@
       "url": "https://www.bbc.com/news/articles/cy498d400pro"
     },
     {
-      "id": "1783232489804",
-      "title": "Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution",
-      "domain": "www.downtoearth.org.in",
-      "downloaded": "2026-07-05T06:27:48.995335",
-      "article_type": "news",
-      "url": "https://www.downtoearth.org.in/climate-change/climate-change-makes-western-europe-heatwave-up-to-25c-hotter-in-june-asia-pacific-adopts-roadmap-to-tackle-climate-biodiversity-and-pollution"
-    },
-    {
       "id": "1783232489803",
       "title": "Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution",
       "domain": "www.downtoearth.org.in",
       "downloaded": "2026-07-05T06:27:48.469296",
       "article_type": "",
       "url": "https://www.downtoearth.org.in/climate-change/climate-change-makes-western-europe-heatwave-up-to-25c-hotter-in-june-asia-pacific-adopts-roadmap-to-tackle-climate-biodiversity-and-pollution"
-    },
-    {
-      "id": "1783191100102",
-      "title": "Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry",
-      "domain": "3dprintingindustry.com",
-      "downloaded": "2026-07-04T19:02:11.377486",
-      "article_type": "news",
-      "url": "https://3dprintingindustry.com/news/rameshwari-jonnalagedda-builds-3d-printed-terracotta-modules-designed-to-be-colonized-by-nature-252711/"
     },
     {
       "id": "1783191100101",
@@ -101,16 +85,8 @@
       "url": "https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience"
     },
     {
-      "id": "1782828012911",
-      "title": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/",
-      "domain": "www.reuters.com",
-      "downloaded": "2026-06-30T14:08:47.589682",
-      "article_type": "news",
-      "url": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/"
-    },
-    {
       "id": "1782828012910",
-      "title": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/",
+      "title": "reuters.com",
       "domain": "www.reuters.com",
       "downloaded": "2026-06-30T14:08:47.020260",
       "article_type": "",
@@ -157,28 +133,12 @@
       "url": "https://news.mongabay.com/2026/06/the-case-for-field-stations/"
     },
     {
-      "id": "1782317661868",
-      "title": "The Ecological Intelligence of Sacred Landscapes",
-      "domain": "www.archdaily.com",
-      "downloaded": "2026-06-24T16:15:22.290549",
-      "article_type": "news",
-      "url": "https://www.archdaily.com/1042553/the-ecological-intelligence-of-sacred-landscapes"
-    },
-    {
       "id": "1782317661867",
       "title": "The Ecological Intelligence of Sacred Landscapes",
       "domain": "www.archdaily.com",
       "downloaded": "2026-06-24T16:15:21.708240",
       "article_type": "",
       "url": "https://www.archdaily.com/1042553/the-ecological-intelligence-of-sacred-landscapes"
-    },
-    {
-      "id": "1782154194931",
-      "title": "REGENERATING THE BIOREGIONAL COMMONS",
-      "domain": "ernestopvanpeborgh.substack.com",
-      "downloaded": "2026-06-22T18:51:34.943667",
-      "article_type": "opinion",
-      "url": "https://ernestopvanpeborgh.substack.com/p/regenerating-the-bioregional-commons"
     },
     {
       "id": "1782154194930",

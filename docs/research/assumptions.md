@@ -15,10 +15,9 @@ Domains where we hold many articles but cite few — places our claims may be un
 - **method/community** — 12 articles, 1 cited.
 - **growth-operations** — 11 articles, 1 cited.
 - **infrastructure** — 11 articles, 0 cited.
-- **risk** — 10 articles, 2 cited.
-- **general** — 8 articles, 1 cited.
+- **risk** — 8 articles, 0 cited.
 
-## Articles that may challenge assumptions (100)
+## Articles that may challenge assumptions (99)
 
 Review these rather than rubber-stamp; they use language suggesting a method or claim fails, backfires, or is overstated.
 
@@ -83,7 +82,7 @@ Review these rather than rubber-stamp; they use language suggesting a method or 
 - [Wilding: How a failing farm became a rewilding success story](https://www.abc.net.au/news/2025-05-28/wilding-documentary-rewilding-isabella-tree/105330664) — _method/biodiversity_
 - [Not enough rain: How can Germany cope with drought?](https://www.dw.com/en/not-enough-rain-how-can-germany-cope-with-drought/a-72746010) — _method/water_
 
-## Low-verification sources (38)
+## Low-verification sources (32)
 
 Cite with care; flag as "needs verification" if used.
 
@@ -114,14 +113,8 @@ Cite with care; flag as "needs verification" if used.
 - [150 Years Ago, a Super El Niño Killed 50 Million People. The Next One Is Right…](https://www.popularmechanics.com/science/environment/a71573365/super-el-nino-1877/) — score 0.837
 - ['Everything has its own order and purpose': The rainforest 'farms' defying…](https://www.bbc.com/future/article/20260617-chagras-the-ancient-farming-system-thriving-deep-in-the-amazon) — score 0.837
 - [The Ecological Intelligence of Sacred Landscapes](https://www.archdaily.com/1042553/the-ecological-intelligence-of-sacred-landscapes) — score 0.207
-- [The Ecological Intelligence of Sacred Landscapes](https://www.archdaily.com/1042553/the-ecological-intelligence-of-sacred-landscapes) — score 0.207
-- [Thirsty desert lizards inspire a new water-harvesting system](https://phys.org/news/2026-06-thirsty-lizards-harvesting.html) — score 0.833
 - [Thirsty desert lizards inspire a new water-harvesting system](https://phys.org/news/2026-06-thirsty-lizards-harvesting.html) — score 0.833
 - [Pollinator Habitat Turns Unprofitable Acres Into an Asset](https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222) — score 0.837
-- [Pollinator Habitat Turns Unprofitable Acres Into an Asset](https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222) — score 0.837
-- [https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drough…](https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/) — score 0.548
-- [https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drough…](https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/) — score 0.548
+- [reuters.com](https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/) — score 0.548
 - [Summer’s new normal is a hazard that’s testing Europe’s climate resilience](https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience) — score 0.316
-- [Summer’s new normal is a hazard that’s testing Europe’s climate resilience](https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience) — score 0.316
-- [A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater…](https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/) — score 0.715
 - [A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater…](https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/) — score 0.715
