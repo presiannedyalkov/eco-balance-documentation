@@ -66,48 +66,6 @@ jobs:
           npm run clear || true
           echo "✅ Cache cleared"
       
-      - name: Check Meilisearch service health
-        id: meilisearch_health
-        run: |
-          MEILISEARCH_HOST="${{ vars.MEILISEARCH_HOST || env.MEILISEARCH_HOST || 'https://search.eco-balance.cc' }}"
-          echo "🔍 Checking Meilisearch service at: $MEILISEARCH_HOST"
-          
-          # Try health endpoint
-          HEALTH_STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "$MEILISEARCH_HOST/health" || echo "000")
-          
-          if [ "$HEALTH_STATUS" = "200" ]; then
-            echo "✅ Meilisearch service is healthy (HTTP $HEALTH_STATUS)"
-            echo "health_status=healthy" >> $GITHUB_OUTPUT
-          elif [ "$HEALTH_STATUS" = "000" ]; then
-            echo "⚠️  Meilisearch service is unreachable (timeout or connection error)"
-            echo "💡 This might indicate Cloudflare issues or the service is down"
-            echo "💡 Check https://search.eco-balance.cc/ manually"
-            echo "health_status=unreachable" >> $GITHUB_OUTPUT
-          elif [ "$HEALTH_STATUS" = "500" ]; then
-            echo "⚠️  Meilisearch service returned 500 error"
-            echo "💡 This might indicate Cloudflare issues or server problems"
-            echo "💡 Check https://search.eco-balance.cc/ manually"
-            echo "health_status=error_500" >> $GITHUB_OUTPUT
-          else
-            echo "⚠️  Meilisearch service returned HTTP $HEALTH_STATUS"
-            echo "💡 Service might be experiencing issues"
-            echo "health_status=error_$HEALTH_STATUS" >> $GITHUB_OUTPUT
-          fi
-          
-          # Try to get more details
-          echo ""
-          echo "📊 Detailed health check response:"
-          curl -s --max-time 10 "$MEILISEARCH_HOST/health" || echo "  (Could not fetch health endpoint)"
-          echo ""
-          
-          # Don't fail the build, but warn if service is down
-          if [ "$HEALTH_STATUS" != "200" ]; then
-            echo "⚠️  WARNING: Meilisearch service is not healthy"
-            echo "⚠️  Search functionality may not work after deployment"
-            echo "⚠️  Continuing with build, but search will be unavailable"
-          fi
-        continue-on-error: true
-      
       - name: Determine BASE_URL
         id: base_url
         run: |
@@ -201,13 +159,8 @@ jobs:
           # BASE_URL is determined by the "Determine BASE_URL" step above
           BASE_URL: ${{ steps.base_url.outputs.base_url }}
           SITE_URL: ${{ env.CUSTOM_DOMAIN_URL || vars.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc' }}
-          # Meilisearch configuration (optional - defaults are in docusaurus.config.js)
-          MEILISEARCH_HOST: ${{ vars.MEILISEARCH_HOST || env.MEILISEARCH_HOST || 'https://search.eco-balance.cc' }}
-          # Search key for frontend (read-only, safe to expose)
-          MEILISEARCH_SEARCH_KEY: ${{ secrets.MEILISEARCH_SEARCH_KEY || vars.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489' }}
-          # Master key for indexing during build (write permissions, keep secret!)
-          # This is only used during build to index content, not exposed to frontend
-          MEILISEARCH_MASTER_KEY: ${{ secrets.MEILISEARCH_MASTER_KEY }}
+          # Search + chat are served by the eco-balance-mcp service at runtime;
+          # nothing Meilisearch-related is needed at build time anymore.
           # Sentry configuration for error tracking
           SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
           SENTRY_RELEASE: ${{ github.sha }}

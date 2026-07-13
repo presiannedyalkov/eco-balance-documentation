@@ -82,11 +82,9 @@ const configPath = path.join(__dirname, '..', 'docusaurus.config.js');
 if (fs.existsSync(configPath)) {
   const configContent = fs.readFileSync(configPath, 'utf-8');
   const hasWrapper = configContent.includes('meilisearch-search-wrapper');
-  const hasPlugin = configContent.includes('meilisearch-plugin');
-  
+
   console.log('✅ Config file exists');
   console.log('   - Has wrapper div:', hasWrapper ? '✅' : '❌');
-  console.log('   - Has Meilisearch plugin:', hasPlugin ? '✅' : '❌');
 } else {
   console.warn('⚠️  docusaurus.config.js not found');
 }

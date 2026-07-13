@@ -63,24 +63,10 @@ const config = {
 
   // Plugins configuration
   plugins: [
-    // Meilisearch plugin for search
-    [
-      require.resolve('./src/plugins/meilisearch-plugin.js'),
-      {
-        // Production: https://search.eco-balance.cc (via Cloudflare)
-        // Local development: Set MEILISEARCH_HOST to local network address
-        host: process.env.MEILISEARCH_HOST || 'https://search.eco-balance.cc',
-        // Search-only key (safe to use in frontend)
-        // Set via environment variable: MEILISEARCH_SEARCH_KEY
-        searchKey: process.env.MEILISEARCH_SEARCH_KEY || 'e1eebc3950796ae3ead1c39d2c80f4148212c344a36fb6ba9e9ec91d7a7f4489',
-        // Master key for indexing (write permissions) - only used during build
-        // Set via environment variable: MEILISEARCH_MASTER_KEY
-        // This should be kept secret and only used in CI/CD, not in frontend
-        masterKey: process.env.MEILISEARCH_MASTER_KEY,
-        indexName: 'eco-balance-docs',
-        batchSize: 100,
-      },
-    ],
+    // NOTE: Search + chat are served by the eco-balance-mcp service (queried by
+    // the MeilisearchSearchBar / DocsChatWidget components at runtime). Docs
+    // indexing is owned by that service (clone + incremental index on a cron),
+    // NOT at build time — so there is no Meilisearch build plugin here.
     // Sentry webpack plugin to inject environment variables
     function(context, options) {
       return {
