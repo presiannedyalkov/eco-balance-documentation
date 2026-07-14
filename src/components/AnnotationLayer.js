@@ -93,6 +93,14 @@ export default function AnnotationLayer() {
     setOpen(true);
   };
 
+  // Fire the shared "ask the docs" event the chat widget listens for, so both
+  // actions live in one on-selection menu instead of two overlapping chips.
+  const askDocs = (text) => {
+    if (!ExecutionEnvironment.canUseDOM || !text) return;
+    const url = window.location.href.split('#')[0];
+    window.dispatchEvent(new CustomEvent('eco:ask-selection', { detail: { text, url } }));
+  };
+
   // --- Text selection -> chip ----------------------------------------------
   useEffect(() => {
     if (!ExecutionEnvironment.canUseDOM || access !== 'ready') return undefined;
@@ -101,7 +109,7 @@ export default function AnnotationLayer() {
       const text = s ? String(s).trim() : '';
       if (!s || s.isCollapsed || text.length < 6) { setSel(null); return; }
       const node = s.anchorNode && (s.anchorNode.nodeType === 1 ? s.anchorNode : s.anchorNode.parentElement);
-      if (node && node.closest && node.closest('.eco-annot')) { setSel(null); return; }
+      if (node && node.closest && node.closest('.eco-annot, .docs-chat-widget')) { setSel(null); return; }
       let rect; try { rect = s.getRangeAt(0).getBoundingClientRect(); } catch { rect = null; }
       if (!rect || (!rect.width && !rect.height)) { setSel(null); return; }
       setSel({ text: text.slice(0, 1000), x: Math.min(rect.left + rect.width / 2, window.innerWidth - 120), y: rect.top - 8 });
@@ -161,6 +169,7 @@ export default function AnnotationLayer() {
 
   const withText = drafts.filter((d) => d.text.trim()).length;
   const btn = { position: 'fixed', left: 20, bottom: 20, zIndex: 500 };
+  const menuBtn = { padding: '5px 10px', border: 'none', cursor: 'pointer', background: 'var(--ifm-color-primary)', color: '#fff', fontSize: 12, whiteSpace: 'nowrap' };
   const panel = {
     position: 'fixed', left: 20, bottom: 80, zIndex: 500, width: 'min(360px, calc(100vw - 40px))',
     maxHeight: 'min(70vh, 560px)', display: 'flex', flexDirection: 'column', borderRadius: 12, overflow: 'hidden',
@@ -170,13 +179,21 @@ export default function AnnotationLayer() {
 
   return (
     <div className="eco-annot">
-      {/* selection chip */}
+      {/* shared on-selection menu: ask the docs + add a note, side by side */}
       {access === 'ready' && sel && (
-        <button
-          onMouseDown={(e) => { e.preventDefault(); addDraft({ kind: 'selection', quote: sel.text }); setSel(null); if (ExecutionEnvironment.canUseDOM) window.getSelection()?.removeAllRanges(); }}
+        <div
           style={{ position: 'fixed', left: sel.x, top: Math.max(sel.y, 8), transform: 'translate(-50%,-100%)', zIndex: 600,
-            padding: '4px 10px', borderRadius: 6, border: 'none', cursor: 'pointer', background: 'var(--ifm-color-primary)', color: '#fff', fontSize: 12, boxShadow: '0 2px 8px rgba(0,0,0,.25)' }}
-        >✎ Add note</button>
+            display: 'flex', gap: 1, borderRadius: 6, overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,.25)' }}
+        >
+          <button
+            onMouseDown={(e) => { e.preventDefault(); askDocs(sel.text); setSel(null); if (ExecutionEnvironment.canUseDOM) window.getSelection()?.removeAllRanges(); }}
+            style={{ ...menuBtn, borderRight: '1px solid rgba(255,255,255,.25)' }}
+          >💬 Ask the docs</button>
+          <button
+            onMouseDown={(e) => { e.preventDefault(); addDraft({ kind: 'selection', quote: sel.text }); setSel(null); if (ExecutionEnvironment.canUseDOM) window.getSelection()?.removeAllRanges(); }}
+            style={menuBtn}
+          >✎ Add note</button>
+        </div>
       )}
 
       {/* paragraph pin */}
