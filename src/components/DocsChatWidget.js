@@ -43,7 +43,6 @@ export default function DocsChatWidget() {
   const [quotes, setQuotes] = useState([]); // {text, url}
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const [sel, setSel] = useState(null); // { text, x, y }
   const scrollRef = useRef(null);
 
   // --- Access probe (mirrors the search bar) --------------------------------
@@ -71,39 +70,25 @@ export default function DocsChatWidget() {
     return () => { cancel(); window.removeEventListener('focus', onFocus); };
   }, [probe]);
 
-  // --- Highlight-to-quote ---------------------------------------------------
+  // --- Add a quote when the shared selection menu fires "ask the docs" -------
+  // The AnnotationLayer owns the single on-selection popover and dispatches this
+  // event, so the two widgets share one menu rather than overlapping chips.
   useEffect(() => {
-    if (!ExecutionEnvironment.canUseDOM || access !== 'ready') return undefined;
-    const onMouseUp = () => {
-      const s = window.getSelection && window.getSelection();
-      const text = s ? String(s).trim() : '';
-      if (!s || s.isCollapsed || text.length < 12) { setSel(null); return; }
-      // Ignore selections inside the widget itself.
-      const anchor = s.anchorNode && (s.anchorNode.nodeType === 1 ? s.anchorNode : s.anchorNode.parentElement);
-      if (anchor && anchor.closest && anchor.closest('.docs-chat-widget')) { setSel(null); return; }
-      let rect;
-      try { rect = s.getRangeAt(0).getBoundingClientRect(); } catch { rect = null; }
-      if (!rect || (!rect.width && !rect.height)) { setSel(null); return; }
-      setSel({ text: text.slice(0, 1200), x: Math.min(rect.left + rect.width / 2, window.innerWidth - 130), y: rect.top - 8 });
+    if (!ExecutionEnvironment.canUseDOM) return undefined;
+    const onAsk = (e) => {
+      const text = (e.detail && e.detail.text ? String(e.detail.text) : '').trim();
+      if (!text) return;
+      const url = (e.detail && e.detail.url) || window.location.href.split('#')[0];
+      setQuotes((q) => (q.length >= 20 ? q : [...q, { text: text.slice(0, 1200), url }]));
+      setOpen(true);
     };
-    const onScroll = () => setSel(null);
-    document.addEventListener('mouseup', onMouseUp);
-    document.addEventListener('scroll', onScroll, true);
-    return () => { document.removeEventListener('mouseup', onMouseUp); document.removeEventListener('scroll', onScroll, true); };
-  }, [access]);
+    window.addEventListener('eco:ask-selection', onAsk);
+    return () => window.removeEventListener('eco:ask-selection', onAsk);
+  }, []);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
   }, [messages, loading, open]);
-
-  const addQuote = () => {
-    if (!sel) return;
-    const url = ExecutionEnvironment.canUseDOM ? window.location.href.split('#')[0] : '';
-    setQuotes((q) => (q.length >= 20 ? q : [...q, { text: sel.text, url }]));
-    setSel(null);
-    setOpen(true);
-    if (ExecutionEnvironment.canUseDOM) window.getSelection()?.removeAllRanges();
-  };
 
   const send = async () => {
     const q = input.trim();
@@ -145,20 +130,6 @@ export default function DocsChatWidget() {
 
   return (
     <div className="docs-chat-widget" style={wrap}>
-      {/* Ask-about-this chip near a text selection */}
-      {access === 'ready' && sel && (
-        <button
-          onClick={addQuote}
-          style={{
-            position: 'fixed', left: sel.x, top: Math.max(sel.y, 8), transform: 'translate(-50%, -100%)',
-            zIndex: 600, padding: '4px 10px', borderRadius: 6, border: 'none', cursor: 'pointer',
-            background: 'var(--ifm-color-primary)', color: '#fff', fontSize: 12, boxShadow: '0 2px 8px rgba(0,0,0,.25)',
-          }}
-        >
-          💬 Ask about this
-        </button>
-      )}
-
       {open ? (
         <div style={panel}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 12px', background: 'var(--ifm-color-primary)', color: '#fff' }}>
