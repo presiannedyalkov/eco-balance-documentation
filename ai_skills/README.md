@@ -1,8 +1,23 @@
 # AI Skills Library
 
+> ## ⚠️ DEPRECATED (2026.07)
+>
+> This framework is **retired**. Only 1 of ~13 planned skill templates was ever
+> written, and its role library has been superseded by the mature persona set in
+> [`_vault_maintenance/personas/`](../_vault_maintenance/personas/) plus the
+> documentation-fleet manifest in
+> [`_vault_maintenance/personas/FLEET.md`](../_vault_maintenance/personas/FLEET.md).
+>
+> - **Reviewer roles** → the 20 personas in `_vault_maintenance/personas/`.
+> - **Generative/proposer roles** → `_vault_maintenance/personas/proposers/`.
+> - The one written skill here (`documentation_curator.md`) is covered by the
+>   `curator` persona.
+>
+> This directory is kept for history only; do not add to it.
+
 **Purpose:** Comprehensive guidance templates for AI assistants managing the Eco Restoration Project
 
-**Version:** 1.0.0  
+**Version:** 1.0.0 (deprecated)
 **Last Updated:** October 29, 2025
 
 ---
