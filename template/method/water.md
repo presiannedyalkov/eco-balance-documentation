@@ -18,7 +18,7 @@ Water decides what survives. The goal is to keep rain on the land long enough fo
 
 ## Options & pathways
 
-- **Earthworks (swales, keyline, ponds)** — slow and sink runoff, recharge groundwater, feed streams; needs design and earth-moving.
+- **Earthworks (swales, keyline, ponds)** — slow and sink runoff, recharge groundwater, feed streams; needs design and earth-moving. Modelling in dry Brandenburg found that steering surplus stream water into small basins to seep away raised local groundwater by up to 2 m and lifted flow in connected streams by up to 15% ([basins recharge groundwater](research/bookmarks/Climate%20Change/1781523122870.md), *study*).
 - **Rainwater harvesting and storage** — reliable water for establishment and living; tanks cost money and upkeep. Harvesting methods keep improving, including biomimetic designs drawn from desert animals ([lizard-inspired water harvesting](research/bookmarks/Climate%20Change/1782457491385.md), *news*).
 - **Soil as reservoir** — always, alongside the rest; organic matter and cover hold water in the ground.
 - **Drought-adapted design** — in Mediterranean and drying climates; fewer losses, narrower species choice. Scarcity is increasingly managed at community level ([Algarve communities and water](research/bookmarks/Climate%20Change/1716535611000.md), *news*). Plan for the swings between years, not just the average: El Niño/La Niña cycles bring runs of drought and flood years, and it is the dry extreme that kills plantings — size storage and species for it ([ENSO drives multi-year drought and flood](research/bookmarks/Climate%20Change/1783254716157.md), *reference*).
