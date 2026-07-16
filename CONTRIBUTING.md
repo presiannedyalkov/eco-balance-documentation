@@ -75,10 +75,17 @@ git push origin feature/your-feature-name
 
 ### Step 4: Open a Pull Request
 
-1. Go to: https://github.com/presiannedyalkov/eco-balance-documentation
-2. Click "Compare & pull request" (appears after you push)
+1. Go to the repository on Gitea: `https://gitea.nexus-home.cc/pres/eco-balance-documentation`
+2. Click "New Pull Request" (Gitea offers it after you push a branch)
 3. Fill out the PR template
 4. Submit the PR
+
+> **Not a maintainer?** The Gitea instance is private, so the flow above only
+> works if you have access to it. The GitHub copy is a read-only mirror — pull
+> requests opened there are not seen and pushes to it are overwritten on the
+> next sync. To suggest a change to the documentation, use the annotation tool
+> on [docs.eco-balance.cc](https://docs.eco-balance.cc): select any passage,
+> leave a comment or suggestion, and it arrives as an issue in the queue.
 
 ### Step 5: Review and Merge
 
@@ -258,8 +265,8 @@ git push origin your-branch-name --force-with-lease
 ## 🔄 Sync Your Fork (If Using Fork Workflow)
 
 ```bash
-# Add upstream remote
-git remote add upstream https://github.com/presiannedyalkov/eco-balance-documentation.git
+# Add upstream remote (Gitea is upstream; the GitHub copy is a mirror of it)
+git remote add upstream https://gitea.nexus-home.cc/pres/eco-balance-documentation.git
 
 # Fetch latest changes
 git fetch upstream
@@ -279,7 +286,7 @@ git rebase main  # or merge main into your branch
 
 - [Collaborator Access Guide](_process/documentation/COLLABORATOR_ACCESS.md)
 - [Collaborator Guide](_process/documentation/COLLABORATOR_GUIDE.md)
-- [GitHub Branch Protection Docs](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches)
+- [Gitea Branch Protection Docs](https://docs.gitea.com/usage/protected-branches)
 
 ---
 
