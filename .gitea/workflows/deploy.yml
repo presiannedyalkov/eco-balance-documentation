@@ -46,10 +46,9 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm ci || npm install
-          # patch-package runs in postinstall; ensure it applied (gray-matter needs it)
-          npm run postinstall || npx patch-package
+        # postinstall (patch-package -> the gray-matter/js-yaml fix) runs as part
+        # of ci/install. .npmrc pins include=dev so it can't be skipped.
+        run: npm ci || npm install
 
       - name: Fix frontmatter issues
         run: |

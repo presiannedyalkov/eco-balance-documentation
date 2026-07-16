@@ -59,9 +59,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm ci || npm install
-          npm run postinstall || npx patch-package || true
+        # postinstall (patch-package) runs as part of ci/install; .npmrc pins
+        # include=dev so it can't be skipped. The old `|| true` here meant a
+        # genuinely failed patch passed silently.
+        run: npm ci || npm install
 
       - name: Run engines and prepare site
         run: |
