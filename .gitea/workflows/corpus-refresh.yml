@@ -1,31 +1,35 @@
-name: Site Refresh (Engines)
+name: Corpus Refresh (bookmarks + engines)
 
-# Regenerates the engine-derived content (feed queue, enrichment worklist,
-# synthesis briefs, citation index, widgets, status) from the bookmark corpus,
-# and opens ONE standing PR so publishing stays a single-click review.
+# Advances the research/bookmarks pointer to the corpus tip AND regenerates
+# everything derived from it (feed queue, enrichment worklist, synthesis briefs,
+# citation index, widgets, status) in ONE PR.
 #
-# Ported from GitHub Actions, and simpler here: the runner is on the LAN with the
-# Gitea instance, so the old "configure Gitea submodule auth + retry transient
-# 502s through the Cloudflare tunnel" dance is gone — the submodule just clones.
-# The gh CLI calls became Gitea API calls.
+# This replaces the old split of sync-research-bookmarks (every 6h) +
+# site-refresh (weekly). That split meant the corpus could advance on Monday
+# morning while the queue the fleet reads stayed a week stale. Now corpus and
+# derived content always move together, which matters because the fleet runs off
+# the enrichment worklist several times a day.
+#
+# Everything here is deterministic (keyword classifiers, no LLM), so it is safe
+# to land zero-touch. LLM-authored content from the fleet is NEVER auto-merged —
+# see _vault_maintenance/personas/FLEET.md.
 #
 # Secrets required:
-#   GITEA_TOKEN — PAT with repo write (create/merge PRs). Falls back to leaving
-#                 the PR open for manual merge if unset.
+#   GITEA_TOKEN — PAT with repo write (create/merge PRs)
 
 on:
   schedule:
-    # Every Monday 05:00 UTC
-    - cron: '0 5 * * 1'
+    # Every 6 hours
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 concurrency:
-  group: site-refresh
+  group: corpus-refresh
   cancel-in-progress: false
 
 jobs:
   refresh:
-    name: Regenerate engine outputs and open PR
+    name: Advance corpus, regenerate, open + merge PR
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository (with corpus submodule)
@@ -33,6 +37,20 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+
+      - name: Advance corpus to its tip
+        id: corpus
+        run: |
+          BEFORE=$(git rev-parse HEAD:research/bookmarks)
+          git submodule update --remote --recursive research/bookmarks
+          AFTER=$(git -C research/bookmarks rev-parse HEAD)
+          echo "before=$BEFORE" >> "$GITHUB_OUTPUT"
+          echo "after=$AFTER"   >> "$GITHUB_OUTPUT"
+          if [ "$BEFORE" = "$AFTER" ]; then
+            echo "Corpus unchanged (${BEFORE:0:8})."
+          else
+            echo "Corpus advanced: ${BEFORE:0:8} -> ${AFTER:0:8}"
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -56,18 +74,21 @@ jobs:
       - name: Detect changes
         id: changes
         run: |
-          if [ -n "$(git status --porcelain -- docs research/citation_index.json src/data state/status.json _engines/_reports)" ]; then
+          # Pointer bump and/or regenerated outputs both count.
+          if [ -n "$(git status --porcelain -- research/bookmarks docs research/citation_index.json src/data state/status.json _engines/_reports)" ]; then
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           else
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
-            echo "No regenerated changes this run."
+            echo "Nothing changed this run."
           fi
 
       - name: Build digest
         if: steps.changes.outputs.has_changes == 'true'
         run: |
           {
-            echo "## Site refresh (engines)"
+            echo "## Corpus refresh"
+            echo ""
+            echo "Corpus \`${{ steps.corpus.outputs.before }}\` -> \`${{ steps.corpus.outputs.after }}\`"
             echo ""
             if [ -f _engines/_reports/feed-queue.md ]; then
               sed -n '3p' _engines/_reports/feed-queue.md
@@ -83,27 +104,27 @@ jobs:
           } > digest.md
           cat digest.md >> "$GITHUB_STEP_SUMMARY" || true
 
-      - name: Commit, push, open/update the standing PR
+      - name: Commit, push, open + merge the standing PR
         if: steps.changes.outputs.has_changes == 'true'
         env:
           GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
           API: ${{ github.server_url }}/api/v1/repos/${{ github.repository }}
         run: |
           set -e
-          BRANCH="chore/site-refresh"
+          BRANCH="chore/corpus-refresh"
 
           git config user.name "gitea-actions[bot]"
           git config user.email "gitea-actions@nexus-home.cc"
           git checkout -B "$BRANCH"
 
-          # Stage only engine-generated areas so unrelated files never sneak in.
-          git add docs research/citation_index.json src/data state/status.json _engines/_reports 2>/dev/null || true
+          # Corpus pointer + only the engine-generated areas.
+          git add research/bookmarks docs research/citation_index.json src/data state/status.json _engines/_reports 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "Nothing staged after filtering; skipping."
             exit 0
           fi
 
-          git commit -m "chore: site refresh (engines)"
+          git commit -m "chore: corpus refresh (bookmarks + engines)"
           git push --force origin "$BRANCH"
 
           if [ -z "$GITEA_TOKEN" ]; then
@@ -112,25 +133,22 @@ jobs:
           fi
 
           AUTH="Authorization: token $GITEA_TOKEN"
-          BODY=$(python3 -c 'import json,sys;print(json.dumps(open("digest.md").read()))')
+          BODY=$(python3 -c 'import json;print(json.dumps(open("digest.md").read()))')
 
-          # Reuse the standing PR if one is already open for this branch.
           NUM=$(curl -sf -H "$AUTH" "$API/pulls?state=open&limit=50" \
                 | python3 -c "import json,sys;print(next((p['number'] for p in json.load(sys.stdin) if p['head']['ref']=='$BRANCH'), ''))" || echo "")
 
           if [ -n "$NUM" ]; then
-            echo "PR #$NUM already open; force-push updated it. Refreshing body."
             curl -sf -X PATCH -H "$AUTH" -H "Content-Type: application/json" \
               "$API/pulls/$NUM" -d "{\"body\": $BODY}" >/dev/null || true
+            echo "Updated standing PR #$NUM"
           else
             NUM=$(curl -sf -X POST -H "$AUTH" -H "Content-Type: application/json" "$API/pulls" \
-              -d "{\"head\":\"$BRANCH\",\"base\":\"main\",\"title\":\"chore: site refresh (engines)\",\"body\": $BODY}" \
+              -d "{\"head\":\"$BRANCH\",\"base\":\"main\",\"title\":\"chore: corpus refresh (bookmarks + engines)\",\"body\": $BODY}" \
               | python3 -c "import json,sys;print(json.load(sys.stdin)['number'])")
             echo "Opened PR #$NUM"
           fi
 
-          # Deterministic regen only — safe to land zero-touch. (LLM-authored
-          # content from the fleet is NOT auto-merged; see personas/FLEET.md.)
           curl -sf -X POST -H "$AUTH" -H "Content-Type: application/json" \
             "$API/pulls/$NUM/merge" \
             -d '{"Do":"squash","delete_branch_after_merge":true}' >/dev/null \
