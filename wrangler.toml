@@ -1,0 +1,12 @@
+# Cloudflare Pages project for the docs site.
+#
+# Build:  npm run build   -> build/   (Docusaurus default output)
+# Deploy: npx wrangler pages deploy build --project-name eco-balance-docs
+#         (done automatically by .gitea/workflows/deploy.yml on push to main)
+#
+# The custom domain docs.eco-balance.cc is attached to this Pages project, so
+# the site is served at the root and docusaurus baseUrl is always '/'.
+
+name = "eco-balance-docs"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "build"
