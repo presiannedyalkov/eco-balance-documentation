@@ -1,12 +1,12 @@
 # Consistency & quality report
 
-Generated 2026-07-13T08:14. Scanned 43 source docs.
+Generated 2026-07-16T11:00. Scanned 43 source docs.
 
 ## Summary
 
 - Broken internal links: 0
-- Unresolved citations: 11
-- Cited articles indexed: 44
+- Unresolved citations: 0
+- Cited articles indexed: 56
 - Voice-tell hits: 0
 - Decision records: 13
 
@@ -14,19 +14,9 @@ Generated 2026-07-13T08:14. Scanned 43 source docs.
 
 None.
 
-## Unresolved citations (11)
+## Unresolved citations (0)
 
-- template/economics/revenue.md -> 1782658991399
-- template/engagement/00-overview.md -> 1783099664548
-- template/indicators/00-overview.md -> 1782317720086
-- template/infrastructure/00-overview.md -> 1783255090320
-- template/method/reforestation.md -> 1783233364306
-- template/method/water.md -> 1782457491385
-- template/method/water.md -> 1782992437626
-- template/method/water.md -> 1782317798682
-- template/method/water.md -> 1783233224646
-- template/risk/00-overview.md -> 1782976072574
-- template/stewardship-handoff/00-overview.md -> 1782816753002
+None.
 
 ## Voice tells to review (0)
 

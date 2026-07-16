@@ -2,13 +2,6 @@
 
 Top 30 unused articles, routed to a suggested domain. Review, place the one-line insight in the doc, and paste the citation. The consistency engine checks the result.
 
-### Abandoned farmland restored to wildflower meadow without sowing seeds
-
-- **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** Wildflower Meadow Restoration
-- **Summary:** Abandoned farmland can be transformed into wildflower-rich grassland without seeding, as demonstrated by a 10 to 15-year study in Norfolk, UK, which shows that natural recovery is effective and cost-efficient for biodiversity restoration.
-- **Citation:** `[Wildflower Meadow Restoration](research/bookmarks/Climate%20Change/1783427400875.md)`
-
 ### Agrivoltaics Works When Solar Panels Do Farm Work
 
 - **Suggested domain:** `template/site-and-land` (match 1)
@@ -58,75 +51,19 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Summary:** The article introduces Sustainable Living, a platform that curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the existing wor
 - **Citation:** `[Sustainable Initiatives](research/bookmarks/Climate%20Change/1783099664547.md)`
 
-### A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats
-
-- **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** Solar farms
-- **Summary:** A floating solar farm in the Netherlands has created a thriving underwater ecosystem, attracting over 400 fish and nearly 2,000 invertebrates, and providing shade that conserves water. This project demonstrates that solar farms can benefit 
-- **Citation:** `[Solar farms](research/bookmarks/Climate%20Change/1782992437625.md)`
-
-### Summer’s new normal is a hazard that’s testing Europe’s climate resilience
-
-- **Suggested domain:** `template/economics` (match 1)
-- **Topic:** Climate Resilience
-- **Summary:** Europe is experiencing unprecedented heatwaves, with temperatures reaching record highs and causing significant health and economic impacts. Despite warnings from scientists, extreme heat is becoming the new normal, testing Europe's climate
-- **Citation:** `[Climate Resilience](research/bookmarks/Climate%20Change/1782976072573.md)`
-
-### reuters.com
-
-- **Suggested domain:** `template/infrastructure` (match 2)
-- **Topic:** El Niño
-- **Summary:** A powerful El Niño is building, expected to be one of the strongest in decades, and new FAO analysis predicts where drought will hit hardest, aiding in targeted support for farmers and pastoralists to mitigate impacts on global food securit
-- **Citation:** `[El Niño](research/bookmarks/Climate%20Change/1782828012910.md)`
-
-### ‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive
-
-- **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Agroforestry
-- **Summary:** Wakelyns, a pioneering agroforestry farm in Suffolk, is under threat and seeks community ownership to secure its future. The farm, a living laboratory for sustainable farming, showcases diverse crops and micro-enterprises that enhance biodi
-- **Citation:** `[Agroforestry](research/bookmarks/Climate%20Change/1782816753001.md)`
-
-### Pollinator Habitat Turns Unprofitable Acres Into an Asset
-
-- **Suggested domain:** `template/method/biodiversity` (match 4)
-- **Topic:** Pollinator Habitat
-- **Summary:** Indiana farmer Brian Scott turned nine unprofitable acres into pollinator habitat, improving the field's return and creating space for wildlife. The project, supported by the Conservation Reserve Program, reduced input costs and provided an
-- **Citation:** `[Pollinator Habitat](research/bookmarks/Climate%20Change/1782658991398.md)`
-
-### Thirsty desert lizards inspire a new water-harvesting system
-
-- **Suggested domain:** `template/method/water` (match 2)
-- **Topic:** Water harvesting
-- **Summary:** Scientists have discovered how desert horned lizards efficiently extract water from their skin using capillary action and asymmetric jaw movements, which inspired a new water-harvesting system that can clean and collect water from damp soil
-- **Citation:** `[Water harvesting](research/bookmarks/Climate%20Change/1782457491384.md)`
-
-### Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture
-
-- **Suggested domain:** `template/method/water` (match 3)
-- **Topic:** Irrigation Systems
-- **Summary:** This study found that integrating circular buffer strips of native perennial grasses within center pivot irrigation systems significantly improved rainwater conservation and maize growth, reducing water stress and increasing biomass water p
-- **Citation:** `[Irrigation Systems](research/bookmarks/Climate%20Change/1782317798681.md)`
-
-### The case for field stations
-
-- **Suggested domain:** `template/indicators` (match 2)
-- **Topic:** field stations
-- **Summary:** A new BioScience paper argues that tropical field stations are crucial for turning global conservation commitments into local action by providing long-term monitoring, training, and local employment. These stations are essential for validat
-- **Citation:** `[field stations](research/bookmarks/Climate%20Change/1782317720085.md)`
-
 ### The Ecological Intelligence of Sacred Landscapes
 
 - **Suggested domain:** `template/method/water` (match 1)
 - **Topic:** Sacred Landscapes
 - **Summary:** The article highlights how sacred landscapes in India and the SWANA region have long integrated ecological practices through religious and cultural traditions, such as temple tanks and sacred groves, which continue to provide environmental 
-- **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661867.md)`
+- **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661868.md)`
 
 ### REGENERATING THE BIOREGIONAL COMMONS
 
-- **Suggested domain:** `template/method/biodiversity` (match 2)
-- **Topic:** Bioregional Commons
-- **Summary:** The article argues that the current approach to addressing climate, biodiversity, food, and finance issues is flawed due to a fragmented and technical perspective, which fails to recognize the interconnectedness of these challenges. It prop
-- **Citation:** `[Bioregional Commons](research/bookmarks/Climate%20Change/1782154194930.md)`
+- **Suggested domain:** `template/method/biodiversity` (match 1)
+- **Topic:** Bioregional Approach
+- **Summary:** The article argues that the current approach to addressing climate change, biodiversity loss, and other environmental issues is fragmented and fails to recognize the interconnectedness of these challenges. It proposes a bioregional approach
+- **Citation:** `[Bioregional Approach](research/bookmarks/Climate%20Change/1782154194931.md)`
 
 ### 'Everything has its own order and purpose': The rainforest 'farms' defying modern agriculture
 
@@ -211,4 +148,67 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Topic:** Conservation
 - **Summary:** A project called Space4Nature used AI and citizen science to restore over 60 hectares of pollinator habitat and develop predictive models for conservation, combining high-resolution satellite imagery and machine learning.
 - **Citation:** `[Conservation](research/bookmarks/Climate%20Change/1780744282976.md)`
+
+### ‘An equal and habitable world is possible’: academics set out sweeping vision for planetary survival
+
+- **Suggested domain:** `template/organization` (match 1)
+- **Topic:** Planetary Survival
+- **Summary:** The World Inequality Lab proposes a comprehensive plan to reduce inequality, increase living standards, and limit global heating to 2C by 2100 through bold policy measures like wealth taxes, reduced working hours, and shifts in economic foc
+- **Citation:** `[Planetary Survival](research/bookmarks/Climate%20Change/1780670499180.md)`
+
+### Encyclopedia of Life
+
+- **Suggested domain:** `template/method/biodiversity` (match 3)
+- **Topic:** Biodiversity
+- **Summary:** The Encyclopedia of Life provides global access to knowledge about life on Earth, including detailed information on various species and their ecological roles. This resource supports biodiversity research and conservation efforts.
+- **Citation:** `[Biodiversity](research/bookmarks/Climate%20Change/1765531706791.md)`
+
+### WOODY MEADOW GUIDELINES - Woody Meadow
+
+- **Suggested domain:** `template/method/reforestation` (match 2)
+- **Topic:** Woody Meadows
+- **Summary:** The guidelines provide detailed information on establishing and managing woody meadows, which can enhance biodiversity and carbon sequestration in urban and rural areas.
+- **Citation:** `[Woody Meadows](research/bookmarks/Climate%20Change/1763280214419.md)`
+
+### Banking on Climate Chaos 2025: Global Bank Fossil Fuel Financing Report
+
+- **Suggested domain:** `template/growth-operations` (match 2)
+- **Topic:** Fossil Fuel Financing
+- **Summary:** The report details the financing activities of the world's 65 largest banks in the fossil fuel sector, highlighting the continued support for fossil fuel expansion despite climate change concerns.
+- **Citation:** `[Fossil Fuel Financing](research/bookmarks/Climate%20Change/1756291430212.md)`
+
+### Causes, Effects & Solutions To Climate Change
+
+- **Suggested domain:** `template/method/reforestation` (match 2)
+- **Topic:** Climate Change
+- **Summary:** The article provides an overview of the causes, effects, and solutions to climate change, breaking down complex concepts into accessible information.
+- **Citation:** `[Climate Change](research/bookmarks/Climate%20Change/1715778390000.md)`
+
+### How drought rewires roots, cutting iron uptake across major food crops
+
+- **Suggested domain:** `template/method/water` (match 1)
+- **Topic:** Plant Nutrition
+- **Summary:** Plants under drought stress reduce their iron uptake, which can affect the nutritional value of crops. This shift also allows certain bacteria to thrive, potentially impacting plant health and global food security.
+- **Citation:** `[Plant Nutrition](research/bookmarks/Climate%20Change/1780485783376.md)`
+
+### In Brazil, a project paying farmers for forests is looking to scale up
+
+- **Suggested domain:** `template/method/reforestation` (match 1)
+- **Topic:** Payment for Ecosystem Services (PES)
+- **Summary:** In Brazil, the CONSERV program pays landowners to protect their legal reserve surplus, avoiding over 30,000 hectares of deforestation. The program is now seeking to scale up by exploring mechanisms such as carbon credits and price premiums 
+- **Citation:** `[Payment for Ecosystem Services (PES)](research/bookmarks/Climate%20Change/1780425212427.md)`
+
+### Trees and greenery can cool cities by as much as 18°C – but only if they’re the right type
+
+- **Suggested domain:** `template/method/reforestation` (match 1)
+- **Topic:** Urban Greening
+- **Summary:** The study found that layered vegetation, combining trees, shrubs, and ground cover, can significantly reduce urban heat stress by up to 18°C in Melbourne, while the wrong type of greening can sometimes increase discomfort, especially in hum
+- **Citation:** `[Urban Greening](research/bookmarks/Climate%20Change/1780303191714.md)`
+
+### A global food crisis is nearing – and the warning signs are buried beneath your feet | BBC Science Focus Magazine
+
+- **Suggested domain:** `template/method/soil` (match 1)
+- **Topic:** Soil Science
+- **Summary:** A new technique called 'soilsmology' uses seismology to map soil properties globally, potentially aiding in food security and climate change mitigation by providing detailed information on soil health and carbon content.
+- **Citation:** `[Soil Science](research/bookmarks/Climate%20Change/1780268834416.md)`
 
