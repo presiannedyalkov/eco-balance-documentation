@@ -11,7 +11,6 @@ name: Deploy to Cloudflare Pages
 # Secrets required (Gitea repo or org level):
 #   CLOUDFLARE_API_TOKEN   — token with "Cloudflare Pages: Edit"
 #   CLOUDFLARE_ACCOUNT_ID  — your account id
-#   SENTRY_DSN             — optional; empty just disables Sentry
 
 on:
   push:
@@ -69,8 +68,6 @@ jobs:
           # Cloudflare Pages + custom domain -> always served at the root.
           BASE_URL: '/'
           SITE_URL: 'https://docs.eco-balance.cc'
-          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
-          SENTRY_RELEASE: ${{ github.sha }}
         run: |
           npm run build
           test -d build || (echo "build/ missing after build" && exit 1)
