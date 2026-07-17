@@ -37,6 +37,10 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+          # research/bookmarks is a separate PRIVATE repo (pres/bookmarks). The
+          # automatic Actions token is scoped to THIS repo only, so the submodule
+          # clone fails without a PAT that can read both.
+          token: ${{ secrets.GITEA_TOKEN }}
 
       - name: Advance corpus to its tip
         id: corpus
