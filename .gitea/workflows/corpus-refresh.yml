@@ -102,6 +102,24 @@ jobs:
               echo "### Assumption checks / evidence gaps"
               sed -n '/## Evidence gaps/,/## Articles/p' research/briefs/_assumptions.md | head -12
             fi
+            echo ""
+            # Advancing the corpus can stand a citation up OR knock one down: the
+            # vault dedupes same-URL double-captures, which strands whichever twin
+            # a doc happened to cite. sync unlinks those so no broken anchor ships,
+            # but that's silent — surface it here, because no PR caused it and
+            # nothing else will mention it.
+            if [ -f _engines/_reports/health.md ]; then
+              UNRESOLVED=$(sed -n '/^## Unresolved citations/,/^## /p' _engines/_reports/health.md | grep -c '^- ' || true)
+              if [ "${UNRESOLVED:-0}" -gt 0 ]; then
+                echo "### ⚠️ Unresolved citations ($UNRESOLVED)"
+                echo ""
+                echo "These cite an article the corpus no longer holds, so they ship as plain"
+                echo "text instead of a link. If the vault deduped a same-URL double-capture,"
+                echo "the surviving twin has the same URL under a different entry_id."
+                echo ""
+                sed -n '/^## Unresolved citations/,/^## /p' _engines/_reports/health.md | grep '^- ' | head -10
+              fi
+            fi
           } > digest.md
           cat digest.md >> "$GITHUB_STEP_SUMMARY" || true
 

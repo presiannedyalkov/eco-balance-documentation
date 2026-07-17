@@ -57,12 +57,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The citation gate validates ids against the corpus, so it needs the
+          # bookmarks submodule. Without it corpusIds is empty and EVERY
+          # citation reads as unresolved.
+          submodules: recursive
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
       - name: Install dependencies
         run: npm ci || npm install
+      - name: Citation integrity gate
+        # Fails if a citation points at an article the corpus doesn't hold.
+        # This is the gate that would have caught the 11 stranded citations.
+        run: node _engines/consistency/check.js --strict
       - name: Structural quality gate
         run: |
           node _engines/quality/audit.js
