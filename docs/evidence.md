@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Evidence
 
-Every source cited across the model and our case, distilled to a line and linked to the original. 44 sources. The full classified library is under Research.
+Every source cited across the model and our case, distilled to a line and linked to the original. 58 sources. The full classified library is under Research.
 
 ## Economics
 
@@ -40,6 +40,24 @@ Source: [news.mongabay.com](https://news.mongabay.com/short-article/young-second
 A recent study reveals that young secondary forests aged 20 to 40 years are the most efficient carbon sinks, removing carbon up to eight times faster per hectare than newly regenerating forests. Protecting these existing young forests, especially in tropical regions, could sequester over 20 billion…
 
 Cited in: [revenue](/model/economics/revenue) · [0008 economics base case](/our-case/decisions/0008-economics-base-case)
+
+### Pollinator Habitat Turns Unprofitable Acres Into an Asset {#e1782658991398}
+
+Source: [agriculture.com](https://www.agriculture.com/pollinator-habitat-turns-unprofitable-acres-into-an-asset-12007222) · _needs verification_
+
+Indiana farmer Brian Scott turned nine unprofitable acres into pollinator habitat, improving the field's return and creating space for wildlife. The project, supported by the Conservation Reserve Program, reduced input costs and provided annual payments, demonstrating that supporting pollinators…
+
+Cited in: [revenue](/model/economics/revenue) · [biodiversity](/model/method/biodiversity)
+
+## Engagement
+
+### The work is already happening. Here’s where to find it. {#e1783099664547}
+
+Source: [theportugalnews.com](https://www.theportugalnews.com/news/2026-07-03/the-work-is-already-happening-heres-where-to-find-it/1049366)
+
+The article introduces Sustainable Living, a platform that curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the existing work towards sustainability and foster collaboration among…
+
+Cited in: [00 overview](/model/engagement/00-overview)
 
 ## Foundation
 
@@ -97,6 +115,14 @@ The article evaluates how Indigenous Peoples, local communities, and citizen sci
 
 Cited in: [00 overview](/model/indicators/00-overview)
 
+### The case for field stations {#e1782317720085}
+
+Source: [news.mongabay.com](https://news.mongabay.com/2026/06/the-case-for-field-stations/)
+
+A new BioScience paper argues that tropical field stations are crucial for turning global conservation commitments into local action by providing long-term monitoring, training, and local employment. These stations are essential for validating and interpreting data from remote sensing and other…
+
+Cited in: [00 overview](/model/indicators/00-overview)
+
 ## Infrastructure
 
 ### This $9K Tiny House at Amazon Has Tons of Natural Light {#e1745869517029}
@@ -114,6 +140,14 @@ Cited in: [00 overview](/model/infrastructure/00-overview)
 ### Cabin Devín vacation home delivers off-grid tiny living in just 215 sq ft {#e1774284779591}
 
 Source: [newatlas.com](https://newatlas.com/tiny-houses/cabin-devin-off-grid-ark-shelter/) · _catalog_
+
+Cited in: [00 overview](/model/infrastructure/00-overview)
+
+### Agrivoltaics Works When Solar Panels Do Farm Work {#e1783255090319}
+
+Source: [cleantechnica.com](https://cleantechnica.com/2026/07/04/agrivoltaics-works-where-shade-does-farm-work/)
+
+Agrivoltaics involves placing solar panels on farmland to produce both electricity and crops, but its effectiveness depends on the specific agricultural needs and the type of crops. The systems that provide clear farm value, such as grazing under solar arrays and protected crops, are the most…
 
 Cited in: [00 overview](/model/infrastructure/00-overview)
 
@@ -297,6 +331,70 @@ A new study reveals that over half of the critical mycorrhizal fungi species, wh
 
 Cited in: [soil](/model/method/soil)
 
+### How directing water flows in the landscape could support groundwater and surface water streams {#e1781523122870}
+
+Source: [phys.org](https://phys.org/news/2026-06-landscape-groundwater-surface-streams.html)
+
+Researchers at the Leibniz Centre for Agricultural Landscape Research demonstrated that redirecting excess stream water into small natural basins can significantly increase groundwater levels and stabilize surface water streams, particularly in dry regions like Brandenburg, Germany.
+
+Cited in: [water](/model/method/water)
+
+### Perennial grasses as circular strips improve rainfall conservation and crop growth in center pivot agriculture - npj Sustainable Agriculture {#e1782317798681}
+
+Source: [nature.com](https://www.nature.com/articles/s44264-026-00167-4)
+
+This study found that integrating circular buffer strips of native perennial grasses within center pivot irrigation systems significantly improved rainwater conservation and maize growth, reducing water stress and increasing biomass water productivity.
+
+Cited in: [water](/model/method/water)
+
+### Thirsty desert lizards inspire a new water-harvesting system {#e1782457491384}
+
+Source: [phys.org](https://phys.org/news/2026-06-thirsty-lizards-harvesting.html) · _needs verification_
+
+Scientists have discovered how desert horned lizards efficiently extract water from their skin using capillary action and asymmetric jaw movements, which inspired a new water-harvesting system that can clean and collect water from damp soil, potentially providing clean drinking water to…
+
+Cited in: [water](/model/method/water)
+
+### A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater Habitats {#e1782992437625}
+
+Source: [bgr.com](https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/) · _needs verification_
+
+A floating solar farm in the Netherlands has created a thriving underwater ecosystem, attracting over 400 fish and nearly 2,000 invertebrates, and providing shade that conserves water. This project demonstrates that solar farms can benefit local biodiversity and water quality.
+
+Cited in: [water](/model/method/water)
+
+### Scientist dubbed The Bogfather is restoring peatland to fight climate change {#e1783233224645}
+
+Source: [bbc.com](https://www.bbc.com/news/articles/cy498d400pro)
+
+Dr Peter Jones, known as The Bogfather, has spent decades restoring peatlands in Wales, which store significant carbon and provide natural solutions to climate change, flooding, and wildfires. Despite covering only 4% of the surface, peatlands store 30% of Wales' land-based carbon but are 90%…
+
+Cited in: [water](/model/method/water)
+
+### A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests {#e1783233364305}
+
+Source: [phys.org](https://phys.org/news/2026-07-benchmark-disturbances-loss-recovery-carbon.html)
+
+The study quantifies the significant carbon losses in tropical forests due to degradation and shows that forests retaining structural integrity recover carbon more quickly than those cleared by deforestation. This research improves carbon modeling and national greenhouse gas inventories, enhancing…
+
+Cited in: [reforestation](/model/method/reforestation)
+
+### Visualizing Every El Niño and La Niña Since 1979 {#e1783254716157}
+
+Source: [visualcapitalist.com](https://www.visualcapitalist.com/cp/visualizing-every-el-nino-and-la-nina-since-1979/)
+
+The article visualizes every El Niño and La Niña event since 1979, highlighting the development of a new El Niño in 2026 and its potential impacts. Strong El Niño events have coincided with significant global climate impacts, including droughts, floods, and record temperatures.
+
+Cited in: [water](/model/method/water)
+
+### Abandoned farmland restored to wildflower meadow without sowing seeds {#e1783427400875}
+
+Source: [phys.org](https://phys.org/news/2026-07-abandoned-farmland-wildflower-meadow-seeds.html)
+
+Abandoned farmland can be transformed into wildflower-rich grassland without seeding, as demonstrated by a 10 to 15-year study in Norfolk, UK, which shows that natural recovery is effective and cost-efficient for biodiversity restoration.
+
+Cited in: [biodiversity](/model/method/biodiversity)
+
 ## Our case
 
 ### Power of Cork Key to Climate Change Fight, Scientists Say {#e1714282453000}
@@ -351,6 +449,14 @@ As climate change intensifies wildfires across southern Europe, firefighting alo
 
 Cited in: [00 overview](/model/risk/00-overview) · [choosing a site](/model/site-and-land/choosing-a-site) · [0001 candidate countries](/our-case/decisions/0001-candidate-countries) · [0010 risk posture](/our-case/decisions/0010-risk-posture) · [portugal](/model/parameters/portugal)
 
+### Summer’s new normal is a hazard that’s testing Europe’s climate resilience {#e1782976072573}
+
+Source: [downtoearth.org.in](https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience) · _needs verification_
+
+Europe is experiencing unprecedented heatwaves, with temperatures reaching record highs and causing significant health and economic impacts. Despite warnings from scientists, extreme heat is becoming the new normal, testing Europe's climate resilience and highlighting the urgent need for…
+
+Cited in: [00 overview](/model/risk/00-overview)
+
 ## Site And Land
 
 ### Abandoned farmlands could play a role in fighting climate change. A study shows exactly where they are {#e1717068603000}
@@ -376,6 +482,14 @@ Cited in: [choosing a site](/model/site-and-land/choosing-a-site) · [germany](/
 Source: [theconversation.com](https://theconversation.com/national-parks-and-other-protected-areas-often-fail-to-conserve-earths-forests-research-finds-237567) · _news_
 
 A global study analyzing forest loss from 2001-2022 found that protected areas prevent only about 30% of forest loss that would otherwise occur, meaning 70% of potential deforestation still happens within these zones.[1][2] Effectiveness varies dramatically by country, with protected areas in…
+
+Cited in: [00 overview](/model/stewardship-handoff/00-overview)
+
+### ‘Living laboratory’: Suffolk agroforestry farm seeks community ownership to survive {#e1782816753001}
+
+Source: [theguardian.com](https://www.theguardian.com/environment/2026/jun/30/suffolk-agroforestry-farm-wakelyns-community-ownership-survive)
+
+Wakelyns, a pioneering agroforestry farm in Suffolk, is under threat and seeks community ownership to secure its future. The farm, a living laboratory for sustainable farming, showcases diverse crops and micro-enterprises that enhance biodiversity and resilience.
 
 Cited in: [00 overview](/model/stewardship-handoff/00-overview)
 

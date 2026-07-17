@@ -18,8 +18,8 @@ The aim is habitat, not tree cover. A patch can hit its planting targets and sta
 
 ## Options & pathways
 
-- **Habitat features** — ponds, log piles, hedges, nest sites; cheap, fast niches.
-- **Rewilding natural processes** — with enough space and time, including missing species; resilient and low-effort, slower to direct ([rewilding helps forests work with nature](/evidence#e1742557796063), *opinion*; [returning predators drives trophic cascades](/evidence#e1755056273767), *news*).
+- **Habitat features** — ponds, log piles, hedges, nest sites; cheap, fast niches. Put them where the ground never paid: the least productive corners are the cheapest habitat, and retiring them can lift overall returns by ending inputs on land that never returned them, with habitat-scheme payments on top ([unprofitable acres into pollinator habitat](/evidence#e1782658991398), *news*).
+- **Rewilding natural processes** — with enough space and time, including missing species; resilient and low-effort, slower to direct ([rewilding helps forests work with nature](/evidence#e1742557796063), *opinion*; [returning predators drives trophic cascades](/evidence#e1755056273767), *news*). On ex-farmland with nearby seed sources and no heavy fertiliser legacy it can also be fast and cheap: a Norfolk field reached rich wildflower-meadow plant diversity in 10–15 years on an annual hay cut alone, no sowing — counter to the seed-stock schemes that dominate farmland conservation ([meadow recovers without sowing](/evidence#e1783427400875), *news*).
 - **Active management** — for specific species or invasives; targeted but ongoing, easy to overdo.
 
 Monitor with simple repeatable counts, citizen-science tools, and fixed-point photos; local and indigenous observers often see what visiting surveys miss ([indigenous data collectors](/evidence#e1745736339239), *news*).

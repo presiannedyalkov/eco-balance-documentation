@@ -12,7 +12,7 @@ Name what could derail the project, and decide how you would respond before it h
 
 ## Where the risks sit
 
-- **Ecological:** drought, fire, pests and disease, planting failure. Fire in particular drives site and species choices in dry regions ([fire-resilient forests in Iberia](/evidence#e1754888118250), *news*). European summers are trending hotter and drier, which sharpens both ([Europe's new heat normal](/evidence#e1782976072574), *news*).
+- **Ecological:** drought, fire, pests and disease, planting failure. Fire in particular drives site and species choices in dry regions ([fire-resilient forests in Iberia](/evidence#e1754888118250), *news*). European summers are trending hotter and drier, which sharpens both ([Europe's new heat normal](/evidence#e1782976072573), *news*).
 - **Financial:** funding falling short, costs running over, income arriving slower than hoped.
 - **Operational:** founder burnout, too little time, missing skills.
 - **Legal and site:** losing access, permit problems, contamination found late.

@@ -16,7 +16,7 @@ How the project talks to the world, and why that is worth doing well. Different 
 - A field journal that follows the work through the seasons.
 - Regular updates to supporters and partners.
 - Direct relationships, which carry more weight than any broadcast.
-- Local networks that gather initiatives in one place, which help you find allies and be found — Portugal has one such platform ([Sustainable Living, Portugal](research/bookmarks/Climate%20Change/1783099664548.md), *news*).
+- Local networks that gather initiatives in one place, which help you find allies and be found — Portugal has one such platform ([Sustainable Living, Portugal](research/bookmarks/Climate%20Change/1783099664547.md), *news*).
 
 ## Principles
 

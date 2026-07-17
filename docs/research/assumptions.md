@@ -15,7 +15,7 @@ Domains where we hold many articles but cite few — places our claims may be un
 - **method/community** — 12 articles, 1 cited.
 - **growth-operations** — 11 articles, 1 cited.
 - **infrastructure** — 11 articles, 0 cited.
-- **risk** — 8 articles, 0 cited.
+- **risk** — 8 articles, 2 cited.
 
 ## Articles that may challenge assumptions (99)
 
@@ -82,7 +82,7 @@ Review these rather than rubber-stamp; they use language suggesting a method or 
 - [Wilding: How a failing farm became a rewilding success story](https://www.abc.net.au/news/2025-05-28/wilding-documentary-rewilding-isabella-tree/105330664) — _method/biodiversity_
 - [Not enough rain: How can Germany cope with drought?](https://www.dw.com/en/not-enough-rain-how-can-germany-cope-with-drought/a-72746010) — _method/water_
 
-## Low-verification sources (32)
+## Low-verification sources (33)
 
 Cite with care; flag as "needs verification" if used.
 
@@ -118,3 +118,4 @@ Cite with care; flag as "needs verification" if used.
 - [reuters.com](https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/) — score 0.548
 - [Summer’s new normal is a hazard that’s testing Europe’s climate resilience](https://www.downtoearth.org.in/climate-change/summers-new-normal-is-a-hazard-thats-testing-europes-climate-resilience) — score 0.316
 - [A Floating Solar Farm In The Netherlands Is Having A Big Effect On Underwater…](https://www.bgr.com/2202377/floating-solar-farm-netherlands-effect-underwater-habitats/) — score 0.715
+- [Rare floodplain meadow given to wildlife trust](https://www.bbc.com/news/articles/c4gy3d5r68jo) — score 0.577

@@ -18,11 +18,11 @@ Water decides what survives. The goal is to keep rain on the land long enough fo
 
 ## Options & pathways
 
-- **Earthworks (swales, keyline, ponds)** — slow and sink runoff, recharge groundwater, feed streams; needs design and earth-moving.
-- **Rainwater harvesting and storage** — reliable water for establishment and living; tanks cost money and upkeep. Harvesting methods keep improving, including biomimetic designs drawn from desert animals ([lizard-inspired water harvesting](/evidence#e1782457491385), *news*).
+- **Earthworks (swales, keyline, ponds)** — slow and sink runoff, recharge groundwater, feed streams; needs design and earth-moving. Modelling in dry Brandenburg found that steering surplus stream water into small basins to seep away raised local groundwater by up to 2 m and lifted flow in connected streams by up to 15% ([basins recharge groundwater](/evidence#e1781523122870), *study*).
+- **Rainwater harvesting and storage** — reliable water for establishment and living; tanks cost money and upkeep. Harvesting methods keep improving, including biomimetic designs drawn from desert animals ([lizard-inspired water harvesting](/evidence#e1782457491384), *news*).
 - **Soil as reservoir** — always, alongside the rest; organic matter and cover hold water in the ground.
-- **Drought-adapted design** — in Mediterranean and drying climates; fewer losses, narrower species choice. Scarcity is increasingly managed at community level ([Algarve communities and water](/evidence#e1716535611000), *news*).
+- **Drought-adapted design** — in Mediterranean and drying climates; fewer losses, narrower species choice. Scarcity is increasingly managed at community level ([Algarve communities and water](/evidence#e1716535611000), *news*). Plan for the swings between years, not just the average: El Niño/La Niña cycles bring runs of drought and flood years, and it is the dry extreme that kills plantings — size storage and species for it ([ENSO drives multi-year drought and flood](/evidence#e1783254716157), *reference*).
 
-A storage pond can buffer irrigation through the dry season, but open water loses a lot to evaporation in summer. Shading it helps, and floating solar does that while adding power ([floating solar over water](/evidence#e1782992437626), *news*). Strips of deep-rooted perennials inside cropland hold rain where it falls ([perennial buffer strips](/evidence#e1782317798682), *study*).
+A storage pond can buffer irrigation through the dry season, but open water loses a lot to evaporation in summer. Shading it helps, and floating solar does that while adding power ([floating solar over water](/evidence#e1782992437625), *news*). Strips of deep-rooted perennials inside cropland hold rain where it falls ([perennial buffer strips](/evidence#e1782317798681), *study*).
 
-Where peat or wetland is present, rewetting stores both water and carbon and is worth protecting ([peat restoration](/evidence#e1716453947000), *news*; [restoring peat for carbon and flood control](/evidence#e1783233224646), *news*).
+Where peat or wetland is present, rewetting stores both water and carbon and is worth protecting ([peat restoration](/evidence#e1716453947000), *news*; [restoring peat for carbon and flood control](/evidence#e1783233224645), *news*).
