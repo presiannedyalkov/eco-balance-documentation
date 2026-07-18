@@ -1,3 +1,6 @@
+> **Superseded (2026-07-18)** by [`CITATION_PROVENANCE_MODEL.md`](CITATION_PROVENANCE_MODEL.md).
+> Tool-selection is settled (custom JSON index). Kept for lineage.
+
 # Citation Index System - Tool Options & Recommendations
 
 **Created:** November 16, 2025  

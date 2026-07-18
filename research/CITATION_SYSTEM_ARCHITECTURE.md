@@ -1,3 +1,6 @@
+> **Superseded (2026-07-18)** by [`CITATION_PROVENANCE_MODEL.md`](CITATION_PROVENANCE_MODEL.md).
+> Process flows for the Level-1 index/tooling. Kept for lineage.
+
 # Citation System Architecture & Process Flow
 
 **Created:** November 16, 2025  
