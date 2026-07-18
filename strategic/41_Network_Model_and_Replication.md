@@ -94,35 +94,61 @@ Next stewards should demonstrate:
 
 ## Permanent Land Protection Mechanisms
 
-Research reveals several options for Germany. Here are your choices:
+> **Fact-checked 2026-07-18.** The figures in an earlier draft of this section
+> were not grounded — some were plausible-sounding guesses, and one described
+> the wrong legal instrument. This version is checked against primary German
+> sources (BGB, GNotKG, the foundation authorities, and the land co-ops'
+> own pages), with links at the end of the section. **This is orientation, not
+> legal or tax advice** — German foundation and land-registry rules vary by
+> Bundesland, so confirm specifics with a Notar and the relevant
+> Stiftungsbehörde before acting.
 
-### Option 1: Conservation Easement (Grunddienstbarkeit) - IMMEDIATE & AFFORDABLE
+Several options exist for Germany, from cheapest/lightest to most robust.
+
+### Option 1: Servitude in the Grundbuch (dingliche Sicherung) - IMMEDIATE & AFFORDABLE
 
 **What it is**:
-- Legal restriction registered in land registry (Grundbuch)
-- Specifies: No development, must maintain as nature, ecological management required
-- **Survives ownership changes** - this is the key!
-- Enforced by named partner organization (NABU, BUND, etc.)
+- A permanent use-restriction registered against the land in the Grundbuch:
+  no development, maintain as nature, ecological management required.
+- **Survives ownership changes** — it binds the land, not the owner, and can
+  only be removed by the beneficiary. This is the key.
 
-**Cost**:
-- Notary + registration: 1.5-2.5% of land value
-- Example: €30,000 land = €450-750 one-time cost
-- No ongoing costs
+**The instrument, corrected**: to secure a plot *in favour of a conservation
+organisation or authority* (NABU, BUND, or the Naturschutzbehörde), the right
+tool is a **beschränkte persönliche Dienstbarkeit** (§§ 1090–1092 BGB), not a
+*Grunddienstbarkeit*. A Grunddienstbarkeit requires a neighbouring "dominant"
+plot (herrschendes Grundstück) that benefits — which a conservation body
+enforcing the restriction does not have. The beschränkte persönliche
+Dienstbarkeit is the instrument German conservation practice actually uses for
+this, and for a legal-entity beneficiary it is transferable and does not lapse
+the way one for a natural person would.
 
-**Timeline**: 2-4 weeks once land is purchased
+**Cost — corrected method**: notary and Grundbuch fees are **not** a percentage
+of land value. They follow the statutory GNotKG schedule, a *degressive* fee on
+the servitude's *Geschäftswert* (transaction value), which for a servitude
+without an agreed annual payment is derived under § 52 GNotKG (broadly, 5% of the
+servient plot's value taken as an annual value × up to 20 years). Because the
+schedule is degressive, the real cost is a **few hundred euros** for a small
+rural plot — a Grundbuch entry with a Geschäftswert under €500 is just €38, and
+the notary fee for the deed sits in the low hundreds — and it does **not** scale
+linearly: a €300,000 plot does not cost 10× a €30,000 one. Budget on the order of
+**€200–€600 one-time** for a modest plot, and get an exact quote from the Notar,
+since the Geschäftswert drives everything. No ongoing costs.
+
+**Timeline**: a few weeks once the land is purchased.
 
 **Advantages**:
 - ✅ Cheapest option
 - ✅ Permanent protection immediately
-- ✅ Works even if e.V. dissolves or sells land
-- ✅ Simple legal process
+- ✅ Works even if the e.V. dissolves or sells the land
 - ✅ You keep ownership and management
 
 **Disadvantages**:
-- ⚠️ Requires enforcement partner (NABU/BUND)
-- ⚠️ Partner must monitor compliance (social pressure)
+- ⚠️ Needs a beneficiary organisation/authority willing to hold and monitor it
+- ⚠️ Enforcement depends on that beneficiary actually checking compliance
 
-**Recommended**: **Do this FIRST** when you acquire land. It provides immediate permanent protection while you build other structures.
+**Recommended**: **Do this FIRST** when you acquire land. It provides immediate
+permanent protection while you build other structures.
 
 ---
 
@@ -134,83 +160,104 @@ Research reveals several options for Germany. Here are your choices:
 - Fundraises for eventual Stiftung
 
 **Phase 2: Establish Stiftung** (Years 3-5)
-- When you've raised €50-100k in donations
-- Create Stiftung with land protection as stated purpose
-- Transfer land from e.V. to Stiftung
+- Create a Stiftung with land protection as its stated purpose
+- Transfer land from the e.V. to the Stiftung
 
 **Phase 3: Permanent protection** (Year 5+)
-- Stiftung owns land "in perpetuity"
-- Original purpose cannot be changed
+- Stiftung owns land "in perpetuity"; original purpose cannot be changed
 - Land protected even after you're gone
 
+**Capital — corrected framing**: there is **no statutory minimum** for a
+rechtsfähige Stiftung. § 80 BGB only requires enough capital to sustainably serve
+the purpose. In practice the Stiftungsbehörde of the Bundesland expects a
+**working benchmark of around €50,000**, and several states have settled on
+**~€100,000** as the realistic floor; €25,000 is treated as an absolute minimum
+that is rarely accepted on its own. So the earlier "€50,000–100,000" was about
+right *as a practical expectation* — but it is an authority benchmark, not a
+"minimum capital" in law.
+
 **Costs**:
-- Stiftung establishment: €3,000-10,000 legal fees
-- Minimum capital: €50,000-100,000
-- Land transfer: 1-1.5% of value (notary)
-- Ongoing: Minimal (tax-exempt status)
+- Stiftung establishment: low four figures to ~€10,000 in legal/notary fees
+  (indicative — get a quote)
+- Endowment: see the €50k–€100k benchmark above
+- Land transfer: notary + Grundbuch per GNotKG (degressive schedule, not a fixed
+  % of value)
+- Ongoing: minimal once gemeinnützig (tax-exempt) status is granted
 
 **Advantages**:
 - ✅ Highest level of permanent protection
 - ✅ Tax-deductible donations for supporters
 - ✅ Can grow to hold multiple sites
 - ✅ Independent legal entity
-- ✅ Professional structure
 
 **Disadvantages**:
-- ⚠️ Requires significant capital
-- ⚠️ 3-6 months to establish
-- ⚠️ Some ongoing compliance/admin
+- ⚠️ Requires significant endowment capital
+- ⚠️ Months to establish; ongoing compliance/admin
 - ⚠️ More complex governance
 
-**Recommended timeline**: Start with e.V. + easement, transition to Stiftung by Year 5 when you have capital.
+**Recommended timeline**: start with e.V. + servitude, transition to a Stiftung
+later when you have the endowment capital.
 
 ---
 
 ### Option 3: Treuhandstiftung (Trust Foundation) - BUDGET MIDDLE GROUND
 
 **What it is**:
-- Your own foundation operating under umbrella of established foundation
-- **Minimum capital**: As low as €5,000-10,000 (vs €50-100k)
-- Umbrella handles admin, compliance, legal reporting
-- You retain mission control for your land
+- A non-legally-independent foundation held and administered by an established
+  "umbrella" foundation (Dachstiftung), which handles admin, compliance and
+  reporting while you retain control of the purpose.
+
+**Capital — corrected**: a Treuhandstiftung is cheaper to start than a
+rechtsfähige Stiftung, but **not** as low as the earlier "€5,000–10,000". In
+practice it starts around **€20,000+**, umbrellas and tax offices commonly look
+for **€25,000+**, and the widely cited rule of thumb is **at least €50,000** to
+do meaningful work and stay open to further gifts. Below ~€20k, most umbrellas
+won't take it on.
 
 **Costs**:
-- Establishment: €1,000-3,000
-- Minimum capital: €5,000-10,000
-- Annual fees: €500-2,000 to umbrella foundation
+- Endowment: realistically €20,000+ (commonly €50,000 cited)
+- Annual administration: varies widely — some umbrellas charge nothing for basic
+  admin, others bill hourly (≈ €50/hr); **note** the annual audit of accounts
+  alone can run **€1,500–€5,000** depending on complexity, which can exceed the
+  earlier "€500–2,000" figure
+- Establishment: lower than a rechtsfähige Stiftung (the umbrella absorbs setup)
 
 **Advantages**:
-- ✅ Much lower capital requirement
-- ✅ Professional administration handled
+- ✅ Lower capital requirement than an independent Stiftung
+- ✅ Professional administration handled by the umbrella
 - ✅ Still achieves permanence
 - ✅ Faster to establish
 
 **Disadvantages**:
-- ⚠️ Less independence than own Stiftung
-- ⚠️ Ongoing fees
-- ⚠️ Must find appropriate umbrella foundation
+- ⚠️ Less independence than your own Stiftung
+- ⚠️ Ongoing fees, and audit costs can be significant
+- ⚠️ Must find an appropriate umbrella foundation
 
-**Recommended**: Good middle option if you can raise €10-20k but not €50-100k.
+**Recommended**: a middle option if you can raise ~€20–50k but not the full
+Stiftung endowment.
 
 ---
 
 ### Option 4: Join Existing Land Trust/Cooperative - LOWEST BURDEN
 
-**Transfer land to**:
-- **BioBoden Genossenschaft** (7,000 members, 4,800 hectares protected)
-- **Kulturland eG** (721 hectares, organic farming focus)
-- Or similar organization
+**Transfer land to** (figures verified 2026-07-18):
+- **BioBoden eG** — ~7,000 members, ~4,800 ha secured, >70 farms, ~€44m member
+  capital (founded 2015). Buys farmland with members' money and leases it to
+  organic farmers.
+- **Kulturland eG** — >1,600 members have permanently secured **~450 ha across
+  ~35 farms** (the earlier "721 hectares" was wrong). Organic-farming focus.
 
 **How it works**:
 - They own the land permanently
-- You become members (€500-1,000)
-- You lease it back with conservation requirements
-- Land protected forever under their governance
+- You join as a member by subscribing cooperative shares
+- You (or the farm) lease it back with conservation requirements
+- Land protected indefinitely under their governance
 
 **Costs**:
-- Membership: €500-1,000 per person
-- Land transfer: Notary fees (~1.5% of value)
-- Lease: Nominal or free for conservation work
+- Membership: cooperative shares from **€500 each** (Kulturland: one €500 share
+  minimum to join; the earlier "€500–1,000 per person" overstated the floor)
+- Land transfer: notary + Grundbuch per GNotKG (degressive schedule)
+- Lease: nominal or free in exchange for conservation work
 
 **Advantages**:
 - ✅ Immediate permanent protection
@@ -228,22 +275,44 @@ Research reveals several options for Germany. Here are your choices:
 
 ### Recommended Path (Hybrid Approach)
 
-**Year 1**: Purchase land through e.V., **immediately register conservation easement** (€500-1,000)
+**Year 1**: Purchase land through the e.V., **immediately register a beschränkte
+persönliche Dienstbarkeit** in favour of a conservation beneficiary (order of a
+few hundred euros — see Option 1)
 - Land protected permanently from day one
-- Partner with local NABU/BUND for enforcement
+- The beneficiary organisation/authority holds and monitors the restriction
 - You retain ownership and management
 
-**Years 2-4**: Build toward permanent structure
-- Fundraise with commitment to create Stiftung
+**Years 2-4**: Build toward a permanent structure
+- Fundraise with a commitment to create a Stiftung
 - Donors get tax deductions immediately
-- Target: €50k for Stiftung or €10k for Treuhandstiftung
+- Target the endowment benchmark: ~€50k+ for a Stiftung, or ~€20–50k for a
+  Treuhandstiftung
 
-**Year 5+**: Establish Stiftung or Treuhandstiftung
-- Transfer land from e.V. to foundation
-- Easement remains as additional protection
-- Land protected by both easement AND foundation ownership
+**Year 5+**: Establish the Stiftung or Treuhandstiftung
+- Transfer land from the e.V. to the foundation
+- The servitude remains as an additional layer
+- Land protected by both the servitude AND foundation ownership
 
-**Fallback**: If you can't raise capital for foundation, easement alone provides permanent protection.
+**Fallback**: if you can't raise foundation capital, the servitude alone provides
+permanent protection.
+
+---
+
+### Sources (checked 2026-07-18)
+
+- Servitude instrument — beschränkte persönliche Dienstbarkeit vs
+  Grunddienstbarkeit: [dejure/BGB §§ 1090–1092](https://www.gesetze-im-internet.de/bgb/__1090.html),
+  and German conservation practice using the beschränkte persönliche
+  Dienstbarkeit in favour of the Naturschutzbehörde ([NABU](https://blogs.nabu.de/naturschutz-auf-privateigentum/)).
+- Servitude cost — GNotKG § 52 Geschäftswert and the degressive notary/Grundbuch
+  fee schedule (Notarkosten for Dienstbarkeiten), not a % of land value.
+- Stiftung capital — no statutory minimum; Stiftungsbehörde benchmark ~€50k,
+  practice ~€100k ([SozialBank: Mindestkapital](https://www.sozialbank.de/stiftungsgruendung-mindestkapital), [Bundesverband Deutscher Stiftungen](https://www.stiftungen.org/)).
+- Treuhandstiftung — practical minimum ~€20k+, commonly €50k cited; audit costs
+  €1,500–5,000 ([Bundesverband Deutscher Stiftungen: Treuhandstiftung](https://www.stiftungen.org/stiftungen/stiftungsgruendung/treuhandstiftung.html)).
+- BioBoden eG figures — [bioboden.de](https://bioboden.de/) and [oekolandbau.de](https://www.oekolandbau.de/) (April 2025: ~7,000 members, ~4,800 ha).
+- Kulturland eG figures — [kulturland.de](https://www.kulturland.de/genossenschaftsanteile) (>1,600 members, ~450 ha / ~35 farms, €500 share).
+- e.V. — 7 members to register (§ 56 BGB); registration ~€90–140 all-in.
 
 ---
 
