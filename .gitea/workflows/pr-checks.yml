@@ -43,7 +43,12 @@ jobs:
       - name: Install dependencies
         # postinstall (patch-package) runs as part of ci/install; .npmrc pins
         # include=dev so it can't be skipped.
-        run: npm ci || npm install
+        run: |
+          # provenance-cite is a Gitea-hosted git dependency; the runner has no
+          # Gitea git creds, and REQUIRE_SIGNIN_VIEW blocks anonymous clones.
+          # Auth just that one repo path (not the whole host) with the auto token.
+          git config --global url."https://x-access-token:${{ secrets.GITEA_TOKEN }}@gitea.nexus-home.cc/pres/provenance-cite".insteadOf "https://gitea.nexus-home.cc/pres/provenance-cite"
+          npm ci || npm install
       - name: Regenerate docs from source (template/case -> docs)
         run: npm run sync
       - name: Build website
@@ -71,7 +76,12 @@ jobs:
           node-version: '24'
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci || npm install
+        run: |
+          # provenance-cite is a Gitea-hosted git dependency; the runner has no
+          # Gitea git creds, and REQUIRE_SIGNIN_VIEW blocks anonymous clones.
+          # Auth just that one repo path (not the whole host) with the auto token.
+          git config --global url."https://x-access-token:${{ secrets.GITEA_TOKEN }}@gitea.nexus-home.cc/pres/provenance-cite".insteadOf "https://gitea.nexus-home.cc/pres/provenance-cite"
+          npm ci || npm install
       - name: Citation integrity gate
         # Fails if a citation points at an article the corpus doesn't hold.
         # This is the gate that would have caught the 11 stranded citations.

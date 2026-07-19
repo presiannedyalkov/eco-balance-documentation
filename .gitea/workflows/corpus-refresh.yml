@@ -67,7 +67,13 @@ jobs:
         # postinstall (patch-package) runs as part of ci/install; .npmrc pins
         # include=dev so it can't be skipped. The old `|| true` here meant a
         # genuinely failed patch passed silently.
-        run: npm ci || npm install
+        run: |
+          # provenance-cite is a Gitea-hosted git dependency; the runner has no
+          # Gitea git creds, and REQUIRE_SIGNIN_VIEW blocks anonymous clones.
+          # Scope the credential to that one repo path so the branch push below
+          # (to eco-balance) keeps using the checkout token, not this one.
+          git config --global url."https://x-access-token:${{ secrets.GITEA_TOKEN }}@gitea.nexus-home.cc/pres/provenance-cite".insteadOf "https://gitea.nexus-home.cc/pres/provenance-cite"
+          npm ci || npm install
 
       - name: Run engines and prepare site
         run: |
