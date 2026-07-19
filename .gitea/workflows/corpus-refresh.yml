@@ -32,17 +32,22 @@ jobs:
     name: Advance corpus, regenerate, open + merge PR
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository (with corpus submodule)
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
-          # research/bookmarks is a separate repo (pres/bookmarks); the automatic
-          # Actions token is scoped to THIS repo only and can't read it. CI_PAT is
-          # a user PAT that can. It only needs READ:repository — the branch push
-          # below uses the auto token's same-repo write instead. (Gitea can't scope
-          # a PAT to one repo, so keeping it read-only limits the blast radius.)
-          token: ${{ secrets.CI_PAT }}
+          # Main repo only — the automatic Actions token reads it. The corpus
+          # submodule is a SEPARATE repo the auto token can't read, and Gitea's
+          # checkout doesn't propagate a token to submodule clones, so init it
+          # explicitly below.
+
+      - name: Init corpus submodule (research/bookmarks, read via CI_PAT)
+        run: |
+          # CI_PAT is a read-only user PAT that can read pres/bookmarks. Scope the
+          # credential to that repo path so it can't touch the main-repo push below.
+          git config --global url."https://x-access-token:${{ secrets.CI_PAT }}@gitea.nexus-home.cc/pres/bookmarks".insteadOf "https://gitea.nexus-home.cc/pres/bookmarks"
+          git submodule sync
+          git submodule update --init research/bookmarks
 
       - name: Advance corpus to its tip
         id: corpus

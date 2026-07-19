@@ -62,15 +62,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          # The citation gate validates ids against the corpus, so it needs the
-          # bookmarks submodule. Without it corpusIds is empty and EVERY
-          # citation reads as unresolved.
-          submodules: recursive
-          # ...and research/bookmarks is a separate repo. The automatic Actions
-          # token is scoped to THIS repo only and can't read it, so use CI_PAT
-          # (a user PAT that can read pres/bookmarks).
-          token: ${{ secrets.CI_PAT }}
+        # Main repo only. The citation gate needs the corpus submodule (a separate
+        # repo the auto token can't read, and checkout won't propagate a token to
+        # submodule clones), so it's init'd explicitly in the next step.
+      - name: Init corpus submodule (research/bookmarks, read via CI_PAT)
+        run: |
+          git config --global url."https://x-access-token:${{ secrets.CI_PAT }}@gitea.nexus-home.cc/pres/bookmarks".insteadOf "https://gitea.nexus-home.cc/pres/bookmarks"
+          git submodule sync
+          git submodule update --init research/bookmarks
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
