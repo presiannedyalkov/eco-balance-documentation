@@ -37,11 +37,11 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-          # research/bookmarks is a separate repo (pres/bookmarks), and this job
-          # also pushes the refresh branch back to eco-balance. The automatic
-          # Actions token is scoped to THIS repo only, so it can't read the
-          # submodule. CI_PAT is a user PAT (read+write) that can do both — read
-          # pres/bookmarks AND push here.
+          # research/bookmarks is a separate repo (pres/bookmarks); the automatic
+          # Actions token is scoped to THIS repo only and can't read it. CI_PAT is
+          # a user PAT that can. It only needs READ:repository — the branch push
+          # below uses the auto token's same-repo write instead. (Gitea can't scope
+          # a PAT to one repo, so keeping it read-only limits the blast radius.)
           token: ${{ secrets.CI_PAT }}
 
       - name: Advance corpus to its tip
@@ -156,7 +156,15 @@ jobs:
           fi
 
           git commit -m "chore: corpus refresh (bookmarks + engines)"
-          git push --force origin "$BRANCH"
+          # Push with the automatic Actions token (it has same-repo write for free),
+          # NOT the checkout token — so CI_PAT can stay READ-ONLY (it only needs to
+          # read the bookmarks submodule). The explicit token URL bypasses origin's
+          # read-only checkout credentials. (x-access-token:<token> is the same
+          # basic-auth form the provenance-cite fetch uses.)
+          HOST="${GITHUB_SERVER_URL#https://}"
+          git push --force \
+            "https://x-access-token:${GITEA_TOKEN}@${HOST}/${GITHUB_REPOSITORY}.git" \
+            "HEAD:${BRANCH}"
 
           if [ -z "$GITEA_TOKEN" ]; then
             echo "::warning::GITEA_TOKEN not set - branch pushed, open the PR manually."
