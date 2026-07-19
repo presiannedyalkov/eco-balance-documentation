@@ -37,11 +37,12 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-          # research/bookmarks is a separate repo (pres/bookmarks). It's public,
-          # but the Gitea instance runs REQUIRE_SIGNIN_VIEW, so it 401s anonymous
-          # clones regardless — and the automatic Actions token is scoped to THIS
-          # repo only. Needs a PAT that can read both.
-          token: ${{ secrets.GITEA_TOKEN }}
+          # research/bookmarks is a separate repo (pres/bookmarks), and this job
+          # also pushes the refresh branch back to eco-balance. The automatic
+          # Actions token is scoped to THIS repo only, so it can't read the
+          # submodule. CI_PAT is a user PAT (read+write) that can do both — read
+          # pres/bookmarks AND push here.
+          token: ${{ secrets.CI_PAT }}
 
       - name: Advance corpus to its tip
         id: corpus

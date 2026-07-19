@@ -67,10 +67,10 @@ jobs:
           # bookmarks submodule. Without it corpusIds is empty and EVERY
           # citation reads as unresolved.
           submodules: recursive
-          # ...and research/bookmarks is a separate repo. It's public, but the
-          # Gitea instance runs REQUIRE_SIGNIN_VIEW so anonymous clones 401 anyway,
-          # and the per-repo Actions token can't read it either.
-          token: ${{ secrets.GITEA_TOKEN }}
+          # ...and research/bookmarks is a separate repo. The automatic Actions
+          # token is scoped to THIS repo only and can't read it, so use CI_PAT
+          # (a user PAT that can read pres/bookmarks).
+          token: ${{ secrets.CI_PAT }}
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
