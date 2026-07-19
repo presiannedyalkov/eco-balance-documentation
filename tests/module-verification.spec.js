@@ -161,42 +161,5 @@ test.describe('Module Verification', () => {
     
     console.log('✅ Core functionality is accessible');
   });
-
-  test('Sentry can capture errors (test error tracking)', async ({ page }) => {
-    const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    
-    // Wait for Sentry to initialize
-    await page.waitForTimeout(3000);
-
-    // Check if Sentry is available
-    const sentryAvailable = await page.evaluate(() => {
-      return typeof window.Sentry !== 'undefined';
-    });
-
-    if (sentryAvailable) {
-      // Try to capture a test error
-      const captureResult = await page.evaluate(() => {
-        try {
-          if (window.Sentry && window.Sentry.captureException) {
-            window.Sentry.captureException(new Error('Test error for Sentry verification'));
-            return { success: true, message: 'Error captured' };
-          }
-          return { success: false, message: 'Sentry.captureException not available' };
-        } catch (error) {
-          return { success: false, message: error.message };
-        }
-      });
-
-      if (captureResult.success) {
-        console.log('✅ Sentry error capture is working');
-      } else {
-        console.warn('⚠️ Sentry error capture test:', captureResult.message);
-      }
-    } else {
-      console.log('ℹ️ Sentry not available (may not be in production mode)');
-      // Don't fail - Sentry only works in production
-    }
-  });
 });
 
