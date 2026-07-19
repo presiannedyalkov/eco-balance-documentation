@@ -1,70 +1,18 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-// Use custom domain if set, otherwise fallback to GitHub Pages URL
 const BASE_URL = process.env.BASE_URL || process.env.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc';
 
 /**
  * Module verification tests
- * These tests verify that core modules (Sentry, search, etc.) are loaded and working
+ * These tests verify that core modules (search, client modules) load and work
+ * against the deployed site.
  */
 test.describe('Module Verification', () => {
   test.beforeEach(async ({ page }) => {
     test.setTimeout(60000);
     page.setDefaultTimeout(30000);
     page.setDefaultNavigationTimeout(30000);
-  });
-
-  test('Sentry is initialized in production', async ({ page }) => {
-    const fullUrl = BASE_URL.endsWith('/') ? BASE_URL : BASE_URL + '/';
-    
-    const consoleMessages = [];
-    page.on('console', msg => {
-      consoleMessages.push({
-        type: msg.type(),
-        text: msg.text(),
-      });
-    });
-
-    await page.goto(fullUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    
-    // Wait for client modules to load
-    await page.waitForTimeout(3000);
-
-    // Check if Sentry is initialized by checking console messages
-    const sentryInitMessage = consoleMessages.find(msg => 
-      msg.text.includes('[Sentry]') && msg.text.includes('Initialized')
-    );
-
-    // Check if Sentry object exists in window (Sentry v10+ compatible)
-    const sentryInfo = await page.evaluate(() => {
-      return {
-        hasSentry: typeof window.Sentry !== 'undefined',
-        canCapture: typeof window.Sentry?.captureException === 'function',
-        isInitialized: window.Sentry?.isInitialized?.() || false,
-        consoleLogs: [], // Will be populated by console listener
-      };
-    });
-
-    // In production, Sentry should be initialized
-    // Check console for initialization message OR check if Sentry object exists and can capture
-    if (sentryInitMessage || (sentryInfo.hasSentry && sentryInfo.canCapture)) {
-      console.log('✅ Sentry is initialized');
-      expect(sentryInfo.hasSentry || sentryInitMessage).toBeTruthy();
-    } else {
-      // If not in production mode, this is expected
-      const isProduction = await page.evaluate(() => {
-        return process?.env?.NODE_ENV === 'production' || 
-               window.location.hostname === 'docs.eco-balance.cc';
-      });
-      
-      if (isProduction) {
-        console.warn('⚠️ Sentry not initialized in production - check configuration');
-        // Don't fail, but log warning
-      } else {
-        console.log('ℹ️ Sentry not initialized (expected in non-production)');
-      }
-    }
   });
 
   test('Search bar is loaded and functional', async ({ page }) => {

@@ -1,3 +1,6 @@
+> **Superseded (2026-07-18)** by [`CITATION_PROVENANCE_MODEL.md`](CITATION_PROVENANCE_MODEL.md).
+> This note captured Level 1 only (source ID + index). Kept for lineage.
+
 # Citation Index System - Explanation
 
 ## What is a Citation Index System?

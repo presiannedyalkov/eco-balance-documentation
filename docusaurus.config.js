@@ -67,30 +67,7 @@ const config = {
     // the MeilisearchSearchBar / DocsChatWidget components at runtime). Docs
     // indexing is owned by that service (clone + incremental index on a cron),
     // NOT at build time — so there is no Meilisearch build plugin here.
-    // Sentry webpack plugin to inject environment variables
-    function(context, options) {
-      return {
-        name: 'sentry-env-injector',
-        configureWebpack(config, isServer, utils) {
-          if (isServer) {
-            return {};
-          }
-          return {
-            plugins: [
-              new (require('webpack')).DefinePlugin({
-                'process.env.SENTRY_DSN': JSON.stringify(process.env.SENTRY_DSN || ''),
-                'process.env.SENTRY_RELEASE': JSON.stringify(process.env.SENTRY_RELEASE || ''),
-              }),
-            ],
-          };
-        },
-      };
-    },
   ],
-
-  // Sentry integration
-  // Configured via environment variables: SENTRY_DSN, SENTRY_RELEASE
-  // See SENTRY_SETUP_COMPLETE.md for setup instructions
 
   // Client-side modules - explicitly configure clientModules.js
   // Docusaurus 3.x requires explicit configuration (does NOT auto-load src/clientModules.js)

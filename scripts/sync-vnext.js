@@ -9,6 +9,15 @@
  *   ../template/    -> ../model/
  *   ../parameters/  -> ../model/parameters/
  * Manages only docs/model and docs/our-case (+ intro); legacy docs retired separately.
+ *
+ * Citations (research/bookmarks/.../<id>.md) become /evidence#e<id> — but ONLY
+ * for ids the publish engine will actually anchor. publish/build.js anchors
+ * exactly the keys of research/citation_index.json, so we read the same file:
+ * a link is emitted if and only if its anchor exists. An id missing from the
+ * index means the corpus no longer holds that article (the bookmarks vault
+ * dedupes same-URL double-captures, which strands whichever twin was cited);
+ * check.js already reports those as unresolved citations. We degrade to plain
+ * text rather than shipping a link into a void.
  */
 const fs = require('fs');
 const path = require('path');
@@ -48,7 +57,22 @@ function rmrf(p){ try{ if(fs.existsSync(p)) fs.rmSync(p,{recursive:true,force:tr
 function ensure(p){ fs.mkdirSync(p,{recursive:true}); }
 function pretty(n){ return n.replace(/[-_]/g,' ').replace(/\b\w/g,c=>c.toUpperCase()); }
 function category(dir,label,position){ if(!fs.existsSync(dir))return; try{ fs.writeFileSync(path.join(dir,'_category_.json'),JSON.stringify({label,position},null,2)+'\n'); }catch(e){ console.warn('skip cat',dir,e.code);} }
-function fixLinks(t){ return t.replace(/\]\(((?:\.\.\/)+)template\//g,']($1model/').replace(/\]\(((?:\.\.\/)+)parameters\//g,']($1model/parameters/').replace(/\]\(research\/bookmarks\/[^)]*?(\d{10,})\.md\)/g,'](/evidence#e$1)'); }
+// Ids the publish engine will anchor on /evidence. Same source of truth as
+// publish/build.js, which anchors exactly Object.keys(citation_index).
+const ANCHORED = (() => {
+  try { return new Set(Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT,'research/citation_index.json'),'utf8')))); }
+  catch(e){ console.warn('sync: no citation index ('+e.code+') — citations will be emitted as plain text'); return new Set(); }
+})();
+let stranded = 0;
+function fixLinks(t){
+  return t
+    .replace(/\]\(((?:\.\.\/)+)template\//g,']($1model/')
+    .replace(/\]\(((?:\.\.\/)+)parameters\//g,']($1model/parameters/')
+    // [text](research/bookmarks/<collection>/<id>.md) -> [text](/evidence#e<id>)
+    // when anchored; otherwise unwrap to bare `text` so no broken anchor ships.
+    .replace(/\[([^\]]*)\]\(research\/bookmarks\/[^)]*?(\d{10,})\.md\)/g,
+      (m, text, id) => ANCHORED.has(id) ? `[${text}](/evidence#e${id})` : (stranded++, text));
+}
 function copyMd(srcDir,destDir){ if(!fs.existsSync(srcDir))return 0; let n=0; for(const e of fs.readdirSync(srcDir,{withFileTypes:true})){ const s=path.join(srcDir,e.name),d=path.join(destDir,e.name); if(e.isDirectory())n+=copyMd(s,d); else if(e.name.endsWith('.md')){ ensure(destDir); fs.writeFileSync(d,fixLinks(fs.readFileSync(s,'utf8'))); n++; } } return n; }
 
 ensure(DOCS); rmrf(path.join(DOCS,'model')); rmrf(path.join(DOCS,'our-case'));
@@ -59,3 +83,4 @@ m+=copyMd(SRC.parameters,path.join(modelDir,'parameters')); category(path.join(m
 const caseDir=path.join(DOCS,'our-case'); const c=copyMd(SRC.case,caseDir);
 category(caseDir,'Our Case',2); category(path.join(caseDir,'decisions'),'Decisions',2); category(path.join(caseDir,'site-candidates'),'Site candidates',3);
 console.log('Synced '+m+' model docs and '+c+' case docs.');
+if(stranded) console.warn('sync: '+stranded+' citation(s) had no anchor and were unlinked — see "Unresolved citations" in _engines/_reports/health.md');

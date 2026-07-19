@@ -2,47 +2,32 @@
 
 **Ecosystem restoration project documentation - Creating habitat for wildlife through biodiversity restoration**
 
-**Status:**
-- [![Deploy to GitHub Pages](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml)
-- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml)
+**Live site:** [docs.eco-balance.cc](https://docs.eco-balance.cc)
 
 ---
 
-## 📊 Quality Dashboard
+## 🛠️ How this is built
 
-### Security & Code Quality
-- [![CodeQL](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning) **CodeQL** - Static code analysis for security vulnerabilities | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)
-- [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue)](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot) **Dependabot** - Dependency vulnerability scanning | [View Alerts](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)
+The site is [Docusaurus](https://docusaurus.io/), built and deployed by **Gitea
+Actions** on a self-hosted runner and published to **Cloudflare Pages**. Every
+push to `main` builds, deploys, and then runs a Playwright pass against the live
+site; a failed check opens an issue rather than reverting.
 
-### 🔒 Security Alerts Status
+If you are reading this on GitHub, you are looking at a **read-only mirror**.
+The repository lives on a private Gitea instance, which is where issues, pull
+requests and CI happen. The mirror exists so the documentation is publicly
+readable and so `Edit this page` links have somewhere to point. Pushes to the
+mirror are overwritten by the next sync.
 
-**Last Updated:** 2026-07-10
+There are no CI badges here on purpose: the runner is on a private network, so
+any badge would be a broken image for everyone but the maintainer.
 
-**CodeQL Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/code-scanning)):
-
-- ✅ **Critical:** 0
-- ✅ **High:** 0
-- ✅ **Medium:** 0
-- ✅ **Low:** 0
-- 🟡 **Note:** 1
-- **Total Open:** 1
-
-
-**Dependabot Alerts** ([View All](https://github.com/presiannedyalkov/eco-balance-documentation/security/dependabot)):
-⚠️ Unable to fetch Dependabot alerts
-
-> **💡 Tip:** Check these regularly! Security alerts can appear at any time when new vulnerabilities are discovered. Click the links above to view detailed information about each alert.
-
-### Performance & Quality
-- [![Lighthouse CI](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml) **Lighthouse** - Performance, accessibility, best practices, SEO | [View Report](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lighthouse-ci.yml)
-- [![Check Links](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml) **Link Check** - Validates external links | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/check-links.yml)
-- [![Spell Check](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml) **Spell Check** - Scans markdown for spelling errors | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/spell-check.yml)
-- [![Lint Markdown](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml) **Markdown Lint** - Validates formatting consistency | [View Results](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/lint-markdown.yml)
-
-### Build & Deployment
-- [![Deploy](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml) **Deployment** - Builds and deploys to GitHub Pages | [View Workflow](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/deploy.yml)
-- [![Verify Deployment](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml) **Deployment Verification** - Automated site tests | [View Tests](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/verify-deployment.yml)
-- [![Export Docs](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml/badge.svg)](https://github.com/presiannedyalkov/eco-balance-documentation/actions/workflows/export-docs.yml) **Documentation Export** - Generates PDF/EPUB versions | [View Exports](https://github.com/presiannedyalkov/eco-balance-documentation/releases)
+Alongside the build, a scheduled job refreshes the research corpus and
+regenerates everything derived from it (feed queue, enrichment worklist,
+citation index, widgets, status). That job is fully deterministic — keyword
+classifiers, no LLM — which is why it is allowed to land on its own.
+LLM-authored content is never auto-merged; see
+[`_vault_maintenance/personas/FLEET.md`](_vault_maintenance/personas/FLEET.md).
 
 ---
 

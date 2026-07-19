@@ -71,3 +71,22 @@ section('Voice tells to review', voiceHits);
 md += `## Decisions\n\n` + decisions.map(d => `- ${d.file} — ${d.status || '?'}`).join('\n') + '\n';
 fs.writeFileSync(path.join(OUT, 'health.md'), md);
 console.log(`Consistency: ${brokenLinks.length} broken links, ${badCitations.length} bad citations, ${voiceHits.length} voice hits, ${Object.keys(idx).length} citations indexed.`);
+
+// --strict: fail the run on broken links or citations that point at articles
+// the corpus doesn't hold. Used by pr-checks so a PR (human or fleet) can't
+// introduce an unresolvable citation.
+//
+// Deliberately NOT the default: corpus-refresh runs this engine too, and a
+// citation can be stranded by something no PR did — the bookmarks vault
+// deduping same-URL double-captures out from under a doc that cited one. Hard
+// failing there would block every corpus refresh over pre-existing content, so
+// that path reports instead (and sync unlinks the citation rather than shipping
+// a broken anchor).
+if (process.argv.includes('--strict') && (badCitations.length || brokenLinks.length)) {
+  console.error(`\nFAIL (--strict): ${brokenLinks.length} broken link(s), ${badCitations.length} unresolved citation(s).`);
+  for (const x of [...brokenLinks, ...badCitations].slice(0, 20)) console.error(`  - ${x}`);
+  console.error(`\nAn unresolved citation points at a corpus article that isn't there.`);
+  console.error(`If the vault deduped a same-URL double-capture, the surviving twin holds the`);
+  console.error(`same URL under a different entry_id — repoint the citation at it.`);
+  process.exit(1);
+}

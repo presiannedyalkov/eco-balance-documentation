@@ -1,0 +1,5 @@
+# Gitea reads this the same way GitHub did, but the old contact_links pointed at
+# two GitHub-only features that don't exist here: Discussions and security
+# advisories. Both are dropped rather than left as dead links to the mirror,
+# where issues are disabled anyway.
+blank_issues_enabled: false

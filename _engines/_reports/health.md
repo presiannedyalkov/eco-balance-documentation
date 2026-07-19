@@ -1,12 +1,12 @@
 # Consistency & quality report
 
-Generated 2026-07-16T11:00. Scanned 43 source docs.
+Generated 2026-07-18T10:41. Scanned 43 source docs.
 
 ## Summary
 
 - Broken internal links: 0
 - Unresolved citations: 0
-- Cited articles indexed: 56
+- Cited articles indexed: 58
 - Voice-tell hits: 0
 - Decision records: 13
 

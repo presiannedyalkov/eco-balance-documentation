@@ -3,25 +3,13 @@
 
 ## Type of Change
 
-**Branch:** `${{ github.head_ref }}`  
-**🤖 Auto-detected:** The checkbox below is automatically pre-filled based on your branch name.
+<!-- Branch naming: feature/* fix/* docs/* refactor/* chore/* -->
 
-<!-- 
-Branch naming conventions (auto-detection):
-- feature/* → Feature ✅ (auto-checked)
-- fix/* → Bug fix ✅ (auto-checked)
-- docs/* → Documentation ✅ (auto-checked)
-- chore/* → Other (Chore) ✅ (auto-checked)
-- refactor/* → Refactoring ✅ (auto-checked)
-
-If your branch doesn't match these patterns, please manually select the appropriate type.
--->
-
-- [ ] Feature <!-- Auto-checked for feature/* branches -->
-- [ ] Bug fix <!-- Auto-checked for fix/* branches -->
-- [ ] Documentation <!-- Auto-checked for docs/* branches -->
-- [ ] Refactoring <!-- Auto-checked for refactor/* branches -->
-- [ ] Other (please describe) <!-- Auto-checked for chore/* branches -->
+- [ ] Feature
+- [ ] Bug fix
+- [ ] Documentation
+- [ ] Refactoring
+- [ ] Other (please describe)
 
 ## Related Issue
 <!-- Link to related issue if applicable -->

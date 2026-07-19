@@ -1,0 +1,162 @@
+name: Deploy to Cloudflare Pages
+
+# Publishes the Docusaurus site to Cloudflare Pages (project: eco-balance-docs).
+#
+# Replaces the old GitHub Pages deploy. Two things got simpler in the move:
+#   - No BASE_URL juggling. GitHub Pages needed '/eco-balance-documentation/'
+#     for project sites vs '/' for the custom domain; Pages serves at the root,
+#     so baseUrl is always '/'.
+#   - No pages artifact upload/deploy dance — wrangler pushes the build dir.
+#
+# Secrets required (Gitea repo or org level):
+#   CLOUDFLARE_API_TOKEN   — token with "Cloudflare Pages: Edit"
+#   CLOUDFLARE_ACCOUNT_ID  — your account id
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'VERSION'
+      - 'docs/**'
+      - 'src/**'
+      - 'static/**'
+      - 'state/**'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
+      - 'package.json'
+      - 'package-lock.json'
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build and deploy to Cloudflare Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        # postinstall (patch-package -> the gray-matter/js-yaml fix) runs as part
+        # of ci/install. .npmrc pins include=dev so it can't be skipped.
+        run: npm ci || npm install
+
+      - name: Fix frontmatter issues
+        run: |
+          if [ -d "docs" ]; then
+            node scripts/fix-frontmatter.js || echo "Frontmatter fix completed with warnings"
+          fi
+
+      - name: Clear Docusaurus cache
+        run: rm -rf .docusaurus || true
+
+      - name: Build website
+        timeout-minutes: 15
+        env:
+          NODE_ENV: production
+          NODE_OPTIONS: '--max-old-space-size=4096'
+          # Cloudflare Pages + custom domain -> always served at the root.
+          BASE_URL: '/'
+          SITE_URL: 'https://docs.eco-balance.cc'
+        run: |
+          npm run build
+          test -d build || (echo "build/ missing after build" && exit 1)
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@3 pages deploy build \
+            --project-name eco-balance-docs \
+            --branch main \
+            --commit-dirty=true
+
+  verify:
+    name: Verify deployment (smoke tests)
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
+          restore-keys: ${{ runner.os }}-playwright-
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Wait for the deployment to answer
+        id: url
+        run: |
+          # During the DNS cutover, point VERIFY_URL at the pages.dev URL instead.
+          URL="${{ vars.VERIFY_URL || 'https://docs.eco-balance.cc' }}"
+          echo "deploy_url=$URL" >> "$GITHUB_OUTPUT"
+          echo "Waiting for $URL"
+          for i in $(seq 1 30); do
+            CODE=$(curl -s -o /dev/null -w "%{http_code}" "$URL/" || echo 000)
+            case "$CODE" in
+              200|301|302) echo "Site is up (HTTP $CODE)"; exit 0 ;;
+            esac
+            echo "  attempt $i/30 (HTTP $CODE) - waiting 10s"
+            sleep 10
+          done
+          echo "::warning::Site did not answer after 5 minutes; running tests anyway."
+
+      - name: Run deployment smoke tests
+        id: test
+        continue-on-error: true
+        env:
+          BASE_URL: ${{ steps.url.outputs.deploy_url }}
+        run: npx playwright test tests/deployment.spec.js tests/module-verification.spec.js --reporter=list
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Raise an issue if the smoke tests failed
+        if: steps.test.outcome == 'failure'
+        env:
+          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          API: ${{ github.server_url }}/api/v1/repos/${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          URL: ${{ steps.url.outputs.deploy_url }}
+        run: |
+          # NOTE: deliberately no automatic git revert. Cloudflare Pages keeps every
+          # deployment and can roll back instantly (Pages -> eco-balance-docs ->
+          # Deployments -> "Rollback to this deployment"), which restores the site
+          # without rewriting main on what may be a flaky test.
+          echo "::error::Smoke tests failed against $URL"
+          if [ -z "$GITEA_TOKEN" ]; then
+            echo "::warning::GITEA_TOKEN not set - cannot open an issue."; exit 1
+          fi
+          BODY=$(printf '## Deployment verification failed\n\nCommit: `%s`\nURL: %s\nRun: %s\n\n**Rollback (fastest):** Cloudflare dashboard -> Workers & Pages -> `eco-balance-docs` -> Deployments -> pick the last good one -> **Rollback to this deployment**. That restores the site immediately without touching git.\n\nThen fix forward on a branch.\n' "${{ github.sha }}" "$URL" "$RUN_URL")
+          curl -sf -X POST -H "Authorization: token $GITEA_TOKEN" -H "Content-Type: application/json" \
+            "$API/issues" \
+            -d "$(python3 -c "import json,os;print(json.dumps({'title':'Deployment verification failed','body':os.environ['B']}))" B="$BODY")" \
+            >/dev/null && echo "Opened an issue." || echo "::warning::Could not open the issue."
+          exit 1

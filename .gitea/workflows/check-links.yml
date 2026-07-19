@@ -1,0 +1,56 @@
+name: Check Links
+
+# External link rot only — slow-moving, so weekly + manual. INTERNAL links and
+# citation integrity are already checked by engine:check (the consistency
+# engine) on every corpus refresh and every PR, so this doesn't duplicate that.
+#
+# Non-blocking by design: a source going down is not a reason to fail a build,
+# it's something to fix when convenient.
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+concurrency:
+  group: check-links
+  cancel-in-progress: true
+
+jobs:
+  check-links:
+    name: Check external links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --accept 200,201,202,301,302,303,307,308
+            --exclude-all-private --exclude-mail
+            --timeout 20 --max-concurrency 10
+            --base https://docs.eco-balance.cc
+            "**/*.md"
+            "!node_modules/**" "!build/**" "!.docusaurus/**"
+            "!_versions/**" "!archive/**" "!research/bookmarks/**"
+          output: lychee-out.md
+          fail: false
+
+      - name: Report
+        if: always()
+        run: |
+          if [ -f lychee-out.md ]; then
+            cat lychee-out.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No lychee output produced." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: link-check-results
+          path: lychee-out.md
+          retention-days: 7
+          if-no-files-found: ignore
