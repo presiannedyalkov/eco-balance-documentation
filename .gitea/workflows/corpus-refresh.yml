@@ -161,15 +161,11 @@ jobs:
           fi
 
           git commit -m "chore: corpus refresh (bookmarks + engines)"
-          # Push with the automatic Actions token (it has same-repo write for free),
-          # NOT the checkout token — so CI_PAT can stay READ-ONLY (it only needs to
-          # read the bookmarks submodule). The explicit token URL bypasses origin's
-          # read-only checkout credentials. (x-access-token:<token> is the same
-          # basic-auth form the provenance-cite fetch uses.)
-          HOST="${GITHUB_SERVER_URL#https://}"
-          git push --force \
-            "https://x-access-token:${GITEA_TOKEN}@${HOST}/${GITHUB_REPOSITORY}.git" \
-            "HEAD:${BRANCH}"
+          # origin was checked out with the automatic Actions token (same-repo
+          # write), so a plain push works. CI_PAT is used only for the read-only
+          # submodule fetch above, never here. The bookmarks insteadOf is scoped to
+          # the pres/bookmarks path, so it doesn't touch this origin push.
+          git push --force origin "$BRANCH"
 
           if [ -z "$GITEA_TOKEN" ]; then
             echo "::warning::GITEA_TOKEN not set - branch pushed, open the PR manually."
