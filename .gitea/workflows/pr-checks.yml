@@ -76,6 +76,11 @@ jobs:
         # Fails if a citation points at an article the corpus doesn't hold.
         # This is the gate that would have caught the 11 stranded citations.
         run: node _engines/consistency/check.js --strict
+      - name: Citation provenance gate
+        # Phase 1 of CITATION_PROVENANCE_MODEL: validates `citations:` blocks via
+        # the shared provenance-cite package (question/supports present, source
+        # resolves, anchor verbatim). No-op until docs adopt the block.
+        run: node _engines/consistency/check-citations.mjs --strict
       - name: Structural quality gate
         run: |
           node _engines/quality/audit.js

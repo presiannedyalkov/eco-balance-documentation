@@ -31,6 +31,7 @@
     "postinstall": "patch-package",
     "engine:feed": "node _engines/feed/scan.js",
     "engine:check": "node _engines/consistency/check.js",
+    "engine:cite": "node _engines/consistency/check-citations.mjs",
     "engine:all": "npm run engine:feed && npm run engine:enrich && npm run engine:ecology && npm run engine:state && npm run engine:synthesize && npm run engine:check && npm run engine:quality",
     "engine:enrich": "node _engines/enrichment/route.js",
     "engine:ecology": "node _engines/ecology/palette.js",
@@ -49,6 +50,7 @@
     "gray-matter": "4.0.3",
     "meilisearch": "^0.59.0",
     "prism-react-renderer": "^2.3.1",
+    "provenance-cite": "git+https://gitea.nexus-home.cc/pres/provenance-cite.git#main",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
