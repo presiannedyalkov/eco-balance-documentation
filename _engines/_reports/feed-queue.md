@@ -1,21 +1,23 @@
 # Feed queue
 
-Corpus: 530 Climate Change articles. Already used: 56. Duplicate captures suppressed: 18 (12 already cited under another entry_id, 6 twin captures collapsed). Not yet used: 459.
+Corpus: 516 Climate Change articles. Already used: 58. Duplicate captures suppressed: 0 (0 already cited under another entry_id, 0 twin captures collapsed). Not yet used: 461.
 
 Newest unused first (top 40):
 
 | entry_id | title | source | downloaded |
 |---|---|---|---|
-| 1783254716158 | Visualizing Every El Niño and La Niña Since 1979 | www.visualcapitalist.com | 2026-07-05 |
-| 1783232489804 | Climate change makes western Europe heatwave up to 2.5°C hotter in Jun | www.downtoearth.org.in | 2026-07-05 |
-| 1783191100102 | Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed  | 3dprintingindustry.com | 2026-07-04 |
-| 1782828012911 | reuters.com | www.reuters.com | 2026-06-30 |
-| 1782317661868 | The Ecological Intelligence of Sacred Landscapes | www.archdaily.com | 2026-06-24 |
-| 1782154194931 | REGENERATING THE BIOREGIONAL COMMONS | ernestopvanpeborgh.substack.com | 2026-06-22 |
+| 1784616008100 | Scientific & traditional knowledge are key for effective & community-c | news.mongabay.com | 2026-07-21 |
+| 1784389218557 | Agri-PV leads the way towards the sustainable use of solar panels | www.euronews.com | 2026-07-18 |
+| 1784263081123 | The map predicting agricultural decline from climate change | www.euronews.com | 2026-07-17 |
+| 1783931980490 | Rare floodplain meadow given to wildlife trust | www.bbc.com | 2026-07-13 |
+| 1783232489803 | Climate change makes western Europe heatwave up to 2.5°C hotter in Jun | www.downtoearth.org.in | 2026-07-05 |
+| 1783191100101 | Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed  | 3dprintingindustry.com | 2026-07-04 |
+| 1782828012910 | reuters.com | www.reuters.com | 2026-06-30 |
+| 1782317661867 | The Ecological Intelligence of Sacred Landscapes | www.archdaily.com | 2026-06-24 |
+| 1782154194930 | REGENERATING THE BIOREGIONAL COMMONS | ernestopvanpeborgh.substack.com | 2026-06-22 |
 | 1781795484680 | 'Everything has its own order and purpose': The rainforest 'farms' def | www.bbc.com | 2026-06-18 |
 | 1781795186142 | 150 Years Ago, a Super El Niño Killed 50 Million People. The Next One  | www.popularmechanics.com | 2026-06-18 |
 | 1781769407957 | A bonanza for fans of the natural world: the digital library sharing 6 | www.theguardian.com | 2026-06-18 |
-| 1781523122870 | How directing water flows in the landscape could support groundwater a | phys.org | 2026-06-15 |
 | 1781167169857 | What happens when the world’s breadbaskets start failing simultaneousl | theconversation.com | 2026-06-11 |
 | 1780866621182 | Priority questions for the next decade of blue carbon science - Nature | www.nature.com | 2026-06-07 |
 | 1780865618072 | Greater trophic diversity of soil animal communities under agricultura | www.nature.com | 2026-06-07 |
@@ -44,5 +46,3 @@ Newest unused first (top 40):
 | 1779125742565 | This 32-Year-Old Is Rebuilding a Lost Forest in the Western Ghats With | thebetterindia.com | 2026-05-21 |
 | 1779125518612 | Volunteer tree planters aiming to prevent flooding | www.bbc.com | 2026-05-21 |
 | 1779122710688 | Congo’s communities are creating a 1-million-hectare biodiversity corr | news.mongabay.com | 2026-05-21 |
-| 1778655588518 | Today more than ever, biodiversity needs single-species conservation | theconversation.com | 2026-05-18 |
-| 1778655514916 | Humber Forest will grow for decades, say bosses | bbc.com | 2026-05-18 |

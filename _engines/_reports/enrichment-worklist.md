@@ -2,33 +2,33 @@
 
 Top 30 unused articles, routed to a suggested domain. Review, place the one-line insight in the doc, and paste the citation. The consistency engine checks the result.
 
-### Agrivoltaics Works When Solar Panels Do Farm Work
+### Scientific & traditional knowledge are key for effective & community-centered conservation (commentary)
+
+- **Suggested domain:** `template/method/community` (match 2)
+- **Topic:** Conservation
+- **Summary:** The article highlights the importance of combining scientific and traditional knowledge for effective and community-centered conservation efforts, particularly in snow leopard conservation in Spiti Valley, India. Women from the community us
+- **Citation:** `[Conservation](research/bookmarks/Climate%20Change/1784616008100.md)`
+
+### Agri-PV leads the way towards the sustainable use of solar panels
+
+- **Suggested domain:** `template/infrastructure` (match 2)
+- **Topic:** Agri-PV
+- **Summary:** Agri-PV systems allow farmers to install solar panels on their land without significantly impacting crop production, providing a sustainable solution for solar energy expansion in rural areas. This approach maximizes land use efficiency and
+- **Citation:** `[Agri-PV](research/bookmarks/Climate%20Change/1784389218557.md)`
+
+### The map predicting agricultural decline from climate change
 
 - **Suggested domain:** `template/site-and-land` (match 1)
-- **Topic:** Agrivoltaics
-- **Summary:** Agrivoltaics involves placing solar panels on farmland to produce both electricity and crops, but its effectiveness depends on the specific agricultural needs and the type of crops. The systems that provide clear farm value, such as grazing
-- **Citation:** `[Agrivoltaics](research/bookmarks/Climate%20Change/1783255090319.md)`
+- **Topic:** Agricultural Productivity
+- **Summary:** A Spanish research team has developed CADI, a platform that forecasts how much farmland will lose productivity to climate change by 2100, showing uneven impacts across regions. The model predicts that by mid-century, 15% of the world’s popu
+- **Citation:** `[Agricultural Productivity](research/bookmarks/Climate%20Change/1784263081123.md)`
 
-### Visualizing Every El Niño and La Niña Since 1979
+### Rare floodplain meadow given to wildlife trust
 
-- **Suggested domain:** `template/method/water` (match 1)
-- **Topic:** El Niño and La Niña
-- **Summary:** The article visualizes every El Niño and La Niña event since 1979, highlighting the development of a new El Niño in 2026 and its potential impacts. Strong El Niño events have coincided with significant global climate impacts, including drou
-- **Citation:** `[El Niño and La Niña](research/bookmarks/Climate%20Change/1783254716157.md)`
-
-### A benchmark for how different disturbances influence the loss and recovery of carbon and CO₂ in tropical forests
-
-- **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Tropical Forest Carbon Dynamics
-- **Summary:** The study quantifies the significant carbon losses in tropical forests due to degradation and shows that forests retaining structural integrity recover carbon more quickly than those cleared by deforestation. This research improves carbon m
-- **Citation:** `[Tropical Forest Carbon Dynamics](research/bookmarks/Climate%20Change/1783233364305.md)`
-
-### Scientist dubbed The Bogfather is restoring peatland to fight climate change
-
-- **Suggested domain:** `template/risk` (match 3)
-- **Topic:** Peatland Restoration
-- **Summary:** Dr Peter Jones, known as The Bogfather, has spent decades restoring peatlands in Wales, which store significant carbon and provide natural solutions to climate change, flooding, and wildfires. Despite covering only 4% of the surface, peatla
-- **Citation:** `[Peatland Restoration](research/bookmarks/Climate%20Change/1783233224645.md)`
+- **Suggested domain:** `template/method/biodiversity` (match 3)
+- **Topic:** Floodplain meadows
+- **Summary:** A rare floodplain meadow, White Mills Meadow, has been donated to a conservation charity and will be restored to a wildflower-rich habitat. These meadows are one of the rarest habitats in England, with only around 2,000 hectares remaining.
+- **Citation:** `[Floodplain meadows](research/bookmarks/Climate%20Change/1783931980490.md)`
 
 ### Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution
 
@@ -44,26 +44,26 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Summary:** Rameshwari Jonnalagedda's Minimal Matter project uses 3D printed terracotta modules designed to host moss, insects, and other organisms, promoting bio-receptivity and creating infrastructure for small ecosystems. The project leverages minim
 - **Citation:** `[Sustainable Architecture](research/bookmarks/Climate%20Change/1783191100101.md)`
 
-### The work is already happening. Here’s where to find it.
+### reuters.com
 
-- **Suggested domain:** `template/foundation` (match 0)
-- **Topic:** Sustainable Initiatives
-- **Summary:** The article introduces Sustainable Living, a platform that curates and connects various sustainable initiatives in Portugal, making it easier for people to find and engage with these projects. The platform aims to highlight the existing wor
-- **Citation:** `[Sustainable Initiatives](research/bookmarks/Climate%20Change/1783099664547.md)`
+- **Suggested domain:** `template/infrastructure` (match 2)
+- **Topic:** El Niño
+- **Summary:** A powerful El Niño is building, expected to be one of the strongest in decades, and new FAO analysis predicts where drought will hit hardest, aiding in targeted support for farmers and pastoralists to mitigate impacts on global food securit
+- **Citation:** `[El Niño](research/bookmarks/Climate%20Change/1782828012910.md)`
 
 ### The Ecological Intelligence of Sacred Landscapes
 
 - **Suggested domain:** `template/method/water` (match 1)
 - **Topic:** Sacred Landscapes
 - **Summary:** The article highlights how sacred landscapes in India and the SWANA region have long integrated ecological practices through religious and cultural traditions, such as temple tanks and sacred groves, which continue to provide environmental 
-- **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661868.md)`
+- **Citation:** `[Sacred Landscapes](research/bookmarks/Climate%20Change/1782317661867.md)`
 
 ### REGENERATING THE BIOREGIONAL COMMONS
 
-- **Suggested domain:** `template/method/biodiversity` (match 1)
-- **Topic:** Bioregional Approach
-- **Summary:** The article argues that the current approach to addressing climate change, biodiversity loss, and other environmental issues is fragmented and fails to recognize the interconnectedness of these challenges. It proposes a bioregional approach
-- **Citation:** `[Bioregional Approach](research/bookmarks/Climate%20Change/1782154194931.md)`
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Bioregional Commons
+- **Summary:** The article argues that the current approach to addressing climate, biodiversity, food, and finance issues is flawed due to a fragmented and technical perspective, which fails to recognize the interconnectedness of these challenges. It prop
+- **Citation:** `[Bioregional Commons](research/bookmarks/Climate%20Change/1782154194930.md)`
 
 ### 'Everything has its own order and purpose': The rainforest 'farms' defying modern agriculture
 
@@ -85,13 +85,6 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Topic:** Biodiversity Heritage Library
 - **Summary:** The Biodiversity Heritage Library (BHL) has made over 64 million pages of scientific knowledge freely available online, significantly enhancing access to historical biodiversity literature and aiding in climate and biodiversity crisis resea
 - **Citation:** `[Biodiversity Heritage Library](research/bookmarks/Climate%20Change/1781769407957.md)`
-
-### How directing water flows in the landscape could support groundwater and surface water streams
-
-- **Suggested domain:** `template/method/water` (match 2)
-- **Topic:** Water Management
-- **Summary:** Researchers at the Leibniz Centre for Agricultural Landscape Research demonstrated that redirecting excess stream water into small natural basins can significantly increase groundwater levels and stabilize surface water streams, particularl
-- **Citation:** `[Water Management](research/bookmarks/Climate%20Change/1781523122870.md)`
 
 ### What happens when the world’s breadbaskets start failing simultaneously?
 
@@ -211,4 +204,11 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Topic:** Soil Science
 - **Summary:** A new technique called 'soilsmology' uses seismology to map soil properties globally, potentially aiding in food security and climate change mitigation by providing detailed information on soil health and carbon content.
 - **Citation:** `[Soil Science](research/bookmarks/Climate%20Change/1780268834416.md)`
+
+### An empirically based dynamic approach to sustainable climate policy design
+
+- **Suggested domain:** `template/organization` (match 1)
+- **Topic:** Climate Policy Design
+- **Summary:** The study finds that enforced restrictions to promote carbon-neutral lifestyles
+- **Citation:** `[Climate Policy Design](research/bookmarks/Climate%20Change/1780098862313.md)`
 

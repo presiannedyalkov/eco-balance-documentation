@@ -1,58 +1,82 @@
 {
-  "generated": "2026-07-16T10:59:54.039Z",
-  "corpus": 530,
-  "used": 56,
-  "suppressed_duplicates": 18,
-  "duplicates_of_cited": 12,
-  "duplicate_twins_collapsed": 6,
-  "unused": 459,
+  "generated": "2026-07-24T06:05:44.765Z",
+  "corpus": 516,
+  "used": 58,
+  "suppressed_duplicates": 0,
+  "duplicates_of_cited": 0,
+  "duplicate_twins_collapsed": 0,
+  "unused": 461,
   "candidates": [
     {
-      "id": "1783254716158",
-      "title": "Visualizing Every El Niño and La Niña Since 1979",
-      "domain": "www.visualcapitalist.com",
-      "downloaded": "2026-07-05T12:41:13.407638",
+      "id": "1784616008100",
+      "title": "Scientific & traditional knowledge are key for effective & community-centered conservation (commentary)",
+      "domain": "news.mongabay.com",
+      "downloaded": "2026-07-21T06:46:37.971495",
       "article_type": "news",
-      "url": "https://www.visualcapitalist.com/cp/visualizing-every-el-nino-and-la-nina-since-1979/"
+      "url": "https://news.mongabay.com/2026/07/scientific-traditional-knowledge-are-key-for-effective-community-centered-conservation-commentary/"
     },
     {
-      "id": "1783232489804",
+      "id": "1784389218557",
+      "title": "Agri-PV leads the way towards the sustainable use of solar panels",
+      "domain": "www.euronews.com",
+      "downloaded": "2026-07-18T15:49:35.501029",
+      "article_type": "news",
+      "url": "https://www.euronews.com/my-europe/2026/07/17/saving-europes-farmland-agri-pv-leads-the-way-towards-sustainable-solar-panel-use"
+    },
+    {
+      "id": "1784263081123",
+      "title": "The map predicting agricultural decline from climate change",
+      "domain": "www.euronews.com",
+      "downloaded": "2026-07-17T04:44:23.916293",
+      "article_type": "news",
+      "url": "https://www.euronews.com/2026/07/16/interactive-map-predicts-climate-driven-farm-decline-by-end-of-century"
+    },
+    {
+      "id": "1783931980490",
+      "title": "Rare floodplain meadow given to wildlife trust",
+      "domain": "www.bbc.com",
+      "downloaded": "2026-07-13T08:46:02.988825",
+      "article_type": "news",
+      "url": "https://www.bbc.com/news/articles/c4gy3d5r68jo"
+    },
+    {
+      "id": "1783232489803",
       "title": "Climate change makes western Europe heatwave up to 2.5°C hotter in June, Asia Pacific adopts roadmap to tackle climate, biodiversity and pollution",
       "domain": "www.downtoearth.org.in",
-      "downloaded": "2026-07-05T06:27:48.995335",
-      "article_type": "news",
+      "downloaded": "2026-07-05T06:27:48.469296",
+      "article_type": "",
       "url": "https://www.downtoearth.org.in/climate-change/climate-change-makes-western-europe-heatwave-up-to-25c-hotter-in-june-asia-pacific-adopts-roadmap-to-tackle-climate-biodiversity-and-pollution"
     },
     {
-      "id": "1783191100102",
+      "id": "1783191100101",
       "title": "Rameshwari Jonnalagedda Builds 3D Printed Terracotta Modules Designed to Be Colonized by Nature - 3D Printing Industry",
       "domain": "3dprintingindustry.com",
-      "downloaded": "2026-07-04T19:02:11.377486",
-      "article_type": "news",
+      "downloaded": "2026-07-04T18:51:56.662083",
+      "article_type": "",
       "url": "https://3dprintingindustry.com/news/rameshwari-jonnalagedda-builds-3d-printed-terracotta-modules-designed-to-be-colonized-by-nature-252711/"
     },
     {
-      "id": "1782828012911",
+      "id": "1782828012910",
       "title": "reuters.com",
       "domain": "www.reuters.com",
-      "downloaded": "2026-06-30T14:08:47.589682",
-      "article_type": "news",
+      "downloaded": "2026-06-30T14:08:47.020260",
+      "article_type": "",
       "url": "https://www.reuters.com/sustainability/el-nio-is-coming-fao-we-know-where-drought-will-hit-hardest--ecmii-2026-06-29/"
     },
     {
-      "id": "1782317661868",
+      "id": "1782317661867",
       "title": "The Ecological Intelligence of Sacred Landscapes",
       "domain": "www.archdaily.com",
-      "downloaded": "2026-06-24T16:15:22.290549",
-      "article_type": "news",
+      "downloaded": "2026-06-24T16:15:21.708240",
+      "article_type": "",
       "url": "https://www.archdaily.com/1042553/the-ecological-intelligence-of-sacred-landscapes"
     },
     {
-      "id": "1782154194931",
+      "id": "1782154194930",
       "title": "REGENERATING THE BIOREGIONAL COMMONS",
       "domain": "ernestopvanpeborgh.substack.com",
-      "downloaded": "2026-06-22T18:51:34.943667",
-      "article_type": "opinion",
+      "downloaded": "2026-06-22T18:51:27.001879",
+      "article_type": "",
       "url": "https://ernestopvanpeborgh.substack.com/p/regenerating-the-bioregional-commons"
     },
     {
@@ -78,14 +102,6 @@
       "downloaded": "2026-06-18T08:01:22.432843",
       "article_type": "",
       "url": "https://www.theguardian.com/environment/2026/jun/18/natural-world-digital-biodiversity-heritage-library-scientific-knowledge-free-access-aoe"
-    },
-    {
-      "id": "1781523122870",
-      "title": "How directing water flows in the landscape could support groundwater and surface water streams",
-      "domain": "phys.org",
-      "downloaded": "2026-06-15T11:40:44.977539",
-      "article_type": "",
-      "url": "https://phys.org/news/2026-06-landscape-groundwater-surface-streams.html"
     },
     {
       "id": "1781167169857",
