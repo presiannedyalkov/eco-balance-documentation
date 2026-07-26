@@ -58,7 +58,26 @@
       1716453947000,
       1755367861289
     ],
-    "status": "draft"
+    "status": "draft",
+    "citations": [
+      {
+        "key": "de-mixed-planting",
+        "claim": "Germany's spruce monocultures coped badly with heat and bark beetle, pushing the country toward diverse, mixed planting.",
+        "question": "Did Germany's spruce-monoculture forestry fail under heat and bark beetle, and is mixed-species planting the response?",
+        "source": 1767917557913,
+        "stance": "supports",
+        "anchor": "replacing the dead spruce with saplings from the same species would probably guarantee catastrophe once again",
+        "supports": "The Guardian reports foresters concluding that replanting the same spruce monoculture would probably repeat the catastrophe, and documents the shift to planting a mixture of species for resilience."
+      },
+      {
+        "key": "de-drying-summers",
+        "claim": "German summers are drying, so reduced summer rainfall must be planned for rather than assumed away.",
+        "question": "Are German summers getting drier in a way that changes planning assumptions for restoration?",
+        "source": 1748757905382,
+        "stance": "supports",
+        "supports": "A DW report documents one of Germany's driest springs on record, with drought stress on agriculture and groundwater, showing summer water availability can no longer be assumed."
+      }
+    ]
   },
   {
     "id": "portugal",

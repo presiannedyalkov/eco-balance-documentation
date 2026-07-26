@@ -1,6 +1,6 @@
 # System health
 
-Generated 2026-07-19T18:41. Overall 80/100 (B), across 13 model domains.
+Generated 2026-07-26T21:34. Overall 80/100 (B), across 13 model domains.
 
 Score = coverage (a case decision or deferral, 40) + evidence (citations, up to 40) + voice hygiene (up to 20).
 

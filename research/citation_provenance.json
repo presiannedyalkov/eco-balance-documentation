@@ -1,0 +1,40 @@
+{
+  "bySource": {
+    "1767917557913": [
+      {
+        "key": "de-mixed-planting",
+        "doc": "parameters/germany.md",
+        "question": "Did Germany's spruce-monoculture forestry fail under heat and bark beetle, and is mixed-species planting the response?",
+        "claim": "Germany's spruce monocultures coped badly with heat and bark beetle, pushing the country toward diverse, mixed planting.",
+        "supports": "The Guardian reports foresters concluding that replanting the same spruce monoculture would probably repeat the catastrophe, and documents the shift to planting a mixture of species for resilience.",
+        "quote": "replacing the dead spruce with saplings from the same species would probably guarantee catastrophe once again",
+        "deepLink": "https://www.theguardian.com/environment/2026/jan/08/germany-forests-bark-beetle-spruce-co2-carbon-sink-monoculture-aoe#:~:text=replacing%20the%20dead%20spruce%20with%20saplings,would%20probably%20guarantee%20catastrophe%20once%20again",
+        "stance": "supports",
+        "confidence": "medium"
+      }
+    ],
+    "1748757905382": [
+      {
+        "key": "de-drying-summers",
+        "doc": "parameters/germany.md",
+        "question": "Are German summers getting drier in a way that changes planning assumptions for restoration?",
+        "claim": "German summers are drying, so reduced summer rainfall must be planned for rather than assumed away.",
+        "supports": "A DW report documents one of Germany's driest springs on record, with drought stress on agriculture and groundwater, showing summer water availability can no longer be assumed.",
+        "quote": "",
+        "deepLink": "https://www.dw.com/en/not-enough-rain-how-can-germany-cope-with-drought/a-72746010",
+        "stance": "supports",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "byDocId": {
+    "parameters/germany.md": {
+      "1767917557913": {
+        "key": "de-mixed-planting"
+      },
+      "1748757905382": {
+        "key": "de-drying-summers"
+      }
+    }
+  }
+}
