@@ -1,12 +1,140 @@
 {
-  "generated": "2026-07-19T18:41:10.179Z",
-  "corpus": 515,
+  "generated": "2026-08-29T18:05:35.588Z",
+  "corpus": 531,
   "used": 58,
   "suppressed_duplicates": 0,
   "duplicates_of_cited": 0,
   "duplicate_twins_collapsed": 0,
-  "unused": 460,
+  "unused": 476,
   "candidates": [
+    {
+      "id": "1787993152811",
+      "title": "Natural forest regrowth offers a lower-cost path to climate and biodiversity goals",
+      "domain": "phys.org",
+      "downloaded": "2026-08-29T08:53:20.381105",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-08-natural-forest-regrowth-path-climate.html"
+    },
+    {
+      "id": "1787866965623",
+      "title": "EU’s wildfire summer puts spotlight on EU nature restoration plans",
+      "domain": "www.euronews.com",
+      "downloaded": "2026-08-27T21:44:38.444409",
+      "article_type": "news",
+      "url": "https://www.euronews.com/my-europe/2026/08/27/eu-countries-urged-to-invest-in-nature-restoration-plans-and-close-65bn-annual-shortfall"
+    },
+    {
+      "id": "1787733945152",
+      "title": "A near extinct plant in Galápagos is now recovering",
+      "domain": "phys.org",
+      "downloaded": "2026-08-26T08:53:57.882235",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-08-extinct-galpagos-recovering.html"
+    },
+    {
+      "id": "1787386477455",
+      "title": "Rewilded land remains green amid drought-stricken English countryside, images show",
+      "domain": "www.theguardian.com",
+      "downloaded": "2026-08-22T08:22:26.127007",
+      "article_type": "news",
+      "url": "https://www.theguardian.com/environment/2026/aug/21/somerset-rewilding-holnicote-estate-wetlands-rivers-resilience"
+    },
+    {
+      "id": "1786950397605",
+      "title": "‘Win-win’: How income-boosting solar shades saved my hop harvest",
+      "domain": "www.euronews.com",
+      "downloaded": "2026-08-17T07:13:34.584548",
+      "article_type": "news",
+      "url": "https://www.euronews.com/2026/08/16/can-agri-pv-save-bavarias-hop-gardens-solar-hats-help-fight-climate-crisis"
+    },
+    {
+      "id": "1785567224200",
+      "title": "‘If a space is cared for, everything improves’: Meet four gardeners transforming their urban communities",
+      "domain": "www.theguardian.com",
+      "downloaded": "2026-08-01T07:03:19.179889",
+      "article_type": "news",
+      "url": "https://www.theguardian.com/lifeandstyle/2026/jul/31/public-space-gardeners-hepworth-eden-nature-garden-green-estate"
+    },
+    {
+      "id": "1785513828883",
+      "title": "We revisited a forest experiment that lay forgotten for 30 years. What we found was astounding",
+      "domain": "theconversation.com",
+      "downloaded": "2026-07-31T16:05:19.546871",
+      "article_type": "news",
+      "url": "https://theconversation.com/we-revisited-a-forest-experiment-that-lay-forgotten-for-30-years-what-we-found-was-astounding-288105"
+    },
+    {
+      "id": "1785486321196",
+      "title": "Inside the ‘magic’ tech that harvests water from dry air",
+      "domain": "www.euronews.com",
+      "downloaded": "2026-07-31T08:34:35.856661",
+      "article_type": "news",
+      "url": "https://www.euronews.com/2026/07/30/magical-material-how-europes-drought-struck-islands-could-soon-harvest-water-from-dry-air"
+    },
+    {
+      "id": "1785107460831",
+      "title": "The U.S. dumped 500,000 tons of oyster shells back into the ocean in 2007. Nearly two decades later, they have created a thriving habitat for thousands of marine species",
+      "domain": "en.as.com",
+      "downloaded": "2026-07-26T23:20:24.800137",
+      "article_type": "news",
+      "url": "https://en.as.com/latest_news/the-us-dumped-500000-tons-of-oyster-shells-back-into-the-ocean-in-2007-nearly-two-decades-later-they-have-created-a-thriving-habitat-for-thousands-of-marine-species-f202607-n/"
+    },
+    {
+      "id": "1785053041786",
+      "title": "5 Terracotta Coolers That Look Like Sculptures and Work Without Power - Yanko Design",
+      "domain": "www.yankodesign.com",
+      "downloaded": "2026-07-26T08:07:31.069122",
+      "article_type": "guide",
+      "url": "https://www.yankodesign.com/2026/07/25/5-terracotta-coolers-that-look-like-sculptures-and-work-without-power/"
+    },
+    {
+      "id": "1785050949304",
+      "title": "Unwritten social rules, not government oversight, help keep forest land sustainable",
+      "domain": "phys.org",
+      "downloaded": "2026-07-26T07:37:20.603191",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-07-unwritten-social-oversight-forest-sustainable.html"
+    },
+    {
+      "id": "1785001775859",
+      "title": "Plant diversity boosts natural pest control in farms, while forests and grasslands follow different rules",
+      "domain": "phys.org",
+      "downloaded": "2026-07-25T17:50:14.726923",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-07-diversity-boosts-natural-pest-farms.html"
+    },
+    {
+      "id": "1785001608483",
+      "title": "Seven climate-friendly ways to transform your home",
+      "domain": "theconversation.com",
+      "downloaded": "2026-07-25T17:50:14.320024",
+      "article_type": "news",
+      "url": "https://theconversation.com/seven-climate-friendly-ways-to-transform-your-home-287605"
+    },
+    {
+      "id": "1784987739264",
+      "title": "New environmental performance index highlights sustainability gains, and the challenges ahead",
+      "domain": "phys.org",
+      "downloaded": "2026-07-25T13:58:59.427560",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-07-environmental-index-highlights-sustainability-gains.html"
+    },
+    {
+      "id": "1784976000814",
+      "title": "What is no‑till farming, and is it actually better for the environment?",
+      "domain": "phys.org",
+      "downloaded": "2026-07-25T10:48:19.602215",
+      "article_type": "news",
+      "url": "https://phys.org/news/2026-07-notill-farming-environment.html"
+    },
+    {
+      "id": "1784616008100",
+      "title": "Scientific & traditional knowledge are key for effective & community-centered conservation (commentary)",
+      "domain": "news.mongabay.com",
+      "downloaded": "2026-07-21T06:46:37.971495",
+      "article_type": "news",
+      "url": "https://news.mongabay.com/2026/07/scientific-traditional-knowledge-are-key-for-effective-community-centered-conservation-commentary/"
+    },
     {
       "id": "1784389218557",
       "title": "Agri-PV leads the way towards the sustainable use of solar panels",

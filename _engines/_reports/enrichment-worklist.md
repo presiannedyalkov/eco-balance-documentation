@@ -2,6 +2,118 @@
 
 Top 30 unused articles, routed to a suggested domain. Review, place the one-line insight in the doc, and paste the citation. The consistency engine checks the result.
 
+### Natural forest regrowth offers a lower-cost path to climate and biodiversity goals
+
+- **Suggested domain:** `template/method/reforestation` (match 3)
+- **Topic:** natural forest regeneration
+- **Summary:** Natural forest regrowth in tropical regions offers a cost-effective alternative to tree planting for achieving climate and biodiversity goals, delivering greater carbon sequestration and biodiversity benefits at up to 96% lower cost. The st
+- **Citation:** `[natural forest regeneration](research/bookmarks/Climate%20Change/1787993152811.md)`
+
+### EU’s wildfire summer puts spotlight on EU nature restoration plans
+
+- **Suggested domain:** `template/risk` (match 4)
+- **Topic:** nature restoration planning
+- **Summary:** European countries are urged to submit nature restoration plans by September 1, following a summer of severe wildfires and drought linked to climate change. Researchers highlight a €65 billion annual funding gap and emphasize that restoring
+- **Citation:** `[nature restoration planning](research/bookmarks/Climate%20Change/1787866965623.md)`
+
+### A near extinct plant in Galápagos is now recovering
+
+- **Suggested domain:** `template/method/biodiversity` (match 3)
+- **Topic:** Endangered plant recovery
+- **Summary:** A 30-year conservation effort has revived the critically endangered Galápagos snapdragon from six individuals to a population of 28 adults, with the first evidence of natural seedling regeneration observed in 2021. Despite the loss of early
+- **Citation:** `[Endangered plant recovery](research/bookmarks/Climate%20Change/1787733945152.md)`
+
+### Rewilded land remains green amid drought-stricken English countryside, images show
+
+- **Suggested domain:** `template/method/water` (match 4)
+- **Topic:** rewilding resilience
+- **Summary:** Rewilded areas of the Holnicote estate in Somerset remained green during a severe drought, while surrounding land turned brown, demonstrating the resilience provided by restored wetlands and natural river systems. These nature-based solutio
+- **Citation:** `[rewilding resilience](research/bookmarks/Climate%20Change/1787386477455.md)`
+
+### ‘Win-win’: How income-boosting solar shades saved my hop harvest
+
+- **Suggested domain:** `template/infrastructure` (match 2)
+- **Topic:** agri-PV
+- **Summary:** A Bavarian hop farmer installed solar panels above his crops to provide shade and generate renewable energy, increasing his income and improving soil moisture. This innovative approach could help other farmers adapt to climate change and re
+- **Citation:** `[agri-PV](research/bookmarks/Climate%20Change/1786950397605.md)`
+
+### ‘If a space is cared for, everything improves’: Meet four gardeners transforming their urban communities
+
+- **Suggested domain:** `template/method/water` (match 1)
+- **Topic:** Urban Green Spaces
+- **Summary:** The article highlights how skilled gardeners are transforming urban green spaces, enhancing biodiversity, community engagement, and climate crisis mitigation. Through training programs and community initiatives, these gardeners are making s
+- **Citation:** `[Urban Green Spaces](research/bookmarks/Climate%20Change/1785567224200.md)`
+
+### We revisited a forest experiment that lay forgotten for 30 years. What we found was astounding
+
+- **Suggested domain:** `template/method/biodiversity` (match 3)
+- **Topic:** Forest Management
+- **Summary:** A 30-year study revisited a forest experiment in Victoria, Australia, revealing that forest thinning can enhance tree growth, carbon storage, and habitat for wildlife, challenging the binary debate between conservation and production in for
+- **Citation:** `[Forest Management](research/bookmarks/Climate%20Change/1785513828883.md)`
+
+### Inside the ‘magic’ tech that harvests water from dry air
+
+- **Suggested domain:** `template/method/water` (match 2)
+- **Topic:** Water Harvesting
+- **Summary:** The ARK, a water-harvesting device using Metal-Organic Frameworks (MOFs), can produce up to 500 liters of water daily from dry air, offering a solution for off-grid properties facing severe water stress due to drought and over-extraction.
+- **Citation:** `[Water Harvesting](research/bookmarks/Climate%20Change/1785486321196.md)`
+
+### The U.S. dumped 500,000 tons of oyster shells back into the ocean in 2007. Nearly two decades later, they have created a thriving habitat for thousands of marine species
+
+- **Suggested domain:** `template/method/biodiversity` (match 3)
+- **Topic:** Marine Restoration
+- **Summary:** A long-term project in Florida used 500,000 tons of recycled oyster shells to rebuild damaged marine ecosystems, leading to a thriving habitat for thousands of marine species and improved water quality through oyster filtration.
+- **Citation:** `[Marine Restoration](research/bookmarks/Climate%20Change/1785107460831.md)`
+
+### 5 Terracotta Coolers That Look Like Sculptures and Work Without Power - Yanko Design
+
+- **Suggested domain:** `template/infrastructure` (match 2)
+- **Topic:** Sustainable Cooling
+- **Summary:** Clay coolers, inspired by ancient evaporative cooling techniques, offer a sustainable and energy-efficient alternative to traditional air conditioning. These coolers, designed with modern aesthetics and advanced fabrication methods, provide
+- **Citation:** `[Sustainable Cooling](research/bookmarks/Climate%20Change/1785053041786.md)`
+
+### Unwritten social rules, not government oversight, help keep forest land sustainable
+
+- **Suggested domain:** `template/method/community` (match 3)
+- **Topic:** Sustainable Land Use
+- **Summary:** A new study finds that unwritten social rules in small communities, rather than government oversight, effectively regulate land use to support sustainable forest management and regeneration. This challenges the traditional view that swidden
+- **Citation:** `[Sustainable Land Use](research/bookmarks/Climate%20Change/1785050949304.md)`
+
+### Plant diversity boosts natural pest control in farms, while forests and grasslands follow different rules
+
+- **Suggested domain:** `template/method/biodiversity` (match 2)
+- **Topic:** Biodiversity
+- **Summary:** A study shows that plant diversity significantly enhances natural pest control in agricultural systems, leading to higher beneficial insect populations and reduced pest infestations. In grasslands and forests, plant diversity initially boos
+- **Citation:** `[Biodiversity](research/bookmarks/Climate%20Change/1785001775859.md)`
+
+### Seven climate-friendly ways to transform your home
+
+- **Suggested domain:** `template/infrastructure` (match 1)
+- **Topic:** Home Retrofits
+- **Summary:** The article outlines seven practical ways to make homes more climate-friendly, including using gravel driveways, creating planted areas, and installing window-mounted heat pumps, which can reduce carbon footprints and improve environmental 
+- **Citation:** `[Home Retrofits](research/bookmarks/Climate%20Change/1785001608483.md)`
+
+### New environmental performance index highlights sustainability gains, and the challenges ahead
+
+- **Suggested domain:** `template/infrastructure` (match 1)
+- **Topic:** Environmental Performance Index
+- **Summary:** The 2026 Environmental Performance Index (EPI) shows European countries leading in environmental performance, but few are on track to meet net-zero emissions by 2050. The report highlights the role of AI in providing clearer insights into e
+- **Citation:** `[Environmental Performance Index](research/bookmarks/Climate%20Change/1784987739264.md)`
+
+### What is no‑till farming, and is it actually better for the environment?
+
+- **Suggested domain:** `template/method/soil` (match 2)
+- **Topic:** Agricultural Practices
+- **Summary:** No-till farming aims to reduce soil erosion and improve soil health by minimizing soil disturbance, but it also involves increased chemical use and may not always boost carbon storage or crop yields. Critics argue that the environmental ben
+- **Citation:** `[Agricultural Practices](research/bookmarks/Climate%20Change/1784976000814.md)`
+
+### Scientific & traditional knowledge are key for effective & community-centered conservation (commentary)
+
+- **Suggested domain:** `template/method/community` (match 2)
+- **Topic:** Conservation
+- **Summary:** The article highlights the importance of combining scientific and traditional knowledge for effective and community-centered conservation efforts, particularly in snow leopard conservation in Spiti Valley, India. Women from the community us
+- **Citation:** `[Conservation](research/bookmarks/Climate%20Change/1784616008100.md)`
+
 ### Agri-PV leads the way towards the sustainable use of solar panels
 
 - **Suggested domain:** `template/infrastructure` (match 2)
@@ -99,116 +211,4 @@ Top 30 unused articles, routed to a suggested domain. Review, place the one-line
 - **Topic:** Soil Animal Trophic Diversity
 - **Summary:** The study found that trophic diversity of soil animal communities is higher in agricultural ecosystems and tropical climates, with microbial feeders showing the highest diversity. This diversity is linked to more diverse basal resources and
 - **Citation:** `[Soil Animal Trophic Diversity](research/bookmarks/Climate%20Change/1780865618072.md)`
-
-### 15 forces that could reshape conservation in the next 10 years
-
-- **Suggested domain:** `template/method/biodiversity` (match 1)
-- **Topic:** Emerging Issues in Conservation
-- **Summary:** The article identifies fifteen emerging issues that could significantly impact biodiversity over the next decade, including technological advancements and climate-driven changes, shifting conservation thinking from visible damage to potenti
-- **Citation:** `[Emerging Issues in Conservation](research/bookmarks/Climate%20Change/1780841077224.md)`
-
-### Combining remote sensing with local knowledge is vital for understanding forest change in West Africa - Scientific Reports
-
-- **Suggested domain:** `template/method/reforestation` (match 2)
-- **Topic:** Forest Change
-- **Summary:** The study combines satellite data with local knowledge to assess forest change in West Africa, showing that convergence is strongest for deforestation and divergences are concentrated around degradation, highlighting the diagnostic value of
-- **Citation:** `[Forest Change](research/bookmarks/Climate%20Change/1780837414415.md)`
-
-### Longer growing seasons will not offset growth loss in drought-prone temperate forests of Central-Southeast Europe - Nature Communications
-
-- **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Forest Growth
-- **Summary:** The study predicts that extended growing seasons will initially offset summer drought stress in temperate forests of Central-Southeast Europe, but this will lead to significant growth reduction by the second half of the 21st century, especi
-- **Citation:** `[Forest Growth](research/bookmarks/Climate%20Change/1780836342179.md)`
-
-### What Afghanistan’s rotten apples tell us about its non-profit sector
-
-- **Suggested domain:** `template/organization` (match 1)
-- **Topic:** Non-profit sector inefficiency
-- **Summary:** The article highlights inefficiencies and corruption in Afghanistan's non-profit sector, where aid projects often fail to address local needs and result in wasted resources. Despite funding shortages, NGOs continue to struggle with poor pro
-- **Citation:** `[Non-profit sector inefficiency](research/bookmarks/Climate%20Change/1780823041759.md)`
-
-### AI-powered conservation project ends
-
-- **Suggested domain:** `template/method/biodiversity` (match 3)
-- **Topic:** Conservation
-- **Summary:** A project called Space4Nature used AI and citizen science to restore over 60 hectares of pollinator habitat and develop predictive models for conservation, combining high-resolution satellite imagery and machine learning.
-- **Citation:** `[Conservation](research/bookmarks/Climate%20Change/1780744282976.md)`
-
-### ‘An equal and habitable world is possible’: academics set out sweeping vision for planetary survival
-
-- **Suggested domain:** `template/organization` (match 1)
-- **Topic:** Planetary Survival
-- **Summary:** The World Inequality Lab proposes a comprehensive plan to reduce inequality, increase living standards, and limit global heating to 2C by 2100 through bold policy measures like wealth taxes, reduced working hours, and shifts in economic foc
-- **Citation:** `[Planetary Survival](research/bookmarks/Climate%20Change/1780670499180.md)`
-
-### Encyclopedia of Life
-
-- **Suggested domain:** `template/method/biodiversity` (match 3)
-- **Topic:** Biodiversity
-- **Summary:** The Encyclopedia of Life provides global access to knowledge about life on Earth, including detailed information on various species and their ecological roles. This resource supports biodiversity research and conservation efforts.
-- **Citation:** `[Biodiversity](research/bookmarks/Climate%20Change/1765531706791.md)`
-
-### WOODY MEADOW GUIDELINES - Woody Meadow
-
-- **Suggested domain:** `template/method/reforestation` (match 2)
-- **Topic:** Woody Meadows
-- **Summary:** The guidelines provide detailed information on establishing and managing woody meadows, which can enhance biodiversity and carbon sequestration in urban and rural areas.
-- **Citation:** `[Woody Meadows](research/bookmarks/Climate%20Change/1763280214419.md)`
-
-### Banking on Climate Chaos 2025: Global Bank Fossil Fuel Financing Report
-
-- **Suggested domain:** `template/growth-operations` (match 2)
-- **Topic:** Fossil Fuel Financing
-- **Summary:** The report details the financing activities of the world's 65 largest banks in the fossil fuel sector, highlighting the continued support for fossil fuel expansion despite climate change concerns.
-- **Citation:** `[Fossil Fuel Financing](research/bookmarks/Climate%20Change/1756291430212.md)`
-
-### Causes, Effects & Solutions To Climate Change
-
-- **Suggested domain:** `template/method/reforestation` (match 2)
-- **Topic:** Climate Change
-- **Summary:** The article provides an overview of the causes, effects, and solutions to climate change, breaking down complex concepts into accessible information.
-- **Citation:** `[Climate Change](research/bookmarks/Climate%20Change/1715778390000.md)`
-
-### How drought rewires roots, cutting iron uptake across major food crops
-
-- **Suggested domain:** `template/method/water` (match 1)
-- **Topic:** Plant Nutrition
-- **Summary:** Plants under drought stress reduce their iron uptake, which can affect the nutritional value of crops. This shift also allows certain bacteria to thrive, potentially impacting plant health and global food security.
-- **Citation:** `[Plant Nutrition](research/bookmarks/Climate%20Change/1780485783376.md)`
-
-### In Brazil, a project paying farmers for forests is looking to scale up
-
-- **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Payment for Ecosystem Services (PES)
-- **Summary:** In Brazil, the CONSERV program pays landowners to protect their legal reserve surplus, avoiding over 30,000 hectares of deforestation. The program is now seeking to scale up by exploring mechanisms such as carbon credits and price premiums 
-- **Citation:** `[Payment for Ecosystem Services (PES)](research/bookmarks/Climate%20Change/1780425212427.md)`
-
-### Trees and greenery can cool cities by as much as 18°C – but only if they’re the right type
-
-- **Suggested domain:** `template/method/reforestation` (match 1)
-- **Topic:** Urban Greening
-- **Summary:** The study found that layered vegetation, combining trees, shrubs, and ground cover, can significantly reduce urban heat stress by up to 18°C in Melbourne, while the wrong type of greening can sometimes increase discomfort, especially in hum
-- **Citation:** `[Urban Greening](research/bookmarks/Climate%20Change/1780303191714.md)`
-
-### A global food crisis is nearing – and the warning signs are buried beneath your feet | BBC Science Focus Magazine
-
-- **Suggested domain:** `template/method/soil` (match 1)
-- **Topic:** Soil Science
-- **Summary:** A new technique called 'soilsmology' uses seismology to map soil properties globally, potentially aiding in food security and climate change mitigation by providing detailed information on soil health and carbon content.
-- **Citation:** `[Soil Science](research/bookmarks/Climate%20Change/1780268834416.md)`
-
-### An empirically based dynamic approach to sustainable climate policy design
-
-- **Suggested domain:** `template/organization` (match 1)
-- **Topic:** Climate Policy Design
-- **Summary:** The study finds that enforced restrictions to promote carbon-neutral lifestyles
-- **Citation:** `[Climate Policy Design](research/bookmarks/Climate%20Change/1780098862313.md)`
-
-### Ecosystem health shapes viral ecology in peatland soils | Nature Microbiology
-
-- **Suggested domain:** `template/method/soil` (match 3)
-- **Topic:** Viral ecology in peatland ecosystem health
-- **Summary:** This study sequenced soil metagenomes from seven UK peatlands across natural,
-- **Citation:** `[Viral ecology in peatland ecosystem health](research/bookmarks/Climate%20Change/1765529625389.md)`
 
