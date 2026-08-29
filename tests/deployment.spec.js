@@ -1,14 +1,23 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-// Use custom domain if set, otherwise fallback to GitHub Pages URL
+// Custom domain by default; in CI during the DNS cutover, BASE_URL is set to the
+// Cloudflare Pages URL (…pages.dev).
 const BASE_URL = process.env.BASE_URL || process.env.CUSTOM_DOMAIN_URL || 'https://docs.eco-balance.cc';
 
 /**
- * Helper function to check if URL is valid (custom domain or GitHub Pages)
+ * Is this URL on one of our known deployment hosts?
+ *   docs.eco-balance.cc  — the custom domain (final state)
+ *   *.pages.dev          — Cloudflare Pages (prod + previews + the cutover window)
+ *   localhost/127.0.0.1  — local runs
  */
 function isValidDeploymentUrl(url) {
-  return url.includes('docs.eco-balance.cc') || url.includes('eco-balance-documentation');
+  return (
+    url.includes('docs.eco-balance.cc') ||
+    url.includes('.pages.dev') ||
+    url.includes('localhost') ||
+    url.includes('127.0.0.1')
+  );
 }
 
 /**
@@ -38,10 +47,8 @@ test.describe('Deployment Verification', () => {
       await page.waitForLoadState('domcontentloaded', { timeout: 30000 });
     }
     
-    // Verify we're on the correct domain (either custom domain or GitHub Pages)
-    const isCustomDomain = finalUrl.includes('docs.eco-balance.cc');
-    const isGitHubPages = finalUrl.includes('eco-balance-documentation');
-    expect(isCustomDomain || isGitHubPages).toBeTruthy();
+    // Verify we're on a known deployment host (custom domain or Pages URL).
+    expect(isValidDeploymentUrl(finalUrl)).toBeTruthy();
     
     await expect(page).toHaveTitle(/Eco Balance/i, { timeout: 10000 });
     
@@ -331,13 +338,11 @@ test.describe('Deployment Verification', () => {
         // Check page loaded and stayed on correct domain
         const afterUrl = page.url();
         try {
-          const urlObj = new URL(afterUrl);
-          const hostname = urlObj.hostname;
-          if (hostname === 'docs.eco-balance.cc' || 
-              hostname.includes('eco-balance-documentation') || 
-              hostname === 'presiannedyalkov.github.io') {
+          if (isValidDeploymentUrl(afterUrl)) {
             successfulLinks++;
           } else {
+            const urlObj = new URL(afterUrl);
+            const hostname = urlObj.hostname;
             // Sanitize href and hostname to prevent log injection
             const sanitizedHref = String(href || '').replace(/[\r\n]/g, ' ').substring(0, 100);
             const sanitizedHostname = String(hostname || '').replace(/[\r\n]/g, ' ').substring(0, 100);
@@ -351,12 +356,7 @@ test.describe('Deployment Verification', () => {
           console.warn(`Could not parse URL: ${sanitizedUrl}`, sanitizedError);
           // Use URL parsing for validation even in fallback
           try {
-            const fallbackUrl = new URL(afterUrl);
-            const fallbackHostname = fallbackUrl.hostname;
-            // Use exact hostname matching instead of substring to prevent false positives
-            if (fallbackHostname === 'presiannedyalkov.github.io' || 
-                fallbackHostname === 'docs.eco-balance.cc' ||
-                fallbackHostname.endsWith('.github.io')) {
+            if (isValidDeploymentUrl(afterUrl)) {
               successfulLinks++;
             }
           } catch {

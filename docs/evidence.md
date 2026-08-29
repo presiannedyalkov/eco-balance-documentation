@@ -85,6 +85,12 @@ Germany's forests, predominantly monoculture spruce plantations, are dying from 
 
 Cited in: [why restore degraded land](/model/foundation/why-restore-degraded-land) · [0001 candidate countries](/our-case/decisions/0001-candidate-countries) · [germany](/model/parameters/germany)
 
+#### Did Germany's spruce-monoculture forestry fail under heat and bark beetle, and is mixed-species planting the response? {#de-mixed-planting}
+
+**Our claim:** Germany's spruce monocultures coped badly with heat and bark beetle, pushing the country toward diverse, mixed planting.
+
+**Source says:** [“replacing the dead spruce with saplings from the same species would probably guarantee catastrophe once again”](https://www.theguardian.com/environment/2026/jan/08/germany-forests-bark-beetle-spruce-co2-carbon-sink-monoculture-aoe#:~:text=replacing%20the%20dead%20spruce%20with%20saplings,would%20probably%20guarantee%20catastrophe%20once%20again) — The Guardian reports foresters concluding that replanting the same spruce monoculture would probably repeat the catastrophe, and documents the shift to planting a mixture of species for resilience.
+
 ## Funding
 
 ### A Sample Grant Proposal on Sustainable Farming Practices: A Research Proposal to Improve Crop Yields and Soil Health among Smallholder Farmers {#e1745570948450}
@@ -474,6 +480,12 @@ Source: [dw.com](https://www.dw.com/en/not-enough-rain-how-can-germany-cope-with
 Germany experienced one of its driest springs on record in early 2025, leading to severe drought stress affecting agriculture, groundwater levels, and inland waterway transport. The exceptionally dry topsoil and low groundwater levels pose significant challenges for crop growth and water…
 
 Cited in: [choosing a site](/model/site-and-land/choosing-a-site) · [germany](/model/parameters/germany)
+
+#### Are German summers getting drier in a way that changes planning assumptions for restoration? {#de-drying-summers}
+
+**Our claim:** German summers are drying, so reduced summer rainfall must be planned for rather than assumed away.
+
+**Source says:** [source](https://www.dw.com/en/not-enough-rain-how-can-germany-cope-with-drought/a-72746010) — A DW report documents one of Germany's driest springs on record, with drought stress on agriculture and groundwater, showing summer water availability can no longer be assumed.
 
 ## Stewardship Handoff
 

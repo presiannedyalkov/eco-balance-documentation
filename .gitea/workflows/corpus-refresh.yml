@@ -32,16 +32,22 @@ jobs:
     name: Advance corpus, regenerate, open + merge PR
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository (with corpus submodule)
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
-          # research/bookmarks is a separate repo (pres/bookmarks). It's public,
-          # but the Gitea instance runs REQUIRE_SIGNIN_VIEW, so it 401s anonymous
-          # clones regardless — and the automatic Actions token is scoped to THIS
-          # repo only. Needs a PAT that can read both.
-          token: ${{ secrets.GITEA_TOKEN }}
+          # Main repo only — the automatic Actions token reads it. The corpus
+          # submodule is a SEPARATE repo the auto token can't read, and Gitea's
+          # checkout doesn't propagate a token to submodule clones, so init it
+          # explicitly below.
+
+      - name: Init corpus submodule (research/bookmarks, read via CI_PAT)
+        run: |
+          # CI_PAT is a read-only user PAT that can read pres/bookmarks. Scope the
+          # credential to that repo path so it can't touch the main-repo push below.
+          git config --global url."https://x-access-token:${{ secrets.CI_PAT }}@gitea.nexus-home.cc/pres/bookmarks".insteadOf "https://gitea.nexus-home.cc/pres/bookmarks"
+          git submodule sync
+          git submodule update --init research/bookmarks
 
       - name: Advance corpus to its tip
         id: corpus
@@ -67,7 +73,13 @@ jobs:
         # postinstall (patch-package) runs as part of ci/install; .npmrc pins
         # include=dev so it can't be skipped. The old `|| true` here meant a
         # genuinely failed patch passed silently.
-        run: npm ci || npm install
+        run: |
+          # provenance-cite is a Gitea-hosted git dependency; the runner has no
+          # Gitea git creds, and REQUIRE_SIGNIN_VIEW blocks anonymous clones.
+          # Scope the credential to that one repo path so the branch push below
+          # (to eco-balance) keeps using the checkout token, not this one.
+          git config --global url."https://x-access-token:${{ secrets.GITEA_TOKEN }}@gitea.nexus-home.cc/pres/provenance-cite".insteadOf "https://gitea.nexus-home.cc/pres/provenance-cite"
+          npm ci || npm install
 
       - name: Run engines and prepare site
         run: |
@@ -149,6 +161,10 @@ jobs:
           fi
 
           git commit -m "chore: corpus refresh (bookmarks + engines)"
+          # origin was checked out with the automatic Actions token (same-repo
+          # write), so a plain push works. CI_PAT is used only for the read-only
+          # submodule fetch above, never here. The bookmarks insteadOf is scoped to
+          # the pres/bookmarks path, so it doesn't touch this origin push.
           git push --force origin "$BRANCH"
 
           if [ -z "$GITEA_TOKEN" ]; then

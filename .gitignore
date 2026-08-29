@@ -36,5 +36,8 @@ test-results/
 yarn-debug.log*
 yarn-error.log*
 
+# Generated engine artifacts (rebuilt by `npm run site:prepare`)
+research/citation_provenance.json
+
 # Local Claude/Cowork settings
 .claude/settings.local.json

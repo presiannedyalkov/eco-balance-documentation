@@ -63,17 +63,33 @@ const ANCHORED = (() => {
   try { return new Set(Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT,'research/citation_index.json'),'utf8')))); }
   catch(e){ console.warn('sync: no citation index ('+e.code+') — citations will be emitted as plain text'); return new Set(); }
 })();
+// Provenance records: doc -> { source id -> {key} }. When a cited sentence has a
+// three-level record, fold its inline source link to the claim anchor (#<key>)
+// and mark it verified (✓) instead of the bare source anchor (#e<id>).
+const PROV_BY_DOC = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT,'research/citation_provenance.json'),'utf8')).byDocId || {}; }
+  catch(e){ return {}; }
+})();
 let stranded = 0;
-function fixLinks(t){
+function fixLinks(t, docRel){
+  const prov = (docRel && PROV_BY_DOC[docRel]) || null;
   return t
     .replace(/\]\(((?:\.\.\/)+)template\//g,']($1model/')
     .replace(/\]\(((?:\.\.\/)+)parameters\//g,']($1model/parameters/')
-    // [text](research/bookmarks/<collection>/<id>.md) -> [text](/evidence#e<id>)
-    // when anchored; otherwise unwrap to bare `text` so no broken anchor ships.
+    // [text](research/bookmarks/<collection>/<id>.md) -> a claim-anchored,
+    // ✓-verified link when this sentence has a provenance record; else the bare
+    // source anchor (/evidence#e<id>) when anchored; else unwrap to plain text.
     .replace(/\[([^\]]*)\]\(research\/bookmarks\/[^)]*?(\d{10,})\.md\)/g,
-      (m, text, id) => ANCHORED.has(id) ? `[${text}](/evidence#e${id})` : (stranded++, text));
+      (m, text, id) => {
+        const rec = prov && prov[id];
+        if (rec) return `[${text}](/evidence#${rec.key}) ✓`;
+        return ANCHORED.has(id) ? `[${text}](/evidence#e${id})` : (stranded++, text);
+      })
+    // Drop provenance footnote markers from the published copy — they tie a
+    // sentence to its record in the SOURCE tree; here the ✓ link carries it.
+    .replace(/\[\^[a-z0-9-]+\]/gi, '');
 }
-function copyMd(srcDir,destDir){ if(!fs.existsSync(srcDir))return 0; let n=0; for(const e of fs.readdirSync(srcDir,{withFileTypes:true})){ const s=path.join(srcDir,e.name),d=path.join(destDir,e.name); if(e.isDirectory())n+=copyMd(s,d); else if(e.name.endsWith('.md')){ ensure(destDir); fs.writeFileSync(d,fixLinks(fs.readFileSync(s,'utf8'))); n++; } } return n; }
+function copyMd(srcDir,destDir){ if(!fs.existsSync(srcDir))return 0; let n=0; for(const e of fs.readdirSync(srcDir,{withFileTypes:true})){ const s=path.join(srcDir,e.name),d=path.join(destDir,e.name); if(e.isDirectory())n+=copyMd(s,d); else if(e.name.endsWith('.md')){ ensure(destDir); fs.writeFileSync(d,fixLinks(fs.readFileSync(s,'utf8'),path.relative(ROOT,s).split(path.sep).join('/'))); n++; } } return n; }
 
 ensure(DOCS); rmrf(path.join(DOCS,'model')); rmrf(path.join(DOCS,'our-case'));
 try{ fs.writeFileSync(path.join(DOCS,'intro.md'),LANDING);}catch(e){ console.warn('intro write',e.code);}

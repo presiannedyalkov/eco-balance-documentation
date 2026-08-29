@@ -27,6 +27,12 @@ for (const f of walk(BOOK)) {
   };
 }
 let cited = {}; try { cited = JSON.parse(fs.readFileSync(CITES, 'utf8')); } catch (e) {}
+// Provenance records (three-level citations) keyed by source id. Additive: a
+// source with records gets question→claim→passage blocks under its entry, each
+// anchored at #<key> so inline ✓ links can target the exact claim.
+let prov = { bySource: {} };
+try { prov = JSON.parse(fs.readFileSync(path.join(ROOT, 'research/citation_provenance.json'), 'utf8')); } catch (e) {}
+const stanceLabel = { disputes: 'Source disputes', qualifies: 'Source qualifies', background: 'Background' };
 
 function route(p) {
   let r = p.replace(/\.md$/, '');
@@ -57,6 +63,16 @@ for (const g of Object.keys(groups).sort()) {
     md += `Source: [${host(m.url)}](${m.url})${m.type ? ` · _${m.type}_` : ''}${v}\n\n`;
     if (m.summary) md += `${san(clip(m.summary, 300))}\n\n`;
     md += `Cited in: ${cited[id].map(p => { const { r, label } = route(p); return `[${label}](${r})`; }).join(' · ')}\n\n`;
+    for (const c of (prov.bySource[id] || [])) {
+      md += `#### ${san(c.question || c.claim)} {#${c.key}}\n\n`;
+      if (c.claim) md += `**Our claim:** ${san(c.claim)}\n\n`;
+      let says = '';
+      if (c.quote) says = c.deepLink ? `[“${san(c.quote)}”](${c.deepLink})` : `“${san(c.quote)}”`;
+      else if (c.deepLink) says = `[source](${c.deepLink})`;
+      const because = c.supports ? ` — ${san(c.supports)}` : '';
+      const label = stanceLabel[c.stance] || 'Source says';
+      if (says || because) md += `**${label}:** ${says}${because}\n\n`;
+    }
   }
 }
 fs.writeFileSync(path.join(DOCS, 'evidence.md'), md);
