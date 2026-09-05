@@ -1,11 +1,29 @@
 # Feed queue
 
-Corpus: 515 Climate Change articles. Already used: 58. Duplicate captures suppressed: 0 (0 already cited under another entry_id, 0 twin captures collapsed). Not yet used: 460.
+Corpus: 533 Climate Change articles. Already used: 58. Duplicate captures suppressed: 0 (0 already cited under another entry_id, 0 twin captures collapsed). Not yet used: 478.
 
 Newest unused first (top 40):
 
 | entry_id | title | source | downloaded |
 |---|---|---|---|
+| 1788267273124 | Ecological collapse in the world’s largest mangrove forest is a previe | theconversation.com | 2026-09-01 |
+| 1788266912947 | How a South African town cleaned up its polluted river using stones, w | www.theguardian.com | 2026-09-01 |
+| 1787993152811 | Natural forest regrowth offers a lower-cost path to climate and biodiv | phys.org | 2026-08-29 |
+| 1787866965623 | EU’s wildfire summer puts spotlight on EU nature restoration plans | www.euronews.com | 2026-08-27 |
+| 1787733945152 | A near extinct plant in Galápagos is now recovering | phys.org | 2026-08-26 |
+| 1787386477455 | Rewilded land remains green amid drought-stricken English countryside, | www.theguardian.com | 2026-08-22 |
+| 1786950397605 | ‘Win-win’: How income-boosting solar shades saved my hop harvest | www.euronews.com | 2026-08-17 |
+| 1785567224200 | ‘If a space is cared for, everything improves’: Meet four gardeners tr | www.theguardian.com | 2026-08-01 |
+| 1785513828883 | We revisited a forest experiment that lay forgotten for 30 years. What | theconversation.com | 2026-07-31 |
+| 1785486321196 | Inside the ‘magic’ tech that harvests water from dry air | www.euronews.com | 2026-07-31 |
+| 1785107460831 | The U.S. dumped 500,000 tons of oyster shells back into the ocean in 2 | en.as.com | 2026-07-26 |
+| 1785053041786 | 5 Terracotta Coolers That Look Like Sculptures and Work Without Power  | www.yankodesign.com | 2026-07-26 |
+| 1785050949304 | Unwritten social rules, not government oversight, help keep forest lan | phys.org | 2026-07-26 |
+| 1785001775859 | Plant diversity boosts natural pest control in farms, while forests an | phys.org | 2026-07-25 |
+| 1785001608483 | Seven climate-friendly ways to transform your home | theconversation.com | 2026-07-25 |
+| 1784987739264 | New environmental performance index highlights sustainability gains, a | phys.org | 2026-07-25 |
+| 1784976000814 | What is no‑till farming, and is it actually better for the environment | phys.org | 2026-07-25 |
+| 1784616008100 | Scientific & traditional knowledge are key for effective & community-c | news.mongabay.com | 2026-07-21 |
 | 1784389218557 | Agri-PV leads the way towards the sustainable use of solar panels | www.euronews.com | 2026-07-18 |
 | 1784263081123 | The map predicting agricultural decline from climate change | www.euronews.com | 2026-07-17 |
 | 1783931980490 | Rare floodplain meadow given to wildlife trust | www.bbc.com | 2026-07-13 |
@@ -28,21 +46,3 @@ Newest unused first (top 40):
 | 1780670499180 | ‘An equal and habitable world is possible’: academics set out sweeping | www.theguardian.com | 2026-06-05 |
 | 1765531706791 | Encyclopedia of Life | eol.org | 2026-06-04 |
 | 1763280214419 | WOODY MEADOW GUIDELINES - Woody Meadow | woodymeadow.unimelb.edu.au | 2026-06-04 |
-| 1756291430212 | Banking on Climate Chaos 2025: Global Bank Fossil Fuel Financing Repor | bankingonclimatechaos.org | 2026-06-04 |
-| 1715778390000 | Causes, Effects & Solutions To Climate Change | climatescience.org | 2026-06-04 |
-| 1780485783376 | How drought rewires roots, cutting iron uptake across major food crops | phys.org | 2026-06-03 |
-| 1780425212427 | In Brazil, a project paying farmers for forests is looking to scale up | news.mongabay.com | 2026-06-02 |
-| 1780303191714 | Trees and greenery can cool cities by as much as 18°C – but only if th | theconversation.com | 2026-06-01 |
-| 1780268834416 | A global food crisis is nearing – and the warning signs are buried ben | www.sciencefocus.com | 2026-05-31 |
-| 1780098862313 | An empirically based dynamic approach to sustainable climate policy de | www.nature.com | 2026-05-30 |
-| 1765529625389 | Ecosystem health shapes viral ecology in peatland soils / Nature Micro | nature.com | 2026-05-30 |
-| 1765015201756 | A place-based assessment of biodiversity intactness in sub-Saharan Afr | nature.com | 2026-05-30 |
-| 1779757241938 | They Kept Planting Trees in the Sahara and Kept Failing. Then They Rel | indiandefencereview.com | 2026-05-26 |
-| 1779188940328 | The Sir Attenborough blueprint: How storytelling became conservation’s | www.afaqs.com | 2026-05-21 |
-| 1779143385167 | Scientists find hidden rainfall pattern that could reshape farming | www.sciencedaily.com | 2026-05-21 |
-| 1779128990528 | What you need to know as pine martens are reintroduced | www.bbc.com | 2026-05-21 |
-| 1779128775688 | Biodiversity continues to decline, 2025 data shows | www.bbc.com | 2026-05-21 |
-| 1779125742565 | This 32-Year-Old Is Rebuilding a Lost Forest in the Western Ghats With | thebetterindia.com | 2026-05-21 |
-| 1779125518612 | Volunteer tree planters aiming to prevent flooding | www.bbc.com | 2026-05-21 |
-| 1779122710688 | Congo’s communities are creating a 1-million-hectare biodiversity corr | news.mongabay.com | 2026-05-21 |
-| 1778655588518 | Today more than ever, biodiversity needs single-species conservation | theconversation.com | 2026-05-18 |
